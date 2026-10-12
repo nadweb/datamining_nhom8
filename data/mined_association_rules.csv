@@ -1,0 +1,148 @@
+﻿Antecedent,Consequent,Count,Support (%),Confidence (%),Lift,Leverage,Conviction
+Airline=VJ & DstRain=light & Load=low,Status=delayed,80,1.48,65.57,2.38,0.0086,2.1
+Airline=VJ & Day=weekday & Vis=<5km,Status=delayed,65,1.21,63.73,2.31,0.0068,2.0
+Airport=SGN & Day=weekday & Vis=<5km,Status=delayed,85,1.58,62.04,2.25,0.0088,1.91
+Day=weekday & DstRain=light & Load=low,Status=delayed,167,3.1,61.17,2.22,0.017,1.87
+Day=weekday & Slot=18h-24h & Vis=<5km,Status=delayed,63,1.17,60.0,2.18,0.0063,1.81
+Airport=SGN & Rain=light & Slot=18h-24h,Status=delayed,108,2.0,59.02,2.14,0.0107,1.77
+Airline=VJ & Rain=light & Slot=18h-24h,Status=delayed,71,1.32,58.68,2.13,0.007,1.75
+DstRain=light & Load=low & Slot=12h-18h,Status=delayed,91,1.69,58.33,2.12,0.0089,1.74
+Airline=VN & Day=weekday & Vis=<5km,Status=delayed,60,1.11,58.25,2.11,0.0059,1.74
+Airline=VJ & Airport=SGN & Vis=<5km,Status=delayed,57,1.06,58.16,2.11,0.0056,1.73
+Airline=VJ & Airport=SGN & Rain=light,Status=delayed,241,4.47,57.66,2.09,0.0233,1.71
+Day=weekday & DstRain=light & Rain=light,Status=delayed,72,1.34,57.14,2.07,0.0069,1.69
+Airline=VJ & Airport=SGN & Slot=12h-18h,Status=delayed,150,2.78,56.18,2.04,0.0142,1.65
+Airline=VJ & Day=weekday & Rain=light,Status=delayed,218,4.04,56.04,2.03,0.0206,1.65
+Airline=VJ & Rain=light & Slot=12h-18h,Status=delayed,186,3.45,56.02,2.03,0.0175,1.65
+Airline=VN & DstRain=light & Load=low,Status=delayed,84,1.56,56.0,2.03,0.0079,1.65
+Airline=VJ & DstRain=light & Slot=12h-18h,Status=delayed,89,1.65,55.62,2.02,0.0083,1.63
+Slot=18h-24h & Vis=<5km,Status=delayed,64,1.19,55.65,2.02,0.006,1.63
+Airline=VJ & Dir=arrivals & Rain=light,Status=delayed,95,1.76,55.23,2.01,0.0088,1.62
+Airline=VJ & Load=high & Rain=light,Status=delayed,218,4.04,55.05,2.0,0.0202,1.61
+DstRain=light & Load=low,Status=delayed,181,3.36,54.68,1.99,0.0167,1.6
+Airline=VJ & Gust=<30 & Rain=light,Status=delayed,298,5.53,52.93,1.92,0.0265,1.54
+Day=weekday & Vis=<5km,Status=delayed,146,2.71,52.9,1.92,0.013,1.54
+Load=high & Rain=light & Slot=18h-24h,Status=delayed,76,1.41,52.78,1.92,0.0067,1.53
+Airline=VJ & Load=low & Slot=12h-18h,Status=delayed,90,1.67,52.02,1.89,0.0079,1.51
+Airline=VJ & Rain=light,Status=delayed,330,6.12,51.48,1.87,0.0285,1.49
+Airline=VN & Load=low & Slot=12h-18h,Status=delayed,88,1.63,51.16,1.86,0.0075,1.48
+Airline=VJ & Airport=DAD & Gust=<30,Status=delayed,67,1.24,51.15,1.86,0.0057,1.48
+Dir=departures & Slot=12h-18h & Vis=<5km,Status=delayed,63,1.17,51.22,1.86,0.0054,1.49
+Airline=VN & Rain=light & Slot=18h-24h,Status=delayed,58,1.08,51.33,1.86,0.005,1.49
+Day=weekday & Rain=light & Slot=18h-24h,Status=delayed,135,2.5,50.75,1.84,0.0115,1.47
+Airline=VJ & Day=weekday & DstRain=light,Status=delayed,140,2.6,50.36,1.83,0.0118,1.46
+Airline=VJ & Vis=<5km,Status=delayed,92,1.71,50.27,1.83,0.0077,1.46
+Airline=VJ & Airport=DAD & Load=low,Status=delayed,60,1.11,50.42,1.83,0.005,1.46
+Airport=DAD & Gust=<30 & Slot=12h-18h,Status=delayed,68,1.26,50.0,1.82,0.0057,1.45
+Airline=VJ & Airport=SGN & Day=weekday,Status=delayed,205,3.8,49.52,1.8,0.0169,1.44
+Day=weekday & Load=low & Slot=12h-18h,Status=delayed,167,3.1,48.83,1.77,0.0135,1.42
+Airline=VJ & Day=weekday & Slot=12h-18h,Status=delayed,218,4.04,48.44,1.76,0.0174,1.41
+Airline=VN & Day=weekday & Load=low,Status=delayed,206,3.82,48.58,1.76,0.0165,1.41
+Airline=VJ & Airport=DAD & Dir=departures,Status=delayed,69,1.28,48.59,1.76,0.0055,1.41
+Airline=VJ & Dir=arrivals & Slot=12h-18h,Status=delayed,110,2.04,48.25,1.75,0.0088,1.4
+Airport=SGN & Day=weekday & Rain=light,Status=delayed,326,6.05,47.73,1.73,0.0256,1.39
+Day=weekday & DstRain=none & Slot=12h-18h,Status=delayed,123,2.28,47.67,1.73,0.0096,1.38
+Gust=<30 & Slot=12h-18h & Vis=<5km,Status=delayed,75,1.39,47.77,1.73,0.0059,1.39
+Airport=SGN & DstRain=none & Slot=12h-18h,Status=delayed,63,1.17,47.73,1.73,0.0049,1.39
+Rain=light & Slot=18h-24h,Status=delayed,157,2.91,47.29,1.72,0.0122,1.37
+Airline=VJ & Airport=DAD,Status=delayed,82,1.52,47.4,1.72,0.0064,1.38
+Airline=VN & Day=weekday & Rain=light,Status=delayed,165,3.06,47.01,1.71,0.0127,1.37
+Airport=DAD & Day=weekday & Slot=12h-18h,Status=delayed,55,1.02,47.01,1.71,0.0042,1.37
+Airline=VJ & Slot=12h-18h,Status=delayed,343,6.36,46.73,1.7,0.0261,1.36
+Airline=VJ & Day=weekday & Load=low,Status=delayed,182,3.38,46.79,1.7,0.0139,1.36
+Slot=12h-18h & Vis=<5km,Status=delayed,75,1.39,46.58,1.69,0.0057,1.36
+Day=weekday & Dir=departures & Load=low,Status=delayed,392,7.27,46.34,1.68,0.0295,1.35
+Airline=VJ & DstRain=light,Status=delayed,168,3.12,45.9,1.67,0.0125,1.34
+Airport=SGN & Day=weekday & Slot=12h-18h,Status=delayed,166,3.08,46.11,1.67,0.0124,1.34
+Day=weekday & Dir=departures & Rain=light,Status=delayed,356,6.6,45.82,1.66,0.0263,1.34
+Airline=VJ & Airport=SGN & Dir=arrivals,Status=delayed,118,2.19,45.74,1.66,0.0087,1.34
+Airport=SGN & Gust=<30 & Vis=<5km,Status=delayed,105,1.95,45.65,1.66,0.0077,1.33
+Airline=VJ & Dir=arrivals & Slot=18h-24h,Status=delayed,87,1.61,45.55,1.65,0.0064,1.33
+Day=weekday & Rain=light,Status=delayed,449,8.33,44.81,1.63,0.0321,1.31
+Dir=departures & Load=low & Slot=12h-18h,Status=delayed,171,3.17,44.88,1.63,0.0123,1.31
+Airport=DAD & Load=low & Slot=12h-18h,Status=delayed,54,1.0,45.0,1.63,0.0039,1.32
+Gust=<30 & Rain=light & Slot=12h-18h,Status=delayed,300,5.56,44.71,1.62,0.0214,1.31
+Airline=VN & Dir=departures & Load=low,Status=delayed,213,3.95,44.56,1.62,0.0151,1.31
+Airline=VJ & Airport=SGN & DstRain=none,Status=delayed,67,1.24,44.67,1.62,0.0048,1.31
+Airport=SGN & Day=weekday & Load=mid,Status=delayed,63,1.17,44.37,1.61,0.0044,1.3
+Gust=<30 & Load=mid & Rain=light,Status=delayed,62,1.15,44.29,1.61,0.0043,1.3
+Airport=SGN & Gust=<30 & Rain=light,Status=delayed,422,7.83,43.96,1.6,0.0292,1.29
+Airport=SGN & DstRain=none & Rain=light,Status=delayed,93,1.73,44.08,1.6,0.0065,1.3
+Airline=VN & DstRain=none & Slot=12h-18h,Status=delayed,69,1.28,43.95,1.6,0.0048,1.29
+Airline=VJ & Dir=departures & Load=low,Status=delayed,194,3.6,43.89,1.59,0.0134,1.29
+Airport=SGN & Vis=<5km,Status=delayed,111,2.06,43.87,1.59,0.0077,1.29
+Airline=VJ & DstRain=none & Slot=18h-24h,Status=delayed,58,1.08,43.61,1.58,0.004,1.28
+Load=low & Slot=12h-18h,Status=delayed,201,3.73,43.32,1.57,0.0136,1.28
+Airline=VJ & Airport=SGN,Status=delayed,331,6.14,43.1,1.56,0.0222,1.27
+Airport=SGN & Gust=<30 & Slot=12h-18h,Status=delayed,254,4.71,42.91,1.56,0.0169,1.27
+Airline=VN & Airport=SGN & Day=weekday,Status=delayed,161,2.99,43.05,1.56,0.0108,1.27
+Airport=SGN & Day=weekday & Slot=18h-24h,Status=delayed,115,2.13,42.91,1.56,0.0076,1.27
+Airport=SGN & Rain=light,Status=delayed,449,8.33,42.6,1.55,0.0294,1.26
+Airline=VJ & Day=weekday & DstRain=none,Status=delayed,141,2.62,42.6,1.55,0.0092,1.26
+Airline=VN & DstRain=none & Load=low,Status=delayed,110,2.04,42.64,1.55,0.0072,1.26
+Load=high & Rain=light & Slot=12h-18h,Status=delayed,240,4.45,42.48,1.54,0.0156,1.26
+Day=weekday & Load=low,Status=delayed,426,7.9,42.22,1.53,0.0275,1.25
+Airline=VJ & Dir=arrivals & Load=high,Status=delayed,172,3.19,42.16,1.53,0.0111,1.25
+Airline=VJ & Day=weekday & Slot=18h-24h,Status=delayed,131,2.43,42.26,1.53,0.0085,1.25
+Airport=DAD & Day=weekday & Dir=departures,Status=delayed,109,2.02,42.25,1.53,0.007,1.25
+Airline=VN & Day=weekday & DstRain=none,Status=delayed,156,2.89,41.82,1.52,0.0099,1.25
+Load=high & Rain=light & Vis=>=5km,Status=delayed,330,6.12,41.72,1.51,0.0208,1.24
+Airport=SGN & Slot=12h-18h,Status=delayed,275,5.1,41.48,1.51,0.0171,1.24
+Day=weekday & DstRain=light & Slot=12h-18h,Status=delayed,138,2.56,41.44,1.5,0.0086,1.24
+DstRain=none & Load=high & Rain=light,Status=delayed,80,1.48,41.24,1.5,0.0049,1.23
+Airline=VJ & Slot=18h-24h,Status=delayed,202,3.75,41.06,1.49,0.0123,1.23
+Airport=DAD & Day=weekday,Status=delayed,117,2.17,41.05,1.49,0.0071,1.23
+Airline=VJ & Day=weekday,Status=delayed,514,9.53,40.73,1.48,0.0309,1.22
+Gust=<30 & Load=high & Rain=light,Status=delayed,370,6.86,40.66,1.48,0.0221,1.22
+Day=weekday & Dir=departures & Slot=12h-18h,Status=delayed,351,6.51,40.81,1.48,0.0212,1.22
+Rain=light & Slot=12h-18h,Status=delayed,338,6.27,40.82,1.48,0.0204,1.22
+Airline=VN & Load=low,Status=delayed,224,4.16,40.73,1.48,0.0134,1.22
+Airline=VJ & Load=low,Status=delayed,222,4.12,40.88,1.48,0.0134,1.23
+Airport=DAD & Slot=12h-18h,Status=delayed,85,1.58,40.67,1.48,0.0051,1.22
+DstRain=light & Gust=<30 & Rain=light,Status=delayed,83,1.54,40.89,1.48,0.005,1.23
+Airline=VJ & Dir=departures & DstRain=none,Status=delayed,187,3.47,40.48,1.47,0.0111,1.22
+Airport=SGN & Dir=arrivals & Slot=18h-24h,Status=delayed,81,1.5,40.5,1.47,0.0048,1.22
+Load=mid & Rain=light,Status=delayed,69,1.28,40.59,1.47,0.0041,1.22
+Airline=VN & Dir=departures & Vis=<5km,Status=delayed,62,1.15,40.52,1.47,0.0037,1.22
+Day=weekday & DstRain=light & Slot=18h-24h,Status=delayed,75,1.39,40.32,1.46,0.0044,1.21
+Day=weekday & Dir=arrivals & Slot=18h-24h,Status=delayed,114,2.11,39.86,1.45,0.0065,1.2
+Airport=SGN & Day=weekday,Status=delayed,410,7.61,39.77,1.44,0.0234,1.2
+Load=high & Rain=light,Status=delayed,397,7.36,39.54,1.44,0.0223,1.2
+Dir=departures & Load=low & Vis=<5km,Status=delayed,70,1.3,39.55,1.44,0.0039,1.2
+DstRain=light & Rain=light & Vis=>=5km,Status=delayed,65,1.21,39.63,1.44,0.0037,1.2
+Gust=<30 & Rain=light,Status=delayed,580,10.76,39.48,1.43,0.0325,1.2
+DstRain=none & Slot=12h-18h,Status=delayed,154,2.86,39.29,1.43,0.0085,1.19
+Airport=DAD & Gust=<30 & Vis=>=5km,Status=delayed,101,1.87,39.45,1.43,0.0057,1.2
+Airline=VN & Vis=<5km,Status=delayed,73,1.35,39.46,1.43,0.0041,1.2
+Day=weekday & Slot=12h-18h,Status=delayed,456,8.46,39.04,1.42,0.0249,1.19
+Day=weekday & DstRain=light,Status=delayed,293,5.43,39.07,1.42,0.016,1.19
+Airline=VJ & DstRain=none,Status=delayed,199,3.69,39.25,1.42,0.011,1.19
+Airline=VN & Dir=departures & Rain=light,Status=delayed,180,3.34,38.79,1.41,0.0097,1.18
+DstRain=none & Vis=<5km,Status=delayed,57,1.06,38.51,1.4,0.003,1.18
+Dir=departures & Load=low,Status=delayed,444,8.24,38.41,1.39,0.0233,1.18
+Airline=VJ & Dir=arrivals,Status=delayed,233,4.32,38.26,1.39,0.0121,1.17
+DstRain=light & Slot=18h-24h,Status=delayed,79,1.47,37.98,1.38,0.004,1.17
+Rain=light,Status=delayed,625,11.59,37.61,1.37,0.031,1.16
+Vis=<5km,Status=delayed,187,3.47,37.4,1.36,0.0091,1.16
+Airport=DAD & Gust=<30,Status=delayed,146,2.71,37.53,1.36,0.0072,1.16
+Dir=arrivals & Load=high & Slot=18h-24h,Status=delayed,111,2.06,37.37,1.36,0.0054,1.16
+Airline=VJ,Status=delayed,758,14.06,37.16,1.35,0.0364,1.15
+Airport=DAD & Load=low & Vis=>=5km,Status=delayed,85,1.58,36.96,1.34,0.004,1.15
+Day=weekday & Dir=departures & DstRain=none,Status=delayed,306,5.68,36.6,1.33,0.014,1.14
+Airport=SGN & Slot=18h-24h,Status=delayed,178,3.3,36.48,1.32,0.0081,1.14
+DstRain=light & Slot=12h-18h,Status=delayed,167,3.1,36.46,1.32,0.0076,1.14
+Airline=VN & Dir=departures & DstRain=none,Status=delayed,172,3.19,36.06,1.31,0.0075,1.13
+Airline=VN & Day=weekday & Dir=departures,Status=delayed,372,6.9,35.91,1.3,0.0161,1.13
+Airport=SGN & Load=mid,Status=delayed,66,1.22,35.87,1.3,0.0028,1.13
+Load=low,Status=delayed,498,9.24,35.5,1.29,0.0207,1.12
+Day=weekday & Slot=18h-24h,Status=delayed,291,5.4,35.4,1.29,0.012,1.12
+Dir=arrivals & Slot=18h-24h,Status=delayed,165,3.06,35.64,1.29,0.0069,1.13
+Day=weekday & DstRain=none,Status=delayed,329,6.1,35.19,1.28,0.0133,1.12
+Airline=VN & DstRain=none,Status=delayed,181,3.36,34.94,1.27,0.0071,1.11
+Slot=12h-18h,Status=delayed,653,12.11,34.83,1.26,0.0253,1.11
+Airport=DAD,Status=delayed,173,3.21,34.53,1.25,0.0065,1.11
+Airline=VN & Airport=SGN & Dir=departures,Status=delayed,173,3.21,34.26,1.24,0.0063,1.1
+Day=weekday & Dir=departures,Status=delayed,831,15.41,33.73,1.22,0.0282,1.09
+Airline=VN & Airport=SGN & Gust=<30,Status=delayed,225,4.17,33.48,1.22,0.0074,1.09
+Airline=VN & Airport=SGN & Load=high,Status=delayed,198,3.67,33.39,1.21,0.0064,1.09
+Airline=VN & Day=weekday & Rain=light,Status=cancelled,12,0.22,3.42,6.14,0.0019,1.03

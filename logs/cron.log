@@ -1,0 +1,1007 @@
+2026-10-08 12:17:31,562 INFO noibai arrivals 07 / Oct / 2026: 316 dòng
+2026-10-08 12:17:33,524 INFO noibai arrivals 09 / Oct / 2026: 182 dòng
+2026-10-08 12:17:33,529 INFO [noibai_han/arrivals] ghi 814 dòng
+2026-10-08 12:17:39,749 INFO noibai departures 07 / Oct / 2026: 316 dòng
+2026-10-08 12:17:41,657 INFO noibai departures 09 / Oct / 2026: 174 dòng
+2026-10-08 12:17:41,665 INFO [noibai_han/departures] ghi 811 dòng
+2026-10-08 12:17:46,317 WARNING [guide_sgn_arrivals] requests: 81136 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 12:17:54,973 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-08 12:17:58,355 WARNING [guide_sgn_departures] requests: 80937 bytes, 1 <table>, title='Flight Status – Departures – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 12:18:06,611 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-08 14:23:07,265 INFO noibai arrivals 07 / Oct / 2026: 316 dòng
+2026-10-08 14:23:09,068 INFO noibai arrivals 09 / Oct / 2026: 266 dòng
+2026-10-08 14:23:09,073 INFO [noibai_han/arrivals] ghi 898 dòng
+2026-10-08 14:23:15,415 INFO noibai departures 07 / Oct / 2026: 316 dòng
+2026-10-08 14:23:17,322 INFO noibai departures 09 / Oct / 2026: 251 dòng
+2026-10-08 14:23:17,327 INFO [noibai_han/departures] ghi 888 dòng
+2026-10-08 14:23:22,334 WARNING [guide_sgn_arrivals] requests: 81650 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 14:23:29,312 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-08 14:23:32,603 WARNING [guide_sgn_departures] requests: 81122 bytes, 1 <table>, title='Flight Status – Departures – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 14:23:39,163 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-08 14:23:43,520 WARNING [guide_han_arrivals] requests: 82414 bytes, 1 <table>, title='Flight Status – Arrivals – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 14:23:51,560 INFO [guide_han/arrivals] ghi 196 dòng
+2026-10-08 14:23:54,852 WARNING [guide_han_departures] requests: 79605 bytes, 1 <table>, title='Flight Status – Departures – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 14:24:03,546 INFO [guide_han/departures] ghi 191 dòng
+2026-10-08 14:24:08,138 WARNING [guide_dad_arrivals] requests: 58124 bytes, 1 <table>, title='Flight Status – Arrivals – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 14:24:16,080 INFO [guide_dad/arrivals] ghi 97 dòng
+2026-10-08 14:24:20,975 WARNING [guide_dad_departures] requests: 57225 bytes, 1 <table>, title='Flight Status – Departures – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 14:24:28,527 INFO [guide_dad/departures] ghi 93 dòng
+2026-10-08 14:24:33,495 WARNING [guide_cxr_arrivals] requests: 42707 bytes, 1 <table>, title='Flight Status – Arrivals | Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 14:24:40,750 INFO [guide_cxr/arrivals] ghi 44 dòng
+2026-10-08 14:24:44,690 WARNING [guide_cxr_departures] requests: 41812 bytes, 1 <table>, title='Flight Status – Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 14:24:52,699 INFO [guide_cxr/departures] ghi 40 dòng
+2026-10-08 14:24:56,455 WARNING [guide_pqc_arrivals] requests: 47637 bytes, 1 <table>, title='Phu Quoc Airport – Flight Status – Arrivals | Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-08 14:25:07,753 INFO [guide_pqc/arrivals] ghi 50 dòng
+2026-10-08 14:25:10,542 WARNING [guide_pqc_departures] requests: 47910 bytes, 1 <table>, title='Flight Status – Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-08 14:25:18,355 INFO [guide_pqc/departures] ghi 52 dòng
+2026-10-08 14:25:20,355 INFO Tổng dòng thu được lượt này: 2949
+2026-10-08 16:23:07,078 INFO noibai arrivals 07 / Oct / 2026: 316 dòng
+2026-10-08 16:23:09,133 INFO noibai arrivals 09 / Oct / 2026: 330 dòng
+2026-10-08 16:23:09,139 INFO [noibai_han/arrivals] ghi 962 dòng
+2026-10-08 16:23:15,383 INFO noibai departures 07 / Oct / 2026: 316 dòng
+2026-10-08 16:23:17,370 INFO noibai departures 09 / Oct / 2026: 328 dòng
+2026-10-08 16:23:17,378 INFO [noibai_han/departures] ghi 965 dòng
+2026-10-08 16:23:21,217 WARNING [guide_sgn_arrivals] requests: 81671 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+^C2026-10-08 18:23:06,708 INFO noibai arrivals 07 / Oct / 2026: 316 dòng
+2026-10-08 18:23:09,014 INFO noibai arrivals 09 / Oct / 2026: 329 dòng
+2026-10-08 18:23:09,049 INFO [noibai_han/arrivals] ghi 961 dòng
+2026-10-08 18:23:16,130 INFO noibai departures 07 / Oct / 2026: 316 dòng
+2026-10-08 18:23:18,115 INFO noibai departures 09 / Oct / 2026: 327 dòng
+2026-10-08 18:23:18,128 INFO [noibai_han/departures] ghi 964 dòng
+2026-10-08 18:23:28,967 WARNING [guide_sgn_arrivals] requests: 82220 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 18:23:38,496 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-08 18:23:43,476 WARNING [guide_sgn_departures] requests: 80072 bytes, 1 <table>, title='Flight Status – Departures – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 18:23:52,670 INFO [guide_sgn/departures] ghi 194 dòng
+2026-10-08 18:23:57,277 WARNING [guide_han_arrivals] requests: 80418 bytes, 1 <table>, title='Flight Status – Arrivals – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 18:24:04,634 INFO [guide_han/arrivals] ghi 187 dòng
+2026-10-08 18:24:08,305 WARNING [guide_han_departures] requests: 78577 bytes, 1 <table>, title='Flight Status – Departures – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 18:24:15,500 INFO [guide_han/departures] ghi 182 dòng
+2026-10-08 18:24:19,578 WARNING [guide_dad_arrivals] requests: 56321 bytes, 1 <table>, title='Flight Status – Arrivals – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 18:24:28,967 INFO [guide_dad/arrivals] ghi 90 dòng
+2026-10-08 18:24:32,770 WARNING [guide_dad_departures] requests: 55954 bytes, 1 <table>, title='Flight Status – Departures – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 18:24:41,503 INFO [guide_dad/departures] ghi 86 dòng
+2026-10-08 18:24:47,036 WARNING [guide_cxr_arrivals] requests: 39343 bytes, 1 <table>, title='Flight Status – Arrivals | Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 18:24:56,032 INFO [guide_cxr/arrivals] ghi 31 dòng
+2026-10-08 18:24:59,829 WARNING [guide_cxr_departures] requests: 40967 bytes, 1 <table>, title='Flight Status – Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 18:26:31,153 WARNING [guide_cxr_departures] Playwright dự phòng lỗi: Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.nhatrangairport.com/flight-status-departures/", waiting until "networkidle"
+ (đã chạy `playwright install chromium` chưa?)
+2026-10-08 18:26:31,153 INFO [guide_cxr/departures] ghi 0 dòng
+2026-10-08 18:26:35,397 WARNING [guide_pqc_arrivals] requests: 46764 bytes, 1 <table>, title='Phu Quoc Airport – Flight Status – Arrivals | Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-08 18:26:43,559 INFO [guide_pqc/arrivals] ghi 46 dòng
+2026-10-08 18:26:46,664 WARNING [guide_pqc_departures] requests: 46342 bytes, 1 <table>, title='Flight Status – Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-08 18:26:54,685 INFO [guide_pqc/departures] ghi 44 dòng
+2026-10-08 18:26:56,685 INFO Tổng dòng thu được lượt này: 2985
+2026-10-08 20:23:06,557 INFO noibai arrivals 07 / Oct / 2026: 316 dòng
+2026-10-08 20:23:08,629 INFO noibai arrivals 09 / Oct / 2026: 329 dòng
+2026-10-08 20:23:08,634 INFO [noibai_han/arrivals] ghi 961 dòng
+2026-10-08 20:23:14,097 INFO noibai departures 07 / Oct / 2026: 316 dòng
+2026-10-08 20:23:16,155 INFO noibai departures 09 / Oct / 2026: 327 dòng
+2026-10-08 20:23:16,160 INFO [noibai_han/departures] ghi 964 dòng
+2026-10-08 20:23:24,879 WARNING [guide_sgn_arrivals] requests: 83543 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 20:23:37,506 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-08 20:23:42,855 WARNING [guide_sgn_departures] requests: 81505 bytes, 1 <table>, title='Flight Status – Departures – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 20:23:53,813 INFO [guide_sgn/departures] ghi 196 dòng
+2026-10-08 20:24:03,607 WARNING [guide_han_arrivals] requests: 80309 bytes, 1 <table>, title='Flight Status – Arrivals – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 20:24:20,868 INFO [guide_han/arrivals] ghi 184 dòng
+2026-10-08 20:24:25,228 WARNING [guide_han_departures] requests: 76848 bytes, 1 <table>, title='Flight Status – Departures – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 20:24:32,862 INFO [guide_han/departures] ghi 177 dòng
+2026-10-08 20:24:40,198 WARNING [guide_dad_arrivals] requests: 51203 bytes, 1 <table>, title='Flight Status – Arrivals – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 20:24:52,575 INFO [guide_dad/arrivals] ghi 70 dòng
+2026-10-08 20:24:57,200 WARNING [guide_dad_departures] requests: 54118 bytes, 1 <table>, title='Flight Status – Departures – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 20:25:05,955 INFO [guide_dad/departures] ghi 79 dòng
+2026-10-08 20:25:24,189 WARNING [guide_cxr_arrivals] requests: 38228 bytes, 1 <table>, title='Flight Status – Arrivals | Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 20:25:37,775 INFO [guide_cxr/arrivals] ghi 27 dòng
+2026-10-08 20:25:53,908 WARNING [guide_cxr_departures] requests: 39465 bytes, 1 <table>, title='Flight Status – Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 20:26:03,124 INFO [guide_cxr/departures] ghi 31 dòng
+2026-10-08 20:26:10,598 WARNING [guide_pqc_arrivals] requests: 44998 bytes, 1 <table>, title='Phu Quoc Airport – Flight Status – Arrivals | Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-08 20:26:21,028 INFO [guide_pqc/arrivals] ghi 39 dòng
+2026-10-08 20:26:24,623 WARNING [guide_pqc_departures] requests: 45291 bytes, 1 <table>, title='Flight Status – Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-08 20:26:34,063 INFO [guide_pqc/departures] ghi 41 dòng
+2026-10-08 20:26:36,064 INFO Tổng dòng thu được lượt này: 2969
+2026-10-08 22:23:07,250 INFO noibai arrivals 07 / Oct / 2026: 316 dòng
+2026-10-08 22:23:09,770 INFO noibai arrivals 09 / Oct / 2026: 329 dòng
+2026-10-08 22:23:09,775 INFO [noibai_han/arrivals] ghi 961 dòng
+2026-10-08 22:23:16,839 INFO noibai departures 07 / Oct / 2026: 316 dòng
+2026-10-08 22:23:19,173 INFO noibai departures 09 / Oct / 2026: 327 dòng
+2026-10-08 22:23:19,178 INFO [noibai_han/departures] ghi 964 dòng
+2026-10-08 22:23:23,574 WARNING [guide_sgn_arrivals] requests: 83870 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 22:23:36,340 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-08 22:23:39,889 WARNING [guide_sgn_departures] requests: 81328 bytes, 1 <table>, title='Flight Status – Departures – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 22:23:48,668 INFO [guide_sgn/departures] ghi 198 dòng
+2026-10-08 22:24:06,057 WARNING Không đọc được robots.txt của www.hanoiairportonline.com: HTTPSConnectionPool(host='www.hanoiairportonline.com', port=443): Read timed out. (read timeout=15)
+2026-10-08 22:24:08,009 WARNING [guide_han_arrivals] requests: 78290 bytes, 1 <table>, title='Flight Status – Arrivals – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 22:24:16,475 INFO [guide_han/arrivals] ghi 177 dòng
+2026-10-08 22:24:20,680 WARNING [guide_han_departures] requests: 78437 bytes, 1 <table>, title='Flight Status – Departures – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 22:24:37,986 INFO [guide_han/departures] ghi 185 dòng
+2026-10-08 22:24:43,292 WARNING [guide_dad_arrivals] requests: 48470 bytes, 1 <table>, title='Flight Status – Arrivals – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 22:24:51,880 INFO [guide_dad/arrivals] ghi 59 dòng
+2026-10-08 22:24:55,391 WARNING [guide_dad_departures] requests: 49687 bytes, 1 <table>, title='Flight Status – Departures – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 22:25:26,471 WARNING [guide_dad_departures] Playwright dự phòng lỗi: Page.goto: net::ERR_TIMED_OUT at https://www.danangairportonline.com/flight-status-departures/
+Call log:
+  - navigating to "https://www.danangairportonline.com/flight-status-departures/", waiting until "networkidle"
+ (đã chạy `playwright install chromium` chưa?)
+2026-10-08 22:25:26,471 INFO [guide_dad/departures] ghi 0 dòng
+2026-10-08 22:25:32,790 WARNING [guide_cxr_arrivals] requests: 37007 bytes, 1 <table>, title='Flight Status – Arrivals | Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 22:25:42,459 INFO [guide_cxr/arrivals] ghi 23 dòng
+2026-10-08 22:25:47,265 WARNING [guide_cxr_departures] requests: 38946 bytes, 1 <table>, title='Flight Status – Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-08 22:25:56,682 INFO [guide_cxr/departures] ghi 29 dòng
+2026-10-08 22:26:39,637 ERROR [guide_pqc/arrivals] lần 1 lỗi: HTTPSConnectionPool(host='www.phuquocairport.com', port=443): Read timed out. (read timeout=40)
+2026-10-08 22:26:45,744 WARNING [guide_pqc_arrivals] requests: 41501 bytes, 1 <table>, title='Phu Quoc Airport – Flight Status – Arrivals | Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-08 22:26:53,560 INFO [guide_pqc/arrivals] ghi 26 dòng
+2026-10-08 22:26:56,428 WARNING [guide_pqc_departures] requests: 43119 bytes, 1 <table>, title='Flight Status – Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-08 22:27:03,693 INFO [guide_pqc/departures] ghi 33 dòng
+2026-10-08 22:27:05,694 INFO Tổng dòng thu được lượt này: 2855
+2026-10-09 00:23:07,677 INFO noibai arrivals 08 / Oct / 2026: 316 dòng
+2026-10-09 00:23:10,075 INFO noibai arrivals 10 / Oct / 2026: 177 dòng
+2026-10-09 00:23:10,080 INFO [noibai_han/arrivals] ghi 822 dòng
+2026-10-09 00:23:16,182 INFO noibai departures 08 / Oct / 2026: 321 dòng
+2026-10-09 00:23:18,190 INFO noibai departures 10 / Oct / 2026: 171 dòng
+2026-10-09 00:23:18,196 INFO [noibai_han/departures] ghi 819 dòng
+2026-10-09 00:23:22,490 WARNING [guide_sgn_arrivals] requests: 84464 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 00:23:29,325 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-09 00:23:32,308 WARNING [guide_sgn_departures] requests: 80303 bytes, 1 <table>, title='Flight Status – Departures – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 00:23:39,689 INFO [guide_sgn/departures] ghi 195 dòng
+2026-10-09 00:23:43,092 WARNING [guide_han_arrivals] requests: 77923 bytes, 1 <table>, title='Flight Status – Arrivals – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 00:23:50,192 INFO [guide_han/arrivals] ghi 178 dòng
+2026-10-09 00:23:53,225 WARNING [guide_han_departures] requests: 77397 bytes, 1 <table>, title='Flight Status – Departures – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 00:24:00,323 INFO [guide_han/departures] ghi 184 dòng
+2026-10-09 00:24:03,760 WARNING [guide_dad_arrivals] requests: 44481 bytes, 1 <table>, title='Flight Status – Arrivals – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 00:24:10,909 INFO [guide_dad/arrivals] ghi 45 dòng
+2026-10-09 00:24:13,809 WARNING [guide_dad_departures] requests: 47312 bytes, 1 <table>, title='Flight Status – Departures – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 00:24:21,440 INFO [guide_dad/departures] ghi 54 dòng
+2026-10-09 00:24:25,495 WARNING [guide_cxr_arrivals] requests: 38982 bytes, 1 <table>, title='Flight Status – Arrivals | Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 00:24:32,179 INFO [guide_cxr/arrivals] ghi 30 dòng
+2026-10-09 00:24:35,072 WARNING [guide_cxr_departures] requests: 40009 bytes, 1 <table>, title='Flight Status – Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 00:24:41,442 INFO [guide_cxr/departures] ghi 33 dòng
+2026-10-09 00:24:44,934 WARNING [guide_pqc_arrivals] requests: 39979 bytes, 1 <table>, title='Phu Quoc Airport – Flight Status – Arrivals | Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 00:24:52,144 INFO [guide_pqc/arrivals] ghi 20 dòng
+2026-10-09 00:24:54,873 WARNING [guide_pqc_departures] requests: 39978 bytes, 1 <table>, title='Flight Status – Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 00:25:01,260 INFO [guide_pqc/departures] ghi 21 dòng
+2026-10-09 00:25:03,262 INFO Tổng dòng thu được lượt này: 2601
+2026-10-09 02:23:06,730 INFO noibai arrivals 08 / Oct / 2026: 316 dòng
+2026-10-09 02:23:08,524 INFO noibai arrivals 10 / Oct / 2026: 177 dòng
+2026-10-09 02:23:08,529 INFO [noibai_han/arrivals] ghi 822 dòng
+2026-10-09 02:23:13,984 INFO noibai departures 08 / Oct / 2026: 321 dòng
+2026-10-09 02:23:16,312 INFO noibai departures 10 / Oct / 2026: 171 dòng
+2026-10-09 02:23:16,316 INFO [noibai_han/departures] ghi 819 dòng
+2026-10-09 02:23:20,179 WARNING [guide_sgn_arrivals] requests: 83641 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 02:23:26,740 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-09 02:23:30,369 WARNING [guide_sgn_departures] requests: 80351 bytes, 1 <table>, title='Flight Status – Departures – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 02:23:37,458 INFO [guide_sgn/departures] ghi 198 dòng
+2026-10-09 02:23:41,351 WARNING [guide_han_arrivals] requests: 78020 bytes, 1 <table>, title='Flight Status – Arrivals – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 02:23:48,327 INFO [guide_han/arrivals] ghi 180 dòng
+2026-10-09 02:23:51,282 WARNING [guide_han_departures] requests: 76803 bytes, 1 <table>, title='Flight Status – Departures – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 02:23:58,392 INFO [guide_han/departures] ghi 183 dòng
+2026-10-09 02:24:02,013 WARNING [guide_dad_arrivals] requests: 42424 bytes, 1 <table>, title='Flight Status – Arrivals – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 02:24:09,056 INFO [guide_dad/arrivals] ghi 38 dòng
+2026-10-09 02:24:12,056 WARNING [guide_dad_departures] requests: 43762 bytes, 1 <table>, title='Flight Status – Departures – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 02:24:19,294 INFO [guide_dad/departures] ghi 41 dòng
+2026-10-09 02:24:23,012 WARNING [guide_cxr_arrivals] requests: 40261 bytes, 1 <table>, title='Flight Status – Arrivals | Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 02:24:30,092 INFO [guide_cxr/arrivals] ghi 34 dòng
+2026-10-09 02:24:33,330 WARNING [guide_cxr_departures] requests: 40398 bytes, 1 <table>, title='Flight Status – Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 02:24:40,285 INFO [guide_cxr/departures] ghi 34 dòng
+2026-10-09 02:24:43,650 WARNING [guide_pqc_arrivals] requests: 38703 bytes, 1 <table>, title='Phu Quoc Airport – Flight Status – Arrivals | Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 02:24:50,387 INFO [guide_pqc/arrivals] ghi 16 dòng
+2026-10-09 02:24:53,328 WARNING [guide_pqc_departures] requests: 38824 bytes, 1 <table>, title='Flight Status – Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 02:25:00,007 INFO [guide_pqc/departures] ghi 16 dòng
+2026-10-09 02:25:02,008 INFO Tổng dòng thu được lượt này: 2581
+2026-10-09 04:23:07,428 INFO noibai arrivals 08 / Oct / 2026: 316 dòng
+2026-10-09 04:23:09,578 INFO noibai arrivals 10 / Oct / 2026: 177 dòng
+2026-10-09 04:23:09,582 INFO [noibai_han/arrivals] ghi 822 dòng
+2026-10-09 04:23:16,317 INFO noibai departures 08 / Oct / 2026: 321 dòng
+2026-10-09 04:23:18,337 INFO noibai departures 10 / Oct / 2026: 171 dòng
+2026-10-09 04:23:18,341 INFO [noibai_han/departures] ghi 819 dòng
+2026-10-09 04:23:22,072 WARNING [guide_sgn_arrivals] requests: 82276 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 04:23:29,692 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-09 04:23:33,313 WARNING [guide_sgn_departures] requests: 80524 bytes, 1 <table>, title='Flight Status – Departures – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 04:23:40,550 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-09 04:23:44,557 WARNING [guide_han_arrivals] requests: 78230 bytes, 1 <table>, title='Flight Status – Arrivals – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 04:23:52,135 INFO [guide_han/arrivals] ghi 185 dòng
+2026-10-09 04:23:55,058 WARNING [guide_han_departures] requests: 76595 bytes, 1 <table>, title='Flight Status – Departures – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 04:24:02,375 INFO [guide_han/departures] ghi 184 dòng
+2026-10-09 04:24:06,156 WARNING [guide_dad_arrivals] requests: 40934 bytes, 1 <table>, title='Flight Status – Arrivals – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 04:24:13,277 INFO [guide_dad/arrivals] ghi 34 dòng
+2026-10-09 04:24:16,236 WARNING [guide_dad_departures] requests: 43709 bytes, 1 <table>, title='Flight Status – Departures – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 04:24:23,205 INFO [guide_dad/departures] ghi 42 dòng
+2026-10-09 04:24:26,888 WARNING [guide_cxr_arrivals] requests: 41861 bytes, 1 <table>, title='Flight Status – Arrivals | Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 04:24:33,923 INFO [guide_cxr/arrivals] ghi 41 dòng
+2026-10-09 04:24:37,208 WARNING [guide_cxr_departures] requests: 41656 bytes, 1 <table>, title='Flight Status – Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 04:24:44,139 INFO [guide_cxr/departures] ghi 39 dòng
+2026-10-09 04:24:47,684 WARNING [guide_pqc_arrivals] requests: 40043 bytes, 1 <table>, title='Phu Quoc Airport – Flight Status – Arrivals | Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 04:24:54,442 INFO [guide_pqc/arrivals] ghi 22 dòng
+2026-10-09 04:24:57,585 WARNING [guide_pqc_departures] requests: 39509 bytes, 1 <table>, title='Flight Status – Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 04:26:28,537 WARNING [guide_pqc_departures] Playwright dự phòng lỗi: Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.phuquocairport.com/flight-status-departures/", waiting until "networkidle"
+ (đã chạy `playwright install chromium` chưa?)
+2026-10-09 04:26:28,537 INFO [guide_pqc/departures] ghi 0 dòng
+2026-10-09 04:26:30,538 INFO Tổng dòng thu được lượt này: 2588
+2026-10-09 06:23:06,774 INFO noibai arrivals 08 / Oct / 2026: 316 dòng
+2026-10-09 06:23:08,755 INFO noibai arrivals 10 / Oct / 2026: 177 dòng
+2026-10-09 06:23:08,782 INFO [noibai_han/arrivals] ghi 822 dòng
+2026-10-09 06:23:14,427 INFO noibai departures 08 / Oct / 2026: 321 dòng
+2026-10-09 06:23:16,238 INFO noibai departures 10 / Oct / 2026: 171 dòng
+2026-10-09 06:23:16,242 INFO [noibai_han/departures] ghi 819 dòng
+2026-10-09 06:23:20,208 WARNING [guide_sgn_arrivals] requests: 80173 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 06:24:52,034 WARNING [guide_sgn_arrivals] Playwright dự phòng lỗi: Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.hochiminhcityairport.com/flight-status-arrivals-departures/", waiting until "networkidle"
+ (đã chạy `playwright install chromium` chưa?)
+2026-10-09 06:24:52,035 INFO [guide_sgn/arrivals] ghi 0 dòng
+2026-10-09 06:24:56,062 WARNING [guide_sgn_departures] requests: 79222 bytes, 1 <table>, title='Flight Status – Departures – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 06:25:03,813 INFO [guide_sgn/departures] ghi 198 dòng
+2026-10-09 06:25:07,694 WARNING [guide_han_arrivals] requests: 78937 bytes, 1 <table>, title='Flight Status – Arrivals – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 06:25:15,473 INFO [guide_han/arrivals] ghi 191 dòng
+2026-10-09 06:25:18,565 WARNING [guide_han_departures] requests: 76543 bytes, 1 <table>, title='Flight Status – Departures – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 06:25:26,097 INFO [guide_han/departures] ghi 185 dòng
+2026-10-09 06:25:29,866 WARNING [guide_dad_arrivals] requests: 42303 bytes, 1 <table>, title='Flight Status – Arrivals – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 06:25:37,525 INFO [guide_dad/arrivals] ghi 39 dòng
+2026-10-09 06:25:40,490 WARNING [guide_dad_departures] requests: 44390 bytes, 1 <table>, title='Flight Status – Departures – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 06:25:47,793 INFO [guide_dad/departures] ghi 45 dòng
+2026-10-09 06:25:51,974 WARNING [guide_cxr_arrivals] requests: 40110 bytes, 1 <table>, title='Flight Status – Arrivals | Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 06:25:59,758 INFO [guide_cxr/arrivals] ghi 35 dòng
+2026-10-09 06:26:02,645 WARNING [guide_cxr_departures] requests: 40809 bytes, 1 <table>, title='Flight Status – Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 06:26:11,097 INFO [guide_cxr/departures] ghi 36 dòng
+2026-10-09 06:26:14,564 WARNING [guide_pqc_arrivals] requests: 40280 bytes, 1 <table>, title='Phu Quoc Airport – Flight Status – Arrivals | Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 06:26:23,082 INFO [guide_pqc/arrivals] ghi 23 dòng
+2026-10-09 06:26:26,017 WARNING [guide_pqc_departures] requests: 41254 bytes, 1 <table>, title='Flight Status – Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 06:26:33,993 INFO [guide_pqc/departures] ghi 27 dòng
+2026-10-09 06:26:35,993 INFO Tổng dòng thu được lượt này: 2420
+2026-10-09 08:23:06,347 INFO noibai arrivals 08 / Oct / 2026: 316 dòng
+2026-10-09 08:23:08,067 INFO noibai arrivals 10 / Oct / 2026: 177 dòng
+2026-10-09 08:23:08,091 INFO [noibai_han/arrivals] ghi 822 dòng
+2026-10-09 08:23:13,288 INFO noibai departures 08 / Oct / 2026: 320 dòng
+2026-10-09 08:23:15,047 INFO noibai departures 10 / Oct / 2026: 171 dòng
+2026-10-09 08:23:15,052 INFO [noibai_han/departures] ghi 819 dòng
+2026-10-09 08:23:27,120 WARNING [guide_sgn_arrivals] requests: 79341 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 08:23:36,633 INFO [guide_sgn/arrivals] ghi 197 dòng
+2026-10-09 08:23:40,102 WARNING [guide_sgn_departures] requests: 79853 bytes, 1 <table>, title='Flight Status – Departures – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 08:23:49,127 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-09 08:23:53,655 WARNING [guide_han_arrivals] requests: 79049 bytes, 1 <table>, title='Flight Status – Arrivals – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 08:24:02,153 INFO [guide_han/arrivals] ghi 192 dòng
+2026-10-09 08:24:07,406 WARNING [guide_han_departures] requests: 78247 bytes, 1 <table>, title='Flight Status – Departures – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 08:24:15,912 INFO [guide_han/departures] ghi 192 dòng
+2026-10-09 08:24:20,240 WARNING [guide_dad_arrivals] requests: 45947 bytes, 1 <table>, title='Flight Status – Arrivals – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 08:24:28,729 INFO [guide_dad/arrivals] ghi 53 dòng
+2026-10-09 08:24:32,013 WARNING [guide_dad_departures] requests: 46426 bytes, 1 <table>, title='Flight Status – Departures – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 08:26:03,572 WARNING [guide_dad_departures] Playwright dự phòng lỗi: Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.danangairportonline.com/flight-status-departures/", waiting until "networkidle"
+ (đã chạy `playwright install chromium` chưa?)
+2026-10-09 08:26:03,572 INFO [guide_dad/departures] ghi 0 dòng
+2026-10-09 08:26:08,404 WARNING [guide_cxr_arrivals] requests: 40167 bytes, 1 <table>, title='Flight Status – Arrivals | Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 08:26:16,890 INFO [guide_cxr/arrivals] ghi 36 dòng
+2026-10-09 08:26:20,128 WARNING [guide_cxr_departures] requests: 39249 bytes, 1 <table>, title='Flight Status – Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 08:27:51,704 WARNING [guide_cxr_departures] Playwright dự phòng lỗi: Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.nhatrangairport.com/flight-status-departures/", waiting until "networkidle"
+ (đã chạy `playwright install chromium` chưa?)
+2026-10-09 08:27:51,704 INFO [guide_cxr/departures] ghi 0 dòng
+2026-10-09 08:27:55,669 WARNING [guide_pqc_arrivals] requests: 42576 bytes, 1 <table>, title='Phu Quoc Airport – Flight Status – Arrivals | Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 08:28:03,836 INFO [guide_pqc/arrivals] ghi 32 dòng
+2026-10-09 08:28:07,351 WARNING [guide_pqc_departures] requests: 41701 bytes, 1 <table>, title='Flight Status – Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 08:28:15,637 INFO [guide_pqc/departures] ghi 30 dòng
+2026-10-09 08:28:17,638 INFO Tổng dòng thu được lượt này: 2573
+2026-10-09 10:23:10,391 INFO noibai arrivals 08 / Oct / 2026: 316 dòng
+2026-10-09 10:23:12,384 INFO noibai arrivals 10 / Oct / 2026: 181 dòng
+2026-10-09 10:23:12,422 INFO [noibai_han/arrivals] ghi 826 dòng
+2026-10-09 10:23:18,436 INFO noibai departures 08 / Oct / 2026: 320 dòng
+2026-10-09 10:23:20,349 INFO noibai departures 10 / Oct / 2026: 175 dòng
+2026-10-09 10:23:20,363 INFO [noibai_han/departures] ghi 823 dòng
+2026-10-09 10:23:25,074 WARNING [guide_sgn_arrivals] requests: 80427 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 10:23:35,679 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-09 10:23:39,586 WARNING [guide_sgn_departures] requests: 80282 bytes, 1 <table>, title='Flight Status – Departures – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 10:24:12,429 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-09 10:24:17,422 WARNING [guide_han_arrivals] requests: 79672 bytes, 1 <table>, title='Flight Status – Arrivals – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 10:24:25,935 INFO [guide_han/arrivals] ghi 193 dòng
+2026-10-09 10:24:29,781 WARNING [guide_han_departures] requests: 79745 bytes, 1 <table>, title='Flight Status – Departures – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 10:25:09,118 INFO [guide_han/departures] ghi 197 dòng
+2026-10-09 10:25:14,192 WARNING [guide_dad_arrivals] requests: 50454 bytes, 1 <table>, title='Flight Status – Arrivals – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 10:25:22,768 INFO [guide_dad/arrivals] ghi 70 dòng
+2026-10-09 10:25:26,192 WARNING [guide_dad_departures] requests: 49383 bytes, 1 <table>, title='Flight Status – Departures – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 10:25:34,298 INFO [guide_dad/departures] ghi 66 dòng
+2026-10-09 10:25:38,291 WARNING [guide_cxr_arrivals] requests: 40986 bytes, 1 <table>, title='Flight Status – Arrivals | Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 10:25:46,049 INFO [guide_cxr/arrivals] ghi 39 dòng
+2026-10-09 10:25:49,375 WARNING [guide_cxr_departures] requests: 40006 bytes, 1 <table>, title='Flight Status – Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 10:25:58,798 INFO [guide_cxr/departures] ghi 34 dòng
+2026-10-09 10:26:02,777 WARNING [guide_pqc_arrivals] requests: 45438 bytes, 1 <table>, title='Phu Quoc Airport – Flight Status – Arrivals | Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 10:26:11,584 INFO [guide_pqc/arrivals] ghi 43 dòng
+2026-10-09 10:26:15,264 WARNING [guide_pqc_departures] requests: 43346 bytes, 1 <table>, title='Flight Status – Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 10:26:23,983 INFO [guide_pqc/departures] ghi 36 dòng
+2026-10-09 10:26:25,983 INFO Tổng dòng thu được lượt này: 2727
+2026-10-09 12:23:07,025 INFO noibai arrivals 08 / Oct / 2026: 316 dòng
+2026-10-09 12:23:08,897 INFO noibai arrivals 10 / Oct / 2026: 216 dòng
+2026-10-09 12:23:08,932 INFO [noibai_han/arrivals] ghi 861 dòng
+2026-10-09 12:23:15,378 INFO noibai departures 08 / Oct / 2026: 320 dòng
+2026-10-09 12:23:17,225 INFO noibai departures 10 / Oct / 2026: 216 dòng
+2026-10-09 12:23:17,236 INFO [noibai_han/departures] ghi 865 dòng
+2026-10-09 12:23:23,418 WARNING [guide_sgn_arrivals] requests: 80909 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 12:23:32,393 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-09 12:23:36,272 WARNING [guide_sgn_departures] requests: 80754 bytes, 1 <table>, title='Flight Status – Departures – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 12:23:44,102 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-09 12:23:48,860 WARNING [guide_han_arrivals] requests: 80570 bytes, 1 <table>, title='Flight Status – Arrivals – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 12:23:57,301 INFO [guide_han/arrivals] ghi 195 dòng
+2026-10-09 12:24:00,928 WARNING [guide_han_departures] requests: 80136 bytes, 1 <table>, title='Flight Status – Departures – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 12:24:09,180 INFO [guide_han/departures] ghi 195 dòng
+2026-10-09 12:24:13,553 WARNING [guide_dad_arrivals] requests: 55043 bytes, 1 <table>, title='Flight Status – Arrivals – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 12:24:21,602 INFO [guide_dad/arrivals] ghi 87 dòng
+2026-10-09 12:24:25,062 WARNING [guide_dad_departures] requests: 53149 bytes, 1 <table>, title='Flight Status – Departures – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 12:24:33,458 INFO [guide_dad/departures] ghi 79 dòng
+2026-10-09 12:24:38,413 WARNING [guide_cxr_arrivals] requests: 42659 bytes, 1 <table>, title='Flight Status – Arrivals | Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 12:24:46,600 INFO [guide_cxr/arrivals] ghi 45 dòng
+2026-10-09 12:24:50,349 WARNING [guide_cxr_departures] requests: 40583 bytes, 1 <table>, title='Flight Status – Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 12:24:58,749 INFO [guide_cxr/departures] ghi 36 dòng
+2026-10-09 12:25:02,694 WARNING [guide_pqc_arrivals] requests: 47442 bytes, 1 <table>, title='Phu Quoc Airport – Flight Status – Arrivals | Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 12:25:10,409 INFO [guide_pqc/arrivals] ghi 50 dòng
+2026-10-09 12:25:14,254 WARNING [guide_pqc_departures] requests: 46237 bytes, 1 <table>, title='Flight Status – Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 12:25:22,262 INFO [guide_pqc/departures] ghi 47 dòng
+2026-10-09 12:25:24,263 INFO Tổng dòng thu được lượt này: 2860
+2026-10-09 14:23:07,245 INFO noibai arrivals 08 / Oct / 2026: 316 dòng
+2026-10-09 14:23:09,411 INFO noibai arrivals 10 / Oct / 2026: 215 dòng
+2026-10-09 14:23:09,416 INFO [noibai_han/arrivals] ghi 860 dòng
+2026-10-09 14:23:15,405 INFO noibai departures 08 / Oct / 2026: 320 dòng
+2026-10-09 14:23:17,300 INFO noibai departures 10 / Oct / 2026: 215 dòng
+2026-10-09 14:23:17,304 INFO [noibai_han/departures] ghi 863 dòng
+2026-10-09 14:23:20,814 WARNING [guide_sgn_arrivals] requests: 81355 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 14:23:28,575 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-09 14:23:31,612 WARNING [guide_sgn_departures] requests: 81221 bytes, 1 <table>, title='Flight Status – Departures – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 14:23:40,667 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-09 14:23:44,615 WARNING [guide_han_arrivals] requests: 81129 bytes, 1 <table>, title='Flight Status – Arrivals – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 14:23:52,215 INFO [guide_han/arrivals] ghi 195 dòng
+2026-10-09 14:23:55,194 WARNING [guide_han_departures] requests: 79092 bytes, 1 <table>, title='Flight Status – Departures – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 14:24:02,804 INFO [guide_han/departures] ghi 191 dòng
+2026-10-09 14:24:07,583 WARNING [guide_dad_arrivals] requests: 56981 bytes, 1 <table>, title='Flight Status – Arrivals – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 14:24:15,447 INFO [guide_dad/arrivals] ghi 94 dòng
+2026-10-09 14:24:20,078 WARNING [guide_dad_departures] requests: 55854 bytes, 1 <table>, title='Flight Status – Departures – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 14:24:28,364 INFO [guide_dad/departures] ghi 88 dòng
+2026-10-09 14:24:33,173 WARNING [guide_cxr_arrivals] requests: 43556 bytes, 1 <table>, title='Flight Status – Arrivals | Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 14:24:40,234 INFO [guide_cxr/arrivals] ghi 48 dòng
+2026-10-09 14:24:42,927 WARNING [guide_cxr_departures] requests: 42961 bytes, 1 <table>, title='Flight Status – Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 14:24:50,302 INFO [guide_cxr/departures] ghi 45 dòng
+2026-10-09 14:24:53,680 WARNING [guide_pqc_arrivals] requests: 47711 bytes, 1 <table>, title='Phu Quoc Airport – Flight Status – Arrivals | Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 14:25:01,810 INFO [guide_pqc/arrivals] ghi 51 dòng
+2026-10-09 14:25:04,752 WARNING [guide_pqc_departures] requests: 47624 bytes, 1 <table>, title='Flight Status – Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 14:25:12,602 INFO [guide_pqc/departures] ghi 52 dòng
+2026-10-09 14:25:14,603 INFO Tổng dòng thu được lượt này: 2887
+2026-10-09 16:23:08,002 INFO noibai arrivals 08 / Oct / 2026: 316 dòng
+2026-10-09 16:23:10,532 INFO noibai arrivals 10 / Oct / 2026: 313 dòng
+2026-10-09 16:23:10,539 INFO [noibai_han/arrivals] ghi 959 dòng
+2026-10-09 16:23:16,168 INFO noibai departures 08 / Oct / 2026: 320 dòng
+2026-10-09 16:23:18,241 INFO noibai departures 10 / Oct / 2026: 316 dòng
+2026-10-09 16:23:18,245 INFO [noibai_han/departures] ghi 965 dòng
+2026-10-09 16:23:22,054 WARNING [guide_sgn_arrivals] requests: 81467 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 16:23:29,822 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-09 16:23:32,613 WARNING [guide_sgn_departures] requests: 81420 bytes, 1 <table>, title='Flight Status – Departures – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 16:23:40,101 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-09 16:23:43,980 WARNING [guide_han_arrivals] requests: 80196 bytes, 1 <table>, title='Flight Status – Arrivals – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 16:23:50,250 INFO [guide_han/arrivals] ghi 190 dòng
+2026-10-09 16:23:53,992 WARNING [guide_han_departures] requests: 77575 bytes, 1 <table>, title='Flight Status – Departures – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 16:24:01,940 INFO [guide_han/departures] ghi 186 dòng
+2026-10-09 16:24:06,364 WARNING [guide_dad_arrivals] requests: 57429 bytes, 1 <table>, title='Flight Status – Arrivals – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 16:24:13,960 INFO [guide_dad/arrivals] ghi 95 dòng
+2026-10-09 16:24:17,123 WARNING [guide_dad_departures] requests: 56283 bytes, 1 <table>, title='Flight Status – Departures – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 16:24:25,322 INFO [guide_dad/departures] ghi 89 dòng
+2026-10-09 16:24:29,089 WARNING [guide_cxr_arrivals] requests: 42517 bytes, 1 <table>, title='Flight Status – Arrivals | Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 16:24:36,816 INFO [guide_cxr/arrivals] ghi 43 dòng
+2026-10-09 16:24:40,276 WARNING [guide_cxr_departures] requests: 42707 bytes, 1 <table>, title='Flight Status – Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 16:24:48,132 INFO [guide_cxr/departures] ghi 44 dòng
+2026-10-09 16:24:51,869 WARNING [guide_pqc_arrivals] requests: 46712 bytes, 1 <table>, title='Phu Quoc Airport – Flight Status – Arrivals | Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 16:25:01,358 INFO [guide_pqc/arrivals] ghi 47 dòng
+2026-10-09 16:25:04,364 WARNING [guide_pqc_departures] requests: 47068 bytes, 1 <table>, title='Flight Status – Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 16:25:12,147 INFO [guide_pqc/departures] ghi 50 dòng
+2026-10-09 16:25:14,147 INFO Tổng dòng thu được lượt này: 3068
+2026-10-09 18:23:07,510 INFO noibai arrivals 08 / Oct / 2026: 316 dòng
+2026-10-09 18:23:09,784 INFO noibai arrivals 10 / Oct / 2026: 314 dòng
+2026-10-09 18:23:09,789 INFO [noibai_han/arrivals] ghi 960 dòng
+2026-10-09 18:23:15,681 INFO noibai departures 08 / Oct / 2026: 320 dòng
+2026-10-09 18:23:17,741 INFO noibai departures 10 / Oct / 2026: 317 dòng
+2026-10-09 18:23:17,748 INFO [noibai_han/departures] ghi 966 dòng
+2026-10-09 18:23:21,145 WARNING [guide_sgn_arrivals] requests: 81508 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 18:23:28,490 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-09 18:23:31,266 WARNING [guide_sgn_departures] requests: 81805 bytes, 1 <table>, title='Flight Status – Departures – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 18:23:39,167 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-09 18:23:42,814 WARNING [guide_han_arrivals] requests: 80244 bytes, 1 <table>, title='Flight Status – Arrivals – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 18:23:50,178 INFO [guide_han/arrivals] ghi 189 dòng
+2026-10-09 18:23:53,402 WARNING [guide_han_departures] requests: 78317 bytes, 1 <table>, title='Flight Status – Departures – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 18:24:02,812 INFO [guide_han/departures] ghi 187 dòng
+2026-10-09 18:24:07,289 WARNING [guide_dad_arrivals] requests: 57430 bytes, 1 <table>, title='Flight Status – Arrivals – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 18:24:15,181 INFO [guide_dad/arrivals] ghi 95 dòng
+2026-10-09 18:24:18,528 WARNING [guide_dad_departures] requests: 54927 bytes, 1 <table>, title='Flight Status – Departures – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 18:24:26,146 INFO [guide_dad/departures] ghi 84 dòng
+2026-10-09 18:24:32,659 WARNING [guide_cxr_arrivals] requests: 41165 bytes, 1 <table>, title='Flight Status – Arrivals | Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 18:24:40,070 INFO [guide_cxr/arrivals] ghi 38 dòng
+2026-10-09 18:24:42,774 WARNING [guide_cxr_departures] requests: 40793 bytes, 1 <table>, title='Flight Status – Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 18:24:50,977 INFO [guide_cxr/departures] ghi 37 dòng
+2026-10-09 18:24:54,564 WARNING [guide_pqc_arrivals] requests: 45296 bytes, 1 <table>, title='Phu Quoc Airport – Flight Status – Arrivals | Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 18:25:02,015 INFO [guide_pqc/arrivals] ghi 42 dòng
+2026-10-09 18:25:04,870 WARNING [guide_pqc_departures] requests: 44350 bytes, 1 <table>, title='Flight Status – Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 18:25:11,590 INFO [guide_pqc/departures] ghi 39 dòng
+2026-10-09 18:25:13,591 INFO Tổng dòng thu được lượt này: 3037
+2026-10-09 18:57:30,491 INFO noibai arrivals 08 / Oct / 2026: 316 dòng
+2026-10-09 18:57:32,503 INFO noibai arrivals 10 / Oct / 2026: 314 dòng
+2026-10-09 18:57:32,509 INFO [noibai_han/arrivals] ghi 960 dòng
+2026-10-09 18:57:38,223 INFO noibai departures 08 / Oct / 2026: 320 dòng
+2026-10-09 18:57:40,230 INFO noibai departures 10 / Oct / 2026: 317 dòng
+2026-10-09 18:57:40,240 INFO [noibai_han/departures] ghi 966 dòng
+2026-10-09 18:57:45,159 WARNING [guide_sgn_arrivals] requests: 81872 bytes, 1 <table>, title='Flight Status – Arrivals – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 18:57:55,029 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-09 18:58:01,818 WARNING [guide_sgn_departures] requests: 81991 bytes, 1 <table>, title='Flight Status – Departures – Ho Chi Minh City Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 18:58:10,279 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-09 18:58:14,282 WARNING [guide_han_arrivals] requests: 79921 bytes, 1 <table>, title='Flight Status – Arrivals – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 18:58:21,817 INFO [guide_han/arrivals] ghi 188 dòng
+2026-10-09 18:58:25,412 WARNING [guide_han_departures] requests: 77235 bytes, 1 <table>, title='Flight Status – Departures – Hanoi Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 18:58:33,570 INFO [guide_han/departures] ghi 183 dòng
+2026-10-09 18:58:38,656 WARNING [guide_dad_arrivals] requests: 56357 bytes, 1 <table>, title='Flight Status – Arrivals – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 18:58:47,229 INFO [guide_dad/arrivals] ghi 91 dòng
+2026-10-09 18:58:51,797 WARNING [guide_dad_departures] requests: 55823 bytes, 1 <table>, title='Flight Status – Departures – Da Nang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 18:59:01,961 INFO [guide_dad/departures] ghi 87 dòng
+2026-10-09 18:59:06,318 WARNING [guide_cxr_arrivals] requests: 40154 bytes, 1 <table>, title='Flight Status – Arrivals | Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 18:59:13,879 INFO [guide_cxr/arrivals] ghi 34 dòng
+2026-10-09 18:59:17,527 WARNING [guide_cxr_departures] requests: 40660 bytes, 1 <table>, title='Flight Status – Departures – Nha Trang Airport Guide' -> 0 dòng, thử Playwright
+2026-10-09 18:59:25,748 INFO [guide_cxr/departures] ghi 36 dòng
+2026-10-09 18:59:29,729 WARNING [guide_pqc_arrivals] requests: 44621 bytes, 1 <table>, title='Phu Quoc Airport – Flight Status – Arrivals | Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 18:59:37,943 INFO [guide_pqc/arrivals] ghi 39 dòng
+2026-10-09 18:59:41,141 WARNING [guide_pqc_departures] requests: 44805 bytes, 1 <table>, title='Flight Status – Departures – Phu Quoc Airport' -> 0 dòng, thử Playwright
+2026-10-09 18:59:48,693 INFO [guide_pqc/departures] ghi 41 dòng
+2026-10-09 18:59:50,694 INFO Tổng dòng thu được lượt này: 3025
+2026-10-09 19:06:59,170 INFO noibai arrivals 08 / Oct / 2026: 316 dòng
+2026-10-09 19:07:01,256 INFO noibai arrivals 10 / Oct / 2026: 314 dòng
+2026-10-09 19:07:01,267 INFO [noibai_han/arrivals] ghi 960 dòng
+2026-10-09 19:07:07,633 INFO noibai departures 08 / Oct / 2026: 320 dòng
+2026-10-09 19:07:09,777 INFO noibai departures 10 / Oct / 2026: 317 dòng
+2026-10-09 19:07:09,788 INFO [noibai_han/departures] ghi 966 dòng
+2026-10-09 19:07:16,670 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-09 19:07:22,792 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-09 19:07:28,990 INFO [guide_han/arrivals] ghi 188 dòng
+2026-10-09 19:07:35,516 INFO [guide_han/departures] ghi 183 dòng
+2026-10-09 19:07:52,523 INFO [guide_dad/arrivals] ghi 85 dòng
+2026-10-09 19:07:58,719 INFO [guide_dad/departures] ghi 89 dòng
+2026-10-09 19:08:04,498 INFO [guide_cxr/arrivals] ghi 34 dòng
+2026-10-09 19:08:11,038 INFO [guide_cxr/departures] ghi 36 dòng
+2026-10-09 19:08:17,113 INFO [guide_pqc/arrivals] ghi 39 dòng
+2026-10-09 19:08:23,745 INFO [guide_pqc/departures] ghi 41 dòng
+2026-10-09 19:08:26,342 INFO Tổng dòng thu được lượt này: 3021
+2026-10-09 21:06:08,818 INFO noibai arrivals 08 / Oct / 2026: 316 dòng
+2026-10-09 21:06:11,223 INFO noibai arrivals 10 / Oct / 2026: 314 dòng
+2026-10-09 21:06:11,241 INFO [noibai_han/arrivals] ghi 960 dòng
+2026-10-09 21:06:18,160 INFO noibai departures 08 / Oct / 2026: 320 dòng
+2026-10-09 21:06:20,175 INFO noibai departures 10 / Oct / 2026: 317 dòng
+2026-10-09 21:06:20,187 INFO [noibai_han/departures] ghi 966 dòng
+2026-10-09 21:06:37,485 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-09 21:06:46,781 INFO [guide_sgn/departures] ghi 199 dòng
+2026-10-09 21:07:01,138 INFO [guide_han/arrivals] ghi 188 dòng
+2026-10-09 21:07:08,627 INFO [guide_han/departures] ghi 180 dòng
+2026-10-09 21:07:17,680 INFO [guide_dad/arrivals] ghi 71 dòng
+2026-10-09 21:07:26,499 INFO [guide_dad/departures] ghi 74 dòng
+2026-10-09 21:07:36,323 INFO [guide_cxr/arrivals] ghi 30 dòng
+2026-10-09 21:07:45,861 INFO [guide_cxr/departures] ghi 31 dòng
+2026-10-09 21:07:54,508 INFO [guide_pqc/arrivals] ghi 31 dòng
+2026-10-09 21:08:02,206 INFO [guide_pqc/departures] ghi 34 dòng
+2026-10-09 21:08:04,624 INFO Tổng dòng thu được lượt này: 2964
+2026-10-09 23:06:08,423 INFO noibai arrivals 08 / Oct / 2026: 316 dòng
+2026-10-09 23:06:10,479 INFO noibai arrivals 10 / Oct / 2026: 314 dòng
+2026-10-09 23:06:10,491 INFO [noibai_han/arrivals] ghi 960 dòng
+2026-10-09 23:06:16,532 INFO noibai departures 08 / Oct / 2026: 320 dòng
+2026-10-09 23:06:18,511 INFO noibai departures 10 / Oct / 2026: 317 dòng
+2026-10-09 23:06:18,516 INFO [noibai_han/departures] ghi 966 dòng
+2026-10-09 23:06:27,773 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-09 23:06:33,678 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-09 23:06:39,586 INFO [guide_han/arrivals] ghi 176 dòng
+2026-10-09 23:06:46,366 INFO [guide_han/departures] ghi 180 dòng
+2026-10-09 23:06:54,970 INFO [guide_dad/arrivals] ghi 55 dòng
+2026-10-09 23:07:01,921 INFO [guide_dad/departures] ghi 56 dòng
+2026-10-09 23:07:08,849 INFO [guide_cxr/arrivals] ghi 33 dòng
+2026-10-09 23:07:15,722 INFO [guide_cxr/departures] ghi 37 dòng
+2026-10-09 23:07:22,354 INFO [guide_pqc/arrivals] ghi 20 dòng
+2026-10-09 23:07:28,377 INFO [guide_pqc/departures] ghi 26 dòng
+2026-10-09 23:07:31,275 INFO Tổng dòng thu được lượt này: 2909
+2026-10-10 01:06:07,556 INFO noibai arrivals 09 / Oct / 2026: 330 dòng
+2026-10-10 01:06:09,460 INFO noibai arrivals 11 / Oct / 2026: 162 dòng
+2026-10-10 01:06:09,487 INFO [noibai_han/arrivals] ghi 806 dòng
+2026-10-10 01:06:14,893 INFO noibai departures 09 / Oct / 2026: 329 dòng
+2026-10-10 01:06:16,917 INFO noibai departures 11 / Oct / 2026: 156 dòng
+2026-10-10 01:06:16,921 INFO [noibai_han/departures] ghi 802 dòng
+2026-10-10 01:06:26,072 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-10 01:06:31,565 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-10 01:06:37,340 INFO [guide_han/arrivals] ghi 183 dòng
+2026-10-10 01:06:43,796 INFO [guide_han/departures] ghi 181 dòng
+2026-10-10 01:06:50,502 INFO [guide_dad/arrivals] ghi 39 dòng
+2026-10-10 01:06:56,904 INFO [guide_dad/departures] ghi 47 dòng
+2026-10-10 01:07:02,707 INFO [guide_cxr/arrivals] ghi 32 dòng
+2026-10-10 01:07:09,562 INFO [guide_cxr/departures] ghi 35 dòng
+2026-10-10 01:07:15,570 INFO [guide_pqc/arrivals] ghi 13 dòng
+2026-10-10 01:07:21,596 INFO [guide_pqc/departures] ghi 17 dòng
+2026-10-10 01:07:23,825 INFO Tổng dòng thu được lượt này: 2555
+2026-10-10 03:06:06,497 INFO noibai arrivals 09 / Oct / 2026: 330 dòng
+2026-10-10 03:06:08,814 INFO noibai arrivals 11 / Oct / 2026: 162 dòng
+2026-10-10 03:06:08,818 INFO [noibai_han/arrivals] ghi 806 dòng
+2026-10-10 03:06:15,149 INFO noibai departures 09 / Oct / 2026: 329 dòng
+2026-10-10 03:06:17,347 INFO noibai departures 11 / Oct / 2026: 156 dòng
+2026-10-10 03:06:17,354 INFO [noibai_han/departures] ghi 802 dòng
+2026-10-10 03:06:23,361 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-10 03:06:28,571 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-10 03:06:33,720 INFO [guide_han/arrivals] ghi 178 dòng
+2026-10-10 03:06:38,795 INFO [guide_han/departures] ghi 182 dòng
+2026-10-10 03:06:44,391 INFO [guide_dad/arrivals] ghi 37 dòng
+2026-10-10 03:06:49,372 INFO [guide_dad/departures] ghi 44 dòng
+2026-10-10 03:06:55,256 INFO [guide_cxr/arrivals] ghi 32 dòng
+2026-10-10 03:07:00,046 INFO [guide_cxr/departures] ghi 34 dòng
+2026-10-10 03:07:05,385 INFO [guide_pqc/arrivals] ghi 15 dòng
+2026-10-10 03:07:10,299 INFO [guide_pqc/departures] ghi 13 dòng
+2026-10-10 03:07:12,489 INFO Tổng dòng thu được lượt này: 2543
+2026-10-10 05:06:06,678 INFO noibai arrivals 09 / Oct / 2026: 330 dòng
+2026-10-10 05:06:08,591 INFO noibai arrivals 11 / Oct / 2026: 162 dòng
+2026-10-10 05:06:08,596 INFO [noibai_han/arrivals] ghi 806 dòng
+2026-10-10 05:06:14,167 INFO noibai departures 09 / Oct / 2026: 329 dòng
+2026-10-10 05:06:16,459 INFO noibai departures 11 / Oct / 2026: 156 dòng
+2026-10-10 05:06:16,464 INFO [noibai_han/departures] ghi 802 dòng
+2026-10-10 05:06:22,752 INFO [guide_sgn/arrivals] ghi 198 dòng
+2026-10-10 05:06:27,809 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-10 05:06:32,831 INFO [guide_han/arrivals] ghi 179 dòng
+2026-10-10 05:06:37,697 INFO [guide_han/departures] ghi 187 dòng
+2026-10-10 05:06:42,996 INFO [guide_dad/arrivals] ghi 41 dòng
+2026-10-10 05:06:48,394 INFO [guide_dad/departures] ghi 48 dòng
+2026-10-10 05:06:53,437 INFO [guide_cxr/arrivals] ghi 34 dòng
+2026-10-10 05:06:58,615 INFO [guide_cxr/departures] ghi 36 dòng
+2026-10-10 05:07:04,394 INFO [guide_pqc/arrivals] ghi 22 dòng
+2026-10-10 05:07:09,370 INFO [guide_pqc/departures] ghi 20 dòng
+2026-10-10 05:07:11,566 INFO Tổng dòng thu được lượt này: 2573
+2026-10-10 07:06:07,346 INFO noibai arrivals 09 / Oct / 2026: 330 dòng
+2026-10-10 07:06:09,535 INFO noibai arrivals 11 / Oct / 2026: 162 dòng
+2026-10-10 07:06:09,540 INFO [noibai_han/arrivals] ghi 806 dòng
+2026-10-10 07:06:15,562 INFO noibai departures 09 / Oct / 2026: 329 dòng
+2026-10-10 07:06:17,779 INFO noibai departures 11 / Oct / 2026: 156 dòng
+2026-10-10 07:06:17,783 INFO [noibai_han/departures] ghi 802 dòng
+2026-10-10 07:06:24,253 INFO [guide_sgn/arrivals] ghi 196 dòng
+2026-10-10 07:06:29,374 INFO [guide_sgn/departures] ghi 199 dòng
+2026-10-10 07:06:35,037 INFO [guide_han/arrivals] ghi 186 dòng
+2026-10-10 07:06:40,192 INFO [guide_han/departures] ghi 186 dòng
+2026-10-10 07:06:45,654 INFO [guide_dad/arrivals] ghi 50 dòng
+2026-10-10 07:06:51,219 INFO [guide_dad/departures] ghi 52 dòng
+2026-10-10 07:06:56,172 INFO [guide_cxr/arrivals] ghi 28 dòng
+2026-10-10 07:07:01,044 INFO [guide_cxr/departures] ghi 32 dòng
+2026-10-10 07:07:06,775 INFO [guide_pqc/arrivals] ghi 26 dòng
+2026-10-10 07:07:12,530 INFO [guide_pqc/departures] ghi 27 dòng
+2026-10-10 07:07:14,699 INFO Tổng dòng thu được lượt này: 2590
+2026-10-10 09:06:07,248 INFO noibai arrivals 09 / Oct / 2026: 330 dòng
+2026-10-10 09:06:09,327 INFO noibai arrivals 11 / Oct / 2026: 167 dòng
+2026-10-10 09:06:09,331 INFO [noibai_han/arrivals] ghi 811 dòng
+2026-10-10 09:06:15,466 INFO noibai departures 09 / Oct / 2026: 329 dòng
+2026-10-10 09:06:17,213 INFO noibai departures 11 / Oct / 2026: 160 dòng
+2026-10-10 09:06:17,219 INFO [noibai_han/departures] ghi 807 dòng
+2026-10-10 09:06:23,222 INFO [guide_sgn/arrivals] ghi 197 dòng
+2026-10-10 09:06:28,999 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-10 09:06:33,939 INFO [guide_han/arrivals] ghi 189 dòng
+2026-10-10 09:06:39,048 INFO [guide_han/departures] ghi 188 dòng
+2026-10-10 09:06:44,603 INFO [guide_dad/arrivals] ghi 65 dòng
+2026-10-10 09:06:49,986 INFO [guide_dad/departures] ghi 65 dòng
+2026-10-10 09:06:55,098 INFO [guide_cxr/arrivals] ghi 30 dòng
+2026-10-10 09:06:59,841 INFO [guide_cxr/departures] ghi 31 dòng
+2026-10-10 09:07:05,706 INFO [guide_pqc/arrivals] ghi 35 dòng
+2026-10-10 09:07:10,928 INFO [guide_pqc/departures] ghi 30 dòng
+2026-10-10 09:07:13,147 INFO Tổng dòng thu được lượt này: 2648
+2026-10-10 11:06:07,694 INFO noibai arrivals 09 / Oct / 2026: 330 dòng
+2026-10-10 11:06:09,837 INFO noibai arrivals 11 / Oct / 2026: 168 dòng
+2026-10-10 11:06:09,862 INFO [noibai_han/arrivals] ghi 812 dòng
+2026-10-10 11:06:16,244 INFO noibai departures 09 / Oct / 2026: 329 dòng
+2026-10-10 11:06:18,334 INFO noibai departures 11 / Oct / 2026: 161 dòng
+2026-10-10 11:06:18,338 INFO [noibai_han/departures] ghi 808 dòng
+2026-10-10 11:06:25,478 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-10 11:06:31,006 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-10 11:06:36,839 INFO [guide_han/arrivals] ghi 193 dòng
+2026-10-10 11:06:42,240 INFO [guide_han/departures] ghi 195 dòng
+2026-10-10 11:06:48,154 INFO [guide_dad/arrivals] ghi 77 dòng
+2026-10-10 11:06:54,340 INFO [guide_dad/departures] ghi 80 dòng
+2026-10-10 11:06:59,440 INFO [guide_cxr/arrivals] ghi 32 dòng
+2026-10-10 11:07:04,252 INFO [guide_cxr/departures] ghi 34 dòng
+2026-10-10 11:07:09,739 INFO [guide_pqc/arrivals] ghi 45 dòng
+2026-10-10 11:07:14,932 INFO [guide_pqc/departures] ghi 39 dòng
+2026-10-10 11:07:17,147 INFO Tổng dòng thu được lượt này: 2715
+2026-10-10 13:06:10,076 INFO noibai arrivals 09 / Oct / 2026: 330 dòng
+2026-10-10 13:06:11,895 INFO noibai arrivals 11 / Oct / 2026: 220 dòng
+2026-10-10 13:06:11,904 INFO [noibai_han/arrivals] ghi 864 dòng
+2026-10-10 13:06:18,325 INFO noibai departures 09 / Oct / 2026: 329 dòng
+2026-10-10 13:06:20,191 INFO noibai departures 11 / Oct / 2026: 214 dòng
+2026-10-10 13:06:20,197 INFO [noibai_han/departures] ghi 861 dòng
+2026-10-10 13:06:31,980 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-10 13:06:38,125 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-10 13:06:44,503 INFO [guide_han/arrivals] ghi 199 dòng
+2026-10-10 13:06:50,274 INFO [guide_han/departures] ghi 199 dòng
+2026-10-10 13:06:56,578 INFO [guide_dad/arrivals] ghi 94 dòng
+2026-10-10 13:07:03,273 INFO [guide_dad/departures] ghi 92 dòng
+2026-10-10 13:07:08,997 INFO [guide_cxr/arrivals] ghi 41 dòng
+2026-10-10 13:07:14,280 INFO [guide_cxr/departures] ghi 40 dòng
+2026-10-10 13:07:20,062 INFO [guide_pqc/arrivals] ghi 55 dòng
+2026-10-10 13:07:25,763 INFO [guide_pqc/departures] ghi 47 dòng
+2026-10-10 13:07:28,649 INFO Tổng dòng thu được lượt này: 2892
+2026-10-10 15:06:08,303 INFO noibai arrivals 09 / Oct / 2026: 330 dòng
+2026-10-10 15:06:10,219 INFO noibai arrivals 11 / Oct / 2026: 264 dòng
+2026-10-10 15:06:10,228 INFO [noibai_han/arrivals] ghi 908 dòng
+2026-10-10 15:06:16,258 INFO noibai departures 09 / Oct / 2026: 329 dòng
+2026-10-10 15:06:18,154 INFO noibai departures 11 / Oct / 2026: 261 dòng
+2026-10-10 15:06:18,163 INFO [noibai_han/departures] ghi 908 dòng
+2026-10-10 15:06:28,217 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-10 15:06:34,133 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-10 15:06:40,676 INFO [guide_han/arrivals] ghi 200 dòng
+2026-10-10 15:06:45,825 INFO [guide_han/departures] ghi 195 dòng
+2026-10-10 15:06:51,694 INFO [guide_dad/arrivals] ghi 97 dòng
+2026-10-10 15:06:57,978 INFO [guide_dad/departures] ghi 94 dòng
+2026-10-10 15:07:03,324 INFO [guide_cxr/arrivals] ghi 40 dòng
+2026-10-10 15:07:08,501 INFO [guide_cxr/departures] ghi 44 dòng
+2026-10-10 15:07:14,088 INFO [guide_pqc/arrivals] ghi 54 dòng
+2026-10-10 15:07:19,605 INFO [guide_pqc/departures] ghi 53 dòng
+2026-10-10 15:07:21,917 INFO Tổng dòng thu được lượt này: 2993
+2026-10-10 17:06:07,204 INFO noibai arrivals 09 / Oct / 2026: 330 dòng
+2026-10-10 17:06:09,190 INFO noibai arrivals 11 / Oct / 2026: 329 dòng
+2026-10-10 17:06:09,225 INFO [noibai_han/arrivals] ghi 973 dòng
+2026-10-10 17:06:15,466 INFO noibai departures 09 / Oct / 2026: 329 dòng
+2026-10-10 17:06:17,517 INFO noibai departures 11 / Oct / 2026: 329 dòng
+2026-10-10 17:06:17,522 INFO [noibai_han/departures] ghi 976 dòng
+2026-10-10 17:06:25,065 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-10 17:06:30,343 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-10 17:06:35,972 INFO [guide_han/arrivals] ghi 196 dòng
+2026-10-10 17:06:41,123 INFO [guide_han/departures] ghi 194 dòng
+2026-10-10 17:06:47,463 INFO [guide_dad/arrivals] ghi 91 dòng
+2026-10-10 17:06:53,326 INFO [guide_dad/departures] ghi 87 dòng
+2026-10-10 17:06:58,990 INFO [guide_cxr/arrivals] ghi 33 dòng
+2026-10-10 17:07:04,199 INFO [guide_cxr/departures] ghi 39 dòng
+2026-10-10 17:07:10,112 INFO [guide_pqc/arrivals] ghi 46 dòng
+2026-10-10 17:07:15,299 INFO [guide_pqc/departures] ghi 49 dòng
+2026-10-10 17:07:17,474 INFO Tổng dòng thu được lượt này: 3084
+2026-10-10 19:06:06,890 INFO noibai arrivals 09 / Oct / 2026: 330 dòng
+2026-10-10 19:06:08,889 INFO noibai arrivals 11 / Oct / 2026: 329 dòng
+2026-10-10 19:06:08,898 INFO [noibai_han/arrivals] ghi 973 dòng
+2026-10-10 19:06:15,159 INFO noibai departures 09 / Oct / 2026: 329 dòng
+2026-10-10 19:06:17,290 INFO noibai departures 11 / Oct / 2026: 329 dòng
+2026-10-10 19:06:17,301 INFO [noibai_han/departures] ghi 976 dòng
+2026-10-10 19:06:24,766 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-10 19:06:30,691 INFO [guide_sgn/departures] ghi 196 dòng
+2026-10-10 19:06:37,860 INFO [guide_han/arrivals] ghi 192 dòng
+2026-10-10 19:06:43,509 INFO [guide_han/departures] ghi 173 dòng
+2026-10-10 19:06:51,379 INFO [guide_dad/arrivals] ghi 81 dòng
+2026-10-10 19:06:58,201 INFO [guide_dad/departures] ghi 82 dòng
+2026-10-10 19:07:05,161 INFO [guide_cxr/arrivals] ghi 29 dòng
+2026-10-10 19:07:10,785 INFO [guide_cxr/departures] ghi 37 dòng
+2026-10-10 19:07:16,836 INFO [guide_pqc/arrivals] ghi 42 dòng
+2026-10-10 19:07:23,285 INFO [guide_pqc/departures] ghi 41 dòng
+2026-10-10 19:07:26,276 INFO Tổng dòng thu được lượt này: 3022
+2026-10-10 21:06:05,443 INFO [noibai_han/arrivals] ghi 314 dòng
+2026-10-10 21:06:08,234 INFO [noibai_han/departures] ghi 318 dòng
+2026-10-10 21:06:17,022 INFO [guide_sgn/arrivals] ghi 199 dòng
+2026-10-10 21:06:21,159 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-10 21:06:24,596 INFO [guide_han/arrivals] ghi 177 dòng
+2026-10-10 21:06:27,840 INFO [guide_han/departures] ghi 175 dòng
+2026-10-10 21:06:31,854 INFO [guide_dad/arrivals] ghi 65 dòng
+2026-10-10 21:06:37,386 INFO [guide_dad/departures] ghi 70 dòng
+2026-10-10 21:06:44,527 INFO [guide_cxr/arrivals] ghi 26 dòng
+2026-10-10 21:06:47,987 INFO [guide_cxr/departures] ghi 29 dòng
+2026-10-10 21:06:50,866 INFO [guide_pqc/arrivals] ghi 34 dòng
+2026-10-10 21:06:53,583 INFO [guide_pqc/departures] ghi 37 dòng
+2026-10-10 21:06:55,392 INFO Tổng dòng thu được lượt này: 1644
+2026-10-10 23:06:04,894 INFO [noibai_han/arrivals] ghi 314 dòng
+2026-10-10 23:06:07,421 INFO [noibai_han/departures] ghi 318 dòng
+2026-10-10 23:06:12,188 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-10 23:06:14,772 INFO [guide_sgn/departures] ghi 195 dòng
+2026-10-10 23:06:17,986 INFO [guide_han/arrivals] ghi 165 dòng
+2026-10-10 23:06:20,763 INFO [guide_han/departures] ghi 167 dòng
+2026-10-10 23:06:24,341 INFO [guide_dad/arrivals] ghi 55 dòng
+2026-10-10 23:06:27,422 INFO [guide_dad/departures] ghi 57 dòng
+2026-10-10 23:06:29,895 INFO [guide_cxr/arrivals] ghi 28 dòng
+2026-10-10 23:06:34,332 INFO [guide_cxr/departures] ghi 29 dòng
+2026-10-10 23:06:37,318 INFO [guide_pqc/arrivals] ghi 25 dòng
+2026-10-10 23:06:39,927 INFO [guide_pqc/departures] ghi 27 dòng
+2026-10-10 23:06:41,596 INFO Tổng dòng thu được lượt này: 1580
+2026-10-11 01:06:04,386 INFO [noibai_han/arrivals] ghi 329 dòng
+2026-10-11 01:06:06,501 INFO [noibai_han/departures] ghi 329 dòng
+2026-10-11 01:06:10,158 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-11 01:06:13,112 INFO [guide_sgn/departures] ghi 198 dòng
+2026-10-11 01:06:15,568 INFO [guide_han/arrivals] ghi 162 dòng
+2026-10-11 01:06:18,123 INFO [guide_han/departures] ghi 169 dòng
+2026-10-11 01:06:21,337 INFO [guide_dad/arrivals] ghi 42 dòng
+2026-10-11 01:06:23,839 INFO [guide_dad/departures] ghi 42 dòng
+2026-10-11 01:06:26,225 INFO [guide_cxr/arrivals] ghi 33 dòng
+2026-10-11 01:06:28,507 INFO [guide_cxr/departures] ghi 36 dòng
+2026-10-11 01:06:31,784 INFO [guide_pqc/arrivals] ghi 15 dòng
+2026-10-11 01:06:34,348 INFO [guide_pqc/departures] ghi 18 dòng
+2026-10-11 01:06:36,043 INFO Tổng dòng thu được lượt này: 1573
+2026-10-11 03:06:03,985 INFO [noibai_han/arrivals] ghi 329 dòng
+2026-10-11 03:06:06,098 INFO [noibai_han/departures] ghi 329 dòng
+2026-10-11 03:06:09,501 INFO [guide_sgn/arrivals] ghi 197 dòng
+2026-10-11 03:06:12,193 INFO [guide_sgn/departures] ghi 195 dòng
+2026-10-11 03:06:14,529 INFO [guide_han/arrivals] ghi 166 dòng
+2026-10-11 03:06:16,956 INFO [guide_han/departures] ghi 176 dòng
+2026-10-11 03:06:20,178 INFO [guide_dad/arrivals] ghi 36 dòng
+2026-10-11 03:06:23,253 INFO [guide_dad/departures] ghi 39 dòng
+2026-10-11 03:06:25,610 INFO [guide_cxr/arrivals] ghi 38 dòng
+2026-10-11 03:06:27,799 INFO [guide_cxr/departures] ghi 38 dòng
+2026-10-11 03:06:30,840 INFO [guide_pqc/arrivals] ghi 13 dòng
+2026-10-11 03:06:33,355 INFO [guide_pqc/departures] ghi 12 dòng
+2026-10-11 03:06:35,085 INFO Tổng dòng thu được lượt này: 1568
+2026-10-11 05:06:04,585 INFO [noibai_han/arrivals] ghi 329 dòng
+2026-10-11 05:06:07,088 INFO [noibai_han/departures] ghi 329 dòng
+2026-10-11 05:06:10,540 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-11 05:06:13,016 INFO [guide_sgn/departures] ghi 197 dòng
+2026-10-11 05:06:15,384 INFO [guide_han/arrivals] ghi 169 dòng
+2026-10-11 05:06:18,032 INFO [guide_han/departures] ghi 188 dòng
+2026-10-11 05:06:21,191 INFO [guide_dad/arrivals] ghi 39 dòng
+2026-10-11 05:06:24,029 INFO [guide_dad/departures] ghi 41 dòng
+2026-10-11 05:06:26,300 INFO [guide_cxr/arrivals] ghi 39 dòng
+2026-10-11 05:06:28,635 INFO [guide_cxr/departures] ghi 42 dòng
+2026-10-11 05:06:31,733 INFO [guide_pqc/arrivals] ghi 21 dòng
+2026-10-11 05:06:34,146 INFO [guide_pqc/departures] ghi 21 dòng
+2026-10-11 05:06:35,853 INFO Tổng dòng thu được lượt này: 1615
+2026-10-11 07:06:04,200 INFO [noibai_han/arrivals] ghi 329 dòng
+2026-10-11 07:06:06,335 INFO [noibai_han/departures] ghi 329 dòng
+2026-10-11 07:06:09,721 INFO [guide_sgn/arrivals] ghi 196 dòng
+2026-10-11 07:06:12,766 INFO [guide_sgn/departures] ghi 199 dòng
+2026-10-11 07:06:15,511 INFO [guide_han/arrivals] ghi 187 dòng
+2026-10-11 07:06:18,002 INFO [guide_han/departures] ghi 186 dòng
+2026-10-11 07:06:20,664 INFO [guide_dad/arrivals] ghi 47 dòng
+2026-10-11 07:06:23,604 INFO [guide_dad/departures] ghi 47 dòng
+2026-10-11 07:06:26,053 INFO [guide_cxr/arrivals] ghi 33 dòng
+2026-10-11 07:06:28,300 INFO [guide_cxr/departures] ghi 37 dòng
+2026-10-11 07:06:31,580 INFO [guide_pqc/arrivals] ghi 26 dòng
+2026-10-11 07:06:34,065 INFO [guide_pqc/departures] ghi 27 dòng
+2026-10-11 07:06:35,756 INFO Tổng dòng thu được lượt này: 1643
+2026-10-11 09:06:04,445 INFO [noibai_han/arrivals] ghi 329 dòng
+2026-10-11 09:06:06,861 INFO [noibai_han/departures] ghi 329 dòng
+2026-10-11 09:06:10,933 INFO [guide_sgn/arrivals] ghi 196 dòng
+2026-10-11 09:06:13,628 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-11 09:06:16,037 INFO [guide_han/arrivals] ghi 189 dòng
+2026-10-11 09:06:18,411 INFO [guide_han/departures] ghi 190 dòng
+2026-10-11 09:06:21,213 INFO [guide_dad/arrivals] ghi 63 dòng
+2026-10-11 09:06:23,916 INFO [guide_dad/departures] ghi 60 dòng
+2026-10-11 09:06:26,451 INFO [guide_cxr/arrivals] ghi 39 dòng
+2026-10-11 09:06:29,092 INFO [guide_cxr/departures] ghi 37 dòng
+2026-10-11 09:06:32,357 INFO [guide_pqc/arrivals] ghi 34 dòng
+2026-10-11 09:06:34,923 INFO [guide_pqc/departures] ghi 33 dòng
+2026-10-11 09:06:36,619 INFO Tổng dòng thu được lượt này: 1699
+2026-10-11 11:06:05,001 INFO [noibai_han/arrivals] ghi 329 dòng
+2026-10-11 11:06:07,275 INFO [noibai_han/departures] ghi 329 dòng
+2026-10-11 11:06:11,689 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-11 11:06:14,392 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-11 11:06:16,882 INFO [guide_han/arrivals] ghi 190 dòng
+2026-10-11 11:06:19,289 INFO [guide_han/departures] ghi 193 dòng
+2026-10-11 11:06:23,096 INFO [guide_dad/arrivals] ghi 78 dòng
+2026-10-11 11:06:25,711 INFO [guide_dad/departures] ghi 75 dòng
+2026-10-11 11:06:28,520 INFO [guide_cxr/arrivals] ghi 42 dòng
+2026-10-11 11:06:30,864 INFO [guide_cxr/departures] ghi 40 dòng
+2026-10-11 11:06:34,125 INFO [guide_pqc/arrivals] ghi 45 dòng
+2026-10-11 11:06:36,671 INFO [guide_pqc/departures] ghi 44 dòng
+2026-10-11 11:06:38,329 INFO Tổng dòng thu được lượt này: 1765
+2026-10-11 13:06:04,798 INFO [noibai_han/arrivals] ghi 329 dòng
+2026-10-11 13:06:07,140 INFO [noibai_han/departures] ghi 329 dòng
+2026-10-11 13:06:12,716 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-11 13:06:15,777 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-11 13:06:18,962 INFO [guide_han/arrivals] ghi 192 dòng
+2026-10-11 13:06:22,118 INFO [guide_han/departures] ghi 190 dòng
+2026-10-11 13:06:25,580 INFO [guide_dad/arrivals] ghi 92 dòng
+2026-10-11 13:06:28,700 INFO [guide_dad/departures] ghi 86 dòng
+2026-10-11 13:06:31,617 INFO [guide_cxr/arrivals] ghi 50 dòng
+2026-10-11 13:06:34,467 INFO [guide_cxr/departures] ghi 44 dòng
+2026-10-11 13:06:37,172 INFO [guide_pqc/arrivals] ghi 52 dòng
+2026-10-11 13:06:40,127 INFO [guide_pqc/departures] ghi 50 dòng
+2026-10-11 13:06:42,072 INFO Tổng dòng thu được lượt này: 1814
+2026-10-11 15:06:05,322 INFO [noibai_han/arrivals] ghi 329 dòng
+2026-10-11 15:06:07,810 INFO [noibai_han/departures] ghi 329 dòng
+2026-10-11 15:06:12,706 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-11 15:06:15,924 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-11 15:06:18,785 INFO [guide_han/arrivals] ghi 193 dòng
+2026-10-11 15:06:21,192 INFO [guide_han/departures] ghi 189 dòng
+2026-10-11 15:06:24,434 INFO [guide_dad/arrivals] ghi 95 dòng
+2026-10-11 15:06:27,503 INFO [guide_dad/departures] ghi 89 dòng
+2026-10-11 15:06:30,218 INFO [guide_cxr/arrivals] ghi 51 dòng
+2026-10-11 15:06:32,989 INFO [guide_cxr/departures] ghi 51 dòng
+2026-10-11 15:06:36,132 INFO [guide_pqc/arrivals] ghi 54 dòng
+2026-10-11 15:06:38,620 INFO [guide_pqc/departures] ghi 55 dòng
+2026-10-11 15:06:40,422 INFO Tổng dòng thu được lượt này: 1835
+2026-10-11 17:06:04,832 INFO [noibai_han/arrivals] ghi 329 dòng
+2026-10-11 17:06:07,127 INFO [noibai_han/departures] ghi 329 dòng
+2026-10-11 17:06:11,992 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-11 17:06:14,447 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-11 17:06:17,126 INFO [guide_han/arrivals] ghi 188 dòng
+2026-10-11 17:06:19,863 INFO [guide_han/departures] ghi 187 dòng
+2026-10-11 17:06:22,934 INFO [guide_dad/arrivals] ghi 89 dòng
+2026-10-11 17:06:25,629 INFO [guide_dad/departures] ghi 87 dòng
+2026-10-11 17:06:28,042 INFO [guide_cxr/arrivals] ghi 41 dòng
+2026-10-11 17:06:30,679 INFO [guide_cxr/departures] ghi 46 dòng
+2026-10-11 17:06:34,304 INFO [guide_pqc/arrivals] ghi 48 dòng
+2026-10-11 17:06:37,153 INFO [guide_pqc/departures] ghi 50 dòng
+2026-10-11 17:06:38,828 INFO Tổng dòng thu được lượt này: 1794
+2026-10-11 19:06:04,128 INFO [noibai_han/arrivals] ghi 329 dòng
+2026-10-11 19:06:06,782 INFO [noibai_han/departures] ghi 329 dòng
+2026-10-11 19:06:28,318 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-11 19:06:31,581 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-11 19:06:34,424 INFO [guide_han/arrivals] ghi 188 dòng
+2026-10-11 19:06:38,003 INFO [guide_han/departures] ghi 181 dòng
+2026-10-11 19:06:41,200 INFO [guide_dad/arrivals] ghi 82 dòng
+2026-10-11 19:06:45,132 INFO [guide_dad/departures] ghi 84 dòng
+2026-10-11 19:06:51,590 INFO [guide_cxr/arrivals] ghi 37 dòng
+2026-10-11 19:06:58,338 INFO [guide_cxr/departures] ghi 39 dòng
+2026-10-11 19:07:01,632 INFO [guide_pqc/arrivals] ghi 43 dòng
+2026-10-11 19:07:05,065 INFO [guide_pqc/departures] ghi 45 dòng
+2026-10-11 19:07:06,860 INFO Tổng dòng thu được lượt này: 1757
+2026-10-11 21:06:04,414 INFO [noibai_han/arrivals] ghi 328 dòng
+2026-10-11 21:06:06,915 INFO [noibai_han/departures] ghi 328 dòng
+2026-10-11 21:06:10,424 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-11 21:06:12,986 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-11 21:06:15,765 INFO [guide_han/arrivals] ghi 182 dòng
+2026-10-11 21:06:20,444 INFO [guide_han/departures] ghi 181 dòng
+2026-10-11 21:06:23,194 INFO [guide_dad/arrivals] ghi 67 dòng
+2026-10-11 21:06:27,041 INFO [guide_dad/departures] ghi 68 dòng
+2026-10-11 21:06:34,076 INFO [guide_cxr/arrivals] ghi 30 dòng
+2026-10-11 21:06:37,638 INFO [guide_cxr/departures] ghi 32 dòng
+2026-10-11 21:06:40,469 INFO [guide_pqc/arrivals] ghi 33 dòng
+2026-10-11 21:06:43,543 INFO [guide_pqc/departures] ghi 37 dòng
+2026-10-11 21:06:45,217 INFO Tổng dòng thu được lượt này: 1686
+2026-10-11 23:06:05,033 INFO [noibai_han/arrivals] ghi 328 dòng
+2026-10-11 23:06:07,172 INFO [noibai_han/departures] ghi 328 dòng
+2026-10-11 23:06:10,996 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-11 23:06:13,539 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-11 23:06:16,585 INFO [guide_han/arrivals] ghi 168 dòng
+2026-10-11 23:06:19,935 INFO [guide_han/departures] ghi 173 dòng
+2026-10-11 23:06:23,175 INFO [guide_dad/arrivals] ghi 51 dòng
+2026-10-11 23:06:25,725 INFO [guide_dad/departures] ghi 54 dòng
+2026-10-11 23:06:28,311 INFO [guide_cxr/arrivals] ghi 33 dòng
+2026-10-11 23:06:31,098 INFO [guide_cxr/departures] ghi 32 dòng
+2026-10-11 23:06:33,798 INFO [guide_pqc/arrivals] ghi 23 dòng
+2026-10-11 23:06:36,393 INFO [guide_pqc/departures] ghi 26 dòng
+2026-10-11 23:06:38,088 INFO Tổng dòng thu được lượt này: 1616
+2026-10-12 01:06:04,200 INFO [noibai_han/arrivals] ghi 311 dòng
+2026-10-12 01:06:06,335 INFO [noibai_han/departures] ghi 304 dòng
+2026-10-12 01:06:09,951 INFO [guide_sgn/arrivals] ghi 199 dòng
+2026-10-12 01:06:12,931 INFO [guide_sgn/departures] ghi 197 dòng
+2026-10-12 01:06:15,379 INFO [guide_han/arrivals] ghi 164 dòng
+2026-10-12 01:06:17,790 INFO [guide_han/departures] ghi 174 dòng
+2026-10-12 01:06:20,691 INFO [guide_dad/arrivals] ghi 39 dòng
+2026-10-12 01:06:23,350 INFO [guide_dad/departures] ghi 41 dòng
+2026-10-12 01:06:26,307 INFO [guide_cxr/arrivals] ghi 34 dòng
+2026-10-12 01:06:28,569 INFO [guide_cxr/departures] ghi 35 dòng
+2026-10-12 01:06:31,840 INFO [guide_pqc/arrivals] ghi 17 dòng
+2026-10-12 01:06:34,837 INFO [guide_pqc/departures] ghi 20 dòng
+2026-10-12 01:06:36,570 INFO Tổng dòng thu được lượt này: 1535
+2026-10-12 03:06:04,498 INFO [noibai_han/arrivals] ghi 311 dòng
+2026-10-12 03:06:06,613 INFO [noibai_han/departures] ghi 304 dòng
+2026-10-12 03:06:10,341 INFO [guide_sgn/arrivals] ghi 196 dòng
+2026-10-12 03:06:13,271 INFO [guide_sgn/departures] ghi 189 dòng
+2026-10-12 03:06:15,973 INFO [guide_han/arrivals] ghi 163 dòng
+2026-10-12 03:06:18,371 INFO [guide_han/departures] ghi 168 dòng
+2026-10-12 03:06:21,297 INFO [guide_dad/arrivals] ghi 36 dòng
+2026-10-12 03:06:23,849 INFO [guide_dad/departures] ghi 40 dòng
+2026-10-12 03:06:26,230 INFO [guide_cxr/arrivals] ghi 34 dòng
+2026-10-12 03:06:28,699 INFO [guide_cxr/departures] ghi 34 dòng
+2026-10-12 03:06:32,175 INFO [guide_pqc/arrivals] ghi 17 dòng
+2026-10-12 03:06:34,619 INFO [guide_pqc/departures] ghi 15 dòng
+2026-10-12 03:06:36,357 INFO Tổng dòng thu được lượt này: 1507
+2026-10-12 05:06:04,188 INFO [noibai_han/arrivals] ghi 311 dòng
+2026-10-12 05:06:06,287 INFO [noibai_han/departures] ghi 304 dòng
+2026-10-12 05:06:09,765 INFO [guide_sgn/arrivals] ghi 184 dòng
+2026-10-12 05:06:12,367 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-12 05:06:15,145 INFO [guide_han/arrivals] ghi 163 dòng
+2026-10-12 05:06:17,680 INFO [guide_han/departures] ghi 187 dòng
+2026-10-12 05:06:20,689 INFO [guide_dad/arrivals] ghi 39 dòng
+2026-10-12 05:06:23,509 INFO [guide_dad/departures] ghi 41 dòng
+2026-10-12 05:06:25,897 INFO [guide_cxr/arrivals] ghi 37 dòng
+2026-10-12 05:06:28,495 INFO [guide_cxr/departures] ghi 36 dòng
+2026-10-12 05:06:31,832 INFO [guide_pqc/arrivals] ghi 23 dòng
+2026-10-12 05:06:34,291 INFO [guide_pqc/departures] ghi 22 dòng
+2026-10-12 05:06:35,916 INFO Tổng dòng thu được lượt này: 1547
+2026-10-12 07:06:04,629 INFO [noibai_han/arrivals] ghi 312 dòng
+2026-10-12 07:06:06,594 INFO [noibai_han/departures] ghi 305 dòng
+2026-10-12 07:06:10,127 INFO [guide_sgn/arrivals] ghi 197 dòng
+2026-10-12 07:06:12,751 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-12 07:06:15,052 INFO [guide_han/arrivals] ghi 173 dòng
+2026-10-12 07:06:17,433 INFO [guide_han/departures] ghi 190 dòng
+2026-10-12 07:06:21,407 INFO [guide_dad/arrivals] ghi 46 dòng
+2026-10-12 07:06:24,264 INFO [guide_dad/departures] ghi 45 dòng
+2026-10-12 07:06:27,024 INFO [guide_cxr/arrivals] ghi 33 dòng
+2026-10-12 07:06:29,285 INFO [guide_cxr/departures] ghi 35 dòng
+2026-10-12 07:06:31,819 INFO [guide_pqc/arrivals] ghi 27 dòng
+2026-10-12 07:06:34,393 INFO [guide_pqc/departures] ghi 26 dòng
+2026-10-12 07:06:36,256 INFO Tổng dòng thu được lượt này: 1589
+2026-10-12 09:06:04,142 INFO [noibai_han/arrivals] ghi 312 dòng
+2026-10-12 09:06:06,414 INFO [noibai_han/departures] ghi 305 dòng
+2026-10-12 09:06:09,621 INFO [guide_sgn/arrivals] ghi 199 dòng
+2026-10-12 09:06:12,341 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-12 09:06:14,908 INFO [guide_han/arrivals] ghi 192 dòng
+2026-10-12 09:06:17,371 INFO [guide_han/departures] ghi 191 dòng
+2026-10-12 09:06:20,572 INFO [guide_dad/arrivals] ghi 60 dòng
+2026-10-12 09:06:23,178 INFO [guide_dad/departures] ghi 55 dòng
+2026-10-12 09:06:25,514 INFO [guide_cxr/arrivals] ghi 35 dòng
+2026-10-12 09:06:28,005 INFO [guide_cxr/departures] ghi 31 dòng
+2026-10-12 09:06:31,001 INFO [guide_pqc/arrivals] ghi 34 dòng
+2026-10-12 09:06:33,448 INFO [guide_pqc/departures] ghi 33 dòng
+2026-10-12 09:06:35,177 INFO Tổng dòng thu được lượt này: 1647
+2026-10-12 11:06:04,835 INFO [noibai_han/arrivals] ghi 312 dòng
+2026-10-12 11:06:07,142 INFO [noibai_han/departures] ghi 305 dòng
+2026-10-12 11:06:10,846 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-12 11:06:13,623 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-12 11:06:16,346 INFO [guide_han/arrivals] ghi 198 dòng
+2026-10-12 11:06:18,862 INFO [guide_han/departures] ghi 197 dòng
+2026-10-12 11:06:21,743 INFO [guide_dad/arrivals] ghi 74 dòng
+2026-10-12 11:06:24,291 INFO [guide_dad/departures] ghi 71 dòng
+2026-10-12 11:06:26,745 INFO [guide_cxr/arrivals] ghi 36 dòng
+2026-10-12 11:06:29,153 INFO [guide_cxr/departures] ghi 32 dòng
+2026-10-12 11:06:32,033 INFO [guide_pqc/arrivals] ghi 43 dòng
+2026-10-12 11:06:34,564 INFO [guide_pqc/departures] ghi 40 dòng
+2026-10-12 11:06:36,262 INFO Tổng dòng thu được lượt này: 1708
+2026-10-12 13:06:03,291 INFO [noibai_han/arrivals] ghi 312 dòng
+2026-10-12 13:06:05,364 INFO [noibai_han/departures] ghi 305 dòng
+2026-10-12 13:06:11,927 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-12 13:06:16,097 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-12 13:06:19,465 INFO [guide_han/arrivals] ghi 199 dòng
+2026-10-12 13:06:23,018 INFO [guide_han/departures] ghi 195 dòng
+2026-10-12 13:06:27,315 INFO [guide_dad/arrivals] ghi 93 dòng
+2026-10-12 13:06:30,086 INFO [guide_dad/departures] ghi 86 dòng
+2026-10-12 13:06:33,143 INFO [guide_cxr/arrivals] ghi 42 dòng
+2026-10-12 13:06:37,078 INFO [guide_cxr/departures] ghi 37 dòng
+2026-10-12 13:06:40,509 INFO [guide_pqc/arrivals] ghi 50 dòng
+2026-10-12 13:06:43,249 INFO [guide_pqc/departures] ghi 47 dòng
+2026-10-12 13:06:45,319 INFO Tổng dòng thu được lượt này: 1766
+2026-10-12 15:06:05,286 INFO [noibai_han/arrivals] ghi 312 dòng
+2026-10-12 15:06:07,867 INFO [noibai_han/departures] ghi 305 dòng
+2026-10-12 15:06:12,796 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-12 15:06:15,351 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-12 15:06:17,932 INFO [guide_han/arrivals] ghi 200 dòng
+2026-10-12 15:06:20,451 INFO [guide_han/departures] ghi 197 dòng
+2026-10-12 15:06:23,855 INFO [guide_dad/arrivals] ghi 93 dòng
+2026-10-12 15:06:26,520 INFO [guide_dad/departures] ghi 88 dòng
+2026-10-12 15:06:29,210 INFO [guide_cxr/arrivals] ghi 41 dòng
+2026-10-12 15:06:31,581 INFO [guide_cxr/departures] ghi 41 dòng
+2026-10-12 15:06:34,673 INFO [guide_pqc/arrivals] ghi 49 dòng
+2026-10-12 15:06:37,404 INFO [guide_pqc/departures] ghi 52 dòng
+2026-10-12 15:06:39,123 INFO Tổng dòng thu được lượt này: 1778
+2026-10-12 17:06:05,208 INFO [noibai_han/arrivals] ghi 312 dòng
+2026-10-12 17:06:07,650 INFO [noibai_han/departures] ghi 305 dòng
+2026-10-12 17:06:13,008 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-12 17:06:16,024 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-12 17:06:19,037 INFO [guide_han/arrivals] ghi 198 dòng
+2026-10-12 17:06:21,716 INFO [guide_han/departures] ghi 193 dòng
+2026-10-12 17:06:25,188 INFO [guide_dad/arrivals] ghi 87 dòng
+2026-10-12 17:06:28,205 INFO [guide_dad/departures] ghi 87 dòng
+2026-10-12 17:06:31,000 INFO [guide_cxr/arrivals] ghi 32 dòng
+2026-10-12 17:06:33,486 INFO [guide_cxr/departures] ghi 34 dòng
+2026-10-12 17:06:36,427 INFO [guide_pqc/arrivals] ghi 39 dòng
+2026-10-12 17:06:39,269 INFO [guide_pqc/departures] ghi 44 dòng
+2026-10-12 17:06:41,114 INFO Tổng dòng thu được lượt này: 1731
+2026-10-12 19:06:04,361 INFO [noibai_han/arrivals] ghi 312 dòng
+2026-10-12 19:06:06,681 INFO [noibai_han/departures] ghi 305 dòng
+2026-10-12 19:06:11,961 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-12 19:06:14,865 INFO [guide_sgn/departures] ghi 192 dòng
+2026-10-12 19:06:17,477 INFO [guide_han/arrivals] ghi 185 dòng
+2026-10-12 19:06:20,416 INFO [guide_han/departures] ghi 166 dòng
+2026-10-12 19:06:23,908 INFO [guide_dad/arrivals] ghi 76 dòng
+2026-10-12 19:06:26,623 INFO [guide_dad/departures] ghi 80 dòng
+2026-10-12 19:06:29,353 INFO [guide_cxr/arrivals] ghi 28 dòng
+2026-10-12 19:06:32,041 INFO [guide_cxr/departures] ghi 27 dòng
+2026-10-12 19:06:35,509 INFO [guide_pqc/arrivals] ghi 35 dòng
+2026-10-12 19:06:38,238 INFO [guide_pqc/departures] ghi 37 dòng
+2026-10-12 19:06:39,949 INFO Tổng dòng thu được lượt này: 1643
+2026-10-12 21:06:04,719 INFO [noibai_han/arrivals] ghi 312 dòng
+2026-10-12 21:06:07,372 INFO [noibai_han/departures] ghi 305 dòng
+2026-10-12 21:06:15,801 INFO [guide_sgn/arrivals] ghi 200 dòng
+2026-10-12 21:06:19,329 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-12 21:06:24,925 INFO [guide_han/arrivals] ghi 169 dòng
+2026-10-12 21:06:28,596 INFO [guide_han/departures] ghi 174 dòng
+2026-10-12 21:06:33,065 INFO [guide_dad/arrivals] ghi 63 dòng
+2026-10-12 21:06:39,115 INFO [guide_dad/departures] ghi 67 dòng
+2026-10-12 21:06:45,476 INFO [guide_cxr/arrivals] ghi 19 dòng
+2026-10-12 21:06:52,733 INFO [guide_cxr/departures] ghi 22 dòng
+2026-10-12 21:07:02,698 INFO [guide_pqc/arrivals] ghi 28 dòng
+2026-10-12 21:07:07,390 INFO [guide_pqc/departures] ghi 30 dòng
+2026-10-12 21:07:09,126 INFO Tổng dòng thu được lượt này: 1589
+2026-10-12 23:06:05,188 INFO [noibai_han/arrivals] ghi 312 dòng
+2026-10-12 23:06:08,034 INFO [noibai_han/departures] ghi 305 dòng
+2026-10-12 23:06:13,096 INFO [guide_sgn/arrivals] ghi 199 dòng
+2026-10-12 23:06:16,487 INFO [guide_sgn/departures] ghi 200 dòng
+2026-10-12 23:06:19,269 INFO [guide_han/arrivals] ghi 162 dòng
+2026-10-12 23:06:23,560 INFO [guide_han/departures] ghi 169 dòng
+2026-10-12 23:06:27,363 INFO [guide_dad/arrivals] ghi 52 dòng
+2026-10-12 23:06:30,261 INFO [guide_dad/departures] ghi 50 dòng
+2026-10-12 23:06:33,291 INFO [guide_cxr/arrivals] ghi 24 dòng
+2026-10-12 23:06:36,374 INFO [guide_cxr/departures] ghi 22 dòng
+2026-10-12 23:06:39,888 INFO [guide_pqc/arrivals] ghi 21 dòng
+2026-10-12 23:06:43,161 INFO [guide_pqc/departures] ghi 26 dòng
+2026-10-12 23:06:44,980 INFO Tổng dòng thu được lượt này: 1542
