@@ -1,0 +1,255 @@
+{
+  "source": "guide_sgn",
+  "airport": "SGN",
+  "direction": "arrivals",
+  "url": "https://www.hochiminhcityairport.com/flight-status-arrivals-departures/",
+  "scraped_at": "2026-10-09 18:23:02",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "From",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "06:05",
+          "06:05",
+          "Melbourne (MEL)",
+          "VietJet Air VJC 82",
+          "Diverted"
+        ],
+        [
+          "13:00",
+          "17:37",
+          "Vinh City (VII)",
+          "VietJet Air VJC 227",
+          "Arrived 277 minutes late"
+        ],
+        [
+          "13:30",
+          "14:57",
+          "Tokyo (NRT)",
+          "Vietnam Airlines VN 307 Codeshare: NH 9701",
+          "Arrived 87 minutes late"
+        ],
+        [
+          "14:30",
+          "15:10",
+          "Haiphong (HPH)",
+          "VietJet Air VJC 275",
+          "Arrived 40 minutes late"
+        ],
+        [
+          "14:35",
+          "14:48",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 841",
+          "Arrived On-Time"
+        ],
+        [
+          "14:35",
+          "14:42",
+          "Hue (HUI)",
+          "Vietnam Airlines VN 1371",
+          "Arrived On-Time"
+        ],
+        [
+          "14:40",
+          "14:42",
+          "Singapore (SIN)",
+          "Scoot TR 552 Codeshare: AC 5913 / SQ 8538",
+          "Arrived On-Time"
+        ],
+        [
+          "14:40",
+          "14:40",
+          "Con Dao (VCS)",
+          "VASCO VN 8088 Codeshare: VN 8088",
+          "Arrived On-Time"
+        ],
+        [
+          "14:40",
+          "14:39",
+          "Guangzhou (CAN)",
+          "China Southern Airlines CZ 373 Codeshare: 3U 7049 / VN 3503",
+          "Arrived On-Time"
+        ],
+        [
+          "14:45",
+          "14:45",
+          "Con Dao (VCS)",
+          "VASCO VN 8062 Codeshare: VN 8062",
+          "Arrived On-Time"
+        ],
+        [
+          "14:50",
+          "14:50",
+          "Nha Trang (CXR)",
+          "VASCO VN 8347 Codeshare: VN 8347",
+          "On-Time"
+        ],
+        [
+          "14:55",
+          "15:17",
+          "Seoul (ICN)",
+          "VietJet Air VJC 863",
+          "Arrived 22 minutes late"
+        ],
+        [
+          "14:55",
+          "15:09",
+          "Nha Trang (CXR)",
+          "Vietnam Airlines VN 7347",
+          "Arrived On-Time"
+        ],
+        [
+          "14:55",
+          "14:59",
+          "Vinh City (VII)",
+          "Vietnam Airlines VN 1265 Codeshare: CI 8755",
+          "Arrived On-Time"
+        ],
+        [
+          "15:00",
+          "15:51",
+          "Thanh Hoa (THD)",
+          "Vietnam Airlines VN 1273",
+          "Arrived 51 minutes late"
+        ],
+        [
+          "15:00",
+          "14:44",
+          "Kaohsiung (KHH)",
+          "Vietnam Airlines VN 583 Codeshare: CI 9029",
+          "Arrived On-Time"
+        ],
+        [
+          "15:05",
+          "14:54",
+          "Da Nang (DAD)",
+          "Vietnam Airlines VN 129",
+          "Arrived On-Time"
+        ],
+        [
+          "15:10",
+          "15:13",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 213 Codeshare: CI 8813 / K6 3213",
+          "Arrived On-Time"
+        ],
+        [
+          "15:15",
+          "16:11",
+          "Thanh Hoa (THD)",
+          "VietJet Air VJC 245",
+          "Arrived 56 minutes late"
+        ],
+        [
+          "15:15",
+          "15:53",
+          "Kuala Lumpur (KUL)",
+          "VietJet Air VJC 1814",
+          "Arrived 38 minutes late"
+        ],
+        [
+          "15:15",
+          "15:06",
+          "Phnom Penh (KTI)",
+          "Vietnam Airlines VN 921 Codeshare: K6 3921",
+          "Arrived On-Time"
+        ],
+        [
+          "15:20",
+          "15:44",
+          "Bangkok (DMK)",
+          "Thai AirAsia FD 654",
+          "Arrived 24 minutes late"
+        ],
+        [
+          "15:20",
+          "15:20",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 843",
+          "Arrived On-Time"
+        ],
+        [
+          "15:25",
+          "15:23",
+          "Da Nang (DAD)",
+          "Pacific Airlines VN 6037 Codeshare: VN 6037",
+          "Arrived On-Time"
+        ],
+        [
+          "15:40",
+          "15:47",
+          "Kuala Lumpur (KUL)",
+          "Malaysia Airlines MH 758 Codeshare: FY 7452 / QR 5400 / UL 2758",
+          "Arrived On-Time"
+        ],
+        [
+          "15:40",
+          "15:39",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 522",
+          "Arrived On-Time"
+        ],
+        [
+          "15:45",
+          "16:57",
+          "Nha Trang (CXR)",
+          "Vietnam Airlines VN 1345 Codeshare: CI 8775 / MU 8989",
+          "Arrived 72 minutes late"
+        ],
+        [
+          "15:45",
+          "16:11",
+          "Phu Quoc (PQC)",
+          "Vietnam Airlines VN 1826",
+          "Arrived 26 minutes late"
+        ],
+        [
+          "16:00",
+          "17:40",
+          "Thanh Hoa (THD)",
+          "Vietnam Airlines VN 1277",
+          "Arrived 100 minutes late"
+        ],
+        [
+          "16:05",
+          "18:04",
+          "Sydney (SYD)",
+          "VietJet Air VJC 86",
+          "Arrived 119 minutes late"
+        ],
+        [
+          "16:05",
+          "16:22",
+          "Tamky-Chulai Airport (VCL)",
+          "VietJet Air VJC 375",
+          "Arrived 17 minutes late"
+        ],
+        [
+          "16:10",
+          "16:57",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 633 Codeshare: JL 5758",
+          "Arrived 47 minutes late"
+        ],
+        [
+          "16:10",
+          "16:30",
+          "Bangkok (BKK)",
+          "Vietnam Airlines VN 604 Codeshare: K6 3604 / KL 4073 / PG 4295",
+          "Arrived 20 minutes late"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_sgn_arrivals_20261009_182327.html"
+}

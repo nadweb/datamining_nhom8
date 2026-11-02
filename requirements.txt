@@ -1,8 +1,11 @@
+# Thu thập
 requests
 beautifulsoup4
 lxml
+playwright        # sau khi cài: playwright install chromium
+
+# Xử lý và khai phá
 pandas
 numpy
-playwright
-mlxtend
-holidays
+mlxtend           # FP-Growth
+holidays          # cột is_holiday (thiếu thì is_holiday để trống)

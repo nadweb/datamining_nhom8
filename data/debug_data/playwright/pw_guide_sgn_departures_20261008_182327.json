@@ -1,0 +1,346 @@
+{
+  "source": "guide_sgn",
+  "airport": "SGN",
+  "direction": "departures",
+  "url": "https://www.hochiminhcityairport.com/flight-status-departures/",
+  "scraped_at": "2026-10-08 18:23:02",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "To",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "12:00",
+          "12:41",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 136",
+          "Departed 41 minutes late"
+        ],
+        [
+          "12:20",
+          "12:47",
+          "Seoul (ICN)",
+          "VietJet Air VJC 860",
+          "Departed 27 minutes late"
+        ],
+        [
+          "12:25",
+          "14:31",
+          "Xiamen (XMN)",
+          "Xiamen Airlines MF 894 Codeshare: VN 3550",
+          "Departed 126 minutes late"
+        ],
+        [
+          "12:40",
+          "12:40",
+          "Hanoi (HAN)",
+          "Vietravel Airlines V2U 778",
+          "Departed On-Time"
+        ],
+        [
+          "12:40",
+          "12:49",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 529",
+          "Departed On-Time"
+        ],
+        [
+          "12:50",
+          "13:20",
+          "Taipei (TPE)",
+          "EVA Air BR 392 Codeshare: TK 9412",
+          "Departed 30 minutes late"
+        ],
+        [
+          "12:55",
+          "13:02",
+          "Shanghai (PVG)",
+          "China Southern Airlines CZ 6078 Codeshare: VN 3542",
+          "Departed On-Time"
+        ],
+        [
+          "12:55",
+          "12:50",
+          "Tamky-Chulai Airport (VCL)",
+          "VietJet Air VJC 374",
+          "Departed On-Time"
+        ],
+        [
+          "13:00",
+          "13:10",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 248 Codeshare: CI 8838 / GA 9942 / K6 3248",
+          "Departed On-Time"
+        ],
+        [
+          "13:00",
+          "13:04",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 636",
+          "Departed On-Time"
+        ],
+        [
+          "13:05",
+          "14:01",
+          "Nha Trang (CXR)",
+          "Vietnam Airlines VN 1344 Codeshare: AF 9203 / CI 8784",
+          "Departed 56 minutes late"
+        ],
+        [
+          "13:05",
+          "13:33",
+          "Phu Quoc (PQC)",
+          "Vietnam Airlines VN 1827",
+          "Departed 28 minutes late"
+        ],
+        [
+          "13:05",
+          "13:07",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 138",
+          "Departed On-Time"
+        ],
+        [
+          "13:15",
+          "13:15",
+          "Vinh City (VII)",
+          "Vietravel Airlines V2U 550",
+          "Departed On-Time"
+        ],
+        [
+          "13:15",
+          "13:09",
+          "Bangkok (BKK)",
+          "VietJet Air VJC 807",
+          "Departed On-Time"
+        ],
+        [
+          "13:20",
+          "14:07",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 142",
+          "Departed 47 minutes late"
+        ],
+        [
+          "13:20",
+          "14:07",
+          "Dalat (DLI)",
+          "Vietnam Airlines VN 7382",
+          "Departed 47 minutes late"
+        ],
+        [
+          "13:20",
+          "13:20",
+          "Da Nang (DAD)",
+          "Vietravel Airlines V2U 678",
+          "Departed On-Time"
+        ],
+        [
+          "13:30",
+          "13:42",
+          "Penang (PEN)",
+          "AirAsia AK 1503",
+          "Departed On-Time"
+        ],
+        [
+          "13:30",
+          "13:30",
+          "Taipei (TPE)",
+          "VietJet Air VJC 842",
+          "Departed On-Time"
+        ],
+        [
+          "13:35",
+          "13:50",
+          "Hong Kong (HKG)",
+          "Vietnam Airlines VN 594 Codeshare: CX 6260 / K6 3594",
+          "Departed 15 minutes late"
+        ],
+        [
+          "13:35",
+          "13:39",
+          "Haiphong (HPH)",
+          "Pacific Airlines VN 6440 Codeshare: VN 6440",
+          "Departed On-Time"
+        ],
+        [
+          "13:35",
+          "13:32",
+          "Con Dao (VCS)",
+          "VASCO VN 8063 Codeshare: VN 8063",
+          "Departed On-Time"
+        ],
+        [
+          "13:40",
+          "13:51",
+          "Thanh Hoa (THD)",
+          "VietJet Air VJC 252",
+          "Departed On-Time"
+        ],
+        [
+          "13:45",
+          "14:37",
+          "Da Nang (DAD)",
+          "Vietnam Airlines VN 132 Codeshare: CI 8992",
+          "Departed 52 minutes late"
+        ],
+        [
+          "13:50",
+          "13:50",
+          "Qui Nhon (UIH)",
+          "Vietnam Airlines VN 1394 Codeshare: AF 3318",
+          "Departed On-Time"
+        ],
+        [
+          "13:55",
+          "14:02",
+          "Seoul (ICN)",
+          "Korean Air KE 472 Codeshare: DL 7816 / VN 3402",
+          "Departed On-Time"
+        ],
+        [
+          "13:55",
+          "13:52",
+          "Haiphong (HPH)",
+          "VietJet Air VJC 278",
+          "Departed On-Time"
+        ],
+        [
+          "14:00",
+          "14:37",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 214 Codeshare: CI 8814 / K6 3214",
+          "Departed 37 minutes late"
+        ],
+        [
+          "14:00",
+          "14:12",
+          "Vinh City (VII)",
+          "VietJet Air VJC 214",
+          "Departed On-Time"
+        ],
+        [
+          "14:00",
+          "14:00",
+          "Con Dao (VCS)",
+          "VASCO VN 8097 Codeshare: VN 8097",
+          "On-Time"
+        ],
+        [
+          "14:05",
+          "14:56",
+          "Dalat (DLI)",
+          "Vietnam Airlines VN 7388",
+          "Departed 51 minutes late"
+        ],
+        [
+          "14:05",
+          "13:50",
+          "Lijiang (LJG)",
+          "Ruili Airlines DR* 5052",
+          "Departed On-Time"
+        ],
+        [
+          "14:10",
+          "14:19",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 140",
+          "Departed On-Time"
+        ],
+        [
+          "14:10",
+          "14:07",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 846",
+          "Departed On-Time"
+        ],
+        [
+          "14:15",
+          "15:49",
+          "Vinh City (VII)",
+          "Vietnam Airlines VN 1266 Codeshare: CI 8756",
+          "Departed 94 minutes late"
+        ],
+        [
+          "14:15",
+          "14:18",
+          "Bandar Seri Begawan (BWN)",
+          "Royal Brunei Airlines BI 382",
+          "Departed On-Time"
+        ],
+        [
+          "14:20",
+          "14:25",
+          "Hue (HUI)",
+          "VietJet Air VJC 308",
+          "Departed On-Time"
+        ],
+        [
+          "14:25",
+          "14:37",
+          "Singapore (SIN)",
+          "Vietnam Airlines VN 655 Codeshare: EY 7311 / GA 9605 / K6 3655 / SQ 5355",
+          "Departed On-Time"
+        ],
+        [
+          "14:30",
+          "14:30",
+          "Shenzhen (SZX)",
+          "China Southern Airlines CZ 8466 Codeshare: VN 3040",
+          "Departed On-Time"
+        ],
+        [
+          "14:35",
+          "16:19",
+          "Nha Trang (CXR)",
+          "VietJet Air VJC 600",
+          "Departed 104 minutes late"
+        ],
+        [
+          "14:35",
+          "14:33",
+          "Dalat (DLI)",
+          "VietJet Air VJC 362",
+          "Departed On-Time"
+        ],
+        [
+          "14:45",
+          "15:35",
+          "Pleiku (PXU)",
+          "Vietnam Airlines VN 1422",
+          "Departed 50 minutes late"
+        ],
+        [
+          "14:50",
+          "15:09",
+          "Phu Quoc (PQC)",
+          "VietJet Air VJC 327",
+          "Departed 19 minutes late"
+        ],
+        [
+          "15:00",
+          "15:03",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 250 Codeshare: K6 3250",
+          "Departed On-Time"
+        ],
+        [
+          "15:10",
+          "15:23",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 640",
+          "Departed On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_sgn_departures_20261008_182325.html"
+}

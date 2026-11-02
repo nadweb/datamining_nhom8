@@ -1,0 +1,164 @@
+{
+  "source": "guide_pqc",
+  "airport": "PQC",
+  "direction": "arrivals",
+  "url": "https://www.phuquocairport.com/flight-status-arrivals-departures/",
+  "scraped_at": "2026-10-30 05:11:02",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "From",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "22:55",
+          "22:54",
+          "Hong Kong (HKG)",
+          "Sun PhuQuoc Airways 9G 503",
+          "Arrived On-Time"
+        ],
+        [
+          "23:05",
+          "22:41",
+          "Seoul (ICN)",
+          "Trinity Airways TWB 55",
+          "Arrived On-Time"
+        ],
+        [
+          "23:30",
+          "23:15",
+          "Busan (PUS)",
+          "Eastar Jet ZE 981",
+          "Arrived On-Time"
+        ],
+        [
+          "00:05",
+          "23:55",
+          "Shanghai (PVG)",
+          "China Eastern Airlines MU 6033",
+          "Arrived On-Time"
+        ],
+        [
+          "00:40",
+          "00:39",
+          "Chengdu (TFU)",
+          "Sun PhuQuoc Airways 9G 611",
+          "Arrived On-Time"
+        ],
+        [
+          "06:20",
+          "06:20",
+          "Seoul (ICN)",
+          "VietJet Air VJC 979",
+          "On-Time"
+        ],
+        [
+          "07:40",
+          "07:40",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1203",
+          "On-Time"
+        ],
+        [
+          "08:05",
+          "08:05",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 451",
+          "On-Time"
+        ],
+        [
+          "08:05",
+          "08:05",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1955",
+          "On-Time"
+        ],
+        [
+          "08:15",
+          "08:47",
+          "Almaty (ALA)",
+          "Air Astana KC 161",
+          "32 minutes late"
+        ],
+        [
+          "09:00",
+          "09:00",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1823 Codeshare: SK 8254",
+          "On-Time"
+        ],
+        [
+          "09:15",
+          "09:15",
+          "Seoul (ICN)",
+          "Sun PhuQuoc Airways 9G 455",
+          "On-Time"
+        ],
+        [
+          "09:20",
+          "09:20",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1961",
+          "On-Time"
+        ],
+        [
+          "09:30",
+          "09:25",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 543",
+          "On-Time"
+        ],
+        [
+          "09:45",
+          "09:45",
+          "Hong Kong (HKG)",
+          "HK Express UO 598 Codeshare: CX 5598",
+          "On-Time"
+        ],
+        [
+          "09:55",
+          "09:55",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1209",
+          "On-Time"
+        ],
+        [
+          "10:15",
+          "10:15",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1831",
+          "On-Time"
+        ],
+        [
+          "10:30",
+          "10:30",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 321",
+          "On-Time"
+        ],
+        [
+          "10:30",
+          "10:30",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1963",
+          "On-Time"
+        ],
+        [
+          "10:30",
+          "10:30",
+          "Da Nang (DAD)",
+          "Sun PhuQuoc Airways 9G 2963",
+          "On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_pqc_arrivals_20261030_051127.html"
+}

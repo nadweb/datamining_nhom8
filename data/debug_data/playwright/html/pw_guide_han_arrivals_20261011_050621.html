@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noi Bai International Airport Flight Status (Arrivals) - Real-time Airport Guide</title>
+  <meta name="description" content="Live flight status, arrival and departure schedules for Noi Bai International Airport (HAN). Updated real-time delays, airline codes, and terminal info.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    :root { --primary-blue: #0b3b60; --accent-blue: #1d72b8; --border-gray: #e2e8f0; --bg-light: #f8fafc; --text-main: #1e293b; --text-muted: #64748b; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: var(--text-main); background: #ffffff; line-height: 1.5; }
+    .site-header { background: var(--primary-blue); color: #fff; padding: 14px 28px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--accent-blue); }
+    .site-header .brand { font-size: 20px; font-weight: 700; letter-spacing: -0.5px; }
+    .site-header nav a { color: #cbd5e1; text-decoration: none; margin-left: 20px; font-size: 14px; font-weight: 500; }
+    .site-header nav a.active, .site-header nav a:hover { color: #ffffff; }
+    .main-hero { background: linear-gradient(180deg, #f1f5f9 0%, #ffffff 100%); padding: 32px 28px 16px; border-bottom: 1px solid var(--border-gray); }
+    .hero-title { font-size: 24px; font-weight: 700; color: var(--primary-blue); margin-bottom: 6px; }
+    .hero-meta { font-size: 13px; color: var(--text-muted); display: flex; gap: 20px; }
+    .container { max-width: 1240px; margin: 0 auto; padding: 24px 20px; }
+    .filter-tabs { display: flex; border-bottom: 2px solid var(--border-gray); margin-bottom: 20px; }
+    .tab-btn { padding: 10px 24px; font-size: 15px; font-weight: 600; text-decoration: none; color: var(--text-muted); border-bottom: 3px solid transparent; margin-bottom: -2px; }
+    .tab-btn.active { color: var(--accent-blue); border-color: var(--accent-blue); }
+    .table-responsive { overflow-x: auto; background: #fff; border-radius: 6px; border: 1px solid var(--border-gray); box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    table.flight-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13.5px; }
+    table.flight-table thead tr { background-color: var(--bg-light); border-bottom: 2px solid var(--border-gray); }
+    table.flight-table th { padding: 12px 14px; font-weight: 600; color: var(--primary-blue); text-transform: uppercase; font-size: 11.5px; letter-spacing: 0.5px; }
+    table.flight-table tbody tr { border-bottom: 1px solid var(--border-gray); }
+    table.flight-table tbody tr:nth-child(even) { background-color: #fafbfc; }
+    table.flight-table td { padding: 11px 14px; vertical-align: middle; }
+    .badge-status { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+    .status-ontime { background: #ecfdf5; color: #047857; }
+    .status-late { background: #fff1f2; color: #be123c; }
+    .status-diverted { background: #fffbeb; color: #b45309; }
+    .flight-site-footer { margin-top: 48px; border-top: 1px solid var(--border-gray); padding: 32px 20px; background: #f8fafc; font-size: 13px; color: var(--text-muted); text-align: center; }
+    /* Script bundle & metadata padding comment to match browser cache footprint */
+    /* /* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined-layer-render-module-v2 */
+/* CSS-UI-BUNDLE-CHUNK: font-family-data-svg-inlined- */
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><i class="fa-solid fa-plane-departure"></i> Noi Bai International Airport (HAN) Portal</div>
+    <nav>
+      <a href="https://www.hanoiairportonline.com/flight-status/">Flight Schedules</a>
+      <a href="#" class="active">Arrivals</a>
+      <a href="#" class="">Departures</a>
+      <a href="#">Terminals</a>
+      <a href="#">Parking & Transport</a>
+    </nav>
+  </header>
+
+  <section class="main-hero">
+    <div class="container">
+      <h1 class="hero-title">Noi Bai International Airport Airport Flight Status</h1>
+      <div class="hero-meta">
+        <div><strong>Direction:</strong> Arrivals</div>
+        <div><strong>Last Scraped:</strong> 2026-10-11 05:06:02 (UTC+7)</div>
+        <div><strong>Source:</strong> <a href="https://www.hanoiairportonline.com/flight-status/" target="_blank" rel="nofollow">https://www.hanoiairportonline.com/flight-status/</a></div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="filter-tabs">
+      <span class="tab-btn active">Live Arrivals</span>
+      <span class="tab-btn ">Live Departures</span>
+    </div>
+
+    <div class="table-responsive">
+      <table class="flight-table" id="table-flight-status">
+        <thead>
+          <tr>
+            <th>Scheduled</th><th>Revised</th><th>From</th><th>Flight</th><th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+                    <tr><td>21:50</td><td>23:02</td><td>Can Tho (VCA)</td><td>VietJet Air VJC 466</td><td><span class="badge-status status-late">Arrived 72 minutes late</span></td></tr>
+          <tr><td>22:20</td><td>00:23</td><td>Chengdu (TFU)</td><td>Sichuan Airlines 3U 3905 Codeshare: CZ 1546</td><td><span class="badge-status status-late">Arrived 123 minutes late</span></td></tr>
+          <tr><td>23:00</td><td>22:45</td><td>Guangzhou (CAN)</td><td>China Southern Airlines CZ 371 Codeshare: 3U 7077 / VN 3507</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>23:10</td><td>23:05</td><td>Ho Chi Minh City (SGN)</td><td>Vietnam Airlines VN 260 Codeshare: K6 3260</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>23:40</td><td>23:30</td><td>Da Nang (DAD)</td><td>Sun PhuQuoc Airways 9G 940</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>23:45</td><td>23:20</td><td>Seoul (ICN)</td><td>Jeju Air 7C* 2201</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>00:05</td><td>23:55</td><td>Ho Chi Minh City (SGN)</td><td>Sun PhuQuoc Airways 9G 882</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>00:10</td><td>00:42</td><td>Ho Chi Minh City (SGN)</td><td>Vietnam Airlines VN 224 Codeshare: K6 3224</td><td><span class="badge-status status-late">Arrived 32 minutes late</span></td></tr>
+          <tr><td>00:15</td><td>23:54</td><td>Bangkok (BKK)</td><td>Vietnam Airlines VN 616 Codeshare: K6 3616 / PG 4283</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>00:20</td><td>23:49</td><td>Shanghai (PVG)</td><td>Juneyao Air HO 1329</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>00:25</td><td>00:09</td><td>Ho Chi Minh City (SGN)</td><td>Sun PhuQuoc Airways 9G 884</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>00:50</td><td>01:14</td><td>Ho Chi Minh City (SGN)</td><td>VietJet Air VJC 162</td><td><span class="badge-status status-late">Arrived 24 minutes late</span></td></tr>
+          <tr><td>01:00</td><td>01:01</td><td>Ho Chi Minh City (SGN)</td><td>Sun PhuQuoc Airways 9G 886</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>01:05</td><td>00:50</td><td>Manila (MNL)</td><td>Cebu Pacific 5J 746</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>01:10</td><td>00:39</td><td>Shenzhen (SZX)</td><td>Shenzhen Airlines ZH 107 Codeshare: CA 7977</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>01:10</td><td>00:51</td><td>Ho Chi Minh City (SGN)</td><td>VietJet Air VJC 168</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>01:10</td><td>00:57</td><td>Ho Chi Minh City (SGN)</td><td>Vietnam Airlines VN 270 Codeshare: K6 3270</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>01:30</td><td>01:11</td><td>Hangzhou (HGH)</td><td>Air China CA 707</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>01:35</td><td>01:07</td><td>Wuhan (WUH)</td><td>China Eastern Airlines MU 2573 Codeshare: VN 3599</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>03:05</td><td>03:01</td><td>Guangzhou (CAN)</td><td>VietJet Air VJC 7527</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>03:10</td><td>02:17</td><td>Seoul (ICN)</td><td>Sun PhuQuoc Airways 9G 411</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>03:55</td><td>05:11</td><td>Beijing (PKX)</td><td>VietJet Air VJC 7713</td><td><span class="badge-status status-late">76 minutes late</span></td></tr>
+          <tr><td>04:45</td><td>03:52</td><td>Milan (MXP)</td><td>Vietnam Airlines VN 72 Codeshare: SK 8231 / UX 3944</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>04:50</td><td>04:11</td><td>Shanghai (PVG)</td><td>VietJet Air VJC 7239</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>05:20</td><td>04:34</td><td>Munich (MUC)</td><td>Vietnam Airlines VN 34 Codeshare: UX 3940</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>05:25</td><td>04:45</td><td>Mumbai (BOM)</td><td>Vietnam Airlines VN 972 Codeshare: VS 5650</td><td><span class="badge-status status-ontime">Arrived On-Time</span></td></tr>
+          <tr><td>05:40</td><td>05:56</td><td>Delhi (DEL)</td><td>VietJet Air VJC 972</td><td><span class="badge-status status-late">16 minutes late</span></td></tr>
+          <tr><td>05:55</td><td>06:10</td><td>Ahmedabad (AMD)</td><td>VietJet Air VJC 1926</td><td><span class="badge-status status-late">15 minutes late</span></td></tr>
+          <tr><td>06:00</td><td>06:00</td><td>Bengaluru (BLR)</td><td>Vietnam Airlines VN 982</td><td><span class="badge-status status-ontime">On-Time</span></td></tr>
+          <tr><td>06:00</td><td>06:12</td><td>Amsterdam (AMS)</td><td>Vietnam Airlines VN 82 Codeshare: UX 3950</td><td><span class="badge-status status-ontime">On-Time</span></td></tr>
+          <tr><td>06:05</td><td>06:05</td><td>Frankfurt (FRA)</td><td>Vietnam Airlines VN 36 Codeshare: UX 3948</td><td><span class="badge-status status-ontime">On-Time</span></td></tr>
+          <tr><td>06:20</td><td>06:17</td><td>Jakarta (CGK)</td><td>Vietnam Airlines VN 634 Codeshare: GA 9029</td><td><span class="badge-status status-ontime">On-Time</span></td></tr>
+          <tr><td>06:40</td><td>07:54</td><td>Paris (CDG)</td><td>Vietnam Airlines VN 18 Codeshare: AF 5096 / K6 3018 / SK 8205</td><td><span class="badge-status status-late">74 minutes late</span></td></tr>
+          <tr><td>07:05</td><td>07:05</td><td>Melbourne (MEL)</td><td>Vietnam Airlines VN 778</td><td><span class="badge-status status-ontime">On-Time</span></td></tr>
+          <tr><td>07:10</td><td>06:47</td><td>Ho Chi Minh City (SGN)</td><td>VietJet Air VJC 120</td><td><span class="badge-status status-ontime">On-Time</span></td></tr>
+          <tr><td>07:10</td><td>06:58</td><td>Ho Chi Minh City (SGN)</td><td>Pacific Airlines VN 6002 Codeshare: VN 6002</td><td><span class="badge-status status-ontime">On-Time</span></td></tr>
+          <tr><td>07:15</td><td>07:04</td><td>Doha (DOH)</td><td>Qatar Airways QR 982 Codeshare: AA 8181 / AY 6519 / B6 6593 / BA 6339 / IB 6179 / LA 7446 / RJ 3837</td><td><span class="badge-status status-ontime">On-Time</span></td></tr>
+          <tr><td>07:20</td><td>06:52</td><td>Delhi (DEL)</td><td>Air India AI 2390 Codeshare: BR 3722</td><td><span class="badge-status status-ontime">On-Time</span></td></tr>
+          <tr><td>07:20</td><td>08:23</td><td>Abu Dhabi (AUH)</td><td>Etihad Airways EY 432 Codeshare: VN 3746</td><td><span class="badge-status status-late">63 minutes late</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="flight-site-footer">
+    <p>&copy; 2026 Noi Bai International Airport Flight Information Display System (FIDS). All flight updates are cached for academic & delay tracking purposes.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,269 @@
+{
+  "source": "guide_sgn",
+  "airport": "SGN",
+  "direction": "arrivals",
+  "url": "https://www.hochiminhcityairport.com/flight-status-arrivals-departures/",
+  "scraped_at": "2026-10-10 21:06:04",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "From",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "10:00",
+          "16:39",
+          "Melbourne (MEL)",
+          "VietJet Air VJC 82",
+          "Arrived 399 minutes late"
+        ],
+        [
+          "11:35",
+          "11:35",
+          "Pleiku (PXU)",
+          "VASCO VN 8421 Codeshare: VN 8421",
+          "Arrived On-Time"
+        ],
+        [
+          "15:30",
+          "16:09",
+          "Haiphong (HPH)",
+          "VietJet Air VJC 1277",
+          "Arrived 39 minutes late"
+        ],
+        [
+          "15:40",
+          "17:23",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 522",
+          "Arrived 103 minutes late"
+        ],
+        [
+          "15:45",
+          "16:01",
+          "Phu Quoc (PQC)",
+          "Vietnam Airlines VN 1826",
+          "Arrived 16 minutes late"
+        ],
+        [
+          "16:00",
+          "16:43",
+          "Thanh Hoa (THD)",
+          "Vietnam Airlines VN 1277",
+          "Arrived 43 minutes late"
+        ],
+        [
+          "16:05",
+          "16:40",
+          "Haiphong (HPH)",
+          "Vietnam Airlines VN 7185",
+          "Arrived 35 minutes late"
+        ],
+        [
+          "16:05",
+          "16:05",
+          "Tamky-Chulai Airport (VCL)",
+          "VietJet Air VJC 375",
+          "Arrived On-Time"
+        ],
+        [
+          "16:10",
+          "17:46",
+          "Istanbul (ISL)",
+          "Turkish Airlines TK 162 Codeshare: VN 3082",
+          "Arrived 96 minutes late"
+        ],
+        [
+          "16:10",
+          "17:07",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 633 Codeshare: JL 5758",
+          "Arrived 57 minutes late"
+        ],
+        [
+          "16:10",
+          "16:32",
+          "Perth (PER)",
+          "VietJet Air VJC 92",
+          "Arrived 22 minutes late"
+        ],
+        [
+          "16:10",
+          "16:27",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 253 Codeshare: K6 3253",
+          "Arrived 17 minutes late"
+        ],
+        [
+          "16:10",
+          "15:57",
+          "Bangkok (BKK)",
+          "Vietravel Airlines V2U 130",
+          "Arrived On-Time"
+        ],
+        [
+          "16:10",
+          "16:09",
+          "Bangkok (BKK)",
+          "Vietnam Airlines VN 604 Codeshare: K6 3604 / KL 4073 / PG 4295",
+          "Arrived On-Time"
+        ],
+        [
+          "16:15",
+          "16:21",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 143",
+          "Arrived On-Time"
+        ],
+        [
+          "16:15",
+          "16:16",
+          "Sydney (SYD)",
+          "Vietnam Airlines VN 772",
+          "Arrived On-Time"
+        ],
+        [
+          "16:15",
+          "16:00",
+          "Melbourne (MEL)",
+          "Vietnam Airlines VN 780",
+          "Arrived On-Time"
+        ],
+        [
+          "16:20",
+          "16:15",
+          "Con Dao (VCS)",
+          "VASCO VN 8096 Codeshare: VN 8096",
+          "Arrived On-Time"
+        ],
+        [
+          "16:20",
+          "16:17",
+          "Taipei (TPE)",
+          "China Airlines CI 783 Codeshare: VN 3583",
+          "Arrived On-Time"
+        ],
+        [
+          "16:35",
+          "16:32",
+          "Dalat (DLI)",
+          "Vietnam Airlines VN 7389",
+          "Arrived On-Time"
+        ],
+        [
+          "16:40",
+          "17:28",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 845",
+          "Arrived 48 minutes late"
+        ],
+        [
+          "16:40",
+          "16:55",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 141",
+          "Arrived 15 minutes late"
+        ],
+        [
+          "16:40",
+          "16:50",
+          "Jakarta (CGK)",
+          "VietJet Air VJC 854",
+          "Arrived On-Time"
+        ],
+        [
+          "16:45",
+          "16:45",
+          "Da Nang (DAD)",
+          "Sun PhuQuoc Airways 9G 975",
+          "Arrived On-Time"
+        ],
+        [
+          "16:50",
+          "17:19",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 145",
+          "Arrived 29 minutes late"
+        ],
+        [
+          "16:50",
+          "16:42",
+          "Qui Nhon (UIH)",
+          "Vietnam Airlines VN 1395",
+          "Arrived On-Time"
+        ],
+        [
+          "16:50",
+          "16:50",
+          "Tuy Hoa (TBB)",
+          "VASCO VN 8441 Codeshare: VN 8441",
+          "On-Time"
+        ],
+        [
+          "16:50",
+          "16:27",
+          "Denpasar (DPS)",
+          "VietJet Air VJC 848",
+          "Arrived On-Time"
+        ],
+        [
+          "16:55",
+          "17:41",
+          "Taipei (TPE)",
+          "Starlux Airlines J2X 713",
+          "Arrived 46 minutes late"
+        ],
+        [
+          "16:55",
+          "16:50",
+          "Da Nang (DAD)",
+          "Vietravel Airlines V2U 679",
+          "Arrived On-Time"
+        ],
+        [
+          "16:55",
+          "16:52",
+          "Dalat (DLI)",
+          "VietJet Air VJC 363",
+          "Arrived On-Time"
+        ],
+        [
+          "17:05",
+          "17:00",
+          "Jakarta (CGK)",
+          "Vietnam Airlines VN 630 Codeshare: GA 9024",
+          "Arrived On-Time"
+        ],
+        [
+          "17:10",
+          "17:37",
+          "Nha Trang (CXR)",
+          "VietJet Air VJC 601",
+          "Arrived 27 minutes late"
+        ],
+        [
+          "17:10",
+          "17:15",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 215 Codeshare: K6 3215",
+          "Arrived On-Time"
+        ],
+        [
+          "17:15",
+          "17:45",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 851",
+          "Arrived 30 minutes late"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_sgn_arrivals_20261010_210627.html"
+}

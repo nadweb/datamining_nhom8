@@ -1,0 +1,332 @@
+{
+  "source": "guide_han",
+  "airport": "HAN",
+  "direction": "arrivals",
+  "url": "https://www.hanoiairportonline.com/flight-status/",
+  "scraped_at": "2026-10-09 18:57:26",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "From",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "13:15",
+          "13:57",
+          "Dubai (DXB)",
+          "Emirates EK 394 Codeshare: AC 7604 / DE 5924 / GF 5408 / TP 6746",
+          "Arrived 42 minutes late"
+        ],
+        [
+          "13:55",
+          "15:08",
+          "Abu Dhabi (AUH)",
+          "Etihad Airways EY 979",
+          "Arrived 73 minutes late"
+        ],
+        [
+          "13:55",
+          "14:13",
+          "Bangkok (BKK)",
+          "Vietnam Airlines VN 610 Codeshare: K6 3610 / KL 4076 / PG 4281",
+          "Arrived 18 minutes late"
+        ],
+        [
+          "14:00",
+          "15:06",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 1504",
+          "Arrived 66 minutes late"
+        ],
+        [
+          "14:00",
+          "14:22",
+          "Hong Kong (HKG)",
+          "Sun PhuQuoc Airways 9G 531",
+          "Arrived 22 minutes late"
+        ],
+        [
+          "14:00",
+          "13:43",
+          "Shanghai (PVG)",
+          "China Eastern Airlines MU 6011 Codeshare: VN 3553",
+          "Arrived On-Time"
+        ],
+        [
+          "14:05",
+          "13:37",
+          "Shenzhen (SZX)",
+          "Shenzhen Airlines ZH 103 Codeshare: CA 7913",
+          "Arrived On-Time"
+        ],
+        [
+          "14:10",
+          "14:52",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 136",
+          "Arrived 42 minutes late"
+        ],
+        [
+          "14:10",
+          "14:23",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 212 Codeshare: CI 8812 / K6 3212",
+          "Arrived On-Time"
+        ],
+        [
+          "14:15",
+          "14:15",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 7230",
+          "On-Time"
+        ],
+        [
+          "14:20",
+          "15:21",
+          "Dalat (DLI)",
+          "VietJet Air VJC 404",
+          "Arrived 61 minutes late"
+        ],
+        [
+          "14:20",
+          "14:51",
+          "Nha Trang (CXR)",
+          "Sun PhuQuoc Airways 9G 1144",
+          "Arrived 31 minutes late"
+        ],
+        [
+          "14:20",
+          "14:06",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 512",
+          "Arrived On-Time"
+        ],
+        [
+          "14:20",
+          "14:20",
+          "Da Nang (DAD)",
+          "Vietnam Airlines VN 168 Codeshare: CI 8858",
+          "Arrived On-Time"
+        ],
+        [
+          "14:30",
+          "14:58",
+          "Nha Trang (CXR)",
+          "Vietnam Airlines VN 1552 Codeshare: CI 8762",
+          "Arrived 28 minutes late"
+        ],
+        [
+          "14:30",
+          "14:45",
+          "Buon Ma Thout (BMV)",
+          "VietJet Air VJC 1492",
+          "Arrived 15 minutes late"
+        ],
+        [
+          "14:35",
+          "15:03",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 510",
+          "Arrived 28 minutes late"
+        ],
+        [
+          "14:40",
+          "14:53",
+          "Kuala Lumpur (KUL)",
+          "VietJet Air VJC 906",
+          "Arrived On-Time"
+        ],
+        [
+          "14:40",
+          "14:37",
+          "Xiamen (XMN)",
+          "Xiamen Airlines MF 859",
+          "Arrived On-Time"
+        ],
+        [
+          "14:45",
+          "14:31",
+          "Guangzhou (CAN)",
+          "China Southern Airlines CZ 8315 Codeshare: 3U 7085 / VN 3509",
+          "Arrived On-Time"
+        ],
+        [
+          "14:45",
+          "14:43",
+          "Kunming (KMG)",
+          "China Eastern Airlines MU 9605 Codeshare: VN 3517",
+          "Arrived On-Time"
+        ],
+        [
+          "14:50",
+          "15:20",
+          "Ho Chi Minh City (SGN)",
+          "Vietravel Airlines V2U 778",
+          "Arrived 30 minutes late"
+        ],
+        [
+          "14:50",
+          "14:38",
+          "Chiang Mai (CNX)",
+          "Thai AirAsia FD 870",
+          "Arrived On-Time"
+        ],
+        [
+          "15:00",
+          "15:38",
+          "Buon Ma Thout (BMV)",
+          "Vietnam Airlines VN 7602",
+          "Arrived 38 minutes late"
+        ],
+        [
+          "15:00",
+          "15:29",
+          "Bangkok (BKK)",
+          "Ethiopian Airlines ET 608",
+          "Arrived 29 minutes late"
+        ],
+        [
+          "15:05",
+          "15:15",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 840",
+          "Arrived On-Time"
+        ],
+        [
+          "15:10",
+          "15:51",
+          "Qui Nhon (UIH)",
+          "Vietnam Airlines VN 1622 Codeshare: AF 9197",
+          "Arrived 41 minutes late"
+        ],
+        [
+          "15:10",
+          "15:46",
+          "Can Tho (VCA)",
+          "VietJet Air VJC 464",
+          "Arrived 36 minutes late"
+        ],
+        [
+          "15:10",
+          "15:27",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 248 Codeshare: CI 8838 / GA 9942 / K6 3248",
+          "Arrived 17 minutes late"
+        ],
+        [
+          "15:10",
+          "15:10",
+          "Da Nang (DAD)",
+          "Vietnam Airlines VN 172",
+          "On-Time"
+        ],
+        [
+          "15:15",
+          "15:35",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 138",
+          "Arrived 20 minutes late"
+        ],
+        [
+          "15:15",
+          "15:26",
+          "Da Nang (DAD)",
+          "Vietnam Airlines VN 170 Codeshare: CI 8860 / K6 3170",
+          "Arrived On-Time"
+        ],
+        [
+          "15:20",
+          "15:15",
+          "Fuzhou (FOC)",
+          "Xiamen Airlines MF 8697",
+          "Arrived On-Time"
+        ],
+        [
+          "15:25",
+          "15:53",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 508",
+          "Arrived 28 minutes late"
+        ],
+        [
+          "15:25",
+          "15:42",
+          "Singapore (SIN)",
+          "Singapore Airlines SQ 196 Codeshare: NZ 3236 / TK 9360 / VN 3304",
+          "Arrived 17 minutes late"
+        ],
+        [
+          "15:25",
+          "15:31",
+          "Da Nang (DAD)",
+          "Sun PhuQuoc Airways 9G 922",
+          "Arrived On-Time"
+        ],
+        [
+          "15:30",
+          "15:56",
+          "Vientiane (VTE)",
+          "Lao Airlines QV 311",
+          "Arrived 26 minutes late"
+        ],
+        [
+          "15:30",
+          "15:39",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 142",
+          "Arrived On-Time"
+        ],
+        [
+          "15:35",
+          "16:05",
+          "Hong Kong (HKG)",
+          "Vietnam Airlines VN 593 Codeshare: CX 6263 / K6 3593",
+          "Arrived 30 minutes late"
+        ],
+        [
+          "15:35",
+          "15:42",
+          "Singapore (SIN)",
+          "Vietnam Airlines VN 660 Codeshare: GA 9606 / K6 3660 / SQ 5350",
+          "Arrived On-Time"
+        ],
+        [
+          "15:40",
+          "15:06",
+          "Istanbul (ISL)",
+          "Turkish Airlines TK 164 Codeshare: VN 3084",
+          "Arrived On-Time"
+        ],
+        [
+          "15:40",
+          "14:59",
+          "Tel Aviv-Yafo (TLV)",
+          "GullivAir IZ 699 Codeshare: IZ 699",
+          "Arrived On-Time"
+        ],
+        [
+          "15:45",
+          "15:55",
+          "Shenzhen (SZX)",
+          "China Southern Airlines CZ 8469 Codeshare: VN 3547",
+          "Arrived On-Time"
+        ],
+        [
+          "15:50",
+          "16:17",
+          "Bangkok (BKK)",
+          "VietJet Air VJC 902",
+          "Arrived 27 minutes late"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_han_arrivals_20261009_185748.html"
+}

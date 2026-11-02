@@ -1,0 +1,248 @@
+{
+  "source": "guide_cxr",
+  "airport": "CXR",
+  "direction": "arrivals",
+  "url": "https://www.nhatrangairport.com/flight-status-arrivals-departures/",
+  "scraped_at": "2026-10-10 11:06:02",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "From",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "06:10",
+          "06:10",
+          "Bishkek (FRU)",
+          "Qanot Sharq QNT 2241",
+          "On-Time"
+        ],
+        [
+          "07:30",
+          "07:39",
+          "Almaty (ALA)",
+          "Air Astana KC 193",
+          "Arrived On-Time"
+        ],
+        [
+          "07:35",
+          "07:35",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 771",
+          "Arrived On-Time"
+        ],
+        [
+          "08:05",
+          "08:23",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1340 Codeshare: MU 8988",
+          "Arrived 18 minutes late"
+        ],
+        [
+          "08:25",
+          "08:14",
+          "Yekaterinburg (SVX)",
+          "Aeroflot SU 836",
+          "Arrived On-Time"
+        ],
+        [
+          "09:05",
+          "09:05",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1143",
+          "Arrived On-Time"
+        ],
+        [
+          "09:10",
+          "09:05",
+          "Hanoi (HAN)",
+          "Vietravel Airlines V2U 1271",
+          "Arrived On-Time"
+        ],
+        [
+          "09:30",
+          "09:30",
+          "Moscow (SVO)",
+          "Aeroflot SU 294",
+          "On-Time"
+        ],
+        [
+          "09:35",
+          "09:15",
+          "Seoul (ICN)",
+          "VietJet Air VJC 835",
+          "Arrived On-Time"
+        ],
+        [
+          "09:45",
+          "09:25",
+          "Seoul (ICN)",
+          "Vietnam Airlines VN 441 Codeshare: KE 5679",
+          "Arrived On-Time"
+        ],
+        [
+          "10:10",
+          "10:10",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1342",
+          "Arrived On-Time"
+        ],
+        [
+          "10:35",
+          "10:36",
+          "Busan (PUS)",
+          "Vietnam Airlines VN 435",
+          "Arrived On-Time"
+        ],
+        [
+          "11:30",
+          "12:36",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 204",
+          "66 minutes late"
+        ],
+        [
+          "11:50",
+          "11:50",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1145",
+          "On-Time"
+        ],
+        [
+          "11:55",
+          "11:55",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 1553 Codeshare: AF 9201 / MU 8986 / NH 9737",
+          "On-Time"
+        ],
+        [
+          "12:50",
+          "12:50",
+          "Ho Chi Minh City (SGN)",
+          "VASCO VN 8346 Codeshare: VN 8346",
+          "On-Time"
+        ],
+        [
+          "13:30",
+          "13:30",
+          "Bangkok (BKK)",
+          "Thai VietJet Air TVJ 968",
+          "On-Time"
+        ],
+        [
+          "13:35",
+          "13:35",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 775",
+          "On-Time"
+        ],
+        [
+          "13:35",
+          "13:35",
+          "Phu Quoc (PQC)",
+          "Sun PhuQuoc Airways 9G 2952",
+          "On-Time"
+        ],
+        [
+          "14:05",
+          "14:05",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1344 Codeshare: AF 9203 / CI 8784",
+          "On-Time"
+        ],
+        [
+          "14:55",
+          "14:55",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 787",
+          "On-Time"
+        ],
+        [
+          "15:10",
+          "14:43",
+          "Guangzhou (CAN)",
+          "China Southern Airlines CZ 6049 Codeshare: 3U 7091 / VN 3511",
+          "On-Time"
+        ],
+        [
+          "15:25",
+          "15:25",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 1559 Codeshare: CI 8773",
+          "On-Time"
+        ],
+        [
+          "15:30",
+          "15:30",
+          "Minsk (MSQ)",
+          "Belavia B2 795",
+          "On-Time"
+        ],
+        [
+          "15:35",
+          "15:35",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 600",
+          "On-Time"
+        ],
+        [
+          "15:50",
+          "15:50",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1155",
+          "On-Time"
+        ],
+        [
+          "17:50",
+          "17:50",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 773",
+          "On-Time"
+        ],
+        [
+          "18:30",
+          "18:30",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 1563 Codeshare: CI 8785",
+          "On-Time"
+        ],
+        [
+          "19:15",
+          "19:15",
+          "Da Nang (DAD)",
+          "Vietnam Airlines VN 1941",
+          "On-Time"
+        ],
+        [
+          "20:20",
+          "20:20",
+          "Seoul (ICN)",
+          "Air Busan BX 787 Codeshare: OZ 9587",
+          "On-Time"
+        ],
+        [
+          "20:20",
+          "20:20",
+          "Ho Chi Minh City (SGN)",
+          "Pacific Airlines VN 6150 Codeshare: VN 6150",
+          "On-Time"
+        ],
+        [
+          "21:10",
+          "21:10",
+          "Vladivostok (VVO)",
+          "Aeroflot SU 832",
+          "On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_cxr_arrivals_20261010_110624.html"
+}

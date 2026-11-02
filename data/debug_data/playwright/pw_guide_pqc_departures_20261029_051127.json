@@ -1,0 +1,178 @@
+{
+  "source": "guide_pqc",
+  "airport": "PQC",
+  "direction": "departures",
+  "url": "https://www.phuquocairport.com/flight-status-departures/",
+  "scraped_at": "2026-10-29 05:11:02",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "To",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "23:15",
+          "23:10",
+          "Seoul (ICN)",
+          "Jeju Air 7C* 2316",
+          "Departed On-Time"
+        ],
+        [
+          "23:40",
+          "23:51",
+          "Busan (PUS)",
+          "VietJet Air VJC 968",
+          "Departed On-Time"
+        ],
+        [
+          "23:45",
+          "23:33",
+          "Seoul (ICN)",
+          "Korean Air KE 486 Codeshare: DL 7866 / VN 3414",
+          "Departed On-Time"
+        ],
+        [
+          "00:05",
+          "00:35",
+          "Seoul (ICN)",
+          "Trinity Airways TWB 56",
+          "Departed 30 minutes late"
+        ],
+        [
+          "00:30",
+          "00:17",
+          "Busan (PUS)",
+          "Eastar Jet ZE 982",
+          "Departed On-Time"
+        ],
+        [
+          "01:20",
+          "01:09",
+          "Seoul (ICN)",
+          "Sun PhuQuoc Airways 9G 450",
+          "Departed On-Time"
+        ],
+        [
+          "02:40",
+          "02:22",
+          "Kunming (KMG)",
+          "Ruili Airlines DR* 5046",
+          "Departed On-Time"
+        ],
+        [
+          "02:55",
+          "02:41",
+          "Minsk (MSQ)",
+          "Belavia B2 8198",
+          "Departed On-Time"
+        ],
+        [
+          "08:20",
+          "08:20",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1202",
+          "On-Time"
+        ],
+        [
+          "08:25",
+          "08:25",
+          "Taipei (TPE)",
+          "VietJet Air VJC 844",
+          "On-Time"
+        ],
+        [
+          "08:25",
+          "08:25",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 328",
+          "On-Time"
+        ],
+        [
+          "08:40",
+          "08:40",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 450",
+          "On-Time"
+        ],
+        [
+          "08:45",
+          "08:45",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1954",
+          "On-Time"
+        ],
+        [
+          "08:55",
+          "08:55",
+          "Almaty (ALA)",
+          "Air Astana KC 162",
+          "On-Time"
+        ],
+        [
+          "09:15",
+          "09:15",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 342",
+          "On-Time"
+        ],
+        [
+          "09:35",
+          "09:35",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1822",
+          "On-Time"
+        ],
+        [
+          "09:50",
+          "09:50",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 1236",
+          "On-Time"
+        ],
+        [
+          "10:05",
+          "11:15",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 544",
+          "Delayed 70 minutes"
+        ],
+        [
+          "10:30",
+          "10:30",
+          "Hong Kong (HKG)",
+          "HK Express UO 599 Codeshare: CX 5599",
+          "On-Time"
+        ],
+        [
+          "10:35",
+          "10:35",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1830",
+          "On-Time"
+        ],
+        [
+          "10:35",
+          "10:35",
+          "Singapore (SIN)",
+          "Sun PhuQuoc Airways 9G 729",
+          "On-Time"
+        ],
+        [
+          "10:40",
+          "10:40",
+          "Bangkok (BKK)",
+          "Sun PhuQuoc Airways 9G 701",
+          "On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_pqc_departures_20261029_051126.html"
+}

@@ -1,0 +1,430 @@
+{
+  "source": "guide_pqc",
+  "airport": "PQC",
+  "direction": "arrivals",
+  "url": "https://www.phuquocairport.com/flight-status-arrivals-departures/",
+  "scraped_at": "2026-10-28 13:11:05",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "From",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "07:25",
+          "07:10",
+          "Astana (TSE)",
+          "Air Astana KC 173",
+          "Arrived On-Time"
+        ],
+        [
+          "07:35",
+          "07:30",
+          "Seoul (ICN)",
+          "VietJet Air VJC 979",
+          "Arrived On-Time"
+        ],
+        [
+          "07:40",
+          "07:41",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1203",
+          "Arrived On-Time"
+        ],
+        [
+          "08:05",
+          "08:10",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 451",
+          "Arrived On-Time"
+        ],
+        [
+          "08:05",
+          "08:05",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1955",
+          "On-Time"
+        ],
+        [
+          "09:00",
+          "09:00",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1823 Codeshare: SK 8254",
+          "On-Time"
+        ],
+        [
+          "09:15",
+          "08:26",
+          "Seoul (ICN)",
+          "Sun PhuQuoc Airways 9G 455",
+          "Arrived On-Time"
+        ],
+        [
+          "09:20",
+          "09:11",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1961",
+          "Arrived On-Time"
+        ],
+        [
+          "09:30",
+          "09:05",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 543",
+          "Arrived On-Time"
+        ],
+        [
+          "09:45",
+          "09:54",
+          "Hong Kong (HKG)",
+          "HK Express UO 598 Codeshare: CX 5598",
+          "Arrived On-Time"
+        ],
+        [
+          "09:55",
+          "09:48",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1209",
+          "Arrived On-Time"
+        ],
+        [
+          "10:00",
+          "10:02",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1831",
+          "Arrived On-Time"
+        ],
+        [
+          "10:30",
+          "10:42",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 321",
+          "Arrived On-Time"
+        ],
+        [
+          "10:30",
+          "10:31",
+          "Da Nang (DAD)",
+          "Sun PhuQuoc Airways 9G 2963",
+          "Arrived On-Time"
+        ],
+        [
+          "10:30",
+          "10:27",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1963",
+          "Arrived On-Time"
+        ],
+        [
+          "11:00",
+          "11:00",
+          "Haiphong (HPH)",
+          "Sun PhuQuoc Airways 9G 2501",
+          "Arrived On-Time"
+        ],
+        [
+          "11:00",
+          "10:51",
+          "Bangkok (BKK)",
+          "Thai VietJet Air TVJ 980",
+          "Arrived On-Time"
+        ],
+        [
+          "11:05",
+          "11:18",
+          "Busan (PUS)",
+          "VietJet Air VJC 969",
+          "Arrived On-Time"
+        ],
+        [
+          "11:10",
+          "11:12",
+          "Nha Trang (CXR)",
+          "Sun PhuQuoc Airways 9G 2953",
+          "Arrived On-Time"
+        ],
+        [
+          "11:25",
+          "11:28",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1825 Codeshare: AF 5139 / SK 8250",
+          "Arrived On-Time"
+        ],
+        [
+          "11:40",
+          "11:46",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 719",
+          "Arrived On-Time"
+        ],
+        [
+          "11:50",
+          "12:18",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 345",
+          "Arrived 28 minutes late"
+        ],
+        [
+          "11:55",
+          "11:51",
+          "Singapore (SIN)",
+          "Scoot TR 562 Codeshare: SQ 8690",
+          "Arrived On-Time"
+        ],
+        [
+          "12:00",
+          "11:58",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1967",
+          "Arrived On-Time"
+        ],
+        [
+          "12:05",
+          "12:04",
+          "Bangkok (DMK)",
+          "Thai AirAsia FD 660",
+          "Arrived On-Time"
+        ],
+        [
+          "12:15",
+          "12:12",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 449",
+          "Arrived On-Time"
+        ],
+        [
+          "12:50",
+          "12:50",
+          "Moscow (SVO)",
+          "Aeroflot SU 282",
+          "On-Time"
+        ],
+        [
+          "13:00",
+          "13:00",
+          "Kathmandu (KTM)",
+          "Sun PhuQuoc Airways 9G 6320",
+          "Arrived On-Time"
+        ],
+        [
+          "13:15",
+          "13:15",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1969",
+          "On-Time"
+        ],
+        [
+          "13:30",
+          "13:30",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 343",
+          "On-Time"
+        ],
+        [
+          "13:30",
+          "13:30",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 1239",
+          "On-Time"
+        ],
+        [
+          "13:35",
+          "13:41",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 545",
+          "On-Time"
+        ],
+        [
+          "13:35",
+          "13:35",
+          "Tashkent (TAS)",
+          "Qanot Sharq QNT 2233",
+          "On-Time"
+        ],
+        [
+          "13:40",
+          "13:40",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1219",
+          "On-Time"
+        ],
+        [
+          "13:45",
+          "13:45",
+          "Singapore (SIN)",
+          "VietJet Air VJC 984",
+          "On-Time"
+        ],
+        [
+          "13:45",
+          "13:45",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 327",
+          "On-Time"
+        ],
+        [
+          "14:10",
+          "14:10",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1827",
+          "On-Time"
+        ],
+        [
+          "14:25",
+          "14:25",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 715",
+          "On-Time"
+        ],
+        [
+          "14:30",
+          "14:30",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 441",
+          "On-Time"
+        ],
+        [
+          "14:35",
+          "14:35",
+          "Bangkok (BKK)",
+          "Sun PhuQuoc Airways 9G 702",
+          "On-Time"
+        ],
+        [
+          "15:00",
+          "15:00",
+          "Da Nang (DAD)",
+          "Sun PhuQuoc Airways 9G 2965",
+          "On-Time"
+        ],
+        [
+          "15:00",
+          "15:00",
+          "Singapore (SIN)",
+          "Sun PhuQuoc Airways 9G 720",
+          "On-Time"
+        ],
+        [
+          "15:05",
+          "15:05",
+          "Nha Trang (CXR)",
+          "Sun PhuQuoc Airways 9G 2957",
+          "On-Time"
+        ],
+        [
+          "15:40",
+          "15:40",
+          "Seoul (ICN)",
+          "Sun PhuQuoc Airways 9G 451",
+          "On-Time"
+        ],
+        [
+          "16:00",
+          "16:00",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1975",
+          "On-Time"
+        ],
+        [
+          "16:00",
+          "16:00",
+          "Bangkok (BKK)",
+          "Thai VietJet Air TVJ 982",
+          "On-Time"
+        ],
+        [
+          "16:20",
+          "16:20",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1829",
+          "On-Time"
+        ],
+        [
+          "16:45",
+          "16:45",
+          "Haiphong (HPH)",
+          "VietJet Air VJC 761",
+          "On-Time"
+        ],
+        [
+          "16:50",
+          "16:50",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 325",
+          "On-Time"
+        ],
+        [
+          "17:10",
+          "17:10",
+          "Can Tho (VCA)",
+          "VASCO VN 8075 Codeshare: VN 8075",
+          "On-Time"
+        ],
+        [
+          "17:30",
+          "17:30",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1233",
+          "On-Time"
+        ],
+        [
+          "17:35",
+          "17:35",
+          "Kuala Lumpur (KUL)",
+          "Sun PhuQuoc Airways 9G 750",
+          "On-Time"
+        ],
+        [
+          "17:40",
+          "17:40",
+          "Taipei (TPE)",
+          "Starlux Airlines J2X 705",
+          "On-Time"
+        ],
+        [
+          "17:55",
+          "17:55",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 335",
+          "On-Time"
+        ],
+        [
+          "18:05",
+          "18:05",
+          "Hong Kong (HKG)",
+          "HK Express UO 568 Codeshare: CX 5568",
+          "On-Time"
+        ],
+        [
+          "18:05",
+          "18:05",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 445",
+          "On-Time"
+        ],
+        [
+          "18:40",
+          "18:40",
+          "Hong Kong (HKG)",
+          "Sun PhuQuoc Airways 9G 501",
+          "On-Time"
+        ],
+        [
+          "18:45",
+          "18:45",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1985",
+          "On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_pqc_arrivals_20261028_131138.html"
+}

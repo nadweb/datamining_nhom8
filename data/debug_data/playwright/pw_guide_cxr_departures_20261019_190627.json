@@ -1,0 +1,213 @@
+{
+  "source": "guide_cxr",
+  "airport": "CXR",
+  "direction": "departures",
+  "url": "https://www.nhatrangairport.com/flight-status-departures/",
+  "scraped_at": "2026-10-19 19:06:04",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "To",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "10:35",
+          "14:18",
+          "Haiphong (HPH)",
+          "VietJet Air VJC 730",
+          "Departed 223 minutes late"
+        ],
+        [
+          "12:30",
+          "12:30",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1144",
+          "Departed On-Time"
+        ],
+        [
+          "13:20",
+          "13:49",
+          "Ho Chi Minh City (SGN)",
+          "VASCO VN 8347 Codeshare: VN 8347",
+          "Departed 29 minutes late"
+        ],
+        [
+          "14:05",
+          "15:16",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 772",
+          "Departed 71 minutes late"
+        ],
+        [
+          "14:10",
+          "15:05",
+          "Irkutsk (IKT)",
+          "Aeroflot SU 841",
+          "Departed 55 minutes late"
+        ],
+        [
+          "14:30",
+          "14:30",
+          "Phu Quoc (PQC)",
+          "Sun PhuQuoc Airways 9G 2953",
+          "Departed On-Time"
+        ],
+        [
+          "14:40",
+          "14:56",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1345 Codeshare: CI 8775 / MU 8989",
+          "Departed 16 minutes late"
+        ],
+        [
+          "15:25",
+          "15:25",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 774",
+          "Departed On-Time"
+        ],
+        [
+          "16:00",
+          "15:45",
+          "Guangzhou (CAN)",
+          "China Southern Airlines CZ 6050 Codeshare: 3U 7092 / VN 3510",
+          "Departed On-Time"
+        ],
+        [
+          "16:00",
+          "15:57",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 1558 Codeshare: CI 8758",
+          "Departed On-Time"
+        ],
+        [
+          "16:55",
+          "16:55",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1154",
+          "Departed On-Time"
+        ],
+        [
+          "17:55",
+          "17:55",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 1560",
+          "On-Time"
+        ],
+        [
+          "18:20",
+          "18:20",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 776",
+          "On-Time"
+        ],
+        [
+          "19:05",
+          "19:05",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 1562 Codeshare: AF 4138 / MU 8987 / NH 9734",
+          "On-Time"
+        ],
+        [
+          "19:50",
+          "19:50",
+          "Da Nang (DAD)",
+          "Vietnam Airlines VN 1940",
+          "On-Time"
+        ],
+        [
+          "20:55",
+          "20:55",
+          "Ho Chi Minh City (SGN)",
+          "Pacific Airlines VN 6151 Codeshare: VN 6151",
+          "On-Time"
+        ],
+        [
+          "21:35",
+          "21:35",
+          "Seoul (ICN)",
+          "Vietnam Airlines VN 440 Codeshare: KE 5680",
+          "On-Time"
+        ],
+        [
+          "22:55",
+          "22:55",
+          "Seoul (ICN)",
+          "VietJet Air VJC 834",
+          "On-Time"
+        ],
+        [
+          "23:15",
+          "23:15",
+          "Busan (PUS)",
+          "Vietnam Airlines VN 434",
+          "On-Time"
+        ],
+        [
+          "23:20",
+          "23:20",
+          "Busan (PUS)",
+          "Air Busan BX 782 Codeshare: OZ 9592",
+          "On-Time"
+        ],
+        [
+          "23:30",
+          "23:30",
+          "Seoul (ICN)",
+          "Trinity Airways TWB 34",
+          "On-Time"
+        ],
+        [
+          "23:55",
+          "23:55",
+          "Busan (PUS)",
+          "Jin Air LJ 116 Codeshare: KE 5056",
+          "On-Time"
+        ],
+        [
+          "00:05",
+          "00:05",
+          "Seoul (ICN)",
+          "Air Seoul RS* 528",
+          "On-Time"
+        ],
+        [
+          "00:20",
+          "00:20",
+          "Seoul (ICN)",
+          "Korean Air KE 468 Codeshare: DL 7814 / VN 3404",
+          "On-Time"
+        ],
+        [
+          "00:55",
+          "00:55",
+          "Seoul (ICN)",
+          "Jin Air LJ 88 Codeshare: KE 5728",
+          "On-Time"
+        ],
+        [
+          "01:10",
+          "01:10",
+          "Seoul (ICN)",
+          "Eastar Jet ZE 562",
+          "On-Time"
+        ],
+        [
+          "01:35",
+          "01:35",
+          "Seoul (ICN)",
+          "Jeju Air 7C* 2304",
+          "On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_cxr_departures_20261019_190625.html"
+}

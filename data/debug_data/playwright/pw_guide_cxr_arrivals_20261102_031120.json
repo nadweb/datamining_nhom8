@@ -1,0 +1,255 @@
+{
+  "source": "guide_cxr",
+  "airport": "CXR",
+  "direction": "arrivals",
+  "url": "https://www.nhatrangairport.com/flight-status-arrivals-departures/",
+  "scraped_at": "2026-11-02 03:11:02",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "From",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "20:55",
+          "21:02",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1350 Codeshare: CI 8780",
+          "Arrived On-Time"
+        ],
+        [
+          "21:25",
+          "21:08",
+          "Seoul (ICN)",
+          "Korean Air KE 467 Codeshare: DL 7813 / VN 3405",
+          "Arrived On-Time"
+        ],
+        [
+          "21:40",
+          "21:48",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 1779",
+          "Arrived On-Time"
+        ],
+        [
+          "22:30",
+          "23:20",
+          "Cheongju (CJJ)",
+          "Aero K R2F 557",
+          "Arrived 50 minutes late"
+        ],
+        [
+          "22:40",
+          "22:43",
+          "Busan (PUS)",
+          "Air Busan BX 755 Codeshare: OZ 9591",
+          "Arrived On-Time"
+        ],
+        [
+          "23:20",
+          "23:39",
+          "Seoul (ICN)",
+          "Jin Air LJ 127 Codeshare: KE 5727",
+          "Arrived 19 minutes late"
+        ],
+        [
+          "23:30",
+          "23:51",
+          "Seoul (ICN)",
+          "Air Seoul RS* 115",
+          "Arrived 21 minutes late"
+        ],
+        [
+          "23:35",
+          "23:32",
+          "Daegu (TAE)",
+          "Trinity Airways TWB 37",
+          "Arrived On-Time"
+        ],
+        [
+          "23:50",
+          "00:01",
+          "Cheongju (CJJ)",
+          "Trinity Airways TWB 45",
+          "Arrived On-Time"
+        ],
+        [
+          "23:55",
+          "00:07",
+          "Seoul (ICN)",
+          "Trinity Airways TWB 33",
+          "Arrived On-Time"
+        ],
+        [
+          "00:10",
+          "01:15",
+          "Seoul (ICN)",
+          "Parata Air FGW 205",
+          "Arrived 65 minutes late"
+        ],
+        [
+          "00:40",
+          "00:18",
+          "Busan (PUS)",
+          "Trinity Airways TWB 41",
+          "Arrived On-Time"
+        ],
+        [
+          "00:55",
+          "00:33",
+          "Seoul (ICN)",
+          "Eastar Jet ZE 561",
+          "Arrived On-Time"
+        ],
+        [
+          "01:10",
+          "01:10",
+          "Seoul (ICN)",
+          "Jeju Air 7C* 2303",
+          "Arrived On-Time"
+        ],
+        [
+          "08:05",
+          "08:05",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1340 Codeshare: MU 8988",
+          "On-Time"
+        ],
+        [
+          "09:10",
+          "09:10",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1143",
+          "On-Time"
+        ],
+        [
+          "09:15",
+          "09:15",
+          "Hanoi (HAN)",
+          "Vietravel Airlines V2U 1271",
+          "On-Time"
+        ],
+        [
+          "09:20",
+          "09:20",
+          "Seoul (ICN)",
+          "Vietnam Airlines VN 441 Codeshare: KE 5679",
+          "On-Time"
+        ],
+        [
+          "09:40",
+          "09:40",
+          "Guangzhou (CAN)",
+          "China Southern Airlines CZ 8475 Codeshare: 3U 7019 / VN 3513",
+          "On-Time"
+        ],
+        [
+          "09:55",
+          "09:55",
+          "Bangkok (DMK)",
+          "Thai AirAsia FD 646",
+          "On-Time"
+        ],
+        [
+          "09:55",
+          "09:55",
+          "Seoul (ICN)",
+          "VietJet Air VJC 835",
+          "On-Time"
+        ],
+        [
+          "10:35",
+          "10:35",
+          "Busan (PUS)",
+          "VietJet Air VJC 991",
+          "On-Time"
+        ],
+        [
+          "10:50",
+          "10:50",
+          "Ho Chi Minh City (SGN)",
+          "Pacific Airlines VN 6154 Codeshare: VN 6154",
+          "On-Time"
+        ],
+        [
+          "11:05",
+          "11:05",
+          "Busan (PUS)",
+          "Vietnam Airlines VN 435",
+          "On-Time"
+        ],
+        [
+          "11:30",
+          "11:30",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 204",
+          "On-Time"
+        ],
+        [
+          "11:30",
+          "11:30",
+          "Singapore (SIN)",
+          "Scoot TR 526 Codeshare: SQ 8380",
+          "On-Time"
+        ],
+        [
+          "11:55",
+          "11:55",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 1553 Codeshare: AF 9201 / MU 8986 / NH 9737",
+          "On-Time"
+        ],
+        [
+          "12:20",
+          "12:20",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 785",
+          "On-Time"
+        ],
+        [
+          "12:25",
+          "12:25",
+          "Moscow (SVO)",
+          "Aeroflot SU 294",
+          "On-Time"
+        ],
+        [
+          "12:45",
+          "12:45",
+          "Irkutsk (IKT)",
+          "Aeroflot SU 840",
+          "On-Time"
+        ],
+        [
+          "12:55",
+          "12:55",
+          "Ho Chi Minh City (SGN)",
+          "VASCO VN 8346 Codeshare: VN 8346",
+          "On-Time"
+        ],
+        [
+          "13:05",
+          "13:05",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1149",
+          "On-Time"
+        ],
+        [
+          "13:30",
+          "13:30",
+          "Phu Quoc (PQC)",
+          "Sun PhuQuoc Airways 9G 2952",
+          "On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_cxr_arrivals_20261102_031119.html"
+}

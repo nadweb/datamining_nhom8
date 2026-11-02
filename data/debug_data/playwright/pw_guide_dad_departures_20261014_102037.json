@@ -1,0 +1,283 @@
+{
+  "source": "guide_dad",
+  "airport": "DAD",
+  "direction": "departures",
+  "url": "https://www.danangairportonline.com/flight-status-departures/",
+  "scraped_at": "2026-10-14 10:20:10",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "To",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "05:35",
+          "05:23",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 621",
+          "Departed On-Time"
+        ],
+        [
+          "06:05",
+          "06:01",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 7050",
+          "Departed On-Time"
+        ],
+        [
+          "06:05",
+          "05:48",
+          "Dalat (DLI)",
+          "Vietnam Airlines VN 1955",
+          "Departed On-Time"
+        ],
+        [
+          "07:30",
+          "07:30",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 514",
+          "On-Time"
+        ],
+        [
+          "07:40",
+          "07:47",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 107 Codeshare: K6 3107",
+          "Departed On-Time"
+        ],
+        [
+          "08:15",
+          "08:12",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 908",
+          "Departed On-Time"
+        ],
+        [
+          "08:20",
+          "08:20",
+          "Hanoi (HAN)",
+          "Vietravel Airlines V2U 638",
+          "Departed On-Time"
+        ],
+        [
+          "08:40",
+          "08:39",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 109 Codeshare: K6 3109",
+          "Departed On-Time"
+        ],
+        [
+          "08:50",
+          "09:02",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 160",
+          "Departed On-Time"
+        ],
+        [
+          "08:55",
+          "08:51",
+          "Manila (MNL)",
+          "Philippines AirAsia Z2 823",
+          "Departed On-Time"
+        ],
+        [
+          "09:10",
+          "09:07",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 961",
+          "Departed On-Time"
+        ],
+        [
+          "09:15",
+          "08:52",
+          "Phu Quoc (PQC)",
+          "Sun PhuQuoc Airways 9G 2963",
+          "Departed On-Time"
+        ],
+        [
+          "09:20",
+          "09:37",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 524",
+          "Departed 17 minutes late"
+        ],
+        [
+          "09:35",
+          "09:28",
+          "Haiphong (HPH)",
+          "Vietnam Airlines VN 1670",
+          "Departed On-Time"
+        ],
+        [
+          "09:45",
+          "09:45",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 164 Codeshare: PR 3360",
+          "On-Time"
+        ],
+        [
+          "09:55",
+          "09:59",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 113",
+          "Departed On-Time"
+        ],
+        [
+          "10:00",
+          "09:51",
+          "Taipei (TPE)",
+          "China Airlines CI 788 Codeshare: VN 3588",
+          "Departed On-Time"
+        ],
+        [
+          "10:05",
+          "10:05",
+          "Hong Kong (HKG)",
+          "HK Express UO 553 Codeshare: CX 5553",
+          "On-Time"
+        ],
+        [
+          "10:05",
+          "09:54",
+          "Bangkok (DMK)",
+          "Thai AirAsia FD 635",
+          "Departed On-Time"
+        ],
+        [
+          "10:20",
+          "10:20",
+          "Hanoi (HAN)",
+          "Pacific Airlines VN 6080 Codeshare: VN 6080",
+          "On-Time"
+        ],
+        [
+          "10:40",
+          "10:40",
+          "Bangkok (BKK)",
+          "Thai VietJet Air TVJ 965",
+          "On-Time"
+        ],
+        [
+          "10:50",
+          "10:50",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 629",
+          "On-Time"
+        ],
+        [
+          "10:55",
+          "10:55",
+          "Ho Chi Minh City (SGN)",
+          "Vietravel Airlines V2U 673",
+          "On-Time"
+        ],
+        [
+          "10:55",
+          "10:55",
+          "Singapore (SIN)",
+          "Scoot TR 511 Codeshare: SQ 8437",
+          "On-Time"
+        ],
+        [
+          "10:55",
+          "10:55",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 506",
+          "On-Time"
+        ],
+        [
+          "11:00",
+          "11:00",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 119 Codeshare: CI 8799 / K6 3119 / PR 3357",
+          "On-Time"
+        ],
+        [
+          "11:20",
+          "11:25",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 643",
+          "On-Time"
+        ],
+        [
+          "11:35",
+          "11:35",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 166 Codeshare: K6 3166",
+          "On-Time"
+        ],
+        [
+          "11:40",
+          "11:40",
+          "Phu Quoc (PQC)",
+          "VietJet Air VJC 719",
+          "On-Time"
+        ],
+        [
+          "11:45",
+          "11:45",
+          "Seoul (ICN)",
+          "Trinity Airways TWB 8",
+          "On-Time"
+        ],
+        [
+          "11:50",
+          "11:50",
+          "Hong Kong (HKG)",
+          "HK Express UO 563 Codeshare: CX 5563",
+          "On-Time"
+        ],
+        [
+          "11:55",
+          "11:55",
+          "Singapore (SIN)",
+          "Singapore Airlines SQ 171 Codeshare: AI 8137 / NZ 3467 / VA 5485 / VN 3093",
+          "On-Time"
+        ],
+        [
+          "11:55",
+          "11:55",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 123",
+          "On-Time"
+        ],
+        [
+          "12:00",
+          "12:00",
+          "Macau (MFM)",
+          "Bamboo Airways QH* 9588",
+          "On-Time"
+        ],
+        [
+          "12:00",
+          "12:00",
+          "Bangkok (DMK)",
+          "Thai AirAsia FD 637",
+          "On-Time"
+        ],
+        [
+          "12:20",
+          "12:20",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 910",
+          "On-Time"
+        ],
+        [
+          "12:20",
+          "12:20",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 649",
+          "On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_dad_departures_20261014_102035.html"
+}

@@ -1,0 +1,61 @@
+{
+  "pagination": {
+    "limit": 100,
+    "offset": 0,
+    "count": 1,
+    "total": 1
+  },
+  "data": [
+    {
+      "flight_date": "2026-10-10",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "HTN",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HTN",
+        "icao": "VVHT",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-10T15:40:00+00:00",
+        "estimated": "2026-10-10T15:40:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "SHF",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SHF",
+        "icao": "VVSH",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-10T17:25:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "3019",
+        "iata": "VJ3019",
+        "icao": "VJC3019",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": null,
+        "iata": null,
+        "icao": null,
+        "icao24": "7820A2"
+      },
+      "live": null
+    }
+  ]
+}

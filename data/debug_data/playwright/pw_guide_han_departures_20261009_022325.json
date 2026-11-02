@@ -1,0 +1,262 @@
+{
+  "source": "guide_han",
+  "airport": "HAN",
+  "direction": "departures",
+  "url": "https://www.hanoiairportonline.com/flight-status-departures/",
+  "scraped_at": "2026-10-09 02:23:02",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "To",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "18:25",
+          "20:50",
+          "Chongqing (CKG)",
+          "West Air PN 6424",
+          "Departed 145 minutes late"
+        ],
+        [
+          "19:30",
+          "20:20",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 1127",
+          "Departed 50 minutes late"
+        ],
+        [
+          "20:15",
+          "21:08",
+          "Hue (HUI)",
+          "Vietnam Airlines VN 1549",
+          "Departed 53 minutes late"
+        ],
+        [
+          "20:20",
+          "21:15",
+          "Da Nang (DAD)",
+          "Sun PhuQuoc Airways 9G 939",
+          "Departed 55 minutes late"
+        ],
+        [
+          "20:20",
+          "20:20",
+          "Nanning (NNG)",
+          "GX Airlines GX* 8972",
+          "Departed On-Time"
+        ],
+        [
+          "20:30",
+          "20:30",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 265",
+          "On-Time"
+        ],
+        [
+          "20:35",
+          "20:35",
+          "Da Nang (DAD)",
+          "Sun PhuQuoc Airways 9G 935",
+          "Departed On-Time"
+        ],
+        [
+          "20:40",
+          "20:33",
+          "Abu Dhabi (AUH)",
+          "Etihad Airways EY 431 Codeshare: VN 3745",
+          "Departed On-Time"
+        ],
+        [
+          "20:45",
+          "20:40",
+          "Bangkok (BKK)",
+          "Thai Airways International TG 565 Codeshare: AC 7464 / LY 8384 / TK 8021",
+          "Departed On-Time"
+        ],
+        [
+          "20:55",
+          "22:21",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 161",
+          "Departed 86 minutes late"
+        ],
+        [
+          "20:55",
+          "20:51",
+          "Bangkok (DMK)",
+          "Thai AirAsia FD 645",
+          "Departed On-Time"
+        ],
+        [
+          "21:00",
+          "21:22",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 519",
+          "Departed 22 minutes late"
+        ],
+        [
+          "21:00",
+          "21:00",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 221 Codeshare: K6 3221",
+          "Departed On-Time"
+        ],
+        [
+          "21:05",
+          "21:05",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 881",
+          "Departed On-Time"
+        ],
+        [
+          "21:10",
+          "21:10",
+          "Haikou (HAK)",
+          "Hainan Airlines HU 784",
+          "Departed On-Time"
+        ],
+        [
+          "21:10",
+          "20:52",
+          "Changsha (CSX)",
+          "China Southern Airlines CZ 8360",
+          "Departed On-Time"
+        ],
+        [
+          "21:15",
+          "21:19",
+          "Shanghai (PVG)",
+          "VietJet Air VJC 7238",
+          "Departed On-Time"
+        ],
+        [
+          "21:25",
+          "21:29",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 163",
+          "Departed On-Time"
+        ],
+        [
+          "21:55",
+          "22:20",
+          "Ho Chi Minh City (SGN)",
+          "Vietravel Airlines V2U 779",
+          "Departed 25 minutes late"
+        ],
+        [
+          "22:00",
+          "22:44",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 267 Codeshare: K6 3267",
+          "Departed 44 minutes late"
+        ],
+        [
+          "22:20",
+          "00:30",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 883",
+          "Departed 130 minutes late"
+        ],
+        [
+          "22:30",
+          "22:32",
+          "Guangzhou (CAN)",
+          "VietJet Air VJC 7526",
+          "Departed On-Time"
+        ],
+        [
+          "22:40",
+          "22:24",
+          "Chengdu (TFU)",
+          "Chengdu Airlines EU 2864",
+          "Departed On-Time"
+        ],
+        [
+          "22:45",
+          "22:37",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 167",
+          "Departed On-Time"
+        ],
+        [
+          "22:55",
+          "23:17",
+          "Istanbul (ISL)",
+          "Turkish Airlines TK 165 Codeshare: VN 3085",
+          "Departed 22 minutes late"
+        ],
+        [
+          "22:55",
+          "22:55",
+          "Ho Chi Minh City (SGN)",
+          "Pacific Airlines VN 6025 Codeshare: VN 6025",
+          "Departed On-Time"
+        ],
+        [
+          "23:00",
+          "23:08",
+          "Frankfurt (FRA)",
+          "Vietnam Airlines VN 37 Codeshare: UX 3949",
+          "Departed On-Time"
+        ],
+        [
+          "23:05",
+          "23:43",
+          "Macau (MFM)",
+          "Air Macau NX 949",
+          "Departed 38 minutes late"
+        ],
+        [
+          "23:10",
+          "23:05",
+          "Cebu City (CEB)",
+          "Vietnam Airlines VN 643",
+          "Departed On-Time"
+        ],
+        [
+          "23:10",
+          "23:09",
+          "Seoul (ICN)",
+          "Korean Air KE 448 Codeshare: AS 7814 / DL 7808 / VN 3410 / VS 5518 / WS 6038",
+          "Departed On-Time"
+        ],
+        [
+          "23:20",
+          "23:24",
+          "Paris (CDG)",
+          "Vietnam Airlines VN 19 Codeshare: AF 5097 / K6 3019 / SK 8202",
+          "Departed On-Time"
+        ],
+        [
+          "23:20",
+          "23:22",
+          "Tokyo (NRT)",
+          "JAL JL 752 Codeshare: AA 8421 / AS 7324 / OM 5510 / WS 5937",
+          "Departed On-Time"
+        ],
+        [
+          "23:25",
+          "23:32",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 169",
+          "Departed On-Time"
+        ],
+        [
+          "23:30",
+          "23:33",
+          "Seoul (ICN)",
+          "Asiana Airlines OZ 734 Codeshare: AC 6985 / UA 7313",
+          "Departed On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_han_departures_20261009_022323.html"
+}

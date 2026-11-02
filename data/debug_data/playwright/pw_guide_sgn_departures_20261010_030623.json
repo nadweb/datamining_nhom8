@@ -1,0 +1,346 @@
+{
+  "source": "guide_sgn",
+  "airport": "SGN",
+  "direction": "departures",
+  "url": "https://www.hochiminhcityairport.com/flight-status-departures/",
+  "scraped_at": "2026-10-10 03:06:02",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "To",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "15:30",
+          "21:53",
+          "Melbourne (MEL)",
+          "VietJet Air VJC 81",
+          "Departed 383 minutes late"
+        ],
+        [
+          "19:40",
+          "21:28",
+          "Singapore (SIN)",
+          "Singapore Airlines SQ 185 Codeshare: AC 5863 / AI 8257 / ET 1330 / LH 7211 / NZ 3461 / VA 5495 / VN 3647",
+          "Departed 108 minutes late"
+        ],
+        [
+          "20:10",
+          "22:38",
+          "Hue (HUI)",
+          "Vietnam Airlines VN 1376",
+          "Departed 148 minutes late"
+        ],
+        [
+          "20:30",
+          "21:37",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 160",
+          "Departed 67 minutes late"
+        ],
+        [
+          "21:25",
+          "21:35",
+          "Melbourne (MEL)",
+          "Vietnam Airlines VN 781",
+          "Departed On-Time"
+        ],
+        [
+          "21:35",
+          "22:21",
+          "Bangkok (DMK)",
+          "Thai AirAsia FD 659",
+          "Departed 46 minutes late"
+        ],
+        [
+          "21:45",
+          "22:16",
+          "Guangzhou (CAN)",
+          "VietJet Air VJC 3908",
+          "Departed 31 minutes late"
+        ],
+        [
+          "21:50",
+          "21:59",
+          "Manila (MNL)",
+          "Cebu Pacific 5J 754",
+          "Departed On-Time"
+        ],
+        [
+          "21:55",
+          "22:09",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 882",
+          "Departed On-Time"
+        ],
+        [
+          "22:00",
+          "22:00",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 224 Codeshare: K6 3224",
+          "Departed On-Time"
+        ],
+        [
+          "22:05",
+          "22:04",
+          "Istanbul (ISL)",
+          "Turkish Airlines TK 163 Codeshare: VN 3083",
+          "Departed On-Time"
+        ],
+        [
+          "22:10",
+          "22:19",
+          "Shenzhen (SZX)",
+          "Vietravel Airlines V2U 8602",
+          "Departed On-Time"
+        ],
+        [
+          "22:15",
+          "22:25",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 1128",
+          "Departed On-Time"
+        ],
+        [
+          "22:25",
+          "22:27",
+          "Manila (MNL)",
+          "VietJet Air VJC 858",
+          "Departed On-Time"
+        ],
+        [
+          "22:40",
+          "00:50",
+          "Melbourne (MEL)",
+          "Jetstar JQ 64 Codeshare: QF 5556",
+          "Departed 130 minutes late"
+        ],
+        [
+          "22:40",
+          "23:15",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 162",
+          "Departed 35 minutes late"
+        ],
+        [
+          "22:50",
+          "22:48",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 886",
+          "Departed On-Time"
+        ],
+        [
+          "23:00",
+          "00:53",
+          "Frankfurt (FRA)",
+          "Vietnam Airlines VN 31 Codeshare: UX 3947",
+          "Departed 113 minutes late"
+        ],
+        [
+          "23:00",
+          "22:57",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 270 Codeshare: K6 3270",
+          "Departed On-Time"
+        ],
+        [
+          "23:00",
+          "22:54",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 168",
+          "Departed On-Time"
+        ],
+        [
+          "23:15",
+          "23:15",
+          "Tokyo (HND)",
+          "ANA NH 892 Codeshare: UA 7974 / VN 3496",
+          "Departed On-Time"
+        ],
+        [
+          "23:20",
+          "23:20",
+          "Chongqing (CKG)",
+          "Air China CA 408",
+          "Departed On-Time"
+        ],
+        [
+          "23:25",
+          "23:44",
+          "Copenhagen (CPH)",
+          "Vietnam Airlines VN 39 Codeshare: SK 8220",
+          "Departed 19 minutes late"
+        ],
+        [
+          "23:25",
+          "23:21",
+          "Manila (MNL)",
+          "Vietnam Airlines VN 648 Codeshare: PR 3348",
+          "Departed On-Time"
+        ],
+        [
+          "23:30",
+          "23:25",
+          "Tokyo (HND)",
+          "JAL JL 70 Codeshare: AA 8494 / AS 7326",
+          "Departed On-Time"
+        ],
+        [
+          "23:35",
+          "23:39",
+          "Seoul (ICN)",
+          "Korean Air KE 476 Codeshare: AS 7810 / DL 7926 / VN 3400 / VS 5520 / WS 6040",
+          "Departed On-Time"
+        ],
+        [
+          "23:35",
+          "23:30",
+          "Tokyo (NRT)",
+          "VietJet Air VJC 822 Codeshare: JL 5772",
+          "Departed On-Time"
+        ],
+        [
+          "23:45",
+          "23:52",
+          "Seoul (ICN)",
+          "Vietnam Airlines VN 408 Codeshare: KE 5682",
+          "Departed On-Time"
+        ],
+        [
+          "23:50",
+          "23:48",
+          "Dubai (DXB)",
+          "Emirates EK 393 Codeshare: DE 5971 / GF 5413",
+          "Departed On-Time"
+        ],
+        [
+          "00:01",
+          "00:04",
+          "Nagoya (NGO)",
+          "Vietnam Airlines VN 342 Codeshare: NH 9708",
+          "Departed On-Time"
+        ],
+        [
+          "00:05",
+          "01:19",
+          "Busan (PUS)",
+          "VietJet Air VJC 868",
+          "Departed 74 minutes late"
+        ],
+        [
+          "00:10",
+          "01:03",
+          "Seoul (ICN)",
+          "Asiana Airlines OZ 736 Codeshare: AC 6983 / EY 8446",
+          "Departed 53 minutes late"
+        ],
+        [
+          "00:10",
+          "00:14",
+          "Osaka (KIX)",
+          "Vietnam Airlines VN 320 Codeshare: NH 9706",
+          "Departed On-Time"
+        ],
+        [
+          "00:20",
+          "00:28",
+          "Tokyo (NRT)",
+          "Vietnam Airlines VN 306 Codeshare: NH 9702",
+          "Departed On-Time"
+        ],
+        [
+          "00:50",
+          "01:01",
+          "Manila (MNL)",
+          "Cebu Pacific 5J 752",
+          "Departed On-Time"
+        ],
+        [
+          "01:00",
+          "01:15",
+          "Osaka (KIX)",
+          "VietJet Air VJC 828",
+          "Departed 15 minutes late"
+        ],
+        [
+          "01:00",
+          "00:57",
+          "Perth (PER)",
+          "VietJet Air VJC 91",
+          "Departed On-Time"
+        ],
+        [
+          "01:10",
+          "02:06",
+          "Busan (PUS)",
+          "Vietnam Airlines VN 422 Codeshare: KE 5688",
+          "Departed 56 minutes late"
+        ],
+        [
+          "01:20",
+          "01:14",
+          "Shanghai (PVG)",
+          "Juneyao Air HO 1328",
+          "Departed On-Time"
+        ],
+        [
+          "01:30",
+          "01:41",
+          "Jinan (TNA)",
+          "Shandong Airlines SC 8074 Codeshare: CA 8846",
+          "Departed On-Time"
+        ],
+        [
+          "01:50",
+          "01:48",
+          "Taipei (TPE)",
+          "EVA Air BR 382",
+          "Departed On-Time"
+        ],
+        [
+          "02:00",
+          "02:00",
+          "Hangzhou (HGH)",
+          "China Eastern Airlines MU 870",
+          "Departed On-Time"
+        ],
+        [
+          "02:05",
+          "02:07",
+          "Wuhan (WUH)",
+          "China Southern Airlines CZ 8318",
+          "Departed On-Time"
+        ],
+        [
+          "02:25",
+          "02:49",
+          "Shenzhen (SZX)",
+          "China Southern Airlines CZ 8474 Codeshare: VN 3044",
+          "Delayed 24 minutes"
+        ],
+        [
+          "02:35",
+          "02:34",
+          "Shanghai (PVG)",
+          "China Eastern Airlines MU 282 Codeshare: VN 3522",
+          "Departed On-Time"
+        ],
+        [
+          "02:35",
+          "02:35",
+          "Seoul (ICN)",
+          "VietJet Air VJC 862",
+          "On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_sgn_departures_20261010_030621.html"
+}

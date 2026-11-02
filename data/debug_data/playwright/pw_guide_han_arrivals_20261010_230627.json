@@ -1,0 +1,248 @@
+{
+  "source": "guide_han",
+  "airport": "HAN",
+  "direction": "arrivals",
+  "url": "https://www.hanoiairportonline.com/flight-status/",
+  "scraped_at": "2026-10-10 23:06:03",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "From",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "15:40",
+          "18:51",
+          "Istanbul (ISL)",
+          "Turkish Airlines TK 164 Codeshare: VN 3084",
+          "Arrived 191 minutes late"
+        ],
+        [
+          "16:50",
+          "17:16",
+          "Taipei (TPE)",
+          "EVA Air BR 385 Codeshare: TK 9474",
+          "Arrived 26 minutes late"
+        ],
+        [
+          "16:50",
+          "17:12",
+          "Taipei (TPE)",
+          "Starlux Airlines J2X 717",
+          "Arrived 22 minutes late"
+        ],
+        [
+          "16:50",
+          "17:03",
+          "Taipei (TPE)",
+          "China Airlines CI 793 Codeshare: AF 4163 / VN 3587",
+          "Arrived On-Time"
+        ],
+        [
+          "17:10",
+          "17:52",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 250 Codeshare: K6 3250",
+          "Arrived 42 minutes late"
+        ],
+        [
+          "17:15",
+          "17:44",
+          "Nha Trang (CXR)",
+          "VietJet Air VJC 774",
+          "Arrived 29 minutes late"
+        ],
+        [
+          "17:25",
+          "17:28",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 528",
+          "Arrived On-Time"
+        ],
+        [
+          "17:25",
+          "17:26",
+          "Singapore (SIN)",
+          "VietJet Air VJC 916",
+          "Arrived On-Time"
+        ],
+        [
+          "17:25",
+          "17:14",
+          "Chongqing (CKG)",
+          "West Air PN 6423",
+          "Arrived On-Time"
+        ],
+        [
+          "17:25",
+          "17:21",
+          "Shenzhen (SZX)",
+          "Shenzhen Airlines ZH 105 Codeshare: CA 7975",
+          "Arrived On-Time"
+        ],
+        [
+          "17:30",
+          "17:05",
+          "Guangzhou (CAN)",
+          "Vietnam Airlines VN 507 Codeshare: CZ 7952 / MF 9022",
+          "Arrived On-Time"
+        ],
+        [
+          "17:40",
+          "17:48",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 854",
+          "Arrived On-Time"
+        ],
+        [
+          "17:40",
+          "17:29",
+          "Can Tho (VCA)",
+          "Pacific Airlines VN 6344 Codeshare: VN 6344",
+          "Arrived On-Time"
+        ],
+        [
+          "17:40",
+          "17:39",
+          "Singapore (SIN)",
+          "Singapore Airlines SQ 194 Codeshare: AI 8160 / NZ 3218 / VA 5498 / VN 3680",
+          "Arrived On-Time"
+        ],
+        [
+          "17:45",
+          "17:43",
+          "Phu Quoc (PQC)",
+          "VietJet Air VJC 456",
+          "Arrived On-Time"
+        ],
+        [
+          "17:45",
+          "17:37",
+          "Shanghai (PVG)",
+          "China Eastern Airlines MU 6013",
+          "Arrived On-Time"
+        ],
+        [
+          "17:55",
+          "17:44",
+          "Bangkok (BKK)",
+          "Vietnam Airlines VN 614 Codeshare: K6 3614 / KL 3088 / KQ 5300 / LY 8245 / PG 4285",
+          "Arrived On-Time"
+        ],
+        [
+          "18:00",
+          "18:52",
+          "Da Nang (DAD)",
+          "Vietnam Airlines VN 174 Codeshare: K6 3174",
+          "Arrived 52 minutes late"
+        ],
+        [
+          "18:05",
+          "21:13",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 144 Codeshare: JL 5757",
+          "Arrived 188 minutes late"
+        ],
+        [
+          "18:10",
+          "18:43",
+          "Dalat (DLI)",
+          "VietJet Air VJC 408",
+          "Arrived 33 minutes late"
+        ],
+        [
+          "18:10",
+          "18:30",
+          "Hong Kong (HKG)",
+          "Cathay Pacific CX 743 Codeshare: BA 4561 / QR 5811 / VN 3567",
+          "Arrived 20 minutes late"
+        ],
+        [
+          "18:10",
+          "18:07",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 216 Codeshare: K6 3216",
+          "Arrived On-Time"
+        ],
+        [
+          "18:15",
+          "18:26",
+          "Jakarta (CGK)",
+          "VietJet Air VJC 928",
+          "Arrived On-Time"
+        ],
+        [
+          "18:15",
+          "18:05",
+          "Nha Trang (CXR)",
+          "Vietnam Airlines VN 1558 Codeshare: CI 8758",
+          "Arrived On-Time"
+        ],
+        [
+          "18:20",
+          "18:31",
+          "Nha Trang (CXR)",
+          "Sun PhuQuoc Airways 9G 1154",
+          "Arrived On-Time"
+        ],
+        [
+          "18:20",
+          "18:17",
+          "Singapore (SIN)",
+          "Vietnam Airlines VN 662 Codeshare: GA 9608",
+          "Arrived On-Time"
+        ],
+        [
+          "18:25",
+          "18:34",
+          "Dalat (DLI)",
+          "Vietnam Airlines VN 7572",
+          "Arrived On-Time"
+        ],
+        [
+          "18:25",
+          "18:25",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 148",
+          "On-Time"
+        ],
+        [
+          "18:25",
+          "17:59",
+          "Shanghai (PVG)",
+          "Vietnam Airlines VN 533 Codeshare: CZ 7960 / MU 8971",
+          "Arrived On-Time"
+        ],
+        [
+          "18:35",
+          "18:25",
+          "Phnom Penh (KTI)",
+          "Air Cambodia K6 850 Codeshare: VN 3866",
+          "Arrived On-Time"
+        ],
+        [
+          "18:35",
+          "18:23",
+          "Guiyang (KWE)",
+          "Colorful Guizhou Airlines CGZ 701",
+          "Arrived On-Time"
+        ],
+        [
+          "18:40",
+          "18:21",
+          "Guangzhou (CAN)",
+          "China Southern Airlines CZ 8177 Codeshare: VN 3525",
+          "Arrived On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_han_arrivals_20261010_230625.html"
+}

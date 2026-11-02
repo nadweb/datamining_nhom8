@@ -1,0 +1,262 @@
+{
+  "source": "guide_sgn",
+  "airport": "SGN",
+  "direction": "departures",
+  "url": "https://www.hochiminhcityairport.com/flight-status-departures/",
+  "scraped_at": "2026-10-09 02:23:02",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "To",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "11:10",
+          "21:39",
+          "Melbourne (MEL)",
+          "VietJet Air VJC 81",
+          "Departed 629 minutes late"
+        ],
+        [
+          "18:55",
+          "23:42",
+          "Guangzhou (CAN)",
+          "Spring Airlines 9C 7348",
+          "Departed 287 minutes late"
+        ],
+        [
+          "19:55",
+          "22:30",
+          "Sydney (SYD)",
+          "VietJet Air VJC 85",
+          "Departed 155 minutes late"
+        ],
+        [
+          "20:30",
+          "20:30",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 160",
+          "Departed On-Time"
+        ],
+        [
+          "20:30",
+          "21:12",
+          "Yangon (RGN)",
+          "Myanmar Airways International 8M 453",
+          "Departed 42 minutes late"
+        ],
+        [
+          "20:45",
+          "22:30",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 1156",
+          "Departed 105 minutes late"
+        ],
+        [
+          "20:45",
+          "21:12",
+          "Sydney (SYD)",
+          "Vietnam Airlines VN 773",
+          "Departed 27 minutes late"
+        ],
+        [
+          "20:55",
+          "21:17",
+          "Delhi (DEL)",
+          "Air India AI 2389 Codeshare: BR 3715",
+          "Departed 22 minutes late"
+        ],
+        [
+          "21:00",
+          "21:17",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 260 Codeshare: K6 3260",
+          "Departed 17 minutes late"
+        ],
+        [
+          "21:10",
+          "21:10",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 652",
+          "Departed On-Time"
+        ],
+        [
+          "21:25",
+          "22:24",
+          "Melbourne (MEL)",
+          "Vietnam Airlines VN 781",
+          "Departed 59 minutes late"
+        ],
+        [
+          "21:35",
+          "21:53",
+          "Bangkok (DMK)",
+          "Thai AirAsia FD 659",
+          "Departed 18 minutes late"
+        ],
+        [
+          "21:45",
+          "23:43",
+          "Guangzhou (CAN)",
+          "VietJet Air VJC 3908",
+          "Departed 118 minutes late"
+        ],
+        [
+          "21:55",
+          "23:02",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 882",
+          "Departed 67 minutes late"
+        ],
+        [
+          "22:00",
+          "22:00",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 224 Codeshare: K6 3224",
+          "Departed On-Time"
+        ],
+        [
+          "22:05",
+          "23:23",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 525",
+          "Departed 78 minutes late"
+        ],
+        [
+          "22:05",
+          "22:06",
+          "Istanbul (ISL)",
+          "Turkish Airlines TK 163 Codeshare: VN 3083",
+          "Departed On-Time"
+        ],
+        [
+          "22:10",
+          "22:30",
+          "Shenzhen (SZX)",
+          "Vietravel Airlines V2U 8602",
+          "Departed 20 minutes late"
+        ],
+        [
+          "22:25",
+          "22:35",
+          "Manila (MNL)",
+          "VietJet Air VJC 858",
+          "Departed On-Time"
+        ],
+        [
+          "22:25",
+          "22:25",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 1128",
+          "Departed On-Time"
+        ],
+        [
+          "22:40",
+          "23:20",
+          "Sydney (SYD)",
+          "Jetstar JQ 62 Codeshare: QF 5554",
+          "Departed 40 minutes late"
+        ],
+        [
+          "22:40",
+          "23:11",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 162",
+          "Departed 31 minutes late"
+        ],
+        [
+          "22:50",
+          "23:54",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 886",
+          "Departed 64 minutes late"
+        ],
+        [
+          "22:50",
+          "23:23",
+          "Paris (CDG)",
+          "Vietnam Airlines VN 11 Codeshare: K6 3011 / SK 8212",
+          "Departed 33 minutes late"
+        ],
+        [
+          "23:00",
+          "00:09",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 168",
+          "Departed 69 minutes late"
+        ],
+        [
+          "23:00",
+          "23:20",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 270 Codeshare: K6 3270",
+          "Departed 20 minutes late"
+        ],
+        [
+          "23:15",
+          "23:42",
+          "Tokyo (HND)",
+          "ANA NH 892 Codeshare: UA 7974 / VN 3496",
+          "Departed 27 minutes late"
+        ],
+        [
+          "23:20",
+          "23:25",
+          "Chongqing (CKG)",
+          "Air China CA 408",
+          "Departed On-Time"
+        ],
+        [
+          "23:30",
+          "00:29",
+          "Tokyo (HND)",
+          "JAL JL 70 Codeshare: AA 8494 / AS 7326",
+          "Departed 59 minutes late"
+        ],
+        [
+          "23:35",
+          "00:47",
+          "Seoul (ICN)",
+          "Korean Air KE 476 Codeshare: AS 7810 / DL 7926 / VN 3400 / VS 5520 / WS 6040",
+          "Departed 72 minutes late"
+        ],
+        [
+          "23:35",
+          "23:53",
+          "Tokyo (NRT)",
+          "VietJet Air VJC 822 Codeshare: JL 5772",
+          "Departed 18 minutes late"
+        ],
+        [
+          "23:45",
+          "00:59",
+          "Seoul (ICN)",
+          "Vietnam Airlines VN 408 Codeshare: KE 5682",
+          "Departed 74 minutes late"
+        ],
+        [
+          "23:50",
+          "23:53",
+          "Dubai (DXB)",
+          "Emirates EK 393 Codeshare: DE 5971 / GF 5413",
+          "Departed On-Time"
+        ],
+        [
+          "00:10",
+          "01:32",
+          "Seoul (ICN)",
+          "Asiana Airlines OZ 736 Codeshare: AC 6983 / EY 8446",
+          "Departed 82 minutes late"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_sgn_departures_20261009_022326.html"
+}

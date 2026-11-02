@@ -1,0 +1,269 @@
+{
+  "source": "guide_sgn",
+  "airport": "SGN",
+  "direction": "arrivals",
+  "url": "https://www.hochiminhcityairport.com/flight-status-arrivals-departures/",
+  "scraped_at": "2026-10-09 04:23:02",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "From",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "17:55",
+          "22:50",
+          "Guangzhou (CAN)",
+          "Spring Airlines 9C 7347",
+          "Arrived 295 minutes late"
+        ],
+        [
+          "19:10",
+          "00:09",
+          "Phu Quoc (PQC)",
+          "Sun PhuQuoc Airways 9G 1978",
+          "Arrived 299 minutes late"
+        ],
+        [
+          "20:35",
+          "23:50",
+          "Kuala Lumpur (KUL)",
+          "Vietnam Airlines VN 678 Codeshare: EY 7308 / K6 3678",
+          "Arrived 195 minutes late"
+        ],
+        [
+          "21:05",
+          "00:08",
+          "Phu Quoc (PQC)",
+          "Sun PhuQuoc Airways 9G 1984",
+          "Arrived 183 minutes late"
+        ],
+        [
+          "21:20",
+          "23:00",
+          "Hue (HUI)",
+          "VietJet Air VJC 311",
+          "Arrived 100 minutes late"
+        ],
+        [
+          "21:40",
+          "23:02",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 1127",
+          "Arrived 82 minutes late"
+        ],
+        [
+          "22:00",
+          "23:34",
+          "Xiamen (XMN)",
+          "Xiamen Airlines MF 841 Codeshare: VN 3531",
+          "Arrived 94 minutes late"
+        ],
+        [
+          "22:00",
+          "23:12",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 643",
+          "Arrived 72 minutes late"
+        ],
+        [
+          "22:00",
+          "23:07",
+          "Tokyo (NRT)",
+          "JAL JL 759 Codeshare: AA 8422 / AS 7329 / OM 5505 / WS 5918",
+          "Arrived 67 minutes late"
+        ],
+        [
+          "22:00",
+          "22:54",
+          "Taipei (TPE)",
+          "EVA Air BR 381 Codeshare: TK 9469",
+          "Arrived 54 minutes late"
+        ],
+        [
+          "22:05",
+          "23:33",
+          "Nha Trang (CXR)",
+          "Pacific Airlines VN 6151 Codeshare: VN 6151",
+          "Arrived 88 minutes late"
+        ],
+        [
+          "22:05",
+          "22:54",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 873",
+          "Arrived 49 minutes late"
+        ],
+        [
+          "22:05",
+          "22:51",
+          "Hong Kong (HKG)",
+          "United Airlines UA 152",
+          "Arrived 46 minutes late"
+        ],
+        [
+          "22:10",
+          "23:21",
+          "Seoul (ICN)",
+          "Korean Air KE 475 Codeshare: DL 7925 / VN 3401 / VS 5519 / WS 6039",
+          "Arrived 71 minutes late"
+        ],
+        [
+          "22:10",
+          "22:56",
+          "Hanoi (HAN)",
+          "Vietravel Airlines V2U 787",
+          "Arrived 46 minutes late"
+        ],
+        [
+          "22:15",
+          "23:36",
+          "Singapore (SIN)",
+          "Vietnam Airlines VN 656 Codeshare: EY 7317 / GA 9940 / K6 3656 / SQ 5356",
+          "Arrived 81 minutes late"
+        ],
+        [
+          "22:15",
+          "23:32",
+          "Haiphong (HPH)",
+          "Vietravel Airlines V2U 1103",
+          "Arrived 77 minutes late"
+        ],
+        [
+          "22:20",
+          "23:22",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 159",
+          "Arrived 62 minutes late"
+        ],
+        [
+          "22:30",
+          "00:01",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 645",
+          "Arrived 91 minutes late"
+        ],
+        [
+          "22:35",
+          "23:57",
+          "Da Nang (DAD)",
+          "Sun PhuQuoc Airways 9G 995",
+          "Arrived 82 minutes late"
+        ],
+        [
+          "22:35",
+          "23:11",
+          "Haiphong (HPH)",
+          "VietJet Air VJC 283",
+          "Arrived 36 minutes late"
+        ],
+        [
+          "22:40",
+          "23:55",
+          "Da Nang (DAD)",
+          "Vietnam Airlines VN 143 Codeshare: K6 3143 / MU 8985",
+          "Arrived 75 minutes late"
+        ],
+        [
+          "22:40",
+          "23:25",
+          "Haiphong (HPH)",
+          "Vietnam Airlines VN 1187",
+          "Arrived 45 minutes late"
+        ],
+        [
+          "22:45",
+          "00:16",
+          "Phu Quoc (PQC)",
+          "Sun PhuQuoc Airways 9G 1990",
+          "Arrived 91 minutes late"
+        ],
+        [
+          "22:50",
+          "23:53",
+          "Seoul (ICN)",
+          "Asiana Airlines OZ 735 Codeshare: AC 6982 / EY 8464",
+          "Arrived 63 minutes late"
+        ],
+        [
+          "22:50",
+          "23:08",
+          "Chengdu (TFU)",
+          "Sichuan Airlines 3U 3903 Codeshare: CZ 1522",
+          "Arrived 18 minutes late"
+        ],
+        [
+          "22:50",
+          "22:50",
+          "Vinh City (VII)",
+          "VietJet Air VJC 217",
+          "On-Time"
+        ],
+        [
+          "22:55",
+          "00:13",
+          "Haiphong (HPH)",
+          "Sun PhuQuoc Airways 9G 1523",
+          "Arrived 78 minutes late"
+        ],
+        [
+          "23:00",
+          "23:40",
+          "Bangkok (BKK)",
+          "Vietnam Airlines VN 608 Codeshare: PG 4293",
+          "Arrived 40 minutes late"
+        ],
+        [
+          "23:05",
+          "00:44",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 161",
+          "Arrived 99 minutes late"
+        ],
+        [
+          "23:10",
+          "23:54",
+          "Vinh City (VII)",
+          "Vietnam Airlines VN 1269",
+          "Arrived 44 minutes late"
+        ],
+        [
+          "23:10",
+          "23:27",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 221 Codeshare: K6 3221",
+          "Arrived 17 minutes late"
+        ],
+        [
+          "23:15",
+          "00:33",
+          "Phu Quoc (PQC)",
+          "Vietnam Airlines VN 1834",
+          "Arrived 78 minutes late"
+        ],
+        [
+          "23:15",
+          "00:16",
+          "Seoul (ICN)",
+          "Korean Air KE 479 Codeshare: AS 7809 / DL 7919 / VN 3407",
+          "Arrived 61 minutes late"
+        ],
+        [
+          "23:15",
+          "23:42",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 881",
+          "Arrived 27 minutes late"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_sgn_arrivals_20261009_042321.html"
+}

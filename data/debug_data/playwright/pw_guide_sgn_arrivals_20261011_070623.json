@@ -1,0 +1,262 @@
+{
+  "source": "guide_sgn",
+  "airport": "SGN",
+  "direction": "arrivals",
+  "url": "https://www.hochiminhcityairport.com/flight-status-arrivals-departures/",
+  "scraped_at": "2026-10-11 07:06:02",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "From",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "01:35",
+          "01:42",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 169",
+          "Arrived On-Time"
+        ],
+        [
+          "01:35",
+          "01:15",
+          "Guangzhou (CAN)",
+          "China Southern Airlines CZ 6089 Codeshare: 3U 7065 / VN 3559",
+          "Arrived On-Time"
+        ],
+        [
+          "01:35",
+          "01:17",
+          "Shanghai (PVG)",
+          "China Eastern Airlines MU 281 Codeshare: VN 3523",
+          "Arrived On-Time"
+        ],
+        [
+          "01:50",
+          "01:40",
+          "Shenzhen (SZX)",
+          "Shenzhen Airlines ZH 117 Codeshare: CA 7987",
+          "Arrived On-Time"
+        ],
+        [
+          "02:05",
+          "01:51",
+          "Guiyang (KWE)",
+          "Colorful Guizhou Airlines CGZ 703",
+          "Arrived On-Time"
+        ],
+        [
+          "02:10",
+          "01:51",
+          "Hangzhou (HGH)",
+          "China Eastern Airlines MU 869",
+          "Arrived On-Time"
+        ],
+        [
+          "03:35",
+          "03:24",
+          "Seoul (ICN)",
+          "Sun PhuQuoc Airways 9G 401",
+          "Arrived On-Time"
+        ],
+        [
+          "04:10",
+          "04:25",
+          "Guangzhou (CAN)",
+          "VietJet Air VJC 3909",
+          "Arrived 15 minutes late"
+        ],
+        [
+          "04:25",
+          "04:10",
+          "Copenhagen (CPH)",
+          "Vietnam Airlines VN 38 Codeshare: SK 8219",
+          "Arrived On-Time"
+        ],
+        [
+          "04:35",
+          "04:44",
+          "Manila (MNL)",
+          "VietJet Air VJC 859",
+          "Arrived On-Time"
+        ],
+        [
+          "04:40",
+          "03:49",
+          "Nanjing (NKG)",
+          "China Eastern Airlines MU 2839",
+          "Arrived On-Time"
+        ],
+        [
+          "04:50",
+          "04:30",
+          "Shenzhen (SZX)",
+          "Vietravel Airlines V2U 8601",
+          "Arrived On-Time"
+        ],
+        [
+          "05:00",
+          "05:26",
+          "Brisbane (BNE)",
+          "VietJet Air VJC 84",
+          "Arrived 26 minutes late"
+        ],
+        [
+          "05:00",
+          "04:57",
+          "Beijing (PKX)",
+          "VietJet Air VJC 3949",
+          "Arrived On-Time"
+        ],
+        [
+          "05:25",
+          "05:32",
+          "Shanghai (PVG)",
+          "VietJet Air VJC 3901",
+          "Arrived On-Time"
+        ],
+        [
+          "05:25",
+          "05:07",
+          "Tokyo (HND)",
+          "JAL JL 79 Codeshare: AA 8493 / AS 7327",
+          "Arrived On-Time"
+        ],
+        [
+          "05:35",
+          "05:44",
+          "Hyderabad (HYD)",
+          "VietJet Air VJC 1804",
+          "Arrived On-Time"
+        ],
+        [
+          "05:50",
+          "05:11",
+          "Manila (MNL)",
+          "Vietnam Airlines VN 649 Codeshare: AF 5149 / PR 3349",
+          "Arrived On-Time"
+        ],
+        [
+          "05:50",
+          "05:18",
+          "Chengdu (TFU)",
+          "Sun PhuQuoc Airways 9G 641",
+          "Arrived On-Time"
+        ],
+        [
+          "05:55",
+          "05:55",
+          "Colombo (CMB)",
+          "VietJet Air VJC 1876",
+          "Arrived On-Time"
+        ],
+        [
+          "05:55",
+          "05:36",
+          "Perth (PER)",
+          "Vietnam Airlines VN 790 Codeshare: AF 4133",
+          "Arrived On-Time"
+        ],
+        [
+          "06:05",
+          "06:00",
+          "Delhi (DEL)",
+          "Vietnam Airlines VN 976 Codeshare: VS 5657",
+          "Arrived On-Time"
+        ],
+        [
+          "06:10",
+          "05:36",
+          "Tokyo (HND)",
+          "VietJet Air VJC 821",
+          "Arrived On-Time"
+        ],
+        [
+          "06:30",
+          "06:41",
+          "Ahmedabad (AMD)",
+          "VietJet Air VJC 1806",
+          "Arrived On-Time"
+        ],
+        [
+          "06:35",
+          "06:03",
+          "Frankfurt (FRA)",
+          "Vietnam Airlines VN 30 Codeshare: UX 3946",
+          "Arrived On-Time"
+        ],
+        [
+          "07:05",
+          "07:05",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 621",
+          "Arrived On-Time"
+        ],
+        [
+          "07:10",
+          "07:10",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 205 Codeshare: AF 9195 / GA 9611 / K6 3205 / MU 8980 / NH 9727 / PR 3352",
+          "On-Time"
+        ],
+        [
+          "07:15",
+          "07:15",
+          "Mumbai (BOM)",
+          "VietJet Air VJC 884",
+          "On-Time"
+        ],
+        [
+          "07:25",
+          "07:31",
+          "Paris (CDG)",
+          "Air France AF 258 Codeshare: KL 2242 / SK 9966 / VN 2106",
+          "On-Time"
+        ],
+        [
+          "07:40",
+          "07:40",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 123",
+          "On-Time"
+        ],
+        [
+          "07:40",
+          "07:40",
+          "Con Dao (VCS)",
+          "VASCO VN 8032 Codeshare: VN 8032",
+          "On-Time"
+        ],
+        [
+          "07:55",
+          "07:55",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 805",
+          "On-Time"
+        ],
+        [
+          "08:00",
+          "08:11",
+          "Johor Bharu (JHB)",
+          "AirAsia AK 1490",
+          "On-Time"
+        ],
+        [
+          "08:05",
+          "08:18",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 520",
+          "On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_sgn_arrivals_20261011_070621.html"
+}

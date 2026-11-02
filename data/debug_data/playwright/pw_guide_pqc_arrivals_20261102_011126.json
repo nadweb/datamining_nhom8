@@ -1,0 +1,150 @@
+{
+  "source": "guide_pqc",
+  "airport": "PQC",
+  "direction": "arrivals",
+  "url": "https://www.phuquocairport.com/flight-status-arrivals-departures/",
+  "scraped_at": "2026-11-02 01:11:02",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "From",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "18:35",
+          "18:55",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 445",
+          "Arrived 20 minutes late"
+        ],
+        [
+          "18:40",
+          "19:13",
+          "Hong Kong (HKG)",
+          "Sun PhuQuoc Airways 9G 501",
+          "Arrived 33 minutes late"
+        ],
+        [
+          "18:50",
+          "18:50",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1985",
+          "Arrived On-Time"
+        ],
+        [
+          "19:05",
+          "19:07",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1239",
+          "Arrived On-Time"
+        ],
+        [
+          "19:15",
+          "19:26",
+          "Ho Chi Minh City (SGN)",
+          "Vietravel Airlines V2U 1421",
+          "Arrived On-Time"
+        ],
+        [
+          "19:45",
+          "19:53",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 443",
+          "Arrived On-Time"
+        ],
+        [
+          "20:00",
+          "19:46",
+          "Xian (XIY)",
+          "China Eastern Airlines MU 861",
+          "Arrived On-Time"
+        ],
+        [
+          "20:20",
+          "20:18",
+          "Taipei (TPE)",
+          "Sun PhuQuoc Airways 9G 511",
+          "Arrived On-Time"
+        ],
+        [
+          "21:00",
+          "21:18",
+          "Seoul (ICN)",
+          "Jin Air LJ 135 Codeshare: KE 5785",
+          "Arrived 18 minutes late"
+        ],
+        [
+          "21:20",
+          "20:59",
+          "Seoul (ICN)",
+          "Eastar Jet ZE 581",
+          "Arrived On-Time"
+        ],
+        [
+          "22:00",
+          "23:52",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 337",
+          "Arrived 112 minutes late"
+        ],
+        [
+          "22:10",
+          "21:51",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1835",
+          "Arrived On-Time"
+        ],
+        [
+          "22:15",
+          "21:40",
+          "Seoul (ICN)",
+          "Jeju Air 7C* 2315",
+          "Arrived On-Time"
+        ],
+        [
+          "22:25",
+          "22:01",
+          "Seoul (ICN)",
+          "Korean Air KE 485 Codeshare: DL 7865 / VN 3413",
+          "Arrived On-Time"
+        ],
+        [
+          "22:55",
+          "22:56",
+          "Hong Kong (HKG)",
+          "Sun PhuQuoc Airways 9G 503",
+          "Arrived On-Time"
+        ],
+        [
+          "23:05",
+          "23:03",
+          "Seoul (ICN)",
+          "Trinity Airways TWB 55",
+          "Arrived On-Time"
+        ],
+        [
+          "23:30",
+          "23:39",
+          "Busan (PUS)",
+          "Eastar Jet ZE 981",
+          "Arrived On-Time"
+        ],
+        [
+          "06:00",
+          "06:00",
+          "Seoul (ICN)",
+          "VietJet Air VJC 979",
+          "On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_pqc_arrivals_20261102_011125.html"
+}

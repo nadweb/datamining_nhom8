@@ -1,0 +1,185 @@
+{
+  "source": "guide_pqc",
+  "airport": "PQC",
+  "direction": "arrivals",
+  "url": "https://www.phuquocairport.com/flight-status-arrivals-departures/",
+  "scraped_at": "2026-10-09 06:23:02",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "From",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "00:35",
+          "00:43",
+          "Chengdu (TFU)",
+          "Sun PhuQuoc Airways 9G 611",
+          "Arrived On-Time"
+        ],
+        [
+          "07:35",
+          "07:35",
+          "Seoul (ICN)",
+          "VietJet Air VJC 979",
+          "On-Time"
+        ],
+        [
+          "08:05",
+          "08:05",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1955",
+          "On-Time"
+        ],
+        [
+          "08:35",
+          "08:35",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 449",
+          "On-Time"
+        ],
+        [
+          "08:50",
+          "08:50",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 339",
+          "On-Time"
+        ],
+        [
+          "09:00",
+          "09:00",
+          "Seoul (ICN)",
+          "Sun PhuQuoc Airways 9G 455",
+          "On-Time"
+        ],
+        [
+          "09:00",
+          "09:00",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1823 Codeshare: SK 8238",
+          "On-Time"
+        ],
+        [
+          "09:20",
+          "09:20",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1207",
+          "On-Time"
+        ],
+        [
+          "09:30",
+          "09:26",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 543",
+          "On-Time"
+        ],
+        [
+          "09:35",
+          "09:35",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 1237",
+          "On-Time"
+        ],
+        [
+          "09:40",
+          "09:40",
+          "Hong Kong (HKG)",
+          "HK Express UO 598 Codeshare: CX 5598",
+          "On-Time"
+        ],
+        [
+          "09:55",
+          "09:55",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 321",
+          "On-Time"
+        ],
+        [
+          "10:05",
+          "10:05",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1205",
+          "On-Time"
+        ],
+        [
+          "10:10",
+          "10:10",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 337",
+          "On-Time"
+        ],
+        [
+          "10:15",
+          "10:15",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1209",
+          "On-Time"
+        ],
+        [
+          "10:40",
+          "10:40",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1963",
+          "On-Time"
+        ],
+        [
+          "10:40",
+          "10:40",
+          "Bangkok (BKK)",
+          "Thai VietJet Air TVJ 980",
+          "On-Time"
+        ],
+        [
+          "10:50",
+          "10:50",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 447",
+          "On-Time"
+        ],
+        [
+          "11:00",
+          "11:00",
+          "Da Nang (DAD)",
+          "Sun PhuQuoc Airways 9G 2963",
+          "On-Time"
+        ],
+        [
+          "11:25",
+          "11:25",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1825",
+          "On-Time"
+        ],
+        [
+          "11:35",
+          "11:35",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1965",
+          "On-Time"
+        ],
+        [
+          "11:45",
+          "11:45",
+          "Singapore (SIN)",
+          "Scoot TR 528 Codeshare: SQ 8690",
+          "On-Time"
+        ],
+        [
+          "12:05",
+          "12:05",
+          "Haiphong (HPH)",
+          "Sun PhuQuoc Airways 9G 2501",
+          "On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_pqc_arrivals_20261009_062327.html"
+}

@@ -1,0 +1,185 @@
+{
+  "source": "guide_cxr",
+  "airport": "CXR",
+  "direction": "arrivals",
+  "url": "https://www.nhatrangairport.com/flight-status-arrivals-departures/",
+  "scraped_at": "2026-10-08 22:23:02",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "From",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "15:55",
+          "18:09",
+          "Da Nang (DAD)",
+          "Vietnam Airlines VN 7947",
+          "Arrived 134 minutes late"
+        ],
+        [
+          "17:15",
+          "17:23",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 600",
+          "Arrived On-Time"
+        ],
+        [
+          "17:20",
+          "17:33",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 1561",
+          "Arrived On-Time"
+        ],
+        [
+          "17:25",
+          "17:25",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1155",
+          "Arrived On-Time"
+        ],
+        [
+          "17:50",
+          "17:50",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 773",
+          "Arrived On-Time"
+        ],
+        [
+          "18:30",
+          "20:31",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 1563 Codeshare: CI 8785",
+          "Arrived 121 minutes late"
+        ],
+        [
+          "20:05",
+          "20:07",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 781",
+          "Arrived On-Time"
+        ],
+        [
+          "20:20",
+          "20:41",
+          "Seoul (ICN)",
+          "Air Busan BX 787 Codeshare: OZ 9587",
+          "Arrived 21 minutes late"
+        ],
+        [
+          "20:20",
+          "20:20",
+          "Ho Chi Minh City (SGN)",
+          "Pacific Airlines VN 6150 Codeshare: VN 6150",
+          "Arrived On-Time"
+        ],
+        [
+          "22:20",
+          "22:20",
+          "Busan (PUS)",
+          "Air Busan BX 781 Codeshare: OZ 9591",
+          "On-Time"
+        ],
+        [
+          "22:30",
+          "22:30",
+          "Seoul (ICN)",
+          "Trinity Airways TWB 33",
+          "On-Time"
+        ],
+        [
+          "22:50",
+          "22:50",
+          "Daegu (TAE)",
+          "Trinity Airways TWB 37",
+          "On-Time"
+        ],
+        [
+          "22:55",
+          "22:55",
+          "Seoul (ICN)",
+          "Air Seoul RS* 527",
+          "On-Time"
+        ],
+        [
+          "23:00",
+          "23:00",
+          "Seoul (ICN)",
+          "Parata Air FGW 205",
+          "On-Time"
+        ],
+        [
+          "23:05",
+          "23:44",
+          "Seoul (ICN)",
+          "Korean Air KE 467 Codeshare: DL 7813 / VN 3405",
+          "39 minutes late"
+        ],
+        [
+          "23:45",
+          "23:52",
+          "Seoul (ICN)",
+          "Jin Air LJ 87",
+          "On-Time"
+        ],
+        [
+          "23:55",
+          "23:55",
+          "Seoul (ICN)",
+          "Eastar Jet ZE 561",
+          "On-Time"
+        ],
+        [
+          "00:10",
+          "00:10",
+          "Busan (PUS)",
+          "Trinity Airways TWB 41",
+          "On-Time"
+        ],
+        [
+          "00:35",
+          "00:35",
+          "Seoul (ICN)",
+          "Jeju Air 7C* 2303",
+          "On-Time"
+        ],
+        [
+          "00:45",
+          "00:45",
+          "Cheongju (CJJ)",
+          "Trinity Airways TWB 45",
+          "On-Time"
+        ],
+        [
+          "07:30",
+          "07:30",
+          "Almaty (ALA)",
+          "Air Astana KC 193",
+          "On-Time"
+        ],
+        [
+          "07:35",
+          "07:35",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 771",
+          "On-Time"
+        ],
+        [
+          "08:05",
+          "08:05",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1340 Codeshare: MU 8988",
+          "On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_cxr_arrivals_20261008_222323.html"
+}

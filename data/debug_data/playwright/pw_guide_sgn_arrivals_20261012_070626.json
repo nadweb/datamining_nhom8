@@ -1,0 +1,269 @@
+{
+  "source": "guide_sgn",
+  "airport": "SGN",
+  "direction": "arrivals",
+  "url": "https://www.hochiminhcityairport.com/flight-status-arrivals-departures/",
+  "scraped_at": "2026-10-12 07:06:02",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "From",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "00:20",
+          "01:14",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 631",
+          "Arrived 54 minutes late"
+        ],
+        [
+          "00:55",
+          "00:57",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 167",
+          "Arrived On-Time"
+        ],
+        [
+          "01:00",
+          "00:43",
+          "Hangzhou (HGH)",
+          "China Eastern Airlines MU 869",
+          "Arrived On-Time"
+        ],
+        [
+          "01:05",
+          "00:46",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 883",
+          "Arrived On-Time"
+        ],
+        [
+          "01:10",
+          "00:51",
+          "Hanoi (HAN)",
+          "Pacific Airlines VN 6025 Codeshare: VN 6025",
+          "Arrived On-Time"
+        ],
+        [
+          "01:35",
+          "01:25",
+          "Shanghai (PVG)",
+          "China Eastern Airlines MU 281 Codeshare: VN 3523",
+          "Arrived On-Time"
+        ],
+        [
+          "01:35",
+          "01:26",
+          "Guangzhou (CAN)",
+          "China Southern Airlines CZ 6089 Codeshare: 3U 7065 / VN 3559",
+          "Arrived On-Time"
+        ],
+        [
+          "01:50",
+          "01:39",
+          "Shenzhen (SZX)",
+          "Shenzhen Airlines ZH 117 Codeshare: CA 7987",
+          "Arrived On-Time"
+        ],
+        [
+          "03:35",
+          "02:55",
+          "Seoul (ICN)",
+          "Sun PhuQuoc Airways 9G 401",
+          "Arrived On-Time"
+        ],
+        [
+          "04:10",
+          "04:24",
+          "Guangzhou (CAN)",
+          "VietJet Air VJC 3909",
+          "Arrived On-Time"
+        ],
+        [
+          "04:35",
+          "05:18",
+          "Manila (MNL)",
+          "VietJet Air VJC 859",
+          "Arrived 43 minutes late"
+        ],
+        [
+          "04:40",
+          "05:57",
+          "Munich (MUC)",
+          "Vietnam Airlines VN 32",
+          "Arrived 77 minutes late"
+        ],
+        [
+          "04:50",
+          "05:21",
+          "Shenzhen (SZX)",
+          "Vietravel Airlines V2U 8601",
+          "Arrived 31 minutes late"
+        ],
+        [
+          "04:50",
+          "05:00",
+          "Paris (CDG)",
+          "Vietnam Airlines VN 10 Codeshare: K6 3010 / SK 8207",
+          "Arrived On-Time"
+        ],
+        [
+          "05:00",
+          "05:13",
+          "Beijing (PKX)",
+          "VietJet Air VJC 3949",
+          "Arrived On-Time"
+        ],
+        [
+          "05:25",
+          "05:32",
+          "Shanghai (PVG)",
+          "VietJet Air VJC 3901",
+          "Arrived On-Time"
+        ],
+        [
+          "05:25",
+          "05:08",
+          "Tokyo (HND)",
+          "JAL JL 79 Codeshare: AA 8493 / AS 7327",
+          "Arrived On-Time"
+        ],
+        [
+          "06:00",
+          "06:38",
+          "Bengaluru (BLR)",
+          "VietJet Air VJC 1802",
+          "Arrived 38 minutes late"
+        ],
+        [
+          "06:05",
+          "06:05",
+          "Melbourne (MEL)",
+          "VietJet Air VJC 82",
+          "On-Time"
+        ],
+        [
+          "06:10",
+          "06:17",
+          "Tokyo (HND)",
+          "VietJet Air VJC 821",
+          "Arrived On-Time"
+        ],
+        [
+          "06:25",
+          "06:17",
+          "Frankfurt (FRA)",
+          "Vietnam Airlines VN 30 Codeshare: UX 3946",
+          "Arrived On-Time"
+        ],
+        [
+          "06:35",
+          "06:31",
+          "Delhi (DEL)",
+          "VietJet Air VJC 896",
+          "Arrived On-Time"
+        ],
+        [
+          "07:00",
+          "07:00",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 621",
+          "On-Time"
+        ],
+        [
+          "07:10",
+          "07:10",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 205 Codeshare: AF 9195 / GA 9611 / K6 3205 / MU 8980 / NH 9727 / PR 3352",
+          "Arrived On-Time"
+        ],
+        [
+          "07:15",
+          "07:15",
+          "Mumbai (BOM)",
+          "VietJet Air VJC 884",
+          "On-Time"
+        ],
+        [
+          "07:25",
+          "07:25",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 803",
+          "On-Time"
+        ],
+        [
+          "07:40",
+          "07:40",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 123",
+          "On-Time"
+        ],
+        [
+          "07:50",
+          "07:50",
+          "Phnom Penh (KTI)",
+          "Air Cambodia K6 812 Codeshare: VN 3852",
+          "On-Time"
+        ],
+        [
+          "07:55",
+          "07:55",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 805",
+          "On-Time"
+        ],
+        [
+          "07:55",
+          "07:55",
+          "Con Dao (VCS)",
+          "VASCO VN 8072 Codeshare: VN 8072",
+          "On-Time"
+        ],
+        [
+          "08:00",
+          "07:51",
+          "Johor Bharu (JHB)",
+          "AirAsia AK 1490",
+          "On-Time"
+        ],
+        [
+          "08:05",
+          "08:15",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 520",
+          "On-Time"
+        ],
+        [
+          "08:10",
+          "08:10",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 243 Codeshare: CI 8833 / K6 3243",
+          "On-Time"
+        ],
+        [
+          "08:10",
+          "08:10",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 121",
+          "On-Time"
+        ],
+        [
+          "08:15",
+          "08:15",
+          "Singapore (SIN)",
+          "Scoot TR 502 Codeshare: AC 5941 / SQ 8536",
+          "On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_sgn_arrivals_20261012_070624.html"
+}

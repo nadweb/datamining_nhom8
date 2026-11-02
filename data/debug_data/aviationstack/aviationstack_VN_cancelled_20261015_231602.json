@@ -1,0 +1,1434 @@
+{
+  "pagination": {
+    "limit": 100,
+    "offset": 0,
+    "count": 29,
+    "total": 29
+  },
+  "data": [
+    {
+      "flight_date": "2026-10-15",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Catbi",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HPH",
+        "icao": "VVCI",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-15T20:35:00+00:00",
+        "estimated": "2026-10-15T20:35:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-15T23:05:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "1187",
+        "iata": "VN1187",
+        "icao": "HVN1187",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": null,
+        "iata": null,
+        "icao": null,
+        "icao24": "888099"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-15",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-15T18:40:00+00:00",
+        "estimated": "2026-10-15T18:40:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-15T20:45:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "141",
+        "iata": "VN141",
+        "icao": "HVN141",
+        "codeshared": {
+          "airline_name": "china southern airlines",
+          "airline_iata": "cz",
+          "airline_icao": "csn",
+          "flight_number": "371",
+          "flight_iata": "cz371",
+          "flight_icao": "csn371"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-15",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-15T18:55:00+00:00",
+        "estimated": "2026-10-15T18:55:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-15T20:30:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "142",
+        "iata": "VN142",
+        "icao": "HVN142",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-15",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Phu Bai",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HUI",
+        "icao": "VVPB",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-15T17:40:00+00:00",
+        "estimated": "2026-10-15T17:40:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-15T19:10:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "1375",
+        "iata": "VN1375",
+        "icao": "HVN1375",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-15",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-15T17:55:00+00:00",
+        "estimated": "2026-10-15T17:55:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-15T19:55:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "137",
+        "iata": "VN137",
+        "icao": "HVN137",
+        "codeshared": {
+          "airline_name": "singapore airlines",
+          "airline_iata": "sq",
+          "airline_icao": "sia",
+          "flight_number": "185",
+          "flight_iata": "sq185",
+          "flight_icao": "sia185"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-15",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-15T16:00:00+00:00",
+        "estimated": "2026-10-15T16:00:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-15T17:45:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "136",
+        "iata": "VN136",
+        "icao": "HVN136",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": null,
+        "iata": null,
+        "icao": null,
+        "icao24": "888099"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-15",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-15T15:35:00+00:00",
+        "estimated": "2026-10-15T15:35:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Phu Bai",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HUI",
+        "icao": "VVPB",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-15T17:05:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "1374",
+        "iata": "VN1374",
+        "icao": "HVN1374",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-15",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Dong Tac",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "TBB",
+        "icao": "VVTH",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-15T14:20:00+00:00",
+        "estimated": "2026-10-15T14:20:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-15T16:05:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "1650",
+        "iata": "VN1650",
+        "icao": "HVN1650",
+        "codeshared": {
+          "airline_name": "air cambodia",
+          "airline_iata": "k6",
+          "airline_icao": "khv",
+          "flight_number": "818",
+          "flight_iata": "k6818",
+          "flight_icao": "khv818"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-15",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-15T12:55:00+00:00",
+        "estimated": "2026-10-15T12:55:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-15T14:55:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "127",
+        "iata": "VN127",
+        "icao": "HVN127",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-15",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-15T12:00:00+00:00",
+        "estimated": "2026-10-15T12:00:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Dong Tac",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "TBB",
+        "icao": "VVTH",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-15T13:45:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "1651",
+        "iata": "VN1651",
+        "icao": "HVN1651",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-15",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-15T11:00:00+00:00",
+        "estimated": "2026-10-15T11:00:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-15T12:45:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "126",
+        "iata": "VN126",
+        "icao": "HVN126",
+        "codeshared": {
+          "airline_name": "bangkok airways",
+          "airline_iata": "pg",
+          "airline_icao": "bkp",
+          "flight_number": "287",
+          "flight_iata": "pg287",
+          "flight_icao": "bkp287"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-15",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Vinh City",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "VII",
+        "icao": "VVVH",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-15T08:20:00+00:00",
+        "estimated": "2026-10-15T08:20:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-15T09:15:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "1716",
+        "iata": "VN1716",
+        "icao": "HVN1716",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-15",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-15T06:50:00+00:00",
+        "estimated": "2026-10-15T06:50:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Vinh City",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "VII",
+        "icao": "VVVH",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-15T07:45:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "1715",
+        "iata": "VN1715",
+        "icao": "HVN1715",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-14",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Catbi",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HPH",
+        "icao": "VVCI",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-14T18:35:00+00:00",
+        "estimated": "2026-10-14T18:35:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-14T20:45:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "7025",
+        "iata": "VN7025",
+        "icao": "HVN7025",
+        "codeshared": {
+          "airline_name": "all nippon airways",
+          "airline_iata": "nh",
+          "airline_icao": "ana",
+          "flight_number": "833",
+          "flight_iata": "nh833",
+          "flight_icao": "ana833"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-14",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-14T17:55:00+00:00",
+        "estimated": "2026-10-14T17:55:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-14T19:30:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "137",
+        "iata": "VN137",
+        "icao": "HVN137",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-14",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-14T16:35:00+00:00",
+        "estimated": "2026-10-14T16:35:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-14T18:00:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "174",
+        "iata": "VN174",
+        "icao": "HVN174",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": null,
+        "iata": null,
+        "icao": null,
+        "icao24": "888099"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-14",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-14T16:00:00+00:00",
+        "estimated": "2026-10-14T16:00:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-14T17:20:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "136",
+        "iata": "VN136",
+        "icao": "HVN136",
+        "codeshared": {
+          "airline_name": "air france",
+          "airline_iata": "af",
+          "airline_icao": "afr",
+          "flight_number": "1600",
+          "flight_iata": "af1600",
+          "flight_icao": "afr1600"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-14",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-14T15:35:00+00:00",
+        "estimated": "2026-10-14T15:35:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Catbi",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HPH",
+        "icao": "VVCI",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-14T17:55:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "7024",
+        "iata": "VN7024",
+        "icao": "HVN7024",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-14",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-14T15:30:00+00:00",
+        "estimated": "2026-10-14T15:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-14T16:50:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "134",
+        "iata": "VN134",
+        "icao": "HVN134",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-14",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-14T14:35:00+00:00",
+        "estimated": "2026-10-14T14:35:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-14T16:00:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "173",
+        "iata": "VN173",
+        "icao": "HVN173",
+        "codeshared": {
+          "airline_name": "korean air",
+          "airline_iata": "ke",
+          "airline_icao": "kal",
+          "flight_number": "479",
+          "flight_iata": "ke479",
+          "flight_icao": "kal479"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-14",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-14T13:30:00+00:00",
+        "estimated": "2026-10-14T13:30:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-14T15:05:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "129",
+        "iata": "VN129",
+        "icao": "HVN129",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": null,
+        "iata": null,
+        "icao": null,
+        "icao24": "888099"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-14",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-14T12:55:00+00:00",
+        "estimated": "2026-10-14T12:55:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-14T14:20:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "168",
+        "iata": "VN168",
+        "icao": "HVN168",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-14",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-14T10:55:00+00:00",
+        "estimated": "2026-10-14T10:55:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-14T12:20:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "167",
+        "iata": "VN167",
+        "icao": "HVN167",
+        "codeshared": {
+          "airline_name": "china southern airlines",
+          "airline_iata": "cz",
+          "airline_icao": "csn",
+          "flight_number": "371",
+          "flight_iata": "cz371",
+          "flight_icao": "csn371"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-14",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Co Ong",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "VCS",
+        "icao": "VVCS",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-14T09:45:00+00:00",
+        "estimated": "2026-10-14T09:45:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-14T10:50:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "8054",
+        "iata": "VN8054",
+        "icao": "HVN8054",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-14",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-14T09:45:00+00:00",
+        "estimated": "2026-10-14T09:45:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-14T11:10:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "164",
+        "iata": "VN164",
+        "icao": "HVN164",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-14",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-14T10:05:00+00:00",
+        "estimated": "2026-10-14T10:05:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Phung-Duc",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "BMV",
+        "icao": "VVBM",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-14T11:05:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "6200",
+        "iata": "VN6200",
+        "icao": "HVN6200",
+        "codeshared": {
+          "airline_name": "singapore airlines",
+          "airline_iata": "sq",
+          "airline_icao": "sia",
+          "flight_number": "185",
+          "flight_iata": "sq185",
+          "flight_icao": "sia185"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-14",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-14T09:35:00+00:00",
+        "estimated": "2026-10-14T09:35:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-14T11:00:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "165",
+        "iata": "VN165",
+        "icao": "HVN165",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-14",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Lienkhang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DLI",
+        "icao": "VVDL",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-14T07:20:00+00:00",
+        "estimated": "2026-10-14T07:20:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-14T08:15:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "1381",
+        "iata": "VN1381",
+        "icao": "HVN1381",
+        "codeshared": null
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-14",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "delay": null,
+        "scheduled": "2026-10-14T05:50:00+00:00",
+        "estimated": "2026-10-14T05:50:00+00:00",
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "arrival": {
+        "airport": "Lienkhang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DLI",
+        "icao": "VVDL",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-14T06:45:00+00:00",
+        "delay": null,
+        "estimated": null,
+        "actual": null,
+        "estimated_runway": null,
+        "actual_runway": null
+      },
+      "airline": {
+        "name": "Vietnam Airlines",
+        "iata": "VN",
+        "icao": "HVN"
+      },
+      "flight": {
+        "number": "1380",
+        "iata": "VN1380",
+        "icao": "HVN1380",
+        "codeshared": {
+          "airline_name": "air cambodia",
+          "airline_iata": "k6",
+          "airline_icao": "khv",
+          "flight_number": "818",
+          "flight_iata": "k6818",
+          "flight_icao": "khv818"
+        }
+      },
+      "aircraft": null,
+      "live": null
+    }
+  ]
+}

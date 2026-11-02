@@ -1,0 +1,185 @@
+{
+  "source": "guide_pqc",
+  "airport": "PQC",
+  "direction": "departures",
+  "url": "https://www.phuquocairport.com/flight-status-departures/",
+  "scraped_at": "2026-10-28 06:04:55",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "To",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "23:45",
+          "00:21",
+          "Seoul (ICN)",
+          "Korean Air KE 486 Codeshare: DL 7866 / VN 3414",
+          "Departed 36 minutes late"
+        ],
+        [
+          "00:05",
+          "00:35",
+          "Seoul (ICN)",
+          "Trinity Airways TWB 56",
+          "Departed 30 minutes late"
+        ],
+        [
+          "00:30",
+          "01:04",
+          "Busan (PUS)",
+          "Eastar Jet ZE 982",
+          "Departed 34 minutes late"
+        ],
+        [
+          "01:05",
+          "01:36",
+          "Shanghai (PVG)",
+          "China Eastern Airlines MU 6034",
+          "Departed 31 minutes late"
+        ],
+        [
+          "01:20",
+          "02:07",
+          "Seoul (ICN)",
+          "Sun PhuQuoc Airways 9G 450",
+          "Departed 47 minutes late"
+        ],
+        [
+          "03:45",
+          "03:32",
+          "Kathmandu (KTM)",
+          "Sun PhuQuoc Airways 9G 6321",
+          "Departed On-Time"
+        ],
+        [
+          "07:55",
+          "07:55",
+          "Tashkent (TAS)",
+          "Centrum Air (My Freighter) MFX 5536",
+          "On-Time"
+        ],
+        [
+          "08:20",
+          "08:20",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 1202",
+          "On-Time"
+        ],
+        [
+          "08:30",
+          "08:30",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 448",
+          "On-Time"
+        ],
+        [
+          "08:40",
+          "08:40",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 450",
+          "On-Time"
+        ],
+        [
+          "08:45",
+          "08:45",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1954",
+          "On-Time"
+        ],
+        [
+          "08:55",
+          "08:55",
+          "Astana (TSE)",
+          "Air Astana KC 174",
+          "On-Time"
+        ],
+        [
+          "09:20",
+          "09:20",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1964",
+          "On-Time"
+        ],
+        [
+          "09:25",
+          "09:25",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 340",
+          "On-Time"
+        ],
+        [
+          "09:35",
+          "09:35",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1822",
+          "On-Time"
+        ],
+        [
+          "10:05",
+          "10:05",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 544",
+          "On-Time"
+        ],
+        [
+          "10:30",
+          "10:30",
+          "Hong Kong (HKG)",
+          "HK Express UO 599 Codeshare: CX 5599",
+          "On-Time"
+        ],
+        [
+          "10:35",
+          "10:35",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1830",
+          "On-Time"
+        ],
+        [
+          "10:35",
+          "10:35",
+          "Singapore (SIN)",
+          "Sun PhuQuoc Airways 9G 729",
+          "On-Time"
+        ],
+        [
+          "10:40",
+          "10:40",
+          "Bangkok (BKK)",
+          "Sun PhuQuoc Airways 9G 701",
+          "On-Time"
+        ],
+        [
+          "11:05",
+          "11:05",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 320",
+          "On-Time"
+        ],
+        [
+          "11:10",
+          "11:10",
+          "Da Nang (DAD)",
+          "Sun PhuQuoc Airways 9G 2962",
+          "On-Time"
+        ],
+        [
+          "11:20",
+          "11:20",
+          "Taipei (TPE)",
+          "Sun PhuQuoc Airways 9G 510",
+          "On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_pqc_departures_20261028_060515.html"
+}

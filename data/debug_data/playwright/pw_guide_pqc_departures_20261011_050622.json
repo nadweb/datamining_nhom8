@@ -1,0 +1,171 @@
+{
+  "source": "guide_pqc",
+  "airport": "PQC",
+  "direction": "departures",
+  "url": "https://www.phuquocairport.com/flight-status-departures/",
+  "scraped_at": "2026-10-11 05:06:02",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "To",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "22:00",
+          "23:15",
+          "Seoul (ICN)",
+          "Jin Air LJ 92 Codeshare: KE 5786",
+          "Departed 75 minutes late"
+        ],
+        [
+          "23:25",
+          "23:14",
+          "Busan (PUS)",
+          "Eastar Jet ZE 982",
+          "Departed On-Time"
+        ],
+        [
+          "00:10",
+          "00:20",
+          "Seoul (ICN)",
+          "Korean Air KE 486 Codeshare: DL 7866 / VN 3414",
+          "Departed On-Time"
+        ],
+        [
+          "00:20",
+          "01:03",
+          "Seoul (ICN)",
+          "Eastar Jet ZE 582",
+          "Departed 43 minutes late"
+        ],
+        [
+          "00:35",
+          "00:40",
+          "Seoul (ICN)",
+          "Trinity Airways TWB 56",
+          "Departed On-Time"
+        ],
+        [
+          "01:05",
+          "01:46",
+          "Seoul (ICN)",
+          "Sun PhuQuoc Airways 9G 450",
+          "Departed 41 minutes late"
+        ],
+        [
+          "01:05",
+          "01:18",
+          "Shanghai (PVG)",
+          "China Eastern Airlines MU 6034",
+          "Departed On-Time"
+        ],
+        [
+          "08:30",
+          "08:30",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 336",
+          "On-Time"
+        ],
+        [
+          "08:45",
+          "08:45",
+          "Ho Chi Minh City (SGN)",
+          "Sun PhuQuoc Airways 9G 1954",
+          "On-Time"
+        ],
+        [
+          "09:25",
+          "09:25",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 718",
+          "On-Time"
+        ],
+        [
+          "09:30",
+          "09:30",
+          "Tashkent (TAS)",
+          "Centrum Air (My Freighter) MFX 5538",
+          "On-Time"
+        ],
+        [
+          "09:35",
+          "09:35",
+          "Ho Chi Minh City (SGN)",
+          "Vietnam Airlines VN 1822",
+          "On-Time"
+        ],
+        [
+          "09:50",
+          "09:50",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 334",
+          "On-Time"
+        ],
+        [
+          "10:00",
+          "10:00",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 1326",
+          "On-Time"
+        ],
+        [
+          "10:00",
+          "10:00",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 1322",
+          "On-Time"
+        ],
+        [
+          "10:05",
+          "10:05",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 544",
+          "On-Time"
+        ],
+        [
+          "10:10",
+          "10:10",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 1236",
+          "On-Time"
+        ],
+        [
+          "10:30",
+          "10:30",
+          "Ho Chi Minh City (SGN)",
+          "VietJet Air VJC 330",
+          "On-Time"
+        ],
+        [
+          "10:35",
+          "10:35",
+          "Bangkok (BKK)",
+          "Sun PhuQuoc Airways 9G 701",
+          "On-Time"
+        ],
+        [
+          "10:35",
+          "10:35",
+          "Singapore (SIN)",
+          "Sun PhuQuoc Airways 9G 721",
+          "On-Time"
+        ],
+        [
+          "10:40",
+          "10:40",
+          "Hong Kong (HKG)",
+          "HK Express UO 599 Codeshare: CX 5599",
+          "On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_pqc_departures_20261011_050620.html"
+}

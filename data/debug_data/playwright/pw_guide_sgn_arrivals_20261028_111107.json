@@ -1,0 +1,1424 @@
+{
+  "source": "guide_sgn",
+  "airport": "SGN",
+  "direction": "arrivals",
+  "url": "https://www.hochiminhcityairport.com/flight-status-arrivals-departures/",
+  "scraped_at": "2026-10-28 11:11:04",
+  "method": "playwright",
+  "table_count": 1,
+  "tables": [
+    {
+      "table_index": 0,
+      "headers": [
+        "Scheduled",
+        "Revised",
+        "From",
+        "Flight",
+        "Status"
+      ],
+      "rows": [
+        [
+          "07:25",
+          "07:13",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 803",
+          "Arrived On-Time"
+        ],
+        [
+          "07:30",
+          "07:30",
+          "Con Dao (VCS)",
+          "VASCO VN 8050 Codeshare: VN 8050",
+          "On-Time"
+        ],
+        [
+          "07:40",
+          "07:44",
+          "Paris (CDG)",
+          "Air France AF 258 Codeshare: KL 2242 / SK 9966 / VN 2106",
+          "Arrived On-Time"
+        ],
+        [
+          "07:40",
+          "07:40",
+          "Con Dao (VCS)",
+          "VASCO VN 8032 Codeshare: VN 8032",
+          "Arrived On-Time"
+        ],
+        [
+          "07:40",
+          "07:06",
+          "Shanghai (PVG)",
+          "Sun PhuQuoc Airways 9G 635",
+          "Arrived On-Time"
+        ],
+        [
+          "08:00",
+          "07:36",
+          "Johor Bharu (JHB)",
+          "AirAsia AK 1490",
+          "Arrived On-Time"
+        ],
+        [
+          "08:05",
+          "08:06",
+          "Singapore (SIN)",
+          "Scoot TR 536 Codeshare: AC 5941 / SQ 8536",
+          "Arrived On-Time"
+        ],
+        [
+          "08:05",
+          "07:50",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 520",
+          "Arrived On-Time"
+        ],
+        [
+          "08:15",
+          "08:20",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 137",
+          "Arrived On-Time"
+        ],
+        [
+          "08:15",
+          "08:09",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 243 Codeshare: CI 8833",
+          "Arrived On-Time"
+        ],
+        [
+          "08:15",
+          "08:02",
+          "Haiphong (HPH)",
+          "Vietnam Airlines VN 1171",
+          "Arrived On-Time"
+        ],
+        [
+          "08:35",
+          "08:23",
+          "Dalat (DLI)",
+          "Vietnam Airlines VN 1381",
+          "Arrived On-Time"
+        ],
+        [
+          "08:35",
+          "08:34",
+          "Buon Ma Thout (BMV)",
+          "Vietnam Airlines VN 1411",
+          "Arrived On-Time"
+        ],
+        [
+          "08:40",
+          "08:36",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 809",
+          "Arrived On-Time"
+        ],
+        [
+          "08:45",
+          "08:32",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 637",
+          "Arrived On-Time"
+        ],
+        [
+          "08:50",
+          "08:28",
+          "Phnom Penh (KTI)",
+          "Air Cambodia K6 812",
+          "Arrived On-Time"
+        ],
+        [
+          "08:50",
+          "08:41",
+          "Manila (MNL)",
+          "Philippine Airlines PR 591",
+          "Arrived On-Time"
+        ],
+        [
+          "08:55",
+          "08:55",
+          "Con Dao (VCS)",
+          "VASCO VN 8058 Codeshare: VN 8058",
+          "On-Time"
+        ],
+        [
+          "08:55",
+          "08:45",
+          "Pleiku (PXU)",
+          "Vietnam Airlines VN 1421",
+          "Arrived On-Time"
+        ],
+        [
+          "09:00",
+          "09:15",
+          "Qui Nhon (UIH)",
+          "Vietnam Airlines VN 1393",
+          "Arrived 15 minutes late"
+        ],
+        [
+          "09:00",
+          "08:53",
+          "Buon Ma Thout (BMV)",
+          "VietJet Air VJC 357",
+          "Arrived On-Time"
+        ],
+        [
+          "09:10",
+          "09:11",
+          "Tamky-Chulai Airport (VCL)",
+          "VietJet Air VJC 371",
+          "Arrived On-Time"
+        ],
+        [
+          "09:10",
+          "08:59",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 1139",
+          "Arrived On-Time"
+        ],
+        [
+          "09:15",
+          "09:29",
+          "Bangkok (BKK)",
+          "Thai Airways International TG 550 Codeshare: AC 7458 / TK 8022",
+          "Arrived On-Time"
+        ],
+        [
+          "09:15",
+          "09:18",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 207 Codeshare: CI 8807",
+          "Arrived On-Time"
+        ],
+        [
+          "09:15",
+          "09:04",
+          "Bangkok (DMK)",
+          "Thai AirAsia FD 656",
+          "Arrived On-Time"
+        ],
+        [
+          "09:20",
+          "08:58",
+          "Hue (HUI)",
+          "Vietnam Airlines VN 1367",
+          "Arrived On-Time"
+        ],
+        [
+          "09:25",
+          "09:21",
+          "Pleiku (PXU)",
+          "VietJet Air VJC 397",
+          "Arrived On-Time"
+        ],
+        [
+          "09:25",
+          "09:06",
+          "Da Nang (DAD)",
+          "Pacific Airlines VN 6031 Codeshare: VN 6031",
+          "Arrived On-Time"
+        ],
+        [
+          "09:25",
+          "09:23",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 811",
+          "Arrived On-Time"
+        ],
+        [
+          "09:30",
+          "09:23",
+          "Da Nang (DAD)",
+          "Vietnam Airlines VN 107",
+          "Arrived On-Time"
+        ],
+        [
+          "09:35",
+          "09:01",
+          "Kaohsiung (KHH)",
+          "Vietnam Airlines VN 581 Codeshare: CI 9027",
+          "Arrived On-Time"
+        ],
+        [
+          "09:45",
+          "09:44",
+          "Nha Trang (CXR)",
+          "Vietnam Airlines VN 1341 Codeshare: CI 8781",
+          "Arrived On-Time"
+        ],
+        [
+          "09:50",
+          "09:53",
+          "Phu Quoc (PQC)",
+          "Sun PhuQuoc Airways 9G 1954",
+          "Arrived On-Time"
+        ],
+        [
+          "09:55",
+          "09:49",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 135 Codeshare: JL 5750",
+          "Arrived On-Time"
+        ],
+        [
+          "10:00",
+          "09:44",
+          "Taipei (TPE)",
+          "China Airlines CI 781 Codeshare: VN 3581",
+          "Arrived On-Time"
+        ],
+        [
+          "10:05",
+          "09:52",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 528",
+          "Arrived On-Time"
+        ],
+        [
+          "10:10",
+          "10:14",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 627",
+          "Arrived On-Time"
+        ],
+        [
+          "10:15",
+          "09:53",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 245",
+          "Arrived On-Time"
+        ],
+        [
+          "10:15",
+          "10:13",
+          "Taipei (TPE)",
+          "EVA Air BR 395",
+          "Arrived On-Time"
+        ],
+        [
+          "10:20",
+          "10:21",
+          "Qui Nhon (UIH)",
+          "VietJet Air VJC 381",
+          "Arrived On-Time"
+        ],
+        [
+          "10:20",
+          "09:59",
+          "Shalu (RMQ)",
+          "China Airlines AE 1857 Codeshare: AE 1857",
+          "Arrived On-Time"
+        ],
+        [
+          "10:25",
+          "10:03",
+          "Taipei (TPE)",
+          "Vietnam Airlines VN 571 Codeshare: CI 9571",
+          "Arrived On-Time"
+        ],
+        [
+          "10:25",
+          "10:09",
+          "Phu Quoc (PQC)",
+          "Sun PhuQuoc Airways 9G 1964",
+          "Arrived On-Time"
+        ],
+        [
+          "10:30",
+          "10:44",
+          "Hue (HUI)",
+          "VietJet Air VJC 307",
+          "Arrived On-Time"
+        ],
+        [
+          "10:30",
+          "10:39",
+          "Phu Quoc (PQC)",
+          "VietJet Air VJC 340",
+          "Arrived On-Time"
+        ],
+        [
+          "10:30",
+          "10:34",
+          "Vinh City (VII)",
+          "Vietnam Airlines VN 1261",
+          "Arrived On-Time"
+        ],
+        [
+          "10:30",
+          "10:01",
+          "Taipei (TPE)",
+          "Starlux Airlines J2X 711",
+          "Arrived On-Time"
+        ],
+        [
+          "10:35",
+          "10:31",
+          "Hong Kong (HKG)",
+          "Cathay Pacific CX 767 Codeshare: AA 8910 / AC 9769 / AY 5843 / JL 7919 / OM 5644 / QF 8243 / QR 5821 / VN 3563",
+          "Arrived On-Time"
+        ],
+        [
+          "10:35",
+          "10:35",
+          "Con Dao (VCS)",
+          "VASCO VN 8082 Codeshare: VN 8082",
+          "On-Time"
+        ],
+        [
+          "10:40",
+          "10:23",
+          "Guangzhou (CAN)",
+          "China Southern Airlines CZ 8159",
+          "Arrived On-Time"
+        ],
+        [
+          "10:45",
+          "10:37",
+          "Hanoi (HAN)",
+          "Vietravel Airlines V2U 103",
+          "Arrived On-Time"
+        ],
+        [
+          "10:45",
+          "10:45",
+          "Phu Quoc (PQC)",
+          "Vietnam Airlines VN 1822",
+          "On-Time"
+        ],
+        [
+          "10:50",
+          "10:53",
+          "Dong Hoi (VDH)",
+          "Vietnam Airlines VN 1405",
+          "Arrived On-Time"
+        ],
+        [
+          "10:50",
+          "10:50",
+          "Con Dao (VCS)",
+          "VASCO VN 8054 Codeshare: VN 8054",
+          "Arrived On-Time"
+        ],
+        [
+          "10:55",
+          "10:58",
+          "Singapore (SIN)",
+          "Singapore Airlines SQ 178 Codeshare: AC 5862 / AI 8254 / NZ 3456 / VA 5490 / VN 3220",
+          "Arrived On-Time"
+        ],
+        [
+          "10:55",
+          "10:55",
+          "Nha Trang (CXR)",
+          "VietJet Air VJC 603",
+          "On-Time"
+        ],
+        [
+          "11:00",
+          "11:35",
+          "Seoul (ICN)",
+          "Asiana Airlines OZ 731 Codeshare: EY 8474",
+          "35 minutes late"
+        ],
+        [
+          "11:05",
+          "11:05",
+          "Thanh Hoa (THD)",
+          "VietJet Air VJC 241",
+          "Arrived On-Time"
+        ],
+        [
+          "11:05",
+          "11:01",
+          "Thanh Hoa (THD)",
+          "Vietnam Airlines VN 1273",
+          "Arrived On-Time"
+        ],
+        [
+          "11:15",
+          "11:28",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 209 Codeshare: AF 3304",
+          "On-Time"
+        ],
+        [
+          "11:25",
+          "11:25",
+          "Da Nang (DAD)",
+          "Sun PhuQuoc Airways 9G 967",
+          "On-Time"
+        ],
+        [
+          "11:25",
+          "11:06",
+          "Xiamen (XMN)",
+          "Xiamen Airlines MF 893",
+          "Arrived On-Time"
+        ],
+        [
+          "11:30",
+          "11:30",
+          "Da Nang (DAD)",
+          "Vietnam Airlines VN 113 Codeshare: K6 3113",
+          "Arrived On-Time"
+        ],
+        [
+          "11:30",
+          "11:30",
+          "Con Dao (VCS)",
+          "VASCO VN 8084 Codeshare: VN 8084",
+          "On-Time"
+        ],
+        [
+          "11:30",
+          "11:30",
+          "Haiphong (HPH)",
+          "VietJet Air VJC 273",
+          "On-Time"
+        ],
+        [
+          "11:35",
+          "11:35",
+          "Hanoi (HAN)",
+          "Pacific Airlines VN 6005 Codeshare: VN 6005",
+          "On-Time"
+        ],
+        [
+          "11:35",
+          "11:35",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 825",
+          "On-Time"
+        ],
+        [
+          "11:35",
+          "11:35",
+          "Taipei (TPE)",
+          "EVA Air BR 391",
+          "On-Time"
+        ],
+        [
+          "11:45",
+          "11:45",
+          "Phu Quoc (PQC)",
+          "Vietnam Airlines VN 1830",
+          "On-Time"
+        ],
+        [
+          "11:50",
+          "11:50",
+          "Con Dao (VCS)",
+          "VASCO VN 8066 Codeshare: VN 8066",
+          "On-Time"
+        ],
+        [
+          "11:50",
+          "11:50",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 151",
+          "On-Time"
+        ],
+        [
+          "12:00",
+          "12:00",
+          "Siem Reap (SAI)",
+          "Air Cambodia K6 808",
+          "On-Time"
+        ],
+        [
+          "12:05",
+          "12:05",
+          "Hanoi (HAN)",
+          "Vietravel Airlines V2U 105",
+          "On-Time"
+        ],
+        [
+          "12:10",
+          "11:40",
+          "Shanghai (PVG)",
+          "China Southern Airlines CZ 6077",
+          "On-Time"
+        ],
+        [
+          "12:10",
+          "12:10",
+          "Phu Quoc (PQC)",
+          "VietJet Air VJC 320",
+          "On-Time"
+        ],
+        [
+          "12:15",
+          "12:15",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 247",
+          "On-Time"
+        ],
+        [
+          "12:25",
+          "12:25",
+          "Haiphong (HPH)",
+          "Vietnam Airlines VN 1177",
+          "On-Time"
+        ],
+        [
+          "12:25",
+          "12:25",
+          "Kuala Lumpur (KUL)",
+          "VietJet Air VJC 936",
+          "On-Time"
+        ],
+        [
+          "12:25",
+          "12:25",
+          "Tamky-Chulai Airport (VCL)",
+          "VietJet Air VJC 375",
+          "On-Time"
+        ],
+        [
+          "12:30",
+          "12:30",
+          "Dalat (DLI)",
+          "Vietnam Airlines VN 1383 Codeshare: NH 9748",
+          "On-Time"
+        ],
+        [
+          "12:30",
+          "12:30",
+          "Nha Trang (CXR)",
+          "Pacific Airlines VN 6155 Codeshare: VN 6155",
+          "On-Time"
+        ],
+        [
+          "12:35",
+          "12:35",
+          "Da Nang (DAD)",
+          "Vietravel Airlines V2U 253",
+          "On-Time"
+        ],
+        [
+          "12:35",
+          "12:35",
+          "Busan (PUS)",
+          "Vietnam Airlines VN 423 Codeshare: KE 5687",
+          "On-Time"
+        ],
+        [
+          "12:40",
+          "12:36",
+          "Beijing (PKX)",
+          "Vietnam Airlines VN 517 Codeshare: CZ 7964",
+          "On-Time"
+        ],
+        [
+          "12:40",
+          "12:40",
+          "Thanh Hoa (THD)",
+          "Vietravel Airlines V2U 1123",
+          "On-Time"
+        ],
+        [
+          "12:45",
+          "12:45",
+          "Da Nang (DAD)",
+          "Vietnam Airlines VN 119 Codeshare: CI 8799",
+          "On-Time"
+        ],
+        [
+          "12:50",
+          "12:43",
+          "Seoul (ICN)",
+          "Korean Air KE 471 Codeshare: AS 7811 / DL 7815 / VN 3403 / WS 6069",
+          "On-Time"
+        ],
+        [
+          "12:50",
+          "12:50",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 125 Codeshare: JL 5752",
+          "On-Time"
+        ],
+        [
+          "12:55",
+          "12:55",
+          "Tamky-Chulai Airport (VCL)",
+          "Vietnam Airlines VN 1465",
+          "On-Time"
+        ],
+        [
+          "12:55",
+          "12:55",
+          "Johor Bharu (JHB)",
+          "AirAsia AK 1492",
+          "On-Time"
+        ],
+        [
+          "13:00",
+          "13:02",
+          "Penang (PEN)",
+          "AirAsia AK 1502",
+          "On-Time"
+        ],
+        [
+          "13:05",
+          "13:05",
+          "Fukuoka (FUK)",
+          "Vietnam Airlines VN 351 Codeshare: NH 9709",
+          "On-Time"
+        ],
+        [
+          "13:05",
+          "13:05",
+          "Nagoya (NGO)",
+          "Vietnam Airlines VN 343 Codeshare: NH 9707",
+          "On-Time"
+        ],
+        [
+          "13:05",
+          "13:03",
+          "Doha (DOH)",
+          "Qatar Airways QR 970 Codeshare: AA 8259 / AT 5722 / AY 6673 / B6 6574 / BA 2353 / IB 6290 / LA 5296",
+          "On-Time"
+        ],
+        [
+          "13:10",
+          "13:10",
+          "Bangkok (BKK)",
+          "Vietnam Airlines VN 600 Codeshare: KL 4074 / PG 4291",
+          "On-Time"
+        ],
+        [
+          "13:10",
+          "13:10",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 139",
+          "On-Time"
+        ],
+        [
+          "13:10",
+          "13:10",
+          "Bangkok (BKK)",
+          "VietJet Air VJC 802",
+          "On-Time"
+        ],
+        [
+          "13:15",
+          "13:15",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 211 Codeshare: PR 3353",
+          "On-Time"
+        ],
+        [
+          "13:15",
+          "13:15",
+          "Phu Quoc (PQC)",
+          "Vietnam Airlines VN 1824",
+          "On-Time"
+        ],
+        [
+          "13:20",
+          "13:20",
+          "Hue (HUI)",
+          "VietJet Air VJC 309",
+          "On-Time"
+        ],
+        [
+          "13:30",
+          "13:30",
+          "Osaka (KIX)",
+          "VietJet Air VJC 829",
+          "On-Time"
+        ],
+        [
+          "13:30",
+          "13:26",
+          "Shenzhen (SZX)",
+          "China Southern Airlines CZ 8465",
+          "On-Time"
+        ],
+        [
+          "13:30",
+          "13:30",
+          "Con Dao (VCS)",
+          "VASCO VN 8094 Codeshare: VN 8094",
+          "On-Time"
+        ],
+        [
+          "13:30",
+          "13:30",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 149",
+          "On-Time"
+        ],
+        [
+          "13:40",
+          "13:40",
+          "Da Nang (DAD)",
+          "Vietnam Airlines VN 123 Codeshare: CI 8985",
+          "On-Time"
+        ],
+        [
+          "13:45",
+          "13:45",
+          "Da Nang (DAD)",
+          "Pacific Airlines VN 6035 Codeshare: VN 6035",
+          "On-Time"
+        ],
+        [
+          "13:45",
+          "13:45",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 639",
+          "On-Time"
+        ],
+        [
+          "13:50",
+          "13:50",
+          "Osaka (KIX)",
+          "Vietnam Airlines VN 321 Codeshare: NH 9705",
+          "On-Time"
+        ],
+        [
+          "13:55",
+          "13:55",
+          "Seoul (ICN)",
+          "Vietnam Airlines VN 409 Codeshare: KE 5681",
+          "On-Time"
+        ],
+        [
+          "13:55",
+          "13:55",
+          "Tokyo (NRT)",
+          "VietJet Air VJC 823 Codeshare: JL 5773",
+          "On-Time"
+        ],
+        [
+          "13:55",
+          "13:55",
+          "Phu Quoc (PQC)",
+          "VietJet Air VJC 324",
+          "On-Time"
+        ],
+        [
+          "14:00",
+          "14:00",
+          "Qui Nhon (UIH)",
+          "VietJet Air VJC 383",
+          "On-Time"
+        ],
+        [
+          "14:00",
+          "14:00",
+          "Vinh City (VII)",
+          "VietJet Air VJC 211",
+          "On-Time"
+        ],
+        [
+          "14:10",
+          "14:10",
+          "Da Nang (DAD)",
+          "Sun PhuQuoc Airways 9G 971",
+          "On-Time"
+        ],
+        [
+          "14:10",
+          "14:10",
+          "Tokyo (NRT)",
+          "Vietnam Airlines VN 307 Codeshare: NH 9701",
+          "On-Time"
+        ],
+        [
+          "14:15",
+          "14:15",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 251 Codeshare: CI 8831",
+          "On-Time"
+        ],
+        [
+          "14:20",
+          "14:20",
+          "Seoul (ICN)",
+          "VietJet Air VJC 863",
+          "On-Time"
+        ],
+        [
+          "14:20",
+          "16:20",
+          "Manila (MNL)",
+          "Philippine Airlines PR 597",
+          "120 minutes late"
+        ],
+        [
+          "14:30",
+          "14:30",
+          "Kuala Lumpur (KUL)",
+          "VietJet Air VJC 826",
+          "On-Time"
+        ],
+        [
+          "14:30",
+          "14:30",
+          "Singapore (SIN)",
+          "Vietnam Airlines VN 650 Codeshare: EY 7315 / GA 9602 / SQ 5352",
+          "On-Time"
+        ],
+        [
+          "14:30",
+          "14:30",
+          "Con Dao (VCS)",
+          "VASCO VN 8088 Codeshare: VN 8088",
+          "On-Time"
+        ],
+        [
+          "14:30",
+          "14:30",
+          "Pleiku (PXU)",
+          "VietJet Air VJC 1397",
+          "On-Time"
+        ],
+        [
+          "14:35",
+          "14:35",
+          "Quang Ninh (VDO)",
+          "Sun PhuQuoc Airways 9G 1561",
+          "On-Time"
+        ],
+        [
+          "14:35",
+          "14:35",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 841",
+          "On-Time"
+        ],
+        [
+          "14:40",
+          "14:40",
+          "Tuy Hoa (TBB)",
+          "Vietnam Airlines VN 1665",
+          "On-Time"
+        ],
+        [
+          "14:45",
+          "14:45",
+          "Con Dao (VCS)",
+          "VASCO VN 8062 Codeshare: VN 8062",
+          "On-Time"
+        ],
+        [
+          "14:45",
+          "14:45",
+          "Singapore (SIN)",
+          "Scoot TR 552 Codeshare: AC 5913 / SQ 8538",
+          "On-Time"
+        ],
+        [
+          "14:50",
+          "14:50",
+          "Nha Trang (CXR)",
+          "VASCO VN 8347 Codeshare: VN 8347",
+          "On-Time"
+        ],
+        [
+          "14:50",
+          "14:50",
+          "Hue (HUI)",
+          "Vietnam Airlines VN 1371",
+          "On-Time"
+        ],
+        [
+          "14:50",
+          "14:50",
+          "Phnom Penh (KTI)",
+          "Vietnam Airlines VN 921 Codeshare: K6 3921",
+          "On-Time"
+        ],
+        [
+          "14:55",
+          "14:55",
+          "Nha Trang (CXR)",
+          "Vietnam Airlines VN 1347",
+          "On-Time"
+        ],
+        [
+          "15:00",
+          "15:00",
+          "Vinh City (VII)",
+          "Vietnam Airlines VN 1265 Codeshare: CI 8755",
+          "On-Time"
+        ],
+        [
+          "15:00",
+          "15:00",
+          "Phu Quoc (PQC)",
+          "Sun PhuQuoc Airways 9G 1968",
+          "On-Time"
+        ],
+        [
+          "15:05",
+          "14:27",
+          "Guangzhou (CAN)",
+          "China Southern Airlines CZ 373",
+          "On-Time"
+        ],
+        [
+          "15:05",
+          "15:05",
+          "Singapore (SIN)",
+          "Singapore Airlines SQ 184 Codeshare: AI 8256 / NZ 3462 / VA 5494 / VN 3418",
+          "On-Time"
+        ],
+        [
+          "15:10",
+          "15:10",
+          "Qui Nhon (UIH)",
+          "Vietnam Airlines VN 1391",
+          "On-Time"
+        ],
+        [
+          "15:10",
+          "15:10",
+          "Thanh Hoa (THD)",
+          "VietJet Air VJC 243",
+          "On-Time"
+        ],
+        [
+          "15:15",
+          "15:15",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 213 Codeshare: CI 8813",
+          "On-Time"
+        ],
+        [
+          "15:20",
+          "15:20",
+          "Phu Quoc (PQC)",
+          "VietJet Air VJC 326",
+          "On-Time"
+        ],
+        [
+          "15:20",
+          "15:20",
+          "Sihanoukville (KOS)",
+          "Air Cambodia K6 838 Codeshare: TK 9122",
+          "On-Time"
+        ],
+        [
+          "15:20",
+          "15:20",
+          "Kaohsiung (KHH)",
+          "Vietnam Airlines VN 583 Codeshare: CI 9029",
+          "On-Time"
+        ],
+        [
+          "15:30",
+          "15:30",
+          "Haiphong (HPH)",
+          "VietJet Air VJC 279",
+          "On-Time"
+        ],
+        [
+          "15:30",
+          "15:30",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 143",
+          "On-Time"
+        ],
+        [
+          "15:30",
+          "15:30",
+          "Bangkok (BKK)",
+          "VietJet Air VJC 804",
+          "On-Time"
+        ],
+        [
+          "15:35",
+          "15:35",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 641",
+          "On-Time"
+        ],
+        [
+          "15:40",
+          "15:40",
+          "Kuala Lumpur (KUL)",
+          "Malaysia Airlines MH 758 Codeshare: QR 5400 / UL 2758",
+          "On-Time"
+        ],
+        [
+          "15:40",
+          "15:40",
+          "Kuala Lumpur (KUL)",
+          "AirAsia AK 522",
+          "On-Time"
+        ],
+        [
+          "15:45",
+          "15:45",
+          "Melbourne (MEL)",
+          "Vietnam Airlines VN 780",
+          "On-Time"
+        ],
+        [
+          "15:45",
+          "15:45",
+          "Da Nang (DAD)",
+          "Vietnam Airlines VN 129 Codeshare: K6 3129",
+          "On-Time"
+        ],
+        [
+          "15:55",
+          "15:55",
+          "Phu Quoc (PQC)",
+          "Vietnam Airlines VN 1826",
+          "On-Time"
+        ],
+        [
+          "15:55",
+          "15:55",
+          "Da Nang (DAD)",
+          "VietJet Air VJC 631 Codeshare: JL 5758",
+          "On-Time"
+        ],
+        [
+          "16:00",
+          "16:00",
+          "Kunming (KMG)",
+          "China Eastern Airlines MU 9633 Codeshare: VN 3519",
+          "On-Time"
+        ],
+        [
+          "16:05",
+          "16:05",
+          "Thanh Hoa (THD)",
+          "Vietnam Airlines VN 1277",
+          "On-Time"
+        ],
+        [
+          "16:05",
+          "16:05",
+          "Phuket (HKT)",
+          "VietJet Air VJC 808",
+          "On-Time"
+        ],
+        [
+          "16:10",
+          "16:10",
+          "Bangkok (BKK)",
+          "Vietnam Airlines VN 604 Codeshare: KL 4073 / PG 4295",
+          "On-Time"
+        ],
+        [
+          "16:15",
+          "16:15",
+          "Bangkok (BKK)",
+          "Vietravel Airlines V2U 310",
+          "On-Time"
+        ],
+        [
+          "16:15",
+          "16:15",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 253",
+          "On-Time"
+        ],
+        [
+          "16:15",
+          "16:15",
+          "Taipei (TPE)",
+          "China Airlines CI 783 Codeshare: VN 3583",
+          "On-Time"
+        ],
+        [
+          "16:20",
+          "16:20",
+          "Sydney (SYD)",
+          "Vietnam Airlines VN 772",
+          "On-Time"
+        ],
+        [
+          "16:25",
+          "16:25",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 159",
+          "On-Time"
+        ],
+        [
+          "16:30",
+          "16:09",
+          "Istanbul (ISL)",
+          "Turkish Airlines TK 162",
+          "On-Time"
+        ],
+        [
+          "16:30",
+          "16:30",
+          "Qui Nhon (UIH)",
+          "Vietnam Airlines VN 1395",
+          "On-Time"
+        ],
+        [
+          "16:35",
+          "16:35",
+          "Jakarta (CGK)",
+          "VietJet Air VJC 854",
+          "On-Time"
+        ],
+        [
+          "16:40",
+          "16:40",
+          "Hanoi (HAN)",
+          "Sun PhuQuoc Airways 9G 845",
+          "On-Time"
+        ],
+        [
+          "16:40",
+          "16:40",
+          "Sydney (SYD)",
+          "VietJet Air VJC 86",
+          "On-Time"
+        ],
+        [
+          "16:50",
+          "16:50",
+          "Taipei (TPE)",
+          "Starlux Airlines J2X 713",
+          "On-Time"
+        ],
+        [
+          "16:50",
+          "16:50",
+          "Haiphong (HPH)",
+          "Sun PhuQuoc Airways 9G 1511",
+          "On-Time"
+        ],
+        [
+          "16:50",
+          "16:50",
+          "Denpasar (DPS)",
+          "VietJet Air VJC 848",
+          "On-Time"
+        ],
+        [
+          "16:50",
+          "16:50",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 129",
+          "On-Time"
+        ],
+        [
+          "16:55",
+          "16:55",
+          "Da Nang (DAD)",
+          "Vietravel Airlines V2U 255",
+          "On-Time"
+        ],
+        [
+          "16:55",
+          "16:55",
+          "Phu Quoc (PQC)",
+          "Sun PhuQuoc Airways 9G 1970",
+          "On-Time"
+        ],
+        [
+          "16:55",
+          "16:55",
+          "Singapore (SIN)",
+          "Scoot TR 596 Codeshare: AC 5940 / SQ 8366",
+          "On-Time"
+        ],
+        [
+          "17:00",
+          "17:00",
+          "Da Nang (DAD)",
+          "Vietnam Airlines VN 133 Codeshare: K6 3133",
+          "On-Time"
+        ],
+        [
+          "17:00",
+          "17:00",
+          "Con Dao (VCS)",
+          "VASCO VN 8096 Codeshare: VN 8096",
+          "On-Time"
+        ],
+        [
+          "17:05",
+          "17:05",
+          "Vinh City (VII)",
+          "VietJet Air VJC 217",
+          "On-Time"
+        ],
+        [
+          "17:05",
+          "17:05",
+          "Qui Nhon (UIH)",
+          "VietJet Air VJC 387",
+          "On-Time"
+        ],
+        [
+          "17:10",
+          "17:10",
+          "Hanoi (HAN)",
+          "VietJet Air VJC 131",
+          "On-Time"
+        ],
+        [
+          "17:15",
+          "17:15",
+          "Hanoi (HAN)",
+          "Vietnam Airlines VN 215",
+          "On-Time"
+        ],
+        [
+          "17:15",
+          "17:15",
+          "Phu Quoc (PQC)",
+          "Sun PhuQuoc Airways 9G 1972",
+          "On-Time"
+        ],
+        [
+          "17:20",
+          "17:20",
+          "Hanoi (HAN)",
+          "Pacific Airlines VN 6011 Codeshare: VN 6011",
+          "On-Time"
+        ],
+        [
+          "17:20",
+          "17:20",
+          "Guangzhou (CAN)",
+          "Vietnam Airlines VN 503 Codeshare: CZ 7954 / MF 9019",
+          "On-Time"
+        ],
+        [
+          "17:20",
+          "17:20",
+          "Tamky-Chulai Airport (VCL)",
+          "VietJet Air VJC 377",
+          "On-Time"
+        ],
+        [
+          "17:20",
+          "17:20",
+          "Pleiku (PXU)",
+          "Vietnam Airlines VN 1423",
+          "On-Time"
+        ],
+        [
+          "17:25",
+          "17:25",
+          "Denpasar (DPS)",
+          "VietJet Air VJC 894",
+          "On-Time"
+        ],
+        [
+          "17:25",
+          "17:25",
+          "Hue (HUI)",
+          "VietJet Air VJC 305",
+          "On-Time"
+        ],
+        [
+          "17:30",
+          "17:30",
+          "Bangkok (DMK)",
+          "Thai AirAsia FD 654",
+          "On-Time"
+        ],
+        [
+          "17:35",
+          "17:35",
+          "Vinh City (VII)",
+          "Vietravel Airlines V2U 1143",
+          "On-Time"
+        ],
+        [
+          "17:35",
+          "17:35",
+          "Con Dao (VCS)",
+          "VASCO VN 8086 Codeshare: VN 8086",
+          "On-Time"
+        ],
+        [
+          "17:35",
+          "17:35",
+          "Haiphong (HPH)",
+          "VietJet Air VJC 275",
+          "On-Time"
+        ],
+        [
+          "17:35",
+          "17:35",
+          "Bangkok (BKK)",
+          "VietJet Air VJC 800",
+          "On-Time"
+        ],
+        [
+          "17:50",
+          "17:50",
+          "Dalat (DLI)",
+          "Vietnam Airlines VN 7383",
+          "On-Time"
+        ],
+        [
+          "17:50",
+          "17:50",
+          "Nha Trang (CXR)",
+          "VietJet Air VJC 601",
+          "On-Time"
+        ],
+        [
+          "17:55",
+          "17:27",
+          "Guangzhou (CAN)",
+          "Spring Airlines 9C 7347",
+          "On-Time"
+        ],
+        [
+          "17:55",
+          "17:55",
+          "Jakarta (CGK)",
+          "Vietnam Airlines VN 630 Codeshare: GA 9024",
+          "On-Time"
+        ],
+        [
+          "18:00",
+          "18:00",
+          "Shalu (RMQ)",
+          "VietJet Air VJC 853",
+          "On-Time"
+        ],
+        [
+          "18:05",
+          "18:05",
+          "Da Nang (DAD)",
+          "Pacific Airlines VN 6045 Codeshare: VN 6045",
+          "On-Time"
+        ],
+        [
+          "18:05",
+          "18:05",
+          "Phu Quoc (PQC)",
+          "Vietnam Airlines VN 1828 Codeshare: SK 8233",
+          "On-Time"
+        ],
+        [
+          "18:05",
+          "18:05",
+          "Singapore (SIN)",
+          "VietJet Air VJC 814",
+          "On-Time"
+        ],
+        [
+          "18:10",
+          "17:47",
+          "Phnom Penh (KTI)",
+          "Qatar Airways QR 971 Codeshare: AA 8198 / AY 6674 / BA 2358 / IB 6291 / LA 6046",
+          "On-Time"
+        ]
+      ]
+    }
+  ],
+  "html_file": "pw_guide_sgn_arrivals_20261028_111104.html"
+}

@@ -1,0 +1,5110 @@
+{
+  "pagination": {
+    "limit": 100,
+    "offset": 100,
+    "count": 100,
+    "total": 360
+  },
+  "data": [
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "delay": 17,
+        "scheduled": "2026-10-09T07:25:00+00:00",
+        "estimated": "2026-10-09T07:25:00+00:00",
+        "actual": "2026-10-09T07:42:00+00:00",
+        "estimated_runway": "2026-10-09T07:42:00+00:00",
+        "actual_runway": "2026-10-09T07:42:00+00:00"
+      },
+      "arrival": {
+        "airport": "Kuala Lumpur International Airport (klia)",
+        "timezone": "Asia/Kuala_Lumpur",
+        "iata": "KUL",
+        "icao": "WMKK",
+        "terminal": "1",
+        "gate": "C12",
+        "baggage": null,
+        "scheduled": "2026-10-09T11:30:00+00:00",
+        "delay": 2,
+        "estimated": "2026-10-09T11:32:00+00:00",
+        "actual": "2026-10-09T11:32:00+00:00",
+        "estimated_runway": "2026-10-09T11:32:00+00:00",
+        "actual_runway": "2026-10-09T11:32:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "905",
+        "iata": "VJ905",
+        "icao": "VJC905",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A320",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88810A"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "delay": 25,
+        "scheduled": "2026-10-09T07:20:00+00:00",
+        "estimated": "2026-10-09T07:20:00+00:00",
+        "actual": "2026-10-09T07:45:00+00:00",
+        "estimated_runway": "2026-10-09T07:45:00+00:00",
+        "actual_runway": "2026-10-09T07:45:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T09:30:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T09:32:00+00:00",
+        "actual": "2026-10-09T09:30:00+00:00",
+        "estimated_runway": "2026-10-09T09:30:00+00:00",
+        "actual_runway": "2026-10-09T09:30:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "197",
+        "iata": "VJ197",
+        "icao": "VJC197",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A321",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88810B"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "delay": 11,
+        "scheduled": "2026-10-09T07:10:00+00:00",
+        "estimated": "2026-10-09T07:10:00+00:00",
+        "actual": "2026-10-09T07:21:00+00:00",
+        "estimated_runway": "2026-10-09T07:21:00+00:00",
+        "actual_runway": "2026-10-09T07:21:00+00:00"
+      },
+      "arrival": {
+        "airport": "Pleiku",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "PXU",
+        "icao": "VVPK",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T08:45:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T08:41:00+00:00",
+        "actual": "2026-10-09T08:35:00+00:00",
+        "estimated_runway": "2026-10-09T08:35:00+00:00",
+        "actual_runway": "2026-10-09T08:35:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "421",
+        "iata": "VJ421",
+        "icao": "VJC421",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A322",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88810C"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": "1",
+        "gate": null,
+        "delay": 8,
+        "scheduled": "2026-10-09T07:30:00+00:00",
+        "estimated": "2026-10-09T07:30:00+00:00",
+        "actual": "2026-10-09T07:38:00+00:00",
+        "estimated_runway": "2026-10-09T07:38:00+00:00",
+        "actual_runway": "2026-10-09T07:38:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T08:50:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T08:43:00+00:00",
+        "actual": "2026-10-09T08:36:00+00:00",
+        "estimated_runway": "2026-10-09T08:36:00+00:00",
+        "actual_runway": "2026-10-09T08:36:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "514",
+        "iata": "VJ514",
+        "icao": "VJC514",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A323",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88810D"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Cam Ranh",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "CXR",
+        "icao": "VVCR",
+        "terminal": "1",
+        "gate": null,
+        "delay": 24,
+        "scheduled": "2026-10-09T08:05:00+00:00",
+        "estimated": "2026-10-09T08:05:00+00:00",
+        "actual": "2026-10-09T08:29:00+00:00",
+        "estimated_runway": "2026-10-09T08:29:00+00:00",
+        "actual_runway": "2026-10-09T08:29:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T09:55:00+00:00",
+        "delay": 18,
+        "estimated": "2026-10-09T10:17:00+00:00",
+        "actual": "2026-10-09T10:13:00+00:00",
+        "estimated_runway": "2026-10-09T10:13:00+00:00",
+        "actual_runway": "2026-10-09T10:13:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "770",
+        "iata": "VJ770",
+        "icao": "VJC770",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A324",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88810E"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 32,
+        "scheduled": "2026-10-09T06:55:00+00:00",
+        "estimated": "2026-10-09T06:55:00+00:00",
+        "actual": "2026-10-09T07:27:00+00:00",
+        "estimated_runway": "2026-10-09T07:27:00+00:00",
+        "actual_runway": "2026-10-09T07:27:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T09:05:00+00:00",
+        "delay": 8,
+        "estimated": "2026-10-09T09:14:00+00:00",
+        "actual": "2026-10-09T09:13:00+00:00",
+        "estimated_runway": "2026-10-09T09:13:00+00:00",
+        "actual_runway": "2026-10-09T09:13:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "122",
+        "iata": "VJ122",
+        "icao": "VJC122",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A325",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88810F"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 13,
+        "scheduled": "2026-10-09T06:50:00+00:00",
+        "estimated": "2026-10-09T06:50:00+00:00",
+        "actual": "2026-10-09T07:03:00+00:00",
+        "estimated_runway": "2026-10-09T07:03:00+00:00",
+        "actual_runway": "2026-10-09T07:03:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T09:00:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T08:47:00+00:00",
+        "actual": "2026-10-09T08:46:00+00:00",
+        "estimated_runway": "2026-10-09T08:46:00+00:00",
+        "actual_runway": "2026-10-09T08:46:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "156",
+        "iata": "VJ156",
+        "icao": "VJC156",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A326",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888110"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 14,
+        "scheduled": "2026-10-09T06:40:00+00:00",
+        "estimated": "2026-10-09T06:40:00+00:00",
+        "actual": "2026-10-09T06:54:00+00:00",
+        "estimated_runway": "2026-10-09T06:54:00+00:00",
+        "actual_runway": "2026-10-09T06:54:00+00:00"
+      },
+      "arrival": {
+        "airport": "Pleiku",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "PXU",
+        "icao": "VVPK",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T07:50:00+00:00",
+        "delay": 0,
+        "estimated": null,
+        "actual": "2026-10-09T07:38:00+00:00",
+        "estimated_runway": "2026-10-09T07:38:00+00:00",
+        "actual_runway": "2026-10-09T07:38:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "392",
+        "iata": "VJ392",
+        "icao": "VJC392",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A327",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888111"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 9,
+        "scheduled": "2026-10-09T06:30:00+00:00",
+        "estimated": "2026-10-09T06:30:00+00:00",
+        "actual": "2026-10-09T06:39:00+00:00",
+        "estimated_runway": "2026-10-09T06:39:00+00:00",
+        "actual_runway": "2026-10-09T06:39:00+00:00"
+      },
+      "arrival": {
+        "airport": "Phung-Duc",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "BMV",
+        "icao": "VVBM",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T07:30:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T07:12:00+00:00",
+        "actual": "2026-10-09T07:10:00+00:00",
+        "estimated_runway": "2026-10-09T07:10:00+00:00",
+        "actual_runway": "2026-10-09T07:10:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "350",
+        "iata": "VJ350",
+        "icao": "VJC350",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A328",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888112"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Gimhae International",
+        "timezone": "Asia/Seoul",
+        "iata": "PUS",
+        "icao": "RKPK",
+        "terminal": "I",
+        "gate": "6",
+        "delay": 14,
+        "scheduled": "2026-10-09T08:10:00+00:00",
+        "estimated": "2026-10-09T08:10:00+00:00",
+        "actual": "2026-10-09T08:24:00+00:00",
+        "estimated_runway": "2026-10-09T08:24:00+00:00",
+        "actual_runway": "2026-10-09T08:24:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T10:40:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T10:20:00+00:00",
+        "actual": "2026-10-09T10:19:00+00:00",
+        "estimated_runway": "2026-10-09T10:19:00+00:00",
+        "actual_runway": "2026-10-09T10:19:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "981",
+        "iata": "VJ981",
+        "icao": "VJC981",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A329",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888113"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Narita International Airport",
+        "timezone": "Asia/Tokyo",
+        "iata": "NRT",
+        "icao": "RJAA",
+        "terminal": "2",
+        "gate": "98",
+        "delay": 30,
+        "scheduled": "2026-10-09T08:55:00+00:00",
+        "estimated": "2026-10-09T08:55:00+00:00",
+        "actual": "2026-10-09T09:25:00+00:00",
+        "estimated_runway": "2026-10-09T09:25:00+00:00",
+        "actual_runway": "2026-10-09T09:25:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T12:55:00+00:00",
+        "delay": 11,
+        "estimated": "2026-10-09T13:12:00+00:00",
+        "actual": "2026-10-09T13:06:00+00:00",
+        "estimated_runway": "2026-10-09T13:06:00+00:00",
+        "actual_runway": "2026-10-09T13:06:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "823",
+        "iata": "VJ823",
+        "icao": "VJC823",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A330",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888114"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "delay": 10,
+        "scheduled": "2026-10-09T06:45:00+00:00",
+        "estimated": "2026-10-09T06:45:00+00:00",
+        "actual": "2026-10-09T06:55:00+00:00",
+        "estimated_runway": "2026-10-09T06:55:00+00:00",
+        "actual_runway": "2026-10-09T06:55:00+00:00"
+      },
+      "arrival": {
+        "airport": "Can Tho",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "VCA",
+        "icao": "VVCT",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T08:55:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T08:47:00+00:00",
+        "actual": "2026-10-09T08:54:00+00:00",
+        "estimated_runway": "2026-10-09T08:54:00+00:00",
+        "actual_runway": "2026-10-09T08:54:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "461",
+        "iata": "VJ461",
+        "icao": "VJC461",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A331",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888115"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "delay": 4,
+        "scheduled": "2026-10-09T06:30:00+00:00",
+        "estimated": "2026-10-09T06:30:00+00:00",
+        "actual": "2026-10-09T06:34:00+00:00",
+        "estimated_runway": "2026-10-09T06:34:00+00:00",
+        "actual_runway": "2026-10-09T06:34:00+00:00"
+      },
+      "arrival": {
+        "airport": "Duong Dong",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "PQC",
+        "icao": "VVPQ",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T08:35:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T08:20:00+00:00",
+        "actual": "2026-10-09T08:14:00+00:00",
+        "estimated_runway": "2026-10-09T08:14:00+00:00",
+        "actual_runway": "2026-10-09T08:14:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "449",
+        "iata": "VJ449",
+        "icao": "VJC449",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A332",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888116"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "FUK",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "FUK",
+        "icao": "VVFU",
+        "terminal": "I",
+        "gate": "53",
+        "delay": 41,
+        "scheduled": "2026-10-09T08:55:00+00:00",
+        "estimated": "2026-10-09T08:55:00+00:00",
+        "actual": "2026-10-09T09:36:00+00:00",
+        "estimated_runway": "2026-10-09T09:36:00+00:00",
+        "actual_runway": "2026-10-09T09:36:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T11:25:00+00:00",
+        "delay": 11,
+        "estimated": "2026-10-09T11:46:00+00:00",
+        "actual": "2026-10-09T11:36:00+00:00",
+        "estimated_runway": "2026-10-09T11:36:00+00:00",
+        "actual_runway": "2026-10-09T11:36:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "959",
+        "iata": "VJ959",
+        "icao": "VJC959",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A333",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888117"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 12,
+        "scheduled": "2026-10-09T06:05:00+00:00",
+        "estimated": "2026-10-09T06:05:00+00:00",
+        "actual": "2026-10-09T06:17:00+00:00",
+        "estimated_runway": "2026-10-09T06:17:00+00:00",
+        "actual_runway": "2026-10-09T06:17:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T08:15:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T08:05:00+00:00",
+        "actual": "2026-10-09T08:04:00+00:00",
+        "estimated_runway": "2026-10-09T08:04:00+00:00",
+        "actual_runway": "2026-10-09T08:04:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "124",
+        "iata": "VJ124",
+        "icao": "VJC124",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A334",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888118"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 8,
+        "scheduled": "2026-10-09T05:35:00+00:00",
+        "estimated": "2026-10-09T05:35:00+00:00",
+        "actual": "2026-10-09T05:43:00+00:00",
+        "estimated_runway": "2026-10-09T05:43:00+00:00",
+        "actual_runway": "2026-10-09T05:43:00+00:00"
+      },
+      "arrival": {
+        "airport": "Qui Nhon",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "UIH",
+        "icao": "VVPC",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T06:45:00+00:00",
+        "delay": 0,
+        "estimated": null,
+        "actual": "2026-10-09T06:30:00+00:00",
+        "estimated_runway": "2026-10-09T06:30:00+00:00",
+        "actual_runway": "2026-10-09T06:30:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "1382",
+        "iata": "VJ1382",
+        "icao": "VJC1382",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A335",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888119"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 9,
+        "scheduled": "2026-10-09T05:30:00+00:00",
+        "estimated": "2026-10-09T05:30:00+00:00",
+        "actual": "2026-10-09T05:39:00+00:00",
+        "estimated_runway": "2026-10-09T05:39:00+00:00",
+        "actual_runway": "2026-10-09T05:39:00+00:00"
+      },
+      "arrival": {
+        "airport": "Catbi",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HPH",
+        "icao": "VVCI",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T07:30:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T07:21:00+00:00",
+        "actual": "2026-10-09T07:22:00+00:00",
+        "estimated_runway": "2026-10-09T07:22:00+00:00",
+        "actual_runway": "2026-10-09T07:22:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "270",
+        "iata": "VJ270",
+        "icao": "VJC270",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A336",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88811A"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 2,
+        "scheduled": "2026-10-09T05:20:00+00:00",
+        "estimated": "2026-10-09T05:20:00+00:00",
+        "actual": "2026-10-09T05:22:00+00:00",
+        "estimated_runway": "2026-10-09T05:22:00+00:00",
+        "actual_runway": "2026-10-09T05:22:00+00:00"
+      },
+      "arrival": {
+        "airport": "Chu Lai",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "VCL",
+        "icao": "VVCL",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T06:40:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T06:19:00+00:00",
+        "actual": "2026-10-09T06:19:00+00:00",
+        "estimated_runway": "2026-10-09T06:19:00+00:00",
+        "actual_runway": "2026-10-09T06:19:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "1372",
+        "iata": "VJ1372",
+        "icao": "VJC1372",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A337",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88811B"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Gimhae International",
+        "timezone": "Asia/Seoul",
+        "iata": "PUS",
+        "icao": "RKPK",
+        "terminal": "I",
+        "gate": "8A",
+        "delay": 66,
+        "scheduled": "2026-10-09T07:45:00+00:00",
+        "estimated": "2026-10-09T07:45:00+00:00",
+        "actual": "2026-10-09T08:51:00+00:00",
+        "estimated_runway": "2026-10-09T08:51:00+00:00",
+        "actual_runway": "2026-10-09T08:51:00+00:00"
+      },
+      "arrival": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T10:10:00+00:00",
+        "delay": 41,
+        "estimated": "2026-10-09T10:53:00+00:00",
+        "actual": "2026-10-09T10:51:00+00:00",
+        "estimated_runway": "2026-10-09T10:51:00+00:00",
+        "actual_runway": "2026-10-09T10:51:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "989",
+        "iata": "VJ989",
+        "icao": "VJC989",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A338",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88811C"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Seoul (Incheon)",
+        "timezone": "Asia/Seoul",
+        "iata": "ICN",
+        "icao": "RKSI",
+        "terminal": "1",
+        "gate": "132",
+        "delay": 0,
+        "scheduled": "2026-10-09T07:15:00+00:00",
+        "estimated": "2026-10-09T07:15:00+00:00",
+        "actual": "2026-10-09T07:11:00+00:00",
+        "estimated_runway": "2026-10-09T07:11:00+00:00",
+        "actual_runway": "2026-10-09T07:11:00+00:00"
+      },
+      "arrival": {
+        "airport": "Catbi",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HPH",
+        "icao": "VVCI",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T09:55:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T09:18:00+00:00",
+        "actual": "2026-10-09T09:22:00+00:00",
+        "estimated_runway": "2026-10-09T09:22:00+00:00",
+        "actual_runway": "2026-10-09T09:22:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "925",
+        "iata": "VJ925",
+        "icao": "VJC925",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A339",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88811D"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "delay": 17,
+        "scheduled": "2026-10-09T06:00:00+00:00",
+        "estimated": "2026-10-09T06:00:00+00:00",
+        "actual": "2026-10-09T06:17:00+00:00",
+        "estimated_runway": "2026-10-09T06:17:00+00:00",
+        "actual_runway": "2026-10-09T06:17:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T08:10:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T08:04:00+00:00",
+        "actual": "2026-10-09T08:00:00+00:00",
+        "estimated_runway": "2026-10-09T08:00:00+00:00",
+        "actual_runway": "2026-10-09T08:00:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "121",
+        "iata": "VJ121",
+        "icao": "VJC121",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A340",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88811E"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "delay": 11,
+        "scheduled": "2026-10-09T05:45:00+00:00",
+        "estimated": "2026-10-09T05:45:00+00:00",
+        "actual": "2026-10-09T05:56:00+00:00",
+        "estimated_runway": "2026-10-09T05:56:00+00:00",
+        "actual_runway": "2026-10-09T05:56:00+00:00"
+      },
+      "arrival": {
+        "airport": "Cam Ranh",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "CXR",
+        "icao": "VVCR",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T07:35:00+00:00",
+        "delay": 4,
+        "estimated": "2026-10-09T07:42:00+00:00",
+        "actual": "2026-10-09T07:39:00+00:00",
+        "estimated_runway": "2026-10-09T07:39:00+00:00",
+        "actual_runway": "2026-10-09T07:39:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "771",
+        "iata": "VJ771",
+        "icao": "VJC771",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A341",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88811F"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "delay": 8,
+        "scheduled": "2026-10-09T05:40:00+00:00",
+        "estimated": "2026-10-09T05:40:00+00:00",
+        "actual": "2026-10-09T05:48:00+00:00",
+        "estimated_runway": "2026-10-09T05:48:00+00:00",
+        "actual_runway": "2026-10-09T05:48:00+00:00"
+      },
+      "arrival": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T07:00:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T06:48:00+00:00",
+        "actual": "2026-10-09T06:48:00+00:00",
+        "estimated_runway": "2026-10-09T06:48:00+00:00",
+        "actual_runway": "2026-10-09T06:48:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "501",
+        "iata": "VJ501",
+        "icao": "VJC501",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A342",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888120"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "delay": 12,
+        "scheduled": "2026-10-09T05:30:00+00:00",
+        "estimated": "2026-10-09T05:30:00+00:00",
+        "actual": "2026-10-09T05:42:00+00:00",
+        "estimated_runway": "2026-10-09T05:42:00+00:00",
+        "actual_runway": "2026-10-09T05:42:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T07:40:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T07:28:00+00:00",
+        "actual": "2026-10-09T07:25:00+00:00",
+        "estimated_runway": "2026-10-09T07:25:00+00:00",
+        "actual_runway": "2026-10-09T07:25:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "123",
+        "iata": "VJ123",
+        "icao": "VJC123",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A343",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888121"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": "1",
+        "gate": "6",
+        "delay": 0,
+        "scheduled": "2026-10-09T05:35:00+00:00",
+        "estimated": "2026-10-09T05:35:00+00:00",
+        "actual": "2026-10-09T05:29:00+00:00",
+        "estimated_runway": "2026-10-09T05:29:00+00:00",
+        "actual_runway": "2026-10-09T05:29:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T07:00:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T06:34:00+00:00",
+        "actual": "2026-10-09T06:32:00+00:00",
+        "estimated_runway": "2026-10-09T06:32:00+00:00",
+        "actual_runway": "2026-10-09T06:32:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "621",
+        "iata": "VJ621",
+        "icao": "VJC621",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A344",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888122"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 10,
+        "scheduled": "2026-10-09T05:00:00+00:00",
+        "estimated": "2026-10-09T05:00:00+00:00",
+        "actual": "2026-10-09T05:10:00+00:00",
+        "estimated_runway": "2026-10-09T05:10:00+00:00",
+        "actual_runway": "2026-10-09T05:10:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T07:10:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T06:54:00+00:00",
+        "actual": "2026-10-09T06:53:00+00:00",
+        "estimated_runway": "2026-10-09T06:53:00+00:00",
+        "actual_runway": "2026-10-09T06:53:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "120",
+        "iata": "VJ120",
+        "icao": "VJC120",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A345",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888123"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Seoul (Incheon)",
+        "timezone": "Asia/Seoul",
+        "iata": "ICN",
+        "icao": "RKSI",
+        "terminal": "1",
+        "gate": "122",
+        "delay": 14,
+        "scheduled": "2026-10-09T07:00:00+00:00",
+        "estimated": "2026-10-09T07:00:00+00:00",
+        "actual": "2026-10-09T07:14:00+00:00",
+        "estimated_runway": "2026-10-09T07:14:00+00:00",
+        "actual_runway": "2026-10-09T07:14:00+00:00"
+      },
+      "arrival": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T09:40:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T09:36:00+00:00",
+        "actual": "2026-10-09T09:36:00+00:00",
+        "estimated_runway": "2026-10-09T09:36:00+00:00",
+        "actual_runway": "2026-10-09T09:36:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "879",
+        "iata": "VJ879",
+        "icao": "VJC879",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A346",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888124"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Seoul (Incheon)",
+        "timezone": "Asia/Seoul",
+        "iata": "ICN",
+        "icao": "RKSI",
+        "terminal": "1",
+        "gate": "125",
+        "delay": 59,
+        "scheduled": "2026-10-09T06:45:00+00:00",
+        "estimated": "2026-10-09T06:45:00+00:00",
+        "actual": "2026-10-09T07:44:00+00:00",
+        "estimated_runway": "2026-10-09T07:44:00+00:00",
+        "actual_runway": "2026-10-09T07:44:00+00:00"
+      },
+      "arrival": {
+        "airport": "Cam Ranh",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "CXR",
+        "icao": "VVCR",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T09:35:00+00:00",
+        "delay": 36,
+        "estimated": "2026-10-09T10:12:00+00:00",
+        "actual": "2026-10-09T10:11:00+00:00",
+        "estimated_runway": "2026-10-09T10:11:00+00:00",
+        "actual_runway": "2026-10-09T10:11:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "835",
+        "iata": "VJ835",
+        "icao": "VJC835",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A347",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888125"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Cam Ranh",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "CXR",
+        "icao": "VVCR",
+        "terminal": "2",
+        "gate": null,
+        "delay": 59,
+        "scheduled": "2026-10-09T03:10:00+00:00",
+        "estimated": "2026-10-09T03:10:00+00:00",
+        "actual": "2026-10-09T04:09:00+00:00",
+        "estimated_runway": "2026-10-09T04:09:00+00:00",
+        "actual_runway": "2026-10-09T04:09:00+00:00"
+      },
+      "arrival": {
+        "airport": "Gimhae International",
+        "timezone": "Asia/Seoul",
+        "iata": "PUS",
+        "icao": "RKPK",
+        "terminal": "I",
+        "gate": "2",
+        "baggage": null,
+        "scheduled": "2026-10-09T09:50:00+00:00",
+        "delay": 33,
+        "estimated": "2026-10-09T10:26:00+00:00",
+        "actual": "2026-10-09T10:23:00+00:00",
+        "estimated_runway": "2026-10-09T10:23:00+00:00",
+        "actual_runway": "2026-10-09T10:23:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "918",
+        "iata": "VJ918",
+        "icao": "VJC918",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A348",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888126"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Shanghai Pudong International",
+        "timezone": "Asia/Shanghai",
+        "iata": "PVG",
+        "icao": "ZSPD",
+        "terminal": "2",
+        "gate": null,
+        "delay": 14,
+        "scheduled": "2026-10-09T02:20:00+00:00",
+        "estimated": "2026-10-09T02:20:00+00:00",
+        "actual": "2026-10-09T02:34:00+00:00",
+        "estimated_runway": "2026-10-09T02:34:00+00:00",
+        "actual_runway": "2026-10-09T02:34:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T04:50:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T04:33:00+00:00",
+        "actual": "2026-10-09T04:32:00+00:00",
+        "estimated_runway": "2026-10-09T04:32:00+00:00",
+        "actual_runway": "2026-10-09T04:32:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "7239",
+        "iata": "VJ7239",
+        "icao": "VJC7239",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A349",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888127"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Shanghai Pudong International",
+        "timezone": "Asia/Shanghai",
+        "iata": "PVG",
+        "icao": "ZSPD",
+        "terminal": "2",
+        "gate": null,
+        "delay": 71,
+        "scheduled": "2026-10-09T02:15:00+00:00",
+        "estimated": "2026-10-09T02:15:00+00:00",
+        "actual": "2026-10-09T03:26:00+00:00",
+        "estimated_runway": "2026-10-09T03:26:00+00:00",
+        "actual_runway": "2026-10-09T03:26:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "T2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T05:25:00+00:00",
+        "delay": 47,
+        "estimated": "2026-10-09T06:12:00+00:00",
+        "actual": "2026-10-09T06:12:00+00:00",
+        "estimated_runway": "2026-10-09T06:12:00+00:00",
+        "actual_runway": "2026-10-09T06:12:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "3901",
+        "iata": "VJ3901",
+        "icao": "VJC3901",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A350",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888128"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Ninoy Aquino International",
+        "timezone": "Asia/Manila",
+        "iata": "MNL",
+        "icao": "RPLL",
+        "terminal": "1",
+        "gate": null,
+        "delay": 20,
+        "scheduled": "2026-10-09T03:00:00+00:00",
+        "estimated": "2026-10-09T03:00:00+00:00",
+        "actual": "2026-10-09T03:20:00+00:00",
+        "estimated_runway": "2026-10-09T03:20:00+00:00",
+        "actual_runway": "2026-10-09T03:20:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T04:35:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T04:28:00+00:00",
+        "actual": "2026-10-09T04:27:00+00:00",
+        "estimated_runway": "2026-10-09T04:27:00+00:00",
+        "actual_runway": "2026-10-09T04:27:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "859",
+        "iata": "VJ859",
+        "icao": "VJC859",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A351",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888129"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "delay": 8,
+        "scheduled": "2026-10-09T02:05:00+00:00",
+        "estimated": "2026-10-09T02:05:00+00:00",
+        "actual": "2026-10-09T02:13:00+00:00",
+        "estimated_runway": "2026-10-09T02:13:00+00:00",
+        "actual_runway": "2026-10-09T02:13:00+00:00"
+      },
+      "arrival": {
+        "airport": "FUK",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "FUK",
+        "icao": "VVFU",
+        "terminal": "I",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T07:55:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T07:57:00+00:00",
+        "actual": "2026-10-09T07:53:00+00:00",
+        "estimated_runway": "2026-10-09T07:53:00+00:00",
+        "actual_runway": "2026-10-09T07:53:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "958",
+        "iata": "VJ958",
+        "icao": "VJC958",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A352",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88812A"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "delay": 10,
+        "scheduled": "2026-10-09T01:40:00+00:00",
+        "estimated": "2026-10-09T01:40:00+00:00",
+        "actual": "2026-10-09T01:50:00+00:00",
+        "estimated_runway": "2026-10-09T01:50:00+00:00",
+        "actual_runway": "2026-10-09T01:50:00+00:00"
+      },
+      "arrival": {
+        "airport": "Seoul (Incheon)",
+        "timezone": "Asia/Seoul",
+        "iata": "ICN",
+        "icao": "RKSI",
+        "terminal": "1",
+        "gate": "117",
+        "baggage": null,
+        "scheduled": "2026-10-09T07:55:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T07:36:00+00:00",
+        "actual": "2026-10-09T07:35:00+00:00",
+        "estimated_runway": "2026-10-09T07:35:00+00:00",
+        "actual_runway": "2026-10-09T07:35:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "960",
+        "iata": "VJ960",
+        "icao": "VJC960",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A353",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88812B"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "delay": 35,
+        "scheduled": "2026-10-09T01:40:00+00:00",
+        "estimated": "2026-10-09T01:40:00+00:00",
+        "actual": "2026-10-09T02:15:00+00:00",
+        "estimated_runway": "2026-10-09T02:15:00+00:00",
+        "actual_runway": "2026-10-09T02:15:00+00:00"
+      },
+      "arrival": {
+        "airport": "NGO",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "NGO",
+        "icao": "VVNG",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T08:00:00+00:00",
+        "delay": 27,
+        "estimated": "2026-10-09T08:30:00+00:00",
+        "actual": "2026-10-09T08:27:00+00:00",
+        "estimated_runway": "2026-10-09T08:27:00+00:00",
+        "actual_runway": "2026-10-09T08:27:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "920",
+        "iata": "VJ920",
+        "icao": "VJC920",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A354",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88812C"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "delay": 17,
+        "scheduled": "2026-10-09T01:20:00+00:00",
+        "estimated": "2026-10-09T01:20:00+00:00",
+        "actual": "2026-10-09T01:37:00+00:00",
+        "estimated_runway": "2026-10-09T01:37:00+00:00",
+        "actual_runway": "2026-10-09T01:37:00+00:00"
+      },
+      "arrival": {
+        "airport": "Kansai International",
+        "timezone": "Asia/Tokyo",
+        "iata": "KIX",
+        "icao": "RJBB",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T07:50:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T07:42:00+00:00",
+        "actual": "2026-10-09T07:43:00+00:00",
+        "estimated_runway": "2026-10-09T07:43:00+00:00",
+        "actual_runway": "2026-10-09T07:43:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "938",
+        "iata": "VJ938",
+        "icao": "VJC938",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A355",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88812D"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "AMD",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "AMD",
+        "icao": "VVAM",
+        "terminal": "2",
+        "gate": "6",
+        "delay": 5,
+        "scheduled": "2026-10-09T00:10:00+00:00",
+        "estimated": "2026-10-09T00:10:00+00:00",
+        "actual": "2026-10-09T00:15:00+00:00",
+        "estimated_runway": "2026-10-09T00:15:00+00:00",
+        "actual_runway": "2026-10-09T00:15:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T05:55:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T05:53:00+00:00",
+        "actual": "2026-10-09T05:53:00+00:00",
+        "estimated_runway": "2026-10-09T05:53:00+00:00",
+        "actual_runway": "2026-10-09T05:53:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "1926",
+        "iata": "VJ1926",
+        "icao": "VJC1926",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A356",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88812E"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Seoul (Incheon)",
+        "timezone": "Asia/Seoul",
+        "iata": "ICN",
+        "icao": "RKSI",
+        "terminal": "1",
+        "gate": "114",
+        "delay": 31,
+        "scheduled": "2026-10-09T04:05:00+00:00",
+        "estimated": "2026-10-09T04:05:00+00:00",
+        "actual": "2026-10-09T04:36:00+00:00",
+        "estimated_runway": "2026-10-09T04:36:00+00:00",
+        "actual_runway": "2026-10-09T04:36:00+00:00"
+      },
+      "arrival": {
+        "airport": "Duong Dong",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "PQC",
+        "icao": "VVPQ",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T07:35:00+00:00",
+        "delay": 8,
+        "estimated": "2026-10-09T07:46:00+00:00",
+        "actual": "2026-10-09T07:43:00+00:00",
+        "estimated_runway": "2026-10-09T07:43:00+00:00",
+        "actual_runway": "2026-10-09T07:43:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "979",
+        "iata": "VJ979",
+        "icao": "VJC979",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A357",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88812F"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "DEL",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DEL",
+        "icao": "VVDE",
+        "terminal": "3",
+        "gate": "28A",
+        "delay": 10,
+        "scheduled": "2026-10-09T00:05:00+00:00",
+        "estimated": "2026-10-09T00:05:00+00:00",
+        "actual": "2026-10-09T00:15:00+00:00",
+        "estimated_runway": "2026-10-09T00:15:00+00:00",
+        "actual_runway": "2026-10-09T00:15:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T05:40:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T05:28:00+00:00",
+        "actual": "2026-10-09T05:31:00+00:00",
+        "estimated_runway": "2026-10-09T05:31:00+00:00",
+        "actual_runway": "2026-10-09T05:31:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "972",
+        "iata": "VJ972",
+        "icao": "VJC972",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A358",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888130"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "BOM",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "BOM",
+        "icao": "VVBO",
+        "terminal": "2",
+        "gate": null,
+        "delay": 25,
+        "scheduled": "2026-10-09T00:15:00+00:00",
+        "estimated": "2026-10-09T00:15:00+00:00",
+        "actual": "2026-10-09T00:40:00+00:00",
+        "estimated_runway": "2026-10-09T00:40:00+00:00",
+        "actual_runway": "2026-10-09T00:40:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T07:15:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T06:59:00+00:00",
+        "actual": "2026-10-09T07:00:00+00:00",
+        "estimated_runway": "2026-10-09T07:00:00+00:00",
+        "actual_runway": "2026-10-09T07:00:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "884",
+        "iata": "VJ884",
+        "icao": "VJC884",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A359",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888131"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Guangzhou Baiyun International",
+        "timezone": "Asia/Shanghai",
+        "iata": "CAN",
+        "icao": "ZGGG",
+        "terminal": "3",
+        "gate": null,
+        "delay": 33,
+        "scheduled": "2026-10-09T02:10:00+00:00",
+        "estimated": "2026-10-09T02:10:00+00:00",
+        "actual": "2026-10-09T02:43:00+00:00",
+        "estimated_runway": "2026-10-09T02:43:00+00:00",
+        "actual_runway": "2026-10-09T02:43:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T03:05:00+00:00",
+        "delay": 10,
+        "estimated": "2026-10-09T03:13:00+00:00",
+        "actual": "2026-10-09T03:15:00+00:00",
+        "estimated_runway": "2026-10-09T03:15:00+00:00",
+        "actual_runway": "2026-10-09T03:15:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "7527",
+        "iata": "VJ7527",
+        "icao": "VJC7527",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A360",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888132"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "PKX",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "PKX",
+        "icao": "VVPK",
+        "terminal": null,
+        "gate": null,
+        "delay": 15,
+        "scheduled": "2026-10-09T01:20:00+00:00",
+        "estimated": "2026-10-09T01:20:00+00:00",
+        "actual": "2026-10-09T01:35:00+00:00",
+        "estimated_runway": "2026-10-09T01:35:00+00:00",
+        "actual_runway": "2026-10-09T01:35:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T03:55:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T03:50:00+00:00",
+        "actual": "2026-10-09T03:50:00+00:00",
+        "estimated_runway": "2026-10-09T03:50:00+00:00",
+        "actual_runway": "2026-10-09T03:50:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "7713",
+        "iata": "VJ7713",
+        "icao": "VJC7713",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A361",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888133"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "2",
+        "gate": null,
+        "delay": 36,
+        "scheduled": "2026-10-09T01:00:00+00:00",
+        "estimated": "2026-10-09T01:00:00+00:00",
+        "actual": "2026-10-09T01:36:00+00:00",
+        "estimated_runway": "2026-10-09T01:36:00+00:00",
+        "actual_runway": "2026-10-09T01:36:00+00:00"
+      },
+      "arrival": {
+        "airport": "Kansai International",
+        "timezone": "Asia/Tokyo",
+        "iata": "KIX",
+        "icao": "RJBB",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T08:30:00+00:00",
+        "delay": 19,
+        "estimated": "2026-10-09T08:49:00+00:00",
+        "actual": "2026-10-09T08:49:00+00:00",
+        "estimated_runway": "2026-10-09T08:49:00+00:00",
+        "actual_runway": "2026-10-09T08:49:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "828",
+        "iata": "VJ828",
+        "icao": "VJC828",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A362",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888134"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "2",
+        "gate": null,
+        "delay": 29,
+        "scheduled": "2026-10-09T01:00:00+00:00",
+        "estimated": "2026-10-09T01:00:00+00:00",
+        "actual": "2026-10-09T01:29:00+00:00",
+        "estimated_runway": "2026-10-09T01:29:00+00:00",
+        "actual_runway": "2026-10-09T01:29:00+00:00"
+      },
+      "arrival": {
+        "airport": "PER",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "PER",
+        "icao": "VVPE",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T08:55:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T08:35:00+00:00",
+        "actual": "2026-10-09T08:34:00+00:00",
+        "estimated_runway": "2026-10-09T08:34:00+00:00",
+        "actual_runway": "2026-10-09T08:34:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "91",
+        "iata": "VJ91",
+        "icao": "VJC91",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A363",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888135"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "delay": 28,
+        "scheduled": "2026-10-09T01:05:00+00:00",
+        "estimated": "2026-10-09T01:05:00+00:00",
+        "actual": "2026-10-09T01:33:00+00:00",
+        "estimated_runway": "2026-10-09T01:33:00+00:00",
+        "actual_runway": "2026-10-09T01:33:00+00:00"
+      },
+      "arrival": {
+        "airport": "Gimhae International",
+        "timezone": "Asia/Seoul",
+        "iata": "PUS",
+        "icao": "RKPK",
+        "terminal": "I",
+        "gate": "2",
+        "baggage": null,
+        "scheduled": "2026-10-09T07:10:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T07:10:00+00:00",
+        "actual": "2026-10-09T07:08:00+00:00",
+        "estimated_runway": "2026-10-09T07:08:00+00:00",
+        "actual_runway": "2026-10-09T07:08:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "982",
+        "iata": "VJ982",
+        "icao": "VJC982",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A364",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888136"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "delay": 17,
+        "scheduled": "2026-10-09T00:30:00+00:00",
+        "estimated": "2026-10-09T00:30:00+00:00",
+        "actual": "2026-10-09T00:47:00+00:00",
+        "estimated_runway": "2026-10-09T00:47:00+00:00",
+        "actual_runway": "2026-10-09T00:47:00+00:00"
+      },
+      "arrival": {
+        "airport": "Narita International Airport",
+        "timezone": "Asia/Tokyo",
+        "iata": "NRT",
+        "icao": "RJAA",
+        "terminal": "2",
+        "gate": "96",
+        "baggage": null,
+        "scheduled": "2026-10-09T08:00:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T07:26:00+00:00",
+        "actual": "2026-10-09T07:24:00+00:00",
+        "estimated_runway": "2026-10-09T07:24:00+00:00",
+        "actual_runway": "2026-10-09T07:24:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "932",
+        "iata": "VJ932",
+        "icao": "VJC932",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A365",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888137"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": "2",
+        "gate": "9",
+        "delay": 64,
+        "scheduled": "2026-10-09T00:30:00+00:00",
+        "estimated": "2026-10-09T00:30:00+00:00",
+        "actual": "2026-10-09T01:34:00+00:00",
+        "estimated_runway": "2026-10-09T01:34:00+00:00",
+        "actual_runway": "2026-10-09T01:34:00+00:00"
+      },
+      "arrival": {
+        "airport": "Gimhae International",
+        "timezone": "Asia/Seoul",
+        "iata": "PUS",
+        "icao": "RKPK",
+        "terminal": "I",
+        "gate": "2",
+        "baggage": null,
+        "scheduled": "2026-10-09T06:40:00+00:00",
+        "delay": 38,
+        "estimated": "2026-10-09T07:18:00+00:00",
+        "actual": "2026-10-09T07:18:00+00:00",
+        "estimated_runway": "2026-10-09T07:18:00+00:00",
+        "actual_runway": "2026-10-09T07:18:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "988",
+        "iata": "VJ988",
+        "icao": "VJC988",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A366",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888138"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "PKX",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "PKX",
+        "icao": "VVPK",
+        "terminal": null,
+        "gate": null,
+        "delay": 19,
+        "scheduled": "2026-10-09T01:05:00+00:00",
+        "estimated": "2026-10-09T01:05:00+00:00",
+        "actual": "2026-10-09T01:24:00+00:00",
+        "estimated_runway": "2026-10-09T01:24:00+00:00",
+        "actual_runway": "2026-10-09T01:24:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "T2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T05:00:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T04:50:00+00:00",
+        "actual": "2026-10-09T04:49:00+00:00",
+        "estimated_runway": "2026-10-09T04:49:00+00:00",
+        "actual_runway": "2026-10-09T04:49:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "3949",
+        "iata": "VJ3949",
+        "icao": "VJC3949",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A367",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888139"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-09",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Haneda Airport",
+        "timezone": "Asia/Tokyo",
+        "iata": "HND",
+        "icao": "RJTT",
+        "terminal": "3",
+        "gate": "144",
+        "delay": 20,
+        "scheduled": "2026-10-09T02:00:00+00:00",
+        "estimated": "2026-10-09T02:00:00+00:00",
+        "actual": "2026-10-09T02:20:00+00:00",
+        "estimated_runway": "2026-10-09T02:20:00+00:00",
+        "actual_runway": "2026-10-09T02:20:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-09T06:10:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-09T05:45:00+00:00",
+        "actual": "2026-10-09T05:43:00+00:00",
+        "estimated_runway": "2026-10-09T05:43:00+00:00",
+        "actual_runway": "2026-10-09T05:43:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "821",
+        "iata": "VJ821",
+        "icao": "VJC821",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A368",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88813A"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Cam Ranh",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "CXR",
+        "icao": "VVCR",
+        "terminal": null,
+        "gate": null,
+        "delay": 0,
+        "scheduled": "2026-10-08T23:26:00+00:00",
+        "estimated": "2026-10-08T23:26:00+00:00",
+        "actual": "2026-10-08T23:26:00+00:00",
+        "estimated_runway": "2026-10-08T23:26:00+00:00",
+        "actual_runway": "2026-10-08T23:26:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T00:21:00+00:00",
+        "delay": 0,
+        "estimated": null,
+        "actual": "2026-10-08T00:21:00+00:00",
+        "estimated_runway": "2026-10-08T00:21:00+00:00",
+        "actual_runway": "2026-10-08T00:21:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "353",
+        "iata": "VJ353",
+        "icao": "VJC353",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A369",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88813B"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "CMB",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "CMB",
+        "icao": "VVCM",
+        "terminal": null,
+        "gate": "07",
+        "delay": 37,
+        "scheduled": "2026-10-08T23:00:00+00:00",
+        "estimated": "2026-10-08T23:00:00+00:00",
+        "actual": "2026-10-08T23:37:00+00:00",
+        "estimated_runway": "2026-10-08T23:37:00+00:00",
+        "actual_runway": "2026-10-08T23:37:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T05:55:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T05:53:00+00:00",
+        "actual": "2026-10-08T05:51:00+00:00",
+        "estimated_runway": "2026-10-08T05:51:00+00:00",
+        "actual_runway": "2026-10-08T05:51:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "1876",
+        "iata": "VJ1876",
+        "icao": "VJC1876",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A370",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88813C"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "2",
+        "gate": null,
+        "delay": 37,
+        "scheduled": "2026-10-08T23:35:00+00:00",
+        "estimated": "2026-10-08T23:35:00+00:00",
+        "actual": "2026-10-08T00:12:00+00:00",
+        "estimated_runway": "2026-10-08T00:12:00+00:00",
+        "actual_runway": "2026-10-08T00:12:00+00:00"
+      },
+      "arrival": {
+        "airport": "Narita International Airport",
+        "timezone": "Asia/Tokyo",
+        "iata": "NRT",
+        "icao": "RJAA",
+        "terminal": "2",
+        "gate": "98",
+        "baggage": null,
+        "scheduled": "2026-10-08T07:55:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T07:51:00+00:00",
+        "actual": "2026-10-08T07:50:00+00:00",
+        "estimated_runway": "2026-10-08T07:50:00+00:00",
+        "actual_runway": "2026-10-08T07:50:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "822",
+        "iata": "VJ822",
+        "icao": "VJC822",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A371",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88813D"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Catbi",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HPH",
+        "icao": "VVCI",
+        "terminal": null,
+        "gate": null,
+        "delay": 0,
+        "scheduled": "2026-10-08T23:55:00+00:00",
+        "estimated": "2026-10-08T23:55:00+00:00",
+        "actual": "2026-10-08T23:50:00+00:00",
+        "estimated_runway": "2026-10-08T23:50:00+00:00",
+        "actual_runway": "2026-10-08T23:50:00+00:00"
+      },
+      "arrival": {
+        "airport": "Seoul (Incheon)",
+        "timezone": "Asia/Seoul",
+        "iata": "ICN",
+        "icao": "RKSI",
+        "terminal": "1",
+        "gate": "132",
+        "baggage": null,
+        "scheduled": "2026-10-08T06:15:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T05:35:00+00:00",
+        "actual": "2026-10-08T05:32:00+00:00",
+        "estimated_runway": "2026-10-08T05:32:00+00:00",
+        "actual_runway": "2026-10-08T05:32:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "926",
+        "iata": "VJ926",
+        "icao": "VJC926",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A372",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88813E"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "delay": 23,
+        "scheduled": "2026-10-08T23:25:00+00:00",
+        "estimated": "2026-10-08T23:25:00+00:00",
+        "actual": "2026-10-08T23:48:00+00:00",
+        "estimated_runway": "2026-10-08T23:48:00+00:00",
+        "actual_runway": "2026-10-08T23:48:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T01:35:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T01:30:00+00:00",
+        "actual": "2026-10-08T01:29:00+00:00",
+        "estimated_runway": "2026-10-08T01:29:00+00:00",
+        "actual_runway": "2026-10-08T01:29:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "169",
+        "iata": "VJ169",
+        "icao": "VJC169",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A373",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88813F"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": "2",
+        "gate": "8",
+        "delay": 19,
+        "scheduled": "2026-10-08T23:45:00+00:00",
+        "estimated": "2026-10-08T23:45:00+00:00",
+        "actual": "2026-10-08T00:04:00+00:00",
+        "estimated_runway": "2026-10-08T00:04:00+00:00",
+        "actual_runway": "2026-10-08T00:04:00+00:00"
+      },
+      "arrival": {
+        "airport": "Seoul (Incheon)",
+        "timezone": "Asia/Seoul",
+        "iata": "ICN",
+        "icao": "RKSI",
+        "terminal": "1",
+        "gate": "122",
+        "baggage": null,
+        "scheduled": "2026-10-08T06:00:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T06:02:00+00:00",
+        "actual": "2026-10-08T05:59:00+00:00",
+        "estimated_runway": "2026-10-08T05:59:00+00:00",
+        "actual_runway": "2026-10-08T05:59:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "878",
+        "iata": "VJ878",
+        "icao": "VJC878",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A374",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888140"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 45,
+        "scheduled": "2026-10-08T22:40:00+00:00",
+        "estimated": "2026-10-08T22:40:00+00:00",
+        "actual": "2026-10-08T23:25:00+00:00",
+        "estimated_runway": "2026-10-08T23:25:00+00:00",
+        "actual_runway": "2026-10-08T23:25:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T00:50:00+00:00",
+        "delay": 24,
+        "estimated": "2026-10-08T01:12:00+00:00",
+        "actual": "2026-10-08T01:14:00+00:00",
+        "estimated_runway": "2026-10-08T01:14:00+00:00",
+        "actual_runway": "2026-10-08T01:14:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "162",
+        "iata": "VJ162",
+        "icao": "VJC162",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A375",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888141"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "2",
+        "gate": null,
+        "delay": 29,
+        "scheduled": "2026-10-08T22:25:00+00:00",
+        "estimated": "2026-10-08T22:25:00+00:00",
+        "actual": "2026-10-08T22:54:00+00:00",
+        "estimated_runway": "2026-10-08T22:54:00+00:00",
+        "actual_runway": "2026-10-08T22:54:00+00:00"
+      },
+      "arrival": {
+        "airport": "Ninoy Aquino International",
+        "timezone": "Asia/Manila",
+        "iata": "MNL",
+        "icao": "RPLL",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T02:10:00+00:00",
+        "delay": 2,
+        "estimated": "2026-10-08T02:13:00+00:00",
+        "actual": "2026-10-08T02:12:00+00:00",
+        "estimated_runway": "2026-10-08T02:12:00+00:00",
+        "actual_runway": "2026-10-08T02:12:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "858",
+        "iata": "VJ858",
+        "icao": "VJC858",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A376",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888142"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "delay": 6,
+        "scheduled": "2026-10-08T22:45:00+00:00",
+        "estimated": "2026-10-08T22:45:00+00:00",
+        "actual": "2026-10-08T22:51:00+00:00",
+        "estimated_runway": "2026-10-08T22:51:00+00:00",
+        "actual_runway": "2026-10-08T22:51:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T00:55:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T00:41:00+00:00",
+        "actual": "2026-10-08T00:42:00+00:00",
+        "estimated_runway": "2026-10-08T00:42:00+00:00",
+        "actual_runway": "2026-10-08T00:42:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "167",
+        "iata": "VJ167",
+        "icao": "VJC167",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A377",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888143"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "delay": 17,
+        "scheduled": "2026-10-08T22:30:00+00:00",
+        "estimated": "2026-10-08T22:30:00+00:00",
+        "actual": "2026-10-08T22:47:00+00:00",
+        "estimated_runway": "2026-10-08T22:47:00+00:00",
+        "actual_runway": "2026-10-08T22:47:00+00:00"
+      },
+      "arrival": {
+        "airport": "Guangzhou Baiyun International",
+        "timezone": "Asia/Shanghai",
+        "iata": "CAN",
+        "icao": "ZGGG",
+        "terminal": "3",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T01:10:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T01:06:00+00:00",
+        "actual": "2026-10-08T01:05:00+00:00",
+        "estimated_runway": "2026-10-08T01:05:00+00:00",
+        "actual_runway": "2026-10-08T01:05:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "7526",
+        "iata": "VJ7526",
+        "icao": "VJC7526",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A378",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888144"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Cam Ranh",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "CXR",
+        "icao": "VVCR",
+        "terminal": "2",
+        "gate": null,
+        "delay": 53,
+        "scheduled": "2026-10-08T22:55:00+00:00",
+        "estimated": "2026-10-08T22:55:00+00:00",
+        "actual": "2026-10-08T23:48:00+00:00",
+        "estimated_runway": "2026-10-08T23:48:00+00:00",
+        "actual_runway": "2026-10-08T23:48:00+00:00"
+      },
+      "arrival": {
+        "airport": "Seoul (Incheon)",
+        "timezone": "Asia/Seoul",
+        "iata": "ICN",
+        "icao": "RKSI",
+        "terminal": "1",
+        "gate": "125",
+        "baggage": null,
+        "scheduled": "2026-10-08T05:35:00+00:00",
+        "delay": 33,
+        "estimated": "2026-10-08T06:13:00+00:00",
+        "actual": "2026-10-08T06:08:00+00:00",
+        "estimated_runway": "2026-10-08T06:08:00+00:00",
+        "actual_runway": "2026-10-08T06:08:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "834",
+        "iata": "VJ834",
+        "icao": "VJC834",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A379",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888145"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "delay": 16,
+        "scheduled": "2026-10-08T21:25:00+00:00",
+        "estimated": "2026-10-08T21:25:00+00:00",
+        "actual": "2026-10-08T21:41:00+00:00",
+        "estimated_runway": "2026-10-08T21:41:00+00:00",
+        "actual_runway": "2026-10-08T21:41:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T23:35:00+00:00",
+        "delay": 21,
+        "estimated": "2026-10-08T00:00:00+00:00",
+        "actual": "2026-10-08T23:56:00+00:00",
+        "estimated_runway": "2026-10-08T23:56:00+00:00",
+        "actual_runway": "2026-10-08T23:56:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "163",
+        "iata": "VJ163",
+        "icao": "VJC163",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A320",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888146"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "delay": 18,
+        "scheduled": "2026-10-08T21:15:00+00:00",
+        "estimated": "2026-10-08T21:15:00+00:00",
+        "actual": "2026-10-08T21:33:00+00:00",
+        "estimated_runway": "2026-10-08T21:33:00+00:00",
+        "actual_runway": "2026-10-08T21:33:00+00:00"
+      },
+      "arrival": {
+        "airport": "Shanghai Pudong International",
+        "timezone": "Asia/Shanghai",
+        "iata": "PVG",
+        "icao": "ZSPD",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T01:15:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T01:16:00+00:00",
+        "actual": "2026-10-08T01:15:00+00:00",
+        "estimated_runway": "2026-10-08T01:15:00+00:00",
+        "actual_runway": "2026-10-08T01:15:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "7238",
+        "iata": "VJ7238",
+        "icao": "VJC7238",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A321",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888147"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": "1",
+        "gate": "5",
+        "delay": 23,
+        "scheduled": "2026-10-08T21:15:00+00:00",
+        "estimated": "2026-10-08T21:15:00+00:00",
+        "actual": "2026-10-08T21:38:00+00:00",
+        "estimated_runway": "2026-10-08T21:38:00+00:00",
+        "actual_runway": "2026-10-08T21:38:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T22:35:00+00:00",
+        "delay": 2,
+        "estimated": "2026-10-08T22:38:00+00:00",
+        "actual": "2026-10-08T22:37:00+00:00",
+        "estimated_runway": "2026-10-08T22:37:00+00:00",
+        "actual_runway": "2026-10-08T22:37:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "522",
+        "iata": "VJ522",
+        "icao": "VJC522",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A322",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888148"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Chu Lai",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "VCL",
+        "icao": "VVCL",
+        "terminal": null,
+        "gate": null,
+        "delay": 19,
+        "scheduled": "2026-10-08T20:15:00+00:00",
+        "estimated": "2026-10-08T20:15:00+00:00",
+        "actual": "2026-10-08T20:34:00+00:00",
+        "estimated_runway": "2026-10-08T20:34:00+00:00",
+        "actual_runway": "2026-10-08T20:34:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T21:35:00+00:00",
+        "delay": 49,
+        "estimated": "2026-10-08T22:28:00+00:00",
+        "actual": "2026-10-08T22:24:00+00:00",
+        "estimated_runway": "2026-10-08T22:24:00+00:00",
+        "actual_runway": "2026-10-08T22:24:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "377",
+        "iata": "VJ377",
+        "icao": "VJC377",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A323",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888149"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Catbi",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HPH",
+        "icao": "VVCI",
+        "terminal": null,
+        "gate": null,
+        "delay": 44,
+        "scheduled": "2026-10-08T20:10:00+00:00",
+        "estimated": "2026-10-08T20:10:00+00:00",
+        "actual": "2026-10-08T20:54:00+00:00",
+        "estimated_runway": "2026-10-08T20:54:00+00:00",
+        "actual_runway": "2026-10-08T20:54:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T22:35:00+00:00",
+        "delay": 29,
+        "estimated": "2026-10-08T23:06:00+00:00",
+        "actual": "2026-10-08T23:04:00+00:00",
+        "estimated_runway": "2026-10-08T23:04:00+00:00",
+        "actual_runway": "2026-10-08T23:04:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "283",
+        "iata": "VJ283",
+        "icao": "VJC283",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A324",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88814A"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": "1",
+        "gate": "8",
+        "delay": 16,
+        "scheduled": "2026-10-08T20:45:00+00:00",
+        "estimated": "2026-10-08T20:45:00+00:00",
+        "actual": "2026-10-08T21:01:00+00:00",
+        "estimated_runway": "2026-10-08T21:01:00+00:00",
+        "actual_runway": "2026-10-08T21:01:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T22:05:00+00:00",
+        "delay": 3,
+        "estimated": "2026-10-08T22:03:00+00:00",
+        "actual": "2026-10-08T22:08:00+00:00",
+        "estimated_runway": "2026-10-08T22:08:00+00:00",
+        "actual_runway": "2026-10-08T22:08:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "518",
+        "iata": "VJ518",
+        "icao": "VJC518",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A325",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88814B"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Cam Ranh",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "CXR",
+        "icao": "VVCR",
+        "terminal": "1",
+        "gate": null,
+        "delay": 19,
+        "scheduled": "2026-10-08T20:35:00+00:00",
+        "estimated": "2026-10-08T20:35:00+00:00",
+        "actual": "2026-10-08T20:54:00+00:00",
+        "estimated_runway": "2026-10-08T20:54:00+00:00",
+        "actual_runway": "2026-10-08T20:54:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T22:25:00+00:00",
+        "delay": 2,
+        "estimated": "2026-10-08T22:28:00+00:00",
+        "actual": "2026-10-08T22:27:00+00:00",
+        "estimated_runway": "2026-10-08T22:27:00+00:00",
+        "actual_runway": "2026-10-08T22:27:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "780",
+        "iata": "VJ780",
+        "icao": "VJC780",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A326",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88814C"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Phung-Duc",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "BMV",
+        "icao": "VVBM",
+        "terminal": null,
+        "gate": null,
+        "delay": 11,
+        "scheduled": "2026-10-08T19:45:00+00:00",
+        "estimated": "2026-10-08T19:45:00+00:00",
+        "actual": "2026-10-08T19:56:00+00:00",
+        "estimated_runway": "2026-10-08T19:56:00+00:00",
+        "actual_runway": "2026-10-08T19:56:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T21:30:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T21:25:00+00:00",
+        "actual": "2026-10-08T21:27:00+00:00",
+        "estimated_runway": "2026-10-08T21:27:00+00:00",
+        "actual_runway": "2026-10-08T21:27:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "496",
+        "iata": "VJ496",
+        "icao": "VJC496",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A327",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88814D"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Seoul (Incheon)",
+        "timezone": "Asia/Seoul",
+        "iata": "ICN",
+        "icao": "RKSI",
+        "terminal": "1",
+        "gate": "124",
+        "delay": 53,
+        "scheduled": "2026-10-08T21:15:00+00:00",
+        "estimated": "2026-10-08T21:15:00+00:00",
+        "actual": "2026-10-08T22:08:00+00:00",
+        "estimated_runway": "2026-10-08T22:08:00+00:00",
+        "actual_runway": "2026-10-08T22:08:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T00:30:00+00:00",
+        "delay": 25,
+        "estimated": "2026-10-08T00:56:00+00:00",
+        "actual": "2026-10-08T00:55:00+00:00",
+        "estimated_runway": "2026-10-08T00:55:00+00:00",
+        "actual_runway": "2026-10-08T00:55:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "861",
+        "iata": "VJ861",
+        "icao": "VJC861",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A328",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88814E"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "delay": 19,
+        "scheduled": "2026-10-08T19:55:00+00:00",
+        "estimated": "2026-10-08T19:55:00+00:00",
+        "actual": "2026-10-08T20:14:00+00:00",
+        "estimated_runway": "2026-10-08T20:14:00+00:00",
+        "actual_runway": "2026-10-08T20:14:00+00:00"
+      },
+      "arrival": {
+        "airport": "PKX",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "PKX",
+        "icao": "VVPK",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T00:20:00+00:00",
+        "delay": 1,
+        "estimated": "2026-10-08T00:23:00+00:00",
+        "actual": "2026-10-08T00:21:00+00:00",
+        "estimated_runway": "2026-10-08T00:21:00+00:00",
+        "actual_runway": "2026-10-08T00:21:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "7712",
+        "iata": "VJ7712",
+        "icao": "VJC7712",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A329",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88814F"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "delay": 15,
+        "scheduled": "2026-10-08T19:45:00+00:00",
+        "estimated": "2026-10-08T19:45:00+00:00",
+        "actual": "2026-10-08T20:00:00+00:00",
+        "estimated_runway": "2026-10-08T20:00:00+00:00",
+        "actual_runway": "2026-10-08T20:00:00+00:00"
+      },
+      "arrival": {
+        "airport": "AMD",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "AMD",
+        "icao": "VVAM",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T23:10:00+00:00",
+        "delay": 2,
+        "estimated": "2026-10-08T23:11:00+00:00",
+        "actual": "2026-10-08T23:12:00+00:00",
+        "estimated_runway": "2026-10-08T23:12:00+00:00",
+        "actual_runway": "2026-10-08T23:12:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "1925",
+        "iata": "VJ1925",
+        "icao": "VJC1925",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A330",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888150"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T2",
+        "gate": null,
+        "delay": 26,
+        "scheduled": "2026-10-08T19:40:00+00:00",
+        "estimated": "2026-10-08T19:40:00+00:00",
+        "actual": "2026-10-08T20:06:00+00:00",
+        "estimated_runway": "2026-10-08T20:06:00+00:00",
+        "actual_runway": "2026-10-08T20:06:00+00:00"
+      },
+      "arrival": {
+        "airport": "DEL",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DEL",
+        "icao": "VVDE",
+        "terminal": "3",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T22:55:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T22:53:00+00:00",
+        "actual": "2026-10-08T22:55:00+00:00",
+        "estimated_runway": "2026-10-08T22:55:00+00:00",
+        "actual_runway": "2026-10-08T22:55:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "971",
+        "iata": "VJ971",
+        "icao": "VJC971",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A331",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888151"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "delay": 13,
+        "scheduled": "2026-10-08T19:25:00+00:00",
+        "estimated": "2026-10-08T19:25:00+00:00",
+        "actual": "2026-10-08T19:38:00+00:00",
+        "estimated_runway": "2026-10-08T19:38:00+00:00",
+        "actual_runway": "2026-10-08T19:38:00+00:00"
+      },
+      "arrival": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T20:45:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T20:42:00+00:00",
+        "actual": "2026-10-08T20:42:00+00:00",
+        "estimated_runway": "2026-10-08T20:42:00+00:00",
+        "actual_runway": "2026-10-08T20:42:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "519",
+        "iata": "VJ519",
+        "icao": "VJC519",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A332",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888152"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "2",
+        "gate": null,
+        "delay": 23,
+        "scheduled": "2026-10-08T19:40:00+00:00",
+        "estimated": "2026-10-08T19:40:00+00:00",
+        "actual": "2026-10-08T20:03:00+00:00",
+        "estimated_runway": "2026-10-08T20:03:00+00:00",
+        "actual_runway": "2026-10-08T20:03:00+00:00"
+      },
+      "arrival": {
+        "airport": "BOM",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "BOM",
+        "icao": "VVBO",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T23:15:00+00:00",
+        "delay": 1,
+        "estimated": "2026-10-08T23:18:00+00:00",
+        "actual": "2026-10-08T23:16:00+00:00",
+        "estimated_runway": "2026-10-08T23:16:00+00:00",
+        "actual_runway": "2026-10-08T23:16:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "883",
+        "iata": "VJ883",
+        "icao": "VJC883",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A333",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888153"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 23,
+        "scheduled": "2026-10-08T19:20:00+00:00",
+        "estimated": "2026-10-08T19:20:00+00:00",
+        "actual": "2026-10-08T19:43:00+00:00",
+        "estimated_runway": "2026-10-08T19:43:00+00:00",
+        "actual_runway": "2026-10-08T19:43:00+00:00"
+      },
+      "arrival": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T20:40:00+00:00",
+        "delay": 6,
+        "estimated": "2026-10-08T20:45:00+00:00",
+        "actual": "2026-10-08T20:46:00+00:00",
+        "estimated_runway": "2026-10-08T20:46:00+00:00",
+        "actual_runway": "2026-10-08T20:46:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "644",
+        "iata": "VJ644",
+        "icao": "VJC644",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A334",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888154"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Duong Dong",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "PQC",
+        "icao": "VVPQ",
+        "terminal": null,
+        "gate": null,
+        "delay": 46,
+        "scheduled": "2026-10-08T19:20:00+00:00",
+        "estimated": "2026-10-08T19:20:00+00:00",
+        "actual": "2026-10-08T20:06:00+00:00",
+        "estimated_runway": "2026-10-08T20:06:00+00:00",
+        "actual_runway": "2026-10-08T20:06:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T21:25:00+00:00",
+        "delay": 34,
+        "estimated": "2026-10-08T21:58:00+00:00",
+        "actual": "2026-10-08T21:59:00+00:00",
+        "estimated_runway": "2026-10-08T21:59:00+00:00",
+        "actual_runway": "2026-10-08T21:59:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "442",
+        "iata": "VJ442",
+        "icao": "VJC442",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A335",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888155"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Qui Nhon",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "UIH",
+        "icao": "VVPC",
+        "terminal": null,
+        "gate": null,
+        "delay": 7,
+        "scheduled": "2026-10-08T18:15:00+00:00",
+        "estimated": "2026-10-08T18:15:00+00:00",
+        "actual": "2026-10-08T18:22:00+00:00",
+        "estimated_runway": "2026-10-08T18:22:00+00:00",
+        "actual_runway": "2026-10-08T18:22:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T19:20:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T19:13:00+00:00",
+        "actual": "2026-10-08T19:11:00+00:00",
+        "estimated_runway": "2026-10-08T19:11:00+00:00",
+        "actual_runway": "2026-10-08T19:11:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "385",
+        "iata": "VJ385",
+        "icao": "VJC385",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A336",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888156"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 35,
+        "scheduled": "2026-10-08T18:45:00+00:00",
+        "estimated": "2026-10-08T18:45:00+00:00",
+        "actual": "2026-10-08T19:20:00+00:00",
+        "estimated_runway": "2026-10-08T19:20:00+00:00",
+        "actual_runway": "2026-10-08T19:20:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T20:55:00+00:00",
+        "delay": 10,
+        "estimated": "2026-10-08T21:10:00+00:00",
+        "actual": "2026-10-08T21:05:00+00:00",
+        "estimated_runway": "2026-10-08T21:05:00+00:00",
+        "actual_runway": "2026-10-08T21:05:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "154",
+        "iata": "VJ154",
+        "icao": "VJC154",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A337",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888157"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 36,
+        "scheduled": "2026-10-08T18:30:00+00:00",
+        "estimated": "2026-10-08T18:30:00+00:00",
+        "actual": "2026-10-08T19:06:00+00:00",
+        "estimated_runway": "2026-10-08T19:06:00+00:00",
+        "actual_runway": "2026-10-08T19:06:00+00:00"
+      },
+      "arrival": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T19:50:00+00:00",
+        "delay": 24,
+        "estimated": "2026-10-08T20:13:00+00:00",
+        "actual": "2026-10-08T20:14:00+00:00",
+        "estimated_runway": "2026-10-08T20:14:00+00:00",
+        "actual_runway": "2026-10-08T20:14:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "642",
+        "iata": "VJ642",
+        "icao": "VJC642",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A338",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888158"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 34,
+        "scheduled": "2026-10-08T18:25:00+00:00",
+        "estimated": "2026-10-08T18:25:00+00:00",
+        "actual": "2026-10-08T18:59:00+00:00",
+        "estimated_runway": "2026-10-08T18:59:00+00:00",
+        "actual_runway": "2026-10-08T18:59:00+00:00"
+      },
+      "arrival": {
+        "airport": "Chu Lai",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "VCL",
+        "icao": "VVCL",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T19:45:00+00:00",
+        "delay": 10,
+        "estimated": "2026-10-08T19:56:00+00:00",
+        "actual": "2026-10-08T19:55:00+00:00",
+        "estimated_runway": "2026-10-08T19:55:00+00:00",
+        "actual_runway": "2026-10-08T19:55:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "376",
+        "iata": "VJ376",
+        "icao": "VJC376",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A339",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888159"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "2",
+        "gate": null,
+        "delay": 47,
+        "scheduled": "2026-10-08T18:15:00+00:00",
+        "estimated": "2026-10-08T18:15:00+00:00",
+        "actual": "2026-10-08T19:02:00+00:00",
+        "estimated_runway": "2026-10-08T19:02:00+00:00",
+        "actual_runway": "2026-10-08T19:02:00+00:00"
+      },
+      "arrival": {
+        "airport": "CMB",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "CMB",
+        "icao": "VVCM",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T21:50:00+00:00",
+        "delay": 33,
+        "estimated": "2026-10-08T22:22:00+00:00",
+        "actual": "2026-10-08T22:23:00+00:00",
+        "estimated_runway": "2026-10-08T22:23:00+00:00",
+        "actual_runway": "2026-10-08T22:23:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "1875",
+        "iata": "VJ1875",
+        "icao": "VJC1875",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A340",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88810A"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Singapore Changi",
+        "timezone": "Asia/Singapore",
+        "iata": "SIN",
+        "icao": "WSSS",
+        "terminal": "4",
+        "gate": "G1",
+        "delay": 7,
+        "scheduled": "2026-10-08T19:30:00+00:00",
+        "estimated": "2026-10-08T19:30:00+00:00",
+        "actual": "2026-10-08T19:37:00+00:00",
+        "estimated_runway": "2026-10-08T19:37:00+00:00",
+        "actual_runway": "2026-10-08T19:37:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T20:35:00+00:00",
+        "delay": 6,
+        "estimated": "2026-10-08T20:42:00+00:00",
+        "actual": "2026-10-08T20:41:00+00:00",
+        "estimated_runway": "2026-10-08T20:41:00+00:00",
+        "actual_runway": "2026-10-08T20:41:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "812",
+        "iata": "VJ812",
+        "icao": "VJC812",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A341",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88810B"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "delay": 12,
+        "scheduled": "2026-10-08T18:45:00+00:00",
+        "estimated": "2026-10-08T18:45:00+00:00",
+        "actual": "2026-10-08T18:57:00+00:00",
+        "estimated_runway": "2026-10-08T18:57:00+00:00",
+        "actual_runway": "2026-10-08T18:57:00+00:00"
+      },
+      "arrival": {
+        "airport": "Da Nang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DAD",
+        "icao": "VVDN",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T20:05:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T19:56:00+00:00",
+        "actual": "2026-10-08T19:56:00+00:00",
+        "estimated_runway": "2026-10-08T19:56:00+00:00",
+        "actual_runway": "2026-10-08T19:56:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "521",
+        "iata": "VJ521",
+        "icao": "VJC521",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A342",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88810C"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Can Tho",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "VCA",
+        "icao": "VVCT",
+        "terminal": null,
+        "gate": null,
+        "delay": 8,
+        "scheduled": "2026-10-08T17:50:00+00:00",
+        "estimated": "2026-10-08T17:50:00+00:00",
+        "actual": "2026-10-08T17:58:00+00:00",
+        "estimated_runway": "2026-10-08T17:58:00+00:00",
+        "actual_runway": "2026-10-08T17:58:00+00:00"
+      },
+      "arrival": {
+        "airport": "Catbi",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HPH",
+        "icao": "VVCI",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T19:55:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T19:48:00+00:00",
+        "actual": "2026-10-08T19:45:00+00:00",
+        "estimated_runway": "2026-10-08T19:45:00+00:00",
+        "actual_runway": "2026-10-08T19:45:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "488",
+        "iata": "VJ488",
+        "icao": "VJC488",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A343",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88810D"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Qui Nhon",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "UIH",
+        "icao": "VVPC",
+        "terminal": null,
+        "gate": null,
+        "delay": 3,
+        "scheduled": "2026-10-08T17:45:00+00:00",
+        "estimated": "2026-10-08T17:45:00+00:00",
+        "actual": "2026-10-08T17:48:00+00:00",
+        "estimated_runway": "2026-10-08T17:48:00+00:00",
+        "actual_runway": "2026-10-08T17:48:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T19:25:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T19:08:00+00:00",
+        "actual": "2026-10-08T19:05:00+00:00",
+        "estimated_runway": "2026-10-08T19:05:00+00:00",
+        "actual_runway": "2026-10-08T19:05:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "438",
+        "iata": "VJ438",
+        "icao": "VJC438",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A344",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88810E"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Taiwan Taoyuan International (Chiang Kai Shek International)",
+        "timezone": "Asia/Taipei",
+        "iata": "TPE",
+        "icao": "RCTP",
+        "terminal": "1",
+        "gate": "B1R",
+        "delay": 73,
+        "scheduled": "2026-10-08T19:00:00+00:00",
+        "estimated": "2026-10-08T19:00:00+00:00",
+        "actual": "2026-10-08T20:13:00+00:00",
+        "estimated_runway": "2026-10-08T20:13:00+00:00",
+        "actual_runway": "2026-10-08T20:13:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T20:55:00+00:00",
+        "delay": 50,
+        "estimated": "2026-10-08T21:53:00+00:00",
+        "actual": "2026-10-08T21:45:00+00:00",
+        "estimated_runway": "2026-10-08T21:45:00+00:00",
+        "actual_runway": "2026-10-08T21:45:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "943",
+        "iata": "VJ943",
+        "icao": "VJC943",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A345",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88810F"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "T2",
+        "gate": null,
+        "delay": 24,
+        "scheduled": "2026-10-08T18:05:00+00:00",
+        "estimated": "2026-10-08T18:05:00+00:00",
+        "actual": "2026-10-08T18:29:00+00:00",
+        "estimated_runway": "2026-10-08T18:29:00+00:00",
+        "actual_runway": "2026-10-08T18:29:00+00:00"
+      },
+      "arrival": {
+        "airport": "PKX",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "PKX",
+        "icao": "VVPK",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T00:05:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T23:59:00+00:00",
+        "actual": "2026-10-08T23:57:00+00:00",
+        "estimated_runway": "2026-10-08T23:57:00+00:00",
+        "actual_runway": "2026-10-08T23:57:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "3948",
+        "iata": "VJ3948",
+        "icao": "VJC3948",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A346",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888110"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 17,
+        "scheduled": "2026-10-08T17:55:00+00:00",
+        "estimated": "2026-10-08T17:55:00+00:00",
+        "actual": "2026-10-08T18:12:00+00:00",
+        "estimated_runway": "2026-10-08T18:12:00+00:00",
+        "actual_runway": "2026-10-08T18:12:00+00:00"
+      },
+      "arrival": {
+        "airport": "Phung-Duc",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "BMV",
+        "icao": "VVBM",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T18:55:00+00:00",
+        "delay": 0,
+        "estimated": null,
+        "actual": "2026-10-08T18:47:00+00:00",
+        "estimated_runway": "2026-10-08T18:47:00+00:00",
+        "actual_runway": "2026-10-08T18:47:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "352",
+        "iata": "VJ352",
+        "icao": "VJC352",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A347",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888111"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 16,
+        "scheduled": "2026-10-08T17:40:00+00:00",
+        "estimated": "2026-10-08T17:40:00+00:00",
+        "actual": "2026-10-08T17:56:00+00:00",
+        "estimated_runway": "2026-10-08T17:56:00+00:00",
+        "actual_runway": "2026-10-08T17:56:00+00:00"
+      },
+      "arrival": {
+        "airport": "Catbi",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HPH",
+        "icao": "VVCI",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T19:40:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T19:35:00+00:00",
+        "actual": "2026-10-08T19:39:00+00:00",
+        "estimated_runway": "2026-10-08T19:39:00+00:00",
+        "actual_runway": "2026-10-08T19:39:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "282",
+        "iata": "VJ282",
+        "icao": "VJC282",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A348",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888112"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 51,
+        "scheduled": "2026-10-08T17:40:00+00:00",
+        "estimated": "2026-10-08T17:40:00+00:00",
+        "actual": "2026-10-08T18:31:00+00:00",
+        "estimated_runway": "2026-10-08T18:31:00+00:00",
+        "actual_runway": "2026-10-08T18:31:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T19:50:00+00:00",
+        "delay": 22,
+        "estimated": "2026-10-08T20:16:00+00:00",
+        "actual": "2026-10-08T20:12:00+00:00",
+        "estimated_runway": "2026-10-08T20:12:00+00:00",
+        "actual_runway": "2026-10-08T20:12:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "150",
+        "iata": "VJ150",
+        "icao": "VJC150",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A349",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888113"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "delay": 151,
+        "scheduled": "2026-10-08T17:10:00+00:00",
+        "estimated": "2026-10-08T17:10:00+00:00",
+        "actual": "2026-10-08T19:41:00+00:00",
+        "estimated_runway": "2026-10-08T19:41:00+00:00",
+        "actual_runway": "2026-10-08T19:41:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T20:55:00+00:00",
+        "delay": 37,
+        "estimated": "2026-10-08T21:33:00+00:00",
+        "actual": "2026-10-08T21:32:00+00:00",
+        "estimated_runway": "2026-10-08T21:32:00+00:00",
+        "actual_runway": "2026-10-08T21:32:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "152",
+        "iata": "VJ152",
+        "icao": "VJC152",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A350",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888114"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Pleiku",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "PXU",
+        "icao": "VVPK",
+        "terminal": null,
+        "gate": null,
+        "delay": 0,
+        "scheduled": "2026-10-08T17:10:00+00:00",
+        "estimated": "2026-10-08T17:10:00+00:00",
+        "actual": "2026-10-08T17:08:00+00:00",
+        "estimated_runway": "2026-10-08T17:08:00+00:00",
+        "actual_runway": "2026-10-08T17:08:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T18:45:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T18:29:00+00:00",
+        "actual": "2026-10-08T18:28:00+00:00",
+        "estimated_runway": "2026-10-08T18:28:00+00:00",
+        "actual_runway": "2026-10-08T18:28:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "424",
+        "iata": "VJ424",
+        "icao": "VJC424",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A351",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888115"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Duong Dong",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "PQC",
+        "icao": "VVPQ",
+        "terminal": null,
+        "gate": null,
+        "delay": 29,
+        "scheduled": "2026-10-08T17:45:00+00:00",
+        "estimated": "2026-10-08T17:45:00+00:00",
+        "actual": "2026-10-08T18:14:00+00:00",
+        "estimated_runway": "2026-10-08T18:14:00+00:00",
+        "actual_runway": "2026-10-08T18:14:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T18:50:00+00:00",
+        "delay": 12,
+        "estimated": "2026-10-08T19:01:00+00:00",
+        "actual": "2026-10-08T19:02:00+00:00",
+        "estimated_runway": "2026-10-08T19:02:00+00:00",
+        "actual_runway": "2026-10-08T19:02:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "1322",
+        "iata": "VJ1322",
+        "icao": "VJC1322",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A352",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888116"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "KHH",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "KHH",
+        "icao": "VVKH",
+        "terminal": "I",
+        "gate": "24",
+        "delay": 15,
+        "scheduled": "2026-10-08T18:50:00+00:00",
+        "estimated": "2026-10-08T18:50:00+00:00",
+        "actual": "2026-10-08T19:05:00+00:00",
+        "estimated_runway": "2026-10-08T19:05:00+00:00",
+        "actual_runway": "2026-10-08T19:05:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T20:35:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T20:27:00+00:00",
+        "actual": "2026-10-08T20:26:00+00:00",
+        "estimated_runway": "2026-10-08T20:26:00+00:00",
+        "actual_runway": "2026-10-08T20:26:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "947",
+        "iata": "VJ947",
+        "icao": "VJC947",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A353",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888117"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Phu Bai",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HUI",
+        "icao": "VVPB",
+        "terminal": null,
+        "gate": null,
+        "delay": 34,
+        "scheduled": "2026-10-08T17:40:00+00:00",
+        "estimated": "2026-10-08T17:40:00+00:00",
+        "actual": "2026-10-08T18:14:00+00:00",
+        "estimated_runway": "2026-10-08T18:14:00+00:00",
+        "actual_runway": "2026-10-08T18:14:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T18:55:00+00:00",
+        "delay": 20,
+        "estimated": "2026-10-08T19:12:00+00:00",
+        "actual": "2026-10-08T19:15:00+00:00",
+        "estimated_runway": "2026-10-08T19:15:00+00:00",
+        "actual_runway": "2026-10-08T19:15:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "568",
+        "iata": "VJ568",
+        "icao": "VJC568",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A354",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888118"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "delay": 6,
+        "scheduled": "2026-10-08T17:30:00+00:00",
+        "estimated": "2026-10-08T17:30:00+00:00",
+        "actual": "2026-10-08T17:36:00+00:00",
+        "estimated_runway": "2026-10-08T17:36:00+00:00",
+        "actual_runway": "2026-10-08T17:36:00+00:00"
+      },
+      "arrival": {
+        "airport": "Phung-Duc",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "BMV",
+        "icao": "VVBM",
+        "terminal": null,
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T19:15:00+00:00",
+        "delay": 0,
+        "estimated": "2026-10-08T19:05:00+00:00",
+        "actual": "2026-10-08T19:10:00+00:00",
+        "estimated_runway": "2026-10-08T19:10:00+00:00",
+        "actual_runway": "2026-10-08T19:10:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "495",
+        "iata": "VJ495",
+        "icao": "VJC495",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A355",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "888119"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Lienkhang",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "DLI",
+        "icao": "VVDL",
+        "terminal": null,
+        "gate": null,
+        "delay": 55,
+        "scheduled": "2026-10-08T18:00:00+00:00",
+        "estimated": "2026-10-08T18:00:00+00:00",
+        "actual": "2026-10-08T18:55:00+00:00",
+        "estimated_runway": "2026-10-08T18:55:00+00:00",
+        "actual_runway": "2026-10-08T18:55:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "T1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T19:50:00+00:00",
+        "delay": 50,
+        "estimated": "2026-10-08T20:50:00+00:00",
+        "actual": "2026-10-08T20:40:00+00:00",
+        "estimated_runway": "2026-10-08T20:40:00+00:00",
+        "actual_runway": "2026-10-08T20:40:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "406",
+        "iata": "VJ406",
+        "icao": "VJC406",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A356",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88811A"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Vinh City",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "VII",
+        "icao": "VVVH",
+        "terminal": null,
+        "gate": null,
+        "delay": 20,
+        "scheduled": "2026-10-08T16:20:00+00:00",
+        "estimated": "2026-10-08T16:20:00+00:00",
+        "actual": "2026-10-08T16:40:00+00:00",
+        "estimated_runway": "2026-10-08T16:40:00+00:00",
+        "actual_runway": "2026-10-08T16:40:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "1",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T18:10:00+00:00",
+        "delay": 13,
+        "estimated": "2026-10-08T18:36:00+00:00",
+        "actual": "2026-10-08T18:23:00+00:00",
+        "estimated_runway": "2026-10-08T18:23:00+00:00",
+        "actual_runway": "2026-10-08T18:23:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "213",
+        "iata": "VJ213",
+        "icao": "VJC213",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A357",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88811B"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Singapore Changi",
+        "timezone": "Asia/Singapore",
+        "iata": "SIN",
+        "icao": "WSSS",
+        "terminal": "4",
+        "gate": "G10",
+        "delay": 42,
+        "scheduled": "2026-10-08T17:55:00+00:00",
+        "estimated": "2026-10-08T17:55:00+00:00",
+        "actual": "2026-10-08T18:37:00+00:00",
+        "estimated_runway": "2026-10-08T18:37:00+00:00",
+        "actual_runway": "2026-10-08T18:37:00+00:00"
+      },
+      "arrival": {
+        "airport": "Tan Son Nhat International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "SGN",
+        "icao": "VVTS",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T19:00:00+00:00",
+        "delay": 29,
+        "estimated": "2026-10-08T19:29:00+00:00",
+        "actual": "2026-10-08T19:29:00+00:00",
+        "estimated_runway": "2026-10-08T19:29:00+00:00",
+        "actual_runway": "2026-10-08T19:29:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "814",
+        "iata": "VJ814",
+        "icao": "VJC814",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A358",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88811C"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2026-10-08",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "RMQ",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "RMQ",
+        "icao": "VVRM",
+        "terminal": "2",
+        "gate": "5",
+        "delay": 46,
+        "scheduled": "2026-10-08T18:00:00+00:00",
+        "estimated": "2026-10-08T18:00:00+00:00",
+        "actual": "2026-10-08T18:46:00+00:00",
+        "estimated_runway": "2026-10-08T18:46:00+00:00",
+        "actual_runway": "2026-10-08T18:46:00+00:00"
+      },
+      "arrival": {
+        "airport": "Noibai International",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "iata": "HAN",
+        "icao": "VVNB",
+        "terminal": "2",
+        "gate": null,
+        "baggage": null,
+        "scheduled": "2026-10-08T19:50:00+00:00",
+        "delay": 25,
+        "estimated": "2026-10-08T20:18:00+00:00",
+        "actual": "2026-10-08T20:15:00+00:00",
+        "estimated_runway": "2026-10-08T20:15:00+00:00",
+        "actual_runway": "2026-10-08T20:15:00+00:00"
+      },
+      "airline": {
+        "name": "VietJet Air",
+        "iata": "VJ",
+        "icao": "VJC"
+      },
+      "flight": {
+        "number": "949",
+        "iata": "VJ949",
+        "icao": "VJC949",
+        "codeshared": null
+      },
+      "aircraft": {
+        "registration": "VN-A359",
+        "iata": "A321",
+        "icao": "A321",
+        "icao24": "88811D"
+      },
+      "live": null
+    }
+  ]
+}

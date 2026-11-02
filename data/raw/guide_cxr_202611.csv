@@ -1,0 +1,977 @@
+﻿source,airport,direction,scraped_at,table_index,source_file,Scheduled,Revised,From,Flight,Status,To
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,01:10,01:09,Seoul (ICN),Jeju Air 7C* 2303,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,07:20,07:20,Ho Chi Minh City (SGN),Pacific Airlines VN 6152 Codeshare: VN 6152,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,07:35,07:35,Novosibirsk (OVB),Aeroflot SU 830,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,08:05,08:05,Ho Chi Minh City (SGN),Vietnam Airlines VN 1340 Codeshare: MU 8988,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,09:10,09:10,Hanoi (HAN),Sun PhuQuoc Airways 9G 1143,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,09:15,09:15,Hanoi (HAN),Vietravel Airlines V2U 1271,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,09:20,09:18,Seoul (ICN),Vietnam Airlines VN 441 Codeshare: KE 5679,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,09:40,09:12,Guangzhou (CAN),China Southern Airlines CZ 8475 Codeshare: 3U 7019 / VN 3513,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,09:55,09:55,Seoul (ICN),VietJet Air VJC 835,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,09:55,09:53,Bangkok (DMK),Thai AirAsia FD 646,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,10:10,10:10,Ho Chi Minh City (SGN),VietJet Air VJC 1608,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,10:35,10:35,Busan (PUS),VietJet Air VJC 991,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,10:50,10:50,Ho Chi Minh City (SGN),Pacific Airlines VN 6154 Codeshare: VN 6154,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,11:05,11:05,Busan (PUS),Vietnam Airlines VN 435,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,12:10,12:10,Irkutsk (IKT),Aeroflot SU 840,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,12:40,12:40,Moscow (SVO),Aeroflot SU 294,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,12:55,12:55,Hanoi (HAN),VietJet Air VJC 775,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,13:05,13:05,Hanoi (HAN),Sun PhuQuoc Airways 9G 1149,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,13:25,13:25,Ho Chi Minh City (SGN),VietJet Air VJC 1606,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,13:30,13:30,Phu Quoc (PQC),Sun PhuQuoc Airways 9G 2952,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,13:30,13:30,Bangkok (BKK),Thai VietJet Air TVJ 968,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,14:55,14:55,Haiphong (HPH),VietJet Air VJC 731,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,15:00,15:00,Hanoi (HAN),Vietnam Airlines VN 1559 Codeshare: CI 8773,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,15:40,15:40,Hanoi (HAN),VietJet Air VJC 1781,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,17:05,17:05,Ho Chi Minh City (SGN),Vietnam Airlines VN 1346 Codeshare: CI 8786,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,17:05,17:05,Hanoi (HAN),Vietnam Airlines VN 1561,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,17:20,17:20,Dong Hoi (VDH),Sun PhuQuoc Airways 9G 2205,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,17:35,17:35,Hanoi (HAN),VietJet Air VJC 771,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,17:40,17:40,Guangzhou (CAN),China Southern Airlines CZ 6049 Codeshare: 3U 7091 / VN 3511,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 07:11:03,0,pw_guide_cxr_arrivals_20261101_071123.json,17:45,17:45,Da Nang (DAD),VietJet Air VJC 581,On-Time,
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,00:05,01:27,,VietJet Air VJC 990,Departed 82 minutes late,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,00:55,01:06,,Trinity Airways TWB 34,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,01:05,01:26,,Trinity Airways TWB 46,Departed 21 minutes late,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,01:10,02:21,,Parata Air FGW 206,Departed 71 minutes late,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,01:40,01:40,,Trinity Airways TWB 42,Departed On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,01:55,01:49,,Eastar Jet ZE 562,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,02:10,02:01,,Jeju Air 7C* 2304,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,07:55,07:55,,Pacific Airlines VN 6153 Codeshare: VN 6153,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,08:40,08:40,,Vietnam Airlines VN 1341 Codeshare: CI 8781,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,09:05,09:05,,Aeroflot SU 833,On-Time,Vladivostok (VVO)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,09:50,09:50,,Sun PhuQuoc Airways 9G 2953,On-Time,Phu Quoc (PQC)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,09:55,09:55,,Vietravel Airlines V2U 1270,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,10:15,10:15,,Vietnam Airlines VN 1558 Codeshare: CI 8758,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,10:25,10:25,,Thai AirAsia FD 647,On-Time,Bangkok (DMK)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,10:40,10:40,,China Southern Airlines CZ 8476 Codeshare: 3U 7020,On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,10:55,10:55,,VietJet Air VJC 730,On-Time,Haiphong (HPH)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,11:10,11:10,,VietJet Air VJC 1782,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,11:25,11:25,,Pacific Airlines VN 6155 Codeshare: VN 6155,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,13:15,13:15,,Aeroflot SU 841,On-Time,Irkutsk (IKT)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,13:25,13:25,,VietJet Air VJC 774,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,14:00,14:00,,Sun PhuQuoc Airways 9G 2204,On-Time,Dong Hoi (VDH)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,14:10,14:10,,Sun PhuQuoc Airways 9G 1144,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,14:10,14:10,,Vietnam Airlines VN 1347 Codeshare: CI 8777,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,14:20,14:20,,Thai VietJet Air TVJ 969,On-Time,Bangkok (BKK)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,14:40,14:40,,Aeroflot SU 295,On-Time,Moscow (SVO)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,15:45,15:45,,Vietnam Airlines VN 1562 Codeshare: AF 4138 / MU 8987 / NH 9734,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,16:20,16:20,,VietJet Air VJC 611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,17:25,17:25,,VietJet Air VJC 1774,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 07:11:03,0,pw_guide_cxr_departures_20261101_071125.json,17:40,17:40,,Vietnam Airlines VN 1560,On-Time,Hanoi (HAN)
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,07:20,07:20,Ho Chi Minh City (SGN),Pacific Airlines VN 6152 Codeshare: VN 6152,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,07:35,07:11,Novosibirsk (OVB),Aeroflot SU 830,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,08:05,08:03,Ho Chi Minh City (SGN),Vietnam Airlines VN 1340 Codeshare: MU 8988,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,09:10,09:10,Hanoi (HAN),Sun PhuQuoc Airways 9G 1143,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,09:15,09:15,Hanoi (HAN),Vietravel Airlines V2U 1271,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,09:20,09:23,Seoul (ICN),Vietnam Airlines VN 441 Codeshare: KE 5679,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,09:40,09:22,Guangzhou (CAN),China Southern Airlines CZ 8475 Codeshare: 3U 7019 / VN 3513,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,09:55,09:55,Seoul (ICN),VietJet Air VJC 835,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,09:55,09:53,Bangkok (DMK),Thai AirAsia FD 646,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,10:10,10:10,Ho Chi Minh City (SGN),VietJet Air VJC 1608,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,10:35,10:35,Busan (PUS),VietJet Air VJC 991,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,10:50,10:50,Ho Chi Minh City (SGN),Pacific Airlines VN 6154 Codeshare: VN 6154,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,11:05,11:34,Busan (PUS),Vietnam Airlines VN 435,29 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,12:10,12:10,Irkutsk (IKT),Aeroflot SU 840,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,12:40,12:40,Moscow (SVO),Aeroflot SU 294,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,12:55,12:55,Hanoi (HAN),VietJet Air VJC 775,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,13:05,13:05,Hanoi (HAN),Sun PhuQuoc Airways 9G 1149,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,13:25,13:25,Ho Chi Minh City (SGN),VietJet Air VJC 1606,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,13:30,13:30,Bangkok (BKK),Thai VietJet Air TVJ 968,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,13:30,13:30,Phu Quoc (PQC),Sun PhuQuoc Airways 9G 2952,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,14:55,14:55,Haiphong (HPH),VietJet Air VJC 731,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,15:00,15:00,Hanoi (HAN),Vietnam Airlines VN 1559 Codeshare: CI 8773,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,15:40,15:40,Hanoi (HAN),VietJet Air VJC 1781,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,17:05,17:05,Ho Chi Minh City (SGN),Vietnam Airlines VN 1346 Codeshare: CI 8786,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,17:05,17:05,Hanoi (HAN),Vietnam Airlines VN 1561,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,17:20,17:20,Dong Hoi (VDH),Sun PhuQuoc Airways 9G 2205,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,17:35,17:35,Hanoi (HAN),VietJet Air VJC 771,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,17:40,17:40,Guangzhou (CAN),China Southern Airlines CZ 6049 Codeshare: 3U 7091 / VN 3511,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,17:45,17:45,Da Nang (DAD),VietJet Air VJC 581,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,18:20,18:20,Ho Chi Minh City (SGN),VASCO VN 8346 Codeshare: VN 8346,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,18:25,18:25,Singapore (SIN),Scoot TR 574 Codeshare: SQ 8380,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,18:45,18:45,Da Nang (DAD),Vietnam Airlines VN 1941,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 09:11:03,0,pw_guide_cxr_arrivals_20261101_091124.json,19:55,19:55,Hanoi (HAN),Sun PhuQuoc Airways 9G 1159,On-Time,
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,07:55,07:55,,Pacific Airlines VN 6153 Codeshare: VN 6153,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,08:40,08:40,,Vietnam Airlines VN 1341 Codeshare: CI 8781,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,09:05,09:05,,Aeroflot SU 833,On-Time,Vladivostok (VVO)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,09:50,09:50,,Sun PhuQuoc Airways 9G 2953,On-Time,Phu Quoc (PQC)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,09:55,09:55,,Vietravel Airlines V2U 1270,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,10:15,10:15,,Vietnam Airlines VN 1558 Codeshare: CI 8758,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,10:25,10:25,,Thai AirAsia FD 647,On-Time,Bangkok (DMK)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,10:40,10:40,,China Southern Airlines CZ 8476 Codeshare: 3U 7020,On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,10:55,10:55,,VietJet Air VJC 730,On-Time,Haiphong (HPH)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,11:10,11:10,,VietJet Air VJC 1782,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,11:25,11:25,,Pacific Airlines VN 6155 Codeshare: VN 6155,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,13:15,13:15,,Aeroflot SU 841,On-Time,Irkutsk (IKT)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,13:25,13:25,,VietJet Air VJC 774,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,14:00,14:00,,Sun PhuQuoc Airways 9G 2204,On-Time,Dong Hoi (VDH)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,14:10,14:10,,Sun PhuQuoc Airways 9G 1144,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,14:10,14:10,,Vietnam Airlines VN 1347 Codeshare: CI 8777,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,14:20,14:20,,Thai VietJet Air TVJ 969,On-Time,Bangkok (BKK)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,14:40,14:40,,Aeroflot SU 295,On-Time,Moscow (SVO)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,15:45,15:45,,Vietnam Airlines VN 1562 Codeshare: AF 4138 / MU 8987 / NH 9734,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,16:20,16:20,,VietJet Air VJC 611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,17:25,17:25,,VietJet Air VJC 1774,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,17:40,17:40,,Vietnam Airlines VN 1560,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,18:00,18:00,,Sun PhuQuoc Airways 9G 1154,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,18:05,18:05,,VietJet Air VJC 770,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,18:15,18:15,,VietJet Air VJC 580,On-Time,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,18:45,18:45,,China Southern Airlines CZ 6050 Codeshare: 3U 7092 / VN 3510,On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,18:50,18:50,,VASCO VN 8347 Codeshare: VN 8347,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,19:20,19:20,,Vietnam Airlines VN 1940,On-Time,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-01 09:11:03,0,pw_guide_cxr_departures_20261101_091127.json,19:25,19:25,,Scoot TR 575 Codeshare: SQ 8381,On-Time,Singapore (SIN)
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,07:20,07:20,Ho Chi Minh City (SGN),Pacific Airlines VN 6152 Codeshare: VN 6152,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,07:35,07:11,Novosibirsk (OVB),Aeroflot SU 830,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,08:05,08:03,Ho Chi Minh City (SGN),Vietnam Airlines VN 1340 Codeshare: MU 8988,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,09:10,09:10,Hanoi (HAN),Sun PhuQuoc Airways 9G 1143,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,09:15,08:59,Hanoi (HAN),Vietravel Airlines V2U 1271,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,09:20,09:17,Seoul (ICN),Vietnam Airlines VN 441 Codeshare: KE 5679,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,09:40,09:20,Guangzhou (CAN),China Southern Airlines CZ 8475 Codeshare: 3U 7019 / VN 3513,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,09:55,09:46,Seoul (ICN),VietJet Air VJC 835,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,09:55,09:43,Bangkok (DMK),Thai AirAsia FD 646,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,10:10,10:10,Ho Chi Minh City (SGN),VietJet Air VJC 1608,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,10:35,10:35,Busan (PUS),VietJet Air VJC 991,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,10:50,10:50,Ho Chi Minh City (SGN),Pacific Airlines VN 6154 Codeshare: VN 6154,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,11:05,11:24,Busan (PUS),Vietnam Airlines VN 435,19 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,12:10,12:10,Irkutsk (IKT),Aeroflot SU 840,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,12:40,12:40,Moscow (SVO),Aeroflot SU 294,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,12:55,12:55,Hanoi (HAN),VietJet Air VJC 775,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,13:05,13:05,Hanoi (HAN),Sun PhuQuoc Airways 9G 1149,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,13:25,13:25,Ho Chi Minh City (SGN),VietJet Air VJC 1606,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,13:30,13:30,Phu Quoc (PQC),Sun PhuQuoc Airways 9G 2952,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,13:30,13:30,Bangkok (BKK),Thai VietJet Air TVJ 968,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,14:55,14:55,Haiphong (HPH),VietJet Air VJC 731,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,15:00,15:00,Hanoi (HAN),Vietnam Airlines VN 1559 Codeshare: CI 8773,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,15:40,15:40,Hanoi (HAN),VietJet Air VJC 1781,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,17:05,17:05,Ho Chi Minh City (SGN),Vietnam Airlines VN 1346 Codeshare: CI 8786,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,17:05,17:05,Hanoi (HAN),Vietnam Airlines VN 1561,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,17:20,17:20,Dong Hoi (VDH),Sun PhuQuoc Airways 9G 2205,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,17:35,17:35,Hanoi (HAN),VietJet Air VJC 771,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,17:40,17:40,Guangzhou (CAN),China Southern Airlines CZ 6049 Codeshare: 3U 7091 / VN 3511,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,17:45,17:45,Da Nang (DAD),VietJet Air VJC 581,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,18:20,18:20,Ho Chi Minh City (SGN),VASCO VN 8346 Codeshare: VN 8346,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,18:25,18:25,Singapore (SIN),Scoot TR 574 Codeshare: SQ 8380,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,18:45,18:45,Da Nang (DAD),Vietnam Airlines VN 1941,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,19:55,19:55,Hanoi (HAN),Sun PhuQuoc Airways 9G 1159,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,20:20,20:20,Ho Chi Minh City (SGN),Pacific Airlines VN 6158 Codeshare: VN 6158,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,20:20,20:20,Seoul (ICN),Air Busan BX 103 Codeshare: OZ 9587,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,20:30,20:30,Hanoi (HAN),Vietnam Airlines VN 1563 Codeshare: CI 8785,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,20:55,20:55,Ho Chi Minh City (SGN),Vietnam Airlines VN 1350 Codeshare: CI 8780,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,21:25,21:25,Seoul (ICN),Korean Air KE 467 Codeshare: DL 7813 / VN 3405,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 11:11:02,0,pw_guide_cxr_arrivals_20261101_111122.json,21:40,21:40,Hanoi (HAN),VietJet Air VJC 1779,On-Time,
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,07:55,07:55,,Pacific Airlines VN 6153 Codeshare: VN 6153,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,08:40,08:40,,Vietnam Airlines VN 1341 Codeshare: CI 8781,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,09:05,09:00,,Aeroflot SU 833,Departed On-Time,Vladivostok (VVO)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,09:50,09:50,,Sun PhuQuoc Airways 9G 2953,Departed On-Time,Phu Quoc (PQC)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,09:55,09:53,,Vietravel Airlines V2U 1270,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,10:15,10:22,,Vietnam Airlines VN 1558 Codeshare: CI 8758,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,10:25,10:17,,Thai AirAsia FD 647,Departed On-Time,Bangkok (DMK)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,10:40,10:31,,China Southern Airlines CZ 8476 Codeshare: 3U 7020,Departed On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,10:55,10:55,,VietJet Air VJC 730,On-Time,Haiphong (HPH)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,11:10,11:10,,VietJet Air VJC 1782,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,11:25,11:25,,Pacific Airlines VN 6155 Codeshare: VN 6155,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,13:15,13:15,,Aeroflot SU 841,On-Time,Irkutsk (IKT)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,13:25,13:25,,VietJet Air VJC 774,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,14:00,14:00,,Sun PhuQuoc Airways 9G 2204,On-Time,Dong Hoi (VDH)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,14:10,14:10,,Sun PhuQuoc Airways 9G 1144,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,14:10,14:10,,Vietnam Airlines VN 1347 Codeshare: CI 8777,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,14:20,14:20,,Thai VietJet Air TVJ 969,On-Time,Bangkok (BKK)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,14:40,14:40,,Aeroflot SU 295,On-Time,Moscow (SVO)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,15:45,15:45,,Vietnam Airlines VN 1562 Codeshare: AF 4138 / MU 8987 / NH 9734,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,16:20,16:20,,VietJet Air VJC 611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,17:25,17:25,,VietJet Air VJC 1774,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,17:40,17:40,,Vietnam Airlines VN 1560,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,18:00,18:00,,Sun PhuQuoc Airways 9G 1154,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,18:05,18:05,,VietJet Air VJC 770,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,18:15,18:15,,VietJet Air VJC 580,On-Time,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,18:45,18:45,,China Southern Airlines CZ 6050 Codeshare: 3U 7092 / VN 3510,On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,18:50,18:50,,VASCO VN 8347 Codeshare: VN 8347,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,19:20,19:20,,Vietnam Airlines VN 1940,On-Time,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,19:25,19:25,,Scoot TR 575 Codeshare: SQ 8381,On-Time,Singapore (SIN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,20:35,20:35,,Sun PhuQuoc Airways 9G 1158,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,20:55,20:55,,Pacific Airlines VN 6159 Codeshare: VN 6159,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,21:30,21:30,,Vietnam Airlines VN 1351,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,21:40,21:40,,Air Busan BX 104 Codeshare: OZ 9588,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 11:11:02,0,pw_guide_cxr_departures_20261101_111125.json,21:45,21:45,,Vietnam Airlines VN 440 Codeshare: KE 5680,On-Time,Seoul (ICN)
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,07:20,07:20,Ho Chi Minh City (SGN),Pacific Airlines VN 6152 Codeshare: VN 6152,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,07:35,07:11,Novosibirsk (OVB),Aeroflot SU 830,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,08:05,08:03,Ho Chi Minh City (SGN),Vietnam Airlines VN 1340 Codeshare: MU 8988,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,09:10,09:10,Hanoi (HAN),Sun PhuQuoc Airways 9G 1143,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,09:15,08:59,Hanoi (HAN),Vietravel Airlines V2U 1271,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,09:20,09:17,Seoul (ICN),Vietnam Airlines VN 441 Codeshare: KE 5679,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,09:40,09:20,Guangzhou (CAN),China Southern Airlines CZ 8475 Codeshare: 3U 7019 / VN 3513,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,09:55,09:46,Seoul (ICN),VietJet Air VJC 835,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,09:55,09:43,Bangkok (DMK),Thai AirAsia FD 646,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,10:10,10:10,Ho Chi Minh City (SGN),VietJet Air VJC 1608,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,10:35,12:32,Busan (PUS),VietJet Air VJC 991,Arrived 117 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,10:50,10:50,Ho Chi Minh City (SGN),Pacific Airlines VN 6154 Codeshare: VN 6154,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,11:05,11:20,Busan (PUS),Vietnam Airlines VN 435,Arrived 15 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,12:10,12:13,Irkutsk (IKT),Aeroflot SU 840,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,12:40,12:40,Moscow (SVO),Aeroflot SU 294,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,12:55,12:55,Hanoi (HAN),VietJet Air VJC 775,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,13:05,13:05,Hanoi (HAN),Sun PhuQuoc Airways 9G 1149,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,13:25,13:25,Ho Chi Minh City (SGN),VietJet Air VJC 1606,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,13:30,13:30,Bangkok (BKK),Thai VietJet Air TVJ 968,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,13:30,13:30,Phu Quoc (PQC),Sun PhuQuoc Airways 9G 2952,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,14:55,14:55,Haiphong (HPH),VietJet Air VJC 731,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,15:00,15:00,Hanoi (HAN),Vietnam Airlines VN 1559 Codeshare: CI 8773,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,15:40,15:40,Hanoi (HAN),VietJet Air VJC 1781,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,17:05,17:05,Ho Chi Minh City (SGN),Vietnam Airlines VN 1346 Codeshare: CI 8786,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,17:05,17:05,Hanoi (HAN),Vietnam Airlines VN 1561,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,17:20,17:20,Dong Hoi (VDH),Sun PhuQuoc Airways 9G 2205,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,17:35,17:35,Hanoi (HAN),VietJet Air VJC 771,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,17:40,17:40,Guangzhou (CAN),China Southern Airlines CZ 6049 Codeshare: 3U 7091 / VN 3511,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,17:45,17:45,Da Nang (DAD),VietJet Air VJC 581,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,18:20,18:20,Ho Chi Minh City (SGN),VASCO VN 8346 Codeshare: VN 8346,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,18:25,18:25,Singapore (SIN),Scoot TR 574 Codeshare: SQ 8380,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,18:45,18:45,Da Nang (DAD),Vietnam Airlines VN 1941,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,19:55,19:55,Hanoi (HAN),Sun PhuQuoc Airways 9G 1159,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,20:20,20:20,Ho Chi Minh City (SGN),Pacific Airlines VN 6158 Codeshare: VN 6158,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,20:20,20:20,Seoul (ICN),Air Busan BX 103 Codeshare: OZ 9587,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,20:30,20:30,Hanoi (HAN),Vietnam Airlines VN 1563 Codeshare: CI 8785,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,20:55,20:55,Ho Chi Minh City (SGN),Vietnam Airlines VN 1350 Codeshare: CI 8780,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,21:25,21:25,Seoul (ICN),Korean Air KE 467 Codeshare: DL 7813 / VN 3405,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,21:40,21:40,Hanoi (HAN),VietJet Air VJC 1779,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,22:30,22:30,Cheongju (CJJ),Aero K R2F 557,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,22:40,22:40,Busan (PUS),Air Busan BX 755 Codeshare: OZ 9591,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,23:20,23:20,Seoul (ICN),Jin Air LJ 127 Codeshare: KE 5727,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,23:30,23:30,Seoul (ICN),Air Seoul RS* 115,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,23:35,23:35,Daegu (TAE),Trinity Airways TWB 37,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,23:50,23:50,Cheongju (CJJ),Trinity Airways TWB 45,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 13:11:02,0,pw_guide_cxr_arrivals_20261101_131125.json,23:55,23:55,Seoul (ICN),Trinity Airways TWB 33,On-Time,
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,07:55,07:55,,Pacific Airlines VN 6153 Codeshare: VN 6153,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,08:40,08:40,,Vietnam Airlines VN 1341 Codeshare: CI 8781,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,09:05,09:00,,Aeroflot SU 833,Departed On-Time,Vladivostok (VVO)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,09:50,09:50,,Sun PhuQuoc Airways 9G 2953,Departed On-Time,Phu Quoc (PQC)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,09:55,09:53,,Vietravel Airlines V2U 1270,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,10:15,10:22,,Vietnam Airlines VN 1558 Codeshare: CI 8758,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,10:25,10:17,,Thai AirAsia FD 647,Departed On-Time,Bangkok (DMK)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,10:40,10:31,,China Southern Airlines CZ 8476 Codeshare: 3U 7020,Departed On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,10:55,10:55,,VietJet Air VJC 730,Departed On-Time,Haiphong (HPH)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,11:10,11:06,,VietJet Air VJC 1782,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,11:25,11:25,,Pacific Airlines VN 6155 Codeshare: VN 6155,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,13:15,13:15,,Aeroflot SU 841,On-Time,Irkutsk (IKT)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,13:25,13:25,,VietJet Air VJC 774,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,14:00,14:00,,Sun PhuQuoc Airways 9G 2204,On-Time,Dong Hoi (VDH)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,14:10,14:10,,Sun PhuQuoc Airways 9G 1144,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,14:10,14:10,,Vietnam Airlines VN 1347 Codeshare: CI 8777,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,14:20,14:20,,Thai VietJet Air TVJ 969,On-Time,Bangkok (BKK)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,14:40,14:40,,Aeroflot SU 295,On-Time,Moscow (SVO)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,15:45,15:45,,Vietnam Airlines VN 1562 Codeshare: AF 4138 / MU 8987 / NH 9734,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,16:20,16:20,,VietJet Air VJC 611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,17:25,17:25,,VietJet Air VJC 1774,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,17:40,17:40,,Vietnam Airlines VN 1560,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,18:00,18:00,,Sun PhuQuoc Airways 9G 1154,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,18:05,18:05,,VietJet Air VJC 770,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,18:15,18:15,,VietJet Air VJC 580,On-Time,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,18:45,18:45,,China Southern Airlines CZ 6050 Codeshare: 3U 7092 / VN 3510,On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,18:50,18:50,,VASCO VN 8347 Codeshare: VN 8347,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,19:20,19:20,,Vietnam Airlines VN 1940,On-Time,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,19:25,19:25,,Scoot TR 575 Codeshare: SQ 8381,On-Time,Singapore (SIN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,20:35,20:35,,Sun PhuQuoc Airways 9G 1158,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,20:55,20:55,,Pacific Airlines VN 6159 Codeshare: VN 6159,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,21:30,21:30,,Vietnam Airlines VN 1351,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,21:40,21:40,,Air Busan BX 104 Codeshare: OZ 9588,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,21:45,21:45,,Vietnam Airlines VN 440 Codeshare: KE 5680,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,22:45,22:45,,VietJet Air VJC 834,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,23:05,23:05,,Korean Air KE 468 Codeshare: DL 7814 / VN 3404,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,23:30,23:30,,Aero K R2F 558,On-Time,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,23:40,23:40,,Air Busan BX 756 Codeshare: OZ 9592,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 13:11:02,0,pw_guide_cxr_departures_20261101_131129.json,23:50,23:50,,Vietnam Airlines VN 434,On-Time,Busan (PUS)
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,09:10,09:10,Hanoi (HAN),Sun PhuQuoc Airways 9G 1143,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,09:15,08:59,Hanoi (HAN),Vietravel Airlines V2U 1271,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,09:20,09:17,Seoul (ICN),Vietnam Airlines VN 441 Codeshare: KE 5679,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,09:40,09:20,Guangzhou (CAN),China Southern Airlines CZ 8475 Codeshare: 3U 7019 / VN 3513,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,09:55,09:46,Seoul (ICN),VietJet Air VJC 835,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,09:55,09:43,Bangkok (DMK),Thai AirAsia FD 646,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,10:10,10:10,Ho Chi Minh City (SGN),VietJet Air VJC 1608,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,10:35,12:32,Busan (PUS),VietJet Air VJC 991,Arrived 117 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,10:50,10:50,Ho Chi Minh City (SGN),Pacific Airlines VN 6154 Codeshare: VN 6154,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,11:05,11:20,Busan (PUS),Vietnam Airlines VN 435,Arrived 15 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,12:10,12:13,Irkutsk (IKT),Aeroflot SU 840,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,12:40,12:40,Moscow (SVO),Aeroflot SU 294,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,12:55,12:55,Hanoi (HAN),VietJet Air VJC 775,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,13:05,13:05,Hanoi (HAN),Sun PhuQuoc Airways 9G 1149,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,13:25,13:37,Ho Chi Minh City (SGN),VietJet Air VJC 1606,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,13:30,13:46,Bangkok (BKK),Thai VietJet Air TVJ 968,Arrived 16 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,13:30,13:30,Phu Quoc (PQC),Sun PhuQuoc Airways 9G 2952,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,14:55,14:55,Haiphong (HPH),VietJet Air VJC 731,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,15:00,15:00,Hanoi (HAN),Vietnam Airlines VN 1559 Codeshare: CI 8773,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,15:40,15:40,Hanoi (HAN),VietJet Air VJC 1781,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,17:05,17:05,Ho Chi Minh City (SGN),Vietnam Airlines VN 1346 Codeshare: CI 8786,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,17:05,17:05,Hanoi (HAN),Vietnam Airlines VN 1561,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,17:20,17:20,Dong Hoi (VDH),Sun PhuQuoc Airways 9G 2205,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,17:35,17:35,Hanoi (HAN),VietJet Air VJC 771,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,17:40,17:14,Guangzhou (CAN),China Southern Airlines CZ 6049 Codeshare: 3U 7091 / VN 3511,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,17:45,17:45,Da Nang (DAD),VietJet Air VJC 581,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,18:20,18:20,Ho Chi Minh City (SGN),VASCO VN 8346 Codeshare: VN 8346,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,18:25,18:25,Singapore (SIN),Scoot TR 574 Codeshare: SQ 8380,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,18:45,18:45,Da Nang (DAD),Vietnam Airlines VN 1941,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,19:55,19:55,Hanoi (HAN),Sun PhuQuoc Airways 9G 1159,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,20:20,20:20,Ho Chi Minh City (SGN),Pacific Airlines VN 6158 Codeshare: VN 6158,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,20:20,20:20,Seoul (ICN),Air Busan BX 103 Codeshare: OZ 9587,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,20:30,20:30,Hanoi (HAN),Vietnam Airlines VN 1563 Codeshare: CI 8785,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,20:55,20:55,Ho Chi Minh City (SGN),Vietnam Airlines VN 1350 Codeshare: CI 8780,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,21:25,21:25,Seoul (ICN),Korean Air KE 467 Codeshare: DL 7813 / VN 3405,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,21:40,21:40,Hanoi (HAN),VietJet Air VJC 1779,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,22:30,22:30,Cheongju (CJJ),Aero K R2F 557,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,22:40,22:40,Busan (PUS),Air Busan BX 755 Codeshare: OZ 9591,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,23:20,23:20,Seoul (ICN),Jin Air LJ 127 Codeshare: KE 5727,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,23:30,23:30,Seoul (ICN),Air Seoul RS* 115,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,23:35,23:35,Daegu (TAE),Trinity Airways TWB 37,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,23:50,23:50,Cheongju (CJJ),Trinity Airways TWB 45,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,23:55,23:55,Seoul (ICN),Trinity Airways TWB 33,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,00:10,00:10,Seoul (ICN),Parata Air FGW 205,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,00:40,00:40,Busan (PUS),Trinity Airways TWB 41,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,00:55,00:55,Seoul (ICN),Eastar Jet ZE 561,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 15:11:02,0,pw_guide_cxr_arrivals_20261101_151124.json,01:10,01:10,Seoul (ICN),Jeju Air 7C* 2303,On-Time,
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,09:05,09:00,,Aeroflot SU 833,Departed On-Time,Vladivostok (VVO)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,09:50,09:50,,Sun PhuQuoc Airways 9G 2953,Departed On-Time,Phu Quoc (PQC)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,09:55,09:53,,Vietravel Airlines V2U 1270,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,10:15,10:22,,Vietnam Airlines VN 1558 Codeshare: CI 8758,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,10:25,10:17,,Thai AirAsia FD 647,Departed On-Time,Bangkok (DMK)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,10:40,10:31,,China Southern Airlines CZ 8476 Codeshare: 3U 7020,Departed On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,10:55,10:55,,VietJet Air VJC 730,Departed On-Time,Haiphong (HPH)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,11:10,11:06,,VietJet Air VJC 1782,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,11:25,11:25,,Pacific Airlines VN 6155 Codeshare: VN 6155,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,13:15,13:14,,Aeroflot SU 841,Departed On-Time,Irkutsk (IKT)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,13:25,13:25,,VietJet Air VJC 774,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,14:00,13:52,,Sun PhuQuoc Airways 9G 2204,Departed On-Time,Dong Hoi (VDH)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,14:10,14:10,,Sun PhuQuoc Airways 9G 1144,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,14:10,14:05,,Vietnam Airlines VN 1347 Codeshare: CI 8777,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,14:20,14:16,,Thai VietJet Air TVJ 969,Departed On-Time,Bangkok (BKK)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,14:40,14:26,,Aeroflot SU 295,Departed On-Time,Moscow (SVO)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,15:45,15:45,,Vietnam Airlines VN 1562 Codeshare: AF 4138 / MU 8987 / NH 9734,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,16:20,16:20,,VietJet Air VJC 611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,17:25,17:25,,VietJet Air VJC 1774,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,17:40,17:40,,Vietnam Airlines VN 1560,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,18:00,18:00,,Sun PhuQuoc Airways 9G 1154,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,18:05,18:05,,VietJet Air VJC 770,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,18:15,18:15,,VietJet Air VJC 580,On-Time,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,18:45,18:45,,China Southern Airlines CZ 6050 Codeshare: 3U 7092 / VN 3510,On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,18:50,18:50,,VASCO VN 8347 Codeshare: VN 8347,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,19:20,19:20,,Vietnam Airlines VN 1940,On-Time,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,19:25,19:25,,Scoot TR 575 Codeshare: SQ 8381,On-Time,Singapore (SIN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,20:35,20:35,,Sun PhuQuoc Airways 9G 1158,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,20:55,20:55,,Pacific Airlines VN 6159 Codeshare: VN 6159,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,21:30,21:30,,Vietnam Airlines VN 1351,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,21:40,21:40,,Air Busan BX 104 Codeshare: OZ 9588,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,21:45,21:45,,Vietnam Airlines VN 440 Codeshare: KE 5680,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,22:45,22:45,,VietJet Air VJC 834,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,23:05,23:05,,Korean Air KE 468 Codeshare: DL 7814 / VN 3404,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,23:30,23:30,,Aero K R2F 558,On-Time,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,23:40,23:40,,Air Busan BX 756 Codeshare: OZ 9592,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,23:50,23:50,,Vietnam Airlines VN 434,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,00:05,00:05,,VietJet Air VJC 990,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,00:20,00:20,,Jin Air LJ 128 Codeshare: KE 5728,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,00:30,00:30,,Air Seoul RS* 116,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,00:35,00:35,,Trinity Airways TWB 38,On-Time,Daegu (TAE)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,00:55,00:55,,Trinity Airways TWB 34,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,01:05,01:05,,Trinity Airways TWB 46,On-Time,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,01:10,01:10,,Parata Air FGW 206,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,01:40,01:40,,Trinity Airways TWB 42,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 15:11:02,0,pw_guide_cxr_departures_20261101_151128.json,01:55,01:55,,Eastar Jet ZE 562,On-Time,Seoul (ICN)
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,10:35,12:32,Busan (PUS),VietJet Air VJC 991,Arrived 117 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,11:05,11:20,Busan (PUS),Vietnam Airlines VN 435,Arrived 15 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,12:10,12:13,Irkutsk (IKT),Aeroflot SU 840,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,12:40,12:40,Moscow (SVO),Aeroflot SU 294,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,12:55,12:55,Hanoi (HAN),VietJet Air VJC 775,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,13:05,13:05,Hanoi (HAN),Sun PhuQuoc Airways 9G 1149,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,13:25,13:37,Ho Chi Minh City (SGN),VietJet Air VJC 1606,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,13:30,13:46,Bangkok (BKK),Thai VietJet Air TVJ 968,Arrived 16 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,13:30,13:30,Phu Quoc (PQC),Sun PhuQuoc Airways 9G 2952,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,14:55,14:55,Haiphong (HPH),VietJet Air VJC 731,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,15:00,15:07,Hanoi (HAN),Vietnam Airlines VN 1559 Codeshare: CI 8773,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,15:40,15:40,Hanoi (HAN),VietJet Air VJC 1781,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,17:05,17:05,Hanoi (HAN),Vietnam Airlines VN 1561,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,17:05,17:05,Ho Chi Minh City (SGN),Vietnam Airlines VN 1346 Codeshare: CI 8786,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,17:20,17:20,Dong Hoi (VDH),Sun PhuQuoc Airways 9G 2205,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,17:35,17:35,Hanoi (HAN),VietJet Air VJC 771,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,17:40,17:53,Guangzhou (CAN),China Southern Airlines CZ 6049 Codeshare: 3U 7091 / VN 3511,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,17:45,17:45,Da Nang (DAD),VietJet Air VJC 581,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,18:20,18:20,Ho Chi Minh City (SGN),VASCO VN 8346 Codeshare: VN 8346,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,18:25,18:25,Singapore (SIN),Scoot TR 574 Codeshare: SQ 8380,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,18:45,18:45,Da Nang (DAD),Vietnam Airlines VN 1941,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,19:55,19:55,Hanoi (HAN),Sun PhuQuoc Airways 9G 1159,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,20:20,20:20,Seoul (ICN),Air Busan BX 103 Codeshare: OZ 9587,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,20:20,20:20,Ho Chi Minh City (SGN),Pacific Airlines VN 6158 Codeshare: VN 6158,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,20:30,20:30,Hanoi (HAN),Vietnam Airlines VN 1563 Codeshare: CI 8785,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,20:55,20:55,Ho Chi Minh City (SGN),Vietnam Airlines VN 1350 Codeshare: CI 8780,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,21:25,21:26,Seoul (ICN),Korean Air KE 467 Codeshare: DL 7813 / VN 3405,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,21:40,21:40,Hanoi (HAN),VietJet Air VJC 1779,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,22:30,22:30,Cheongju (CJJ),Aero K R2F 557,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,22:40,22:40,Busan (PUS),Air Busan BX 755 Codeshare: OZ 9591,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,23:20,23:20,Seoul (ICN),Jin Air LJ 127 Codeshare: KE 5727,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,23:30,23:30,Seoul (ICN),Air Seoul RS* 115,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,23:35,23:35,Daegu (TAE),Trinity Airways TWB 37,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,23:50,23:50,Cheongju (CJJ),Trinity Airways TWB 45,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,23:55,23:55,Seoul (ICN),Trinity Airways TWB 33,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,00:10,00:10,Seoul (ICN),Parata Air FGW 205,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,00:40,00:40,Busan (PUS),Trinity Airways TWB 41,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,00:55,00:55,Seoul (ICN),Eastar Jet ZE 561,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 17:11:02,0,pw_guide_cxr_arrivals_20261101_171123.json,01:10,01:10,Seoul (ICN),Jeju Air 7C* 2303,On-Time,
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,10:55,10:55,,VietJet Air VJC 730,Departed On-Time,Haiphong (HPH)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,11:10,11:06,,VietJet Air VJC 1782,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,11:25,11:25,,Pacific Airlines VN 6155 Codeshare: VN 6155,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,13:15,13:14,,Aeroflot SU 841,Departed On-Time,Irkutsk (IKT)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,13:25,13:25,,VietJet Air VJC 774,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,14:00,13:52,,Sun PhuQuoc Airways 9G 2204,Departed On-Time,Dong Hoi (VDH)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,14:10,14:10,,Sun PhuQuoc Airways 9G 1144,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,14:10,14:05,,Vietnam Airlines VN 1347 Codeshare: CI 8777,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,14:20,14:16,,Thai VietJet Air TVJ 969,Departed On-Time,Bangkok (BKK)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,14:40,14:26,,Aeroflot SU 295,Departed On-Time,Moscow (SVO)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,15:45,15:45,,Vietnam Airlines VN 1562 Codeshare: AF 4138 / MU 8987 / NH 9734,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,16:20,16:20,,VietJet Air VJC 611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,17:25,17:25,,VietJet Air VJC 1774,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,17:40,17:40,,Vietnam Airlines VN 1560,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,18:00,18:00,,Sun PhuQuoc Airways 9G 1154,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,18:05,18:05,,VietJet Air VJC 770,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,18:15,18:15,,VietJet Air VJC 580,On-Time,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,18:45,18:45,,China Southern Airlines CZ 6050 Codeshare: 3U 7092 / VN 3510,On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,18:50,18:50,,VASCO VN 8347 Codeshare: VN 8347,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,19:20,19:20,,Vietnam Airlines VN 1940,On-Time,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,19:25,19:25,,Scoot TR 575 Codeshare: SQ 8381,On-Time,Singapore (SIN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,20:35,20:35,,Sun PhuQuoc Airways 9G 1158,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,20:55,20:55,,Pacific Airlines VN 6159 Codeshare: VN 6159,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,21:30,21:30,,Vietnam Airlines VN 1351,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,21:40,21:40,,Air Busan BX 104 Codeshare: OZ 9588,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,21:45,21:45,,Vietnam Airlines VN 440 Codeshare: KE 5680,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,22:45,22:45,,VietJet Air VJC 834,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,23:05,23:05,,Korean Air KE 468 Codeshare: DL 7814 / VN 3404,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,23:30,23:30,,Aero K R2F 558,On-Time,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,23:40,23:40,,Air Busan BX 756 Codeshare: OZ 9592,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,23:50,23:50,,Vietnam Airlines VN 434,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,00:05,00:05,,VietJet Air VJC 990,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,00:20,00:20,,Jin Air LJ 128 Codeshare: KE 5728,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,00:30,00:30,,Air Seoul RS* 116,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,00:35,00:35,,Trinity Airways TWB 38,On-Time,Daegu (TAE)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,00:55,00:55,,Trinity Airways TWB 34,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,01:05,01:05,,Trinity Airways TWB 46,On-Time,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,01:10,01:10,,Parata Air FGW 206,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,01:40,01:40,,Trinity Airways TWB 42,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,01:55,01:55,,Eastar Jet ZE 562,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 17:11:02,0,pw_guide_cxr_departures_20261101_171126.json,02:10,02:10,,Jeju Air 7C* 2304,On-Time,Seoul (ICN)
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,13:05,13:05,Hanoi (HAN),Sun PhuQuoc Airways 9G 1149,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,13:25,13:37,Ho Chi Minh City (SGN),VietJet Air VJC 1606,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,13:30,13:46,Bangkok (BKK),Thai VietJet Air TVJ 968,Arrived 16 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,13:30,13:30,Phu Quoc (PQC),Sun PhuQuoc Airways 9G 2952,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,14:55,14:55,Haiphong (HPH),VietJet Air VJC 731,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,15:00,15:07,Hanoi (HAN),Vietnam Airlines VN 1559 Codeshare: CI 8773,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,15:40,15:40,Hanoi (HAN),VietJet Air VJC 1781,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,17:05,17:21,Ho Chi Minh City (SGN),Vietnam Airlines VN 1346 Codeshare: CI 8786,Arrived 16 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,17:05,17:15,Hanoi (HAN),Vietnam Airlines VN 1561,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,17:20,17:08,Dong Hoi (VDH),Sun PhuQuoc Airways 9G 2205,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,17:35,17:35,Hanoi (HAN),VietJet Air VJC 771,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,17:40,17:47,Guangzhou (CAN),China Southern Airlines CZ 6049 Codeshare: 3U 7091 / VN 3511,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,17:45,17:52,Da Nang (DAD),VietJet Air VJC 581,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,18:20,18:10,Ho Chi Minh City (SGN),VASCO VN 8346 Codeshare: VN 8346,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,18:25,18:41,Singapore (SIN),Scoot TR 574 Codeshare: SQ 8380,Arrived 16 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,18:45,18:45,Da Nang (DAD),Vietnam Airlines VN 1941,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,19:55,19:55,Hanoi (HAN),Sun PhuQuoc Airways 9G 1159,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,20:20,20:20,Seoul (ICN),Air Busan BX 103 Codeshare: OZ 9587,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,20:20,20:20,Ho Chi Minh City (SGN),Pacific Airlines VN 6158 Codeshare: VN 6158,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,20:30,20:30,Hanoi (HAN),Vietnam Airlines VN 1563 Codeshare: CI 8785,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,20:55,20:55,Ho Chi Minh City (SGN),Vietnam Airlines VN 1350 Codeshare: CI 8780,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,21:25,21:26,Seoul (ICN),Korean Air KE 467 Codeshare: DL 7813 / VN 3405,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,21:40,21:40,Hanoi (HAN),VietJet Air VJC 1779,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,22:30,22:30,Cheongju (CJJ),Aero K R2F 557,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,22:40,22:40,Busan (PUS),Air Busan BX 755 Codeshare: OZ 9591,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,23:20,23:53,Seoul (ICN),Jin Air LJ 127 Codeshare: KE 5727,33 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,23:30,23:30,Seoul (ICN),Air Seoul RS* 115,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,23:35,23:35,Daegu (TAE),Trinity Airways TWB 37,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,23:50,23:50,Cheongju (CJJ),Trinity Airways TWB 45,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,23:55,23:55,Seoul (ICN),Trinity Airways TWB 33,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,00:10,00:10,Seoul (ICN),Parata Air FGW 205,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,00:40,00:40,Busan (PUS),Trinity Airways TWB 41,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,00:55,00:55,Seoul (ICN),Eastar Jet ZE 561,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 19:11:02,0,pw_guide_cxr_arrivals_20261101_191127.json,01:10,01:10,Seoul (ICN),Jeju Air 7C* 2303,On-Time,
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,13:15,13:14,,Aeroflot SU 841,Departed On-Time,Irkutsk (IKT)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,13:25,13:25,,VietJet Air VJC 774,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,14:00,13:52,,Sun PhuQuoc Airways 9G 2204,Departed On-Time,Dong Hoi (VDH)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,14:10,14:10,,Sun PhuQuoc Airways 9G 1144,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,14:10,14:05,,Vietnam Airlines VN 1347 Codeshare: CI 8777,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,14:20,14:16,,Thai VietJet Air TVJ 969,Departed On-Time,Bangkok (BKK)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,14:40,14:26,,Aeroflot SU 295,Departed On-Time,Moscow (SVO)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,15:45,15:45,,Vietnam Airlines VN 1562 Codeshare: AF 4138 / MU 8987 / NH 9734,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,16:20,17:39,,VietJet Air VJC 611,Departed 79 minutes late,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,17:25,17:22,,VietJet Air VJC 1774,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,17:40,17:53,,Vietnam Airlines VN 1560,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,18:00,17:53,,Sun PhuQuoc Airways 9G 1154,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,18:05,18:05,,VietJet Air VJC 770,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,18:15,18:15,,VietJet Air VJC 580,Departed On-Time,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,18:45,18:33,,China Southern Airlines CZ 6050 Codeshare: 3U 7092 / VN 3510,Departed On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,18:50,18:38,,VASCO VN 8347 Codeshare: VN 8347,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,19:20,19:20,,Vietnam Airlines VN 1940,On-Time,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,19:25,19:25,,Scoot TR 575 Codeshare: SQ 8381,On-Time,Singapore (SIN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,20:35,20:35,,Sun PhuQuoc Airways 9G 1158,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,20:55,20:55,,Pacific Airlines VN 6159 Codeshare: VN 6159,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,21:30,21:30,,Vietnam Airlines VN 1351,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,21:40,21:40,,Air Busan BX 104 Codeshare: OZ 9588,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,21:45,21:45,,Vietnam Airlines VN 440 Codeshare: KE 5680,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,22:45,22:45,,VietJet Air VJC 834,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,23:05,23:05,,Korean Air KE 468 Codeshare: DL 7814 / VN 3404,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,23:30,23:30,,Aero K R2F 558,On-Time,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,23:40,23:40,,Air Busan BX 756 Codeshare: OZ 9592,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,23:50,23:50,,Vietnam Airlines VN 434,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,00:05,00:05,,VietJet Air VJC 990,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,00:20,00:20,,Jin Air LJ 128 Codeshare: KE 5728,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,00:30,00:30,,Air Seoul RS* 116,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,00:35,00:35,,Trinity Airways TWB 38,On-Time,Daegu (TAE)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,00:55,00:55,,Trinity Airways TWB 34,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,01:05,01:05,,Trinity Airways TWB 46,On-Time,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,01:10,01:10,,Parata Air FGW 206,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,01:40,01:40,,Trinity Airways TWB 42,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,01:55,01:55,,Eastar Jet ZE 562,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 19:11:02,0,pw_guide_cxr_departures_20261101_191129.json,02:10,02:10,,Jeju Air 7C* 2304,On-Time,Seoul (ICN)
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,15:00,15:07,Hanoi (HAN),Vietnam Airlines VN 1559 Codeshare: CI 8773,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,15:40,15:40,Hanoi (HAN),VietJet Air VJC 1781,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,17:05,17:21,Ho Chi Minh City (SGN),Vietnam Airlines VN 1346 Codeshare: CI 8786,Arrived 16 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,17:05,17:15,Hanoi (HAN),Vietnam Airlines VN 1561,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,17:20,17:08,Dong Hoi (VDH),Sun PhuQuoc Airways 9G 2205,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,17:35,17:35,Hanoi (HAN),VietJet Air VJC 771,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,17:40,17:47,Guangzhou (CAN),China Southern Airlines CZ 6049 Codeshare: 3U 7091 / VN 3511,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,17:45,17:52,Da Nang (DAD),VietJet Air VJC 581,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,18:20,18:10,Ho Chi Minh City (SGN),VASCO VN 8346 Codeshare: VN 8346,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,18:25,18:41,Singapore (SIN),Scoot TR 574 Codeshare: SQ 8380,Arrived 16 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,18:45,19:07,Da Nang (DAD),Vietnam Airlines VN 1941,Arrived 22 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,19:55,19:55,Hanoi (HAN),Sun PhuQuoc Airways 9G 1159,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,20:20,20:20,Ho Chi Minh City (SGN),Pacific Airlines VN 6158 Codeshare: VN 6158,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,20:20,20:06,Seoul (ICN),Air Busan BX 103 Codeshare: OZ 9587,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,20:30,20:23,Hanoi (HAN),Vietnam Airlines VN 1563 Codeshare: CI 8785,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,20:55,20:55,Ho Chi Minh City (SGN),Vietnam Airlines VN 1350 Codeshare: CI 8780,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,21:25,21:26,Seoul (ICN),Korean Air KE 467 Codeshare: DL 7813 / VN 3405,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,21:40,21:40,Hanoi (HAN),VietJet Air VJC 1779,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,22:30,22:30,Cheongju (CJJ),Aero K R2F 557,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,22:40,22:40,Busan (PUS),Air Busan BX 755 Codeshare: OZ 9591,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,23:20,23:43,Seoul (ICN),Jin Air LJ 127 Codeshare: KE 5727,23 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,23:30,23:30,Seoul (ICN),Air Seoul RS* 115,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,23:35,23:35,Daegu (TAE),Trinity Airways TWB 37,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,23:50,23:50,Cheongju (CJJ),Trinity Airways TWB 45,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,23:55,23:55,Seoul (ICN),Trinity Airways TWB 33,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,00:10,00:10,Seoul (ICN),Parata Air FGW 205,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,00:40,00:40,Busan (PUS),Trinity Airways TWB 41,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,00:55,00:55,Seoul (ICN),Eastar Jet ZE 561,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 21:11:02,0,pw_guide_cxr_arrivals_20261101_211145.json,01:10,01:10,Seoul (ICN),Jeju Air 7C* 2303,On-Time,
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,15:45,15:45,,Vietnam Airlines VN 1562 Codeshare: AF 4138 / MU 8987 / NH 9734,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,16:20,17:39,,VietJet Air VJC 611,Departed 79 minutes late,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,17:25,17:22,,VietJet Air VJC 1774,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,17:40,17:53,,Vietnam Airlines VN 1560,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,18:00,17:53,,Sun PhuQuoc Airways 9G 1154,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,18:05,18:05,,VietJet Air VJC 770,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,18:15,18:15,,VietJet Air VJC 580,Departed On-Time,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,18:45,18:33,,China Southern Airlines CZ 6050 Codeshare: 3U 7092 / VN 3510,Departed On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,18:50,18:42,,VASCO VN 8347 Codeshare: VN 8347,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,19:20,19:41,,Vietnam Airlines VN 1940,Departed 21 minutes late,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,19:25,19:12,,Scoot TR 575 Codeshare: SQ 8381,Departed On-Time,Singapore (SIN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,20:35,20:35,,Sun PhuQuoc Airways 9G 1158,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,20:55,20:55,,Pacific Airlines VN 6159 Codeshare: VN 6159,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,21:30,21:30,,Vietnam Airlines VN 1351,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,21:40,21:40,,Air Busan BX 104 Codeshare: OZ 9588,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,21:45,21:45,,Vietnam Airlines VN 440 Codeshare: KE 5680,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,22:45,22:45,,VietJet Air VJC 834,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,23:05,23:05,,Korean Air KE 468 Codeshare: DL 7814 / VN 3404,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,23:30,23:30,,Aero K R2F 558,On-Time,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,23:40,23:40,,Air Busan BX 756 Codeshare: OZ 9592,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,23:50,23:50,,Vietnam Airlines VN 434,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,00:05,00:05,,VietJet Air VJC 990,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,00:20,00:35,,Jin Air LJ 128 Codeshare: KE 5728,Delayed 15 minutes,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,00:30,00:30,,Air Seoul RS* 116,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,00:35,00:35,,Trinity Airways TWB 38,On-Time,Daegu (TAE)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,00:55,00:55,,Trinity Airways TWB 34,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,01:05,01:05,,Trinity Airways TWB 46,On-Time,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,01:10,01:10,,Parata Air FGW 206,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,01:40,01:40,,Trinity Airways TWB 42,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,01:55,01:55,,Eastar Jet ZE 562,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,02:10,02:10,,Jeju Air 7C* 2304,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,06:00,06:00,,VietJet Air VJC 1611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 21:11:02,0,pw_guide_cxr_departures_20261101_211149.json,07:40,07:40,,VietJet Air VJC 611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,17:05,17:21,Ho Chi Minh City (SGN),Vietnam Airlines VN 1346 Codeshare: CI 8786,Arrived 16 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,17:05,17:15,Hanoi (HAN),Vietnam Airlines VN 1561,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,17:20,17:08,Dong Hoi (VDH),Sun PhuQuoc Airways 9G 2205,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,17:35,17:35,Hanoi (HAN),VietJet Air VJC 771,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,17:40,17:47,Guangzhou (CAN),China Southern Airlines CZ 6049 Codeshare: 3U 7091 / VN 3511,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,17:45,17:52,Da Nang (DAD),VietJet Air VJC 581,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,18:20,18:10,Ho Chi Minh City (SGN),VASCO VN 8346 Codeshare: VN 8346,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,18:25,18:41,Singapore (SIN),Scoot TR 574 Codeshare: SQ 8380,Arrived 16 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,18:45,19:07,Da Nang (DAD),Vietnam Airlines VN 1941,Arrived 22 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,19:55,19:55,Hanoi (HAN),Sun PhuQuoc Airways 9G 1159,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,20:20,20:20,Ho Chi Minh City (SGN),Pacific Airlines VN 6158 Codeshare: VN 6158,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,20:20,20:06,Seoul (ICN),Air Busan BX 103 Codeshare: OZ 9587,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,20:30,20:23,Hanoi (HAN),Vietnam Airlines VN 1563 Codeshare: CI 8785,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,20:55,21:02,Ho Chi Minh City (SGN),Vietnam Airlines VN 1350 Codeshare: CI 8780,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,21:25,21:08,Seoul (ICN),Korean Air KE 467 Codeshare: DL 7813 / VN 3405,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,21:40,21:48,Hanoi (HAN),VietJet Air VJC 1779,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,22:30,22:30,Cheongju (CJJ),Aero K R2F 557,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,22:40,22:43,Busan (PUS),Air Busan BX 755 Codeshare: OZ 9591,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,23:20,23:43,Seoul (ICN),Jin Air LJ 127 Codeshare: KE 5727,23 minutes late,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,23:30,23:30,Seoul (ICN),Air Seoul RS* 115,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,23:35,23:35,Daegu (TAE),Trinity Airways TWB 37,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,23:50,23:50,Cheongju (CJJ),Trinity Airways TWB 45,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,23:55,23:55,Seoul (ICN),Trinity Airways TWB 33,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,00:10,00:10,Seoul (ICN),Parata Air FGW 205,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,00:40,00:40,Busan (PUS),Trinity Airways TWB 41,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,00:55,00:55,Seoul (ICN),Eastar Jet ZE 561,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,01:10,01:10,Seoul (ICN),Jeju Air 7C* 2303,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,08:05,08:05,Ho Chi Minh City (SGN),Vietnam Airlines VN 1340 Codeshare: MU 8988,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,09:10,09:10,Hanoi (HAN),Sun PhuQuoc Airways 9G 1143,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,09:15,09:15,Hanoi (HAN),Vietravel Airlines V2U 1271,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,09:20,09:20,Seoul (ICN),Vietnam Airlines VN 441 Codeshare: KE 5679,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,09:40,09:40,Guangzhou (CAN),China Southern Airlines CZ 8475 Codeshare: 3U 7019 / VN 3513,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,09:55,09:55,Seoul (ICN),VietJet Air VJC 835,On-Time,
+guide_cxr,CXR,arrivals,2026-11-01 23:11:02,0,pw_guide_cxr_arrivals_20261101_231132.json,09:55,09:55,Bangkok (DMK),Thai AirAsia FD 646,On-Time,
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,16:20,17:39,,VietJet Air VJC 611,Departed 79 minutes late,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,17:25,17:22,,VietJet Air VJC 1774,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,17:40,17:53,,Vietnam Airlines VN 1560,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,18:00,17:53,,Sun PhuQuoc Airways 9G 1154,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,18:05,18:05,,VietJet Air VJC 770,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,18:15,18:15,,VietJet Air VJC 580,Departed On-Time,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,18:45,18:33,,China Southern Airlines CZ 6050 Codeshare: 3U 7092 / VN 3510,Departed On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,18:50,18:42,,VASCO VN 8347 Codeshare: VN 8347,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,19:20,19:41,,Vietnam Airlines VN 1940,Departed 21 minutes late,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,19:25,19:12,,Scoot TR 575 Codeshare: SQ 8381,Departed On-Time,Singapore (SIN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,20:35,20:35,,Sun PhuQuoc Airways 9G 1158,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,20:55,20:55,,Pacific Airlines VN 6159 Codeshare: VN 6159,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,21:30,21:37,,Vietnam Airlines VN 1351,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,21:40,22:01,,Air Busan BX 104 Codeshare: OZ 9588,Departed 21 minutes late,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,21:45,21:32,,Vietnam Airlines VN 440 Codeshare: KE 5680,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,22:45,22:36,,VietJet Air VJC 834,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,23:05,23:05,,Korean Air KE 468 Codeshare: DL 7814 / VN 3404,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,23:30,23:30,,Aero K R2F 558,On-Time,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,23:40,23:40,,Air Busan BX 756 Codeshare: OZ 9592,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,23:50,23:50,,Vietnam Airlines VN 434,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,00:05,00:05,,VietJet Air VJC 990,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,00:20,00:35,,Jin Air LJ 128 Codeshare: KE 5728,Delayed 15 minutes,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,00:30,00:30,,Air Seoul RS* 116,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,00:35,00:35,,Trinity Airways TWB 38,On-Time,Daegu (TAE)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,00:55,00:55,,Trinity Airways TWB 34,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,01:05,01:05,,Trinity Airways TWB 46,On-Time,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,01:10,01:10,,Parata Air FGW 206,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,01:40,01:40,,Trinity Airways TWB 42,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,01:55,01:55,,Eastar Jet ZE 562,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,02:10,02:10,,Jeju Air 7C* 2304,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,06:00,06:00,,VietJet Air VJC 1611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,07:40,07:40,,VietJet Air VJC 611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,08:40,08:40,,Vietnam Airlines VN 1341 Codeshare: CI 8781,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,09:50,09:50,,Sun PhuQuoc Airways 9G 2953,On-Time,Phu Quoc (PQC)
+guide_cxr,CXR,departures,2026-11-01 23:11:02,0,pw_guide_cxr_departures_20261101_231136.json,09:55,09:55,,Vietravel Airlines V2U 1270,On-Time,Hanoi (HAN)
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,18:45,19:07,Da Nang (DAD),Vietnam Airlines VN 1941,Arrived 22 minutes late,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,19:55,19:55,Hanoi (HAN),Sun PhuQuoc Airways 9G 1159,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,20:20,20:20,Ho Chi Minh City (SGN),Pacific Airlines VN 6158 Codeshare: VN 6158,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,20:20,20:06,Seoul (ICN),Air Busan BX 103 Codeshare: OZ 9587,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,20:30,20:23,Hanoi (HAN),Vietnam Airlines VN 1563 Codeshare: CI 8785,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,20:55,21:02,Ho Chi Minh City (SGN),Vietnam Airlines VN 1350 Codeshare: CI 8780,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,21:25,21:08,Seoul (ICN),Korean Air KE 467 Codeshare: DL 7813 / VN 3405,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,21:40,21:48,Hanoi (HAN),VietJet Air VJC 1779,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,22:30,23:20,Cheongju (CJJ),Aero K R2F 557,Arrived 50 minutes late,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,22:40,22:43,Busan (PUS),Air Busan BX 755 Codeshare: OZ 9591,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,23:20,23:39,Seoul (ICN),Jin Air LJ 127 Codeshare: KE 5727,Arrived 19 minutes late,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,23:30,23:51,Seoul (ICN),Air Seoul RS* 115,Arrived 21 minutes late,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,23:35,23:32,Daegu (TAE),Trinity Airways TWB 37,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,23:50,00:01,Cheongju (CJJ),Trinity Airways TWB 45,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,23:55,00:07,Seoul (ICN),Trinity Airways TWB 33,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,00:10,00:10,Seoul (ICN),Parata Air FGW 205,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,00:40,00:18,Busan (PUS),Trinity Airways TWB 41,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,00:55,00:33,Seoul (ICN),Eastar Jet ZE 561,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,01:10,01:10,Seoul (ICN),Jeju Air 7C* 2303,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,08:05,08:05,Ho Chi Minh City (SGN),Vietnam Airlines VN 1340 Codeshare: MU 8988,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,09:10,09:10,Hanoi (HAN),Sun PhuQuoc Airways 9G 1143,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,09:15,09:15,Hanoi (HAN),Vietravel Airlines V2U 1271,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,09:20,09:20,Seoul (ICN),Vietnam Airlines VN 441 Codeshare: KE 5679,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,09:40,09:40,Guangzhou (CAN),China Southern Airlines CZ 8475 Codeshare: 3U 7019 / VN 3513,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,09:55,09:55,Seoul (ICN),VietJet Air VJC 835,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,09:55,09:55,Bangkok (DMK),Thai AirAsia FD 646,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,10:35,10:35,Busan (PUS),VietJet Air VJC 991,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,10:50,10:50,Ho Chi Minh City (SGN),Pacific Airlines VN 6154 Codeshare: VN 6154,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,11:05,11:05,Busan (PUS),Vietnam Airlines VN 435,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,11:30,11:30,Singapore (SIN),Scoot TR 526 Codeshare: SQ 8380,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,11:30,11:30,Kuala Lumpur (KUL),AirAsia AK 204,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 01:11:02,0,pw_guide_cxr_arrivals_20261102_011121.json,11:55,11:55,Hanoi (HAN),Vietnam Airlines VN 1553 Codeshare: AF 9201 / MU 8986 / NH 9737,On-Time,
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,18:05,18:05,,VietJet Air VJC 770,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,19:20,19:41,,Vietnam Airlines VN 1940,Departed 21 minutes late,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,19:25,19:12,,Scoot TR 575 Codeshare: SQ 8381,Departed On-Time,Singapore (SIN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,20:35,20:35,,Sun PhuQuoc Airways 9G 1158,Departed On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,20:55,20:55,,Pacific Airlines VN 6159 Codeshare: VN 6159,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,21:30,21:37,,Vietnam Airlines VN 1351,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,21:40,22:01,,Air Busan BX 104 Codeshare: OZ 9588,Departed 21 minutes late,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,21:45,21:32,,Vietnam Airlines VN 440 Codeshare: KE 5680,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,22:45,22:36,,VietJet Air VJC 834,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,23:05,22:53,,Korean Air KE 468 Codeshare: DL 7814 / VN 3404,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,23:30,00:08,,Aero K R2F 558,Departed 38 minutes late,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,23:40,23:40,,Air Busan BX 756 Codeshare: OZ 9592,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,23:50,23:44,,Vietnam Airlines VN 434,Departed On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,00:05,00:05,,VietJet Air VJC 990,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,00:20,00:32,,Jin Air LJ 128 Codeshare: KE 5728,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,00:30,00:30,,Air Seoul RS* 116,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,00:35,00:35,,Trinity Airways TWB 38,On-Time,Daegu (TAE)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,00:55,00:55,,Trinity Airways TWB 34,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,01:05,01:05,,Trinity Airways TWB 46,On-Time,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,01:10,01:10,,Parata Air FGW 206,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,01:40,01:40,,Trinity Airways TWB 42,On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,01:55,01:55,,Eastar Jet ZE 562,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,02:10,02:10,,Jeju Air 7C* 2304,On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,06:00,06:00,,VietJet Air VJC 1611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,07:40,07:40,,VietJet Air VJC 611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,08:40,08:40,,Vietnam Airlines VN 1341 Codeshare: CI 8781,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,09:50,09:50,,Sun PhuQuoc Airways 9G 2953,On-Time,Phu Quoc (PQC)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,09:55,09:55,,Vietravel Airlines V2U 1270,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,10:25,10:25,,Thai AirAsia FD 647,On-Time,Bangkok (DMK)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,10:40,10:40,,China Southern Airlines CZ 8476 Codeshare: 3U 7020,On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,10:55,10:55,,VietJet Air VJC 730,On-Time,Haiphong (HPH)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,11:20,11:20,,VietJet Air VJC 1782,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 01:11:02,0,pw_guide_cxr_departures_20261102_011123.json,11:25,11:25,,Pacific Airlines VN 6155 Codeshare: VN 6155,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,20:55,21:02,Ho Chi Minh City (SGN),Vietnam Airlines VN 1350 Codeshare: CI 8780,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,21:25,21:08,Seoul (ICN),Korean Air KE 467 Codeshare: DL 7813 / VN 3405,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,21:40,21:48,Hanoi (HAN),VietJet Air VJC 1779,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,22:30,23:20,Cheongju (CJJ),Aero K R2F 557,Arrived 50 minutes late,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,22:40,22:43,Busan (PUS),Air Busan BX 755 Codeshare: OZ 9591,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,23:20,23:39,Seoul (ICN),Jin Air LJ 127 Codeshare: KE 5727,Arrived 19 minutes late,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,23:30,23:51,Seoul (ICN),Air Seoul RS* 115,Arrived 21 minutes late,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,23:35,23:32,Daegu (TAE),Trinity Airways TWB 37,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,23:50,00:01,Cheongju (CJJ),Trinity Airways TWB 45,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,23:55,00:07,Seoul (ICN),Trinity Airways TWB 33,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,00:10,01:15,Seoul (ICN),Parata Air FGW 205,Arrived 65 minutes late,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,00:40,00:18,Busan (PUS),Trinity Airways TWB 41,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,00:55,00:33,Seoul (ICN),Eastar Jet ZE 561,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,01:10,01:10,Seoul (ICN),Jeju Air 7C* 2303,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,08:05,08:05,Ho Chi Minh City (SGN),Vietnam Airlines VN 1340 Codeshare: MU 8988,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,09:10,09:10,Hanoi (HAN),Sun PhuQuoc Airways 9G 1143,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,09:15,09:15,Hanoi (HAN),Vietravel Airlines V2U 1271,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,09:20,09:20,Seoul (ICN),Vietnam Airlines VN 441 Codeshare: KE 5679,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,09:40,09:40,Guangzhou (CAN),China Southern Airlines CZ 8475 Codeshare: 3U 7019 / VN 3513,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,09:55,09:55,Bangkok (DMK),Thai AirAsia FD 646,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,09:55,09:55,Seoul (ICN),VietJet Air VJC 835,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,10:35,10:35,Busan (PUS),VietJet Air VJC 991,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,10:50,10:50,Ho Chi Minh City (SGN),Pacific Airlines VN 6154 Codeshare: VN 6154,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,11:05,11:05,Busan (PUS),Vietnam Airlines VN 435,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,11:30,11:30,Kuala Lumpur (KUL),AirAsia AK 204,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,11:30,11:30,Singapore (SIN),Scoot TR 526 Codeshare: SQ 8380,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,11:55,11:55,Hanoi (HAN),Vietnam Airlines VN 1553 Codeshare: AF 9201 / MU 8986 / NH 9737,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,12:20,12:20,Hanoi (HAN),VietJet Air VJC 785,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,12:25,12:25,Moscow (SVO),Aeroflot SU 294,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,12:45,12:45,Irkutsk (IKT),Aeroflot SU 840,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,12:55,12:55,Ho Chi Minh City (SGN),VASCO VN 8346 Codeshare: VN 8346,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,13:05,13:05,Hanoi (HAN),Sun PhuQuoc Airways 9G 1149,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 03:11:02,0,pw_guide_cxr_arrivals_20261102_031120.json,13:30,13:30,Phu Quoc (PQC),Sun PhuQuoc Airways 9G 2952,On-Time,
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,21:30,21:37,,Vietnam Airlines VN 1351,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,21:40,22:01,,Air Busan BX 104 Codeshare: OZ 9588,Departed 21 minutes late,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,21:45,21:32,,Vietnam Airlines VN 440 Codeshare: KE 5680,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,22:45,22:36,,VietJet Air VJC 834,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,23:05,22:53,,Korean Air KE 468 Codeshare: DL 7814 / VN 3404,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,23:30,00:08,,Aero K R2F 558,Departed 38 minutes late,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,23:40,00:42,,Air Busan BX 756 Codeshare: OZ 9592,Departed 62 minutes late,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,23:50,23:44,,Vietnam Airlines VN 434,Departed On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,00:05,01:32,,VietJet Air VJC 990,Departed 87 minutes late,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,00:20,00:32,,Jin Air LJ 128 Codeshare: KE 5728,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,00:30,01:15,,Air Seoul RS* 116,Departed 45 minutes late,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,00:35,01:01,,Trinity Airways TWB 38,Departed 26 minutes late,Daegu (TAE)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,00:55,01:44,,Trinity Airways TWB 34,Departed 49 minutes late,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,01:05,01:30,,Trinity Airways TWB 46,Departed 25 minutes late,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,01:10,02:25,,Parata Air FGW 206,Departed 75 minutes late,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,01:40,02:15,,Trinity Airways TWB 42,Departed 35 minutes late,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,01:55,01:53,,Eastar Jet ZE 562,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,02:10,02:31,,Jeju Air 7C* 2304,Departed 21 minutes late,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,06:00,06:00,,VietJet Air VJC 1611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,07:40,07:40,,VietJet Air VJC 611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,08:40,08:40,,Vietnam Airlines VN 1341 Codeshare: CI 8781,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,09:50,09:50,,Sun PhuQuoc Airways 9G 2953,On-Time,Phu Quoc (PQC)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,09:55,09:55,,Vietravel Airlines V2U 1270,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,10:25,10:25,,Thai AirAsia FD 647,On-Time,Bangkok (DMK)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,10:40,10:40,,China Southern Airlines CZ 8476 Codeshare: 3U 7020,On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,10:55,10:55,,VietJet Air VJC 730,On-Time,Haiphong (HPH)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,11:20,11:20,,VietJet Air VJC 1782,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,11:25,11:25,,Pacific Airlines VN 6155 Codeshare: VN 6155,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,12:00,12:00,,AirAsia AK 205,On-Time,Kuala Lumpur (KUL)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,12:05,12:05,,Scoot TR 527 Codeshare: SQ 8381,On-Time,Singapore (SIN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,12:30,12:30,,Vietnam Airlines VN 1552 Codeshare: CI 8762,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,12:55,12:55,,VietJet Air VJC 786,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,13:25,13:25,,VASCO VN 8347 Codeshare: VN 8347,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,13:45,13:45,,Aeroflot SU 841,On-Time,Irkutsk (IKT)
+guide_cxr,CXR,departures,2026-11-02 03:11:02,0,pw_guide_cxr_departures_20261102_031123.json,13:50,13:50,,Sun PhuQuoc Airways 9G 2957,On-Time,Phu Quoc (PQC)
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,22:30,23:20,Cheongju (CJJ),Aero K R2F 557,Arrived 50 minutes late,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,23:20,23:39,Seoul (ICN),Jin Air LJ 127 Codeshare: KE 5727,Arrived 19 minutes late,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,23:30,23:51,Seoul (ICN),Air Seoul RS* 115,Arrived 21 minutes late,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,23:35,23:32,Daegu (TAE),Trinity Airways TWB 37,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,23:50,00:01,Cheongju (CJJ),Trinity Airways TWB 45,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,23:55,00:07,Seoul (ICN),Trinity Airways TWB 33,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,00:10,01:15,Seoul (ICN),Parata Air FGW 205,Arrived 65 minutes late,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,00:40,00:18,Busan (PUS),Trinity Airways TWB 41,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,00:55,00:33,Seoul (ICN),Eastar Jet ZE 561,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,01:10,01:10,Seoul (ICN),Jeju Air 7C* 2303,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,08:05,08:05,Ho Chi Minh City (SGN),Vietnam Airlines VN 1340 Codeshare: MU 8988,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,09:10,09:10,Hanoi (HAN),Sun PhuQuoc Airways 9G 1143,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,09:15,09:15,Hanoi (HAN),Vietravel Airlines V2U 1271,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,09:20,09:20,Seoul (ICN),Vietnam Airlines VN 441 Codeshare: KE 5679,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,09:40,09:40,Guangzhou (CAN),China Southern Airlines CZ 8475 Codeshare: 3U 7019 / VN 3513,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,09:55,09:51,Bangkok (DMK),Thai AirAsia FD 646,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,09:55,09:55,Seoul (ICN),VietJet Air VJC 835,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,10:35,10:35,Busan (PUS),VietJet Air VJC 991,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,10:50,10:50,Ho Chi Minh City (SGN),Pacific Airlines VN 6154 Codeshare: VN 6154,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,11:05,11:05,Busan (PUS),Vietnam Airlines VN 435,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,11:30,11:28,Kuala Lumpur (KUL),AirAsia AK 204,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,11:30,11:30,Singapore (SIN),Scoot TR 526 Codeshare: SQ 8380,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,11:55,11:55,Hanoi (HAN),Vietnam Airlines VN 1553 Codeshare: AF 9201 / MU 8986 / NH 9737,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,12:20,12:20,Hanoi (HAN),VietJet Air VJC 785,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,12:25,12:25,Moscow (SVO),Aeroflot SU 294,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,12:45,12:45,Irkutsk (IKT),Aeroflot SU 840,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,12:55,12:55,Ho Chi Minh City (SGN),VASCO VN 8346 Codeshare: VN 8346,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,13:05,13:05,Hanoi (HAN),Sun PhuQuoc Airways 9G 1149,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,13:30,13:30,Phu Quoc (PQC),Sun PhuQuoc Airways 9G 2952,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,14:10,14:10,Moscow (SVO),Aeroflot SU 298,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,14:55,14:55,Haiphong (HPH),VietJet Air VJC 731,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 05:11:02,0,pw_guide_cxr_arrivals_20261102_051121.json,15:30,15:30,Hanoi (HAN),VietJet Air VJC 1781,On-Time,
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,23:05,22:53,,Korean Air KE 468 Codeshare: DL 7814 / VN 3404,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,23:30,00:08,,Aero K R2F 558,Departed 38 minutes late,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,23:40,00:42,,Air Busan BX 756 Codeshare: OZ 9592,Departed 62 minutes late,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,23:50,23:44,,Vietnam Airlines VN 434,Departed On-Time,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,00:05,01:32,,VietJet Air VJC 990,Departed 87 minutes late,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,00:20,00:32,,Jin Air LJ 128 Codeshare: KE 5728,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,00:30,01:15,,Air Seoul RS* 116,Departed 45 minutes late,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,00:35,01:01,,Trinity Airways TWB 38,Departed 26 minutes late,Daegu (TAE)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,00:55,01:44,,Trinity Airways TWB 34,Departed 49 minutes late,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,01:05,01:30,,Trinity Airways TWB 46,Departed 25 minutes late,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,01:10,02:25,,Parata Air FGW 206,Departed 75 minutes late,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,01:40,02:15,,Trinity Airways TWB 42,Departed 35 minutes late,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,01:55,01:53,,Eastar Jet ZE 562,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,02:10,02:31,,Jeju Air 7C* 2304,Departed 21 minutes late,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,06:00,06:00,,VietJet Air VJC 1611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,07:40,07:40,,VietJet Air VJC 611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,08:40,08:40,,Vietnam Airlines VN 1341 Codeshare: CI 8781,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,09:50,09:50,,Sun PhuQuoc Airways 9G 2953,On-Time,Phu Quoc (PQC)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,09:55,09:55,,Vietravel Airlines V2U 1270,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,10:25,10:25,,Thai AirAsia FD 647,On-Time,Bangkok (DMK)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,10:40,10:40,,China Southern Airlines CZ 8476 Codeshare: 3U 7020,On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,10:55,10:55,,VietJet Air VJC 730,On-Time,Haiphong (HPH)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,11:20,11:20,,VietJet Air VJC 1782,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,11:25,11:25,,Pacific Airlines VN 6155 Codeshare: VN 6155,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,12:00,12:00,,AirAsia AK 205,On-Time,Kuala Lumpur (KUL)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,12:05,12:05,,Scoot TR 527 Codeshare: SQ 8381,On-Time,Singapore (SIN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,12:30,12:30,,Vietnam Airlines VN 1552 Codeshare: CI 8762,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,12:55,12:55,,VietJet Air VJC 786,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,13:25,13:25,,VASCO VN 8347 Codeshare: VN 8347,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,13:45,13:45,,Aeroflot SU 841,On-Time,Irkutsk (IKT)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,13:50,13:50,,Sun PhuQuoc Airways 9G 2957,On-Time,Phu Quoc (PQC)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,14:10,14:10,,Vietnam Airlines VN 1347 Codeshare: CI 8777,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,14:10,14:10,,Sun PhuQuoc Airways 9G 1144,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,14:50,14:50,,Aeroflot SU 295,On-Time,Moscow (SVO)
+guide_cxr,CXR,departures,2026-11-02 05:11:02,0,pw_guide_cxr_departures_20261102_051124.json,15:45,15:45,,Vietnam Airlines VN 1562 Codeshare: AF 4138 / MU 8987 / NH 9734,On-Time,Hanoi (HAN)
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,00:10,01:15,Seoul (ICN),Parata Air FGW 205,Arrived 65 minutes late,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,01:10,01:10,Seoul (ICN),Jeju Air 7C* 2303,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,08:05,08:05,Ho Chi Minh City (SGN),Vietnam Airlines VN 1340 Codeshare: MU 8988,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,09:10,09:10,Hanoi (HAN),Sun PhuQuoc Airways 9G 1143,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,09:15,09:15,Hanoi (HAN),Vietravel Airlines V2U 1271,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,09:20,09:20,Seoul (ICN),Vietnam Airlines VN 441 Codeshare: KE 5679,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,09:40,09:14,Guangzhou (CAN),China Southern Airlines CZ 8475 Codeshare: 3U 7019 / VN 3513,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,09:55,09:51,Bangkok (DMK),Thai AirAsia FD 646,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,09:55,09:55,Seoul (ICN),VietJet Air VJC 835,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,10:35,10:35,Busan (PUS),VietJet Air VJC 991,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,10:50,10:50,Ho Chi Minh City (SGN),Pacific Airlines VN 6154 Codeshare: VN 6154,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,11:05,11:05,Busan (PUS),Vietnam Airlines VN 435,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,11:30,11:28,Kuala Lumpur (KUL),AirAsia AK 204,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,11:30,11:30,Singapore (SIN),Scoot TR 526 Codeshare: SQ 8380,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,11:55,11:55,Hanoi (HAN),Vietnam Airlines VN 1553 Codeshare: AF 9201 / MU 8986 / NH 9737,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,12:20,12:20,Hanoi (HAN),VietJet Air VJC 785,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,12:25,12:25,Moscow (SVO),Aeroflot SU 294,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,12:45,12:45,Irkutsk (IKT),Aeroflot SU 840,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,12:55,12:55,Ho Chi Minh City (SGN),VASCO VN 8346 Codeshare: VN 8346,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,13:05,13:05,Hanoi (HAN),Sun PhuQuoc Airways 9G 1149,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,13:30,13:30,Phu Quoc (PQC),Sun PhuQuoc Airways 9G 2952,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,14:10,14:10,Moscow (SVO),Aeroflot SU 298,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,14:55,14:55,Haiphong (HPH),VietJet Air VJC 731,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,15:30,15:30,Hanoi (HAN),VietJet Air VJC 1781,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,16:15,16:15,Ho Chi Minh City (SGN),VietJet Air VJC 600,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,17:05,17:05,Ho Chi Minh City (SGN),Vietnam Airlines VN 1346 Codeshare: CI 8786,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,17:15,17:15,Phu Quoc (PQC),Sun PhuQuoc Airways 9G 2956,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,17:35,17:35,Hanoi (HAN),VietJet Air VJC 771,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,17:40,17:40,Guangzhou (CAN),China Southern Airlines CZ 6049 Codeshare: 3U 7091 / VN 3511,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 07:11:11,0,pw_guide_cxr_arrivals_20261102_071142.json,17:45,17:45,Da Nang (DAD),VietJet Air VJC 581,On-Time,
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,00:05,01:32,,VietJet Air VJC 990,Departed 87 minutes late,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,00:30,01:15,,Air Seoul RS* 116,Departed 45 minutes late,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,00:35,01:01,,Trinity Airways TWB 38,Departed 26 minutes late,Daegu (TAE)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,00:55,01:44,,Trinity Airways TWB 34,Departed 49 minutes late,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,01:05,01:30,,Trinity Airways TWB 46,Departed 25 minutes late,Cheongju (CJJ)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,01:10,02:25,,Parata Air FGW 206,Departed 75 minutes late,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,01:40,02:15,,Trinity Airways TWB 42,Departed 35 minutes late,Busan (PUS)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,01:55,01:53,,Eastar Jet ZE 562,Departed On-Time,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,02:10,02:31,,Jeju Air 7C* 2304,Departed 21 minutes late,Seoul (ICN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,06:00,05:54,,VietJet Air VJC 1611,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,07:40,07:40,,VietJet Air VJC 611,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,08:40,08:40,,Vietnam Airlines VN 1341 Codeshare: CI 8781,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,09:50,09:50,,Sun PhuQuoc Airways 9G 2953,On-Time,Phu Quoc (PQC)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,09:55,09:55,,Vietravel Airlines V2U 1270,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,10:25,10:25,,Thai AirAsia FD 647,On-Time,Bangkok (DMK)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,10:40,10:40,,China Southern Airlines CZ 8476 Codeshare: 3U 7020,On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,10:55,10:55,,VietJet Air VJC 730,On-Time,Haiphong (HPH)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,11:20,11:20,,VietJet Air VJC 1782,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,11:25,11:25,,Pacific Airlines VN 6155 Codeshare: VN 6155,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,12:00,12:00,,AirAsia AK 205,On-Time,Kuala Lumpur (KUL)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,12:05,12:05,,Scoot TR 527 Codeshare: SQ 8381,On-Time,Singapore (SIN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,12:30,12:30,,Vietnam Airlines VN 1552 Codeshare: CI 8762,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,12:55,12:55,,VietJet Air VJC 786,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,13:25,13:25,,VASCO VN 8347 Codeshare: VN 8347,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,13:45,13:45,,Aeroflot SU 841,On-Time,Irkutsk (IKT)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,13:50,13:50,,Sun PhuQuoc Airways 9G 2957,On-Time,Phu Quoc (PQC)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,14:10,14:10,,Vietnam Airlines VN 1347 Codeshare: CI 8777,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,14:10,14:10,,Sun PhuQuoc Airways 9G 1144,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,14:50,14:50,,Aeroflot SU 295,On-Time,Moscow (SVO)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,15:45,15:45,,Vietnam Airlines VN 1562 Codeshare: AF 4138 / MU 8987 / NH 9734,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,16:10,16:10,,Aeroflot SU 299,On-Time,Moscow (SVO)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,16:45,16:45,,VietJet Air VJC 601,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 07:11:11,0,pw_guide_cxr_departures_20261102_071144.json,17:25,17:25,,VietJet Air VJC 1774,On-Time,Hanoi (HAN)
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,08:05,07:52,Ho Chi Minh City (SGN),Vietnam Airlines VN 1340 Codeshare: MU 8988,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,09:10,09:10,Hanoi (HAN),Sun PhuQuoc Airways 9G 1143,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,09:15,09:15,Hanoi (HAN),Vietravel Airlines V2U 1271,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,09:20,09:20,Seoul (ICN),Vietnam Airlines VN 441 Codeshare: KE 5679,Arrived On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,09:40,10:00,Guangzhou (CAN),China Southern Airlines CZ 8475 Codeshare: 3U 7019 / VN 3513,20 minutes late,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,09:55,09:52,Bangkok (DMK),Thai AirAsia FD 646,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,09:55,09:55,Seoul (ICN),VietJet Air VJC 835,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,10:35,10:35,Busan (PUS),VietJet Air VJC 991,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,10:50,10:50,Ho Chi Minh City (SGN),Pacific Airlines VN 6154 Codeshare: VN 6154,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,11:05,11:37,Busan (PUS),Vietnam Airlines VN 435,32 minutes late,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,11:30,11:28,Kuala Lumpur (KUL),AirAsia AK 204,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,11:30,11:30,Singapore (SIN),Scoot TR 526 Codeshare: SQ 8380,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,11:55,11:55,Hanoi (HAN),Vietnam Airlines VN 1553 Codeshare: AF 9201 / MU 8986 / NH 9737,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,12:20,12:20,Hanoi (HAN),VietJet Air VJC 785,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,12:25,12:25,Moscow (SVO),Aeroflot SU 294,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,12:45,12:45,Irkutsk (IKT),Aeroflot SU 840,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,12:55,12:55,Ho Chi Minh City (SGN),VASCO VN 8346 Codeshare: VN 8346,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,13:05,13:05,Hanoi (HAN),Sun PhuQuoc Airways 9G 1149,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,13:30,13:30,Phu Quoc (PQC),Sun PhuQuoc Airways 9G 2952,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,14:10,14:10,Moscow (SVO),Aeroflot SU 298,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,14:55,14:55,Haiphong (HPH),VietJet Air VJC 731,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,15:30,15:30,Hanoi (HAN),VietJet Air VJC 1781,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,16:15,16:15,Ho Chi Minh City (SGN),VietJet Air VJC 600,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,17:05,17:05,Ho Chi Minh City (SGN),Vietnam Airlines VN 1346 Codeshare: CI 8786,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,17:15,17:15,Phu Quoc (PQC),Sun PhuQuoc Airways 9G 2956,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,17:35,17:35,Hanoi (HAN),VietJet Air VJC 771,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,17:40,17:40,Guangzhou (CAN),China Southern Airlines CZ 6049 Codeshare: 3U 7091 / VN 3511,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,17:45,17:45,Da Nang (DAD),VietJet Air VJC 581,On-Time,
+guide_cxr,CXR,arrivals,2026-11-02 09:11:03,0,pw_guide_cxr_arrivals_20261102_091123.json,18:45,18:45,Da Nang (DAD),Vietnam Airlines VN 1941,On-Time,
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,06:00,05:54,,VietJet Air VJC 1611,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,07:40,07:40,,VietJet Air VJC 611,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,08:40,08:40,,Vietnam Airlines VN 1341 Codeshare: CI 8781,Departed On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,09:50,09:50,,Sun PhuQuoc Airways 9G 2953,On-Time,Phu Quoc (PQC)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,09:55,09:55,,Vietravel Airlines V2U 1270,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,10:25,10:25,,Thai AirAsia FD 647,On-Time,Bangkok (DMK)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,10:40,10:40,,China Southern Airlines CZ 8476 Codeshare: 3U 7020,On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,10:55,10:55,,VietJet Air VJC 730,On-Time,Haiphong (HPH)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,11:20,11:20,,VietJet Air VJC 1782,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,11:25,11:25,,Pacific Airlines VN 6155 Codeshare: VN 6155,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,12:00,12:00,,AirAsia AK 205,On-Time,Kuala Lumpur (KUL)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,12:05,12:05,,Scoot TR 527 Codeshare: SQ 8381,On-Time,Singapore (SIN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,12:30,12:30,,Vietnam Airlines VN 1552 Codeshare: CI 8762,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,12:55,12:55,,VietJet Air VJC 786,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,13:25,13:25,,VASCO VN 8347 Codeshare: VN 8347,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,13:45,13:45,,Aeroflot SU 841,On-Time,Irkutsk (IKT)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,13:50,13:50,,Sun PhuQuoc Airways 9G 2957,On-Time,Phu Quoc (PQC)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,14:10,14:10,,Vietnam Airlines VN 1347 Codeshare: CI 8777,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,14:10,14:10,,Sun PhuQuoc Airways 9G 1144,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,14:50,14:50,,Aeroflot SU 295,On-Time,Moscow (SVO)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,15:45,15:45,,Vietnam Airlines VN 1562 Codeshare: AF 4138 / MU 8987 / NH 9734,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,16:10,16:10,,Aeroflot SU 299,On-Time,Moscow (SVO)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,16:45,16:45,,VietJet Air VJC 601,On-Time,Ho Chi Minh City (SGN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,17:25,17:25,,VietJet Air VJC 1774,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,18:00,18:00,,Sun PhuQuoc Airways 9G 1154,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,18:05,18:05,,VietJet Air VJC 770,On-Time,Hanoi (HAN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,18:15,18:15,,VietJet Air VJC 580,On-Time,Da Nang (DAD)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,18:45,18:45,,China Southern Airlines CZ 6050 Codeshare: 3U 7092 / VN 3510,On-Time,Guangzhou (CAN)
+guide_cxr,CXR,departures,2026-11-02 09:11:03,0,pw_guide_cxr_departures_20261102_091126.json,19:20,19:20,,Vietnam Airlines VN 1940,On-Time,Da Nang (DAD)
