@@ -1,0 +1,12 @@
+# Môi trường và cache
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Bí mật và log
+.env
+logs/
+
+# Dữ liệu nặng (giữ lại vài mẫu bằng git add -f nếu cần)
+data/debug_data/playwright/html/
