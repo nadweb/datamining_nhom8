@@ -10,3 +10,11 @@ logs/
 
 # Dữ liệu nặng (giữ lại vài mẫu bằng git add -f nếu cần)
 data/debug_data/playwright/html/
+
+data/
+logs/
+venv/
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/

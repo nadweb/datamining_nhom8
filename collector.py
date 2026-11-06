@@ -506,13 +506,37 @@ def collect_raw_rows():
 
 
 def rebuild_raw_csv():
-    """Dựng lại data/raw/<nguồn>_<YYYYMM>.csv HOÀN TOÀN từ JSON gốc: mỗi nguồn giữ cột riêng của nó.
-    Lần đầu: CSV cũ được sao lưu sang data/raw_legacy/ rồi mới ghi đè."""
+    """Dựng lại data/raw/<nguồn>_<YYYYMM>.csv từ JSON gốc: mỗi nguồn giữ cột riêng.
+    - Dòng của JSON hiện có luôn được dựng lại từ JSON (không append, không sửa tay).
+    - Dòng trong CSV hiện có mà JSON nguồn (cột source_file) không còn trong debug_data được GIỮ LẠI,
+      nên clone repo không kèm JSON (hoặc chỉ có vài JSON mẫu) vẫn không làm mất dữ liệu.
+    - Lần đầu: CSV cũ được sao lưu sang data/raw_legacy/ trước khi ghi đè."""
     groups, bad = collect_raw_rows()
     if bad:
         log.warning("Bỏ qua %d file JSON lỗi", bad)
+    if not groups:
+        log.warning("Không có JSON gốc trong debug_data -> giữ nguyên data/raw hiện có, không dựng lại")
+        return 0
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     old = list(RAW_DIR.glob("*.csv"))
+
+    # Giữ lại các dòng CSV mà JSON nguồn không còn (để không mất dữ liệu khi thiếu JSON)
+    current_files = {r["source_file"] for rows in groups.values() for r in rows}
+    kept = 0
+    for f in old:
+        try:
+            d = pd.read_csv(f, dtype=str, keep_default_na=False)
+        except Exception:
+            continue
+        if "source_file" not in d.columns:
+            continue
+        d = d[~d["source_file"].isin(current_files)]
+        if len(d):
+            groups.setdefault(f.stem.rsplit("_", 1)[0], []).extend(d.to_dict("records"))
+            kept += len(d)
+    if kept:
+        log.info("Giữ lại %d dòng CSV thô có JSON nguồn không còn trong debug_data", kept)
+
     if old and not BUILT_MARK.exists():
         LEGACY_DIR.mkdir(parents=True, exist_ok=True)
         for p in old:
@@ -530,8 +554,7 @@ def rebuild_raw_csv():
             g.sort_values("scraped_at", kind="stable")[cols].to_csv(
                 RAW_DIR / f"{name}_{m}.csv", index=False, encoding="utf-8-sig")
             n += len(g)
-    if groups:
-        BUILT_MARK.write_text("raw CSV được dựng từ debug_data/*.json\n", encoding="utf-8")
+    BUILT_MARK.write_text("raw CSV được dựng từ debug_data/*.json\n", encoding="utf-8")
     log.info("Đã dựng lại data/raw từ JSON gốc: %d dòng, %d file nguồn", n, len(groups))
     return n
 
