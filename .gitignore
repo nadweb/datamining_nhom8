@@ -1,20 +1,29 @@
-# Môi trường và cache
+# Python environment & cache
 venv/
+.venv/
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 .ipynb_checkpoints/
+.pytest_cache/
 
-# Bí mật và log
+# Environment secrets & logs
 .env
 logs/
+*.log
 
-# Dữ liệu nặng (giữ lại vài mẫu bằng git add -f nếu cần)
-data/debug_data/playwright/html/
+# Heavy local data (kept off Git)
+data/debug_data/
+data/raw/
+data/raw_legacy/
+data/flights_cleaned_global.csv
+data/flights_processed.csv
+data/processed/flights_processed.csv
+data/processed/flights_features.csv
+data/processed/train.csv
+data/processed/test.csv
 
-data/
-logs/
-venv/
-__pycache__/
-*.pyc
-.env
-.ipynb_checkpoints/
+# Keep sample data and version info in repo for CI & team tests
+!data/flights_sample.csv
+!data/data_version.txt
+!data/processed/preprocessing_metadata.json

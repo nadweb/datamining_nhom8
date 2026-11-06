@@ -1,0 +1,42 @@
+{
+  "0": {
+    "cluster_id": 0,
+    "name": "Early Morning Low-Congestion Flights (Tải thấp, Tỉ lệ đúng giờ cao)",
+    "flight_count": 5094,
+    "percentage": 39.7,
+    "delay_rate_pct": 21.4,
+    "cancellation_rate_pct": 0.94,
+    "avg_delay_minutes": 8.4,
+    "risk_tier": "MEDIUM"
+  },
+  "1": {
+    "cluster_id": 1,
+    "name": "Evening Peak Hours & Adverse Weather Risk (Chiều tối cao điểm, Rủi ro trễ cao)",
+    "flight_count": 230,
+    "percentage": 1.8,
+    "delay_rate_pct": 37.8,
+    "cancellation_rate_pct": 0.87,
+    "avg_delay_minutes": 16.6,
+    "risk_tier": "HIGH"
+  },
+  "2": {
+    "cluster_id": 2,
+    "name": "Midday Domestic Trunk Routes (Trưa cao điểm trục chính SGN-HAN-DAD)",
+    "flight_count": 4412,
+    "percentage": 34.4,
+    "delay_rate_pct": 31.9,
+    "cancellation_rate_pct": 0.5,
+    "avg_delay_minutes": 13.2,
+    "risk_tier": "HIGH"
+  },
+  "3": {
+    "cluster_id": 3,
+    "name": "Peripheral & High-Disruption Flights (Chuyến bay giờ biên, Nguy cơ xáo trộn/hủy)",
+    "flight_count": 3094,
+    "percentage": 24.1,
+    "delay_rate_pct": 28.4,
+    "cancellation_rate_pct": 0.74,
+    "avg_delay_minutes": 12.2,
+    "risk_tier": "MEDIUM"
+  }
+}

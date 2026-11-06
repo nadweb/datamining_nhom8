@@ -1,0 +1,10 @@
+# Data Pipeline Dependencies (Parts 1 & 2)
+# Web scraping, API consumption, weather integration, deduplication
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+playwright>=1.40.0
+pandas>=2.1.0
+numpy>=1.26.0
+holidays>=0.40
+

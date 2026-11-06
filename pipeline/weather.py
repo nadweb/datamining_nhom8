@@ -1,4 +1,12 @@
 # -*- coding: utf-8 -*-
+import sys
+from pathlib import Path
+
+# Ensure project root is in path
+ROOT_DIR = Path(__file__).resolve().parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
 """Tải thời tiết theo giờ từ Open-Meteo (miễn phí, không cần key).
 
 - Phản hồi JSON gốc lưu ở data/debug_data/open_meteo/ (nguồn chính cho processor).
@@ -168,7 +176,7 @@ def update_weather(start, end, airports=None):
 
 def update_from_raw():
     """Đọc ngày bay nhỏ nhất/lớn nhất trong data/raw rồi tải thời tiết phủ khoảng đó."""
-    from collector import load_standard_records      # import muộn để tránh phụ thuộc vòng
+    from pipeline.collector import load_standard_records      # import muộn để tránh phụ thuộc vòng
     df = load_standard_records()
     if df.empty:
         print("Chưa có dữ liệu thô (chạy: python main.py build-raw).")
