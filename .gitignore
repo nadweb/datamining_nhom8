@@ -12,18 +12,5 @@ __pycache__/
 logs/
 *.log
 
-# Heavy local data (kept off Git)
-data/debug_data/
-data/raw/
-data/raw_legacy/
-data/flights_cleaned_global.csv
-data/flights_processed.csv
-data/processed/flights_processed.csv
-data/processed/flights_features.csv
-data/processed/train.csv
-data/processed/test.csv
-
-# Keep sample data and version info in repo for CI & team tests
-!data/flights_sample.csv
-!data/data_version.txt
-!data/processed/preprocessing_metadata.json
+# Data folder kept 100% off Git
+data/

@@ -1,8 +1,0 @@
-DATA VERSION FILE
-Date: 2026-11-06
-Source file: data/flights_cleaned_global.csv
-Total rows: 12,830
-Columns: 24
-Labels: {'on_time': 9272, 'delayed': 3463, 'cancelled': 95}
-SHA256: 73a3273f3489e86880bc9d051d4dfad074f71a26f43ac10bf6f2958cc55acc92
-Sample file: data/flights_sample.csv (300 rows)
