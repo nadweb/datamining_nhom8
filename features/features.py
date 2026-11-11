@@ -26,6 +26,18 @@ PROCESSED_DIR = BASE_DIR / "data" / "processed"
 PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 FILE_FEATURES = PROCESSED_DIR / "flights_features.csv"
 
+# Explicit output contract: 24 source columns + these 22 engineered columns = 46.
+ENGINEERED_FEATURE_COLUMNS = (
+    "scheduled_hour_num", "hour_sin", "hour_cos", "dow_sin", "dow_cos",
+    "is_peak_hour", "is_heavy_traffic",
+    "is_rain", "is_heavy_rain", "is_high_wind", "is_severe_wind",
+    "is_low_vis", "is_storm", "weather_hazard_score",
+    "carrier_category", "is_golden_triangle", "is_holiday_flag",
+    "is_weekend_flag", "is_domestic_flag", "is_departure",
+    "load_x_weather", "peak_x_rain",
+)
+FORBIDDEN_POST_FLIGHT_COLUMNS = {"delay_min", "actual_time", "status", "status_detail"}
+
 # Golden triangle of Vietnam aviation
 GOLDEN_TRIANGLE = {
     ("SGN", "HAN"), ("HAN", "SGN"),
@@ -153,6 +165,14 @@ def build_engineered_features(df: pd.DataFrame) -> pd.DataFrame:
     df_feat = compute_weather_hazard(df_feat)
     df_feat = compute_route_and_carrier_features(df_feat)
     df_feat = compute_interaction_features(df_feat)
+
+    missing = [c for c in ENGINEERED_FEATURE_COLUMNS if c not in df_feat.columns]
+    if missing:
+        raise RuntimeError(f"Feature contract violation; missing engineered columns: {missing}")
+    if len(ENGINEERED_FEATURE_COLUMNS) != 22:
+        raise RuntimeError("Internal feature contract must define exactly 22 engineered columns")
+    if not df_feat["weather_hazard_score"].dropna().between(0.0, 1.0).all():
+        raise RuntimeError("weather_hazard_score must stay within [0, 1]")
     return df_feat
 
 
