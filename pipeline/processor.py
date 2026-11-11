@@ -9,6 +9,7 @@ Orchestrates:
 6. Association rule mining via FP-Growth
 """
 import glob
+import hashlib
 import re
 import sys
 from itertools import combinations
@@ -41,6 +42,56 @@ LABELS = ["on_time", "delayed", "cancelled"]
 K1 = ["airport", "direction", "flight_date", "flight_no", "scheduled_time"]
 MISSING_WARN = 40.0
 
+FORMAT_RULES = {
+    "flight_date": r"^\d{4}-\d{2}-\d{2}$",
+    "scheduled_time": r"^([01]\d|2[0-3]):[0-5]\d$",
+    "flight_no": r"^[A-Z0-9]{2}\s?\d{1,4}[A-Z]?$",
+    "direction": r"^(DEPARTURES|ARRIVALS)$",
+    "airport": r"^[A-Z]{3}$",
+}
+
+
+def row_hash(df: pd.DataFrame, cols) -> pd.Series:
+    """Băm SHA-256 (16 ký tự hex đầu) của các cột khóa đã chuẩn hóa.
+    Hai bản ghi có cùng giá trị khóa -> cùng mã băm -> được coi là trùng lặp."""
+    joined = df[list(cols)].astype(str).apply(lambda s: s.str.strip().str.upper()).agg("|".join, axis=1)
+    return joined.map(lambda x: hashlib.sha256(x.encode("utf-8")).hexdigest()[:16])
+
+
+def format_report(df: pd.DataFrame) -> pd.DataFrame:
+    """Tỷ lệ thiếu và sai định dạng theo từng cột của dữ liệu THÔ (trước khi làm sạch)."""
+    rows = []
+    n = len(df)
+    for c in FIELDS:
+        if c not in df.columns:
+            continue
+        s = df[c].astype(str).str.strip()
+        empty = s.isin(["", "nan", "None", "NaN"])
+        row = {"Cột": c, "Thiếu": int(empty.sum()), "Thiếu (%)": round(empty.mean() * 100, 2)}
+        if c in FORMAT_RULES:
+            bad = ~empty & ~s.str.upper().str.match(FORMAT_RULES[c])
+            row["Sai định dạng"] = int(bad.sum())
+            row["Sai định dạng (%)"] = round(bad.sum() / n * 100, 2) if n else 0.0
+        rows.append(row)
+    return pd.DataFrame(rows)
+
+
+def integration_report(leg: pd.DataFrame) -> pd.DataFrame:
+    """Kiểm tra tính nhất quán sau tích hợp chuyến bay + thời tiết + tải sân bay."""
+    n = len(leg)
+    checks = [
+        ("Ghép được sân bay đầu kia (leg_matched)", leg["leg_matched"].mean() * 100),
+        ("Chuyến thấy ở cả bảng đi và bảng đến", (leg["n_sides_seen"] > 1).mean() * 100),
+        ("Sự kiện có >= 2 nguồn ghi nhận", (leg["source_recorded_count"] > 1).mean() * 100),
+        ("Ghép được thời tiết (precipitation có giá trị)", leg["precipitation"].notna().mean() * 100),
+        ("Ghép được tải sân bay (airport_load)", leg["airport_load"].notna().mean() * 100),
+        ("origin != destination", (leg["origin"] != leg["destination"]).mean() * 100),
+        ("leg_key duy nhất", 100.0 if leg["leg_key"].is_unique else 0.0),
+    ]
+    return pd.DataFrame(
+        [{"Kiểm tra": k, "Đạt (%)": round(float(v), 2) if pd.notna(v) else np.nan, "Số dòng": n} for k, v in checks]
+    )
+
 
 def prepare_dataset(prefer_side="DEPARTURES", min_age_hours=0, unit="leg"):
     """Integrate and deduplicate snapshots from all sources into canonical flight legs."""
@@ -54,10 +105,15 @@ def prepare_dataset(prefer_side="DEPARTURES", min_age_hours=0, unit="leg"):
 
     df = pd.concat(frames, ignore_index=True)
     stats = {"snapshots": len(df), "from_debug_json": len(df)}
+    stats["format_report"] = format_report(df)
 
     for c in ["airport", "direction", "flight_date", "flight_no", "scheduled_time", "airline_code"]:
         df[c] = df[c].astype(str).str.strip().str.upper()
     df["status"] = df["status"].astype(str).str.strip()
+    df["raw_hash"] = row_hash(df, FIELDS)
+    stats["exact_duplicates"] = int(df["raw_hash"].duplicated().sum())
+    df = df.drop_duplicates("raw_hash", keep="last").copy()
+    stats["after_exact_dedup"] = len(df)
 
     # Completed flight without actual_time -> fill from estimated_time
     done = df["status"].str.contains(r"arrive|depart|land|hacan|catcan", case=False, regex=True, na=False)
@@ -89,21 +145,23 @@ def prepare_dataset(prefer_side="DEPARTURES", min_age_hours=0, unit="leg"):
     df["has_info"] = (~df["status"].str.upper().isin(["", "SCHEDULED"])).astype(int)
     df["is_pref_side"] = (df["direction"] == prefer_side).astype(int)
     df["at_monitored"] = df["airport"].isin(AIRPORT_COORD).astype(int)
+    df["event_hash"] = row_hash(df, K1)
+    df["leg_hash"] = row_hash(df, ["leg_key"])
 
-    # Step 1: Dedup same side
+    # Step 1: Dedup same side (giữ bản ghi giàu thông tin nhất, mới nhất trong mỗi event_hash)
     df = df.sort_values(K1 + ["has_info", "has_done_act", "scraped_at"])
-    per_src = df.drop_duplicates(K1 + ["source"], keep="last")
-    src1 = df.groupby(K1)["source"].nunique().rename("source_recorded_count")
-    side = df.drop_duplicates(K1, keep="last").merge(src1, on=K1, how="left")
+    per_src = df.drop_duplicates(["event_hash", "source"], keep="last")
+    src1 = df.groupby("event_hash")["source"].nunique().rename("source_recorded_count")
+    side = df.drop_duplicates("event_hash", keep="last").merge(src1, on="event_hash", how="left")
     stats["after_side_dedup"] = len(side)
 
-    # Step 2: Dedup across departure and arrival sides
+    # Step 2: Dedup across departure and arrival sides (1 leg_hash = 1 chuyến)
     side = side.sort_values(["leg_key", "has_info", "has_done_act", "at_monitored", "is_pref_side", "scraped_at"])
-    legs_cnt = side.groupby("leg_key")["direction"].nunique().rename("n_sides_seen")
+    legs_cnt = side.groupby("leg_hash")["direction"].nunique().rename("n_sides_seen")
     if unit == "event":
-        leg = side.merge(legs_cnt, on="leg_key", how="left")
+        leg = side.merge(legs_cnt, on="leg_hash", how="left")
     else:
-        leg = side.drop_duplicates("leg_key", keep="last").merge(legs_cnt, on="leg_key", how="left")
+        leg = side.drop_duplicates("leg_hash", keep="last").merge(legs_cnt, on="leg_hash", how="left")
     stats["unit"] = unit
     stats["after_leg_dedup"] = len(leg)
     stats["legs_seen_both_sides"] = int((leg["n_sides_seen"] > 1).sum())
@@ -275,6 +333,8 @@ def label_and_report(side, leg, stats, thr, per_src=None):
     print(f"BÁO CÁO TÍCH HỢP DỮ LIỆU (ngưỡng trễ = {thr} phút)")
     print("=" * 62)
     print(f"Snapshot thô:                               {stats['snapshots']:,}")
+    if "exact_duplicates" in stats:
+        print(f"Trùng tuyệt đối (cùng mã băm SHA-256):      {stats['exact_duplicates']:,}")
     print(f"Sau khử trùng cùng phía (hãng Việt Nam):    {stats['after_side_dedup']:,}")
     unit_txt = "1 sự kiện sân bay=1" if stats.get("unit") == "event" else "1 chuyến=1"
     print(f"Sau khử trùng ({unit_txt}):".ljust(44) + f"{stats['after_leg_dedup']:,}")
@@ -331,4 +391,16 @@ def process_and_mine(threshold=15, compare=None, min_age_hours=0, unit="leg"):
             r2.to_csv(p, index=False, encoding="utf-8-sig")
             print(f"=> Luật ở ngưỡng {compare} phút: {p}")
     return valid, rules
+
+
+if __name__ == "__main__":
+    import argparse
+
+    ap = argparse.ArgumentParser(description="Part 1: Làm sạch & tích hợp dữ liệu chuyến bay")
+    ap.add_argument("--threshold", type=int, default=15, help="Ngưỡng trễ (phút)")
+    ap.add_argument("--compare", type=int, default=None, help="Ngưỡng thứ 2 để so sánh (vd 30)")
+    ap.add_argument("--unit", choices=["leg", "event"], default="leg")
+    ap.add_argument("--min-age-hours", type=float, default=0)
+    a = ap.parse_args()
+    process_and_mine(threshold=a.threshold, compare=a.compare, min_age_hours=a.min_age_hours, unit=a.unit)
 
