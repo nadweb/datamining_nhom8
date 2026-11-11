@@ -1,0 +1,7 @@
+# Developer, Testing & Code Quality Tools
+pytest>=8.0.0
+pytest-cov>=4.1.0
+nbstripout>=0.7.1
+black>=24.0.0
+flake8>=7.0.0
+

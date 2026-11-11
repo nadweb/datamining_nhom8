@@ -1,11 +1,5 @@
-# Thu thập
-requests
-beautifulsoup4
-lxml
-playwright        # sau khi cài: playwright install chromium
-
-# Xử lý và khai phá
-pandas
-numpy
-mlxtend           # FP-Growth
-holidays          # cột is_holiday (thiếu thì is_holiday để trống)
+# Core dependencies for the entire project
+-r requirements-pipeline.txt
+-r requirements-ml.txt
+-r requirements-web.txt
+-r requirements-dev.txt
