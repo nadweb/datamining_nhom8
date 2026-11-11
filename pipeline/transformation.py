@@ -32,12 +32,14 @@ def parse_time_min(t_str: Union[str, float]) -> Tuple[Optional[int], int]:
     Returns:
         (total_minutes, day_offset): e.g., '01:30' -> (90, 0); '00:15+' -> (15, 1)
     """
-    if not t_str or pd.isna(t_str):
+    if t_str is None or pd.isna(t_str):
         return None, 0
-    m = re.search(r"(\d{1,2}):(\d{2})\s*([+-]?)", str(t_str))
+    m = re.fullmatch(r"\s*(\d{1,2}):(\d{2})\s*([+-]?)\s*", str(t_str))
     if not m:
         return None, 0
     h, mins, sign = int(m.group(1)), int(m.group(2)), m.group(3)
+    if h > 23 or mins > 59:
+        return None, 0
     return h * 60 + mins, {"-": -1, "+": 1, "": 0}[sign]
 
 
@@ -49,7 +51,7 @@ def calculate_delay(sched: str, est: str, actual: str, status_str: str) -> float
     2. Early flight regex ('X minutes early')
     3. Difference between actual (or estimated) and scheduled time with midnight rollover adjustment.
     """
-    st = str(status_str or "")
+    st = "" if status_str is None or pd.isna(status_str) else str(status_str)
     m_late = re.search(r"(?:(\d+)\s*minutes?\s*late|delayed\s*(\d+)\s*minutes?)", st, re.IGNORECASE)
     if m_late:
         return float(m_late.group(1) or m_late.group(2))
@@ -57,7 +59,10 @@ def calculate_delay(sched: str, est: str, actual: str, status_str: str) -> float
     if m_early:
         return -float(m_early.group(1))
 
-    target = actual if (actual and str(actual).strip()) else est
+    def _valid_time(value):
+        return value is not None and not pd.isna(value) and str(value).strip().lower() not in {"", "nan", "none", "nat"}
+
+    target = actual if _valid_time(actual) else est
     s_min, _ = parse_time_min(sched)
     t_min, off = parse_time_min(target)
     if s_min is None or t_min is None:
@@ -72,7 +77,7 @@ def calculate_delay(sched: str, est: str, actual: str, status_str: str) -> float
 
 
 def _s(v) -> str:
-    return "" if v is None or (isinstance(v, float) and np.isnan(v)) else str(v).strip()
+    return "" if v is None or pd.isna(v) else str(v).strip()
 
 
 def label_status(row: Union[pd.Series, dict], delay_threshold: int = 15) -> Tuple[str, str, str]:
