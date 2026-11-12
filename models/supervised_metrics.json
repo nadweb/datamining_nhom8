@@ -1,185 +1,637 @@
 {
   "classification": {
     "LogisticRegression": {
-      "accuracy": 0.6208,
-      "precision_macro": 0.4008,
-      "recall_macro": 0.4183,
-      "f1_macro": 0.3893,
-      "f1_weighted": 0.6533,
-      "roc_auc_ovr": 0.7056,
+      "accuracy": 0.6953,
+      "balanced_accuracy": 0.4144,
+      "precision_macro": 0.3996,
+      "recall_macro": 0.4144,
+      "f1_macro": 0.4008,
+      "f1_weighted": 0.7186,
+      "roc_auc_ovr": 0.5559,
+      "average_precision_delayed": 0.3514,
       "confusion_matrix": [
         [
-          1215,
-          699,
-          50
+          1665,
+          534,
+          36
         ],
         [
-          207,
-          378,
-          9
+          275,
+          277,
+          4
         ],
         [
           2,
-          6,
+          0,
           0
         ]
       ],
       "classification_report": {
         "on_time": {
-          "precision": 0.8532303370786517,
-          "recall": 0.6186354378818737,
-          "f1-score": 0.7172373081463991,
-          "support": 1964.0
+          "precision": 0.8573635427394438,
+          "recall": 0.7449664429530202,
+          "f1-score": 0.7972228872396456,
+          "support": 2235.0
         },
         "delayed": {
-          "precision": 0.3490304709141274,
-          "recall": 0.6363636363636364,
-          "f1-score": 0.45080500894454384,
-          "support": 594.0
+          "precision": 0.34155363748458695,
+          "recall": 0.4982014388489209,
+          "f1-score": 0.40526700804681787,
+          "support": 556.0
         },
         "cancelled": {
           "precision": 0.0,
           "recall": 0.0,
           "f1-score": 0.0,
-          "support": 8.0
+          "support": 2.0
         },
-        "accuracy": 0.6208106001558846,
+        "accuracy": 0.6953097028284998,
         "macro avg": {
-          "precision": 0.40075360266425974,
-          "recall": 0.4183330247485033,
-          "f1-score": 0.38934743903031427,
-          "support": 2566.0
+          "precision": 0.3996390600746769,
+          "recall": 0.41438929393398033,
+          "f1-score": 0.40082996509548785,
+          "support": 2793.0
         },
         "weighted avg": {
-          "precision": 0.7338536561751612,
-          "recall": 0.6208106001558846,
-          "f1-score": 0.6533251163338218,
-          "support": 2566.0
+          "precision": 0.754067791071997,
+          "recall": 0.6953097028284998,
+          "f1-score": 0.7186257105100747,
+          "support": 2793.0
         }
       }
     },
     "RandomForest": {
-      "accuracy": 0.6913,
-      "precision_macro": 0.4079,
-      "recall_macro": 0.4267,
-      "f1_macro": 0.4119,
-      "f1_weighted": 0.706,
-      "roc_auc_ovr": 0.7805,
+      "accuracy": 0.6989,
+      "balanced_accuracy": 0.4298,
+      "precision_macro": 0.4035,
+      "recall_macro": 0.4298,
+      "f1_macro": 0.4066,
+      "f1_weighted": 0.7215,
+      "roc_auc_ovr": 0.8086,
+      "average_precision_delayed": 0.3508,
       "confusion_matrix": [
         [
-          1453,
-          511,
+          1644,
+          591,
           0
         ],
         [
-          273,
-          321,
+          248,
+          308,
           0
         ],
         [
-          5,
-          3,
+          2,
+          0,
           0
         ]
       ],
       "classification_report": {
         "on_time": {
-          "precision": 0.8393991912189486,
-          "recall": 0.7398167006109979,
-          "f1-score": 0.786468200270636,
-          "support": 1964.0
+          "precision": 0.8680042238648363,
+          "recall": 0.7355704697986577,
+          "f1-score": 0.7963187212400097,
+          "support": 2235.0
         },
         "delayed": {
-          "precision": 0.3844311377245509,
-          "recall": 0.5404040404040404,
-          "f1-score": 0.44926522043386985,
-          "support": 594.0
+          "precision": 0.3426028921023359,
+          "recall": 0.5539568345323741,
+          "f1-score": 0.4233676975945017,
+          "support": 556.0
         },
         "cancelled": {
           "precision": 0.0,
           "recall": 0.0,
           "f1-score": 0.0,
-          "support": 8.0
+          "support": 2.0
         },
-        "accuracy": 0.691348402182385,
+        "accuracy": 0.698890082348729,
         "macro avg": {
-          "precision": 0.4079434429811665,
-          "recall": 0.4267402470050128,
-          "f1-score": 0.41191114023483527,
-          "support": 2566.0
+          "precision": 0.40353570532239075,
+          "recall": 0.4298424347770106,
+          "f1-score": 0.4065621396115038,
+          "support": 2793.0
         },
         "weighted avg": {
-          "precision": 0.731462239813873,
-          "recall": 0.691348402182385,
-          "f1-score": 0.7059575550542665,
-          "support": 2566.0
+          "precision": 0.7627914960067339,
+          "recall": 0.698890082348729,
+          "f1-score": 0.7215054714765358,
+          "support": 2793.0
         }
       }
     },
     "HistGradientBoosting": {
-      "accuracy": 0.6196,
-      "precision_macro": 0.4428,
-      "recall_macro": 0.4609,
-      "f1_macro": 0.4292,
-      "f1_weighted": 0.6486,
-      "roc_auc_ovr": 0.6637,
+      "accuracy": 0.7089,
+      "balanced_accuracy": 0.439,
+      "precision_macro": 0.4117,
+      "recall_macro": 0.439,
+      "f1_macro": 0.4155,
+      "f1_weighted": 0.7311,
+      "roc_auc_ovr": 0.8094,
+      "average_precision_delayed": 0.3787,
       "confusion_matrix": [
         [
-          1207,
-          752,
-          5
+          1661,
+          565,
+          9
         ],
         [
-          211,
-          382,
-          1
+          237,
+          319,
+          0
         ],
         [
-          1,
-          6,
-          1
+          2,
+          0,
+          0
         ]
       ],
       "classification_report": {
         "on_time": {
-          "precision": 0.8505990133897111,
-          "recall": 0.6145621181262729,
-          "f1-score": 0.7135678391959799,
-          "support": 1964.0
+          "precision": 0.8742105263157894,
+          "recall": 0.7431767337807607,
+          "f1-score": 0.8033857315598549,
+          "support": 2235.0
         },
         "delayed": {
-          "precision": 0.3350877192982456,
-          "recall": 0.6430976430976431,
-          "f1-score": 0.4405997693194925,
-          "support": 594.0
+          "precision": 0.3608597285067873,
+          "recall": 0.5737410071942446,
+          "f1-score": 0.44305555555555554,
+          "support": 556.0
         },
         "cancelled": {
-          "precision": 0.14285714285714285,
-          "recall": 0.125,
-          "f1-score": 0.13333333333333333,
-          "support": 8.0
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
         },
-        "accuracy": 0.6196414653156664,
+        "accuracy": 0.7089151450053706,
         "macro avg": {
-          "precision": 0.44284795851503317,
-          "recall": 0.46088658707463864,
-          "f1-score": 0.42916698061626857,
-          "support": 2566.0
+          "precision": 0.4116900849408589,
+          "recall": 0.43897258032500175,
+          "f1-score": 0.41548042903847016,
+          "support": 2793.0
         },
         "weighted avg": {
-          "precision": 0.7290574531190209,
-          "recall": 0.6196414653156664,
-          "f1-score": 0.6485698230020848,
-          "support": 2566.0
+          "precision": 0.771392243238655,
+          "recall": 0.7089151450053706,
+          "f1-score": 0.7310798420784693,
+          "support": 2793.0
         }
       }
     },
-    "best_classifier_name": "HistGradientBoosting"
+    "best_classifier_name": "RandomForest"
   },
   "regression": {
-    "MAE_minutes": 18.24,
-    "RMSE_minutes": 29.57,
-    "R2_Score": 0.0509
+    "MAE_minutes": 15.13,
+    "RMSE_minutes": 30.28,
+    "R2_Score": 0.069
   },
-  "feature_importances": []
+  "feature_importances": [
+    {
+      "feature": "hour_sin",
+      "importance": 0.1002,
+      "raw": 0.10022,
+      "method": "impurity"
+    },
+    {
+      "feature": "airport_load",
+      "importance": 0.0876,
+      "raw": 0.08759,
+      "method": "impurity"
+    },
+    {
+      "feature": "hour_cos",
+      "importance": 0.0771,
+      "raw": 0.07715,
+      "method": "impurity"
+    },
+    {
+      "feature": "dow_sin",
+      "importance": 0.0724,
+      "raw": 0.07245,
+      "method": "impurity"
+    },
+    {
+      "feature": "visibility",
+      "importance": 0.0524,
+      "raw": 0.05238,
+      "method": "impurity"
+    },
+    {
+      "feature": "wind_gusts_10m",
+      "importance": 0.0505,
+      "raw": 0.05054,
+      "method": "impurity"
+    },
+    {
+      "feature": "load_x_weather",
+      "importance": 0.0494,
+      "raw": 0.04945,
+      "method": "impurity"
+    },
+    {
+      "feature": "weather_hazard_score",
+      "importance": 0.0444,
+      "raw": 0.04445,
+      "method": "impurity"
+    },
+    {
+      "feature": "carrier_category_FSC",
+      "importance": 0.0368,
+      "raw": 0.03683,
+      "method": "impurity"
+    },
+    {
+      "feature": "airline_code_VN",
+      "importance": 0.0364,
+      "raw": 0.0364,
+      "method": "impurity"
+    },
+    {
+      "feature": "carrier_category_LCC",
+      "importance": 0.0356,
+      "raw": 0.0356,
+      "method": "impurity"
+    },
+    {
+      "feature": "airline_code_VJ",
+      "importance": 0.0327,
+      "raw": 0.03272,
+      "method": "impurity"
+    },
+    {
+      "feature": "dow_cos",
+      "importance": 0.031,
+      "raw": 0.03103,
+      "method": "impurity"
+    },
+    {
+      "feature": "route_type_domestic",
+      "importance": 0.0258,
+      "raw": 0.02585,
+      "method": "impurity"
+    },
+    {
+      "feature": "route_type_international",
+      "importance": 0.0218,
+      "raw": 0.02179,
+      "method": "impurity"
+    },
+    {
+      "feature": "is_weekend_flag",
+      "importance": 0.0217,
+      "raw": 0.0217,
+      "method": "impurity"
+    },
+    {
+      "feature": "precipitation",
+      "importance": 0.0214,
+      "raw": 0.02145,
+      "method": "impurity"
+    },
+    {
+      "feature": "is_domestic_flag",
+      "importance": 0.0205,
+      "raw": 0.02048,
+      "method": "impurity"
+    },
+    {
+      "feature": "is_heavy_traffic",
+      "importance": 0.0148,
+      "raw": 0.01482,
+      "method": "impurity"
+    },
+    {
+      "feature": "is_golden_triangle",
+      "importance": 0.0143,
+      "raw": 0.01432,
+      "method": "impurity"
+    }
+  ],
+  "feature_importance_by_variable": [
+    {
+      "variable": "hour_sin",
+      "importance": 0.1002
+    },
+    {
+      "variable": "airline_code",
+      "importance": 0.0928
+    },
+    {
+      "variable": "carrier_category",
+      "importance": 0.0916
+    },
+    {
+      "variable": "airport_load",
+      "importance": 0.0876
+    },
+    {
+      "variable": "hour_cos",
+      "importance": 0.0771
+    },
+    {
+      "variable": "dow_sin",
+      "importance": 0.0724
+    },
+    {
+      "variable": "airport",
+      "importance": 0.055
+    },
+    {
+      "variable": "visibility",
+      "importance": 0.0524
+    },
+    {
+      "variable": "wind_gusts_10m",
+      "importance": 0.0505
+    },
+    {
+      "variable": "load_x_weather",
+      "importance": 0.0494
+    },
+    {
+      "variable": "route_type",
+      "importance": 0.0476
+    },
+    {
+      "variable": "weather_hazard_score",
+      "importance": 0.0444
+    },
+    {
+      "variable": "dow_cos",
+      "importance": 0.031
+    },
+    {
+      "variable": "is_weekend_flag",
+      "importance": 0.0217
+    },
+    {
+      "variable": "precipitation",
+      "importance": 0.0214
+    },
+    {
+      "variable": "is_domestic_flag",
+      "importance": 0.0205
+    },
+    {
+      "variable": "direction",
+      "importance": 0.0157
+    },
+    {
+      "variable": "is_heavy_traffic",
+      "importance": 0.0148
+    },
+    {
+      "variable": "is_golden_triangle",
+      "importance": 0.0143
+    },
+    {
+      "variable": "is_peak_hour",
+      "importance": 0.0096
+    },
+    {
+      "variable": "is_departure",
+      "importance": 0.0083
+    },
+    {
+      "variable": "is_low_vis",
+      "importance": 0.0052
+    },
+    {
+      "variable": "is_rain",
+      "importance": 0.005
+    },
+    {
+      "variable": "peak_x_rain",
+      "importance": 0.0045
+    },
+    {
+      "variable": "is_high_wind",
+      "importance": 0.0044
+    },
+    {
+      "variable": "is_heavy_rain",
+      "importance": 0.0012
+    },
+    {
+      "variable": "is_storm",
+      "importance": 0.001
+    },
+    {
+      "variable": "is_severe_wind",
+      "importance": 0.0
+    },
+    {
+      "variable": "is_holiday_flag",
+      "importance": 0.0
+    }
+  ],
+  "split": {
+    "cutoff_date": "2026-10-31",
+    "train_rows": 11172,
+    "test_rows": 2793,
+    "label_share_train": {
+      "on_time": 0.6915,
+      "delayed": 0.2981,
+      "cancelled": 0.0105
+    },
+    "label_share_test": {
+      "on_time": 0.8002,
+      "delayed": 0.1991,
+      "cancelled": 0.0007
+    },
+    "n_cancelled_test": 2
+  },
+  "model_selection": {
+    "method": "TimeSeriesSplit(n_splits=3) trên Train, tiêu chí macro-F1; Test không tham gia việc chọn",
+    "selected": "RandomForest",
+    "cv": {
+      "LogisticRegression": {
+        "cv_f1_macro_mean": 0.3722,
+        "cv_f1_macro_std": 0.065,
+        "cv_f1_macro_folds": [
+          0.4092,
+          0.4266,
+          0.2808
+        ]
+      },
+      "RandomForest": {
+        "cv_f1_macro_mean": 0.4152,
+        "cv_f1_macro_std": 0.0457,
+        "cv_f1_macro_folds": [
+          0.4129,
+          0.4723,
+          0.3604
+        ]
+      },
+      "HistGradientBoosting": {
+        "cv_f1_macro_mean": 0.4087,
+        "cv_f1_macro_std": 0.0666,
+        "cv_f1_macro_folds": [
+          0.4032,
+          0.4929,
+          0.3301
+        ]
+      },
+      "Baseline_MostFrequent": {
+        "cv_f1_macro_mean": 0.2764,
+        "cv_f1_macro_std": 0.0037,
+        "cv_f1_macro_folds": [
+          0.2782,
+          0.2713,
+          0.2796
+        ]
+      }
+    }
+  },
+  "baselines": {
+    "classifier_most_frequent": {
+      "accuracy": 0.8002,
+      "balanced_accuracy": 0.3333,
+      "precision_macro": 0.2667,
+      "recall_macro": 0.3333,
+      "f1_macro": 0.2963,
+      "f1_weighted": 0.7114,
+      "roc_auc_ovr": 0.5,
+      "average_precision_delayed": 0.1991,
+      "confusion_matrix": [
+        [
+          2235,
+          0,
+          0
+        ],
+        [
+          556,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "classification_report": {
+        "on_time": {
+          "precision": 0.8002148227712137,
+          "recall": 1.0,
+          "f1-score": 0.8890214797136038,
+          "support": 2235.0
+        },
+        "delayed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 556.0
+        },
+        "cancelled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "accuracy": 0.8002148227712137,
+        "macro avg": {
+          "precision": 0.26673827425707125,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.29634049323786793,
+          "support": 2793.0
+        },
+        "weighted avg": {
+          "precision": 0.6403437625827649,
+          "recall": 0.8002148227712137,
+          "f1-score": 0.7114081658288236,
+          "support": 2793.0
+        }
+      }
+    }
+  },
+  "probability_calibration": {
+    "brier_delayed": 0.1884,
+    "base_rate_delayed": 0.1991,
+    "bins": [
+      {
+        "bin": 1,
+        "n": 559,
+        "mean_predicted": 0.1769,
+        "observed_rate": 0.0537
+      },
+      {
+        "bin": 2,
+        "n": 558,
+        "mean_predicted": 0.2838,
+        "observed_rate": 0.1093
+      },
+      {
+        "bin": 3,
+        "n": 559,
+        "mean_predicted": 0.3781,
+        "observed_rate": 0.1789
+      },
+      {
+        "bin": 4,
+        "n": 558,
+        "mean_predicted": 0.5025,
+        "observed_rate": 0.2706
+      },
+      {
+        "bin": 5,
+        "n": 559,
+        "mean_predicted": 0.6605,
+        "observed_rate": 0.3828
+      }
+    ]
+  },
+  "regression_details": {
+    "selected": "HistGradientBoosting_MAE",
+    "cv": {
+      "HistGradientBoosting": {
+        "cv_mae_mean": 20.329,
+        "cv_mae_folds": [
+          21.517,
+          17.833,
+          21.638
+        ]
+      },
+      "HistGradientBoosting_MAE": {
+        "cv_mae_mean": 17.058,
+        "cv_mae_folds": [
+          17.781,
+          15.491,
+          17.901
+        ]
+      },
+      "RandomForest": {
+        "cv_mae_mean": 19.677,
+        "cv_mae_folds": [
+          20.115,
+          17.469,
+          21.446
+        ]
+      },
+      "Baseline_Median": {
+        "cv_mae_mean": 16.328,
+        "cv_mae_folds": [
+          17.011,
+          16.658,
+          15.314
+        ]
+      }
+    },
+    "n_train": 11045,
+    "n_test": 2790,
+    "baseline_median_MAE_minutes": 15.43,
+    "mae_improvement_vs_baseline_pct": 1.9,
+    "test_delay_mean_minutes": 8.37
+  },
+  "environment": {
+    "sklearn": "1.9.1",
+    "random_state": 42
+  },
+  "notes": [
+    "Tập Test chỉ có 2 chuyến hủy: chỉ số của lớp cancelled (và macro-F1) có độ bất định rất lớn; đừng so sánh mô hình dựa trên chênh lệch nhỏ của macro-F1.",
+    "Tỷ lệ trễ ở Train và Test khác nhau rõ rệt (lệch phân phối theo thời gian); xác suất dự báo sẽ lệch theo.",
+    "class_weight='balanced' làm xác suất dự báo cao hơn thực tế cho lớp hiếm; xem 'probability_calibration' trước khi dùng làm risk_score hiển thị cho người dùng."
+  ]
 }

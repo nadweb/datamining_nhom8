@@ -40,8 +40,8 @@
 | **TV 1** | Data Cleaning & Integration | `data/raw/*.csv` hoặc `flights_cleaned_global.csv` | Thư mục `data/raw/` hoặc `data/` | Báo cáo tích hợp, bảng so sánh nguồn | Cho TV2 |
 | **TV 2** | Transformation & Validation | `flights_cleaned_global.csv` (hoặc `flights_sample.csv`) | Thư mục `data/` | `flights_cleaned_global.csv` (24 cột chuẩn) | Cho TV3 |
 | **TV 3** | Feature Engineering | `data/flights_cleaned_global.csv` | Thư mục `data/` | `data/processed/flights_features.csv` (46 cột) | Cho TV4 & TV5 |
-| **TV 4** | Encoding & Normalization | `data/processed/flights_features.csv` | Thư mục `data/processed/` | `scaler.joblib`, `encoder.joblib`, `preprocessing_metadata.json` | Cho TV5 & TV6 |
-| **TV 5** | Data Splitting & ML Modeling | `data/processed/flights_features.csv` & bộ scaler/encoder của TV4 | `data/processed/` | • `train.csv`, `test.csv`<br>• `models/best_classifier.joblib`<br>• `models/best_regressor.joblib`<br>• `models/kmeans_model.joblib`<br>• `models/isolation_forest.joblib`<br>• `models/*.json` | Cho TV6, TV7, TV8 |
+| **TV 4** | Encoding & Normalization | `data/processed/flights_features.csv` | Thư mục `data/processed/` | `scaler.joblib`, `encoder.joblib`, `preprocessing_metadata.json` (5 leakage columns guarded, train median imputation) | Cho TV5 & TV6 |
+| **TV 5** | Data Splitting & ML Modeling | `data/processed/flights_features.csv` & bộ scaler/encoder của TV4 | `data/processed/` | • `train.csv` (11,172 dòng), `test.csv` (2,793 dòng)<br>• `models/best_classifier.joblib`<br>• `models/best_regressor.joblib`<br>• `models/kmeans_model.joblib`<br>• `models/isolation_forest.joblib`<br>• `models/*.json` | Cho TV6, TV7, TV8 |
 | **TV 6** | Web Backend API | Các mô hình `.joblib` & metadata `.json` của TV5 | Thư mục `models/` & `data/processed/` | Endpoint REST API `/api/predict`, `/api/stats` | Cho TV7 & TV8 |
 | **TV 7** | Web Frontend Simulator | Giao diện HTML/CSS kết nối API | Thư mục `web/templates/` & `web/static/` | Giao diện tương tác mô phỏng chuyến bay | Cho TV8 & Người dùng |
 | **TV 8** | Web Dashboard & UAT | REST API từ TV6 & file `data/mined_association_rules.csv` | `http://127.0.0.1:5000/` & `data/` | Bảng điều khiển phân tích cụm, luật kết hợp | Hoàn thiện sản phẩm |
@@ -67,18 +67,18 @@ ScrapeData/
 │       ├── flights_features.csv       <-- 46 cột đặc trưng (TV3 sinh ra)
 │       ├── encoder.joblib             <-- Bộ OneHotEncoder đã fit (TV4 sinh ra)
 │       ├── scaler.joblib              <-- Bộ StandardScaler đã fit (TV4 sinh ra)
-│       ├── preprocessing_metadata.json<-- Danh sách tên đặc trưng & nhãn (TV4 sinh ra)
-│       ├── train.csv                  <-- Tập Train 80% (10,264 dòng, TV5 sinh ra)
-│       └── test.csv                   <-- Tập Test 20% (2,566 dòng, TV5 sinh ra)
+│       ├── preprocessing_metadata.json<-- Danh sách tên đặc trưng & nhãn (TV4 sinh ra, 64 features)
+│       ├── train.csv                  <-- Tập Train 80% (11,172 dòng, TV5 sinh ra)
+│       └── test.csv                   <-- Tập Test 20% (2,793 dòng, TV5 sinh ra)
 └── models/                            <-- CÁC MÔ HÌNH HỌC MÁY ĐÃ HUẤN LUYỆN (TV5 sinh ra)
-    ├── best_classifier.joblib         <-- Mô hình phân loại 3 lớp tốt nhất (HistGradientBoosting)
-    ├── best_regressor.joblib          <-- Mô hình hồi quy dự báo phút trễ
-    ├── kmeans_model.joblib            <-- Mô hình phân cụm 4 nhóm rủi ro
-    ├── pca_model.joblib               <-- Mô hình giảm chiều không gian 2D/3D
-    ├── isolation_forest.joblib        <-- Mô hình phát hiện 385 chuyến bay dị thường
-    ├── supervised_metrics.json        <-- Toàn bộ chỉ số Accuracy, F1, ROC-AUC, MAE
-    ├── cluster_profiles.json          <-- Bảng đặc tả chi tiết 4 cụm rủi ro K-Means
-    └── unsupervised_metrics.json      <-- Chỉ số PCA, Isolation Forest, FP-Growth
+    ├── best_classifier.joblib         <-- Mô hình phân loại 3 lớp tốt nhất (Random Forest, macro-F1 = 0.419, ROC-AUC = 0.810)
+    ├── best_regressor.joblib          <-- Mô hình hồi quy dự báo phút trễ (HistGradientBoosting)
+    ├── kmeans_model.joblib            <-- Mô hình phân cụm 4 nhóm rủi ro (Data-derived names)
+    ├── pca_model.joblib               <-- Mô hình giảm chiều không gian 2D/3D (3 components)
+    ├── isolation_forest.joblib        <-- Mô hình phát hiện 392 chuyến bay dị thường (2.81%)
+    ├── supervised_metrics.json        <-- Toàn bộ chỉ số CV TimeSeriesSplit, Accuracy, F1, ROC-AUC, MAE, Grouped Importances
+    ├── cluster_profiles.json          <-- Bảng đặc tả chi tiết 4 cụm rủi ro K-Means suy ra từ dữ liệu thực tế
+    └── unsupervised_metrics.json      <-- Chỉ số PCA, Isolation Forest (z-score σ), FP-Growth sorted by lift
 ```
 
 ---
@@ -210,7 +210,8 @@ python -m unittest tests.test_features
 - **Dữ liệu cần để chạy:** `data/processed/flights_features.csv`
 
 ### 1. Bạn cần làm gì và chỉnh sửa những gì?
-- **Cô lập rò rỉ thông tin (Data Leakage Guard):** Loại bỏ hoàn toàn 4 cột rò rỉ (`delay_min`, `actual_time`, `status`, `status_detail`) và các mã định danh không mang tính dự báo (`leg_key`, `flight_no`, `origin`, `destination`...) khỏi ma trận đặc trưng $X$.
+- **Cô lập rò rỉ thông tin (Data Leakage Guard):** Loại bỏ hoàn toàn 5 cột rò rỉ (`delay_min`, `actual_time`, `status`, `status_detail`, `is_delayed_for_analysis`) và các mã định danh không mang tính dự báo (`leg_key`, `flight_no`, `origin`, `destination`...) khỏi ma trận đặc trưng $X$.
+- **Xử lý giá trị khuyết thiếu an toàn:** Lưu và điền giá trị trung vị từ tập Train (`train_medians`) cho các biến liên tục bị thiếu, tránh data leakage.
 - **Mã hóa biến phân loại danh mục (Categorical Encoding):**
   - Dùng `OneHotEncoder(handle_unknown="ignore")` cho 5 biến danh mục (`airline_code`, `airport`, `direction`, `route_type`, `carrier_category`).
   - *Ý nghĩa:* Khi ứng dụng chạy trong thực tế gặp hãng hàng không mới hoặc mã sân bay mới chưa từng thấy, preprocessor sẽ không bị crash mà tự động gán toàn bộ vector 0 cho danh mục đó.
@@ -220,7 +221,7 @@ python -m unittest tests.test_features
 - **Bảo toàn các cờ nhị phân (Binary Flags Passthrough):** Duy trì nguyên trạng giá trị 0/1 cho 14 biến cờ (`is_peak_hour`, `is_heavy_traffic`, `is_rain`, `is_severe_wind`, `is_storm`, `is_golden_triangle`...).
 - **Đóng gói đối tượng tiền xử lý (`FlightDataPreprocessor`):** Cung cấp các phương thức `fit(X)`, `transform(X)`, `fit_transform(X)`, `save(target_dir)`, `load(target_dir)` chuẩn hóa scikit-learn.
 - **Lưu trữ các Transformer Artifacts:** Xuất các file `scaler.joblib`, `encoder.joblib`, `preprocessing_metadata.json` vào thư mục `data/processed/`.
-- *(Lưu ý: Nhiệm vụ chia tập dữ liệu Train/Test theo ngày bay đã được chuyển giao cho Thành viên 5 phụ trách trong Part 5).*
+- *(Lưu ý: Nhiệm vụ chia tập dữ liệu Train/Test theo chuỗi ngày bay được thực hiện phối hợp với Thành viên 5 trong Part 5).*
 
 ### 2. Yêu cầu sản phẩm phải nộp:
 1. File mã nguồn `modeling/encoding.py` hoàn chỉnh class `FlightDataPreprocessor`.
@@ -259,49 +260,47 @@ Thành viên 5 là vị trí then chốt về Machine Learning của dự án, p
 
 #### Phần 1: Phân chia Dữ liệu theo Chuỗi Thời gian (Chronological Train/Test Split)
 - **Sắp xếp thời gian:** Sắp xếp tập dữ liệu theo thứ tự ngày bay `flight_date` và giờ bay `scheduled_time`.
-- **Phân chia 80% Train / 20% Test:** Áp dụng mốc cắt ngày `2026-10-30` (80% các ngày đầu làm Train, 20% các ngày sau làm Test).
+- **Phân chia 80% Train / 20% Test:** Áp dụng mốc cắt ngày `2026-10-31` (80% các ngày đầu làm Train: 11,172 dòng, 20% các ngày sau làm Test: 2,793 dòng trên toàn bộ 13,965 dòng dữ liệu đặc trưng).
 - **Nguyên tắc vàng - Chống Lookahead Bias:**
   - Tuyệt đối **không dùng shuffle ngẫu nhiên**. Trong bài toán thời gian thực của hàng không, việc shuffle ngẫu nhiên sẽ làm mô hình "học lỏm" trước xu hướng thời tiết và tải sân bay của tương lai để dự báo quá khứ (Data Leakage theo thời gian).
   - Mô hình chỉ được học trên quá khứ (Train) và đánh giá trên các ngày tương lai độc lập (Test).
 - **Áp dụng Preprocessor từ TV4:** Fit bộ tiền xử lý `FlightDataPreprocessor` CHỈ TRÊN TẬP TRAIN, sau đó biến đổi (transform) trên cả Train và Test.
-- **Xuất tệp dữ liệu phân chia:** Lưu `data/processed/train.csv` (10,264 dòng) và `data/processed/test.csv` (2,566 dòng).
+- **Xuất tệp dữ liệu phân chia:** Lưu `data/processed/train.csv` (11,172 dòng) và `data/processed/test.csv` (2,793 dòng).
 
 #### Phần 2: Huấn luyện & Đánh giá Mô hình Học Có Giám Sát (Supervised Learning - `modeling/train.py`)
-- **Huấn luyện 3 mô hình phân loại đa lớp (3-Class Classification):**
+- **Huấn luyện 3 mô hình phân loại đa lớp (3-Class Classification) + Dummy Baseline:**
   - Dự báo nhãn `status_clean` của chuyến bay: `0 = on_time`, `1 = delayed`, `2 = cancelled`.
   - *Mô hình 1 (Baseline Linear):* **Logistic Regression** với tham số `class_weight='balanced'` để chống mất cân bằng lớp.
   - *Mô hình 2 (Ensemble Bagging):* **Random Forest Classifier** (150 cây quyết định, `max_depth=12`, `class_weight='balanced'`).
-  - *Mô hình 3 (Gradient Boosting):* **HistGradientBoosting Classifier** (`max_iter=150`), tối ưu hóa tốc độ và khả năng phân nhánh phi tuyến.
-- **Đánh giá toàn diện trên tập kiểm thử (Test Set):**
-  - Đo lường đầy đủ: Accuracy, Balanced Accuracy, Macro Precision, Macro Recall, Macro F1-score, Weighted F1-score.
-  - Tính đường cong ROC-AUC đa lớp theo chiến lược One-vs-Rest (OvR).
-  - Xuất ma trận nhầm lẫn (Confusion Matrix) và phân tích lỗi phân loại giữa chuyến đúng giờ và trễ.
+  - *Mô hình 3 (Gradient Boosting):* **HistGradientBoosting Classifier** (`max_iter=150`).
+  - *Baseline So Sánh:* **DummyClassifier(strategy='most_frequent')** để đối chiếu với tỷ lệ đoán mù.
+- **Lựa chọn mô hình chuẩn khoa học (Model Selection via TimeSeriesSplit CV):**
+  - Đánh giá bằng Cross-Validation phân đoạn thời gian 3-folds (`TimeSeriesSplit`) trên tập **Train**. Tập **Test** chỉ được chấm duy nhất 1 lần để báo cáo khách quan, không được dùng để lựa chọn mô hình.
+  - Lựa chọn mô hình tốt nhất theo **macro-F1 CV**: **Random Forest** đạt macro-F1 CV = 0.4189 (vượt trội so với baseline 0.2764) và ROC-AUC Test = 0.8103.
+- **Trích xuất Đặc trưng Quan trọng (Permutation Importance & Grouped Importances):**
+  - Dùng `permutation_importance` trên tập Test (tránh lỗi rỗng của HistGradientBoosting), đồng thời gộp các biến one-hot về biến gốc (`hour`, `airport_load`, `day_of_week`, `visibility`, `route_type`...).
 - **Huấn luyện mô hình Hồi quy dự báo độ trễ (Delay Regression):**
-  - Xây dựng mô hình **HistGradientBoosting Regressor / Random Forest Regressor** trên tập các chuyến bay trễ để dự báo chính xác số phút trễ liên tục (`delay_min`).
-  - Đánh giá bằng 3 chỉ số chuẩn: Sai số tuyệt đối trung bình (MAE $\approx 16.5$ phút), Căn bậc hai sai số toàn phương (RMSE $\approx 22.8$ phút), và Hệ số xác định $R^2$.
-- **Trích xuất Đặc trưng Quan trọng (Top Feature Importance):**
-  - Xác định và xếp hạng 10-15 đặc trưng có trọng số tác động lớn nhất (ví dụ: `weather_hazard_score`, `airport_load`, `hour_sin`, `airline_code_VJ`, `is_peak_hour`...).
+  - Xây dựng mô hình **HistGradientBoosting Regressor** tối ưu MAE trên tập các chuyến bay trễ để dự báo số phút trễ liên tục (`delay_min`). Đánh giá MAE $\approx 18.2$ phút, $R^2 \approx 0.05$.
 - **Đóng gói mô hình:** Lưu `models/best_classifier.joblib`, `models/best_regressor.joblib` và `models/supervised_metrics.json`.
 
 #### Phần 3: Học Không Giám Sát & Khai phá Tri thức (Unsupervised Learning - `modeling/unsupervised.py`)
-- **Phân cụm K-Means ($k=4$ cụm rủi ro vận hành):**
-  - Phân tích điểm uốn Elbow Method (Inertia) và Silhouette Score để xác định số cụm tối ưu $k=4$.
-  - Định danh và xây dựng hồ sơ rủi ro (Cluster Profiles) cho từng cụm:
-    - *Cụm 0 (Early Morning Low-Congestion):* Chuyến bay sáng sớm, mật độ thấp, tỷ lệ đúng giờ cao ($>85\%$).
-    - *Cụm 1 (Evening Peak Hours & Adverse Weather):* Chiều tối cao điểm kèm thời tiết xấu, tỷ lệ trễ cao ($>45\%$, trễ TB $\approx 35$ phút).
-    - *Cụm 2 (Midday Domestic Trunk Routes):* Chuyến bay trưa trục chính SGN-HAN-DAD, tải trung bình, rủi ro vừa phải.
-    - *Cụm 3 (Peripheral & High-Disruption):* Chuyến bay giờ biên đêm muộn, nguy cơ xáo trộn/hủy dây chuyền do máy bay quay đầu trễ.
+- **Phân cụm K-Means ($k=4$ cụm rủi ro vận hành với tên động suy ra từ dữ liệu):**
+  - Quét kiểm định $k \in [2, 8]$ lưu toàn bộ Inertia và Silhouette scores (cố định random_state).
+  - Tên cụm được suy luận tự động từ trung bình giờ bay và điều kiện thời tiết thực tế:
+    - *Cụm 0 (Morning, Clear weather):* Chuyến sáng, thời tiết tốt (5,833 chuyến ~ 41.8%, tỷ lệ trễ 23.9% - rủi ro Vừa).
+    - *Cụm 1 (Afternoon, Windy/Reduced visibility):* Chuyến chiều, gió lớn/tầm nhìn giảm (3,070 chuyến ~ 22.0%, tỷ lệ trễ 30.4% - rủi ro Cao).
+    - *Cụm 2 (Evening, Clear weather):* Chuyến tối cao điểm, thời tiết tốt (4,816 chuyến ~ 34.5%, tỷ lệ trễ 30.3% - rủi ro Cao).
+    - *Cụm 3 (Afternoon, Rain/Storm):* Chuyến chiều gặp mưa bão bất lợi (246 chuyến ~ 1.8%, tỷ lệ trễ 39.0% - rủi ro Cao).
   - Lưu `models/kmeans_model.joblib` và `models/cluster_profiles.json`.
 - **Giảm chiều dữ liệu PCA (Principal Component Analysis):**
-  - Giảm không gian đặc trưng về 2 chiều (2D) và 3 chiều (3D).
-  - Phân tích tỷ lệ phương sai giải thích được (Explained Variance Ratio) để trực quan hóa không gian dữ liệu chuyến bay và sự phân tách của 4 cụm rủi ro.
-  - Lưu `models/pca_model.joblib`.
+  - Giảm chiều 2D và 3D, giải thích tổng cộng $\approx 43.66\%$ phương sai dữ liệu. Lưu `models/pca_model.joblib`.
 - **Phát hiện Bất thường với Isolation Forest (Anomaly Detection):**
-  - Thiết lập tỷ lệ nhiễm bẩn $contamination = 3\%$ để tự động phát hiện **385 chuyến bay dị thường/bất thường** trong dữ liệu (các chuyến bay trễ cực đoan, gặp dông lốc bất thường hoặc sân bay tắc nghẽn kỷ lục).
+  - Với tham số $contamination = 3\%$, phát hiện **392 chuyến bay bất thường** (2.81%).
+  - Báo cáo rõ đặc trưng sai lệch nhiều nhất so với bình thường: `is_storm` ($+3.88\sigma$), `precipitation` ($+3.85\sigma$), `is_heavy_rain` ($+3.75\sigma$).
   - Lưu `models/isolation_forest.joblib`.
 - **Khai phá Luật kết hợp FP-Growth (Association Rules Mining):**
-  - Tích hợp và đánh giá tập luật kết hợp từ `data/mined_association_rules.csv`. Lọc các luật có Support, Confidence và Lift cao (ví dụ: `{VJ, Peak_Hour, Rain} -> {Delayed}` với Lift $> 1.6$).
-  - Lưu báo cáo tổng hợp vào `models/unsupervised_metrics.json`.
+  - Lọc và sắp xếp giảm dần theo Lift các luật kết hợp từ `data/mined_association_rules.csv`.
+  - Lưu `models/unsupervised_metrics.json`.
 
 ### 2. Yêu cầu sản phẩm phải nộp:
 1. Hai file mã nguồn: `modeling/train.py` và `modeling/unsupervised.py`.
@@ -324,22 +323,23 @@ Thành viên 5 là vị trí then chốt về Machine Learning của dự án, p
 ### 3. Cách tự kiểm tra (Self-check):
 Chạy các lệnh trong Terminal:
 ```bash
+python main.py encode
 python main.py train
 python main.py unsupervised
-python -m unittest tests.test_modeling
+python -m unittest discover tests -v
 ```
 **Kết quả mong đợi:**
 - Lệnh `python main.py train` in ra:
-  - Mốc cắt ngày: `2026-10-30`. Train: 10,264 dòng | Test: 2,566 dòng.
-  - Bảng so sánh 3 mô hình phân loại hiển thị đầy đủ Accuracy, Macro F1, Weighted F1, ROC-AUC.
-  - Mô hình hồi quy báo MAE $\approx 16.5$ phút, RMSE $\approx 22.8$ phút.
-  - Top 10 đặc trưng quan trọng nhất hiển thị rõ tỷ lệ đóng góp (%).
+  - Mốc cắt ngày: `2026-10-31`. Train: 11,172 dòng | Test: 2,793 dòng.
+  - Chọn mô hình bằng TimeSeriesSplit CV trên Train: Random Forest đạt macro-F1 CV = 0.4189 (baseline Dummy 0.2764), Test ROC-AUC = 0.8103.
+  - Mô hình hồi quy báo MAE $\approx 18.2$ phút.
+  - Top permutation features: `hour_sin` (~10%), `airport_load` (~8.8%), `hour_cos` (~7.5%), `dow_sin` (~7.4%), `visibility` (~5.6%).
 - Lệnh `python main.py unsupervised` in ra:
-  - Điểm Silhouette Score và Inertia của K-Means ($k=4$).
-  - Bảng hồ sơ 4 cụm rủi ro vận hành với số lượng và tỷ lệ trễ từng cụm.
-  - PCA 2D/3D in tỷ lệ phương sai tích lũy giải thích được.
-  - Isolation Forest báo phát hiện **385 chuyến bay dị thường** (3.0%).
-- Lệnh test `tests.test_modeling` chạy thành công toàn bộ bài test và báo `ok`.
+  - Quét k=2..8 Silhouette Score và Inertia của K-Means ($k=4$).
+  - Bảng hồ sơ 4 cụm rủi ro vận hành với tên cụm tự động suy ra từ giờ và thời tiết.
+  - PCA 3 components in tỷ lệ phương sai tích lũy giải thích được $\approx 43.66\%$.
+  - Isolation Forest báo phát hiện **392 chuyến bay bất thường** (2.81%).
+- Toàn bộ **52 bài test tự động** trong project đều báo `OK`.
 
 ### 4. Đóng góp vào Báo cáo Word / Slide:
 - Viết **Chương 4 (Mục 4.2 & 4.3): Chiến lược Phân chia Dữ liệu & Huấn luyện Mô hình Học Có Giám Sát**.

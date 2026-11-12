@@ -4,59 +4,401 @@
     "profiles": {
       "0": {
         "cluster_id": 0,
-        "name": "Early Morning Low-Congestion Flights (Tải thấp, Tỉ lệ đúng giờ cao)",
-        "flight_count": 5094,
-        "percentage": 39.7,
-        "delay_rate_pct": 21.4,
-        "cancellation_rate_pct": 0.94,
-        "avg_delay_minutes": 8.4,
-        "risk_tier": "MEDIUM"
+        "flight_count": 5833,
+        "percentage": 41.8,
+        "delay_rate_pct": 23.9,
+        "cancellation_rate_pct": 0.86,
+        "avg_delay_minutes": 9.2,
+        "train_delay_rate_pct": 26.0,
+        "test_delay_rate_pct": 14.2,
+        "dominant_airline": "VN",
+        "dominant_airport": "SGN",
+        "domestic_pct": 73.2,
+        "risk_tier": "MEDIUM",
+        "mean_hour": 11.6,
+        "avg_airport_load": 28.3,
+        "avg_precipitation_mm": 0.04,
+        "avg_wind_gust_kmh": 19.8,
+        "avg_visibility_km": 17.1,
+        "storm_share_pct": 0.0,
+        "name": "Morning, Clear weather (Buổi sáng, Thời tiết tốt)"
       },
       "1": {
         "cluster_id": 1,
-        "name": "Evening Peak Hours & Adverse Weather Risk (Chiều tối cao điểm, Rủi ro trễ cao)",
-        "flight_count": 230,
-        "percentage": 1.8,
-        "delay_rate_pct": 37.8,
-        "cancellation_rate_pct": 0.87,
-        "avg_delay_minutes": 16.6,
-        "risk_tier": "HIGH"
+        "flight_count": 3070,
+        "percentage": 22.0,
+        "delay_rate_pct": 30.4,
+        "cancellation_rate_pct": 1.21,
+        "avg_delay_minutes": 12.1,
+        "train_delay_rate_pct": 34.6,
+        "test_delay_rate_pct": 17.4,
+        "dominant_airline": "VN",
+        "dominant_airport": "SGN",
+        "domestic_pct": 72.5,
+        "risk_tier": "HIGH",
+        "mean_hour": 14.5,
+        "avg_airport_load": 26.2,
+        "avg_precipitation_mm": 0.63,
+        "avg_wind_gust_kmh": 24.8,
+        "avg_visibility_km": 6.3,
+        "storm_share_pct": 0.1,
+        "name": "Afternoon, Windy/Reduced visibility (Buổi chiều, Gió mạnh/tầm nhìn giảm)"
       },
       "2": {
         "cluster_id": 2,
-        "name": "Midday Domestic Trunk Routes (Trưa cao điểm trục chính SGN-HAN-DAD)",
-        "flight_count": 4412,
-        "percentage": 34.4,
-        "delay_rate_pct": 31.9,
-        "cancellation_rate_pct": 0.5,
-        "avg_delay_minutes": 13.2,
-        "risk_tier": "HIGH"
+        "flight_count": 4816,
+        "percentage": 34.5,
+        "delay_rate_pct": 30.3,
+        "cancellation_rate_pct": 0.58,
+        "avg_delay_minutes": 12.1,
+        "train_delay_rate_pct": 31.0,
+        "test_delay_rate_pct": 27.8,
+        "dominant_airline": "VN",
+        "dominant_airport": "HAN",
+        "domestic_pct": 61.3,
+        "risk_tier": "HIGH",
+        "mean_hour": 20.8,
+        "avg_airport_load": 23.7,
+        "avg_precipitation_mm": 0.05,
+        "avg_wind_gust_kmh": 13.3,
+        "avg_visibility_km": 14.2,
+        "storm_share_pct": 0.0,
+        "name": "Evening, Clear weather (Buổi tối, Thời tiết tốt)"
       },
       "3": {
         "cluster_id": 3,
-        "name": "Peripheral & High-Disruption Flights (Chuyến bay giờ biên, Nguy cơ xáo trộn/hủy)",
-        "flight_count": 3094,
-        "percentage": 24.1,
-        "delay_rate_pct": 28.4,
-        "cancellation_rate_pct": 0.74,
-        "avg_delay_minutes": 12.2,
-        "risk_tier": "MEDIUM"
+        "flight_count": 246,
+        "percentage": 1.8,
+        "delay_rate_pct": 39.0,
+        "cancellation_rate_pct": 1.63,
+        "avg_delay_minutes": 15.1,
+        "train_delay_rate_pct": 41.6,
+        "test_delay_rate_pct": 0.0,
+        "dominant_airline": "VN",
+        "dominant_airport": "SGN",
+        "domestic_pct": 73.6,
+        "risk_tier": "HIGH",
+        "mean_hour": 13.8,
+        "avg_airport_load": 25.4,
+        "avg_precipitation_mm": 4.9,
+        "avg_wind_gust_kmh": 30.2,
+        "avg_visibility_km": 4.1,
+        "storm_share_pct": 85.4,
+        "name": "Afternoon, Rain/Storm (Buổi chiều, Mưa lớn/dông)"
       }
-    }
+    },
+    "silhouette": 0.0985,
+    "inertia": 121376.0,
+    "k_selection": [
+      {
+        "k": 2,
+        "inertia": 142978.0,
+        "silhouette": 0.206
+      },
+      {
+        "k": 3,
+        "inertia": 131218.3,
+        "silhouette": 0.0976
+      },
+      {
+        "k": 4,
+        "inertia": 121376.0,
+        "silhouette": 0.0985
+      },
+      {
+        "k": 5,
+        "inertia": 114630.2,
+        "silhouette": 0.1006
+      },
+      {
+        "k": 6,
+        "inertia": 108002.6,
+        "silhouette": 0.1056
+      },
+      {
+        "k": 7,
+        "inertia": 103731.3,
+        "silhouette": 0.1075
+      },
+      {
+        "k": 8,
+        "inertia": 100003.7,
+        "silhouette": 0.1002
+      }
+    ],
+    "best_k_by_silhouette": 2
   },
   "pca": {
     "n_components": 3,
     "explained_variance_ratios": [
-      21.29,
-      11.52,
-      9.4
+      22.96,
+      11.0,
+      9.36
     ],
-    "total_explained_variance_pct": 42.21
+    "total_explained_variance_pct": 43.32,
+    "explained_variance_ratio_2d": [
+      22.96,
+      11.0
+    ],
+    "cumulative_variance_2d": 0.3396,
+    "top_loadings": {
+      "PC1": [
+        {
+          "feature": "weather_hazard_score",
+          "loading": 0.525
+        },
+        {
+          "feature": "load_x_weather",
+          "loading": 0.492
+        },
+        {
+          "feature": "precipitation",
+          "loading": 0.452
+        },
+        {
+          "feature": "wind_gusts_10m",
+          "loading": 0.337
+        },
+        {
+          "feature": "visibility",
+          "loading": -0.285
+        }
+      ],
+      "PC2": [
+        {
+          "feature": "airport_load",
+          "loading": 0.607
+        },
+        {
+          "feature": "hour_cos",
+          "loading": -0.435
+        },
+        {
+          "feature": "visibility",
+          "loading": 0.338
+        },
+        {
+          "feature": "wind_gusts_10m",
+          "loading": 0.317
+        },
+        {
+          "feature": "is_heavy_traffic",
+          "loading": 0.281
+        }
+      ]
+    }
   },
   "isolation_forest": {
-    "anomaly_count": 385,
-    "anomaly_percentage": 3.0,
-    "contamination": 0.03
+    "anomaly_count": 392,
+    "anomaly_percentage": 2.81,
+    "anomaly_pct": 2.81,
+    "contamination": 0.03,
+    "train_flagged_pct": 3.01,
+    "test_flagged_pct": 2.01,
+    "note": "Tỷ lệ ~3% trên Train do tham số contamination quy định. Tỷ lệ trên Test mới là thông tin: nếu cao hơn nhiều, dữ liệu mới khác dữ liệu huấn luyện.",
+    "delay_rate_flagged_pct": 32.1,
+    "delay_rate_normal_pct": 27.7,
+    "cancel_rate_flagged_pct": 2.3,
+    "cancel_rate_normal_pct": 0.81,
+    "top_distinguishing_features": [
+      {
+        "feature": "is_storm",
+        "std_diff": 3.88
+      },
+      {
+        "feature": "precipitation",
+        "std_diff": 3.85
+      },
+      {
+        "feature": "is_heavy_rain",
+        "std_diff": 3.75
+      },
+      {
+        "feature": "weather_hazard_score",
+        "std_diff": 3.58
+      },
+      {
+        "feature": "load_x_weather",
+        "std_diff": 2.79
+      },
+      {
+        "feature": "is_low_vis",
+        "std_diff": 2.12
+      },
+      {
+        "feature": "is_rain",
+        "std_diff": 1.77
+      },
+      {
+        "feature": "peak_x_rain",
+        "std_diff": 1.34
+      }
+    ],
+    "flagged_by_cluster": {
+      "0": 2,
+      "1": 171,
+      "2": 21,
+      "3": 198
+    }
   },
-  "top_rules_count": 15
+  "top_rules_count": 15,
+  "association_rules": [
+    {
+      "Antecedent": "Airline=VN & Load=low & Route=domestic",
+      "Consequent": "Status=cancelled",
+      "Count": 53,
+      "Support (%)": 0.39,
+      "Confidence (%)": 4.72,
+      "Lift": 6.74,
+      "Leverage": 0.0033,
+      "Conviction": 1.04
+    },
+    {
+      "Antecedent": "Airline=VN & Day=weekday & Load=low",
+      "Consequent": "Status=cancelled",
+      "Count": 51,
+      "Support (%)": 0.38,
+      "Confidence (%)": 3.88,
+      "Lift": 5.54,
+      "Leverage": 0.0031,
+      "Conviction": 1.03
+    },
+    {
+      "Antecedent": "Airline=VN & Day=weekday & Route=domestic",
+      "Consequent": "Status=cancelled",
+      "Count": 76,
+      "Support (%)": 0.56,
+      "Confidence (%)": 3.49,
+      "Lift": 4.98,
+      "Leverage": 0.0045,
+      "Conviction": 1.03
+    },
+    {
+      "Antecedent": "Airline=VJ & Rain=light & Slot=18h-24h",
+      "Consequent": "Status=delayed",
+      "Count": 145,
+      "Support (%)": 1.07,
+      "Confidence (%)": 52.35,
+      "Lift": 1.99,
+      "Leverage": 0.0053,
+      "Conviction": 1.55
+    },
+    {
+      "Antecedent": "Airline=VJ & Airport=SGN & Slot=18h-24h",
+      "Consequent": "Status=delayed",
+      "Count": 281,
+      "Support (%)": 2.07,
+      "Confidence (%)": 51.94,
+      "Lift": 1.97,
+      "Leverage": 0.0102,
+      "Conviction": 1.53
+    },
+    {
+      "Antecedent": "Airline=VJ & Airport=SGN & Slot=12h-18h",
+      "Consequent": "Status=delayed",
+      "Count": 422,
+      "Support (%)": 3.11,
+      "Confidence (%)": 50.6,
+      "Lift": 1.92,
+      "Leverage": 0.0149,
+      "Conviction": 1.49
+    },
+    {
+      "Antecedent": "Airline=VJ & Airport=SGN & Rain=light",
+      "Consequent": "Status=delayed",
+      "Count": 457,
+      "Support (%)": 3.37,
+      "Confidence (%)": 50.39,
+      "Lift": 1.91,
+      "Leverage": 0.0161,
+      "Conviction": 1.49
+    },
+    {
+      "Antecedent": "Airline=VJ & Route=domestic & Slot=18h-24h",
+      "Consequent": "Status=delayed",
+      "Count": 446,
+      "Support (%)": 3.29,
+      "Confidence (%)": 49.45,
+      "Lift": 1.88,
+      "Leverage": 0.0154,
+      "Conviction": 1.46
+    },
+    {
+      "Antecedent": "Airline=VJ & Load=low & Slot=18h-24h",
+      "Consequent": "Status=delayed",
+      "Count": 221,
+      "Support (%)": 1.63,
+      "Confidence (%)": 48.68,
+      "Lift": 1.85,
+      "Leverage": 0.0075,
+      "Conviction": 1.44
+    },
+    {
+      "Antecedent": "Airport=SGN & Load=low & Slot=18h-24h",
+      "Consequent": "Status=delayed",
+      "Count": 250,
+      "Support (%)": 1.84,
+      "Confidence (%)": 47.8,
+      "Lift": 1.82,
+      "Leverage": 0.0083,
+      "Conviction": 1.41
+    },
+    {
+      "Antecedent": "Airline=VJ & Route=domestic & Slot=12h-18h",
+      "Consequent": "Status=delayed",
+      "Count": 613,
+      "Support (%)": 4.52,
+      "Confidence (%)": 47.08,
+      "Lift": 1.79,
+      "Leverage": 0.0199,
+      "Conviction": 1.39
+    },
+    {
+      "Antecedent": "Airline=VJ & Airport=SGN & Route=international",
+      "Consequent": "Status=delayed",
+      "Count": 377,
+      "Support (%)": 2.78,
+      "Confidence (%)": 46.95,
+      "Lift": 1.78,
+      "Leverage": 0.0122,
+      "Conviction": 1.39
+    },
+    {
+      "Antecedent": "Airline=VJ & Slot=18h-24h",
+      "Consequent": "Status=delayed",
+      "Count": 605,
+      "Support (%)": 4.46,
+      "Confidence (%)": 46.15,
+      "Lift": 1.75,
+      "Leverage": 0.0192,
+      "Conviction": 1.37
+    },
+    {
+      "Antecedent": "Airline=VJ & Rain=light & Slot=12h-18h",
+      "Consequent": "Status=delayed",
+      "Count": 469,
+      "Support (%)": 3.46,
+      "Confidence (%)": 46.03,
+      "Lift": 1.75,
+      "Leverage": 0.0148,
+      "Conviction": 1.37
+    },
+    {
+      "Antecedent": "Airline=VJ & Slot=12h-18h",
+      "Consequent": "Status=delayed",
+      "Count": 880,
+      "Support (%)": 6.48,
+      "Confidence (%)": 44.92,
+      "Lift": 1.71,
+      "Leverage": 0.0269,
+      "Conviction": 1.34
+    }
+  ],
+  "environment": {
+    "sklearn": "1.9.1",
+    "random_state": 42,
+    "fit_on": "Train",
+    "n_train": 11172,
+    "n_test": 2793
+  }
 }

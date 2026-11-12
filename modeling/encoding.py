@@ -2,7 +2,8 @@
 """Mã hóa và chuẩn hóa đặc trưng (Part 4 - Thành viên 4).
 
 Nhiệm vụ:
-1. Cô lập rò rỉ: ma trận X không bao giờ chứa delay_min, actual_time, status, status_detail
+1. Cô lập rò rỉ: ma trận X không bao giờ chứa delay_min, actual_time, status, status_detail,
+   is_delayed_for_analysis (bản sao nhị phân của nhãn, có trong flights_features mới)
    (kiểm tra ngay khi nạp module, khi fit và khi transform).
 2. Mã hóa One-Hot cho biến phân loại (handle_unknown="ignore": danh mục lạ -> vector 0, không crash).
 3. Chuẩn hóa StandardScaler cho biến liên tục. Giá trị thiếu được điền bằng TRUNG VỊ CỦA TẬP TRAIN
@@ -46,7 +47,7 @@ LABEL_MAP = {"on_time": 0, "delayed": 1, "cancelled": 2}
 INV_LABEL_MAP = {v: k for k, v in LABEL_MAP.items()}
 
 # CỘT RÒ RỈ: chứa kết quả của chuyến bay, KHÔNG ĐƯỢC nằm trong X
-LEAKAGE_COLUMNS = ["delay_min", "actual_time", "status", "status_detail"]
+LEAKAGE_COLUMNS = ["delay_min", "actual_time", "status", "status_detail", "is_delayed_for_analysis"]
 
 # Mã định danh / cột không mang tính dự báo, không đưa vào X
 EXCLUDE_COLUMNS = LEAKAGE_COLUMNS + [

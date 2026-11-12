@@ -45,6 +45,7 @@ def make_features_df(n=600, seed=0):
     df["actual_time"] = "10:00"
     df["status"] = "Departed On-Time"
     df["status_detail"] = "departed_on_time"
+    df["is_delayed_for_analysis"] = (df["status_clean"] == "delayed").astype(int)
     df["airport_load"] = rng.integers(5, 45, n).astype(float)
     df["precipitation"] = rng.exponential(0.4, n)
     df["wind_gusts_10m"] = rng.uniform(5, 60, n)
@@ -81,7 +82,8 @@ class TestEncoding(unittest.TestCase):
         """Xáo trộn các cột rò rỉ và nhãn: ma trận X phải giữ nguyên (X không phụ thuộc chúng)."""
         shuffled = self.test.copy()
         for c in LEAKAGE_COLUMNS + ["status_clean"]:
-            shuffled[c] = shuffled[c].sample(frac=1, random_state=1).values
+            if c in shuffled.columns:
+                shuffled[c] = shuffled[c].sample(frac=1, random_state=1).values
         np.testing.assert_array_equal(self.pre.transform(self.test), self.pre.transform(shuffled))
 
     # ---------- One-Hot ----------
