@@ -206,10 +206,13 @@ class FlightDataPreprocessor:
             with open(meta_file, "r", encoding="utf-8") as f:
                 meta = json.load(f)
         saved_ver = meta.get("sklearn_version")
-        if saved_ver and saved_ver != sklearn.__version__:
-            warnings.warn(
-                f"Artifact được tạo bằng scikit-learn {saved_ver}, máy hiện dùng {sklearn.__version__}. "
-                f"Hãy cài đúng phiên bản ghi trong requirements-ml.txt.", RuntimeWarning)
+        if saved_ver:
+            saved_mm = ".".join(str(saved_ver).split(".")[:2])
+            curr_mm = ".".join(str(sklearn.__version__).split(".")[:2])
+            if saved_mm != curr_mm:
+                warnings.warn(
+                    f"Artifact được tạo bằng scikit-learn {saved_ver}, máy hiện dùng {sklearn.__version__}. "
+                    f"Hãy cài đúng phiên bản ghi trong requirements-ml.txt.", RuntimeWarning)
         return cls(encoder=enc, scaler=scl, feature_names=meta.get("feature_names"),
                    encoded_cat_names=meta.get("encoded_cat_names"), numeric_medians=meta.get("numeric_medians"))
 

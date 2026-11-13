@@ -36,9 +36,65 @@ FILE_PROFILES = MODELS_DIR / "cluster_profiles.json"
 _CACHE = {}
 
 
+class ArtifactError(RuntimeError):
+    """Lỗi không đồng bộ giữa các artifact mô hình hoặc môi trường."""
+    pass
+
+
+def _check_training_lineage(metadata: Optional[dict] = None, supervised: Optional[dict] = None, unsupervised: Optional[dict] = None):
+    """Kiểm tra tính nhất quán giữa bộ tiền xử lý và các mô hình."""
+    if metadata:
+        saved_ver = metadata.get("sklearn_version")
+        if saved_ver:
+            import sklearn
+            # So sánh major.minor (ví dụ '1.9' == '1.9') để tương thích giữa các bản vá 1.9.0, 1.9.1, 1.9.2
+            saved_mm = ".".join(str(saved_ver).split(".")[:2])
+            curr_mm = ".".join(str(sklearn.__version__).split(".")[:2])
+            if saved_mm != curr_mm:
+                raise ArtifactError(f"Artifact dùng scikit-learn {saved_ver}, môi trường hiện tại là {sklearn.__version__}.")
+
+        meta_rows = metadata.get("train_rows")
+        if supervised and meta_rows:
+            sup_rows = supervised.get("metadata", {}).get("train_rows") or supervised.get("train_rows")
+            if sup_rows and meta_rows != sup_rows:
+                raise ArtifactError(
+                    f"Metadata tiền xử lý và model không khớp train_rows: {meta_rows} != {sup_rows}. "
+                    f"Cần bộ encoder, scaler và model cùng lần huấn luyện."
+                )
+
+
 def _load_artifacts():
     """Load model artifacts with in-memory caching."""
     if not _CACHE:
+        # Load and verify metadata lineage
+        meta_file = PROCESSED_DIR / "preprocessing_metadata.json"
+        metadata = {}
+        if meta_file.exists():
+            try:
+                with open(meta_file, "r", encoding="utf-8") as f:
+                    metadata = json.load(f)
+            except Exception:
+                pass
+
+        sup_file = MODELS_DIR / "supervised_metrics.json"
+        supervised = {}
+        if sup_file.exists():
+            try:
+                with open(sup_file, "r", encoding="utf-8") as f:
+                    supervised = json.load(f)
+            except Exception:
+                pass
+
+        unsup_file = MODELS_DIR / "unsupervised_metrics.json"
+        unsupervised = {}
+        if unsup_file.exists():
+            try:
+                with open(unsup_file, "r", encoding="utf-8") as f:
+                    unsupervised = json.load(f)
+            except Exception:
+                pass
+
+        _check_training_lineage(metadata, supervised, unsupervised)
         # Preprocessor
         if (PROCESSED_DIR / "encoder.joblib").exists() and (PROCESSED_DIR / "scaler.joblib").exists():
             _CACHE["preprocessor"] = FlightDataPreprocessor.load(PROCESSED_DIR)
