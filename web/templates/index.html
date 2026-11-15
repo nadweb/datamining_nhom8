@@ -3,47 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vietnam Flight Delay & Risk Intelligence Platform</title>
+  <meta name="description" content="FlightRisk VN - Hệ thống khai phá dữ liệu và dự báo rủi ro trễ, hủy chuyến bay tại Việt Nam">
+  <title>Vietnam Flight Delay & Risk Intelligence Platform | FlightRisk VN</title>
   <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="data:,">
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header & Navigation Bar -->
   <header class="navbar">
     <div class="brand">
-      <span>✈️ FlightRisk VN</span>
-      <span style="font-size: 0.85rem; font-weight: normal; opacity: 0.8;">| Khai phá & Dự báo rủi ro Chuyến bay Việt Nam</span>
+      <span class="brand-logo" aria-hidden="true">✈️</span>
+      <div class="brand-text">
+        <span class="brand-title">FlightRisk VN</span>
+        <span class="brand-subtitle">| Khai phá &amp; Dự báo rủi ro Chuyến bay Việt Nam</span>
+      </div>
     </div>
-    <nav class="nav-tabs">
-      <button class="nav-btn active" data-tab="simulator-tab">Dự Báo Trực Tiếp</button>
-      <button class="nav-btn" data-tab="models-tab">Mô Hình Supervised</button>
-      <button class="nav-btn" data-tab="clusters-tab">Phân Cụm Unsupervised</button>
-      <button class="nav-btn" data-tab="rules-tab">Tập Luật FP-Growth</button>
+    <nav class="nav-tabs" role="tablist" aria-label="Điều hướng phân hệ">
+      <button class="nav-btn active" data-tab="simulator-tab" role="tab" aria-controls="simulator-tab" aria-selected="true">
+        🎯 Dự Báo Trực Tiếp
+      </button>
+      <button class="nav-btn" data-tab="models-tab" role="tab" aria-controls="models-tab" aria-selected="false">
+        📊 Mô Hình Supervised
+      </button>
+      <button class="nav-btn" data-tab="clusters-tab" role="tab" aria-controls="clusters-tab" aria-selected="false">
+        🧩 Phân Cụm Unsupervised
+      </button>
+      <button class="nav-btn" data-tab="rules-tab" role="tab" aria-controls="rules-tab" aria-selected="false">
+        🔗 Tập Luật FP-Growth
+      </button>
     </nav>
   </header>
 
+  <!-- System Status Strip -->
+  <div class="status-strip">
+    <div class="container status-strip-inner">
+      <div class="status-pill">
+        <span>Phân tích: <strong>Supervised + K-Means + FP-Growth</strong></span>
+      </div>
+      <div class="status-pill">
+        <span>Phạm vi: <strong>5 Sân bay FIDS (SGN, HAN, DAD, CXR, PQC) &bull; 7 Hãng bay VN</strong></span>
+      </div>
+      <div class="status-pill">
+        <span>Ngưỡng trễ của dự án: <strong>&ge; 15 phút</strong></span>
+      </div>
+    </div>
+  </div>
+
   <main class="container">
     <!-- TAB 1: Simulator & Real-time Predictor -->
-    <section id="simulator-tab" class="tab-content active">
+    <section id="simulator-tab" class="tab-content active" role="tabpanel">
+      <!-- Quick UAT Scenario Bar -->
+      <div class="scenario-bar card-compact">
+        <div class="scenario-label">
+          <span>⚡ Kịch bản kiểm thử nhanh (UAT Presets):</span>
+        </div>
+        <div class="scenario-actions">
+          <button type="button" class="chip-btn chip-low" data-preset="safe">
+            ☀️ Kịch bản 1: Sáng trời quang (VN &bull; SGN &rarr; HAN)
+          </button>
+          <button type="button" class="chip-btn chip-medium" data-preset="windy">
+            🌬️ Kịch bản 2: Chiều gió mạnh (QH &bull; DAD &rarr; SGN)
+          </button>
+          <button type="button" class="chip-btn chip-high" data-preset="storm">
+            ⛈️ Kịch bản 3: Tối mưa dông &amp; quá tải (VJ &bull; SGN &rarr; HAN)
+          </button>
+        </div>
+      </div>
+
       <div class="grid-2">
-        <!-- Input Form -->
+        <!-- Left Column: Input Form -->
         <div class="card">
-          <h2 class="card-title">Tham Số Chuyến Bay & Điều Kiện Bối Cảnh</h2>
+          <div class="card-header-row">
+            <h2 class="card-title">Tham Số Chuyến Bay &amp; Điều Kiện Bối Cảnh</h2>
+            <span class="card-step-badge">Đầu vào X (Zero Leakage)</span>
+          </div>
+
           <form id="predict-form">
+            <!-- Section A: Định danh & Tuyến bay -->
+            <div class="form-section-title">1. Thông tin Hãng &amp; Hành trình bay</div>
+
             <div class="form-row">
               <div class="form-group" style="flex: 1;">
                 <label for="airline">Hãng hàng không:</label>
                 <select id="airline" class="form-control">
-                  <option value="VN">Vietnam Airlines (VN)</option>
-                  <option value="VJ" selected>VietJet Air (VJ)</option>
-                  <option value="QH">Bamboo Airways (QH)</option>
-                  <option value="BL">Pacific Airlines (BL)</option>
-                  <option value="VU">Vietravel Airlines (VU)</option>
-                  <option value="0V">VASCO (0V)</option>
-                  <option value="9G">Sun PhuQuoc (9G)</option>
+                  <option value="VN">Vietnam Airlines (VN - FSC)</option>
+                  <option value="VJ" selected>VietJet Air (VJ - LCC)</option>
+                  <option value="QH">Bamboo Airways (QH - Hybrid)</option>
+                  <option value="BL">Pacific Airlines (BL - LCC)</option>
+                  <option value="VU">Vietravel Airlines (VU - Tourist)</option>
+                  <option value="0V">VASCO (0V - Regional)</option>
+                  <option value="9G">Sun PhuQuoc (9G - Seaplane)</option>
                 </select>
               </div>
               <div class="form-group" style="flex: 1;">
-                <label for="airport">Trạm quan sát:</label>
+                <label for="airport">Trạm quan sát FIDS:</label>
                 <select id="airport" class="form-control">
                   <option value="SGN" selected>Tân Sơn Nhất (SGN)</option>
                   <option value="HAN">Nội Bài (HAN)</option>
@@ -54,154 +107,462 @@
               </div>
             </div>
 
-            <div class="form-row">
+            <div class="form-row route-selector-row">
               <div class="form-group" style="flex: 1;">
-                <label for="origin">Sân bay đi:</label>
+                <label for="origin">Sân bay đi (Origin):</label>
                 <select id="origin" class="form-control">
-                  <option value="SGN" selected>SGN (TP.HCM)</option>
-                  <option value="HAN">HAN (Hà Nội)</option>
-                  <option value="DAD">DAD (Đà Nẵng)</option>
-                  <option value="CXR">CXR (Cam Ranh)</option>
-                  <option value="PQC">PQC (Phú Quốc)</option>
+                  <optgroup label="5 Sân bay Trọng điểm (FIDS)">
+                    <option value="SGN" selected>SGN - TP. Hồ Chí Minh</option>
+                    <option value="HAN">HAN - Hà Nội</option>
+                    <option value="DAD">DAD - Đà Nẵng</option>
+                    <option value="CXR">CXR - Cam Ranh (Nha Trang)</option>
+                    <option value="PQC">PQC - Phú Quốc</option>
+                  </optgroup>
+                  <optgroup label="Sân bay Nội địa khác">
+                    <option value="HPH">HPH - Hải Phòng (Cát Bi)</option>
+                    <option value="VII">VII - Vinh</option>
+                    <option value="HUI">HUI - Huế (Phú Bài)</option>
+                    <option value="DLI">DLI - Đà Lạt (Liên Khương)</option>
+                    <option value="VCA">VCA - Cần Thơ</option>
+                    <option value="UIH">UIH - Quy Nhơn (Phù Cát)</option>
+                    <option value="BMV">BMV - Buôn Ma Thuột</option>
+                    <option value="THD">THD - Thanh Hóa (Thọ Xuân)</option>
+                    <option value="VCS">VCS - Côn Đảo</option>
+                  </optgroup>
+                  <optgroup label="Sân bay Quốc tế">
+                    <option value="ICN">ICN - Seoul Incheon</option>
+                    <option value="NRT">NRT - Tokyo Narita</option>
+                    <option value="BKK">BKK - Bangkok Suvarnabhumi</option>
+                    <option value="SIN">SIN - Singapore Changi</option>
+                  </optgroup>
                 </select>
               </div>
+
+              <button type="button" id="swap-route-btn" class="btn-swap" title="Đảo chiều sân bay Đi / Đến" aria-label="Đảo chiều sân bay Đi và Đến">
+                ⇄
+              </button>
+
               <div class="form-group" style="flex: 1;">
-                <label for="destination">Sân bay đến:</label>
+                <label for="destination">Sân bay đến (Destination):</label>
                 <select id="destination" class="form-control">
-                  <option value="HAN" selected>HAN (Hà Nội)</option>
-                  <option value="SGN">SGN (TP.HCM)</option>
-                  <option value="DAD">DAD (Đà Nẵng)</option>
-                  <option value="CXR">CXR (Cam Ranh)</option>
-                  <option value="PQC">PQC (Phú Quốc)</option>
+                  <optgroup label="5 Sân bay Trọng điểm (FIDS)">
+                    <option value="HAN" selected>HAN - Hà Nội</option>
+                    <option value="SGN">SGN - TP. Hồ Chí Minh</option>
+                    <option value="DAD">DAD - Đà Nẵng</option>
+                    <option value="CXR">CXR - Cam Ranh (Nha Trang)</option>
+                    <option value="PQC">PQC - Phú Quốc</option>
+                  </optgroup>
+                  <optgroup label="Sân bay Nội địa khác">
+                    <option value="HPH">HPH - Hải Phòng (Cát Bi)</option>
+                    <option value="VII">VII - Vinh</option>
+                    <option value="HUI">HUI - Huế (Phú Bài)</option>
+                    <option value="DLI">DLI - Đà Lạt (Liên Khương)</option>
+                    <option value="VCA">VCA - Cần Thơ</option>
+                    <option value="UIH">UIH - Quy Nhơn (Phù Cát)</option>
+                    <option value="BMV">BMV - Buôn Ma Thuột</option>
+                    <option value="THD">THD - Thanh Hóa (Thọ Xuân)</option>
+                    <option value="VCS">VCS - Côn Đảo</option>
+                  </optgroup>
+                  <optgroup label="Sân bay Quốc tế">
+                    <option value="ICN">ICN - Seoul Incheon</option>
+                    <option value="NRT">NRT - Tokyo Narita</option>
+                    <option value="BKK">BKK - Bangkok Suvarnabhumi</option>
+                    <option value="SIN">SIN - Singapore Changi</option>
+                  </optgroup>
                 </select>
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group" style="flex: 1;">
-                <label for="direction">Hướng bay:</label>
+                <label for="direction">Hướng quan sát:</label>
                 <select id="direction" class="form-control">
                   <option value="DEPARTURES" selected>Khởi hành (Departures)</option>
                   <option value="ARRIVALS">Hạ cánh (Arrivals)</option>
                 </select>
               </div>
               <div class="form-group" style="flex: 1;">
-                <label for="route-type">Loại tuyến:</label>
+                <label for="route-type">Loại đường bay:</label>
                 <select id="route-type" class="form-control">
                   <option value="domestic" selected>Nội địa (Domestic)</option>
                   <option value="international">Quốc tế (International)</option>
                 </select>
               </div>
             </div>
+            <p class="form-hint">Trạm quan sát phải trùng sân bay đi với chuyến khởi hành, hoặc sân bay đến với chuyến hạ cánh.</p>
+
+            <!-- Section B: Lịch trình thời gian -->
+            <div class="form-section-title">2. Thời gian dự kiến (Cyclical Time Features)</div>
 
             <div class="form-row">
               <div class="form-group" style="flex: 1;">
-                <label for="flight-date">Ngày bay:</label>
-                <input type="date" id="flight-date" class="form-control" value="2026-11-06">
+                <label for="flight-date">Ngày bay theo lịch:</label>
+                <input type="date" id="flight-date" class="form-control" value="2026-11-06" required>
               </div>
               <div class="form-group" style="flex: 1;">
-                <label for="sched-time">Giờ dự kiến (HH:MM):</label>
-                <input type="time" id="sched-time" class="form-control" value="19:30">
+                <label for="sched-time">Giờ dự kiến (24h HH:MM):</label>
+                <input type="time" id="sched-time" class="form-control" value="19:30" required>
               </div>
             </div>
 
-            <div class="form-group">
-              <label>Lượng mưa (Precipitation): <span id="precip-val">2.5</span> mm</label>
-              <input type="range" id="precip" min="0" max="25" step="0.5" value="2.5" class="form-control">
+            <!-- Section C: Khí tượng & Tải sân bay -->
+            <div class="form-section-title">3. Điều kiện Thời tiết (Open-Meteo) &amp; Mật độ Sân bay</div>
+
+            <div class="form-group slider-group">
+              <div class="slider-header">
+                <label for="precip">🌧️ Lượng mưa (Precipitation):</label>
+                <span class="slider-readout"><strong id="precip-val">2.5</strong> mm</span>
+              </div>
+              <input type="range" id="precip" min="0" max="25" step="0.5" value="2.5" class="form-control range-slider">
+              <div class="slider-scale">
+                <span>0 mm (Không mưa)</span>
+                <span>2.5 mm (Mưa vừa)</span>
+                <span>10+ mm (Mưa rất to)</span>
+              </div>
             </div>
 
-            <div class="form-group">
-              <label>Gió giật (Wind Gusts): <span id="wind-val">35</span> km/h</label>
-              <input type="range" id="wind" min="5" max="80" step="1" value="35" class="form-control">
+            <div class="form-group slider-group">
+              <div class="slider-header">
+                <label for="wind">💨 Gió giật độ cao 10m (Wind Gusts):</label>
+                <span class="slider-readout"><strong id="wind-val">35</strong> km/h</span>
+              </div>
+              <input type="range" id="wind" min="5" max="80" step="1" value="35" class="form-control range-slider">
+              <div class="slider-scale">
+                <span>5 km/h (Êm)</span>
+                <span>30 km/h (Gió mạnh)</span>
+                <span>50+ km/h (Nguy hiểm)</span>
+              </div>
             </div>
 
             <div class="form-row">
-              <div class="form-group" style="flex: 1;">
-                <label>Tầm nhìn: <span id="vis-val">4000</span> m</label>
-                <input type="range" id="vis" min="500" max="10000" step="500" value="4000" class="form-control">
+              <div class="form-group slider-group" style="flex: 1.2;">
+                <div class="slider-header">
+                  <label for="vis">👁️ Tầm nhìn xa (Visibility):</label>
+                  <span class="slider-readout"><strong id="vis-val">4000</strong> m</span>
+                </div>
+                <input type="range" id="vis" min="500" max="10000" step="500" value="4000" class="form-control range-slider">
+                <div class="slider-scale">
+                  <span>500m (Mù đặc)</span>
+                  <span>5,000m (Hạn chế)</span>
+                  <span>10,000m (Tốt)</span>
+                </div>
               </div>
+
               <div class="form-group" style="flex: 1;">
-                <label for="weather-code">Hiện tượng WMO:</label>
+                <label for="weather-code">🌩️ Hiện tượng thời tiết WMO:</label>
                 <select id="weather-code" class="form-control">
-                  <option value="0">Quang mây (0)</option>
-                  <option value="61">Mưa rào (61)</option>
-                  <option value="80">Mưa dông nhẹ (80)</option>
-                  <option value="95" selected>Dông sét mạnh (95)</option>
+                  <option value="0">0 - Quang mây / Trời trong</option>
+                  <option value="1">1 - Ít mây (Mainly Clear)</option>
+                  <option value="45">45 - Sương mù (Fog)</option>
+                  <option value="61">61 - Mưa rào nhẹ / vừa</option>
+                  <option value="65">65 - Mưa rào nặng hạt</option>
+                  <option value="80">80 - Mưa rào nhẹ</option>
+                  <option value="95" selected>95 - Dông sét mạnh (Thunderstorm)</option>
                 </select>
               </div>
             </div>
 
-            <div class="form-group">
-              <label>Mật độ chuyến bay sân bay (Traffic Load): <span id="load-val">34</span> chuyến/giờ</label>
-              <input type="range" id="load" min="5" max="50" step="1" value="34" class="form-control">
+            <div class="form-group slider-group">
+              <div class="slider-header">
+                <label for="load">🛫 Mật độ khai thác sân bay (Airport Traffic Load):</label>
+                <span class="slider-readout"><strong id="load-val">34</strong> chuyến/giờ</span>
+              </div>
+              <input type="range" id="load" min="5" max="50" step="1" value="34" class="form-control range-slider">
+              <div class="slider-scale">
+                <span>5 (Thấp)</span>
+                <span>20 (Trung bình)</span>
+                <span>Trên 28 (Tải cao)</span>
+              </div>
             </div>
 
-            <button type="submit" class="btn-primary">Dự Báo Ngay</button>
+            <button type="submit" class="btn-primary">
+              Dự Báo Ngay
+            </button>
           </form>
         </div>
 
-        <!-- Result Box -->
-        <div class="card" id="predict-result">
-          <h2 class="card-title">Kết Quả Đánh Giá Rủi Ro</h2>
-          <div class="result-header risk-medium">
-            <span class="risk-badge" id="res-risk-level">RỦI RO: MEDIUM</span>
-            <h3 id="res-prediction-text" style="font-size: 1.4rem; margin: 0.5rem 0;">Đang tính toán...</h3>
-            <p>Chỉ số rủi ro trễ/hủy: <strong id="res-risk-score" style="font-size: 1.5rem;">0%</strong></p>
+        <!-- Right Column: Result Box -->
+        <div class="card result-card" id="predict-result">
+          <div class="card-header-row">
+            <h2 class="card-title">Kết Quả Đánh Giá Rủi Ro</h2>
+            <span class="card-step-badge badge-live">Real-time Inference</span>
           </div>
 
+          <!-- Boarding Pass Summary Strip -->
+          <div class="flight-pass" aria-label="Tóm tắt thông số đang chọn">
+            <div class="pass-route">
+              <span class="pass-code" id="summary-origin">SGN</span>
+              <span class="pass-arrow">─── ✈️ ───&gt;</span>
+              <span class="pass-code" id="summary-dest">HAN</span>
+            </div>
+            <div class="pass-meta">
+              <span id="summary-airline">Hãng: <strong>VJ</strong></span>
+              <span>&bull;</span>
+              <span id="summary-time">Giờ: <strong>19:30</strong> (2026-11-06)</span>
+              <span>&bull;</span>
+              <span id="summary-tag" class="golden-badge">Tam Giác Vàng</span>
+            </div>
+          </div>
+
+          <!-- Dynamic Risk Alert Banner -->
+          <div class="result-header">
+            <span class="risk-badge" id="res-risk-level">ĐANG CHỜ DỰ BÁO</span>
+            <h3 id="res-prediction-text" class="prediction-headline" role="status" aria-live="polite">Chờ kết quả từ máy chủ...</h3>
+            <p class="risk-score-line">
+              Chỉ số rủi ro trễ/hủy (Risk Score):
+              <strong id="res-risk-score" class="risk-score-number">--</strong>
+            </p>
+            <div class="risk-tier-legend">
+              <span class="tier-item tier-low">LOW (&lt;25%)</span>
+              <span class="tier-item tier-med">MEDIUM (25–&lt;45%)</span>
+              <span class="tier-item tier-high">HIGH (&ge;45%)</span>
+            </div>
+          </div>
+
+          <!-- Multi-class Probability Bars -->
           <div class="prob-bar-container">
-            <h4>Xác suất phân bố đa lớp (Multi-class Probabilities):</h4>
+            <h4 class="sub-heading">Xác suất phân bố đa lớp (Multi-class Probabilities):</h4>
+
             <div class="prob-row">
-              <div class="prob-label"><span>Đúng giờ (On-Time)</span><span id="prob-ontime-text">0%</span></div>
-              <div class="bar-track"><div class="bar-fill on-time" id="prob-ontime" style="width: 0%;"></div></div>
+              <div class="prob-label">
+                <span class="prob-name"><span class="dot dot-ontime"></span>Đúng giờ (On-Time)</span>
+                <span id="prob-ontime-text" class="prob-pct">--</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill on-time" id="prob-ontime" style="width: 0%;"></div>
+              </div>
             </div>
+
             <div class="prob-row">
-              <div class="prob-label"><span>Trễ chuyến (Delayed)</span><span id="prob-delayed-text">0%</span></div>
-              <div class="bar-track"><div class="bar-fill delayed" id="prob-delayed" style="width: 0%;"></div></div>
+              <div class="prob-label">
+                <span class="prob-name"><span class="dot dot-delayed"></span>Trễ chuyến (Delayed &ge; 15p)</span>
+                <span id="prob-delayed-text" class="prob-pct">--</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill delayed" id="prob-delayed" style="width: 0%;"></div>
+              </div>
             </div>
+
             <div class="prob-row">
-              <div class="prob-label"><span>Hủy chuyến (Cancelled)</span><span id="prob-cancelled-text">0%</span></div>
-              <div class="bar-track"><div class="bar-fill cancelled" id="prob-cancelled" style="width: 0%;"></div></div>
+              <div class="prob-label">
+                <span class="prob-name"><span class="dot dot-cancelled"></span>Hủy chuyến (Cancelled)</span>
+                <span id="prob-cancelled-text" class="prob-pct">--</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill cancelled" id="prob-cancelled" style="width: 0%;"></div>
+              </div>
             </div>
           </div>
 
-          <div style="margin-top: 1.5rem; border-top: 1px solid var(--border); padding-top: 1rem;">
-            <h4>Phân cụm vận hành tương ứng (Unsupervised K-Means Cluster):</h4>
-            <p style="margin: 0.25rem 0;"><strong id="res-cluster-name">Đang tải...</strong></p>
-            <p style="font-size: 0.85rem; color: var(--text-muted);">Đặc trưng cụm: <span id="res-cluster-rate"></span></p>
+          <!-- Unsupervised K-Means Cluster Profile Box -->
+          <div class="insight-section">
+            <h4 class="sub-heading">🧩 Phân cụm vận hành tương ứng (Unsupervised K-Means Cluster):</h4>
+            <div class="cluster-box">
+              <p class="cluster-title"><strong id="res-cluster-name">Đang tải...</strong></p>
+              <p class="cluster-meta">
+                Đặc trưng cụm: <span id="res-cluster-rate" class="cluster-rate-highlight">--</span>
+              </p>
+            </div>
           </div>
 
-          <div style="margin-top: 1.5rem; border-top: 1px solid var(--border); padding-top: 1rem;">
-            <h4>Luật kết hợp liên quan (Mined Association Rules):</h4>
-            <div id="res-rules-list"></div>
+          <!-- Mined Association Rules Box -->
+          <div class="insight-section">
+            <h4 class="sub-heading">🔗 Luật kết hợp cảnh báo liên quan (FP-Growth Association Rules):</h4>
+            <div id="res-rules-list" class="rules-list-container"></div>
           </div>
+          <p class="form-hint">Kết quả tương ứng với lần dự báo gần nhất. Sau khi đổi thông số, hãy bấm Dự Báo Ngay. Kết quả chỉ mang tính tham khảo, không phải trạng thái chuyến bay thực tế.</p>
         </div>
       </div>
     </section>
 
     <!-- TAB 2: Model Performance -->
-    <section id="models-tab" class="tab-content">
+    <section id="models-tab" class="tab-content" role="tabpanel">
       <div id="metrics-content">
-        <p>Đang tải thông tin mô hình học máy có giám sát...</p>
+        <p class="loading-state">Đang tải thông tin mô hình học máy có giám sát...</p>
       </div>
     </section>
 
     <!-- TAB 3: Unsupervised Clusters -->
-    <section id="clusters-tab" class="tab-content">
+    <section id="clusters-tab" class="tab-content" role="tabpanel">
       <div id="clusters-content">
-        <p>Đang tải hồ sơ phân cụm K-Means và phát hiện dị thường...</p>
+        <p class="loading-state">Đang tải hồ sơ phân cụm K-Means và phát hiện dị thường...</p>
       </div>
     </section>
 
     <!-- TAB 4: Mined Rules -->
-    <section id="rules-tab" class="tab-content">
+    <section id="rules-tab" class="tab-content" role="tabpanel">
       <div id="rules-content">
-        <p>Đang tải tập luật kết hợp khai phá...</p>
+        <p class="loading-state">Đang tải tập luật kết hợp khai phá...</p>
       </div>
     </section>
   </main>
 
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span><strong>FlightRisk VN</strong> &mdash; Đồ án Khai phá Dữ liệu (Nhóm 8)</span>
+      <span>Data Contract: 24 cột gốc &bull; 22 đặc trưng bổ sung &bull; Chia thời gian 80/20</span>
+    </div>
+  </footer>
+
+  <!-- Main Client Logic (Member 8) -->
   <script src="/static/app.js"></script>
+
+  <!-- UI Simulator Enhancements (Member 7: Presets, Route Swap & Live Boarding Pass Sync) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("predict-form");
+      const originEl = document.getElementById("origin");
+      const destEl = document.getElementById("destination");
+      const airlineEl = document.getElementById("airline");
+      const airportEl = document.getElementById("airport");
+      const directionEl = document.getElementById("direction");
+      const routeTypeEl = document.getElementById("route-type");
+      const dateEl = document.getElementById("flight-date");
+      const timeEl = document.getElementById("sched-time");
+
+      const GOLDEN = new Set(["SGN-HAN", "HAN-SGN", "SGN-DAD", "DAD-SGN", "HAN-DAD", "DAD-HAN"]);
+      const INTL = new Set(["ICN", "NRT", "BKK", "SIN"]);
+
+      // Keep tab accessibility state consistent with TV8's existing tab logic.
+      document.querySelectorAll(".nav-btn[data-tab]").forEach((button) => {
+        button.addEventListener("click", () => {
+          document.querySelectorAll(".nav-btn[data-tab]").forEach((tab) => {
+            tab.setAttribute("aria-selected", String(tab === button));
+          });
+        });
+      });
+
+      function validateRoute() {
+        if (!form || !originEl || !destEl || !airportEl || !directionEl || !routeTypeEl) return;
+        const origin = originEl.value;
+        const destination = destEl.value;
+        destEl.setCustomValidity(origin === destination ? "Sân bay đi và đến phải khác nhau." : "");
+        const expectedAirport = directionEl.value === "DEPARTURES" ? origin : destination;
+        airportEl.setCustomValidity(airportEl.value !== expectedAirport
+          ? "Trạm quan sát phải trùng sân bay tương ứng với hướng bay." : "");
+        const international = INTL.has(origin) || INTL.has(destination);
+        routeTypeEl.setCustomValidity((routeTypeEl.value === "international") !== international
+          ? "Loại đường bay phải phù hợp với sân bay đi và đến." : "");
+      }
+
+      function updatePassSummary() {
+        const orig = originEl ? originEl.value : "SGN";
+        const dest = destEl ? destEl.value : "HAN";
+        const air = airlineEl ? airlineEl.value : "VJ";
+        const tm = timeEl ? timeEl.value : "19:30";
+        const dt = dateEl ? dateEl.value : "2026-11-06";
+
+        const sumOrig = document.getElementById("summary-origin");
+        const sumDest = document.getElementById("summary-dest");
+        const sumAir = document.getElementById("summary-airline");
+        const sumTime = document.getElementById("summary-time");
+        const sumTag = document.getElementById("summary-tag");
+
+        if (sumOrig) sumOrig.textContent = orig;
+        if (sumDest) sumDest.textContent = dest;
+        if (sumAir) sumAir.innerHTML = `Hãng: <strong>${air}</strong>`;
+        if (sumTime) sumTime.innerHTML = `Giờ: <strong>${tm}</strong> (${dt})`;
+
+        if (sumTag) {
+          if (GOLDEN.has(`${orig}-${dest}`)) {
+            sumTag.textContent = "Tam Giác Vàng";
+            sumTag.className = "golden-badge";
+          } else if (INTL.has(orig) || INTL.has(dest) || (routeTypeEl && routeTypeEl.value === "international")) {
+            sumTag.textContent = "Tuyến Quốc Tế";
+            sumTag.className = "golden-badge intl-badge";
+          } else {
+            sumTag.textContent = "Tuyến Nội Địa";
+            sumTag.className = "golden-badge dom-badge";
+          }
+        }
+      }
+
+      // Swap Origin and Destination button
+      const swapBtn = document.getElementById("swap-route-btn");
+      if (swapBtn && originEl && destEl) {
+        swapBtn.addEventListener("click", () => {
+          const tmp = originEl.value;
+          originEl.value = destEl.value;
+          destEl.value = tmp;
+          const observed = directionEl.value === "DEPARTURES" ? originEl.value : destEl.value;
+          if (["SGN", "HAN", "DAD", "CXR", "PQC"].includes(observed)) {
+            airportEl.value = observed;
+          }
+          validateRoute();
+          updatePassSummary();
+          form.dispatchEvent(new Event("change", { bubbles: true }));
+        });
+      }
+
+      // Sync pass summary on form input changes
+      if (form) {
+        const onInput = () => { validateRoute(); updatePassSummary(); };
+        form.addEventListener("change", onInput);
+        form.addEventListener("input", onInput);
+        form.addEventListener("submit", (event) => {
+          validateRoute();
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            form.reportValidity();
+          }
+        }, true);
+      }
+
+      // Preset UAT scenario buttons
+      const PRESETS = {
+        safe: {
+          airline: "VN", airport: "SGN", origin: "SGN", destination: "HAN",
+          direction: "DEPARTURES", routeType: "domestic",
+          date: "2026-11-06", time: "08:00",
+          precip: 0, wind: 10, vis: 10000, wcode: 0, load: 15
+        },
+        windy: {
+          airline: "QH", airport: "DAD", origin: "DAD", destination: "SGN",
+          direction: "DEPARTURES", routeType: "domestic",
+          date: "2026-11-06", time: "14:45",
+          precip: 1.0, wind: 32, vis: 6000, wcode: 61, load: 26
+        },
+        storm: {
+          airline: "VJ", airport: "SGN", origin: "SGN", destination: "HAN",
+          direction: "DEPARTURES", routeType: "domestic",
+          date: "2026-11-06", time: "19:30",
+          precip: 15.0, wind: 45, vis: 2500, wcode: 95, load: 35
+        }
+      };
+
+      document.querySelectorAll("[data-preset]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const p = PRESETS[btn.dataset.preset];
+          if (!p) return;
+          airlineEl.value = p.airline;
+          airportEl.value = p.airport;
+          originEl.value = p.origin;
+          destEl.value = p.destination;
+          directionEl.value = p.direction;
+          routeTypeEl.value = p.routeType;
+          dateEl.value = p.date;
+          timeEl.value = p.time;
+          document.getElementById("weather-code").value = String(p.wcode);
+
+          const sliderMap = { precip: p.precip, wind: p.wind, vis: p.vis, load: p.load };
+          Object.entries(sliderMap).forEach(([id, val]) => {
+            const s = document.getElementById(id);
+            if (s) {
+              s.value = val;
+              s.dispatchEvent(new Event("input"));
+            }
+          });
+          validateRoute();
+          updatePassSummary();
+          if (form) form.requestSubmit();
+        });
+      });
+
+      validateRoute();
+      updatePassSummary();
+    });
+  </script>
 </body>
 </html>
 
