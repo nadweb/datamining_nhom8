@@ -86,7 +86,8 @@ def _check_training_lineage(metadata: dict, supervised: dict, unsupervised: dict
     runtime_mm = ".".join(str(sklearn.__version__).split(".")[:2])
     for saved in (metadata.get("sklearn_version"), supervised.get("environment", {}).get("sklearn"),
                   environment.get("sklearn")):
-        if saved and ".".join(str(saved).split(".")[:2]) != runtime_mm:
+        saved_mm = ".".join(str(saved).split(".")[:2]) if saved else None
+        if saved_mm and saved_mm != runtime_mm:
             raise ArtifactError(f"Artifact dùng scikit-learn {saved}, môi trường hiện tại là {sklearn.__version__}.")
 
 

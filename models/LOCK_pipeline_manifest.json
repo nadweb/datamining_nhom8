@@ -1,0 +1,79 @@
+{
+  "manifest_version": "1.0.0",
+  "lock_date": "2026-11-18 09:01:12",
+  "project_title": "Vietnam Aviation Flight Delay & Risk Intelligence",
+  "pipeline_lifecycle": {
+    "phase_1_collection": {
+      "status": "LOCKED",
+      "scope": "5 major VN airports (HAN, SGN, DAD, CXR, PQC) + Aviationstack API + Open-Meteo",
+      "raw_snapshot_count": 93074,
+      "canonical_records": 13965,
+      "immutability": "Raw snapshots stored with timestamp, deduplicated using SHA-256"
+    },
+    "phase_2_preprocess": {
+      "status": "LOCKED",
+      "data_contract_checks": "8/8 checks passed in pipeline/check_data.py",
+      "leakage_gates": "6/6 gates passed (Zero data leakage)",
+      "clean_records": 13965,
+      "train_records": 11172,
+      "test_records": 2793,
+      "split_cutoff_date": "2026-10-31"
+    },
+    "phase_3_processing": {
+      "status": "LOCKED",
+      "best_classifier": "RandomForestClassifier (Balanced Acc: 42.98%, +29.0% vs Dummy)",
+      "best_regressor": "HistGradientBoostingRegressor (MAE: 15.13 min)",
+      "unsupervised_clusters": 4,
+      "isolation_forest_anomalies": 392,
+      "permutation_test_p_value": 0.0,
+      "statistical_significance": "p < 0.001"
+    }
+  },
+  "artifact_checksums_sha256": {
+    "train_dataset": {
+      "path": "data/processed/train.csv",
+      "size_bytes": 4711563,
+      "sha256": "2326a9aa814dab76b9d73a4672d8ea116fc29f7d00469b9b1b34b2e5711fdb71"
+    },
+    "test_dataset": {
+      "path": "data/processed/test.csv",
+      "size_bytes": 1177315,
+      "sha256": "9eb3d04cf95fa5b4940ce0771110630e4d757e2e6962b78b6027f0784204f4a3"
+    },
+    "encoder": {
+      "path": "data/processed/encoder.joblib",
+      "size_bytes": 2086,
+      "sha256": "935102c812a0f009be0db60fbf88938d13fd0144b6e1003348b7ced326798ad6"
+    },
+    "scaler": {
+      "path": "data/processed/scaler.joblib",
+      "size_bytes": 1207,
+      "sha256": "76bd6f75807e97713f7ec5d071e081c15c7953da5b6ff3082c3f2918ddf18c04"
+    },
+    "classifier_model": {
+      "path": "models/best_classifier.joblib",
+      "size_bytes": 21910865,
+      "sha256": "205bad668c995e4c74cf173306c650c75c19628474e8fefd0181524df05f49ae"
+    },
+    "regressor_model": {
+      "path": "models/best_regressor.joblib",
+      "size_bytes": 562718,
+      "sha256": "a45210481f189f6553515088f0d8af5a227bc74ab39d257e4e677f7ef75c1f77"
+    },
+    "kmeans_model": {
+      "path": "models/kmeans_model.joblib",
+      "size_bytes": 48775,
+      "sha256": "cfddc0659b43ff9af7543471378be7ed0584ba2a3f67fde7721434c3f3a503f8"
+    },
+    "isolation_forest_model": {
+      "path": "models/isolation_forest.joblib",
+      "size_bytes": 1581817,
+      "sha256": "f7a8680c3011576e289ceafcd29e68ed8f2a1782370b95c24c036e837e8bb90a"
+    },
+    "pca_model": {
+      "path": "models/pca_model.joblib",
+      "size_bytes": 4367,
+      "sha256": "6c3d510f4657838a214fcefcb53b7e698e34e9b5e354e2ab1ff6ec7cd210435e"
+    }
+  }
+}

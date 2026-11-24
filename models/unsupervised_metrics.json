@@ -395,7 +395,7 @@
     }
   ],
   "environment": {
-    "sklearn": "1.9.1",
+    "sklearn": "1.8.0",
     "random_state": 42,
     "fit_on": "Train",
     "n_train": 11172,

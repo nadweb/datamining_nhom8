@@ -152,14 +152,76 @@ def standardize_status(row: Union[pd.Series, dict], delay_threshold: int = 15) -
     return label_status(row, delay_threshold)[2]
 
 
+def impute_actual_time(df: pd.DataFrame) -> pd.DataFrame:
+    """Điền khuyết actual_time theo quy tắc nghiệp vụ hàng không (Domain Business Rules):
+    - on_time: nếu actual_time thiếu -> điền bằng scheduled_time (hoặc estimated_time nếu có).
+    - delayed: nếu actual_time thiếu -> tính từ scheduled_time + delay_min.
+    - cancelled: giữ nguyên NaN (chuyến bay bị hủy không có giờ bay thực tế).
+    """
+    df = df.copy()
+    if "actual_time" not in df.columns or "scheduled_time" not in df.columns:
+        return df
+
+    def _fill_time(row):
+        act = row.get("actual_time")
+        if pd.notna(act) and str(act).strip().lower() not in {"", "nan", "none", "nat"}:
+            return str(act).strip()
+
+        st_clean = str(row.get("status_clean", "")).strip().lower()
+        if st_clean == "cancelled":
+            return np.nan
+
+        sched = str(row.get("scheduled_time", "")).strip()
+        s_min, _ = parse_time_min(sched)
+        if s_min is None:
+            return np.nan
+
+        if st_clean == "on_time":
+            est = str(row.get("estimated_time", "")).strip() if "estimated_time" in row else ""
+            e_min, _ = parse_time_min(est)
+            if e_min is not None:
+                h = (e_min // 60) % 24
+                m = e_min % 60
+                return f"{h:02d}:{m:02d}"
+            h = (s_min // 60) % 24
+            m = s_min % 60
+            return f"{h:02d}:{m:02d}"
+
+        if st_clean == "delayed":
+            delay = row.get("delay_min")
+            if pd.notna(delay):
+                try:
+                    tot_min = (s_min + int(round(float(delay)))) % 1440
+                    h = (tot_min // 60) % 24
+                    m = tot_min % 60
+                    return f"{h:02d}:{m:02d}"
+                except (ValueError, TypeError):
+                    pass
+            est = str(row.get("estimated_time", "")).strip() if "estimated_time" in row else ""
+            e_min, _ = parse_time_min(est)
+            if e_min is not None:
+                h = (e_min // 60) % 24
+                m = e_min % 60
+                return f"{h:02d}:{m:02d}"
+            h = (s_min // 60) % 24
+            m = s_min % 60
+            return f"{h:02d}:{m:02d}"
+
+        return np.nan
+
+    df["actual_time"] = df.apply(_fill_time, axis=1)
+    return df
+
+
 def apply_labels(df: pd.DataFrame, thr: int = 15) -> pd.DataFrame:
-    """Apply labeling rule to entire dataframe and enforce cancelled delay_min is NaN."""
+    """Apply labeling rule to entire dataframe, impute missing actual_time, and enforce cancelled delay_min is NaN."""
     df = df.copy()
     res = df.apply(label_status, axis=1, delay_threshold=thr)
     df["status"] = [r[0] for r in res]
     df["status_detail"] = [r[1] for r in res]
     df["status_clean"] = [r[2] for r in res]
     df.loc[df["status_clean"] == "cancelled", "delay_min"] = np.nan
+    df = impute_actual_time(df)
     return df
 
 

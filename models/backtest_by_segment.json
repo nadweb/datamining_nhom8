@@ -1,0 +1,107 @@
+{
+  "status": "OK",
+  "leakage_gates_6_of_6": {
+    "all_passed": true,
+    "checks": {
+      "gate_1_delay_min_not_in_features": true,
+      "gate_2_actual_time_not_in_features": true,
+      "gate_3_status_not_in_features": true,
+      "gate_4_status_detail_not_in_features": true,
+      "gate_5_is_delayed_for_analysis_not_in_features": true,
+      "gate_6_leg_key_flight_date_not_in_features": true
+    }
+  },
+  "permutation_test": {
+    "metric": "balanced_accuracy",
+    "model_score": 42.98,
+    "chance_level_mean": 33.3,
+    "p_value": 0.0,
+    "statistically_significant": true
+  },
+  "backtest_by_airport": {
+    "SGN": {
+      "count": 1243,
+      "accuracy": 68.87,
+      "balanced_accuracy": 67.26,
+      "macro_f1": 63.08,
+      "mae_model": 16.71,
+      "mae_baseline_0": 16.69
+    },
+    "HAN": {
+      "count": 969,
+      "accuracy": 69.35,
+      "balanced_accuracy": 61.36,
+      "macro_f1": 56.95,
+      "mae_model": 13.69,
+      "mae_baseline_0": 12.8
+    },
+    "DAD": {
+      "count": 272,
+      "accuracy": 68.38,
+      "balanced_accuracy": 39.52,
+      "macro_f1": 38.46,
+      "mae_model": 13.71,
+      "mae_baseline_0": 12.13
+    },
+    "CXR": {
+      "count": 108,
+      "accuracy": 76.85,
+      "balanced_accuracy": 63.19,
+      "macro_f1": 62.37,
+      "mae_model": 11.35,
+      "mae_baseline_0": 9.73
+    },
+    "PQC": {
+      "count": 201,
+      "accuracy": 77.11,
+      "balanced_accuracy": 63.91,
+      "macro_f1": 64.76,
+      "mae_model": 16.23,
+      "mae_baseline_0": 16.63
+    }
+  },
+  "backtest_by_airline": {
+    "VN": {
+      "count": 1148,
+      "accuracy": 74.91,
+      "balanced_accuracy": 54.54,
+      "macro_f1": 54.78
+    },
+    "VJ": {
+      "count": 1007,
+      "accuracy": 49.35,
+      "balanced_accuracy": 38.54,
+      "macro_f1": 32.93
+    },
+    "QH": {
+      "count": 5,
+      "accuracy": 100.0,
+      "balanced_accuracy": 100.0,
+      "macro_f1": 100.0
+    },
+    "VU": {
+      "count": 109,
+      "accuracy": 86.24,
+      "balanced_accuracy": 67.22,
+      "macro_f1": 63.55
+    },
+    "0V": {
+      "count": 95,
+      "accuracy": 95.79,
+      "balanced_accuracy": 50.0,
+      "macro_f1": 48.92
+    },
+    "BL": {
+      "count": 56,
+      "accuracy": 100.0,
+      "balanced_accuracy": 100.0,
+      "macro_f1": 100.0
+    },
+    "9G": {
+      "count": 373,
+      "accuracy": 93.57,
+      "balanced_accuracy": 54.43,
+      "macro_f1": 55.47
+    }
+  }
+}

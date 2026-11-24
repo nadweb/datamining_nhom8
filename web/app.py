@@ -11,6 +11,7 @@ import sys
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import unquote, urlparse
+import pandas as pd
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 if str(ROOT_DIR) not in sys.path:
@@ -53,6 +54,81 @@ def get_rules(limit: int = 50) -> list:
     return sorted(rules, key=sort_lift, reverse=True)[:limit]
 
 
+_FIDS_CACHE = None
+
+
+
+_AUDIT_CACHE = None
+
+
+def get_audit_flights() -> list:
+    """Retrieve verified ground-truth audit benchmark flights to check whether web predictions are right or wrong."""
+    global _AUDIT_CACHE
+    if _AUDIT_CACHE is not None:
+        return _AUDIT_CACHE
+
+    audit_path = BASE_DIR / "data" / "processed" / "audit_benchmark_flights.json"
+    if audit_path.exists():
+        data = _read_json(audit_path)
+        _AUDIT_CACHE = data.get("flights", []) if isinstance(data, dict) else data
+        return _AUDIT_CACHE
+    return []
+
+def get_fids_flights(limit: int = 60) -> list:
+    """Retrieve realistic flights from FIDS data to enable 1-click live prediction without manual entry."""
+    global _FIDS_CACHE
+    if _FIDS_CACHE is not None:
+        return _FIDS_CACHE[:limit]
+
+    features_path = BASE_DIR / "data" / "processed" / "flights_features.csv"
+    if not features_path.exists():
+        return []
+
+    try:
+        df = pd.read_csv(features_path, low_memory=False)
+        fids_df = df[df["source"].astype(str).str.startswith("guide_") | (df["source"] == "aviationstack_api")].copy()
+        unique_fids = fids_df.drop_duplicates(subset=["flight_no", "airport", "scheduled_time"])
+
+        sample_list = []
+        for apt in ["SGN", "HAN", "DAD", "CXR", "PQC"]:
+            sub = unique_fids[unique_fids["airport"] == apt].tail(15)
+            sample_list.append(sub)
+
+        res_df = pd.concat(sample_list).drop_duplicates(subset=["flight_no", "airport", "scheduled_time"]).sample(frac=1, random_state=42)
+
+        def _safe_float(v, default=0.0):
+            return default if pd.isna(v) else float(v)
+
+        def _safe_int(v, default=0):
+            return default if pd.isna(v) else int(v)
+
+        records = []
+        for _, r in res_df.iterrows():
+            records.append({
+                "flight_no": str(r.get("flight_no", "")).strip(),
+                "airline_code": str(r.get("airline_code", "VN")).strip(),
+                "airport": str(r.get("airport", "SGN")).strip(),
+                "origin": str(r.get("origin", "SGN")).strip(),
+                "destination": str(r.get("destination", "HAN")).strip(),
+                "direction": str(r.get("direction", "DEPARTURES")).strip(),
+                "route_type": str(r.get("route_type", "domestic")).strip(),
+                "flight_date": str(r.get("flight_date", "2026-11-06")).strip(),
+                "scheduled_time": str(r.get("scheduled_time", "08:00")).strip(),
+                "airport_load": _safe_float(r.get("airport_load"), 20.0),
+                "precipitation": _safe_float(r.get("precipitation"), 0.0),
+                "wind_gusts_10m": _safe_float(r.get("wind_gusts_10m"), 15.0),
+                "visibility": _safe_float(r.get("visibility"), 20000.0),
+                "weather_code": _safe_int(r.get("weather_code"), 0),
+                "status": str(r.get("status", "On-Time")).strip(),
+                "source": str(r.get("source", "guide_fids")).strip(),
+            })
+        _FIDS_CACHE = records
+        return _FIDS_CACHE[:limit]
+    except Exception as exc:
+        LOGGER.warning("Failed to load FIDS flights: %s", exc)
+        return []
+
+
 class FlightApiHandler(SimpleHTTPRequestHandler):
     """Serve the existing static UI and the five contracted API endpoints."""
 
@@ -82,6 +158,8 @@ class FlightApiHandler(SimpleHTTPRequestHandler):
         try:
             if path in ("/", "/index.html"):
                 return self._serve_file(TEMPLATES_DIR / "index.html", "text/html; charset=utf-8")
+            if path in ("/presentation", "/presentation.html", "/deck"):
+                return self._serve_file(TEMPLATES_DIR / "presentation.html", "text/html; charset=utf-8")
             if path.startswith("/static/"):
                 base = STATIC_DIR.resolve()
                 target = (base / unquote(path[len("/static/"):])).resolve()
@@ -96,6 +174,20 @@ class FlightApiHandler(SimpleHTTPRequestHandler):
                 return self._send_json(get_unsupervised_stats())
             if path == "/api/rules":
                 return self._send_json(get_rules())
+            if path == "/api/fids-flights":
+                return self._send_json(get_fids_flights())
+            if path == "/api/audit-flights":
+                return self._send_json(get_audit_flights())
+            if path == "/api/manifest":
+                manifest_path = ROOT_DIR / "models" / "LOCK_pipeline_manifest.json"
+                if manifest_path.exists():
+                    return self._send_json(_read_json(manifest_path))
+                return self._send_json({"error": "Manifest chưa tạo."}, 404)
+            if path == "/api/backtest":
+                bt_path = ROOT_DIR / "models" / "backtest_by_segment.json"
+                if bt_path.exists():
+                    return self._send_json(_read_json(bt_path))
+                return self._send_json({"error": "Dữ liệu backtest chưa tạo."}, 404)
             if path == "/health":
                 try:
                     _load_artifacts()

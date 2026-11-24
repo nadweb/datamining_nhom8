@@ -80,6 +80,21 @@ class TestLabelRulesAndDelays(unittest.TestCase):
         self.assertEqual(clean_15, "delayed")
         self.assertEqual(clean_30, "on_time")
 
+    def test_impute_actual_time_rules(self):
+        """Test business-logic imputation for actual_time."""
+        from pipeline.transformation import impute_actual_time
+        df = pd.DataFrame([
+            {"scheduled_time": "10:00", "actual_time": np.nan, "status_clean": "on_time", "delay_min": 0.0},
+            {"scheduled_time": "14:20", "actual_time": np.nan, "status_clean": "delayed", "delay_min": 25.0},
+            {"scheduled_time": "18:00", "actual_time": np.nan, "status_clean": "cancelled", "delay_min": np.nan},
+            {"scheduled_time": "20:00", "actual_time": "20:10", "status_clean": "on_time", "delay_min": 10.0},
+        ])
+        res = impute_actual_time(df)
+        self.assertEqual(res.loc[0, "actual_time"], "10:00")
+        self.assertEqual(res.loc[1, "actual_time"], "14:45")
+        self.assertTrue(pd.isna(res.loc[2, "actual_time"]))
+        self.assertEqual(res.loc[3, "actual_time"], "20:10")
+
 
 if __name__ == "__main__":
     unittest.main()
