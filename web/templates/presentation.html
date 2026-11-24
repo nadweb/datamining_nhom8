@@ -1125,9 +1125,9 @@
               <p style="font-size: 12.5px; color: var(--text-muted); margin-bottom: 8px;">Khai phá cấu trúc, HPO Bayesian & Backtest thực tế:</p>
               <ul style="font-size: 12.5px; line-height: 1.65; color: var(--text-main); margin-left: 18px; margin-bottom: 12px; flex: 1 1 auto;">
                 <li>Không gian 64 đặc trưng: Lịch, METAR & Tải tích lũy.</li>
-                <li>Interactive PCA trích xuất 4 kiểu chuyến bay (Silhouette 0.300).</li>
-                <li>33 Luật kết hợp FP-Growth (Lift cực đại đạt 2.15).</li>
-                <li>50 trials Bayesian Optuna, Backtest 5 sân bay.</li>
+                <li>Interactive PCA trích xuất 4 kiểu chuyến bay (43.32% phương sai).</li>
+                <li>83 Luật kết hợp FP-Growth (Lift cực đại đạt 1.99).</li>
+                <li>TimeSeriesSplit (CV=3), Backtest 5 sân bay &amp; 7 hãng bay.</li>
               </ul>
               <div class="stat-callout" style="margin-top: auto; padding: 10px 8px; background: #fffbeb; border: 1px solid #fef3c7; border-radius: 6px;">
                 <div class="stat-num" style="font-size: 20px; color: #d97706;">15.13m</div>
@@ -1216,7 +1216,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="card" style="display: flex; flex-direction: column; justify-content: center;">
+            <div class="card" style="display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
               <div class="card-title">Bí ẩn Tỷ lệ Thiếu actual_time 50.71%</div>
               <p style="font-size: 12px; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">
                 Tại sao <code>actual_time</code> lại thiếu đến hơn một nửa? Trong khai thác hàng không, bảng FIDS hiển thị lịch bay của cả ngày (bao gồm các chuyến sẽ bay vào buổi chiều và tối).
@@ -1230,7 +1230,7 @@
         <div class="callout-box">
           <strong>Ý nghĩa kỹ thuật:</strong> Thiếu actual_time là thuộc tính nghiệp vụ tự nhiên của hệ thống FIDS. Cần xử lý thông qua <strong>Phễu ICAO 3 cấp</strong> thay vì xóa dòng.
         </div>
-        <div class="slide-footnote">Nguồn: docs/schema.md · notebooks/01_eda_and_cleaning.ipynb · pipeline/cleaning_rules.py</div>
+        <div class="slide-footnote">Nguồn: docs/schema.md · notebooks/01_member1_cleaning_integration.ipynb · pipeline/processor.py</div>
       </section>
     
       <section class="slide" data-slide="4" data-phase="1">
@@ -1281,7 +1281,7 @@
         <div class="callout-box">
           <strong>Ý nghĩa dữ liệu:</strong> Việc chuẩn hóa 4 ca dị biệt này bảo đảm dữ liệu đầu vào phản ánh đúng bản chất vật lý và quy định vận tải hàng không quốc tế.
         </div>
-        <div class="slide-footnote">Nguồn: pipeline/cleaning_rules.py · tests/test_label_rules.py</div>
+        <div class="slide-footnote">Nguồn: pipeline/processor.py · tests/test_label_rules.py</div>
       </section>
     
       <section class="slide" data-slide="5" data-phase="1">
@@ -1294,7 +1294,7 @@
             <div class="card" style="border: 2px solid var(--teal-primary);">
               <div class="card-title">Chứng thực Đóng băng Dữ liệu Thô (Data Vault)</div>
               <div class="code-box" style="margin-bottom: 10px;">
-                <strong>FILE:</strong> data/raw/fids_snapshot_202611.json<br>
+                <strong>FILE:</strong> data/raw/aviationstack_api_202610.csv<br>
                 <strong>RECORDS:</strong> 13.965 chuyến bay nội địa VN (Train: 11.172 | Test: 2.793)<br>
                 <strong>FILE SIZE:</strong> 4.82 MB (4.823.104 bytes)<br>
                 <strong>SHA-256:</strong> e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855<br>
@@ -1345,7 +1345,7 @@
 
           <div class="grid-2col" style="gap: 14px; flex: 1 1 auto;">
             <!-- Left Card: Ban chat IATA vs ICAO -->
-            <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
               <div>
                 <div class="card-title" style="margin-bottom: 10px; font-size: 15px;">Bản chất, Vai trò &amp; Cách dùng thực tế (IATA vs ICAO)</div>
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
@@ -1379,7 +1379,7 @@
             </div>
 
             <!-- Right Card: Doi soat Ma San bay & Hang bay -->
-            <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
               <div>
                 <div class="card-title" style="margin-bottom: 10px; font-size: 15px;">Bảng Đối soát Mã Cảng Hàng Không &amp; Hãng Bay Việt Nam</div>
 
@@ -1666,7 +1666,7 @@
         <div class="callout-box">
           <strong>Đọc quy trình:</strong> Phễu 3 cấp nâng tỷ lệ bao phủ lên 100% bản ghi với độ tin cậy nhãn vàng 99.6%, triệt tiêu sự cần thiết phải drop 50.71% dữ liệu.
         </div>
-        <div class="slide-footnote">Nguồn: data/processed/flights_cleaned.csv · pipeline/cleaning_rules.py</div>
+        <div class="slide-footnote">Nguồn: data/processed/flights_cleaned.csv · pipeline/processor.py</div>
       </section>
     
       <section class="slide" data-slide="10" data-phase="2">
@@ -1722,42 +1722,42 @@
     
       <section class="slide" data-slide="11" data-phase="2">
         <div class="slide-header">
-          <h1 class="slide-title">Khóa pipeline ngày 11/11 sau khi đạt chuẩn kiểm soát Data Leakage (6/6 Gates)</h1>
-          <p class="slide-subtitle">Mọi bước xử lý dữ liệu được đóng gói và niêm phong trong pipeline tự động, vượt qua toàn bộ 6 bài kiểm tra Data Leakage</p>
+          <h1 class="slide-title">Khóa pipeline ngày 2026-11-18 sau khi đạt chuẩn kiểm soát Data Leakage (6/6 Gates)</h1>
+          <p class="slide-subtitle">Mọi bước xử lý dữ liệu được đóng gói và niêm phong trong pipeline tự động, vượt qua toàn bộ 6 bài kiểm tra Data Leakage &amp; 8/8 Data Contract checks</p>
         </div>
         <div class="slide-main-content">
           <div class="flow-stepper">
-            <div class="flow-step-box">HPO, calibration</div>
+            <div class="flow-step-box">Data Contract 8/8</div>
             <div class="flow-arrow">&rarr;</div>
             <div class="flow-step-box highlight">Leakage Gates 6/6</div>
             <div class="flow-arrow">&rarr;</div>
-            <div class="flow-step-box">Artifact: 50 models</div>
+            <div class="flow-step-box">9 Artifacts SHA-256</div>
             <div class="flow-arrow">&rarr;</div>
-            <div class="flow-step-box highlight">LOCK 11/11</div>
+            <div class="flow-step-box highlight">LOCK 2026-11-18</div>
           </div>
           <div style="display: flex; flex-direction: column; gap: 12px;">
             <div class="card" style="display: flex; align-items: center; gap: 24px; padding: 14px 20px;">
-              <div style="font-size: 24px; font-weight: 800; color: var(--teal-primary); font-family: var(--font-mono); min-width: 120px;">
+              <div style="font-size: 24px; font-weight: 800; color: var(--teal-primary); font-family: var(--font-mono); min-width: 140px;">
                 6/6 đạt
               </div>
               <div style="font-size: 13px; color: var(--text-main); line-height: 1.5;">
-                Cổng kiểm soát Data Leakage pq07 đạt đủ 6 mục; <code>actual_dep/arr</code>, <code>status_raw</code> và <code>flight_uuid</code> không làm đặc trưng. Scaler và Imputer chỉ fit trên tập Train.
+                Kiểm định Data Leakage đạt đủ 6 cổng trong <code>tests/test_leakage_gate.py</code>: <code>delay_min</code>, <code>actual_time</code>, <code>status</code>, <code>status_detail</code>, <code>is_delayed_for_analysis</code>, <code>leg_key/flight_date</code> không nằm trong 64 đặc trưng.
               </div>
             </div>
             <div class="card" style="display: flex; align-items: center; gap: 24px; padding: 14px 20px;">
-              <div style="font-size: 24px; font-weight: 800; color: var(--teal-primary); font-family: var(--font-mono); min-width: 120px;">
-                50 models
+              <div style="font-size: 24px; font-weight: 800; color: var(--teal-primary); font-family: var(--font-mono); min-width: 140px;">
+                8/8 checks
               </div>
               <div style="font-size: 13px; color: var(--text-main); line-height: 1.5;">
-                10 pipeline tiền xử lý, 17 TrainingRun; HPO ngẫu nhiên và Bayesian Optuna 50 trials; chọn được cấu hình tối ưu Random Forest và HistGradientBoosting.
+                Kiểm tra hợp đồng dữ liệu trong <code>pipeline/check_data.py</code> đạt 8/8; <code>RandomForestClassifier</code> (Bal Acc 42.98%) và <code>HistGradientBoostingRegressor</code> (MAE 15.13 phút) được chọn khóa.
               </div>
             </div>
             <div class="card" style="display: flex; align-items: center; gap: 24px; padding: 14px 20px;">
-              <div style="font-size: 24px; font-weight: 800; color: var(--teal-primary); font-family: var(--font-mono); min-width: 120px;">
-                11/11
+              <div style="font-size: 22px; font-weight: 800; color: var(--teal-primary); font-family: var(--font-mono); min-width: 140px;">
+                2026-11-18
               </div>
               <div style="font-size: 13px; color: var(--text-main); line-height: 1.5;">
-                Khóa pipeline trong <code>LOCK_pipeline_manifest.json</code> trước khi chạm tập test kiểm định độc lập. Đóng dấu thời gian niêm phong.
+                Khóa toàn bộ 9 artifact và mã băm SHA-256 trong <code>models/LOCK_pipeline_manifest.json</code> (dấu thời gian <code>2026-11-18 09:01:12</code>).
               </div>
             </div>
           </div>
@@ -1765,7 +1765,7 @@
         <div class="callout-box">
           <strong>Đọc quy trình:</strong> Kiểm soát Data Leakage bảo đảm tính toàn vẹn của mô hình khi suy luận thực tế: Tuyệt đối không dùng thông tin sau thời điểm cất cánh.
         </div>
-        <div class="slide-footnote">Nguồn: models/LOCK_pipeline_manifest.json · tests/test_leakage_gate.py</div>
+        <div class="slide-footnote">Nguồn: models/LOCK_pipeline_manifest.json · pipeline/check_data.py · tests/test_leakage_gate.py</div>
       </section>
     
       <section class="slide" data-slide="12" data-phase="3">
@@ -1834,8 +1834,8 @@
     
       <section class="slide" data-slide="13" data-phase="3">
         <div class="slide-header">
-          <h1 class="slide-title">Bốn kiểu chuyến bay trên PCA: Silhouette 0,300, cao nhất khi thử k = 2 đến 8</h1>
-          <p class="slide-subtitle">Không gian đặc trưng phi giám sát: 4 thành phần chính (PC1..4) giữ 80,7% phương sai, trích xuất cấu trúc phân cụm chuyến bay nội địa</p>
+          <h1 class="slide-title">Bốn kiểu chuyến bay trên PCA: 3 thành phần chính giữ 43,32% phương sai</h1>
+          <p class="slide-subtitle">Không gian đặc trưng phi giám sát: PCA (PC1 22,96%, PC2 11,00%, PC3 9,36%) kết hợp K-Means (k = 4) phân cụm 13.965 chuyến bay</p>
         </div>
         <div class="slide-main-content">
           <div class="grid-2col" style="grid-template-columns: 1.25fr 1fr; align-items: stretch;">
@@ -1844,10 +1844,10 @@
               <!-- Interactive Cluster Filter Chips -->
               <div class="pca-filter-bar">
                 <button class="pca-chip active" onclick="filterPcaCluster('all', this)">Tất cả (13.965)</button>
-                <button class="pca-chip" onclick="filterPcaCluster('1', this)" style="color: #0d5c58;">● Trục vàng SGN-HAN</button>
-                <button class="pca-chip" onclick="filterPcaCluster('2', this)" style="color: #0284c7;">● Du lịch biển đảo</button>
-                <button class="pca-chip" onclick="filterPcaCluster('3', this)" style="color: #d97706;">● Bay đêm giá rẻ</button>
-                <button class="pca-chip" onclick="filterPcaCluster('4', this)" style="color: #e11d48;">● Chặng ngắn liên vùng</button>
+                <button class="pca-chip" onclick="filterPcaCluster('1', this)" style="color: #0d5c58;">● Sáng · Thời tiết tốt</button>
+                <button class="pca-chip" onclick="filterPcaCluster('2', this)" style="color: #0284c7;">● Chiều · Gió/Tầm nhìn giảm</button>
+                <button class="pca-chip" onclick="filterPcaCluster('3', this)" style="color: #d97706;">● Tối · Thời tiết tốt</button>
+                <button class="pca-chip" onclick="filterPcaCluster('4', this)" style="color: #e11d48;">● Chiều · Mưa lớn/Dông</button>
               </div>
 
               <!-- Interactive SVG Scatter Canvas: Strictly Clamped -->
@@ -1865,8 +1865,8 @@
                 <line x1="42" y1="112" x2="368" y2="112" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
 
                 <!-- Text Labels: Crystal Clear separation from dots -->
-                <text x="205" y="238" font-size="10.5" fill="#475569" text-anchor="middle" font-family="'Inter', sans-serif">PC1 (26,6% phương sai - Tải sân bay & Hãng hàng không)</text>
-                <text x="16" y="112" font-size="10.5" fill="#475569" text-anchor="middle" transform="rotate(-90 16 112)" font-family="'Inter', sans-serif">PC2 (20,2% phương sai - Khí tượng)</text>
+                <text x="205" y="238" font-size="10.5" fill="#475569" text-anchor="middle" font-family="'Inter', sans-serif">PC1 (22,96% phương sai - Nguy cơ thời tiết &amp; Load×Weather)</text>
+                <text x="16" y="112" font-size="10.5" fill="#475569" text-anchor="middle" transform="rotate(-90 16 112)" font-family="'Inter', sans-serif">PC2 (11,00% phương sai - Tải sân bay &amp; Giờ bay)</text>
 
                 <!-- Dots enclosed in clip path so they never cross axes -->
                 <g clip-path="url(#pca-clip)">
@@ -1897,29 +1897,29 @@
               <div>
                 <table class="modern-table" style="font-size: 10.5px; margin-bottom: 6px;">
                   <tbody>
-                    <tr><td><span style="color: #0d5c58; font-weight: 700;">● Trục vàng SGN-HAN</span></td><td>4.902 chuyến</td><td>35.1%</td></tr>
-                    <tr><td><span style="color: #0284c7; font-weight: 700;">● Du lịch biển đảo</span></td><td>3.840 chuyến</td><td>27.5%</td></tr>
-                    <tr><td><span style="color: #d97706; font-weight: 700;">● Bay đêm giá rẻ</span></td><td>3.086 chuyến</td><td>22.1%</td></tr>
-                    <tr><td><span style="color: #e11d48; font-weight: 700;">● Chặng ngắn liên vùng</span></td><td>2.137 chuyến</td><td>15.3%</td></tr>
+                    <tr><td><span style="color: #0d5c58; font-weight: 700;">● Cụm 0: Sáng · Thời tiết tốt</span></td><td>5.833 chuyến (41.8%)</td><td>Trễ 23.9%</td></tr>
+                    <tr><td><span style="color: #0284c7; font-weight: 700;">● Cụm 1: Chiều · Gió/Tầm nhìn giảm</span></td><td>3.070 chuyến (22.0%)</td><td>Trễ 30.4%</td></tr>
+                    <tr><td><span style="color: #d97706; font-weight: 700;">● Cụm 2: Tối · Thời tiết tốt</span></td><td>4.816 chuyến (34.5%)</td><td>Trễ 30.3%</td></tr>
+                    <tr><td><span style="color: #e11d48; font-weight: 700;">● Cụm 3: Chiều · Mưa lớn/Dông</span></td><td>246 chuyến (1.8%)</td><td>Trễ <strong>39.0%</strong></td></tr>
                   </tbody>
                 </table>
                 <div style="background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 4px; padding: 6px 8px; font-size: 11px; color: var(--teal-dark); line-height: 1.4;">
-                  <strong>Silhouette k=4:</strong> 0,300 (Đỉnh tối ưu k=2..8) · <strong>ARI:</strong> 0,561 · <strong>Phương sai tích lũy:</strong> 80,7%
+                  <strong>Silhouette k=4:</strong> 0,0985 (k=2: 0,206) · <strong>PCA 3 thành phần:</strong> 43,32% phương sai · <strong>Dị thường IF:</strong> 392 ca (2,81%)
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="callout-box">
-          <strong>Đọc biểu đồ:</strong> Mỗi chấm là một chuyến bay đại diện từ không gian 13.965 chuyến bay thực tế (Train: 11.172, Test: 2.793). Rê chuột lên từng chấm để kiểm tra số hiệu, giờ cất cánh và tọa độ trích xuất không gian đặc trưng.
+          <strong>Đọc biểu đồ:</strong> Mỗi chấm là một điểm minh họa phân cụm từ 13.965 chuyến bay thực tế (Train: 11.172, Test: 2.793). Cụm 3 (Chiều, Mưa lớn/dông) có tỷ lệ trễ cao nhất (<strong>39,0%</strong>).
         </div>
-        <div class="slide-footnote">Nguồn: a1_flights_pca_clusters_long.csv · a2, a3_silhouette_by_k.csv · a3_ari.csv</div>
+        <div class="slide-footnote">Nguồn: models/unsupervised_metrics.json · models/cluster_profiles.json · modeling/unsupervised.py</div>
       </section>
     
       <section class="slide" data-slide="14" data-phase="3">
         <div class="slide-header">
-          <h1 class="slide-title">33 Luật kết hợp FP-Growth: Lift cực đại đạt 2,15 ở các khung giờ cao điểm</h1>
-          <p class="slide-subtitle">Khai phá các mẫu hình tiềm ẩn (Pattern Mining) giữa thời tiết, khung giờ và xác suất trễ chuyến</p>
+          <h1 class="slide-title">83 Luật kết hợp FP-Growth: Lift cực đại đạt 1,99 trên dữ liệu khai thác</h1>
+          <p class="slide-subtitle">Khai phá các mẫu hình tiềm ẩn (Pattern Mining) giữa hãng bay, sân bay, khung giờ và thời tiết trong data/mined_association_rules.csv</p>
         </div>
         <div class="slide-main-content">
           <div class="card">
@@ -1934,56 +1934,56 @@
                 </tr>
               </thead>
               <tbody>
-                <tr data-tooltip="Khung giờ cao điểm chiều tối tại Tân Sơn Nhất kết hợp mưa dông gây nghẽn vùng tiếp cận">
-                  <td><code>{Chiều tối 17-20h, Tân Sơn Nhất (SGN), Mưa rào}</code></td>
-                  <td><span class="badge badge-rose">Trễ &gt; 30 phút</span></td>
-                  <td>4.80%</td>
-                  <td>74.20%</td>
-                  <td><strong style="color: var(--teal-primary);">2.15</strong></td>
+                <tr data-tooltip="VietJet Air bay tối (18h-24h) gặp mưa nhẹ: 145 chuyến thỏa mãn, tỷ lệ trễ 52.35%">
+                  <td><code>{Airline=VJ &amp; Rain=light &amp; Slot=18h-24h}</code></td>
+                  <td><span class="badge badge-rose">Status=delayed</span></td>
+                  <td>1.07%</td>
+                  <td>52.35%</td>
+                  <td><strong style="color: var(--teal-primary);">1.99</strong></td>
                 </tr>
-                <tr data-tooltip="Tàu bay quay đầu nhiều chặng trong ngày dẫn đến trễ tích lũy cực đại vào cuối tuần">
-                  <td><code>{VietJet Air, Bay sau 19h, Ngày cuối tuần}</code></td>
-                  <td><span class="badge badge-rose">Trễ tích lũy &gt; 45p</span></td>
-                  <td>6.20%</td>
-                  <td>68.50%</td>
-                  <td><strong style="color: var(--teal-primary);">1.98</strong></td>
+                <tr data-tooltip="VietJet Air xuất phát tại Tân Sơn Nhất khung tối (18h-24h): 281 chuyến thỏa mãn">
+                  <td><code>{Airline=VJ &amp; Airport=SGN &amp; Slot=18h-24h}</code></td>
+                  <td><span class="badge badge-rose">Status=delayed</span></td>
+                  <td>2.07%</td>
+                  <td>51.94%</td>
+                  <td><strong style="color: var(--teal-primary);">1.97</strong></td>
                 </tr>
-                <tr data-tooltip="Hiện tượng sương mù bức xạ mùa đông tại miền Bắc làm giảm tầm nhìn nghiêm trọng">
-                  <td><code>{Nội Bài (HAN), Sương mù sáng sớm, Tầm nhìn &lt; 2km}</code></td>
-                  <td><span class="badge badge-amber">Trễ dây chuyền</span></td>
-                  <td>3.50%</td>
-                  <td>81.00%</td>
-                  <td><strong style="color: var(--teal-primary);">2.08</strong></td>
+                <tr data-tooltip="VietJet Air tại Tân Sơn Nhất khung chiều (12h-18h): 422 chuyến thỏa mãn">
+                  <td><code>{Airline=VJ &amp; Airport=SGN &amp; Slot=12h-18h}</code></td>
+                  <td><span class="badge badge-amber">Status=delayed</span></td>
+                  <td>3.11%</td>
+                  <td>50.60%</td>
+                  <td><strong style="color: var(--teal-primary);">1.92</strong></td>
                 </tr>
-                <tr data-tooltip="Chuyến bay sáng sớm của hãng quốc gia trên đường bay ưu tiên có độ đúng giờ cao nhất">
-                  <td><code>{Vietnam Airlines, Trục SGN-HAN, Sáng 08-10h}</code></td>
-                  <td><span class="badge badge-teal">Đúng giờ</span></td>
-                  <td>14.20%</td>
-                  <td>88.60%</td>
-                  <td><strong style="color: var(--teal-primary);">1.28</strong></td>
+                <tr data-tooltip="VietJet Air tại Tân Sơn Nhất gặp mưa nhẹ: 457 chuyến thỏa mãn">
+                  <td><code>{Airline=VJ &amp; Airport=SGN &amp; Rain=light}</code></td>
+                  <td><span class="badge badge-amber">Status=delayed</span></td>
+                  <td>3.37%</td>
+                  <td>50.39%</td>
+                  <td><strong style="color: var(--teal-primary);">1.91</strong></td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
         <div class="callout-box">
-          <strong>Ý nghĩa kinh doanh:</strong> Khi chỉ số Lift &gt; 2.0, sự xuất hiện của tổ hợp tiền đề làm xác suất trễ tăng hơn gấp đôi so với xác suất nền ngẫu nhiên.
+          <strong>Ý nghĩa kinh doanh:</strong> Tổ hợp <code>Airline=VJ</code> + <code>Slot=18h-24h</code> / <code>Airport=SGN</code> + <code>Rain=light</code> làm xác suất trễ tăng gần gấp đôi (<strong>Lift = 1.91–1.99</strong>, Confidence &gt; 50%).
         </div>
-        <div class="slide-footnote">Nguồn: data/mined_association_rules.csv · notebooks/02_unsupervised_mining.ipynb</div>
+        <div class="slide-footnote">Nguồn: data/mined_association_rules.csv (83 luật) · modeling/unsupervised.py · notebooks/05_member5_machine_learning.ipynb</div>
       </section>
     
       <section class="slide" data-slide="15" data-phase="3">
         <div class="slide-header">
-          <h1 class="slide-title">So sánh hiệu năng mô hình trên Test thật (2.793 chuyến): HGB &amp; RF vượt trội Baseline</h1>
+          <h1 class="slide-title">So sánh hiệu năng mô hình trên Tập Test (2.793 chuyến): HGB &amp; RF vượt trội Baseline</h1>
           <p class="slide-subtitle">Đánh giá trực tiếp bài toán Phân loại (Classification) và Hồi quy số phút trễ (Regression) từ models/supervised_metrics.json</p>
         </div>
         <div class="slide-main-content">
           <div class="grid-2col" style="gap: 14px;">
             <!-- Left Card: Classification Comparison -->
-            <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
               <div>
                 <div class="card-title" style="margin-bottom: 8px;">1. Phân loại 3 lớp trên Tập Test (2.793 chuyến)</div>
-                <table class="modern-table" style="font-size: 11px; margin-bottom: 10px;">
+                <table class="modern-table" style="font-size: 11px; margin-bottom: 6px;">
                   <thead><tr><th>Mô hình</th><th>Accuracy</th><th>Balanced Acc</th><th>Macro-F1</th><th>ROC-AUC</th></tr></thead>
                   <tbody>
                     <tr><td>Baseline (Most Frequent)</td><td>80.02%</td><td>33.33%</td><td>0.2963</td><td>0.5000</td></tr>
@@ -1993,7 +1993,7 @@
                   </tbody>
                 </table>
               </div>
-              <svg width="100%" height="125" viewBox="0 0 420 125" style="overflow: visible;">
+              <svg width="100%" viewBox="0 0 420 125" preserveAspectRatio="xMidYMid meet" style="width: 100%; flex: 1 1 auto; min-height: 190px; max-height: 290px; overflow: visible;">
                 <line x1="35" y1="100" x2="405" y2="100" stroke="#cbd5e1" stroke-width="1.2" />
                 <text x="10" y="25" font-size="9" fill="#64748b">80%</text>
                 <text x="10" y="65" font-size="9" fill="#64748b">40%</text>
@@ -2026,7 +2026,7 @@
             </div>
 
             <!-- Right Card: Regression MAE Comparison -->
-            <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: flex-start; gap: 12px;">
               <div>
                 <div class="card-title" style="margin-bottom: 8px;">2. Hồi quy Số phút trễ (CV 3-Fold &amp; Test MAE)</div>
                 <table class="modern-table" style="font-size: 11px; margin-bottom: 10px;">
@@ -2048,20 +2048,20 @@
           </div>
         </div>
         <div class="callout-box">
-          <strong>Đọc kết quả thật:</strong> Baseline đoán toàn bộ <code>on_time</code> đạt Accuracy ảo 80.02% nhưng Balanced Acc chỉ 33.33% (bỏ sót 100% chuyến trễ). RF &amp; HGB tăng Balanced Acc lên ~43–44% và ROC-AUC đạt <strong>0.809</strong>.
+          <strong>Đọc kết quả:</strong> Baseline đoán toàn bộ <code>on_time</code> đạt Accuracy ảo 80.02% nhưng Balanced Acc chỉ 33.33% (bỏ sót 100% chuyến trễ). RF &amp; HGB tăng Balanced Acc lên ~43–44% và ROC-AUC đạt <strong>0.809</strong>.
         </div>
-        <div class="slide-footnote">Nguồn: models/supervised_metrics.json · modeling/train.py (Tập Test thật 2.793 chuyến)</div>
+        <div class="slide-footnote">Nguồn: models/supervised_metrics.json · modeling/train.py (Tập Test 2.793 chuyến)</div>
       </section>
     
       <section class="slide" data-slide="16" data-phase="3">
         <div class="slide-header">
           <h1 class="slide-title">Backtest thực nghiệm 5 sân bay chính: SGN &amp; PQC đạt Balanced Acc cao nhất</h1>
-          <p class="slide-subtitle">Đánh giá chi tiết trên 2.793 chuyến Test thật (2026-10-31 &rarr; 2026-11-02) tại 5 cảng hàng không lớn từ models/backtest_by_segment.json</p>
+          <p class="slide-subtitle">Đánh giá chi tiết trên 2.793 chuyến Tập Test (2026-10-31 &rarr; 2026-11-02) tại 5 cảng hàng không lớn từ models/backtest_by_segment.json</p>
         </div>
         <div class="slide-main-content">
           <div class="grid-2col" style="gap: 14px;">
             <div class="card" style="padding: 14px;">
-              <div class="card-title" style="margin-bottom: 8px;">Bảng Chỉ số Backtest Thật theo 5 Cảng Hàng không</div>
+              <div class="card-title" style="margin-bottom: 8px;">Bảng Chỉ số Backtest theo 5 Cảng Hàng không</div>
               <table class="modern-table" style="font-size: 11px;">
                 <thead><tr><th>Sân bay</th><th>Số chuyến</th><th>Accuracy</th><th>Balanced Acc</th><th>Macro-F1</th><th>MAE Model / B0</th></tr></thead>
                 <tbody>
@@ -2073,9 +2073,9 @@
                 </tbody>
               </table>
             </div>
-            <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: space-between;">
-              <div class="card-title" style="margin-bottom: 6px;">Biểu đồ Accuracy vs Balanced Accuracy tại 5 Sân bay</div>
-              <svg width="100%" height="150" viewBox="0 0 430 150" style="overflow: visible;">
+            <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
+              <div class="card-title" style="margin-bottom: 4px; flex-shrink: 0;">Biểu đồ Accuracy vs Balanced Accuracy tại 5 Sân bay</div>
+              <svg width="100%" viewBox="0 0 430 150" preserveAspectRatio="xMidYMid meet" style="width: 100%; flex: 1 1 auto; min-height: 260px; max-height: 380px; overflow: visible;">
                 <line x1="35" y1="125" x2="415" y2="125" stroke="#cbd5e1" stroke-width="1.2" />
                 <text x="10" y="30" font-size="9" fill="#64748b">80%</text>
                 <text x="10" y="78" font-size="9" fill="#64748b">40%</text>
@@ -2122,71 +2122,46 @@
     
       <section class="slide" data-slide="17" data-phase="3">
         <div class="slide-header">
-          <h1 class="slide-title">Hyperparameter tuning: 4 lần train, 1 lần thêm dữ liệu, 1 ngưỡng</h1>
-          <p class="slide-subtitle">Mọi lựa chọn đều so trên tập Validation (3-Fold TimeSeriesSplit), giữ checkpoint tốt nhất theo Macro-F1 & MAE. Ngưỡng cổng là hyperparameter lúc suy luận, chọn sau khi có model.</p>
+          <h1 class="slide-title">Chọn lọc mô hình (TimeSeriesSplit CV=3) &amp; Hiệu chuẩn xác suất</h1>
+          <p class="slide-subtitle">Mọi mô hình đều được đánh giá qua 3-Fold TimeSeriesSplit trên 11.172 chuyến Train (Test hoàn toàn không tham gia việc chọn)</p>
         </div>
         <div class="slide-main-content">
-          <div class="card">
-            <table class="modern-table">
-              <thead>
-                <tr>
-                  <th style="width: 8%;">Lần</th>
-                  <th style="width: 32%;">Thay đổi</th>
-                  <th style="width: 44%;">Kết quả</th>
-                  <th style="width: 16%;">Quyết định</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr data-tooltip="Lần 1: Cấu hình mặc định RandomForest n=100, depth=None, unweighted">
-                  <td><strong>01</strong></td>
-                  <td>Full train, dữ liệu vòng 1 (3.813 / 820), cấu hình mặc định RF</td>
-                  <td>AUC dev 0,67 &rarr; 0,72; val loss tăng lại sau fold 1; delay_recall 0,45</td>
-                  <td><span class="badge badge-amber">Cần dữ liệu đa dạng hơn</span></td>
-                </tr>
-                <tr data-tooltip="Bổ sung 237 chuyến FIDS giờ chót và 14 đặc trưng METAR thời tiết">
-                  <td><strong>+</strong></td>
-                  <td>Thêm dữ liệu vòng 2: hạng 4-5 của câu cũ + 237 chuyến FIDS mới</td>
-                  <td>Train 3.813 &rarr; 5.503; delay_recall tăng vọt lên 62%</td>
-                  <td><span class="badge badge-emerald">Giữ</span></td>
-                </tr>
-                <tr data-tooltip="Áp dụng class_weight='balanced' để tăng trọng số lớp thiểu số">
-                  <td><strong>02</strong></td>
-                  <td>Full train, dữ liệu vòng 2, class_weight='balanced'</td>
-                  <td>Bal Acc dev &asymp; 0,40; mô hình nhạy quá mức với lớp cancelled (nhận nhầm 19% lúc sáng sớm)</td>
-                  <td><span class="badge badge-amber">Thử giảm tham số train</span></td>
-                </tr>
-                <tr data-tooltip="Đóng băng độ sâu cây max_depth=8, min_samples_leaf=20">
-                  <td><strong>03</strong></td>
-                  <td>Đóng băng tham số (max_depth=8, min_samples_leaf=20), label_smoothing 0.05</td>
-                  <td>Loss mượt hơn nhưng model yếu hơn bản full tuning trên dev</td>
-                  <td><span class="badge badge-rose">Bỏ</span></td>
-                </tr>
-                <tr data-tooltip="Khóa cấu hình tối ưu Optuna Bayesian Search 50 trials">
-                  <td><strong>04</strong></td>
-                  <td>Chạy 50 trials Bayesian Optuna: RF n=150, max_depth=12, split=2; HGB lr=0.08, leaf=31</td>
-                  <td>Bal Acc dev 0,385 &rarr; 0,429; MAE giảm 17,06 &rarr; 15,13 phút</td>
-                  <td><span class="badge badge-emerald">Đưa vào production</span></td>
-                </tr>
-                <tr data-tooltip="Tối ưu ngưỡng xác suất quyết định hủy chuyến (Probability Calibration Threshold)">
-                  <td><strong>T</strong></td>
-                  <td>Ngưỡng cổng hủy chuyến 0,25 so với 0,50 (Calibrated Threshold)</td>
-                  <td>0,25: giữ 29/30 ca hủy thật, chặn 50/50 ca bẫy ảo; 0,50: chỉ bắt được 11 ca hủy</td>
-                  <td><span class="badge badge-teal">Xem slide cổng</span></td>
-                </tr>
-                <tr data-tooltip="Định hướng nghiên cứu tiếp theo">
-                  <td><strong>.</strong></td>
-                  <td>Chưa thử: learning rate thấp hơn (1e-4), LoRA/TabNet, Transformer dự báo chuỗi thời gian</td>
-                  <td>TabNet cần tự gắn PyTorch; Transformer yêu cầu GPU streaming</td>
-                  <td><span class="badge badge-blue">Hướng tiếp</span></td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="grid-2col" style="gap: 14px;">
+            <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: flex-start; gap: 8px;">
+              <div class="card-title">1. Kết quả TimeSeriesSplit CV=3 (Trên Train)</div>
+              <table class="modern-table" style="font-size: 11px;">
+                <thead><tr><th>Mô hình (Bài toán)</th><th>CV Mean &plusmn; Std</th><th>3 Folds chi tiết</th><th>Quyết định</th></tr></thead>
+                <tbody>
+                  <tr><td>Baseline MostFreq (Clf)</td><td>0.2764 &plusmn; 0.0037</td><td>0.278 / 0.271 / 0.280</td><td><span class="badge badge-amber">Baseline</span></td></tr>
+                  <tr><td>Logistic Regression (Clf)</td><td>0.3722 &plusmn; 0.0650</td><td>0.409 / 0.427 / 0.281</td><td><span class="badge badge-blue">So sánh</span></td></tr>
+                  <tr><td>HistGradientBoosting (Clf)</td><td>0.4087 &plusmn; 0.0666</td><td>0.403 / 0.493 / 0.330</td><td><span class="badge badge-blue">Top 2 Clf</span></td></tr>
+                  <tr><td><strong>Random Forest (Clf)</strong></td><td><strong>0.4152 &plusmn; 0.0457</strong></td><td>0.413 / 0.472 / 0.360</td><td><span class="badge badge-teal">Chọn khóa</span></td></tr>
+                  <tr><td><strong>HGB_MAE Loss L1 (Reg)</strong></td><td><strong>17.058 phút</strong></td><td>17.78 / 15.49 / 17.90</td><td><span class="badge badge-teal">Chọn khóa</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: flex-start; gap: 8px;">
+              <div class="card-title">2. Kiểm định Hiệu chuẩn Xác suất (Probability Calibration)</div>
+              <table class="modern-table" style="font-size: 11px;">
+                <thead><tr><th>Nhóm dự báo (Bin)</th><th>Số mẫu</th><th>Xác suất dự báo TB</th><th>Tỷ lệ trễ thực tế</th></tr></thead>
+                <tbody>
+                  <tr><td>Bin 1 (Rủi ro thấp nhất)</td><td>559</td><td>17.69%</td><td>5.37%</td></tr>
+                  <tr><td>Bin 2</td><td>558</td><td>28.38%</td><td>10.93%</td></tr>
+                  <tr><td>Bin 3</td><td>559</td><td>37.81%</td><td>17.89%</td></tr>
+                  <tr><td>Bin 4</td><td>558</td><td>50.25%</td><td>27.06%</td></tr>
+                  <tr><td>Bin 5 (Rủi ro cao nhất)</td><td>559</td><td>66.05%</td><td><strong>38.28%</strong></td></tr>
+                </tbody>
+              </table>
+              <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">
+                <strong>Brier Score (delayed):</strong> <code>0.1884</code> (Tỷ lệ nền lớp trễ Test = <code>19.91%</code>). Tỷ lệ trễ thực tế tăng đơn điệu qua 5 bins (5.37% &rarr; 38.28%).
+              </div>
+            </div>
           </div>
         </div>
         <div class="callout-box">
-          <strong>Ý nghĩa tối ưu:</strong> Tinh chỉnh siêu tham số Bayesian kết hợp hiệu chuẩn ngưỡng xác suất (Probability Calibration) giúp mô hình không bỏ sót các chuyến bay chậm/hủy nghiêm trọng.
+          <strong>Ý nghĩa tối ưu:</strong> Chọn <code>RandomForest</code> dựa trên Macro-F1 CV cao nhất (<code>0.4152</code>, độ lệch chuẩn thấp nhất <code>0.0457</code>) và chọn <code>HGB_MAE (L1)</code> cho hồi quy vì MAE CV (<code>17.058m</code>) vượt trội hơn RF (<code>19.677m</code>) và HGB L2 (<code>20.329m</code>).
         </div>
-        <div class="slide-footnote">Nguồn: notebooks/03_model_evaluation.ipynb · report_seed0.json · models/LOCK_pipeline_manifest.json</div>
+        <div class="slide-footnote">Nguồn: modeling/train.py · models/supervised_metrics.json · models/LOCK_pipeline_manifest.json</div>
       </section>
     
       <section class="slide" data-slide="18" data-phase="3">
@@ -2284,14 +2259,14 @@
                 <tr>
                   <td><strong>Unsupervised</strong></td>
                   <td><code>Isolation Forest</code></td>
-                  <td>Tách 5% ngoại lai trễ cực đoan & lỗi radar</td>
+                  <td>Tách 392 dị thường (2.81%), tỷ lệ hủy cao gấp 2.8x (2.3% vs 0.81%)</td>
                   <td><strong>Rất phù hợp</strong>. Lọc sạch dữ liệu huấn luyện mà không cần nhãn giám sát trước.</td>
                   <td><span class="badge badge-purple">Lọc Outlier</span></td>
                 </tr>
                 <tr>
                   <td><strong>Unsupervised</strong></td>
                   <td><code>PCA + K-Means (k=4)</code></td>
-                  <td>Silhouette: 0.300, 4 PC giữ 80.7% phương sai</td>
+                  <td>Silhouette k=4: 0.0985 (k=2: 0.206), 3 PC giữ 43.32% phương sai</td>
                   <td><strong>Rất phù hợp</strong>. Phân đoạn nghiệp vụ (4 kiểu chuyến) và loại bỏ hoàn toàn đa cộng tuyến.</td>
                   <td><span class="badge badge-purple">Trích xuất PC</span></td>
                 </tr>
@@ -2312,16 +2287,18 @@
         </div>
         <div class="slide-main-content">
           <div class="grid-2col">
-            <div class="card" style="display: flex; justify-content: center; align-items: center; padding: 14px;">
-              <svg width="360" height="200" viewBox="0 0 360 200" style="overflow: visible;">
+            <div class="card" style="display: flex; flex-direction: column; justify-content: flex-start; gap: 8px; padding: 14px;">
+              <div class="card-title" style="margin-bottom: 4px; flex-shrink: 0;">Biểu đồ Phân phối Hoán vị (N = 1.000) vs Thực tế</div>
+              <svg width="100%" viewBox="0 0 360 200" preserveAspectRatio="xMidYMid meet" style="width: 100%; flex: 1 1 auto; min-height: 260px; max-height: 380px; overflow: visible;">
                 <line x1="30" y1="170" x2="340" y2="170" stroke="#cbd5e1" stroke-width="1.5" />
-                <path d="M 50 170 Q 110 170 130 110 Q 140 30 150 110 Q 170 170 230 170" fill="rgba(15, 118, 110, 0.15)" stroke="#0f766e" stroke-width="2" />
+                <path d="M 50 170 Q 110 170 130 110 Q 140 30 150 110 Q 170 170 230 170" fill="rgba(15, 118, 110, 0.15)" stroke="#0f766e" stroke-width="2" data-tooltip="Phân phối giả thuyết vô hiệu H0 (đoán ngẫu nhiên): Balanced Acc = 33.32% ± 0.85%" />
                 <line x1="140" y1="30" x2="140" y2="170" stroke="#0f766e" stroke-dasharray="3,3" />
                 <text x="140" y="22" font-size="10.5" fill="#0f766e" text-anchor="middle" font-weight="700">H0: &mu; = 33.32%</text>
 
-                <line x1="280" y1="20" x2="280" y2="170" stroke="#e11d48" stroke-width="2.5" />
-                <text x="280" y="15" font-size="10.5" fill="#e11d48" text-anchor="middle" font-weight="800">Thực tế = 42.98%</text>
-                <text x="280" y="185" font-size="11" fill="#e11d48" text-anchor="middle" font-weight="700">p &lt; 0.001</text>
+                <line x1="280" y1="20" x2="280" y2="170" stroke="#e11d48" stroke-width="3" data-tooltip="Điểm thực tế của mô hình: 42.98% (vượt >11σ so với ngẫu nhiên, p < 0.001)" />
+                <circle cx="280" cy="20" r="4" fill="#e11d48" data-tooltip="Thực tế = 42.98% (p < 0.001)" />
+                <text x="280" y="13" font-size="10.5" fill="#e11d48" text-anchor="middle" font-weight="800">Thực tế = 42.98%</text>
+                <text x="280" y="186" font-size="11" fill="#e11d48" text-anchor="middle" font-weight="700">p &lt; 0.001</text>
               </svg>
             </div>
             <div class="card">
@@ -2338,12 +2315,12 @@
         <div class="callout-box">
           <strong>Ý nghĩa khoa học:</strong> Khẳng định 64 đặc trưng khai thác thực tế nắm bắt đúng bản chất vật lý và quy luật vận hành hàng không, không xảy ra hiện tượng overfit ngẫu nhiên.
         </div>
-        <div class="slide-footnote">Nguồn: notebooks/03_model_evaluation.ipynb · tests/test_leakage_gate.py</div>
+        <div class="slide-footnote">Nguồn: modeling/train.py · tests/test_leakage_gate.py</div>
       </section>
     
       <section class="slide" data-slide="20" data-phase="3">
         <div class="slide-header">
-          <h1 class="slide-title">Backtest theo 7 Hãng hàng không trên Test thật: Phân hóa rõ giữa FSC &amp; LCC</h1>
+          <h1 class="slide-title">Backtest theo 7 Hãng hàng không trên Tập Test: Phân hóa rõ giữa FSC &amp; LCC</h1>
           <p class="slide-subtitle">Kết quả phân khúc theo mã hãng bay trên toàn bộ 2.793 chuyến Test từ models/backtest_by_segment.json</p>
         </div>
         <div class="slide-main-content">
@@ -2363,19 +2340,19 @@
                 </tbody>
               </table>
             </div>
-            <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: space-between;">
-              <div class="card-title" style="margin-bottom: 6px;">Phân tích Độ ổn định Dự báo giữa Các Hãng</div>
-              <div style="display: flex; flex-direction: column; gap: 8px; font-size: 11.5px; color: var(--text-muted); line-height: 1.5;">
-                <div style="background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; padding: 9px;">
-                  <strong style="color: var(--teal-dark);">Vietnam Airlines (<code>VN</code> · 1.148 chuyến):</strong><br>
+            <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
+              <div class="card-title" style="margin-bottom: 4px; flex-shrink: 0;">Phân tích Độ ổn định Dự báo giữa Các Hãng</div>
+              <div style="display: flex; flex-direction: column; gap: 10px; flex: 1 1 auto; font-size: 11.5px; color: var(--text-muted); line-height: 1.5;">
+                <div style="background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; padding: 10px 12px; flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center;">
+                  <div><strong style="color: var(--teal-dark);">Vietnam Airlines (<code>VN</code> · 1.148 chuyến):</strong></div>
                   Mô hình dự báo ổn định (Accuracy <strong>74.91%</strong>, Balanced Acc <strong>54.54%</strong>) do lịch khai thác của hãng truyền thống (FSC) có độ dự phòng quay đầu tàu bay tốt hơn.
                 </div>
-                <div style="background: #fff1f2; border: 1px solid #fecdd3; border-radius: 6px; padding: 9px;">
-                  <strong style="color: var(--rose-500);">VietJet Air (<code>VJ</code> · 1.007 chuyến):</strong><br>
+                <div style="background: #fff1f2; border: 1px solid #fecdd3; border-radius: 6px; padding: 10px 12px; flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center;">
+                  <div><strong style="color: var(--rose-500);">VietJet Air (<code>VJ</code> · 1.007 chuyến):</strong></div>
                   Là phân khúc khó dự báo nhất (Accuracy <strong>49.35%</strong>, Balanced Acc <strong>38.54%</strong>) do tần suất quay đầu tàu bay dày đặc của mô hình giá rẻ (LCC) khiến trễ dây chuyền xảy ra bất ngờ.
                 </div>
-                <div style="background: #f0f9ff; border: 1px solid #e0f2fe; border-radius: 6px; padding: 9px;">
-                  <strong style="color: var(--blue-500);">Nhóm hãng quy mô vừa/nhỏ (<code>VU, 9G, BL, QH</code>):</strong><br>
+                <div style="background: #f0f9ff; border: 1px solid #e0f2fe; border-radius: 6px; padding: 10px 12px; flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center;">
+                  <div><strong style="color: var(--blue-500);">Nhóm hãng quy mô vừa/nhỏ (<code>VU, 9G, BL, QH</code>):</strong></div>
                   Đạt độ chính xác 86%–100% do mẫu Test ít biến động đột biến và phần lớn bay đúng giờ.
                 </div>
               </div>
@@ -2390,103 +2367,102 @@
     
       <section class="slide" data-slide="21" data-phase="3">
         <div class="slide-header">
-          <h1 class="slide-title">Sân bay địa phương held-out: chạy một lần, lợi thế nhỏ và giảm dần</h1>
-          <p class="slide-subtitle">Đánh giá rủi ro lệch phân phối (Distribution Shift / Out-of-Domain) trên các chặng bay địa phương và biển đảo</p>
+          <h1 class="slide-title">Sân bay biển đảo &amp; địa phương: Phân hóa hiệu năng trên Tập Test</h1>
+          <p class="slide-subtitle">Đánh giá rủi ro lệch phân phối (Distribution Shift / Out-of-Domain) giữa nhóm biển đảo (PQC, CXR) và 18 sân bay lẻ</p>
         </div>
         <div class="slide-main-content">
           <div class="flow-stepper">
-            <div class="flow-step-box highlight">Pipeline đã khóa</div>
+            <div class="flow-step-box highlight">Pipeline đã khóa (2026-11-18)</div>
             <div class="flow-arrow">&rarr;</div>
-            <div class="flow-step-box">Fit trên trục lớn SGN/HAN/DAD</div>
+            <div class="flow-step-box">Trục lớn: SGN / HAN / DAD (99.7% cùng PQC, CXR)</div>
             <div class="flow-arrow">&rarr;</div>
-            <div class="flow-step-box highlight">Chạy một lần trên cụm đảo</div>
+            <div class="flow-step-box highlight">Kiểm thử cụm biển đảo (PQC, CXR)</div>
             <div class="flow-arrow">&rarr;</div>
-            <div class="flow-step-box">Báo cáo riêng</div>
+            <div class="flow-step-box">18 sân bay lẻ: 38 chuyến (0.27%)</div>
           </div>
-          <div class="grid-2col" style="align-items: center;">
-            <div class="card">
-              <div class="card-title">MAE trên Cụm Sân bay Địa phương (Thấp hơn là tốt)</div>
-              <div style="margin: 14px 0;">
-                <div style="font-size: 11.5px; color: var(--text-muted); margin-bottom: 4px;">Baseline đoán Median: <strong>18.42 phút</strong></div>
-                <div style="height: 18px; background: #e2e8f0; border-radius: 4px; overflow: hidden; margin-bottom: 12px;">
-                  <div style="width: 85%; height: 100%; background: #94a3b8;"></div>
+          <div class="grid-2col" style="align-items: stretch;">
+            <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
+              <div class="card-title">MAE trên Cụm Sân bay Biển đảo (Tập Test)</div>
+              <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 4px;">
+                <div>
+                  <div style="font-size: 11.5px; color: var(--text-muted); margin-bottom: 4px;">Phú Quốc (<code>PQC</code> · 201 chuyến): HGB <strong>16.23 phút</strong> vs Baseline 0 <strong>16.63 phút</strong></div>
+                  <div style="height: 18px; background: #e2e8f0; border-radius: 4px; overflow: hidden;">
+                    <div style="width: 78%; height: 100%; background: var(--teal-primary);" data-tooltip="PQC: Balanced Acc 63.91%, Macro-F1 64.76%, MAE 16.23m (tốt hơn Baseline 0)"></div>
+                  </div>
                 </div>
-                <div style="font-size: 11.5px; color: var(--text-muted); margin-bottom: 4px;">HistGradientBoosting (khóa): <strong>16.91 phút</strong></div>
-                <div style="height: 18px; background: #e2e8f0; border-radius: 4px; overflow: hidden;">
-                  <div style="width: 78%; height: 100%; background: var(--teal-primary);"></div>
+                <div>
+                  <div style="font-size: 11.5px; color: var(--text-muted); margin-bottom: 4px;">Cam Ranh (<code>CXR</code> · 108 chuyến): HGB <strong>11.35 phút</strong> vs Baseline 0 <strong>9.73 phút</strong></div>
+                  <div style="height: 18px; background: #e2e8f0; border-radius: 4px; overflow: hidden;">
+                    <div style="width: 56%; height: 100%; background: #0284c7;" data-tooltip="CXR: Balanced Acc 63.19%, Macro-F1 62.37%, MAE 11.35m"></div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div class="card" style="padding: 14px; display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
+              <div class="card-title">Độ phủ thực tế của 18 Sân bay Địa phương &amp; Lẻ</div>
               <div style="display: flex; flex-direction: column; gap: 10px;">
-                <div style="background: #f8fafc; border-radius: 6px; padding: 10px;">
-                  <div style="font-size: 20px; font-weight: 800; color: var(--teal-primary); font-family: var(--font-mono);">1,089</div>
-                  <div style="font-size: 11.5px; color: var(--text-muted);">Nhóm chặng bay ngắn miền núi kém baseline (chỉ số 1,089).</div>
+                <div style="background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; padding: 10px;">
+                  <div style="font-size: 20px; font-weight: 800; color: var(--teal-primary); font-family: var(--font-mono);">38 / 13.965 (0.27%)</div>
+                  <div style="font-size: 11.5px; color: var(--text-muted);">Tổng số chuyến của 18 sân bay lẻ (<code>VCS</code> 10, <code>HPH</code> 4, <code>VCA</code> 3, <code>DLI</code> 3, <code>BMV</code> 2, <code>VII</code> 2...).</div>
                 </div>
-                <div style="background: #f8fafc; border-radius: 6px; padding: 10px;">
-                  <div style="font-size: 20px; font-weight: 800; color: var(--rose-500); font-family: var(--font-mono);">2024-08-15</div>
-                  <div style="font-size: 11.5px; color: var(--text-muted);">Lợi thế của HGB giảm sau mốc này; cụm địa phương chỉ chạy một lần, báo cáo riêng.</div>
+                <div style="background: #fff1f2; border: 1px solid #fecdd3; border-radius: 6px; padding: 10px;">
+                  <div style="font-size: 14px; font-weight: 800; color: var(--rose-500); font-family: var(--font-mono);">Rủi ro Thiếu mẫu Out-of-Domain</div>
+                  <div style="font-size: 11.5px; color: var(--text-muted);">Số lượng mẫu quá nhỏ nên chưa đủ độ tin cậy để đánh giá riêng lẻ; cần thu thập thêm dữ liệu vi khí hậu tại các sân bay địa phương.</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="callout-box">
-          <strong>Ý nghĩa thực nghiệm:</strong> Mô hình hoạt động tối ưu trên các đường bay có mật độ cao; với sân bay miền núi/đảo nhỏ, cần bổ sung dữ liệu vi khí hậu chuyên biệt.
+          <strong>Ý nghĩa thực nghiệm:</strong> Mô hình đạt hiệu quả cao trên các đường bay mật độ lớn và cụm đảo chính (<code>PQC</code>, <code>CXR</code>); với 18 sân bay địa phương nhỏ, cần mở rộng thu thập dữ liệu trước khi triển khai dự báo chuyên biệt.
         </div>
-        <div class="slide-footnote">Nguồn: models/backtest_by_segment.json · models/LOCK_pipeline_manifest.json</div>
+        <div class="slide-footnote">Nguồn: models/backtest_by_segment.json · data/processed/flights_features.csv · models/LOCK_pipeline_manifest.json</div>
       </section>
     
       <section class="slide" data-slide="22" data-phase="4">
         <div class="slide-header">
-          <h1 class="slide-title">Tập test: 1.000 chuyến có nhãn chuẩn, 300 chuyến Corner Cases, khóa SHA-256</h1>
-          <p class="slide-subtitle">Chuyến có đáp án gắn với lịch bay FIDS và Aviationstack đối soát; chuyến bẫy được dò từ các tình huống dị biệt hàng không. Toàn bộ có kiểm tra logic trước khi khóa.</p>
+          <h1 class="slide-title">Tập Test (2.793 chuyến) &amp; Hệ thống Kiểm thử Tự động (22/22 Unit Tests)</h1>
+          <p class="slide-subtitle">Kiểm định độc lập trên 20% dữ liệu tương lai (2026-10-31 &rarr; 2026-11-02) kết hợp 4 bộ Unit Tests bảo vệ quy tắc nghiệp vụ</p>
         </div>
         <div class="slide-main-content">
           <div class="grid-2col">
             <div class="card">
-              <div class="card-title">Cấu trúc và số lượng</div>
+              <div class="card-title">Cấu trúc Tập Test &amp; Bộ Unit Tests Thực tế</div>
               <div style="margin-bottom: 12px;">
-                <div style="font-size: 13px; font-weight: 700; color: var(--teal-primary); margin-bottom: 2px;">standard · 1.000</div>
-                <div style="font-size: 11.5px; color: var(--text-muted);">on_time 712 · delayed 258 · cancelled 30 (cặp FIDS + Aviationstack đối chứng nguyên bản)</div>
+                <div style="font-size: 13px; font-weight: 700; color: var(--teal-primary); margin-bottom: 2px;">data/processed/test.csv · 2.793 chuyến</div>
+                <div style="font-size: 11.5px; color: var(--text-muted);"><code>on_time</code>: 2.235 (80.02%) · <code>delayed</code>: 556 (19.91%) · <code>cancelled</code>: 2 (0.07%)</div>
               </div>
               <div style="margin-bottom: 12px;">
-                <div style="font-size: 13px; font-weight: 700; color: var(--rose-500); margin-bottom: 2px;">boundary_traps · 300</div>
-                <div style="font-size: 11.5px; color: var(--text-muted);">midnight_rollover 85 · diversion 62 · code_share_dup 78 · tail_swap 75</div>
+                <div style="font-size: 13px; font-weight: 700; color: var(--rose-500); margin-bottom: 2px;">22/22 Unit Tests PASSED (0.05s)</div>
+                <div style="font-size: 11.5px; color: var(--text-muted);"><code>test_iata_mapping.py</code> · <code>test_label_rules.py</code> · <code>test_leakage_gate.py</code> · <code>test_web_frontend.py</code></div>
               </div>
               <ul style="font-size: 11.5px; line-height: 1.6; color: var(--text-dim); margin-left: 14px;">
-                <li>Lấy mẫu phân tầng từ 13.965 chuyến bay (tập Test gồm 2.793 chuyến held-out), mỗi chặng tối đa 20 chuyến.</li>
-                <li>14 chuyến bẫy bị loại vì lịch bay FIDS xung đột không thể giải quyết.</li>
-                <li>Không dùng để chọn tham số: chỉ đo model cuối.</li>
+                <li>Tập Test được khóa mã băm SHA-256: <code>9eb3d04cf95f...</code> (1.12 MB).</li>
+                <li>Tự động kiểm tra các ca biên: Midnight Rollover (+1d), đáp sớm (&lt; 0p &rarr; 0p), chuyến hủy.</li>
+                <li>Hoàn toàn không tham gia vào bước chọn mô hình hay fit Scaler/Encoder.</li>
               </ul>
             </div>
             <div style="display: flex; flex-direction: column; gap: 8px;">
               <div class="card" style="padding: 10px;">
-                <div style="margin-bottom: 4px;"><span class="badge badge-teal">positive · std-049</span></div>
+                <div style="margin-bottom: 4px;"><span class="badge badge-teal">Quy tắc ICAO Annex 14 (test_label_rules.py)</span></div>
                 <div class="code-box">
 {<br>
-&nbsp;&nbsp;"flight_id": "VN210",<br>
-&nbsp;&nbsp;"route": "SGN-HAN",<br>
-&nbsp;&nbsp;"sched_dep": "08:00",<br>
-&nbsp;&nbsp;"actual_dep": "08:14",<br>
-&nbsp;&nbsp;"api_dep": "08:14",<br>
-&nbsp;&nbsp;"ground_truth": "on_time",<br>
-&nbsp;&nbsp;"delay_min": 14,<br>
+&nbsp;&nbsp;"sched_time": "08:00",<br>
+&nbsp;&nbsp;"actual_time": "08:14",<br>
+&nbsp;&nbsp;"delay_minutes": 14,<br>
+&nbsp;&nbsp;"label": "on_time",<br>
 &nbsp;&nbsp;"rule": "ICAO Annex 14 (&lt;= 15 min)"<br>
 }
                 </div>
               </div>
               <div class="card" style="padding: 10px;">
-                <div style="margin-bottom: 4px;"><span class="badge badge-amber">boundary_trap · trap-014</span></div>
+                <div style="margin-bottom: 4px;"><span class="badge badge-amber">Ca biên Midnight Rollover (test_label_rules.py)</span></div>
                 <div class="code-box">
 {<br>
-&nbsp;&nbsp;"flight_id": "VJ198",<br>
-&nbsp;&nbsp;"route": "SGN-HAN",<br>
-&nbsp;&nbsp;"sched_dep": "23:55",<br>
-&nbsp;&nbsp;"actual_dep": "00:20 (+1d)",<br>
+&nbsp;&nbsp;"sched_time": "23:55",<br>
+&nbsp;&nbsp;"actual_time": "00:20 (+1d)",<br>
 &nbsp;&nbsp;"raw_diff": -1415,<br>
 &nbsp;&nbsp;"modulo_diff": +25,<br>
-&nbsp;&nbsp;"trap_type": "midnight_rollover",<br>
 &nbsp;&nbsp;"resolution": "modulo_1440_shift"<br>
 }
                 </div>
@@ -2495,9 +2471,9 @@
           </div>
         </div>
         <div class="callout-box">
-          <strong>Nguyên tắc khóa nhãn:</strong> Toàn bộ tập test và tập Corner Cases được niêm phong mã băm SHA-256, tuyệt đối không chỉnh sửa sau khi mô hình bắt đầu đánh giá.
+          <strong>Nguyên tắc khóa nhãn:</strong> Toàn bộ tập Test (2.793 dòng) được niêm phong mã băm SHA-256 trong <code>LOCK_pipeline_manifest.json</code> và kiểm chứng bằng 22 unit tests tự động.
         </div>
-        <div class="slide-footnote">Nguồn: benchmarks/flight_eval/data/test_set_v1.jsonl · test_set_v1.manifest.json</div>
+        <div class="slide-footnote">Nguồn: data/processed/test.csv · tests/test_iata_mapping.py · tests/test_label_rules.py · tests/test_leakage_gate.py</div>
       </section>
     
       <section class="slide" data-slide="23" data-phase="4">
@@ -2517,23 +2493,23 @@
                 </tr>
               </thead>
               <tbody>
-                <tr><td><code>flights_cleaned.csv</code></td><td>Ready Dataset</td><td>4.82 MB</td><td><code style="font-size: 10.5px;">e3b0c44298fc1c149afbf4c8996fb92427ae41e4...</code></td></tr>
-                <tr><td><code>weather_hourly.csv</code></td><td>METAR Weather</td><td>1.15 MB</td><td><code style="font-size: 10.5px;">7d2a8b9f104e5a2c9183401fa9112845cba89120...</code></td></tr>
-                <tr><td><code>mined_association_rules.csv</code></td><td>FP-Growth Rules</td><td>84 KB</td><td><code style="font-size: 10.5px;">a9f24e61d8bc5e30521e89b418a09cf451a92147...</code></td></tr>
-                <tr><td><code>best_classifier.joblib</code></td><td>Random Forest</td><td>3.24 MB</td><td><code style="font-size: 10.5px;">b41d8e90cf124aa789512ef90123ca41bca78901...</code></td></tr>
-                <tr><td><code>best_regressor.joblib</code></td><td>HistGradBoost</td><td>1.18 MB</td><td><code style="font-size: 10.5px;">5c88ea2103df99bb8401aa89104fa231bca51029...</code></td></tr>
-                <tr><td><code>kmeans_model.joblib</code></td><td>Clustering (k=4)</td><td>45 KB</td><td><code style="font-size: 10.5px;">2e0a4f5d1792bc814981ca90145bca71092a8190...</code></td></tr>
-                <tr><td><code>pca_model.joblib</code></td><td>PCA 4 Components</td><td>32 KB</td><td><code style="font-size: 10.5px;">8f1c49e29a34bc1098124ef90123ba45ca910481...</code></td></tr>
-                <tr><td><code>LOCK_pipeline_manifest.json</code></td><td>Niêm phong Pipeline</td><td>14 KB</td><td><code style="font-size: 10.5px;">fa719e083dbca10491823ab49120ca5128910ab4...</code></td></tr>
-                <tr><td><code>supervised_metrics.json</code></td><td>Báo cáo Thống kê</td><td>12 KB</td><td><code style="font-size: 10.5px;">cd4421b8f0991ae581290ab4123ca98104819ca1...</code></td></tr>
+                <tr><td><code>data/processed/train.csv</code></td><td>Tập Train (11.172 dòng)</td><td>4.49 MB</td><td><code style="font-size: 10.5px;">2326a9aa814dab76b9d73a4672d8ea116fc29f7d...</code></td></tr>
+                <tr><td><code>data/processed/test.csv</code></td><td>Tập Test (2.793 dòng)</td><td>1.12 MB</td><td><code style="font-size: 10.5px;">9eb3d04cf95f...</code></td></tr>
+                <tr><td><code>data/processed/encoder.joblib</code></td><td>OneHotEncoder (64 cột)</td><td>2.0 KB</td><td><code style="font-size: 10.5px;">935102c812a0...</code></td></tr>
+                <tr><td><code>data/processed/scaler.joblib</code></td><td>StandardScaler (Fit Train)</td><td>1.2 KB</td><td><code style="font-size: 10.5px;">76bd6f75807e...</code></td></tr>
+                <tr><td><code>models/best_classifier.joblib</code></td><td>Random Forest (Khóa Clf)</td><td>20.90 MB</td><td><code style="font-size: 10.5px;">205bad668c99...</code></td></tr>
+                <tr><td><code>models/best_regressor.joblib</code></td><td>HistGradBoost (MAE 15.13m)</td><td>549.5 KB</td><td><code style="font-size: 10.5px;">a45210481f18...</code></td></tr>
+                <tr><td><code>models/kmeans_model.joblib</code></td><td>K-Means Clustering (k=4)</td><td>47.6 KB</td><td><code style="font-size: 10.5px;">cfddc0659b43...</code></td></tr>
+                <tr><td><code>models/isolation_forest.joblib</code></td><td>Isolation Forest (392 ca)</td><td>1.51 MB</td><td><code style="font-size: 10.5px;">f7a8680c3011...</code></td></tr>
+                <tr><td><code>models/pca_model.joblib</code></td><td>PCA (3 Components · 43.32%)</td><td>4.3 KB</td><td><code style="font-size: 10.5px;">6c3d510f4657...</code></td></tr>
               </tbody>
             </table>
           </div>
         </div>
         <div class="callout-box">
-          <strong>Tiêu chuẩn MLOps:</strong> Bất kỳ sự thay đổi dù chỉ 1 byte trong dữ liệu hoặc trọng số mô hình đều làm sai lệch mã băm và bị hệ thống CI/CD từ chối ngay lập tức.
+          <strong>Tiêu chuẩn MLOps:</strong> Bất kỳ sự thay đổi dù chỉ 1 byte trong dữ liệu hoặc trọng số mô hình đều làm sai lệch mã băm SHA-256 trong <code>LOCK_pipeline_manifest.json</code>.
         </div>
-        <div class="slide-footnote">Nguồn: models/LOCK_pipeline_manifest.json · pipeline/manifest_verify.py</div>
+        <div class="slide-footnote">Nguồn: models/LOCK_pipeline_manifest.json · pipeline/check_data.py</div>
       </section>
     
       <section class="slide" data-slide="24" data-phase="4">
@@ -2689,17 +2665,17 @@
       3: [
         { slide: 12, label: "1 · Không gian 64 đặc trưng" },
         { slide: 13, label: "2 · Interactive PCA & Phân cụm" },
-        { slide: 14, label: "3 · Khai phá 33 luật FP-Growth" },
-        { slide: 15, label: "4 · So sánh Mô hình trên Test thật" },
+        { slide: 14, label: "3 · Khai phá 83 luật FP-Growth" },
+        { slide: 15, label: "4 · So sánh Mô hình trên Tập Test" },
         { slide: 16, label: "5 · Backtest 5 Sân bay lớn" },
-        { slide: 17, label: "6 · Tinh chỉnh tham số (Optuna)" },
+        { slide: 17, label: "6 · Chọn mô hình CV=3 & Calibration" },
         { slide: 18, label: "7 · So sánh Toàn cảnh Mô hình ML" },
         { slide: 19, label: "8 · Kiểm định hoán vị (p < 0.001)" },
         { slide: 20, label: "9 · Backtest theo 7 Hãng bay" },
         { slide: 21, label: "10 · Sân bay địa phương Held-out" }
       ],
       4: [
-        { slide: 22, label: "1 · Tập test & Corner Cases (SHA-256)" },
+        { slide: 22, label: "1 · Tập Test 2.793 & 22 Unit Tests" },
         { slide: 23, label: "2 · Bảng kiểm kê 9 Artifact SHA-256" },
         { slide: 24, label: "Hạn chế của dự án & Rủi ro" },
         { slide: 25, label: "Tổng kết toàn diện ba pha" }
