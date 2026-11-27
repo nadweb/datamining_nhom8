@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FlightRisk VN - Hệ thống khai phá dữ liệu và dự báo rủi ro trễ, hủy chuyến bay tại Việt Nam">
+  <meta name="description"
+    content="FlightRisk VN - Hệ thống khai phá dữ liệu và dự báo rủi ro trễ, hủy chuyến bay tại Việt Nam">
   <title>Vietnam Flight Delay &amp; Risk Intelligence Platform | FlightRisk VN</title>
-  
+
   <!-- Inter & JetBrains Mono Fonts (Matching Dashboard Standard) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="/static/style.css">
   <link rel="icon" href="data:,">
 </head>
+
 <body>
   <!-- Header & Navigation Bar (Clean Academic Standard) -->
   <header class="navbar">
     <div class="brand">
       <div class="brand-logo-wrap">
-        <svg class="brand-logo-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/>
+        <svg class="brand-logo-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z" />
         </svg>
       </div>
       <div class="brand-text">
@@ -28,22 +35,30 @@
         <span class="brand-subtitle">Khai phá &amp; Dự báo Rủi ro Chuyến bay Việt Nam</span>
       </div>
     </div>
-    
-    <nav class="nav-tabs" role="tablist" aria-label="Điều hướng phân hệ">
-      <button class="nav-btn active" data-tab="simulator-tab" role="tab" aria-controls="simulator-tab" aria-selected="true">
-        Dự Báo &amp; Tra Cứu Thực Tế
+
+    <nav class="nav-tabs" role="tablist" aria-label="Điều hướng phân hệ 7 Bước CRISP-DM">
+      <button class="nav-btn active" data-tab="simulator-tab" role="tab" aria-controls="simulator-tab"
+        aria-selected="true">
+        1. Dự Báo &amp; Tra Cứu
+      </button>
+      <button class="nav-btn" data-tab="eda-tab" role="tab" aria-controls="eda-tab" aria-selected="false">
+        2. EDA &amp; Schema Matrix
       </button>
       <button class="nav-btn" data-tab="models-tab" role="tab" aria-controls="models-tab" aria-selected="false">
-        Mô Hình Supervised
+        3. Tabular GBDT &amp; Đánh Giá
       </button>
       <button class="nav-btn" data-tab="clusters-tab" role="tab" aria-controls="clusters-tab" aria-selected="false">
-        Phân Cụm Unsupervised
+        4. Phân Cụm Unsupervised
       </button>
       <button class="nav-btn" data-tab="rules-tab" role="tab" aria-controls="rules-tab" aria-selected="false">
-        Tập Luật FP-Growth
+        5. Tập Luật FP-Growth
       </button>
-      <a href="/presentation" target="_blank" class="nav-deck-link" title="Mở Dashboard Trình Chiếu Chuẩn Học Thuật 24 Slide">
-        Toàn Cảnh Dashboard (24 Slides)
+      <button class="nav-btn" data-tab="drift-tab" role="tab" aria-controls="drift-tab" aria-selected="false">
+        6. Giám Sát Drift &amp; Registry
+      </button>
+      <a href="/presentation" target="_blank" class="nav-deck-link"
+        title="Mở Dashboard Trình Chiếu Học Thuật 7 Bước CRISP-DM">
+        Slide 7 Bước CRISP-DM
       </a>
     </nav>
   </header>
@@ -52,25 +67,25 @@
   <div class="status-strip">
     <div class="container status-strip-inner">
       <div class="status-pill">
-        <span>Phương pháp: <strong>HistGradientBoosting (ROC-AUC 0.8094) + K-Means + FP-Growth</strong></span>
+        <span>Bài toán chính: <strong>3 lớp ICAO (On-time / Delayed / Cancelled)</strong> &bull; <strong>+ Ablation Nhị phân &amp; Hồi quy MAE</strong></span>
       </div>
       <div class="status-pill">
-        <span>Phạm vi: <strong>5 Cảng FIDS (SGN, HAN, DAD, CXR, PQC) &bull; Aviationstack REST API</strong></span>
+        <span>Dữ liệu chuẩn: <strong>Bronze 12 &rarr; Silver 24 &rarr; Gold Causal T-3h</strong> &bull; <strong>FIDS + Aviationstack + Open-Meteo</strong></span>
       </div>
       <div class="status-pill">
-        <span>Ngưỡng trễ ICAO: <strong>&ge; 15 phút</strong> (Trễ) &bull; <strong>Dung sai MAE: 15.13 phút</strong></span>
+        <span>Vận hành: <strong>FastAPI + SHA-256 Approved Bundle</strong> &bull; <strong>4-Tier Drift Monitoring</strong></span>
       </div>
     </div>
   </div>
 
   <!-- Main Content Container -->
   <main class="container main-content">
-    
+
     <!-- ========================================== -->
     <!-- TAB 1: DỰ BÁO TRỰC TIẾP & TRA CỨU THỰC TẾ -->
     <!-- ========================================== -->
     <section id="simulator-tab" class="tab-content active" role="tabpanel">
-      
+
       <!-- FIDS Live Feed Quick-Selection Bar -->
       <div class="fids-quick-bar">
         <div class="fids-bar-header">
@@ -119,7 +134,9 @@
               </tr>
             </thead>
             <tbody id="fids-table-body">
-              <tr><td colspan="10" style="text-align: center; color: var(--text-muted);">Đang tải dữ liệu FIDS...</td></tr>
+              <tr>
+                <td colspan="10" style="text-align: center; color: var(--text-muted);">Đang tải dữ liệu FIDS...</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -128,13 +145,13 @@
         <div class="fids-presets-wrap">
           <span class="presets-label">Kịch bản kiểm thử nhanh (UAT Presets):</span>
           <div class="preset-buttons">
-            <button type="button" class="preset-chip" data-preset="clear_day">
+            <button type="button" class="preset-chip" data-preset="safe">
               1. Sáng trời quang (VN &bull; SGN &rarr; HAN)
             </button>
-            <button type="button" class="preset-chip" data-preset="windy_afternoon">
+            <button type="button" class="preset-chip" data-preset="windy">
               2. Chiều gió giật (QH &bull; DAD &rarr; SGN)
             </button>
-            <button type="button" class="preset-chip" data-preset="stormy_night">
+            <button type="button" class="preset-chip" data-preset="storm">
               3. Tối mưa dông &amp; quá tải (VJ &bull; SGN &rarr; HAN)
             </button>
           </div>
@@ -143,7 +160,7 @@
 
       <!-- Main Prediction Grid (Form Left, Result Right) -->
       <div class="grid-2col">
-        
+
         <!-- Left: Input Form Card -->
         <div class="card">
           <div class="card-header-row">
@@ -156,12 +173,18 @@
 
           <form id="predict-form">
             <div class="form-grid">
-              
+
               <!-- Airline -->
               <div class="form-group">
                 <label for="airline" class="form-label">Hãng hàng không (Airline)</label>
                 <select id="airline" class="form-control" required>
-                  <option value="VN">VN - Vietnam Airlines (FSC)</option><option value="VJ">VJ - Vietjet Air (LCC)</option><option value="QH">QH - Bamboo Airways (HYBRID)</option><option value="0V">0V - VASCO (REGIONAL)</option><option value="BL">BL - Pacific Airlines (LCC)</option><option value="VU">VU - Vietravel Airlines (TOURIST)</option><option value="9G">9G - Hai Au Aviation (SEAPLANE)</option>
+                  <option value="VN">VN - Vietnam Airlines (FSC)</option>
+                  <option value="VJ">VJ - Vietjet Air (LCC)</option>
+                  <option value="QH">QH - Bamboo Airways (HYBRID)</option>
+                  <option value="0V">0V - VASCO (REGIONAL)</option>
+                  <option value="BL">BL - Pacific Airlines (LCC)</option>
+                  <option value="VU">VU - Vietravel Airlines (TOURIST)</option>
+                  <option value="9G">9G - Hai Au Aviation (SEAPLANE)</option>
                 </select>
               </div>
 
@@ -169,7 +192,11 @@
               <div class="form-group">
                 <label for="airport" class="form-label">Cảng hàng không khảo sát (Airport)</label>
                 <select id="airport" class="form-control" required>
-                  <option value="SGN">SGN - 10.82°N, 106.65°E</option><option value="HAN">HAN - 21.22°N, 105.81°E</option><option value="DAD">DAD - 16.04°N, 108.20°E</option><option value="CXR">CXR - 12.23°N, 109.19°E</option><option value="PQC">PQC - 10.17°N, 103.99°E</option>
+                  <option value="SGN">SGN - 10.82°N, 106.65°E</option>
+                  <option value="HAN">HAN - 21.22°N, 105.81°E</option>
+                  <option value="DAD">DAD - 16.04°N, 108.20°E</option>
+                  <option value="CXR">CXR - 12.23°N, 109.19°E</option>
+                  <option value="PQC">PQC - 10.17°N, 103.99°E</option>
                 </select>
               </div>
 
@@ -178,15 +205,36 @@
                 <label class="form-label">Chặng bay (Origin &rarr; Destination)</label>
                 <div class="route-select-row">
                   <select id="origin" class="form-control" style="flex: 1;">
-                    <option value="SGN">SGN - 10.82°N, 106.65°E</option><option value="HAN">HAN - 21.22°N, 105.81°E</option><option value="DAD">DAD - 16.04°N, 108.20°E</option><option value="CXR">CXR - 12.23°N, 109.19°E</option><option value="PQC">PQC - 10.17°N, 103.99°E</option>
+                    <option value="SGN" selected>SGN - Tân Sơn Nhất (TP.HCM)</option>
+                    <option value="HAN">HAN - Nội Bài (Hà Nội)</option>
+                    <option value="DAD">DAD - Đà Nẵng</option>
+                    <option value="CXR">CXR - Cam Ranh (Nha Trang)</option>
+                    <option value="PQC">PQC - Phú Quốc</option>
+                    <option value="ICN">ICN - Incheon (Hàn Quốc)</option>
+                    <option value="BKK">BKK - Suvarnabhumi (Thái Lan)</option>
+                    <option value="SIN">SIN - Changi (Singapore)</option>
+                    <option value="NRT">NRT - Narita (Nhật Bản)</option>
+                    <option value="TPE">TPE - Đào Viên (Đài Loan)</option>
+                    <option value="HKG">HKG - Hồng Kông</option>
                   </select>
-                  <button type="button" id="swap-route-btn" class="btn-swap" title="Đảo chiều Sân bay Đi / Đến" aria-label="Đảo chiều">
+                  <button type="button" id="swap-route-btn" class="btn-swap" title="Đảo chiều Sân bay Đi / Đến"
+                    aria-label="Đảo chiều">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M7 16V4M7 4L3 8M7 4L11 8M17 8v12M17 20l4-4M17 20l-4-4"/>
+                      <path d="M7 16V4M7 4L3 8M7 4L11 8M17 8v12M17 20l4-4M17 20l-4-4" />
                     </svg>
                   </button>
                   <select id="destination" class="form-control" style="flex: 1;">
-                    <option value="SGN">SGN - 10.82°N, 106.65°E</option><option value="HAN">HAN - 21.22°N, 105.81°E</option><option value="DAD">DAD - 16.04°N, 108.20°E</option><option value="CXR">CXR - 12.23°N, 109.19°E</option><option value="PQC">PQC - 10.17°N, 103.99°E</option>
+                    <option value="SGN">SGN - Tân Sơn Nhất (TP.HCM)</option>
+                    <option value="HAN" selected>HAN - Nội Bài (Hà Nội)</option>
+                    <option value="DAD">DAD - Đà Nẵng</option>
+                    <option value="CXR">CXR - Cam Ranh (Nha Trang)</option>
+                    <option value="PQC">PQC - Phú Quốc</option>
+                    <option value="ICN">ICN - Incheon (Hàn Quốc)</option>
+                    <option value="BKK">BKK - Suvarnabhumi (Thái Lan)</option>
+                    <option value="SIN">SIN - Changi (Singapore)</option>
+                    <option value="NRT">NRT - Narita (Nhật Bản)</option>
+                    <option value="TPE">TPE - Đào Viên (Đài Loan)</option>
+                    <option value="HKG">HKG - Hồng Kông</option>
                   </select>
                 </div>
               </div>
@@ -228,13 +276,14 @@
             </div>
 
             <div class="sliders-grid">
-              
+
               <div class="slider-group">
                 <div class="slider-header">
                   <label for="precip" class="form-label">Lượng mưa (Precipitation)</label>
                   <span class="slider-readout"><strong id="precip-val">2.5</strong> mm</span>
                 </div>
-                <input type="range" id="precip" min="0" max="25" step="0.5" value="2.5" class="form-control range-slider">
+                <input type="range" id="precip" min="0" max="25" step="0.5" value="2.5"
+                  class="form-control range-slider">
               </div>
 
               <div class="slider-group">
@@ -250,7 +299,8 @@
                   <label for="vis" class="form-label">Tầm nhìn (Visibility)</label>
                   <span class="slider-readout"><strong id="vis-val">4000</strong> m</span>
                 </div>
-                <input type="range" id="vis" min="500" max="10000" step="500" value="4000" class="form-control range-slider">
+                <input type="range" id="vis" min="500" max="10000" step="500" value="4000"
+                  class="form-control range-slider">
               </div>
 
               <div class="slider-group">
@@ -279,7 +329,8 @@
             </div>
 
             <div class="form-actions" style="margin-top: 1.25rem;">
-              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem; font-size: 0.95rem; font-weight: 700;">
+              <button type="submit" class="btn btn-primary"
+                style="width: 100%; padding: 0.75rem; font-size: 0.95rem; font-weight: 700;">
                 Chạy Dự Báo &amp; Đánh Giá Rủi Ro
               </button>
             </div>
@@ -317,7 +368,8 @@
           <div class="result-header">
             <div>
               <span class="risk-badge" id="res-risk-level">ĐANG CHỜ DỰ BÁO</span>
-              <h3 id="res-prediction-text" class="prediction-headline" role="status" aria-live="polite">Chờ nạp thông số và bấm Chạy Dự Báo</h3>
+              <h3 id="res-prediction-text" class="prediction-headline" role="status" aria-live="polite">Chờ nạp thông số
+                và bấm Chạy Dự Báo</h3>
             </div>
             <div class="risk-score-box">
               <span class="risk-score-label">Điểm rủi ro:</span>
@@ -329,13 +381,13 @@
           <!-- Ground Truth Audit Verdict Banner (Dynamically Populated) -->
           <div id="res-audit-verdict" class="audit-verdict-card" style="display: none;"></div>
 
-          <!-- Multi-class Probabilities -->
+          <!-- 3-Class ICAO Probabilities -->
           <div class="prob-section">
-            <h4 class="sub-heading">Xác suất phân bố đa lớp (Multi-class Probabilities):</h4>
-            
+            <h4 class="sub-heading">Phân phối xác suất 3 lớp ICAO (trước T-3h):</h4>
+
             <div class="prob-row">
               <div class="prob-label-row">
-                <span>Đúng giờ (On-time, trễ &le; 15m)</span>
+                <span>Đúng giờ (On-time, trễ &lt; 15m)</span>
                 <span id="prob-ontime-text" class="prob-pct">--</span>
               </div>
               <div class="bar-track">
@@ -345,7 +397,7 @@
 
             <div class="prob-row">
               <div class="prob-label-row">
-                <span>Chậm chuyến (Delayed, trễ &gt; 15m)</span>
+                <span>Trễ chuyến (Delayed &ge; 15m)</span>
                 <span id="prob-delayed-text" class="prob-pct">--</span>
               </div>
               <div class="bar-track">
@@ -364,11 +416,19 @@
             </div>
           </div>
 
+          <div class="unsupervised-context-card" id="res-factors-box" style="margin-bottom: 0.9rem;">
+            <h4 class="sub-heading">Tín hiệu rủi ro đầu vào trước giờ bay (Pre-Flight Factors):</h4>
+            <ul id="res-factors-list" style="margin: 0; padding-left: 1.1rem; font-size: 0.82rem; color: var(--text-muted);">
+              <li>Chờ dữ liệu đầu vào...</li>
+            </ul>
+          </div>
+
           <!-- Unsupervised Context -->
           <div class="unsupervised-context-card">
             <h4 class="sub-heading">Phân cụm vận hành tương ứng (Unsupervised K-Means Cluster):</h4>
             <p class="cluster-title"><strong id="res-cluster-name">Đang tải...</strong></p>
-            <p class="cluster-meta">Đặc trưng cụm: <span id="res-cluster-rate" class="cluster-rate-highlight">--</span></p>
+            <p class="cluster-meta">Đặc trưng cụm: <span id="res-cluster-rate" class="cluster-rate-highlight">--</span>
+            </p>
           </div>
 
           <!-- Matched FP-Growth Association Rules -->
@@ -390,23 +450,27 @@
         <div class="card-header-row">
           <div>
             <h2 class="card-title">Tra Cứu &amp; Đối Soát Kết Quả Dự Báo vs Thực Tế (Ground Truth Audit Explorer)</h2>
-            <p class="card-subtitle">Truy cứu kết quả đối chứng thực tế để kiểm tra mô hình dự báo Đúng hay Sai trên từng chuyến bay</p>
+            <p class="card-subtitle">Truy cứu kết quả đối chứng thực tế để kiểm tra mô hình dự báo Đúng hay Sai trên
+              từng chuyến bay</p>
           </div>
           <div class="audit-summary-badges">
-            <span class="badge badge-emerald" id="audit-stat-correct">Đúng: 65 / 80 (81.3%)</span>
-            <span class="badge badge-rose" id="audit-stat-incorrect">Sai / Lệch: 15 / 80 (18.7%)</span>
+            <span class="badge badge-emerald" id="audit-stat-correct">Đúng: --</span>
+            <span class="badge badge-rose" id="audit-stat-incorrect">Sai / Lệch: --</span>
           </div>
         </div>
 
         <!-- Search & Filter Controls -->
         <div class="audit-controls-bar">
           <div class="audit-search-wrap">
-            <input type="text" id="audit-search-input" class="form-control" placeholder="Tìm kiếm theo mã chuyến (ví dụ: VN216, VJ180, QH1404) hoặc sân bay...">
+            <input type="text" id="audit-search-input" class="form-control"
+              placeholder="Tìm kiếm theo mã chuyến (ví dụ: VN216, VJ180, QH1404) hoặc sân bay...">
           </div>
           <div class="audit-filter-chips">
-            <button type="button" class="chip-btn active" data-filter="all" onclick="filterAuditTable('all', this)">Tất Cả (80)</button>
-            <button type="button" class="chip-btn chip-correct" data-filter="correct" onclick="filterAuditTable('correct', this)">Chỉ Chuyến ĐÚNG (65)</button>
-            <button type="button" class="chip-btn chip-incorrect" data-filter="incorrect" onclick="filterAuditTable('incorrect', this)">Chỉ Chuyến SAI / LỆCH (15)</button>
+            <button type="button" class="chip-btn active" id="audit-chip-all" data-filter="all" onclick="filterAuditTable('all', this)">Tất Cả</button>
+            <button type="button" class="chip-btn chip-correct" id="audit-chip-correct" data-filter="correct"
+              onclick="filterAuditTable('correct', this)">Chỉ Chuyến ĐÚNG</button>
+            <button type="button" class="chip-btn chip-incorrect" id="audit-chip-incorrect" data-filter="incorrect"
+              onclick="filterAuditTable('incorrect', this)">Chỉ Chuyến SAI / LỆCH</button>
           </div>
         </div>
 
@@ -424,7 +488,10 @@
               </tr>
             </thead>
             <tbody id="audit-table-body">
-              <tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 1.5rem;">Đang tải dữ liệu đối soát thực tế...</td></tr>
+              <tr>
+                <td colspan="6" style="text-align: center; color: var(--text-muted); padding: 1.5rem;">Đang tải dữ liệu
+                  đối soát thực tế...</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -433,24 +500,47 @@
     </section>
 
     <!-- ========================================== -->
-    <!-- TAB 2: MÔ HÌNH HỌC MÁY CÓ GIÁM SÁT        -->
+    <!-- TAB 2: EDA & MA TRẬN SCHEMA (STEP 2-4)     -->
+    <!-- ========================================== -->
+    <section id="eda-tab" class="tab-content" role="tabpanel">
+      <div class="dashboard-handoff-card">
+        <div class="handoff-header">
+          <span class="badge badge-teal">BƯỚC 2–3 CRISP-DM &bull; CHỨNG MINH BẰNG SỐ LIỆU</span>
+          <h2 class="handoff-title">Kiểm Kê Thô, Ma Trận Tiến Hóa Schema (Bronze &rarr; Silver &rarr; Gold &rarr; X) &amp; EDA Tương Quan</h2>
+        </div>
+        <p class="handoff-desc">
+          Trình bày minh bạch quá trình hợp nhất dữ liệu hỗn hợp <strong>58 cột thô &rarr; 12 FIELDS &rarr; 24 CLEANED_FIELDS &rarr; Gold Causal T-3h &rarr; Ma trận ML</strong> kèm ma trận <strong>Pearson (r)</strong>,
+          <strong>Spearman (&rho;)</strong>, <strong>Cramér's V</strong> và kiểm định phi tham số.
+        </p>
+        <div class="handoff-actions">
+          <a href="/presentation" target="_blank" class="btn btn-teal-primary">
+            Mở Slide Thuyết Trình 7 Bước
+          </a>
+        </div>
+      </div>
+
+      <div id="eda-content">
+        <p class="loading-state">Đang tải dữ liệu EDA và Ma trận Tương quan...</p>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 3: MÔ HÌNH TABULAR GBDT & ĐÁNH GIÁ     -->
     <!-- ========================================== -->
     <section id="models-tab" class="tab-content" role="tabpanel">
       <!-- Executive Dashboard Handoff Card -->
       <div class="dashboard-handoff-card">
         <div class="handoff-header">
-          <span class="badge badge-teal">NỘI DUNG ĐÃ CHUYỂN SANG DASHBOARD CHUYÊN SÂU</span>
-          <h2 class="handoff-title">Toàn Bộ Báo Cáo So Sánh Mô Hình &amp; Hyperparameter Đã Được Đưa Lên Dashboard</h2>
+          <span class="badge badge-teal">BƯỚC 4–5 CRISP-DM &bull; TABULAR GBDT</span>
+          <h2 class="handoff-title">Bài Toán Chính 3 Lớp ICAO (On-time / Delayed / Cancelled) &amp; Ablation Nhị Phân / Hồi Quy MAE</h2>
         </div>
         <p class="handoff-desc">
-          Để giao diện web tập trung cho việc vận hành dự báo và tra cứu đúng/sai, toàn bộ phân tích chi tiết về 5 thuật toán học máy (HistGradientBoosting ROC-AUC 0.8094, Random Forest, Logistic Regression, KNN, CNN), ma trận nhầm lẫn và tối ưu hóa Optuna đã được chuyển sang Dashboard chuẩn học thuật 24 slide.
+          Đối chiếu có kiểm chứng thống kê (<strong>Temporal Expanding CV</strong>, <strong>Bootstrap CI</strong>, <strong>McNemar</strong>, <strong>Permutation Test</strong>):
+          <strong>Majority</strong> &rarr; <strong>Heuristic</strong> &rarr; <strong>HistGradientBoosting</strong> &rarr; <strong>XGBoost</strong> &rarr; <strong>CatBoost</strong> cùng nghiên cứu độ nhạy <strong>T-1h / T-3h / T-6h</strong>.
         </p>
         <div class="handoff-actions">
-          <a href="/presentation#17" target="_blank" class="btn btn-teal-primary">
-            Xem Slide 17: So Sánh Toàn Cảnh Mô Hình Trên Dashboard
-          </a>
-          <a href="/presentation#16" target="_blank" class="btn btn-outline">
-            Xem Slide 16: Tối Ưu Tham Số Optuna (100 Trials)
+          <a href="/presentation" target="_blank" class="btn btn-teal-primary">
+            Xem Chi Tiết Trên Slide 7 Bước
           </a>
         </div>
       </div>
@@ -458,27 +548,26 @@
       <div id="metrics-content">
         <p class="loading-state">Đang tải thông tin mô hình học máy có giám sát...</p>
       </div>
+
+      <div id="backtest-content" style="margin-top: 1.5rem;"></div>
     </section>
 
     <!-- ========================================== -->
-    <!-- TAB 3: PHÂN CỤM & PHÁT HIỆN DỊ THƯỜNG     -->
+    <!-- TAB 4: PHÂN CỤM & PHÁT HIỆN DỊ THƯỜNG     -->
     <!-- ========================================== -->
     <section id="clusters-tab" class="tab-content" role="tabpanel">
       <!-- Executive Dashboard Handoff Card -->
       <div class="dashboard-handoff-card">
         <div class="handoff-header">
-          <span class="badge badge-teal">NỘI DUNG ĐÃ CHUYỂN SANG DASHBOARD CHUYÊN SÂU</span>
-          <h2 class="handoff-title">Biểu Đồ Scatter PCA 4 Cụm &amp; Isolation Forest Đã Có Trên Dashboard Tương Tác</h2>
+          <span class="badge badge-teal">BƯỚC 4 CRISP-DM &bull; KHAI PHÁ KHÔNG GIÁM SÁT</span>
+          <h2 class="handoff-title">Phân Đoạn 4 Chế Độ Khai Thác (K-Means + Seed ARI), PCA 3D &amp; Isolation Forest</h2>
         </div>
         <p class="handoff-desc">
-          Mô hình phân cụm K-Means ($k=4$, Silhouette 0.300) và trực quan hóa không gian đặc trưng PCA 2D tương tác (với bộ lọc từng cụm, hover xem chi tiết chuyến bay, và sơ đồ phân cắt Isolation Forest) đã được tích hợp đầy đủ trên Dashboard chính.
+          Thẩm định k=2..8 qua Silhouette, Davies-Bouldin, Calinski-Harabasz và độ ổn định Seed-ARI, kết hợp PCA 3D và phát hiện dị thường theo sân bay/hãng bay.
         </p>
         <div class="handoff-actions">
-          <a href="/presentation#12" target="_blank" class="btn btn-teal-primary">
-            Xem Slide 12: Biểu Đồ Scatter PCA Tương Tác 4 Cụm
-          </a>
-          <a href="/presentation#11" target="_blank" class="btn btn-outline">
-            Xem Slide 11: Không Gian 64 Đặc Trưng
+          <a href="/presentation" target="_blank" class="btn btn-teal-primary">
+            Xem Biểu Đồ PCA Tương Tác Trên Slide
           </a>
         </div>
       </div>
@@ -486,24 +575,26 @@
       <div id="clusters-content">
         <p class="loading-state">Đang tải hồ sơ phân cụm K-Means và phát hiện dị thường...</p>
       </div>
+
+      <div id="clusters-silhouette-panel" style="margin-top: 1.5rem;"></div>
     </section>
 
     <!-- ========================================== -->
-    <!-- TAB 4: TẬP LUẬT KẾT HỢP FP-GROWTH          -->
+    <!-- TAB 5: TẬP LUẬT KẾT HỢP FP-GROWTH          -->
     <!-- ========================================== -->
     <section id="rules-tab" class="tab-content" role="tabpanel">
       <!-- Executive Dashboard Handoff Card -->
       <div class="dashboard-handoff-card">
         <div class="handoff-header">
-          <span class="badge badge-teal">NỘI DUNG ĐÃ CHUYỂN SANG DASHBOARD CHUYÊN SÂU</span>
-          <h2 class="handoff-title">Toàn Cảnh 33 Luật Kết Hợp FP-Growth Đã Có Trên Dashboard</h2>
+          <span class="badge badge-teal">BƯỚC 4 CRISP-DM &bull; KHAI PHÁ LUẬT KẾT HỢP</span>
+          <h2 class="handoff-title">Tập Luật Kết Hợp FP-Growth Phi Trùng Lặp &amp; Kiểm Chứng Holdout</h2>
         </div>
         <p class="handoff-desc">
-          Tập luật kết hợp với Lift cực đại 2.15 ở các khung giờ cao điểm và điều kiện thời tiết đặc thù đã được phân loại rõ ràng theo độ tin cậy và hỗ trợ trên slide chuyên môn.
+          Khai phá bằng <strong>FP-Growth</strong> trên tập Train, loại bỏ luật dư thừa (Redundancy Pruning) và đối chiếu tỷ lệ tái lập trên tập Holdout Test trong <code>data/gold/mined_association_rules.csv</code>.
         </p>
         <div class="handoff-actions">
-          <a href="/presentation#13" target="_blank" class="btn btn-teal-primary">
-            Xem Slide 13: 33 Luật Kết Hợp FP-Growth Trên Dashboard
+          <a href="/presentation" target="_blank" class="btn btn-teal-primary">
+            Xem Phân Tích Luật Trên Slide
           </a>
         </div>
       </div>
@@ -513,19 +604,38 @@
       </div>
     </section>
 
+    <!-- ========================================== -->
+    <!-- TAB 6: GIÁM SÁT DATA DRIFT & LOCK (STEP 7) -->
+    <!-- ========================================== -->
+    <section id="drift-tab" class="tab-content" role="tabpanel">
+      <div class="dashboard-handoff-card">
+        <div class="handoff-header">
+          <span class="badge badge-teal">BƯỚC 6–7 CRISP-DM &bull; GOVERNANCE &amp; 4-TIER MONITORING</span>
+          <h2 class="handoff-title">Giám Sát Data Quality, Feature Drift (PSI + KS), Concept Drift &amp; Model Registry SHA-256</h2>
+        </div>
+        <p class="handoff-desc">
+          So sánh phân phối Train vs Holdout Test qua 4 tầng giám sát (PSI, kiểm định KS 2 mẫu, Chi-Square phân loại, dịch chuyển nhãn) cùng Model Registry và chứng nhận SHA-256 kiểm soát fail-closed khi phục vụ.
+        </p>
+      </div>
+
+      <div id="drift-content">
+        <p class="loading-state">Đang tải báo cáo Data Drift PSI...</p>
+      </div>
+    </section>
+
   </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-meta">
-        <strong>FlightRisk VN &bull; Nhóm 8</strong>
-        <span>Đề tài: Xây dựng bộ dữ liệu cho chuyến bay chậm, hủy, đúng giờ của hãng hàng không VN</span>
+        <strong>FlightRisk VN &bull; Quy trình 7 Bước CRISP-DM</strong>
+        <span>Dự báo Trễ &amp; Hủy Chuyến Bay Việt Nam (HGB Baseline · XGBoost · CatBoost_MAE)</span>
       </div>
       <div class="footer-links">
-        <a href="/presentation" target="_blank">Toàn Cảnh Dashboard (24 Slides)</a>
+        <a href="/presentation" target="_blank">Slide Thuyết Trình 7 Bước</a>
         <span>&bull;</span>
-        <span>Chuẩn CRISP-DM &amp; Modern Data Mining</span>
+        <span>Data Contract 8/8 Checks</span>
         <span>&bull;</span>
         <span>Zero Data Leakage (6/6 Gates)</span>
       </div>
@@ -533,5 +643,7 @@
   </footer>
 
   <script src="/static/app.js"></script>
+  <script src="/static/step7_analytics.js"></script>
 </body>
+
 </html>

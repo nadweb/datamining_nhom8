@@ -1,0 +1,18 @@
+{
+  "run_id": "20261126_110644_a01e33",
+  "category": "classification",
+  "run_name": "multiclass_3_CatBoost",
+  "logged_at": "2026-11-26 11:06:44",
+  "params": {
+    "task": "multiclass_3",
+    "algorithm": "CatBoost",
+    "horizon_hours": 3
+  },
+  "metrics": {
+    "val_f1_macro": 0.3601,
+    "val_balanced_accuracy": 0.4132,
+    "test_f1_macro": 0.41,
+    "test_balanced_accuracy": 0.4431
+  },
+  "artifacts": {}
+}

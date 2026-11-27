@@ -1,0 +1,18 @@
+{
+  "run_id": "20261126_124709_cf33b5",
+  "category": "classification",
+  "run_name": "multiclass_3_HistGradientBoosting",
+  "logged_at": "2026-11-26 12:47:09",
+  "params": {
+    "task": "multiclass_3",
+    "algorithm": "HistGradientBoosting",
+    "horizon_hours": 3
+  },
+  "metrics": {
+    "val_f1_macro": 0.3838,
+    "val_balanced_accuracy": 0.3835,
+    "test_f1_macro": 0.404,
+    "test_balanced_accuracy": 0.3994
+  },
+  "artifacts": {}
+}

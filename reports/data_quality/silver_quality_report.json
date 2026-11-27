@@ -1,0 +1,362 @@
+{
+  "bronze_standardized_rows": 93081,
+  "raw_format_audit": [
+    {
+      "column": "source",
+      "missing": 0,
+      "missing_pct": 0.0
+    },
+    {
+      "column": "airport",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "invalid_format": 0,
+      "invalid_format_pct": 0.0
+    },
+    {
+      "column": "direction",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "invalid_format": 0,
+      "invalid_format_pct": 0.0
+    },
+    {
+      "column": "scraped_at",
+      "missing": 0,
+      "missing_pct": 0.0
+    },
+    {
+      "column": "flight_date",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "invalid_format": 0,
+      "invalid_format_pct": 0.0
+    },
+    {
+      "column": "airline_code",
+      "missing": 3526,
+      "missing_pct": 3.79
+    },
+    {
+      "column": "flight_no",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "invalid_format": 3526,
+      "invalid_format_pct": 3.79
+    },
+    {
+      "column": "other_airport",
+      "missing": 0,
+      "missing_pct": 0.0
+    },
+    {
+      "column": "scheduled_time",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "invalid_format": 37,
+      "invalid_format_pct": 0.04
+    },
+    {
+      "column": "estimated_time",
+      "missing": 320,
+      "missing_pct": 0.34
+    },
+    {
+      "column": "actual_time",
+      "missing": 47199,
+      "missing_pct": 50.71
+    },
+    {
+      "column": "status",
+      "missing": 0,
+      "missing_pct": 0.0
+    }
+  ],
+  "deduplication_stats": {
+    "raw_snapshots": 68250,
+    "exact_duplicates": 10,
+    "after_exact_dedup": 68240,
+    "after_side_dedup": 19387,
+    "unit": "leg",
+    "after_leg_dedup": 13610,
+    "legs_seen_both_sides": 5264,
+    "legs_with_t1h_snapshot": 7658,
+    "legs_with_t3h_snapshot": 7177,
+    "legs_with_t6h_snapshot": 5142
+  },
+  "silver_valid_rows": 13570,
+  "excluded_outcome_rows": 40,
+  "excluded_status_breakdown": {
+    "unknown": 29,
+    "diverted": 11
+  },
+  "outcome_distribution_3class": {
+    "on_time": 9904,
+    "delayed": 3571,
+    "cancelled": 95
+  },
+  "outcome_detail_distribution": {
+    "departed_on_time": 5714,
+    "arrived_on_time": 2834,
+    "departed_late": 2334,
+    "on_time": 1356,
+    "arrived_late": 1230,
+    "cancelled": 95,
+    "delayed": 7
+  },
+  "delay_duration_policy": {
+    "early_limit_min": -90.0,
+    "valid_non_null_delays": 13464,
+    "cancelled_with_null_delay": 95,
+    "early_departure_count": 3805,
+    "early_departure_pct": 28.26,
+    "early_min_minutes": -75.0,
+    "extreme_delay_gt_180m_count": 75,
+    "max_delay_minutes": 629.0
+  },
+  "column_missing_pct": {
+    "source": 0.0,
+    "airport": 0.0,
+    "direction": 0.0,
+    "scraped_at": 0.0,
+    "flight_date": 0.0,
+    "airline_code": 0.0,
+    "flight_no": 0.0,
+    "other_airport": 0.0,
+    "scheduled_time": 0.0,
+    "estimated_time": 0.12,
+    "actual_time": 0.71,
+    "status": 0.0,
+    "sched_dt": 0.08,
+    "hour_floor": 0.08,
+    "delay_min": 0.78,
+    "other_code": 0.0,
+    "origin": 0.0,
+    "destination": 0.0,
+    "leg_key": 0.0,
+    "leg_matched": 0.0,
+    "route_type": 0.0,
+    "raw_hash": 0.0,
+    "has_done_act": 0.0,
+    "has_info": 0.0,
+    "is_pref_side": 0.0,
+    "at_monitored": 0.0,
+    "event_hash": 0.0,
+    "leg_hash": 0.0,
+    "_has_t1h": 0.0,
+    "_has_t3h": 0.0,
+    "_has_t6h": 0.0,
+    "source_recorded_count": 0.0,
+    "n_sides_seen": 0.0,
+    "has_t1h_snapshot": 0.0,
+    "has_t3h_snapshot": 0.0,
+    "has_t6h_snapshot": 0.0,
+    "earliest_scraped_at": 0.0,
+    "latest_scraped_at": 0.0,
+    "time_slot": 0.08,
+    "day_type": 0.08,
+    "is_holiday": 0.0,
+    "airport_load": 0.36,
+    "precipitation": 0.36,
+    "wind_gusts_10m": 0.36,
+    "visibility": 0.36,
+    "weather_code": 0.36,
+    "weather_fetched_at": 0.36,
+    "rain_level": 0.36,
+    "wind_level": 0.36,
+    "vis_level": 0.36,
+    "is_weather_matched": 0.0,
+    "status_detail": 0.0,
+    "status_clean": 0.0
+  },
+  "integration_coverage": {
+    "leg_matched_pct": 100.0,
+    "both_sides_seen_pct": 38.68,
+    "weather_matched_pct": 99.63,
+    "airport_load_matched_pct": 99.63
+  },
+  "source_agreement": [
+    {
+      "source_a": "aviationstack_api",
+      "source_b": "guide_cxr",
+      "shared_events": 46,
+      "label_agreement_pct": 71.74,
+      "cohen_kappa": 0.4727,
+      "median_delay_diff_min": 7.0
+    },
+    {
+      "source_a": "aviationstack_api",
+      "source_b": "guide_dad",
+      "shared_events": 177,
+      "label_agreement_pct": 72.32,
+      "cohen_kappa": 0.519,
+      "median_delay_diff_min": 6.0
+    },
+    {
+      "source_a": "aviationstack_api",
+      "source_b": "guide_han",
+      "shared_events": 365,
+      "label_agreement_pct": 67.4,
+      "cohen_kappa": 0.355,
+      "median_delay_diff_min": 10.0
+    },
+    {
+      "source_a": "aviationstack_api",
+      "source_b": "guide_pqc",
+      "shared_events": 66,
+      "label_agreement_pct": 72.73,
+      "cohen_kappa": 0.4407,
+      "median_delay_diff_min": 10.5
+    },
+    {
+      "source_a": "aviationstack_api",
+      "source_b": "guide_sgn",
+      "shared_events": 371,
+      "label_agreement_pct": 70.89,
+      "cohen_kappa": 0.4386,
+      "median_delay_diff_min": 10.0
+    }
+  ],
+  "airline_caav_benchmark": [
+    {
+      "airline_code": "ALL",
+      "flights": 13570,
+      "delay_pct": 26.32,
+      "cancel_pct": 0.7,
+      "otp_pct": 72.98,
+      "caav_delay_pct": 22.3,
+      "caav_cancel_pct": 0.6,
+      "caav_otp_pct": NaN
+    },
+    {
+      "airline_code": "VN",
+      "flights": 5375,
+      "delay_pct": 23.26,
+      "cancel_pct": 1.47,
+      "otp_pct": 75.27,
+      "caav_delay_pct": NaN,
+      "caav_cancel_pct": NaN,
+      "caav_otp_pct": 78.0
+    },
+    {
+      "airline_code": "VJ",
+      "flights": 5055,
+      "delay_pct": 38.3,
+      "cancel_pct": 0.24,
+      "otp_pct": 61.46,
+      "caav_delay_pct": NaN,
+      "caav_cancel_pct": NaN,
+      "caav_otp_pct": 75.2
+    },
+    {
+      "airline_code": "9G",
+      "flights": 1863,
+      "delay_pct": 13.2,
+      "cancel_pct": 0.0,
+      "otp_pct": 86.8,
+      "caav_delay_pct": NaN,
+      "caav_cancel_pct": NaN,
+      "caav_otp_pct": NaN
+    },
+    {
+      "airline_code": "VU",
+      "flights": 532,
+      "delay_pct": 16.73,
+      "cancel_pct": 0.38,
+      "otp_pct": 82.89,
+      "caav_delay_pct": NaN,
+      "caav_cancel_pct": NaN,
+      "caav_otp_pct": NaN
+    },
+    {
+      "airline_code": "0V",
+      "flights": 445,
+      "delay_pct": 6.52,
+      "cancel_pct": 0.0,
+      "otp_pct": 93.48,
+      "caav_delay_pct": NaN,
+      "caav_cancel_pct": NaN,
+      "caav_otp_pct": NaN
+    },
+    {
+      "airline_code": "BL",
+      "flights": 268,
+      "delay_pct": 6.72,
+      "cancel_pct": 0.75,
+      "otp_pct": 92.54,
+      "caav_delay_pct": NaN,
+      "caav_cancel_pct": NaN,
+      "caav_otp_pct": NaN
+    },
+    {
+      "airline_code": "QH",
+      "flights": 32,
+      "delay_pct": 9.38,
+      "cancel_pct": 0.0,
+      "otp_pct": 90.62,
+      "caav_delay_pct": NaN,
+      "caav_cancel_pct": NaN,
+      "caav_otp_pct": NaN
+    }
+  ],
+  "data_contract_8_checks": {
+    "passed": true,
+    "checks": [
+      {
+        "check": "24 columns in exact schema order",
+        "passed": true,
+        "detail": "Exact 24-column schema matched"
+      },
+      {
+        "check": "Unique leg_key (1 row = 1 flight leg; non-empty)",
+        "passed": true,
+        "detail": "duplicates=0"
+      },
+      {
+        "check": "Labels strictly in {on_time, delayed, cancelled}",
+        "passed": true,
+        "detail": "Observed labels: ['cancelled', 'delayed', 'on_time']"
+      },
+      {
+        "check": "No missing status_clean target values",
+        "passed": true,
+        "detail": "0 missing"
+      },
+      {
+        "check": "Cancelled flights have no delay_min (must be NaN)",
+        "passed": true,
+        "detail": "cancelled_with_delay=0"
+      },
+      {
+        "check": "delay_min >= -90.0 minutes (plausible delay bound)",
+        "passed": true,
+        "detail": "below_bound=0"
+      },
+      {
+        "check": "Consistency between status string and status_clean",
+        "passed": true,
+        "detail": "mismatch=0"
+      },
+      {
+        "check": "Multi-source integration (>= 2 distinct data sources)",
+        "passed": true,
+        "detail": "6 sources: ['aviationstack_api', 'guide_cxr', 'guide_dad', 'guide_han', 'guide_pqc', 'guide_sgn']"
+      }
+    ],
+    "metrics": {
+      "total_rows": 13570,
+      "total_cols": 24,
+      "on_time_count": 9904,
+      "delayed_count": 3571,
+      "cancelled_count": 95,
+      "sources": [
+        "aviationstack_api",
+        "guide_cxr",
+        "guide_dad",
+        "guide_han",
+        "guide_pqc",
+        "guide_sgn"
+      ]
+    }
+  }
+}

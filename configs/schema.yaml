@@ -1,0 +1,81 @@
+bronze:
+  standardized_fields:
+    - source
+    - airport
+    - direction
+    - scraped_at
+    - flight_date
+    - airline_code
+    - flight_no
+    - other_airport
+    - scheduled_time
+    - estimated_time
+    - actual_time
+    - status
+  weather_columns:
+    - precipitation
+    - wind_gusts_10m
+    - visibility
+    - weather_code
+
+silver:
+  cleaned_24_columns:
+    - leg_key
+    - flight_date
+    - flight_no
+    - airline_code
+    - origin
+    - destination
+    - route_type
+    - airport
+    - direction
+    - scheduled_time
+    - actual_time
+    - delay_min
+    - time_slot
+    - day_type
+    - is_holiday
+    - airport_load
+    - precipitation
+    - wind_gusts_10m
+    - visibility
+    - weather_code
+    - status
+    - status_detail
+    - status_clean
+    - source
+  delay_threshold_minutes: 15
+  early_departure_limit_minutes: -90.0
+  extreme_delay_cap_minutes: 720.0
+  valid_outcome_labels: ["on_time", "delayed", "cancelled"]
+  excluded_outcome_policy: "Rows labeled diverted, scheduled, or unknown are segregated into data/silver/excluded_outcomes.csv and never coerced into {0, 1, 2}."
+  cancelled_delay_policy: "Cancelled flights strictly enforce delay_min = NaN (never set to 0) and are excluded from regression."
+
+gold:
+  primary_classification_labels:
+    on_time: 0
+    delayed: 1
+    cancelled: 2
+  binary_ablation_labels:
+    on_time: 0
+    disrupted: 1
+  forbidden_post_flight_columns:
+    - delay_min
+    - actual_time
+    - status
+    - status_detail
+    - is_delayed_for_analysis
+    - status_clean
+    - target
+    - outcome_observed_at
+    - snapshot_scraped_at
+  identifier_columns:
+    - leg_key
+    - source
+    - flight_date
+    - flight_no
+    - scheduled_time
+    - origin
+    - destination
+    - prediction_time
+    - horizon_hours

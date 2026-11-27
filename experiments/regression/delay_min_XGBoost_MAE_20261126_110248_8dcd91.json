@@ -1,0 +1,16 @@
+{
+  "run_id": "20261126_110248_8dcd91",
+  "category": "regression",
+  "run_name": "delay_min_XGBoost_MAE",
+  "logged_at": "2026-11-26 11:02:48",
+  "params": {
+    "algorithm": "XGBoost_MAE",
+    "loss": "MAE"
+  },
+  "metrics": {
+    "val_mae": 15.57,
+    "test_mae": 15.69,
+    "test_medae": 8.31
+  },
+  "artifacts": {}
+}

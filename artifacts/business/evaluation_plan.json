@@ -1,0 +1,28 @@
+{
+  "split_strategy": "Chronological 70% Train / 10% Validation / 20% Holdout Test (zero random shuffle)",
+  "classification_selection_metric": "f1_macro",
+  "classification_metrics": [
+    "Accuracy",
+    "Balanced Accuracy",
+    "Macro-F1",
+    "Delayed Recall",
+    "Cancelled Recall",
+    "ROC-AUC OvR",
+    "PR-AUC Macro",
+    "LogLoss",
+    "Brier Score"
+  ],
+  "regression_selection_metric": "mae",
+  "regression_metrics": [
+    "MAE_minutes",
+    "MedAE_minutes",
+    "RMSE_minutes",
+    "R2_Score"
+  ],
+  "statistical_tests": [
+    "Expanding Temporal CV",
+    "Paired Bootstrap 95% CI",
+    "McNemar Test",
+    "Permutation Test (200x)"
+  ]
+}

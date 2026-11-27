@@ -1,0 +1,41 @@
+{
+  "horizons": [
+    {
+      "horizon_hours": 1,
+      "is_primary": false,
+      "best_algorithm": "CatBoost",
+      "val_f1_macro": 0.4068,
+      "test_f1_macro": 0.4163,
+      "test_balanced_accuracy": 0.4241,
+      "test_delayed_recall": 0.4622,
+      "test_cancelled_recall": 0.0,
+      "test_log_loss": 0.5314,
+      "test_brier_disrupted": 0.1767
+    },
+    {
+      "horizon_hours": 3,
+      "is_primary": true,
+      "best_algorithm": "CatBoost",
+      "val_f1_macro": 0.4006,
+      "test_f1_macro": 0.4154,
+      "test_balanced_accuracy": 0.4186,
+      "test_delayed_recall": 0.4236,
+      "test_cancelled_recall": 0.0,
+      "test_log_loss": 0.517,
+      "test_brier_disrupted": 0.1702
+    },
+    {
+      "horizon_hours": 6,
+      "is_primary": false,
+      "best_algorithm": "CatBoost",
+      "val_f1_macro": 0.4067,
+      "test_f1_macro": 0.4164,
+      "test_balanced_accuracy": 0.4213,
+      "test_delayed_recall": 0.4401,
+      "test_cancelled_recall": 0.0,
+      "test_log_loss": 0.5254,
+      "test_brier_disrupted": 0.174
+    }
+  ],
+  "note": "Causal lookback sensitivity across T-1h, T-3h, and T-6h. Historical airport/airline rates only aggregate completed flights before scheduled_dt - H hours."
+}

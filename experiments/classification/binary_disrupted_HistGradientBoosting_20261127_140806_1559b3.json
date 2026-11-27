@@ -1,0 +1,18 @@
+{
+  "run_id": "20261127_140806_1559b3",
+  "category": "classification",
+  "run_name": "binary_disrupted_HistGradientBoosting",
+  "logged_at": "2026-11-27 14:08:06",
+  "params": {
+    "task": "binary_disrupted",
+    "algorithm": "HistGradientBoosting",
+    "horizon_hours": 3
+  },
+  "metrics": {
+    "val_f1_macro": 0.5912,
+    "val_balanced_accuracy": 0.587,
+    "test_f1_macro": 0.6226,
+    "test_balanced_accuracy": 0.6164
+  },
+  "artifacts": {}
+}

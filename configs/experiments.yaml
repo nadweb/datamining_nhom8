@@ -1,0 +1,71 @@
+split:
+  train_ratio: 0.70
+  validation_ratio: 0.10
+  test_ratio: 0.20
+  holdout_cutoff_note: "Chronological split sorted by (flight_date, scheduled_time); Train+Val = first 80% ending 2026-10-31, Holdout Test = final 20%."
+  temporal_cv_folds: 3
+
+classification:
+  primary_task: "multiclass_3"
+  ablation_tasks: ["binary_disrupted"]
+  selection_metric: "f1_macro"
+  models:
+    MajorityClassifier:
+      role: "Baseline toi thieu"
+    HeuristicBaseline:
+      role: "Baseline nghiep vu"
+    HistGradientBoosting:
+      role: "Baseline ML"
+      params:
+        max_iter: 180
+        learning_rate: 0.08
+        max_leaf_nodes: 31
+        min_samples_leaf: 20
+        class_weight: "balanced"
+    XGBoost:
+      role: "Boosting benchmark"
+      params:
+        n_estimators: 220
+        learning_rate: 0.06
+        max_depth: 6
+        subsample: 0.85
+        colsample_bytree: 0.85
+    CatBoost:
+      role: "Boosting benchmark"
+      params:
+        iterations: 300
+        learning_rate: 0.06
+        depth: 6
+        auto_class_weights: "Balanced"
+
+regression:
+  target: "delay_min"
+  exclude_statuses: ["cancelled", "unknown", "diverted"]
+  selection_metric: "mae"
+  models:
+    HistGradientBoosting_MAE:
+      role: "Baseline ML (L1)"
+      params: {loss: "absolute_error", max_iter: 180, learning_rate: 0.06, max_leaf_nodes: 31}
+    XGBoost_MAE:
+      role: "Boosting benchmark (L1)"
+      params: {objective: "reg:absoluteerror", n_estimators: 220, learning_rate: 0.06, max_depth: 6}
+    CatBoost_MAE:
+      role: "Boosting benchmark (L1)"
+      params: {loss_function: "MAE", iterations: 300, learning_rate: 0.06, depth: 6}
+
+unsupervised:
+  kmeans:
+    k_selected: 4
+    k_sweep: [2, 3, 4, 5, 6, 7, 8]
+    stability_seeds: [0, 7, 21, 42, 99]
+    sample_size: 3000
+  pca:
+    n_components: 3
+  isolation_forest:
+    contamination: 0.03
+    n_estimators: 150
+  fpgrowth:
+    max_len: 4
+    targets:
+      "Status=delayed": {min_sup: 0.01, min_conf: 0.25, min_lift: 1.2}
+      "Status=cancelled": {min_sup: 0.002, min_conf: 0.03, min_lift: 1.5}

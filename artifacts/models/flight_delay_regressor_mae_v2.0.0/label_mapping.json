@@ -1,0 +1,8 @@
+{
+  "target": "delay_min (minutes)",
+  "excluded_statuses": [
+    "cancelled",
+    "unknown",
+    "diverted"
+  ]
+}

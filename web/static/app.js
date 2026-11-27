@@ -90,24 +90,71 @@ function initSliders() {
     }
   });
 
+  const DOMESTIC_AIRPORTS = new Set(["SGN", "HAN", "DAD", "CXR", "PQC"]);
+  const syncFormValidity = () => {
+    const orig = byId("origin");
+    const dest = byId("destination");
+    const route = byId("route-type");
+    const dir = byId("direction");
+    const ap = byId("airport");
+    if (!orig || !dest || !route || !dir || !ap) return;
+
+    dest.setCustomValidity(orig.value && dest.value && orig.value === dest.value
+      ? "Sân bay đến không được trùng sân bay đi." : "");
+
+    const isIntl = !DOMESTIC_AIRPORTS.has(orig.value) || !DOMESTIC_AIRPORTS.has(dest.value);
+    if (isIntl && route.value === "domestic") {
+      route.setCustomValidity("Đường bay quốc tế phải chọn Loại đường bay là Quốc tế.");
+    } else if (!isIntl && route.value === "international") {
+      route.setCustomValidity("Đường bay giữa 2 cảng nội địa Việt Nam phải chọn Nội địa.");
+    } else {
+      route.setCustomValidity("");
+    }
+
+    const expectedAirport = dir.value === "ARRIVALS" ? dest.value : orig.value;
+    if (ap.value !== expectedAirport) {
+      ap.setCustomValidity(`Chiều ${dir.value} yêu cầu cảng khảo sát là ${expectedAirport}.`);
+    } else {
+      ap.setCustomValidity("");
+    }
+  };
+
   const swapBtn = byId("swap-route-btn");
   if (swapBtn) {
     swapBtn.addEventListener("click", () => {
       const orig = byId("origin");
       const dest = byId("destination");
+      const dir = byId("direction");
+      const ap = byId("airport");
       if (orig && dest) {
         const tmp = orig.value;
         orig.value = dest.value;
         dest.value = tmp;
+        if (ap && dir) {
+          const targetAp = dir.value === "ARRIVALS" ? dest.value : orig.value;
+          if ([...ap.options].some(o => o.value === targetAp)) {
+            ap.value = targetAp;
+          }
+        }
+        syncFormValidity();
         updateBoardingSummary();
+        byId("predict-form")?.dispatchEvent(new Event("change", { bubbles: true }));
       }
     });
   }
 
-  ["origin", "destination", "airline", "sched-time", "flight-date"].forEach(id => {
+  ["origin", "destination", "airline", "sched-time", "flight-date", "direction", "route-type", "airport"].forEach(id => {
     const el = byId(id);
-    if (el) el.addEventListener("change", updateBoardingSummary);
+    if (el) {
+      el.addEventListener("change", () => {
+        syncFormValidity();
+        updateBoardingSummary();
+      });
+    }
   });
+  window.__syncFlightFormValidity = syncFormValidity;
+  syncFormValidity();
+  updateBoardingSummary();
 }
 
 function updateBoardingSummary() {
@@ -158,10 +205,14 @@ function clearPrediction(message, state = "CHƯA CÓ DỰ BÁO") {
   byId("res-risk-score").textContent = "--";
   
   ["prob-ontime", "prob-delayed", "prob-cancelled"].forEach((id) => {
-    byId(id).style.width = "0%";
-    byId(`${id}-text`).textContent = "--";
+    const bar = byId(id);
+    const txt = byId(`${id}-text`);
+    if (bar) bar.style.width = "0%";
+    if (txt) txt.textContent = "--";
   });
   
+  const fList = byId("res-factors-list");
+  if (fList) fList.innerHTML = "<li>Chờ kết quả phân tích tín hiệu...</li>";
   byId("res-cluster-name").textContent = "--";
   byId("res-cluster-rate").textContent = "--";
   byId("res-rules-list").replaceChildren();
@@ -180,12 +231,11 @@ function validatePrediction(data) {
   
   if (!data || !["on_time", "delayed", "cancelled"].includes(data.prediction) ||
       !["LOW", "MEDIUM", "HIGH"].includes(data.risk_level) || !isProbability(data.risk_score) ||
-      !values || !values.every(isProbability) || Math.abs(values.reduce((a, b) => a + b, 0) - 1) > 0.001 ||
-      Math.abs(data.risk_score - p.delayed - p.cancelled) > 0.001 ||
+      !values || !values.every(isProbability) || Math.abs(values.reduce((a, b) => a + b, 0) - 1) > 0.01 ||
       typeof data.estimated_delay_min !== "number" || !Number.isFinite(data.estimated_delay_min) ||
       data.estimated_delay_min < 0 || !data.cluster_profile || typeof data.cluster_profile !== "object" ||
       !Array.isArray(data.matched_rules)) {
-    throw new Error("Kết quả dự báo không đúng cấu trúc dữ liệu của dự án.");
+    throw new Error("Kết quả dự báo không đúng cấu trúc dữ liệu 3 lớp ICAO.");
   }
 }
 
@@ -262,21 +312,30 @@ function renderPredictionResult(data, inputs = null) {
   byId("res-risk-level").textContent = `RỦI RO: ${data.risk_level}`;
   
   const messages = {
-    on_time: "Dự báo: ĐÚNG GIỜ",
-    delayed: `Dự báo: TRỄ KHOẢNG ${data.estimated_delay_min} PHÚT`,
-    cancelled: "Dự báo: CÓ NGUY CƠ HỦY CHUYẾN",
+    on_time: "Dự báo: ĐÚNG GIỜ (ON-TIME)",
+    delayed: `Dự báo: NGUY CƠ TRỄ CHUYẾN (~${data.estimated_delay_min} PHÚT)`,
+    cancelled: "Dự báo: CẢNH BÁO NGUY CƠ HỦY CHUYẾN (CANCELLED)",
   };
-  byId("res-prediction-text").textContent = messages[data.prediction];
+  byId("res-prediction-text").textContent = messages[data.prediction] || messages.delayed;
   byId("res-risk-score").textContent = `${Math.round(data.risk_score * 100)}%`;
   
   setBar("prob-ontime", data.probabilities.on_time);
   setBar("prob-delayed", data.probabilities.delayed);
   setBar("prob-cancelled", data.probabilities.cancelled);
 
+  const fList = byId("res-factors-list");
+  if (fList) {
+    const factors = Array.isArray(data.factors) ? data.factors : [];
+    fList.innerHTML = factors.length
+      ? factors.map((f) => `<li>${escapeHtml(f)}</li>`).join("")
+      : "<li>Điều kiện khai thác ổn định</li>";
+  }
+
   const profile = data.cluster_profile;
   byId("res-cluster-name").textContent = profile.cluster_name ?? profile.name ?? "Không có tên cụm";
-  byId("res-cluster-rate").textContent = profile.cluster_risk_avg ??
-    (numberOrNull(profile.delay_rate_pct) === null ? "--" : `${profile.delay_rate_pct}%`);
+  byId("res-cluster-rate").textContent = profile.disruption_rate_pct !== undefined
+    ? `${profile.disruption_rate_pct}% gián đoạn (Trễ ${profile.delay_rate_pct}%)`
+    : (numberOrNull(profile.delay_rate_pct) === null ? "--" : `${profile.delay_rate_pct}%`);
   
   const list = byId("res-rules-list");
   list.replaceChildren();
@@ -307,7 +366,6 @@ function renderAuditVerdictBanner(data, inputs) {
 
   let matchedAudit = activeAuditRecord;
   
-  // If not explicitly set via audit table, look for a matching flight in allAuditRecords
   if (!matchedAudit && inputs && allAuditRecords.length > 0) {
     matchedAudit = allAuditRecords.find(a => 
       a.airline_code === inputs.airline_code &&
@@ -317,12 +375,14 @@ function renderAuditVerdictBanner(data, inputs) {
   }
 
   if (matchedAudit) {
-    const isCorrect = (data.prediction === matchedAudit.ground_truth.actual_label);
     const actualLabel = matchedAudit.ground_truth.actual_label;
+    const isCorrect = (data.prediction === actualLabel);
     const actualDelay = matchedAudit.ground_truth.actual_delay_min;
     const actualTime = matchedAudit.ground_truth.actual_time;
     const predDelay = data.estimated_delay_min;
-    const absDiff = Math.abs(predDelay - actualDelay).toFixed(1);
+    const errText = actualDelay === null || actualDelay === undefined
+      ? "Chuyến hủy không áp dụng hồi quy phút trễ (delay_min = NaN)"
+      : `|${predDelay} - ${actualDelay}| = ${Math.abs(predDelay - actualDelay).toFixed(1)} phút`;
 
     banner.className = `audit-verdict-card ${isCorrect ? 'verdict-correct' : 'verdict-incorrect'}`;
     banner.style.display = "block";
@@ -335,8 +395,8 @@ function renderAuditVerdictBanner(data, inputs) {
       </div>
       <div style="font-size: 0.8rem; line-height: 1.5; color: var(--text);">
         <div>&bull; <strong>Dự báo của Web:</strong> <span style="font-weight: 700; color: ${data.prediction === 'on_time' ? '#059669' : '#d97706'};">${data.prediction.toUpperCase()}</span> (Trễ dự kiến: ${predDelay} phút)</div>
-        <div>&bull; <strong>Thực tế ghi nhận:</strong> <span style="font-weight: 700; color: ${actualLabel === 'on_time' ? '#059669' : '#d97706'};">${actualLabel.toUpperCase()}</span> (Cất cánh thực tế: ${escapeHtml(actualTime)}, Trễ thực tế: ${actualDelay} phút)</div>
-        <div>&bull; <strong>Sai số dự báo hồi quy:</strong> <span style="font-family: var(--font-mono); font-weight: 700;">|${predDelay} - ${actualDelay}| = ${absDiff} phút</span> (${Number(absDiff) <= 15 ? 'Đạt chuẩn ICAO &le; 15m' : 'Vượt ngưỡng sai số'})</div>
+        <div>&bull; <strong>Thực tế ghi nhận:</strong> <span style="font-weight: 700; color: ${actualLabel === 'on_time' ? '#059669' : '#d97706'};">${actualLabel.toUpperCase()}</span> (Cất cánh thực tế: ${escapeHtml(actualTime)}${actualDelay !== null && actualDelay !== undefined ? `, Trễ thực tế: ${actualDelay} phút` : ''})</div>
+        <div>&bull; <strong>Sai số dự báo hồi quy:</strong> <span style="font-family: var(--font-mono); font-weight: 700;">${errText}</span></div>
       </div>
       <div style="margin-top: 0.4rem; padding-top: 0.4rem; border-top: 1px dashed var(--border); font-size: 0.75rem; color: var(--text-muted);">
         <strong>Phân tích nguyên nhân:</strong> ${escapeHtml(matchedAudit.audit.note)}
@@ -471,27 +531,34 @@ function applyFlightToForm(flight) {
   if (byId("load")) { byId("load").value = load; byId("load-val").textContent = load; }
   if (byId("weather-code")) byId("weather-code").value = String(flight.weather_code || 0);
 
+  window.__syncFlightFormValidity?.();
   updateBoardingSummary();
   byId("predict-form")?.requestSubmit();
 }
 
 function applyPreset(presetKey) {
+  const safePreset = {
+    airline: "VN", airport: "SGN", origin: "SGN", destination: "HAN",
+    direction: "DEPARTURES", route_type: "domestic", time: "08:00", date: "2026-11-06",
+    precip: 0, wind: 10, vis: 10000, load: 15, weather_code: "0"
+  };
+  const windyPreset = {
+    airline: "QH", airport: "DAD", origin: "DAD", destination: "SGN",
+    direction: "DEPARTURES", route_type: "domestic", time: "14:45", date: "2026-11-06",
+    precip: 1, wind: 32, vis: 6000, load: 26, weather_code: "61"
+  };
+  const stormPreset = {
+    airline: "VJ", airport: "SGN", origin: "SGN", destination: "HAN",
+    direction: "DEPARTURES", route_type: "domestic", time: "19:30", date: "2026-11-06",
+    precip: 15, wind: 45, vis: 2000, load: 35, weather_code: "95"
+  };
   const presets = {
-    clear_day: {
-      airline: "VN", airport: "SGN", origin: "SGN", destination: "HAN",
-      direction: "DEPARTURES", route_type: "domestic", time: "08:30", date: "2026-11-06",
-      precip: 0.0, wind: 10, vis: 10000, load: 18, weather_code: "0"
-    },
-    windy_afternoon: {
-      airline: "QH", airport: "DAD", origin: "DAD", destination: "SGN",
-      direction: "DEPARTURES", route_type: "domestic", time: "14:15", date: "2026-11-06",
-      precip: 1.5, wind: 45, vis: 6000, load: 28, weather_code: "61"
-    },
-    stormy_night: {
-      airline: "VJ", airport: "SGN", origin: "SGN", destination: "HAN",
-      direction: "DEPARTURES", route_type: "domestic", time: "21:45", date: "2026-11-06",
-      precip: 18.0, wind: 55, vis: 1500, load: 42, weather_code: "95"
-    }
+    safe: safePreset,
+    windy: windyPreset,
+    storm: stormPreset,
+    clear_day: safePreset,
+    windy_afternoon: windyPreset,
+    stormy_night: stormPreset,
   };
 
   const p = presets[presetKey];
@@ -513,6 +580,7 @@ function applyPreset(presetKey) {
   if (byId("load")) { byId("load").value = p.load; byId("load-val").textContent = p.load; }
   if (byId("weather-code")) byId("weather-code").value = p.weather_code;
 
+  window.__syncFlightFormValidity?.();
   updateBoardingSummary();
   byId("predict-form")?.requestSubmit();
 }
@@ -537,6 +605,9 @@ async function initAuditExplorer() {
 
     if (byId("audit-stat-correct")) byId("audit-stat-correct").textContent = `Đúng: ${correctCount} / ${records.length} (${(correctCount/records.length*100).toFixed(1)}%)`;
     if (byId("audit-stat-incorrect")) byId("audit-stat-incorrect").textContent = `Sai / Lệch: ${incorrectCount} / ${records.length} (${(incorrectCount/records.length*100).toFixed(1)}%)`;
+    if (byId("audit-chip-all")) byId("audit-chip-all").textContent = `Tất Cả (${records.length})`;
+    if (byId("audit-chip-correct")) byId("audit-chip-correct").textContent = `Chỉ Chuyến ĐÚNG (${correctCount})`;
+    if (byId("audit-chip-incorrect")) byId("audit-chip-incorrect").textContent = `Chỉ Chuyến SAI / LỆCH (${incorrectCount})`;
 
     renderAuditTable(allAuditRecords);
 
@@ -711,19 +782,23 @@ function renderModelMetrics(data, container) {
   const sup = data?.supervised;
   if (!sup?.classification || !sup.regression) throw new Error("Thiếu thống kê mô hình trong API.");
   const clf = sup.classification;
-  const selected = sup.model_selection?.selected ?? clf.best_classifier_name;
+  const selected = sup.model_selection?.selected ?? "XGBoost";
   const rows = Object.entries(clf).filter(([, metrics]) => metrics && typeof metrics === "object" && !Array.isArray(metrics));
   const split = sup.split || {};
-  const imps = Array.isArray(sup.feature_importances) ? sup.feature_importances.slice(0, 10) : [];
-  
+  const binComp = Object.entries(sup.binary_ablation?.test_comparison || {});
+  const binSelected = sup.binary_ablation?.best_model || "XGBoost";
+  const horizons = Array.isArray(sup.horizon_ablation?.horizons) ? sup.horizon_ablation.horizons : [];
+  const regModels = sup.regression_models && typeof sup.regression_models === "object" ? Object.entries(sup.regression_models) : [];
+  const regSelected = sup.regression_details?.selected || "CatBoost_MAE";
+
   container.innerHTML = `
     <div class="card" style="margin-top: 1rem;">
       <div class="card-header-row">
         <div>
-          <h3 class="card-title">Bảng So Sánh Các Thuật Toán Phân Loại (Test Set)</h3>
-          <p class="card-subtitle">Mô hình tốt nhất được chọn lọc dựa trên Balanced Accuracy và ROC-AUC</p>
+          <h3 class="card-title">Bảng Đối Chiếu 3 Lớp ICAO (On-time / Delayed / Cancelled — Holdout Test)</h3>
+          <p class="card-subtitle">Tuyển chọn trên tập Validation theo Macro-F1; kiểm định độc lập trên Holdout Test (T-${escapeHtml(data.primary_horizon_hours ?? 3)}h)</p>
         </div>
-        <span class="card-step-badge">Test: ${escapeHtml(split.test_rows ?? "--")} mẫu</span>
+        <span class="card-step-badge">Train ${escapeHtml(split.train ?? "--")} | Val ${escapeHtml(split.val ?? "--")} | Test ${escapeHtml(split.test ?? "--")}</span>
       </div>
       <div style="overflow-x: auto;">
         <table class="data-table">
@@ -731,9 +806,12 @@ function renderModelMetrics(data, container) {
             <tr>
               <th>Thuật toán</th>
               <th>Accuracy</th>
+              <th>BalAcc</th>
               <th>Macro F1</th>
-              <th>Macro Recall</th>
-              <th>ROC-AUC</th>
+              <th>Delayed Recall</th>
+              <th>Cancelled Recall</th>
+              <th>ROC-AUC OvR</th>
+              <th>LogLoss</th>
               <th>Trạng thái</th>
             </tr>
           </thead>
@@ -741,27 +819,98 @@ function renderModelMetrics(data, container) {
             ${rows.map(([name, m]) => `
               <tr style="${name === selected ? 'background: #f0fdfa; font-weight: 600;' : ''}">
                 <td><strong>${escapeHtml(name)}</strong></td>
-                <td>${formatPercent(numberOrNull(m.accuracy) === null ? null : m.accuracy * 100, 1)}</td>
+                <td>${formatPercent(numberOrNull(m.accuracy) === null ? null : m.accuracy * 100, 2)}</td>
+                <td>${formatPercent(numberOrNull(m.balanced_accuracy) === null ? null : m.balanced_accuracy * 100, 2)}</td>
                 <td>${formatNumber(m.f1_macro, 4)}</td>
-                <td>${formatNumber(m.recall_macro, 4)}</td>
-                <td>${formatNumber(m.roc_auc_ovr, 4)}</td>
-                <td>${name === selected ? '<span class="badge badge-teal">Đã chọn</span>' : '--'}</td>
+                <td>${formatPercent(numberOrNull(m.delayed_recall) === null ? null : m.delayed_recall * 100, 1)}</td>
+                <td>${formatPercent(numberOrNull(m.cancelled_recall) === null ? null : m.cancelled_recall * 100, 1)}</td>
+                <td>${formatNumber(m.roc_auc_ovr ?? m.roc_auc, 4)}</td>
+                <td>${formatNumber(m.log_loss, 4)}</td>
+                <td>${name === selected ? '<span class="badge badge-teal">Production</span>' : '--'}</td>
               </tr>
             `).join("")}
           </tbody>
         </table>
       </div>
     </div>
+
+    ${binComp.length ? `
     <div class="card" style="margin-top: 1rem;">
       <div class="card-header-row">
         <div>
-          <h3 class="card-title">Mô hình Hồi quy Trễ (HistGradientBoosting Regressor)</h3>
-          <p class="card-subtitle">Hàm mất mát L1 (MAE) giúp kháng outlier trễ cực đoan 300-400 phút</p>
+          <h3 class="card-title">Thí Nghiệm Đối Chứng Nhị Phân (Ablation: On-time vs Disrupted)</h3>
+          <p class="card-subtitle">Đo lường độ nhạy khi gộp trễ &amp; hủy thành 1 lớp gián đoạn (Được chọn Val: ${escapeHtml(binSelected)})</p>
         </div>
       </div>
-      <p style="font-size: 0.88rem; color: var(--text);">
-        MAE dự báo: <strong>${formatNumber(sup.regression.MAE_minutes)} phút</strong> &bull; RMSE: <strong>${formatNumber(sup.regression.RMSE_minutes)} phút</strong>
-      </p>
+      <div style="overflow-x: auto;">
+        <table class="data-table">
+          <thead>
+            <tr><th>Thuật toán</th><th>Accuracy</th><th>BalAcc</th><th>Macro F1</th><th>ROC-AUC</th><th>PR-AUC (Disrupted)</th><th>Brier</th></tr>
+          </thead>
+          <tbody>
+            ${binComp.map(([bName, bm]) => `
+              <tr style="${bName === binSelected ? 'background: #f8fafc; font-weight: 600;' : ''}">
+                <td><strong>${escapeHtml(bName)}</strong></td>
+                <td>${formatPercent((bm.accuracy || 0) * 100, 2)}</td>
+                <td>${formatPercent((bm.balanced_accuracy || 0) * 100, 2)}</td>
+                <td>${formatNumber(bm.f1_macro, 4)}</td>
+                <td>${formatNumber(bm.roc_auc, 4)}</td>
+                <td>${formatNumber(bm.average_precision_disrupted ?? bm.pr_auc_macro, 4)}</td>
+                <td>${formatNumber(bm.brier_disrupted, 4)}</td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      </div>
+    </div>` : ""}
+
+    ${horizons.length ? `
+    <div class="card" style="margin-top: 1rem;">
+      <div class="card-header-row">
+        <div>
+          <h3 class="card-title">Thí Nghiệm Ngưỡng Thời Gian Dự Báo (Horizon Ablation: T-1h / T-3h / T-6h)</h3>
+          <p class="card-subtitle">So sánh tín hiệu Causal Historical Lookback trước giờ khởi hành theo từng chân trời</p>
+        </div>
+      </div>
+      <div style="overflow-x: auto;">
+        <table class="data-table">
+          <thead>
+            <tr><th>Horizon</th><th>Thuật toán tốt nhất</th><th>Val Macro-F1</th><th>Test Macro-F1</th><th>Test BalAcc</th><th>Delayed Recall</th><th>Cancelled Recall</th><th>LogLoss</th></tr>
+          </thead>
+          <tbody>
+            ${horizons.map((h) => `
+              <tr style="${h.is_primary ? 'background: #f0fdfa; font-weight: 600;' : ''}">
+                <td><strong>T-${escapeHtml(h.horizon_hours)}h ${h.is_primary ? '(Chính)' : ''}</strong></td>
+                <td>${escapeHtml(h.best_algorithm)}</td>
+                <td>${formatNumber(h.val_f1_macro, 4)}</td>
+                <td>${formatNumber(h.test_f1_macro, 4)}</td>
+                <td>${formatPercent((h.test_balanced_accuracy || 0) * 100, 2)}</td>
+                <td>${formatPercent((h.test_delayed_recall || 0) * 100, 1)}</td>
+                <td>${formatPercent((h.test_cancelled_recall || 0) * 100, 1)}</td>
+                <td>${formatNumber(h.test_log_loss, 4)}</td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      </div>
+    </div>` : ""}
+
+    <div class="card" style="margin-top: 1rem;">
+      <div class="card-header-row">
+        <div>
+          <h3 class="card-title">Hồi Quy Số Phút Trễ (Tabular L1/MAE Regression — Chỉ Chuyến Hoàn Tất)</h3>
+          <p class="card-subtitle">Loại bỏ tuyệt đối chuyến hủy/diverted (never delay_min=0); đối chiếu Baseline Median (${escapeHtml(sup.regression_details?.baseline_median_MAE_minutes ?? "--")} phút)</p>
+        </div>
+      </div>
+      <div class="kpi-strip" style="margin-top: 0.75rem;">
+        ${regModels.map(([rName, rm]) => `
+          <div class="kpi-card" style="${rName === regSelected ? 'border-left-color: var(--teal-primary); background: #f0fdfa;' : ''}">
+            <div class="kpi-label">${escapeHtml(rName)} ${rName === regSelected ? '(Production)' : ''}</div>
+            <div class="kpi-value">MAE ${formatNumber(rm.MAE_minutes, 2)}p</div>
+            <div class="kpi-sub">MedAE: ${formatNumber(rm.MedAE_minutes, 2)}p &bull; RMSE: ${formatNumber(rm.RMSE_minutes, 2)}p &bull; R&sup2;: ${formatNumber(rm.R2_Score, 4)}</div>
+          </div>
+        `).join("")}
+      </div>
     </div>
   `;
 }
@@ -772,13 +921,14 @@ function renderClusterProfiles(data, container) {
   }
   const profiles = Object.values(data.profiles);
   const anomalies = data.anomalies;
+  const stab = data.kmeans?.seed_stability || {};
   
   container.innerHTML = `
     <div class="card" style="margin-top: 1rem;">
       <div class="card-header-row">
         <div>
-          <h3 class="card-title">Bảng Hồ Sơ 4 Cụm Chuyến Bay (K-Means k=4)</h3>
-          <p class="card-subtitle">Silhouette đạt 0.300 cao nhất khi thử nghiệm k từ 2 đến 8</p>
+          <h3 class="card-title">Bảng Hồ Sơ 4 Cụm Vận Hành (K-Means k=4 &bull; Seed ARI = ${formatNumber(stab.ari_mean, 4)})</h3>
+          <p class="card-subtitle">${escapeHtml(data.kmeans?.suitability_note || "")}</p>
         </div>
       </div>
       <div style="overflow-x: auto;">
@@ -786,24 +936,24 @@ function renderClusterProfiles(data, container) {
           <thead>
             <tr>
               <th>Cụm</th>
-              <th>Tên Cụm</th>
+              <th>Chế Độ Khai Thác</th>
               <th>Số Chuyến</th>
+              <th>Tải TB (ch/h)</th>
               <th>Tỷ Lệ Trễ</th>
               <th>Tỷ Lệ Hủy</th>
-              <th>Trễ Trung Bình</th>
-              <th>Mức Rủi Ro</th>
+              <th>Khuyến Nghị</th>
             </tr>
           </thead>
           <tbody>
             ${profiles.map((c) => `
               <tr>
                 <td><strong>#${escapeHtml(c.cluster_id)}</strong></td>
-                <td><strong>${escapeHtml(c.name ?? c.cluster_name)}</strong></td>
-                <td>${escapeHtml(c.flight_count)}</td>
-                <td>${formatPercent(c.delay_rate_pct)}</td>
-                <td>${formatPercent(c.cancellation_rate_pct)}</td>
-                <td>${formatNumber(c.avg_delay_minutes)} phút</td>
-                <td><span class="badge ${c.risk_tier === 'HIGH' ? 'badge-rose' : (c.risk_tier === 'MEDIUM' ? 'badge-amber' : 'badge-emerald')}">${escapeHtml(c.risk_tier)}</span></td>
+                <td><strong>${escapeHtml(c.name)}</strong><div style="font-size:0.74rem;color:var(--text-dim)">${escapeHtml(c.dominant_airport)} &bull; ${escapeHtml(c.dominant_airline)} &bull; ${escapeHtml(c.dominant_time_slot)}</div></td>
+                <td>${escapeHtml(c.count ?? c.flight_count)} (${formatPercent(c.share_pct, 1)})</td>
+                <td>${formatNumber(c.avg_airport_load, 1)}</td>
+                <td>${formatPercent(c.delay_rate_pct, 1)}</td>
+                <td>${formatPercent(c.cancel_rate_pct ?? c.cancellation_rate_pct, 2)}</td>
+                <td style="font-size:0.76rem;color:var(--text-muted)">${escapeHtml(c.recommended_action)}</td>
               </tr>
             `).join("")}
           </tbody>
@@ -811,24 +961,26 @@ function renderClusterProfiles(data, container) {
       </div>
     </div>
     <div class="card" style="margin-top: 1rem;">
-      <h3 class="card-title">Phát Hiện Dị Biệt (Isolation Forest)</h3>
+      <h3 class="card-title">Phát Hiện Dị Thường Khai Thác (Isolation Forest — Post-hoc Evaluation)</h3>
       <p style="font-size: 0.86rem; color: var(--text); margin-top: 0.3rem;">
-        Đã cô lập <strong>${escapeHtml(anomalies.anomaly_count)} chuyến bay</strong> (${formatPercent(anomalies.anomaly_percentage)}) có dấu hiệu lỗi radar hoặc trễ đặc biệt nghiêm trọng.
+        Cô lập <strong>${escapeHtml(anomalies.anomaly_count)} chuyến (${formatPercent(anomalies.anomaly_rate_pct, 2)})</strong>:
+        tỷ lệ gián đoạn trong nhóm dị thường <strong>${formatPercent(anomalies.anomaly_disruption_rate_pct, 1)}</strong> so với <strong>${formatPercent(anomalies.normal_disruption_rate_pct, 1)}</strong> ở nhóm bình thường.
       </p>
     </div>
   `;
 }
 
 function renderAssociationRules(data, container) {
-  if (!Array.isArray(data)) throw new Error("Tập luật trả về không hợp lệ.");
-  const rules = data.slice(0, 15);
+  const rulesList = Array.isArray(data) ? data : (Array.isArray(data?.rules) ? data.rules : []);
+  if (!rulesList.length) throw new Error("Không có luật kết hợp trong API.");
+  const rules = rulesList.slice(0, 25);
   
   container.innerHTML = `
     <div class="card" style="margin-top: 1rem;">
       <div class="card-header-row">
         <div>
-          <h3 class="card-title">15 Luật Kết Hợp Có Lift Cao Nhất (FP-Growth)</h3>
-          <p class="card-subtitle">Lift cực đại đạt 2.15 ở các khung giờ cao điểm và điều kiện mưa dông</p>
+          <h3 class="card-title">Top ${rules.length} / ${rulesList.length} Luật FP-Growth Phi Trùng Lặp (Train &rarr; Holdout Test)</h3>
+          <p class="card-subtitle">Đã lọc luật dư thừa (Redundancy Pruning) và kiểm chứng khả năng tái lập trên Holdout Test</p>
         </div>
       </div>
       <div style="overflow-x: auto;">
@@ -836,10 +988,13 @@ function renderAssociationRules(data, container) {
           <thead>
             <tr>
               <th>Tiền Đề (Antecedent)</th>
-              <th>Hệ Quả (Consequent)</th>
-              <th>Support</th>
-              <th>Confidence</th>
-              <th>Lift</th>
+              <th>Hệ Quả</th>
+              <th>Train Sup</th>
+              <th>Train Conf</th>
+              <th>Train Lift</th>
+              <th>Test Conf</th>
+              <th>Test Lift</th>
+              <th>Holdout</th>
             </tr>
           </thead>
           <tbody>
@@ -850,6 +1005,9 @@ function renderAssociationRules(data, container) {
                 <td>${formatPercent(r["Support (%)"])}</td>
                 <td>${formatPercent(r["Confidence (%)"])}</td>
                 <td><strong>${formatNumber(r.Lift)}x</strong></td>
+                <td>${formatPercent(r.test_confidence_pct)}</td>
+                <td><strong>${formatNumber(r.test_lift)}x</strong></td>
+                <td>${r.holdout_validated ? '<span class="badge badge-emerald">ĐẠT</span>' : '<span class="badge badge-amber">THẤP</span>'}</td>
               </tr>
             `).join("")}
           </tbody>

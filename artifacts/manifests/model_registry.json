@@ -1,0 +1,231 @@
+{
+  "updated_at": "2026-11-27 14:08:17",
+  "production": {
+    "flight_delay_regressor_mae": {
+      "version": "v2.0.0",
+      "algorithm": "HistGradientBoosting_MAE",
+      "bundle_dir": "artifacts/models/flight_delay_regressor_mae_v2.0.0",
+      "promoted_at": "2026-11-27 14:07:30"
+    },
+    "flight_delay_classifier_3class": {
+      "version": "v2.0.0",
+      "algorithm": "CatBoost",
+      "bundle_dir": "artifacts/models/flight_delay_classifier_3class_v2.0.0",
+      "promoted_at": "2026-11-27 14:08:01"
+    },
+    "flight_delay_classifier_binary": {
+      "version": "v2.0.0",
+      "algorithm": "CatBoost",
+      "bundle_dir": "artifacts/models/flight_delay_classifier_binary_v2.0.0",
+      "promoted_at": "2026-11-27 14:08:17"
+    }
+  },
+  "models": {
+    "flight_delay_regressor_mae": {
+      "v2.0.0": {
+        "model_name": "flight_delay_regressor_mae",
+        "version": "v2.0.0",
+        "algorithm": "HistGradientBoosting_MAE",
+        "task": "delay_regression_mae",
+        "status": "Production",
+        "approved": true,
+        "dataset_version": "2026.11.02-h3-4716bcd4",
+        "bundle_dir": "artifacts/models/flight_delay_regressor_mae_v2.0.0",
+        "metrics": {
+          "MAE_minutes": 14.68,
+          "RMSE_minutes": 30.96,
+          "MedAE_minutes": 6.11,
+          "R2_Score": 0.0334,
+          "fit_ms": 1874.66,
+          "infer_ms": 11.55
+        },
+        "registered_at": "2026-11-27 14:07:30",
+        "transition_note": "Approved by automated-governance-gate"
+      }
+    },
+    "flight_delay_classifier_3class": {
+      "v2.0.0": {
+        "model_name": "flight_delay_classifier_3class",
+        "version": "v2.0.0",
+        "algorithm": "CatBoost",
+        "task": "multiclass_3",
+        "status": "Production",
+        "approved": true,
+        "dataset_version": "2026.11.02-h3-4716bcd4",
+        "bundle_dir": "artifacts/models/flight_delay_classifier_3class_v2.0.0",
+        "metrics": {
+          "accuracy": 0.7498,
+          "balanced_accuracy": 0.4186,
+          "precision_macro": 0.4129,
+          "recall_macro": 0.4186,
+          "f1_macro": 0.4154,
+          "f1_weighted": 0.7536,
+          "roc_auc": 0.8082,
+          "roc_auc_ovr": 0.8082,
+          "pr_auc_macro": 0.5402,
+          "pr_auc_per_class": {
+            "on_time": 0.902,
+            "delayed": 0.3686,
+            "cancelled": 0.35
+          },
+          "log_loss": 0.517,
+          "brier_disrupted": 0.1702,
+          "confusion_matrix": [
+            [
+              1805,
+              364,
+              0
+            ],
+            [
+              313,
+              230,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "classification_report": {
+            "on_time": {
+              "precision": 0.8514150943396226,
+              "recall": 0.8321807284462887,
+              "f1-score": 0.8416880391699697,
+              "support": 2169.0
+            },
+            "delayed": {
+              "precision": 0.3872053872053872,
+              "recall": 0.42357274401473294,
+              "f1-score": 0.4045734388742304,
+              "support": 543.0
+            },
+            "cancelled": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 2.0
+            },
+            "accuracy": 0.7498157700810612,
+            "macro avg": {
+              "precision": 0.41287349384833655,
+              "recall": 0.4185844908203405,
+              "f1-score": 0.4154204926814,
+              "support": 2714.0
+            },
+            "weighted avg": {
+              "precision": 0.7579115198508353,
+              "recall": 0.7498157700810612,
+              "f1-score": 0.7536126507989578,
+              "support": 2714.0
+            }
+          },
+          "infer_ms": 5.07,
+          "test_infer_ms": 5.07,
+          "on_time_precision": 0.8514,
+          "on_time_recall": 0.8322,
+          "on_time_f1": 0.8417,
+          "on_time_support": 2169,
+          "delayed_precision": 0.3872,
+          "delayed_recall": 0.4236,
+          "delayed_f1": 0.4046,
+          "delayed_support": 543,
+          "cancelled_precision": 0.0,
+          "cancelled_recall": 0.0,
+          "cancelled_f1": 0.0,
+          "cancelled_support": 2,
+          "average_precision_delayed": 0.3686,
+          "fit_ms": 1565.58,
+          "cv_f1_macro_mean": 0.433,
+          "cv_f1_macro_std": 0.0561,
+          "cv_bal_acc_mean": 0.4972
+        },
+        "registered_at": "2026-11-27 14:08:01",
+        "transition_note": "Approved by automated-governance-gate"
+      }
+    },
+    "flight_delay_classifier_binary": {
+      "v2.0.0": {
+        "model_name": "flight_delay_classifier_binary",
+        "version": "v2.0.0",
+        "algorithm": "CatBoost",
+        "task": "binary_disrupted",
+        "status": "Production",
+        "approved": true,
+        "dataset_version": "2026.11.02-h3-4716bcd4",
+        "bundle_dir": "artifacts/models/flight_delay_classifier_binary_v2.0.0",
+        "metrics": {
+          "accuracy": 0.7605,
+          "balanced_accuracy": 0.6214,
+          "precision_macro": 0.6242,
+          "recall_macro": 0.6214,
+          "f1_macro": 0.6227,
+          "f1_weighted": 0.7592,
+          "roc_auc": 0.7103,
+          "roc_auc_ovr": 0.7103,
+          "pr_auc_macro": 0.6422,
+          "pr_auc_per_class": {
+            "on_time": 0.9024,
+            "disrupted": 0.382
+          },
+          "log_loss": 0.4939,
+          "brier_disrupted": 0.163,
+          "confusion_matrix": [
+            [
+              1852,
+              317
+            ],
+            [
+              333,
+              212
+            ]
+          ],
+          "classification_report": {
+            "on_time": {
+              "precision": 0.8475972540045766,
+              "recall": 0.8538497003227293,
+              "f1-score": 0.8507119889756546,
+              "support": 2169.0
+            },
+            "disrupted": {
+              "precision": 0.4007561436672968,
+              "recall": 0.3889908256880734,
+              "f1-score": 0.3947858472998138,
+              "support": 545.0
+            },
+            "accuracy": 0.7605011053795137,
+            "macro avg": {
+              "precision": 0.6241766988359367,
+              "recall": 0.6214202630054013,
+              "f1-score": 0.6227489181377341,
+              "support": 2714.0
+            },
+            "weighted avg": {
+              "precision": 0.7578668173303623,
+              "recall": 0.7605011053795137,
+              "f1-score": 0.7591571816015451,
+              "support": 2714.0
+            }
+          },
+          "infer_ms": 3.41,
+          "test_infer_ms": 3.41,
+          "on_time_precision": 0.8476,
+          "on_time_recall": 0.8538,
+          "on_time_f1": 0.8507,
+          "on_time_support": 2169,
+          "disrupted_precision": 0.4008,
+          "disrupted_recall": 0.389,
+          "disrupted_f1": 0.3948,
+          "disrupted_support": 545,
+          "average_precision_disrupted": 0.382,
+          "fit_ms": 1509.02,
+          "cv_f1_macro_mean": 0.6111,
+          "cv_f1_macro_std": 0.0521,
+          "cv_bal_acc_mean": 0.6349
+        },
+        "registered_at": "2026-11-27 14:08:17",
+        "transition_note": "Approved by automated-governance-gate"
+      }
+    }
+  }
+}

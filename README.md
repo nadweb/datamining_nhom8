@@ -1,162 +1,165 @@
-# Vietnam Flight Delay & Risk Intelligence Platform (FlightRisk VN)
+# FlightRisk VN — Hệ thống Khai Phá Dữ Liệu & Dự Báo Chậm / Hủy Chuyến Bay Việt Nam
 
-> Hệ thống khai phá dữ liệu, học máy có giám sát (Supervised) & không giám sát (Unsupervised), cùng nền tảng web dự báo rủi ro trễ/hủy chuyến bay tại 5 sân bay lớn của Việt Nam (SGN, HAN, DAD, CXR, PQC).
+[![Python 3.13+](https://img.shields.io/badge/Python-3.13%2B-0d5c58.svg)](#)
+[![Architecture](https://img.shields.io/badge/CRISP--DM-7%20Steps-0284c7.svg)](#)
+[![Data Lake](https://img.shields.io/badge/Medallion-Raw%20%E2%86%92%20Bronze%20%E2%86%92%20Silver%20%E2%86%92%20Gold-0f766e.svg)](#)
+[![Serving](https://img.shields.io/badge/API-FastAPI%20%2B%20Uvicorn-059669.svg)](#)
 
----
-
-
-
-### 1. Clone mã nguồn & Thiết lập môi trường ảo
-```bash
-git clone https://github.com/your-org/ScrapeData.git
-cd ScrapeData
-
-# Khởi tạo môi trường ảo Python
-python -m venv venv
-
-# Kích hoạt venv
-# Trên Windows (cmd / PowerShell):
-venv\Scripts\activate
-# Trên macOS / Linux:
-source venv/bin/activate
-```
-
-### 2. Cài đặt thư viện theo phân nhóm công việc
-Không cần cài toàn bộ nếu bạn chỉ phụ trách một phần:
-
-```bash
-# Lựa chọn A - Dành cho Nhóm Dữ liệu (Parts 1-2):
-pip install -r requirements-pipeline.txt
-playwright install chromium
-
-# Lựa chọn B - Dành cho Nhóm Mô hình (Parts 3-5):
-pip install -r requirements-ml.txt
-
-# Lựa chọn C - Dành cho Nhóm Web (Part 6):
-pip install -r requirements-web.txt
-
-# Lựa chọn D - Cài đặt toàn bộ (Team lead / Fullstack / Testing):
-pip install -r requirements.txt
-```
-
-### 3. Thiết lập biến môi trường
-Tạo file `.env` từ file mẫu:
-```bash
-cp .env.example .env
-# Chỉnh sửa khóa AVIATIONSTACK_KEY trong file .env nếu cần thu thập thêm API
-```
-
-### 4. Dữ liệu & Tự kiểm tra (Self-Check)
-Dữ liệu mẫu (`data/flights_sample.csv`, 300 dòng) đã được commit sẵn trong Git để bạn có thể chạy thử nghiệm và test ngay lập tức mà không cần xin file dữ liệu lớn từ máy chủ:
-
-```bash
-# Kiểm tra tính toàn vẹn của dữ liệu mẫu hoặc dữ liệu thật
-python main.py check-data
-
-# Chạy toàn bộ 21 automated unit tests
-python main.py test
-```
+**FlightRisk VN** là nền tảng **Khai phá Dữ liệu & Dự báo Trước Giờ Bay ($T - 3\text{h}$)** cho mạng đường bay Việt Nam (`SGN`, `HAN`, `DAD`, `CXR`, `PQC`...), xây dựng theo quy trình **7 bước CRISP-DM**, kiến trúc dữ liệu **Medallion (`raw` $\to$ `bronze` $\to$ `silver` $\to$ `gold`)**, cơ chế **Causal Feature Store** chống rò rỉ tương lai, **Model Governance SHA-256**, và phục vụ qua **FastAPI**.
 
 ---
 
-##  Cấu Trúc Dự Án (Project Architecture)
+## 1. Hiểu nhanh dự án trong 60 giây (5 câu hỏi cốt lõi)
 
-```
-ScrapeData/
-├── .env.example                    # Biến môi trường mẫu (chứa AVIATIONSTACK_KEY, port)
-├── requirements.txt                # Yêu cầu chung toàn dự án
-├── requirements-pipeline.txt       # Nhóm 1-2: Playwright, bs4, requests, pandas
-├── requirements-ml.txt             # Nhóm 3-5: scikit-learn, mlxtend, joblib, matplotlib
-├── requirements-web.txt            # Nhóm 6: flask, jinja2, requests
-├── requirements-dev.txt            # Công cụ kiểm thử: pytest, nbstripout
-├── config.py                       # Cấu hình chung, tọa độ, mã IATA, danh sách hãng
-├── main.py                         # CLI thống nhất toàn bộ dự án
-│
-├── data/
-│   ├── flights_cleaned_global.csv  # Bộ dữ liệu hoàn chỉnh (12,830 dòng x 24 cột)
-│   ├── flights_sample.csv          # Mẫu 300 dòng phục vụ test độc lập trên Git
-│   ├── data_version.txt            # Thông tin phiên bản, ngày cập nhật, mã băm SHA-256
-│   └── processed/                  # Dữ liệu train/test, scaler.joblib, encoder.joblib
-│
-├── docs/
-│   └── schema.md                   # Hợp đồng dữ liệu (Data Contract), chống rò rỉ (leakage)
-│
-├── pipeline/                       # PHẦN 1 & 2: THU THẬP, LÀM SẠCH & BIẾN ĐỔI DỮ LIỆU
-│   ├── collector.py                # Cào FIDS sân bay & Aviationstack REST API
-│   ├── weather.py                  # Thu thập thời tiết Open-Meteo theo giờ
-│   ├── transformation.py           # Tính số phút trễ, xử lý nửa đêm, gán nhãn
-│   ├── processor.py                # Khử trùng đa cấp, đối chiếu nguồn, điều phối
-│   └── check_data.py               # Lệnh kiểm định ràng buộc schema 24 cột
-│
-├── features/                       # PHẦN 3: KỸ NGHỆ ĐẶC TRƯNG (FEATURE ENGINEERING)
-│   └── features.py                 # Chu kỳ giờ/ngày sin-cos, chỉ số thời tiết, tải sân bay
-│
-├── modeling/                       # PHẦN 4 & 5: MÃ HÓA & MÔ HÌNH HỌC MÁY
-│   ├── encoding.py                 # One-Hot, StandardScaler, chia tập theo thời gian
-│   ├── train.py                    # Supervised: Phân loại 3 lớp & Hồi quy độ trễ
-│   ├── unsupervised.py             # Unsupervised: K-Means (k=4), PCA, Isolation Forest
-│   └── predict.py                  # Giao diện suy luận chuẩn predict_risk() cho Web
-│
-├── web/                            # PHẦN 6: GIAO DIỆN WEB & REST API
-│   ├── app.py                      # Máy chủ API (/api/predict, /api/stats, /api/clusters)
-│   ├── static/                     # CSS hiện đại & JS xử lý AJAX thời gian thực
-│   └── templates/index.html        # Bảng điều khiển mô phỏng rủi ro chuyến bay
-│
-├── notebooks/                      # NOTEBOOKS RIÊNG CHO TỪNG THÀNH VIÊN (ĐÃ BỎ OUTPUT)
-│   ├── 01_member1_cleaning_integration.ipynb
-│   ├── 02_member2_data_transformation.ipynb
-│   ├── 03_member3_feature_engineering.ipynb
-│   ├── 04_member4_encoding_normalization.ipynb
-│   ├── 05_member5_machine_learning.ipynb
-│   ├── 06_member6_web_backend_api.ipynb
-│   ├── 07_member7_web_frontend_ui.ipynb
-│   └── 08_member8_web_dashboard_integration.ipynb
-│
-├── tests/                          # TẬP KIỂM THỬ TỰ ĐỘNG (21 UNIT TESTS)
-│   ├── test_data_validation.py     # Kiểm định 24 cột, khóa duy nhất, chuyến hủy
-│   ├── test_label_rules.py         # Kiểm định qua nửa đêm, ngưỡng trễ 15/30 phút
-│   ├── test_iata_mapping.py        # Kiểm định ánh xạ tên thành phố sang mã IATA
-│   ├── test_features.py            # Kiểm định đặc trưng tuần hoàn và nguy cơ thời tiết
-│   └── test_modeling.py            # Kiểm định chống rò rỉ dữ liệu & predict_risk
-│
-└── models/                         # LƯU TRỮ CÁC MÔ HÌNH ĐÃ HUẤN LUYỆN
-    ├── best_classifier.joblib      # Mô hình phân loại tốt nhất (HistGradientBoosting)
-    ├── best_regressor.joblib       # Mô hình hồi quy độ trễ
-    ├── kmeans_model.joblib         # Mô hình phân cụm K-Means
-    ├── isolation_forest.joblib     # Mô hình phát hiện dị thường
-    └── supervised_metrics.json     # Báo cáo kết quả đánh giá mô hình
+### 1.1. Dữ liệu đến từ đâu?
+Tất cả dữ liệu gốc thu thập từ 3 nguồn thực tế được lưu bất biến tại `data/raw/` và `data/debug_data/`:
+1. **Airport FIDS (Playwright):** 10 file CSV lịch bay đi/đến tại 5 cảng lớn (`SGN`, `HAN`, `DAD`, `CXR`, `PQC`) + ảnh chụp HTML gốc (`data/debug_data/playwright/`).
+2. **Aviationstack REST API:** Dữ liệu đối chứng & danh mục hủy chuyến (`data/raw/aviationstack/aviationstack_api_202610.csv` + JSON gốc tại `data/debug_data/aviationstack/`).
+3. **Open-Meteo Hourly Weather:** Chuỗi thời tiết theo giờ tại tọa độ từng sân bay (`precipitation`, `wind_gusts_10m`, `visibility`, `weather_code`) lưu tại `data/raw/weather/weather_hourly.csv` + JSON gốc tại `data/debug_data/open_meteo/`.
+
+### 1.2. Dữ liệu đi qua những tầng nào? (Project Architecture)
+
+```text
++-----------------------------------------------------------------------------------+
+| 01. DATA INGESTION                                                                |
+|   data/raw/{fids,aviationstack,weather}/ (58 mixed cols, 92,150 raw rows)         |
+|   --> data/bronze/standardized_snapshots.csv (12 FIELDS, 93,081 rows, raw status) |
++-----------------------------------------------------------------------------------+
+                                        |
+                                        v
++-----------------------------------------------------------------------------------+
+| 02. DATA ENGINEERING & CONTRACTS (Modulo 1440 · SHA-256 3-tier Dedup · Weather)   |
+|   --> data/silver/flights_silver.csv (24 CLEANED_FIELDS, 13,570 valid legs)       |
+|   --> data/silver/excluded_outcomes.csv (40 rows: diverted/unknown segregated)    |
++-----------------------------------------------------------------------------------+
+                                        |
+                                        v
++-----------------------------------------------------------------------------------+
+| 03. DATA MINING, EDA & CAUSAL FEATURE STORE (Chronological Split 70/10/20 @ T-3h) |
+|   CausalHistoryStore (bisect_left < prediction_time) · FeatureBuilder Parity      |
+|   --> data/gold/flights_gold.csv + train/val/test.csv (66 clean X features)       |
++-----------------------------------------------------------------------------------+
+                                        |
+          +-----------------------------+-----------------------------+
+          v                                                           v
++---------------------------------------+   +---------------------------------------+
+| 04. MODELING & UNSUPERVISED           |   | 05–06. EVALUATION & GOVERNANCE        |
+|  - Classification (3-Class ICAO T-3h) |   |  - Temporal CV · Bootstrap · McNemar  |
+|  - Ablations (Binary & T-1h/3h/6h)    |   |  - Permutation (200x) · SHAP · Slices |
+|  - Regression L1/MAE (Completed only) |   |  - Registry + SHA-256 Checksum Gate   |
+|  - K-Means (ARI) · PCA · IsoForest    |   |  --> artifacts/ & reports/            |
+|  - FP-Growth (Holdout Validated)      |   +---------------------------------------+
++---------------------------------------+                       |
+                                                                v
+                                            +---------------------------------------+
+                                            | 07. DEPLOYMENT & 4-TIER MONITORING    |
+                                            |  - FastAPI (/api/predict, /, /docs)   |
+                                            |  - Fail-closed predict_risk()         |
+                                            |  - PSI + KS-test + Concept Drift      |
+                                            +---------------------------------------+
 ```
 
----
+### 1.3. Notebook nào thực hiện công việc gì?
 
-##  Danh Sách Lệnh CLI (`main.py`)
+| Notebook | Giai đoạn | Nhiệm vụ chính | Dữ liệu vào &rarr; Kết quả ra |
+|---|---|---|---|
+| [00_business_understanding.ipynb](notebooks/00_business_understanding.ipynb) | Lập kế hoạch | Xác định mục tiêu 3 lớp ICAO (`T-3h`), hồi quy `delay_min` & KPI | `configs/*.yaml` &rarr; `artifacts/business/{project_scope,evaluation_plan}.json` |
+| [01_data_ingestion_bronze.ipynb](notebooks/01_data_ingestion_bronze.ipynb) | Bước 1: Ingestion | Kiểm kê 11 file thô (`58` cột), giữ nguyên `status` gốc về **12 `FIELDS`** | `data/raw/*` &rarr; `data/bronze/standardized_snapshots.csv` + `bronze_manifest.json` |
+| [02_data_engineering_silver.ipynb](notebooks/02_data_engineering_silver.ipynb) | Bước 2: Silver | Modulo 1440, SHA-256 dedup 3 tầng, ghép Open-Meteo, tách `diverted`/`unknown` | `data/bronze/*` &rarr; `data/silver/{flights_silver,excluded_outcomes}.csv` |
+| [03_eda_and_feature_engineering_gold.ipynb](notebooks/03_eda_and_feature_engineering_gold.ipynb) | Bước 3: Gold | EDA trực quan, Pearson/Spearman/Cramér's V, `CausalHistoryStore`, Split 70/10/20 | `data/silver/*` &rarr; `data/gold/{flights_gold,train,val,test}.csv` + `dataset_manifest.json` |
+| [04_modeling_classification_regression.ipynb](notebooks/04_modeling_classification_regression.ipynb) | Bước 4: Supervised | Huấn luyện Baselines, HGB, XGBoost, CatBoost (3-Class, Binary, Horizons, MAE) | `data/gold/*` &rarr; `reports/experiments/{classification,regression}_results.json` |
+| [05_unsupervised_discovery.ipynb](notebooks/05_unsupervised_discovery.ipynb) | Bước 4: Unsupervised | K-Means (`k=2..8` + 5-seed ARI), PCA 3D, Isolation Forest, FP-Growth Holdout | `data/gold/*` &rarr; `data/gold/mined_association_rules.csv` + `unsupervised_results.json` |
+| [06_evaluation_and_governance.ipynb](notebooks/06_evaluation_and_governance.ipynb) | Bước 5–6: Eval & Gov | Permutation/Bootstrap/McNemar, Subgroups, xác minh Model Registry & SHA-256 | `artifacts/` &rarr; `evaluation_report.json` + `model_registry.json` + `checksums.sha256` |
+| [07_deployment_monitoring.ipynb](notebooks/07_deployment_monitoring.ipynb) | Bước 7: Serve & Drift | Kiểm chứng `Training-Serving Parity`, `predict_risk()` fail-closed, 4-Tier PSI/KS | `artifacts/` + `data/gold/` &rarr; `reports/monitoring/drift_report.json` |
 
-| Nhóm | Lệnh | Ý nghĩa |
+### 1.4. Kết quả được lưu ở đâu? (Phân biệt `data/` vs `models/` vs `artifacts/` vs `reports/`)
+
+| Thư mục | Vai trò chuyên biệt | Nội dung chính |
 |---|---|---|
-| **Kiểm tra dữ liệu** | `python main.py check-data` | Kiểm định 8 ràng buộc dữ liệu theo Data Contract |
-| **Kiểm thử tự động** | `python main.py test` | Chạy toàn bộ 21 test tự động (pytest / unittest) |
-| **Kỹ nghệ đặc trưng** | `python main.py features` | Chạy Part 3: Tạo 22 đặc trưng mới (tuần hoàn, thời tiết, tải sân bay) |
-| **Mã hóa & Chuẩn hóa**| `python main.py encode` | Chạy Part 4: One-Hot, StandardScaler, chia Train/Test theo ngày |
-| **Supervised ML** | `python main.py train` | Chạy Part 5A: Huấn luyện phân loại 3 lớp & hồi quy số phút trễ |
-| **Unsupervised ML** | `python main.py unsupervised` | Chạy Part 5B: K-Means (k=4), PCA 2D/3D, Isolation Forest |
-| **Giao diện Web** | `python main.py web` | Khởi chạy máy chủ Web UI Dashboard tại `http://127.0.0.1:5000/` |
-| **Thu thập dữ liệu** | `python main.py loop --every 120` | Thu thập FIDS định kỳ (chạy đa nền tảng Windows/macOS/Linux) |
+| `data/` | **Data Lake 4 tầng (`raw`/`bronze`/`silver`/`gold`)** | Dữ liệu thô (`raw/`), chuẩn 12 cột (`bronze/`), sạch 24 cột (`silver/`), ma trận ML 66 cột & tập luật (`gold/`), manifests (`manifests/`). |
+| `models/` | **Serving Runtime Artifacts** | Model `.joblib` đang dùng trực tiếp trên FastAPI (`best_classifier.joblib`, `best_regressor.joblib`, `kmeans_model.joblib`, `isolation_forest.joblib`) + `LOCK_pipeline_manifest.json`. |
+| `artifacts/` | **Model Governance & Assets** | Các bundle theo phiên bản (`artifacts/models/<name>_v2.0.0/` gồm `checksums.sha256`, `model_card.md`, `requirements.lock`, `evaluation.json`), `encoders/`, `scalers/`, `manifests/{model_registry.json,data_lineage.json}`, `figures/` (7 biểu đồ PNG), `business/`. |
+| `reports/` | **Báo cáo Thực nghiệm & Giám sát** | JSON thống kê có cấu trúc: `data_quality/`, `eda/`, `experiments/` (`classification_results.json`, `regression_results.json`, `evaluation_report.json`, `horizon_ablation_results.json`, `unsupervised_results.json`), `monitoring/` (`drift_report.json`). |
+| `experiments/` | **Experiment Tracking Logs** | Log chi tiết từng lần chạy mô hình & workspace thí nghiệm chân trời (`horizon_ablations/`). |
+
+### 1.5. Làm sao kiểm tra tính đúng đắn và tái lập kết quả?
+1. **Tái lập toàn bộ pipeline 7 bước (Seed cố định `42`):**
+   ```powershell
+   .\venv\Scripts\python.exe main.py all
+   ```
+2. **Kiểm tra tự động toàn bộ công đoạn (30+ automated tests — Leakage, Temporal, Contracts, Parity, Governance SHA-256, API & E2E):**
+   ```powershell
+   .\venv\Scripts\pytest.exe -v
+   .\venv\Scripts\ruff.exe check src scripts tests main.py
+   ```
+3. **Xác minh tính toàn vẹn SHA-256 của Production Bundles:**
+   - Mỗi bundle trong `artifacts/models/<model>_v2.0.0/` chứa `checksums.sha256`; [model_loader.py](src/flight_delay/inference/model_loader.py) kiểm tra `approved == True` và đối chiếu SHA-256 **trước khi nạp** (tự động từ chối fail-closed nếu bị chỉnh sửa hoặc thiếu phê duyệt).
 
 ---
 
-##  Quy Tắc Làm Việc Nhóm (Team Collaboration Rules)
+## 2. Folder Structure
 
-1. **Ngăn chặn xung đột (Zero Merge Conflict):**
-   - Tuyệt đối không chỉnh sửa file của người khác. Mỗi nhánh chức năng (`feature/*`) chỉ làm việc trên thư mục và tệp được phân công theo bảng phân công nhóm.
-   - **Xóa output của Jupyter Notebook trước khi commit:** Chạy lệnh `nbstripout notebooks/*.ipynb` hoặc dùng tính năng *Clear All Outputs* trong Jupyter.
-2. **Quy trình Git & Pull Request:**
-   - Bảo vệ nhánh `main`: Yêu cầu mở Pull Request (PR) và có ít nhất 1 phê duyệt (approval) từ trưởng nhóm trước khi merge.
-   - Luôn chạy lệnh đồng bộ trước khi đẩy mã:
-     ```bash
-     git pull --rebase origin main
-     ```
-   - Chạy `python main.py test` trên máy cá nhân trước khi tạo PR.
-3. **Tuân thủ Hợp đồng dữ liệu (`docs/schema.md`):**
-   - Tuyệt đối không đưa các biến rò rỉ (`delay_min`, `actual_time`, `status`, `status_detail`) vào tập đặc trưng $X$ khi huấn luyện mô hình.
-   - Nhóm Web bắt buộc tích hợp qua hàm `predict_risk()` trong `modeling/predict.py`.
+```text
+ScrapeData/
+├── configs/                        # Cấu hình YAML tập trung (project, sources, airports, airlines, schema, features, experiments, monitoring)
+├── data/
+│   ├── raw/                        # Tầng Raw gốc: fids/, aviationstack/, weather/
+│   ├── debug_data/                 # Kho lưu trữ nguyên thủy (2,923+ captures Playwright/Open-Meteo/Aviationstack)
+│   ├── bronze/                     # Tầng Bronze: standardized_snapshots.csv (12 FIELDS, giữ status gốc)
+│   ├── silver/                     # Tầng Silver: flights_silver.csv (24 CLEANED_FIELDS) + excluded_outcomes.csv
+│   ├── gold/                       # Tầng Gold: flights_gold.csv, train/val/test.csv (66 X), causal_history_store.json, mined_association_rules.csv
+│   └── manifests/                  # bronze_manifest.json, dataset_manifest.json
+├── src/flight_delay/               # Mã nguồn Python chuẩn src-layout
+│   ├── common/                     # Constants, exceptions, SHA-256 hashing, logging
+│   ├── ingestion/                  # Bước 1: Collectors & Source Registry
+│   ├── data_engineering/           # Bước 2: Modulo 1440, Dedup SHA-256, Contracts, Quality
+│   ├── data_mining/                # Bước 3: Profiling, EDA, FeatureBuilder, CausalHistoryStore, Encoding, Datasets
+│   ├── modeling/                   # Bước 4: Baselines, Classification (3-Class/Binary/Horizon), Regression L1, Unsupervised, SHAP
+│   ├── evaluation/                 # Bước 5: Imbalanced Metrics, Temporal CV, Bootstrap, McNemar, Permutation, Subgroups, Error Analysis
+│   ├── governance/                 # Bước 6: Experiment Tracker, Model Registry, Checksums, Model Cards, Lineage
+│   ├── inference/                  # Bước 7: Fail-Closed Model Loader, Validation, predict_risk(), Audit Builder
+│   ├── monitoring/                 # Bước 7: Data Quality, PSI + KS-test, Concept Drift, Performance Alerts
+│   ├── visualization/              # Sinh biểu đồ Matplotlib/Seaborn & Slide thuyết trình HTML
+│   └── api/                        # FastAPI + Pydantic REST & Dashboard Server
+├── notebooks/                      # 8 Notebooks chuẩn CRISP-DM (00..07) kèm sẵn bảng và biểu đồ
+├── scripts/                        # Scripts chạy độc lập từng công đoạn + .bat launchers
+├── tests/                          # Bộ tests phân tầng: unit, data_quality, leakage, integration, modeling, evaluation, api, regression
+├── artifacts/                      # Approved model bundles, checksums SHA-256, encoders, scalers, registry manifests, figures, business
+├── models/                         # Serving runtime .joblib & LOCK_pipeline_manifest.json
+├── reports/                        # Báo cáo JSON (data_quality, eda, experiments, monitoring)
+├── experiments/                    # Experiment run logs & horizon ablation outputs
+├── docs/                           # architecture.md, data_dictionary.md, methodology.md, experiments.md, model_cards.md, api.md
+├── web/                            # Giao diện Dashboard tương tác & Slide 7 bước CRISP-DM
+├── main.py                         # CLI thống nhất
+├── pyproject.toml                  # Metadata gói flightrisk-vn, cấu hình pytest & ruff
+├── Dockerfile & docker-compose.yml # Triển khai container hóa
+└── .gitignore                      # Chặn venv, caches, .env/secrets, raw data & file binary .joblib
+```
 
+---
+
+## 3. Tóm tắt Kết Quả Thực Nghiệm (`dataset v2026.11.02-h3-4716bcd4`)
+
+- **Dữ liệu (`2026-10-08` &rarr; `2026-11-02`):** `92,150` dòng thô &rarr; `93,081` Bronze snapshots &rarr; `13,570` Silver legs hợp lệ (`on_time: 72.98%`, `delayed: 26.32%`, `cancelled: 0.70%`) + `40` ca `diverted`/`unknown` tách riêng. Split theo thời gian: `Train 9,503` / `Val 1,353` / `Test 2,714` (`66` biến ML).
+- **Phân loại 3 lớp ICAO (`T-3h`):** `CatBoost` (tuyển trên Validation) đạt Test **`ROC-AUC OvR = 0.8082`**, **`Macro-F1 = 0.4154`**, **`PR-AUC Macro = 0.5402`**, `delayed_recall = 42.36%`, Permutation Test `p = 0.0000` *(lưu ý Test chỉ có 2 ca hủy = `0.07%`)*.
+- **Binary Disrupted Ablation:** `CatBoost` đạt **`BalAcc = 62.14%`**, **`Macro-F1 = 0.6227`**, **`ROC-AUC = 0.7103`**.
+- **Hồi quy L1/MAE (chuyến hoàn tất):** `HistGradientBoosting_MAE` đạt **`MAE = 14.68 phút`**, **`MedAE = 6.11 phút`** (cải thiện có ý nghĩa thống kê so với `MedianBaseline 15.15m`: Paired Bootstrap `p < 0.05`).
+- **Unsupervised & Monitoring:** K-Means `k=4` (5-Seed `ARI = 0.7958`), PCA 3D (`52.40%` variance), Isolation Forest (`3.01%`), FP-Growth (`34` luật phi trùng lặp, `29/30` luật trễ holdout-validated), Drift Monitor cảnh báo `CRITICAL` (`max PSI = 4.6229` trên causal historical rates; Concept Drift `-8.67` điểm % $\to$ `retrain_recommended = True`).
+
+---
+
+## 4. Khởi chạy Nhanh
+
+```powershell
+# Chạy toàn bộ pipeline 7 bước
+.\venv\Scripts\python.exe main.py all
+
+# Khởi chạy FastAPI Dashboard & Swagger Docs tại http://127.0.0.1:5000
+.\venv\Scripts\python.exe main.py serve
+
+# Chạy toàn bộ kiểm thử & kiểm tra chất lượng mã
+.\venv\Scripts\pytest.exe -v
+.\venv\Scripts\ruff.exe check src scripts tests main.py
+```
+
+Tài liệu chi tiết: [Architecture](docs/architecture.md) · [Data Dictionary & Contracts](docs/data_dictionary.md) · [Methodology](docs/methodology.md) · [Experiments](docs/experiments.md) · [Model Cards](docs/model_cards.md) · [API Reference](docs/api.md).

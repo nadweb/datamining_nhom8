@@ -1,0 +1,23 @@
+psi_thresholds:
+  stable: 0.10
+  moderate: 0.25
+  retrain_trigger: 0.25
+
+ks_test_alpha: 0.05
+label_drift_alert_pct_points: 5.0
+
+risk_policy:
+  low_max_exclusive: 0.25
+  medium_max_exclusive: 0.45
+  disruption_prob_mode: "delayed_plus_cancelled"
+
+serving:
+  require_approved_model: true
+  fail_closed_on_schema_mismatch: true
+  fail_closed_on_future_prediction_time: true
+  host: "127.0.0.1"
+  port: 5000
+
+retrain_policy: >
+  Giam sat Data Quality & PSI hang tuan; canh bao vang khi PSI >= 0.10 hoac KS p-value < 0.05;
+  kich hoat retrain & danh gia Concept Drift (sau khi co nhan that) khi PSI >= 0.25 hoac ty le gian doan lech > 5 diem phan tram.

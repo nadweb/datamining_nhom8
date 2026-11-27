@@ -1,0 +1,1733 @@
+{
+  "generated_at": "2026-11-27 14:07:21",
+  "dataset_version": "2026.11.02-h3-4716bcd4",
+  "raw_provenance_audit": {
+    "raw_file_count": 11,
+    "raw_mixed_rows": 92150,
+    "raw_mixed_columns": 58,
+    "standardized_snapshot_rows": 13570,
+    "dropped_sparse_aviationstack_fields_pct": {
+      "arrival.baggage": 94.69,
+      "departure.gate": 74.21,
+      "aircraft.registration": 36.9,
+      "departure.terminal": 32.69,
+      "arrival.terminal": 25.59
+    },
+    "files_summary": [
+      {
+        "file": "aviationstack_api_202610.csv",
+        "rows": 1454,
+        "cols": 48
+      },
+      {
+        "file": "guide_cxr_202610.csv",
+        "rows": 8653,
+        "cols": 12
+      },
+      {
+        "file": "guide_cxr_202611.csv",
+        "rows": 976,
+        "cols": 12
+      },
+      {
+        "file": "guide_dad_202610.csv",
+        "rows": 12168,
+        "cols": 12
+      },
+      {
+        "file": "guide_dad_202611.csv",
+        "rows": 1642,
+        "cols": 12
+      },
+      {
+        "file": "guide_han_202610.csv",
+        "rows": 23073,
+        "cols": 12
+      },
+      {
+        "file": "guide_han_202611.csv",
+        "rows": 5208,
+        "cols": 12
+      },
+      {
+        "file": "guide_pqc_202610.csv",
+        "rows": 8912,
+        "cols": 12
+      },
+      {
+        "file": "guide_pqc_202611.csv",
+        "rows": 1051,
+        "cols": 12
+      },
+      {
+        "file": "guide_sgn_202610.csv",
+        "rows": 23455,
+        "cols": 12
+      },
+      {
+        "file": "guide_sgn_202611.csv",
+        "rows": 5558,
+        "cols": 12
+      }
+    ]
+  },
+  "schema_evolution": {
+    "stages": [
+      {
+        "stage": "01_bronze_raw",
+        "columns": 58,
+        "rows": 0,
+        "explanation": "Heterogeneous FIDS HTML + Aviationstack JSON + Open-Meteo raw caches."
+      },
+      {
+        "stage": "02_bronze_standardized",
+        "columns": 12,
+        "rows": 0,
+        "explanation": "Unified 12 canonical FIELDS mapping across FIDS and Aviationstack."
+      },
+      {
+        "stage": "03_silver_cleaned",
+        "columns": 24,
+        "rows": 13570,
+        "explanation": "3-tier SHA-256 deduplicated legs, Modulo 1440 delay_min, ICAO labels {on_time, delayed, cancelled}, Open-Meteo weather."
+      },
+      {
+        "stage": "04_gold_analytical",
+        "columns": 56,
+        "rows": 13570,
+        "explanation": "24 Silver cols + domain engineered features (temporal, weather hazard, congestion, interactions, causal historical rates) + prediction_time metadata & targets. Auxiliary/post-flight columns are preserved for EDA/Regression ONLY."
+      },
+      {
+        "stage": "05_modeling_matrix_X",
+        "columns": 66,
+        "rows": 13570,
+        "explanation": "Exact model matrix X = 39 One-Hot cols (from 5 categorical inputs) + 13 StandardScaled continuous/historical inputs + 14 binary flags = 66 columns. Excludes 9 post-flight/target columns & raw identifiers."
+      }
+    ]
+  },
+  "eda": {
+    "total_flights": 13570,
+    "date_range": {
+      "min": "2026-10-08",
+      "max": "2026-11-02"
+    },
+    "status_distribution": {
+      "on_time": {
+        "count": 9904,
+        "pct": 72.98
+      },
+      "delayed": {
+        "count": 3571,
+        "pct": 26.32
+      },
+      "cancelled": {
+        "count": 95,
+        "pct": 0.7
+      }
+    },
+    "delay_min_distribution": {
+      "count": 13464,
+      "mean": 10.93,
+      "std": 32.18,
+      "median": 0.0,
+      "q25": -2.0,
+      "q75": 16.0,
+      "p95": 62.0,
+      "min": -75.0,
+      "max": 629.0
+    },
+    "bivariate": {
+      "by_airline": [
+        {
+          "airline_code": "VN",
+          "total": 5375,
+          "on_time_pct": 75.27,
+          "delayed_pct": 23.26,
+          "cancelled_pct": 1.47,
+          "disrupted_pct": 24.73,
+          "mean_delay_min": 8.16
+        },
+        {
+          "airline_code": "VJ",
+          "total": 5055,
+          "on_time_pct": 61.46,
+          "delayed_pct": 38.3,
+          "cancelled_pct": 0.24,
+          "disrupted_pct": 38.54,
+          "mean_delay_min": 18.82
+        },
+        {
+          "airline_code": "9G",
+          "total": 1863,
+          "on_time_pct": 86.8,
+          "delayed_pct": 13.2,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 13.2,
+          "mean_delay_min": 3.37
+        },
+        {
+          "airline_code": "VU",
+          "total": 532,
+          "on_time_pct": 82.89,
+          "delayed_pct": 16.73,
+          "cancelled_pct": 0.38,
+          "disrupted_pct": 17.11,
+          "mean_delay_min": 6.25
+        },
+        {
+          "airline_code": "0V",
+          "total": 445,
+          "on_time_pct": 93.48,
+          "delayed_pct": 6.52,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 6.52,
+          "mean_delay_min": -1.57
+        },
+        {
+          "airline_code": "BL",
+          "total": 268,
+          "on_time_pct": 92.54,
+          "delayed_pct": 6.72,
+          "cancelled_pct": 0.75,
+          "disrupted_pct": 7.46,
+          "mean_delay_min": -0.43
+        },
+        {
+          "airline_code": "QH",
+          "total": 32,
+          "on_time_pct": 90.62,
+          "delayed_pct": 9.38,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 9.38,
+          "mean_delay_min": 9.22
+        }
+      ],
+      "by_airport": [
+        {
+          "airport": "SGN",
+          "total": 5521,
+          "on_time_pct": 69.19,
+          "delayed_pct": 30.14,
+          "cancelled_pct": 0.67,
+          "disrupted_pct": 30.81,
+          "mean_delay_min": 13.61
+        },
+        {
+          "airport": "HAN",
+          "total": 4366,
+          "on_time_pct": 75.72,
+          "delayed_pct": 23.75,
+          "cancelled_pct": 0.53,
+          "disrupted_pct": 24.28,
+          "mean_delay_min": 8.89
+        },
+        {
+          "airport": "DAD",
+          "total": 1718,
+          "on_time_pct": 72.29,
+          "delayed_pct": 26.02,
+          "cancelled_pct": 1.69,
+          "disrupted_pct": 27.71,
+          "mean_delay_min": 9.96
+        },
+        {
+          "airport": "PQC",
+          "total": 1206,
+          "on_time_pct": 78.11,
+          "delayed_pct": 21.81,
+          "cancelled_pct": 0.08,
+          "disrupted_pct": 21.89,
+          "mean_delay_min": 8.57
+        },
+        {
+          "airport": "CXR",
+          "total": 721,
+          "on_time_pct": 78.36,
+          "delayed_pct": 21.5,
+          "cancelled_pct": 0.14,
+          "disrupted_pct": 21.64,
+          "mean_delay_min": 9.23
+        },
+        {
+          "airport": "VCS",
+          "total": 10,
+          "on_time_pct": 100.0,
+          "delayed_pct": 0.0,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 0.0,
+          "mean_delay_min": 0.0
+        },
+        {
+          "airport": "HPH",
+          "total": 4,
+          "on_time_pct": 100.0,
+          "delayed_pct": 0.0,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 0.0,
+          "mean_delay_min": 2.25
+        },
+        {
+          "airport": "DLI",
+          "total": 3,
+          "on_time_pct": 66.67,
+          "delayed_pct": 33.33,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 33.33,
+          "mean_delay_min": 8.67
+        },
+        {
+          "airport": "VCA",
+          "total": 3,
+          "on_time_pct": 100.0,
+          "delayed_pct": 0.0,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 0.0,
+          "mean_delay_min": 2.67
+        },
+        {
+          "airport": "BMV",
+          "total": 2,
+          "on_time_pct": 100.0,
+          "delayed_pct": 0.0,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 0.0,
+          "mean_delay_min": 7.5
+        },
+        {
+          "airport": "KTI",
+          "total": 2,
+          "on_time_pct": 50.0,
+          "delayed_pct": 50.0,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 50.0,
+          "mean_delay_min": 13.5
+        },
+        {
+          "airport": "OHE",
+          "total": 2,
+          "on_time_pct": 0.0,
+          "delayed_pct": 0.0,
+          "cancelled_pct": 100.0,
+          "disrupted_pct": 100.0,
+          "mean_delay_min": null
+        },
+        {
+          "airport": "VII",
+          "total": 2,
+          "on_time_pct": 100.0,
+          "delayed_pct": 0.0,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 0.0,
+          "mean_delay_min": 3.0
+        },
+        {
+          "airport": "CDG",
+          "total": 1,
+          "on_time_pct": 0.0,
+          "delayed_pct": 100.0,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 100.0,
+          "mean_delay_min": 16.0
+        },
+        {
+          "airport": "DTU",
+          "total": 1,
+          "on_time_pct": 0.0,
+          "delayed_pct": 0.0,
+          "cancelled_pct": 100.0,
+          "disrupted_pct": 100.0,
+          "mean_delay_min": null
+        },
+        {
+          "airport": "HTN",
+          "total": 1,
+          "on_time_pct": 0.0,
+          "delayed_pct": 0.0,
+          "cancelled_pct": 100.0,
+          "disrupted_pct": 100.0,
+          "mean_delay_min": null
+        },
+        {
+          "airport": "HUI",
+          "total": 1,
+          "on_time_pct": 100.0,
+          "delayed_pct": 0.0,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 0.0,
+          "mean_delay_min": 0.0
+        },
+        {
+          "airport": "ICN",
+          "total": 1,
+          "on_time_pct": 100.0,
+          "delayed_pct": 0.0,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 0.0,
+          "mean_delay_min": -4.0
+        },
+        {
+          "airport": "LPQ",
+          "total": 1,
+          "on_time_pct": 100.0,
+          "delayed_pct": 0.0,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 0.0,
+          "mean_delay_min": 0.0
+        },
+        {
+          "airport": "MXP",
+          "total": 1,
+          "on_time_pct": 0.0,
+          "delayed_pct": 100.0,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 100.0,
+          "mean_delay_min": 30.0
+        },
+        {
+          "airport": "PEK",
+          "total": 1,
+          "on_time_pct": 0.0,
+          "delayed_pct": 100.0,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 100.0,
+          "mean_delay_min": 70.0
+        },
+        {
+          "airport": "SAI",
+          "total": 1,
+          "on_time_pct": 100.0,
+          "delayed_pct": 0.0,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 0.0,
+          "mean_delay_min": -3.0
+        },
+        {
+          "airport": "TBB",
+          "total": 1,
+          "on_time_pct": 100.0,
+          "delayed_pct": 0.0,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 0.0,
+          "mean_delay_min": 0.0
+        }
+      ],
+      "by_time_slot": [
+        {
+          "time_slot": "12h-18h",
+          "total": 5197,
+          "on_time_pct": 68.02,
+          "delayed_pct": 31.35,
+          "cancelled_pct": 0.63,
+          "disrupted_pct": 31.98,
+          "mean_delay_min": 13.53
+        },
+        {
+          "time_slot": "06h-12h",
+          "total": 4084,
+          "on_time_pct": 83.33,
+          "delayed_pct": 15.67,
+          "cancelled_pct": 1.0,
+          "disrupted_pct": 16.67,
+          "mean_delay_min": 5.73
+        },
+        {
+          "time_slot": "18h-24h",
+          "total": 3422,
+          "on_time_pct": 66.6,
+          "delayed_pct": 32.85,
+          "cancelled_pct": 0.56,
+          "disrupted_pct": 33.4,
+          "mean_delay_min": 13.92
+        },
+        {
+          "time_slot": "00h-06h",
+          "total": 856,
+          "on_time_pct": 78.97,
+          "delayed_pct": 20.79,
+          "cancelled_pct": 0.23,
+          "disrupted_pct": 21.03,
+          "mean_delay_min": 7.84
+        },
+        {
+          "time_slot": "nan",
+          "total": 11,
+          "on_time_pct": 100.0,
+          "delayed_pct": 0.0,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 0.0,
+          "mean_delay_min": null
+        }
+      ],
+      "by_carrier_category": [
+        {
+          "carrier_category": "FSC",
+          "total": 5375,
+          "on_time_pct": 75.27,
+          "delayed_pct": 23.26,
+          "cancelled_pct": 1.47,
+          "disrupted_pct": 24.73,
+          "mean_delay_min": 8.16
+        },
+        {
+          "carrier_category": "LCC",
+          "total": 5323,
+          "on_time_pct": 63.03,
+          "delayed_pct": 36.71,
+          "cancelled_pct": 0.26,
+          "disrupted_pct": 36.97,
+          "mean_delay_min": 17.86
+        },
+        {
+          "carrier_category": "SEAPLANE",
+          "total": 1863,
+          "on_time_pct": 86.8,
+          "delayed_pct": 13.2,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 13.2,
+          "mean_delay_min": 3.37
+        },
+        {
+          "carrier_category": "TOURIST",
+          "total": 532,
+          "on_time_pct": 82.89,
+          "delayed_pct": 16.73,
+          "cancelled_pct": 0.38,
+          "disrupted_pct": 17.11,
+          "mean_delay_min": 6.25
+        },
+        {
+          "carrier_category": "REGIONAL",
+          "total": 445,
+          "on_time_pct": 93.48,
+          "delayed_pct": 6.52,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 6.52,
+          "mean_delay_min": -1.57
+        },
+        {
+          "carrier_category": "HYBRID",
+          "total": 32,
+          "on_time_pct": 90.62,
+          "delayed_pct": 9.38,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 9.38,
+          "mean_delay_min": 9.22
+        }
+      ],
+      "by_route_type": [
+        {
+          "route_type": "domestic",
+          "total": 9232,
+          "on_time_pct": 73.04,
+          "delayed_pct": 26.08,
+          "cancelled_pct": 0.88,
+          "disrupted_pct": 26.96,
+          "mean_delay_min": 11.97
+        },
+        {
+          "route_type": "international",
+          "total": 4338,
+          "on_time_pct": 72.87,
+          "delayed_pct": 26.81,
+          "cancelled_pct": 0.32,
+          "disrupted_pct": 27.13,
+          "mean_delay_min": 8.71
+        }
+      ],
+      "by_day_type": [
+        {
+          "day_type": "weekday",
+          "total": 8651,
+          "on_time_pct": 71.98,
+          "delayed_pct": 26.99,
+          "cancelled_pct": 1.03,
+          "disrupted_pct": 28.02,
+          "mean_delay_min": 11.22
+        },
+        {
+          "day_type": "weekend",
+          "total": 4908,
+          "on_time_pct": 74.69,
+          "delayed_pct": 25.18,
+          "cancelled_pct": 0.12,
+          "disrupted_pct": 25.31,
+          "mean_delay_min": 10.41
+        },
+        {
+          "day_type": "nan",
+          "total": 11,
+          "on_time_pct": 100.0,
+          "delayed_pct": 0.0,
+          "cancelled_pct": 0.0,
+          "disrupted_pct": 0.0,
+          "mean_delay_min": null
+        }
+      ]
+    },
+    "multivariate": {
+      "disruption_pct_carrier_x_timeslot": {
+        "FSC": {
+          "00h-06h": 22.78,
+          "06h-12h": 15.88,
+          "12h-18h": 28.61,
+          "18h-24h": 30.49
+        },
+        "HYBRID": {
+          "00h-06h": null,
+          "06h-12h": 0.0,
+          "12h-18h": 6.9,
+          "18h-24h": 100.0
+        },
+        "LCC": {
+          "00h-06h": 24.14,
+          "06h-12h": 24.84,
+          "12h-18h": 43.57,
+          "18h-24h": 43.84
+        },
+        "REGIONAL": {
+          "00h-06h": 6.25,
+          "06h-12h": 3.64,
+          "12h-18h": 7.94,
+          "18h-24h": 10.0
+        },
+        "SEAPLANE": {
+          "00h-06h": 7.21,
+          "06h-12h": 3.98,
+          "12h-18h": 18.67,
+          "18h-24h": 17.21
+        },
+        "TOURIST": {
+          "00h-06h": 23.81,
+          "06h-12h": 5.62,
+          "12h-18h": 22.9,
+          "18h-24h": 22.88
+        }
+      },
+      "peak_x_heavy_rain": [
+        {
+          "is_peak_hour": 0,
+          "is_heavy_rain": 0,
+          "count": 8187,
+          "mean": 27.86
+        },
+        {
+          "is_peak_hour": 0,
+          "is_heavy_rain": 1,
+          "count": 195,
+          "mean": 36.92
+        },
+        {
+          "is_peak_hour": 1,
+          "is_heavy_rain": 0,
+          "count": 5134,
+          "mean": 25.22
+        },
+        {
+          "is_peak_hour": 1,
+          "is_heavy_rain": 1,
+          "count": 54,
+          "mean": 33.33
+        }
+      ]
+    },
+    "hypothesis_tests": {
+      "airport_load": {
+        "on_time_median": 30.0,
+        "disrupted_median": 30.0,
+        "mannwhitney_u_p": 0.001258315065379923,
+        "kruskal_3class_p": 3.7330596942899826e-15,
+        "significant_005": true
+      },
+      "precipitation": {
+        "on_time_median": 0.0,
+        "disrupted_median": 0.0,
+        "mannwhitney_u_p": 3.390400036624146e-05,
+        "kruskal_3class_p": 1.2547624346932726e-05,
+        "significant_005": true
+      },
+      "wind_gusts_10m": {
+        "on_time_median": 18.0,
+        "disrupted_median": 18.4,
+        "mannwhitney_u_p": 0.005343064244994104,
+        "kruskal_3class_p": 0.020154055111868477,
+        "significant_005": true
+      },
+      "visibility": {
+        "on_time_median": 12720.0,
+        "disrupted_median": 13300.0,
+        "mannwhitney_u_p": 0.031401401065930895,
+        "kruskal_3class_p": 0.000954066457685602,
+        "significant_005": true
+      },
+      "weather_hazard_score": {
+        "on_time_median": 0.0389,
+        "disrupted_median": 0.0424,
+        "mannwhitney_u_p": 0.6469944424957244,
+        "kruskal_3class_p": 0.14533032643289834,
+        "significant_005": false
+      },
+      "scheduled_hour_num": {
+        "on_time_median": 13.4167,
+        "disrupted_median": 15.9167,
+        "mannwhitney_u_p": 9.37001063674661e-76,
+        "kruskal_3class_p": 8.735969048004811e-77,
+        "significant_005": true
+      }
+    },
+    "outliers": {
+      "delay_count": 13464,
+      "early_negative_count": 3805,
+      "early_min": -75.0,
+      "q1": -2.0,
+      "median": 0.0,
+      "q3": 16.0,
+      "iqr": 18.0,
+      "upper_iqr_fence": 43.0,
+      "iqr_outlier_count": 1187,
+      "extreme_gt_180m": 75,
+      "max_delay": 629.0,
+      "l1_mae_rationale": "Heavy right tail (median 1m vs max 629m) motivates MAE/L1 loss over MSE."
+    },
+    "missingness": {
+      "rows": 13570,
+      "columns": 56,
+      "columns_with_missing": [
+        {
+          "column": "actual_time",
+          "missing_count": 96,
+          "missing_pct": 0.71
+        },
+        {
+          "column": "delay_min",
+          "missing_count": 106,
+          "missing_pct": 0.78
+        },
+        {
+          "column": "time_slot",
+          "missing_count": 11,
+          "missing_pct": 0.08
+        },
+        {
+          "column": "day_type",
+          "missing_count": 11,
+          "missing_pct": 0.08
+        },
+        {
+          "column": "precipitation",
+          "missing_count": 49,
+          "missing_pct": 0.36
+        },
+        {
+          "column": "wind_gusts_10m",
+          "missing_count": 49,
+          "missing_pct": 0.36
+        },
+        {
+          "column": "visibility",
+          "missing_count": 49,
+          "missing_pct": 0.36
+        },
+        {
+          "column": "weather_code",
+          "missing_count": 49,
+          "missing_pct": 0.36
+        }
+      ],
+      "all_columns": [
+        {
+          "column": "leg_key",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "flight_date",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "flight_no",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "airline_code",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "origin",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "destination",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "route_type",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "airport",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "direction",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "scheduled_time",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "actual_time",
+          "missing_count": 96,
+          "missing_pct": 0.71
+        },
+        {
+          "column": "delay_min",
+          "missing_count": 106,
+          "missing_pct": 0.78
+        },
+        {
+          "column": "time_slot",
+          "missing_count": 11,
+          "missing_pct": 0.08
+        },
+        {
+          "column": "day_type",
+          "missing_count": 11,
+          "missing_pct": 0.08
+        },
+        {
+          "column": "is_holiday",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "airport_load",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "precipitation",
+          "missing_count": 49,
+          "missing_pct": 0.36
+        },
+        {
+          "column": "wind_gusts_10m",
+          "missing_count": 49,
+          "missing_pct": 0.36
+        },
+        {
+          "column": "visibility",
+          "missing_count": 49,
+          "missing_pct": 0.36
+        },
+        {
+          "column": "weather_code",
+          "missing_count": 49,
+          "missing_pct": 0.36
+        },
+        {
+          "column": "status",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "status_detail",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "status_clean",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "source",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "scheduled_dt",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "prediction_time",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "horizon_hours",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "scheduled_hour_num",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "hour_sin",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "hour_cos",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "dow_sin",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "dow_cos",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "is_peak_hour",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "is_holiday_flag",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "is_weekend_flag",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "is_heavy_traffic",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "airport_congestion",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "is_rain",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "is_heavy_rain",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "is_high_wind",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "is_severe_wind",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "is_low_vis",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "is_storm",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "weather_hazard_score",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "carrier_category",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "is_golden_triangle",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "is_domestic_flag",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "is_departure",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "load_x_weather",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "peak_x_rain",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "historical_airline_delay_rate",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "historical_airport_delay_rate",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "split_role",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "target_3class",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "target_binary",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        },
+        {
+          "column": "dataset_version",
+          "missing_count": 0,
+          "missing_pct": 0.0
+        }
+      ]
+    }
+  },
+  "correlation_and_association": {
+    "matrix_columns": [
+      "is_disrupted",
+      "delay_min",
+      "hour_sin",
+      "hour_cos",
+      "dow_sin",
+      "dow_cos",
+      "airport_load",
+      "precipitation",
+      "wind_gusts_10m",
+      "visibility",
+      "weather_hazard_score",
+      "load_x_weather",
+      "historical_airline_delay_rate",
+      "historical_airport_delay_rate",
+      "is_peak_hour",
+      "is_golden_triangle"
+    ],
+    "pearson_matrix": [
+      [
+        1.0,
+        0.6499,
+        -0.1869,
+        0.0564,
+        0.0135,
+        -0.0755,
+        0.0222,
+        0.0386,
+        0.0158,
+        0.0126,
+        0.0167,
+        0.0202,
+        0.2395,
+        0.1175,
+        -0.0302,
+        0.0313
+      ],
+      [
+        0.6499,
+        1.0,
+        -0.1346,
+        0.036,
+        0.0084,
+        -0.0257,
+        0.018,
+        0.0263,
+        0.0156,
+        0.008,
+        0.0121,
+        0.0167,
+        0.199,
+        0.0928,
+        -0.0201,
+        0.0528
+      ],
+      [
+        -0.1869,
+        -0.1346,
+        1.0,
+        -0.2232,
+        0.0025,
+        0.0107,
+        -0.1501,
+        -0.0565,
+        -0.1904,
+        -0.1425,
+        -0.0323,
+        -0.0902,
+        0.0388,
+        0.0949,
+        0.0484,
+        -0.012
+      ],
+      [
+        0.0564,
+        0.036,
+        -0.2232,
+        1.0,
+        -0.0598,
+        -0.0371,
+        -0.129,
+        -0.0664,
+        -0.4912,
+        -0.0435,
+        -0.2083,
+        -0.2461,
+        0.0007,
+        -0.0283,
+        0.2208,
+        0.0378
+      ],
+      [
+        0.0135,
+        0.0084,
+        0.0025,
+        -0.0598,
+        1.0,
+        -0.1268,
+        -0.0942,
+        0.0617,
+        -0.0596,
+        0.0422,
+        0.0114,
+        -0.053,
+        -0.0495,
+        -0.0804,
+        -0.0101,
+        0.0086
+      ],
+      [
+        -0.0755,
+        -0.0257,
+        0.0107,
+        -0.0371,
+        -0.1268,
+        1.0,
+        -0.0858,
+        -0.0064,
+        0.0137,
+        0.0234,
+        0.0034,
+        -0.0144,
+        -0.1437,
+        -0.2279,
+        -0.0415,
+        0.0041
+      ],
+      [
+        0.0222,
+        0.018,
+        -0.1501,
+        -0.129,
+        -0.0942,
+        -0.0858,
+        1.0,
+        -0.0624,
+        0.0323,
+        0.0724,
+        -0.0956,
+        0.2757,
+        0.0183,
+        0.2294,
+        0.0484,
+        0.0089
+      ],
+      [
+        0.0386,
+        0.0263,
+        -0.0565,
+        -0.0664,
+        0.0617,
+        -0.0064,
+        -0.0624,
+        1.0,
+        0.2394,
+        -0.3359,
+        0.8157,
+        0.6769,
+        0.0016,
+        0.0615,
+        -0.0583,
+        0.0155
+      ],
+      [
+        0.0158,
+        0.0156,
+        -0.1904,
+        -0.4912,
+        -0.0596,
+        0.0137,
+        0.0323,
+        0.2394,
+        1.0,
+        0.0057,
+        0.5088,
+        0.4874,
+        -0.0498,
+        -0.0303,
+        -0.2671,
+        -0.0601
+      ],
+      [
+        0.0126,
+        0.008,
+        -0.1425,
+        -0.0435,
+        0.0422,
+        0.0234,
+        0.0724,
+        -0.3359,
+        0.0057,
+        1.0,
+        -0.513,
+        -0.4261,
+        -0.0276,
+        0.0214,
+        0.0086,
+        -0.0647
+      ],
+      [
+        0.0167,
+        0.0121,
+        -0.0323,
+        -0.2083,
+        0.0114,
+        0.0034,
+        -0.0956,
+        0.8157,
+        0.5088,
+        -0.513,
+        1.0,
+        0.8379,
+        -0.0237,
+        0.025,
+        -0.1359,
+        0.0064
+      ],
+      [
+        0.0202,
+        0.0167,
+        -0.0902,
+        -0.2461,
+        -0.053,
+        -0.0144,
+        0.2757,
+        0.6769,
+        0.4874,
+        -0.4261,
+        0.8379,
+        1.0,
+        -0.0079,
+        0.1236,
+        -0.1506,
+        -0.0113
+      ],
+      [
+        0.2395,
+        0.199,
+        0.0388,
+        0.0007,
+        -0.0495,
+        -0.1437,
+        0.0183,
+        0.0016,
+        -0.0498,
+        -0.0276,
+        -0.0237,
+        -0.0079,
+        1.0,
+        0.365,
+        -0.0295,
+        -0.0711
+      ],
+      [
+        0.1175,
+        0.0928,
+        0.0949,
+        -0.0283,
+        -0.0804,
+        -0.2279,
+        0.2294,
+        0.0615,
+        -0.0303,
+        0.0214,
+        0.025,
+        0.1236,
+        0.365,
+        1.0,
+        0.0264,
+        0.0442
+      ],
+      [
+        -0.0302,
+        -0.0201,
+        0.0484,
+        0.2208,
+        -0.0101,
+        -0.0415,
+        0.0484,
+        -0.0583,
+        -0.2671,
+        0.0086,
+        -0.1359,
+        -0.1506,
+        -0.0295,
+        0.0264,
+        1.0,
+        0.0633
+      ],
+      [
+        0.0313,
+        0.0528,
+        -0.012,
+        0.0378,
+        0.0086,
+        0.0041,
+        0.0089,
+        0.0155,
+        -0.0601,
+        -0.0647,
+        0.0064,
+        -0.0113,
+        -0.0711,
+        0.0442,
+        0.0633,
+        1.0
+      ]
+    ],
+    "spearman_matrix": [
+      [
+        1.0,
+        0.7689,
+        -0.1817,
+        0.0563,
+        0.0153,
+        -0.0747,
+        0.0277,
+        0.0357,
+        0.024,
+        0.0185,
+        0.0039,
+        0.0116,
+        0.2404,
+        0.1219,
+        -0.0302,
+        0.0313
+      ],
+      [
+        0.7689,
+        1.0,
+        -0.1836,
+        0.0373,
+        0.0166,
+        -0.0725,
+        0.0551,
+        0.0328,
+        0.025,
+        0.0234,
+        -0.0079,
+        0.0129,
+        0.2773,
+        0.1186,
+        -0.0175,
+        0.0693
+      ],
+      [
+        -0.1817,
+        -0.1836,
+        1.0,
+        -0.2826,
+        0.0146,
+        0.0297,
+        -0.1843,
+        -0.0923,
+        -0.1565,
+        -0.1506,
+        -0.0018,
+        -0.0325,
+        0.0304,
+        0.0511,
+        -0.1143,
+        -0.0111
+      ],
+      [
+        0.0563,
+        0.0373,
+        -0.2826,
+        1.0,
+        -0.0564,
+        -0.0445,
+        -0.1053,
+        -0.2015,
+        -0.5057,
+        -0.0088,
+        -0.3107,
+        -0.3684,
+        -0.0108,
+        -0.0261,
+        0.3419,
+        0.0447
+      ],
+      [
+        0.0153,
+        0.0166,
+        0.0146,
+        -0.0564,
+        1.0,
+        0.0731,
+        -0.0858,
+        0.0233,
+        -0.0583,
+        0.0159,
+        -0.0293,
+        -0.0504,
+        -0.0208,
+        -0.0518,
+        -0.0129,
+        0.0058
+      ],
+      [
+        -0.0747,
+        -0.0725,
+        0.0297,
+        -0.0445,
+        0.0731,
+        1.0,
+        -0.123,
+        -0.0187,
+        -0.0105,
+        0.017,
+        -0.0027,
+        -0.0472,
+        -0.1354,
+        -0.1916,
+        -0.0386,
+        0.0055
+      ],
+      [
+        0.0277,
+        0.0551,
+        -0.1843,
+        -0.1053,
+        -0.0858,
+        -0.123,
+        1.0,
+        -0.0437,
+        0.0665,
+        0.1055,
+        -0.0904,
+        0.2461,
+        -0.0096,
+        0.2495,
+        0.0394,
+        -0.0003
+      ],
+      [
+        0.0357,
+        0.0328,
+        -0.0923,
+        -0.2015,
+        0.0233,
+        -0.0187,
+        -0.0437,
+        1.0,
+        0.3218,
+        -0.6377,
+        0.6606,
+        0.5802,
+        -0.0049,
+        0.0876,
+        -0.1182,
+        -0.005
+      ],
+      [
+        0.024,
+        0.025,
+        -0.1565,
+        -0.5057,
+        -0.0583,
+        -0.0105,
+        0.0665,
+        0.3218,
+        1.0,
+        -0.0318,
+        0.6552,
+        0.6643,
+        -0.045,
+        -0.0247,
+        -0.271,
+        -0.0595
+      ],
+      [
+        0.0185,
+        0.0234,
+        -0.1506,
+        -0.0088,
+        0.0159,
+        0.017,
+        0.1055,
+        -0.6377,
+        -0.0318,
+        1.0,
+        -0.6091,
+        -0.5179,
+        -0.0059,
+        0.0638,
+        0.0293,
+        -0.0512
+      ],
+      [
+        0.0039,
+        -0.0079,
+        -0.0018,
+        -0.3107,
+        -0.0293,
+        -0.0027,
+        -0.0904,
+        0.6606,
+        0.6552,
+        -0.6091,
+        1.0,
+        0.9014,
+        -0.0516,
+        -0.0492,
+        -0.1827,
+        -0.0149
+      ],
+      [
+        0.0116,
+        0.0129,
+        -0.0325,
+        -0.3684,
+        -0.0504,
+        -0.0472,
+        0.2461,
+        0.5802,
+        0.6643,
+        -0.5179,
+        0.9014,
+        1.0,
+        -0.0465,
+        0.0515,
+        -0.181,
+        0.0014
+      ],
+      [
+        0.2404,
+        0.2773,
+        0.0304,
+        -0.0108,
+        -0.0208,
+        -0.1354,
+        -0.0096,
+        -0.0049,
+        -0.045,
+        -0.0059,
+        -0.0516,
+        -0.0465,
+        1.0,
+        0.3469,
+        -0.028,
+        -0.069
+      ],
+      [
+        0.1219,
+        0.1186,
+        0.0511,
+        -0.0261,
+        -0.0518,
+        -0.1916,
+        0.2495,
+        0.0876,
+        -0.0247,
+        0.0638,
+        -0.0492,
+        0.0515,
+        0.3469,
+        1.0,
+        0.0225,
+        0.049
+      ],
+      [
+        -0.0302,
+        -0.0175,
+        -0.1143,
+        0.3419,
+        -0.0129,
+        -0.0386,
+        0.0394,
+        -0.1182,
+        -0.271,
+        0.0293,
+        -0.1827,
+        -0.181,
+        -0.028,
+        0.0225,
+        1.0,
+        0.0633
+      ],
+      [
+        0.0313,
+        0.0693,
+        -0.0111,
+        0.0447,
+        0.0058,
+        0.0055,
+        -0.0003,
+        -0.005,
+        -0.0595,
+        -0.0512,
+        -0.0149,
+        0.0014,
+        -0.069,
+        0.049,
+        0.0633,
+        1.0
+      ]
+    ],
+    "target_pearson_ranked": [
+      {
+        "feature": "delay_min",
+        "r": 0.6499
+      },
+      {
+        "feature": "hour_sin",
+        "r": -0.1869
+      },
+      {
+        "feature": "hour_cos",
+        "r": 0.0564
+      },
+      {
+        "feature": "dow_sin",
+        "r": 0.0135
+      },
+      {
+        "feature": "dow_cos",
+        "r": -0.0755
+      },
+      {
+        "feature": "airport_load",
+        "r": 0.0222
+      },
+      {
+        "feature": "precipitation",
+        "r": 0.0386
+      },
+      {
+        "feature": "wind_gusts_10m",
+        "r": 0.0158
+      },
+      {
+        "feature": "visibility",
+        "r": 0.0126
+      },
+      {
+        "feature": "weather_hazard_score",
+        "r": 0.0167
+      },
+      {
+        "feature": "load_x_weather",
+        "r": 0.0202
+      },
+      {
+        "feature": "historical_airline_delay_rate",
+        "r": 0.2395
+      },
+      {
+        "feature": "historical_airport_delay_rate",
+        "r": 0.1175
+      },
+      {
+        "feature": "is_peak_hour",
+        "r": -0.0302
+      },
+      {
+        "feature": "is_golden_triangle",
+        "r": 0.0313
+      }
+    ],
+    "categorical_cramers_v": [
+      {
+        "feature": "airline_code",
+        "n_unique": 7,
+        "cramers_v_3class": 0.1733,
+        "cramers_v_disrupted": 0.2292,
+        "chi2_p_value": 1.0441301653226521e-166
+      },
+      {
+        "feature": "carrier_category",
+        "n_unique": 6,
+        "cramers_v_3class": 0.1587,
+        "cramers_v_disrupted": 0.2083,
+        "chi2_p_value": 1.845172320864055e-140
+      },
+      {
+        "feature": "time_slot",
+        "n_unique": 4,
+        "cramers_v_3class": 0.1216,
+        "cramers_v_disrupted": 0.1658,
+        "chi2_p_value": 1.653790201127908e-83
+      },
+      {
+        "feature": "airport",
+        "n_unique": 23,
+        "cramers_v_3class": 0.1608,
+        "cramers_v_disrupted": 0.0913,
+        "chi2_p_value": 2.3982381141944332e-119
+      },
+      {
+        "feature": "day_type",
+        "n_unique": 2,
+        "cramers_v_3class": 0.0568,
+        "cramers_v_disrupted": 0.0292,
+        "chi2_p_value": 3.1187157142554223e-10
+      },
+      {
+        "feature": "direction",
+        "n_unique": 2,
+        "cramers_v_3class": 0.0249,
+        "cramers_v_disrupted": 0.0117,
+        "chi2_p_value": 0.01493799192178187
+      },
+      {
+        "feature": "route_type",
+        "n_unique": 2,
+        "cramers_v_3class": 0.0316,
+        "cramers_v_disrupted": 0.0016,
+        "chi2_p_value": 0.0011291044592909541
+      }
+    ]
+  }
+}

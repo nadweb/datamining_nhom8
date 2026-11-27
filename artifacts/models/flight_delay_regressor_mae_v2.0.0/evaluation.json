@@ -1,0 +1,184 @@
+{
+  "task": "delay_regression_mae",
+  "best_model": "HistGradientBoosting_MAE",
+  "exclusion_policy": "Strictly excluded cancelled, unknown, and diverted flights (never set cancelled delay_min=0).",
+  "regression": {
+    "MAE_minutes": 14.68,
+    "RMSE_minutes": 30.96,
+    "MedAE_minutes": 6.11,
+    "R2_Score": 0.0334,
+    "fit_ms": 1874.66,
+    "infer_ms": 11.55
+  },
+  "validation": {
+    "MAE_minutes": 13.28,
+    "RMSE_minutes": 23.04,
+    "MedAE_minutes": 7.69,
+    "R2_Score": 0.0483,
+    "fit_ms": 1874.66
+  },
+  "subgroups": {
+    "by_airline": [
+      {
+        "airline_code": "VN",
+        "count": 1113,
+        "mae_minutes": 12.76,
+        "medae_minutes": 5.55,
+        "mean_actual_delay": 5.09
+      },
+      {
+        "airline_code": "VJ",
+        "count": 976,
+        "mae_minutes": 22.31,
+        "medae_minutes": 9.0,
+        "mean_actual_delay": 18.52
+      },
+      {
+        "airline_code": "9G",
+        "count": 362,
+        "mae_minutes": 5.95,
+        "medae_minutes": 2.96,
+        "mean_actual_delay": -1.04
+      },
+      {
+        "airline_code": "VU",
+        "count": 108,
+        "mae_minutes": 6.9,
+        "medae_minutes": 2.92,
+        "mean_actual_delay": 2.26
+      },
+      {
+        "airline_code": "0V",
+        "count": 92,
+        "mae_minutes": 7.31,
+        "medae_minutes": 5.34,
+        "mean_actual_delay": -4.41
+      },
+      {
+        "airline_code": "BL",
+        "count": 55,
+        "mae_minutes": 4.31,
+        "medae_minutes": 1.53,
+        "mean_actual_delay": -2.82
+      },
+      {
+        "airline_code": "QH",
+        "count": 5,
+        "mae_minutes": 3.76,
+        "medae_minutes": 1.79,
+        "mean_actual_delay": -2.4
+      }
+    ],
+    "by_airport": [
+      {
+        "airport": "SGN",
+        "count": 1205,
+        "mae_minutes": 16.48,
+        "medae_minutes": 6.85,
+        "mean_actual_delay": 10.83
+      },
+      {
+        "airport": "HAN",
+        "count": 933,
+        "mae_minutes": 13.25,
+        "medae_minutes": 5.17,
+        "mean_actual_delay": 5.95
+      },
+      {
+        "airport": "DAD",
+        "count": 265,
+        "mae_minutes": 12.48,
+        "medae_minutes": 6.48,
+        "mean_actual_delay": 4.98
+      },
+      {
+        "airport": "PQC",
+        "count": 200,
+        "mae_minutes": 15.94,
+        "medae_minutes": 5.37,
+        "mean_actual_delay": 12.62
+      },
+      {
+        "airport": "CXR",
+        "count": 108,
+        "mae_minutes": 10.16,
+        "medae_minutes": 3.74,
+        "mean_actual_delay": 5.42
+      }
+    ],
+    "by_time_slot": [
+      {
+        "time_slot": "12h-18h",
+        "count": 908,
+        "mae_minutes": 15.42,
+        "medae_minutes": 6.3,
+        "mean_actual_delay": 8.35
+      },
+      {
+        "time_slot": "06h-12h",
+        "count": 881,
+        "mae_minutes": 10.6,
+        "medae_minutes": 4.02,
+        "mean_actual_delay": 4.35
+      },
+      {
+        "time_slot": "18h-24h",
+        "count": 774,
+        "mae_minutes": 18.26,
+        "medae_minutes": 9.41,
+        "mean_actual_delay": 13.85
+      },
+      {
+        "time_slot": "00h-06h",
+        "count": 148,
+        "mae_minutes": 15.8,
+        "medae_minutes": 6.07,
+        "mean_actual_delay": 6.11
+      }
+    ],
+    "by_delay_severity": [
+      {
+        "delay_bucket": "on_time (0-14m)",
+        "count": 1392,
+        "mae_minutes": 3.96,
+        "medae_minutes": 3.01,
+        "mean_actual_delay": 2.31
+      },
+      {
+        "delay_bucket": "early (<0m)",
+        "count": 776,
+        "mae_minutes": 11.22,
+        "medae_minutes": 8.45,
+        "mean_actual_delay": -10.76
+      },
+      {
+        "delay_bucket": "moderate_delay (15-60m)",
+        "count": 398,
+        "mae_minutes": 25.63,
+        "medae_minutes": 22.99,
+        "mean_actual_delay": 29.7
+      },
+      {
+        "delay_bucket": "severe_delay (>60m)",
+        "count": 145,
+        "mae_minutes": 106.17,
+        "medae_minutes": 90.66,
+        "mean_actual_delay": 112.74
+      }
+    ]
+  },
+  "bootstrap_vs_median": {
+    "metric": "mae",
+    "n_bootstrap": 400,
+    "mean_diff_b_minus_a": -0.48,
+    "ci_95": [
+      -0.6425,
+      -0.3257
+    ],
+    "significant_005": true
+  },
+  "feature_importance": {
+    "raw_top": [],
+    "grouped_top": []
+  }
+}

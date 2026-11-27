@@ -1,0 +1,323 @@
+{
+  "generated_at": "2026-11-27 14:08:32",
+  "overall_status": "CRITICAL",
+  "retrain_recommended": true,
+  "alerts": [
+    {
+      "tier": "data_drift",
+      "severity": "CRITICAL",
+      "message": "Max feature PSI=4.6229 exceeds critical threshold."
+    },
+    {
+      "tier": "concept_drift",
+      "severity": "WARNING",
+      "message": "Disruption rate shifted by 8.67 pp."
+    }
+  ],
+  "data_quality": {
+    "status": "OK",
+    "rows_checked": 2714,
+    "missing_pct": {
+      "leg_key": 0.0,
+      "airline_code": 0.0,
+      "airport": 0.0,
+      "scheduled_time": 0.0,
+      "precipitation": 0.04,
+      "wind_gusts_10m": 0.04,
+      "visibility": 0.04
+    },
+    "duplicate_leg_pct": 0.0,
+    "invalid_weather_rows": 0,
+    "valid_outcome_label_pct": 100.0
+  },
+  "data_drift": {
+    "overall_status": "CRITICAL",
+    "max_psi": 4.6229,
+    "psi_thresholds": {
+      "stable": 0.1,
+      "moderate": 0.25,
+      "retrain_trigger": 0.25
+    },
+    "ks_alpha": 0.05,
+    "ref_rows": 10856,
+    "cur_rows": 2714,
+    "feature_drift": {
+      "airport_load": {
+        "psi": 0.0613,
+        "ks_statistic": 0.1176,
+        "ks_p_value": 0.0,
+        "ks_drift_detected": false,
+        "status": "STABLE",
+        "train_mean": 25.394,
+        "test_mean": 28.441,
+        "train_std": 12.425,
+        "test_std": 11.939
+      },
+      "airport_congestion": {
+        "psi": 0.0445,
+        "ks_statistic": 0.096,
+        "ks_p_value": 0.0,
+        "ks_drift_detected": false,
+        "status": "STABLE",
+        "train_mean": 0.969,
+        "test_mean": 1.014,
+        "train_std": 0.324,
+        "test_std": 0.264
+      },
+      "precipitation": {
+        "psi": 0.0182,
+        "ks_statistic": 0.0485,
+        "ks_p_value": 7e-05,
+        "ks_drift_detected": false,
+        "status": "STABLE",
+        "train_mean": 0.26,
+        "test_mean": 0.185,
+        "train_std": 0.881,
+        "test_std": 0.492
+      },
+      "wind_gusts_10m": {
+        "psi": 0.1869,
+        "ks_statistic": 0.1342,
+        "ks_p_value": 0.0,
+        "ks_drift_detected": true,
+        "status": "WARNING",
+        "train_mean": 18.401,
+        "test_mean": 20.067,
+        "train_std": 7.25,
+        "test_std": 8.711
+      },
+      "visibility": {
+        "psi": 0.076,
+        "ks_statistic": 0.0825,
+        "ks_p_value": 0.0,
+        "ks_drift_detected": false,
+        "status": "STABLE",
+        "train_mean": 13633.268,
+        "test_mean": 12982.676,
+        "train_std": 7265.151,
+        "test_std": 7547.189
+      },
+      "weather_hazard_score": {
+        "psi": 0.0967,
+        "ks_statistic": 0.1545,
+        "ks_p_value": 0.0,
+        "ks_drift_detected": false,
+        "status": "STABLE",
+        "train_mean": 0.065,
+        "test_mean": 0.076,
+        "train_std": 0.094,
+        "test_std": 0.077
+      },
+      "historical_airline_delay_rate": {
+        "psi": 4.6229,
+        "ks_statistic": 0.3983,
+        "ks_p_value": 0.0,
+        "ks_drift_detected": true,
+        "status": "CRITICAL",
+        "train_mean": 0.347,
+        "test_mean": 0.295,
+        "train_std": 0.11,
+        "test_std": 0.099
+      },
+      "historical_airport_delay_rate": {
+        "psi": 4.5591,
+        "ks_statistic": 0.4947,
+        "ks_p_value": 0.0,
+        "ks_drift_detected": true,
+        "status": "CRITICAL",
+        "train_mean": 0.346,
+        "test_mean": 0.301,
+        "train_std": 0.074,
+        "test_std": 0.048
+      }
+    },
+    "categorical_drift": {
+      "airline_code": {
+        "chi2_statistic": 4.077,
+        "p_value": 0.666258,
+        "shift_detected": false
+      },
+      "airport": {
+        "chi2_statistic": 67.853,
+        "p_value": 1e-06,
+        "shift_detected": true
+      },
+      "route_type": {
+        "chi2_statistic": 4.658,
+        "p_value": 0.030905,
+        "shift_detected": true
+      },
+      "direction": {
+        "chi2_statistic": 0.038,
+        "p_value": 0.844803,
+        "shift_detected": false
+      }
+    }
+  },
+  "concept_drift": {
+    "status": "ALERT",
+    "reference_rates_pct": {
+      "on_time_pct": 71.25,
+      "delayed_pct": 27.89,
+      "cancelled_pct": 0.86,
+      "disrupted_pct": 28.75
+    },
+    "current_rates_pct": {
+      "on_time_pct": 79.92,
+      "delayed_pct": 20.01,
+      "cancelled_pct": 0.07,
+      "disrupted_pct": 20.08
+    },
+    "disruption_shift_pct_points": 8.67,
+    "alert_threshold_pct_points": 5.0,
+    "concept_drift_detected": true
+  },
+  "model_performance": {
+    "status": "HEALTHY",
+    "best_classifier": "CatBoost",
+    "test_f1_macro": 0.4154,
+    "test_balanced_accuracy": 0.4186,
+    "delayed_recall": 0.4236,
+    "cancelled_recall": 0.0,
+    "best_regressor": "HistGradientBoosting_MAE",
+    "test_mae_minutes": 14.68,
+    "batch_test_infer_ms": 5.07,
+    "slo_batch_infer_lt_2000ms": true
+  },
+  "psi_thresholds": {
+    "stable": 0.1,
+    "moderate": 0.25,
+    "retrain_trigger": 0.25
+  },
+  "feature_drift": {
+    "airport_load": {
+      "psi": 0.0613,
+      "ks_statistic": 0.1176,
+      "ks_p_value": 0.0,
+      "ks_drift_detected": false,
+      "status": "STABLE",
+      "train_mean": 25.394,
+      "test_mean": 28.441,
+      "train_std": 12.425,
+      "test_std": 11.939
+    },
+    "airport_congestion": {
+      "psi": 0.0445,
+      "ks_statistic": 0.096,
+      "ks_p_value": 0.0,
+      "ks_drift_detected": false,
+      "status": "STABLE",
+      "train_mean": 0.969,
+      "test_mean": 1.014,
+      "train_std": 0.324,
+      "test_std": 0.264
+    },
+    "precipitation": {
+      "psi": 0.0182,
+      "ks_statistic": 0.0485,
+      "ks_p_value": 7e-05,
+      "ks_drift_detected": false,
+      "status": "STABLE",
+      "train_mean": 0.26,
+      "test_mean": 0.185,
+      "train_std": 0.881,
+      "test_std": 0.492
+    },
+    "wind_gusts_10m": {
+      "psi": 0.1869,
+      "ks_statistic": 0.1342,
+      "ks_p_value": 0.0,
+      "ks_drift_detected": true,
+      "status": "WARNING",
+      "train_mean": 18.401,
+      "test_mean": 20.067,
+      "train_std": 7.25,
+      "test_std": 8.711
+    },
+    "visibility": {
+      "psi": 0.076,
+      "ks_statistic": 0.0825,
+      "ks_p_value": 0.0,
+      "ks_drift_detected": false,
+      "status": "STABLE",
+      "train_mean": 13633.268,
+      "test_mean": 12982.676,
+      "train_std": 7265.151,
+      "test_std": 7547.189
+    },
+    "weather_hazard_score": {
+      "psi": 0.0967,
+      "ks_statistic": 0.1545,
+      "ks_p_value": 0.0,
+      "ks_drift_detected": false,
+      "status": "STABLE",
+      "train_mean": 0.065,
+      "test_mean": 0.076,
+      "train_std": 0.094,
+      "test_std": 0.077
+    },
+    "historical_airline_delay_rate": {
+      "psi": 4.6229,
+      "ks_statistic": 0.3983,
+      "ks_p_value": 0.0,
+      "ks_drift_detected": true,
+      "status": "CRITICAL",
+      "train_mean": 0.347,
+      "test_mean": 0.295,
+      "train_std": 0.11,
+      "test_std": 0.099
+    },
+    "historical_airport_delay_rate": {
+      "psi": 4.5591,
+      "ks_statistic": 0.4947,
+      "ks_p_value": 0.0,
+      "ks_drift_detected": true,
+      "status": "CRITICAL",
+      "train_mean": 0.346,
+      "test_mean": 0.301,
+      "train_std": 0.074,
+      "test_std": 0.048
+    }
+  },
+  "categorical_drift": {
+    "airline_code": {
+      "chi2_statistic": 4.077,
+      "p_value": 0.666258,
+      "shift_detected": false
+    },
+    "airport": {
+      "chi2_statistic": 67.853,
+      "p_value": 1e-06,
+      "shift_detected": true
+    },
+    "route_type": {
+      "chi2_statistic": 4.658,
+      "p_value": 0.030905,
+      "shift_detected": true
+    },
+    "direction": {
+      "chi2_statistic": 0.038,
+      "p_value": 0.844803,
+      "shift_detected": false
+    }
+  },
+  "label_drift": {
+    "status": "ALERT",
+    "reference_rates_pct": {
+      "on_time_pct": 71.25,
+      "delayed_pct": 27.89,
+      "cancelled_pct": 0.86,
+      "disrupted_pct": 28.75
+    },
+    "current_rates_pct": {
+      "on_time_pct": 79.92,
+      "delayed_pct": 20.01,
+      "cancelled_pct": 0.07,
+      "disrupted_pct": 20.08
+    },
+    "disruption_shift_pct_points": 8.67,
+    "alert_threshold_pct_points": 5.0,
+    "concept_drift_detected": true
+  },
+  "retrain_policy": "Giam sat Data Quality & PSI hang tuan; canh bao vang khi PSI >= 0.10 hoac KS p-value < 0.05; kich hoat retrain & danh gia Concept Drift (sau khi co nhan that) khi PSI >= 0.25 hoac ty le gian doan lech > 5 diem phan tram.\n"
+}

@@ -1,0 +1,11 @@
+pandas==3.0.6
+numpy==2.5.3
+scikit-learn==1.9.1
+xgboost==3.4.1
+catboost==1.2.10
+scipy==1.18.1
+joblib==1.6.0
+pydantic==2.14.4
+fastapi==0.165.0
+pyyaml==6.0.4
+shap==0.54.1

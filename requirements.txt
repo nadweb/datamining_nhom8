@@ -1,5 +1,12 @@
-# Core dependencies for the entire project
--r requirements-pipeline.txt
--r requirements-ml.txt
--r requirements-web.txt
--r requirements-dev.txt
+pandas>=2.2
+numpy>=2.0
+scipy>=1.14
+pyyaml>=6.0
+pydantic>=2.8
+fastapi>=0.115
+uvicorn>=0.32
+joblib>=1.4
+holidays>=0.60
+requests>=2.32
+beautifulsoup4>=4.12
+python-dotenv>=1.0

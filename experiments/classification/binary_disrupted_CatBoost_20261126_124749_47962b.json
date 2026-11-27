@@ -1,0 +1,18 @@
+{
+  "run_id": "20261126_124749_47962b",
+  "category": "classification",
+  "run_name": "binary_disrupted_CatBoost",
+  "logged_at": "2026-11-26 12:47:49",
+  "params": {
+    "task": "binary_disrupted",
+    "algorithm": "CatBoost",
+    "horizon_hours": 3
+  },
+  "metrics": {
+    "val_f1_macro": 0.5971,
+    "val_balanced_accuracy": 0.597,
+    "test_f1_macro": 0.6227,
+    "test_balanced_accuracy": 0.6214
+  },
+  "artifacts": {}
+}

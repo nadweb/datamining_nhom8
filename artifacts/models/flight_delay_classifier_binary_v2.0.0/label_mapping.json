@@ -1,0 +1,10 @@
+{
+  "class_to_id": {
+    "on_time": 0,
+    "disrupted": 1
+  },
+  "class_names": [
+    "on_time",
+    "disrupted"
+  ]
+}

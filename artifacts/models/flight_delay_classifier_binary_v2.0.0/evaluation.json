@@ -1,0 +1,1071 @@
+{
+  "task": "binary_disrupted",
+  "best_model": "CatBoost",
+  "selection_split": "val",
+  "selection_metric": "f1_macro",
+  "classification": {
+    "accuracy": 0.7605,
+    "balanced_accuracy": 0.6214,
+    "precision_macro": 0.6242,
+    "recall_macro": 0.6214,
+    "f1_macro": 0.6227,
+    "f1_weighted": 0.7592,
+    "roc_auc": 0.7103,
+    "roc_auc_ovr": 0.7103,
+    "pr_auc_macro": 0.6422,
+    "pr_auc_per_class": {
+      "on_time": 0.9024,
+      "disrupted": 0.382
+    },
+    "log_loss": 0.4939,
+    "brier_disrupted": 0.163,
+    "confusion_matrix": [
+      [
+        1852,
+        317
+      ],
+      [
+        333,
+        212
+      ]
+    ],
+    "classification_report": {
+      "on_time": {
+        "precision": 0.8475972540045766,
+        "recall": 0.8538497003227293,
+        "f1-score": 0.8507119889756546,
+        "support": 2169.0
+      },
+      "disrupted": {
+        "precision": 0.4007561436672968,
+        "recall": 0.3889908256880734,
+        "f1-score": 0.3947858472998138,
+        "support": 545.0
+      },
+      "accuracy": 0.7605011053795137,
+      "macro avg": {
+        "precision": 0.6241766988359367,
+        "recall": 0.6214202630054013,
+        "f1-score": 0.6227489181377341,
+        "support": 2714.0
+      },
+      "weighted avg": {
+        "precision": 0.7578668173303623,
+        "recall": 0.7605011053795137,
+        "f1-score": 0.7591571816015451,
+        "support": 2714.0
+      }
+    },
+    "infer_ms": 3.41,
+    "test_infer_ms": 3.41,
+    "on_time_precision": 0.8476,
+    "on_time_recall": 0.8538,
+    "on_time_f1": 0.8507,
+    "on_time_support": 2169,
+    "disrupted_precision": 0.4008,
+    "disrupted_recall": 0.389,
+    "disrupted_f1": 0.3948,
+    "disrupted_support": 545,
+    "average_precision_disrupted": 0.382,
+    "fit_ms": 1509.02,
+    "cv_f1_macro_mean": 0.6111,
+    "cv_f1_macro_std": 0.0521,
+    "cv_bal_acc_mean": 0.6349
+  },
+  "validation_metrics": {
+    "accuracy": 0.7125,
+    "balanced_accuracy": 0.597,
+    "precision_macro": 0.5972,
+    "recall_macro": 0.597,
+    "f1_macro": 0.5971,
+    "f1_weighted": 0.7123,
+    "roc_auc": 0.6733,
+    "roc_auc_ovr": 0.6733,
+    "pr_auc_macro": 0.6172,
+    "pr_auc_per_class": {
+      "on_time": 0.8744,
+      "disrupted": 0.36
+    },
+    "log_loss": 0.5495,
+    "brier_disrupted": 0.1868,
+    "confusion_matrix": [
+      [
+        844,
+        194
+      ],
+      [
+        195,
+        120
+      ]
+    ],
+    "classification_report": {
+      "on_time": {
+        "precision": 0.8123195380173244,
+        "recall": 0.8131021194605009,
+        "f1-score": 0.8127106403466539,
+        "support": 1038.0
+      },
+      "disrupted": {
+        "precision": 0.3821656050955414,
+        "recall": 0.38095238095238093,
+        "f1-score": 0.3815580286168522,
+        "support": 315.0
+      },
+      "accuracy": 0.7124907612712491,
+      "macro avg": {
+        "precision": 0.5972425715564329,
+        "recall": 0.5970272502064409,
+        "f1-score": 0.597134334481753,
+        "support": 1353.0
+      },
+      "weighted avg": {
+        "precision": 0.7121728352306566,
+        "recall": 0.7124907612712491,
+        "f1-score": 0.7123314291900482,
+        "support": 1353.0
+      }
+    },
+    "infer_ms": 0.0,
+    "test_infer_ms": 0.0,
+    "on_time_precision": 0.8123,
+    "on_time_recall": 0.8131,
+    "on_time_f1": 0.8127,
+    "on_time_support": 1038,
+    "disrupted_precision": 0.3822,
+    "disrupted_recall": 0.381,
+    "disrupted_f1": 0.3816,
+    "disrupted_support": 315,
+    "average_precision_disrupted": 0.36,
+    "fit_ms": 1509.02
+  },
+  "temporal_cv": {
+    "folds": [
+      {
+        "fold": 1,
+        "train_size": 2714,
+        "val_size": 2714,
+        "val_f1_macro": 0.6293,
+        "val_balanced_accuracy": 0.6456
+      },
+      {
+        "fold": 2,
+        "train_size": 5428,
+        "val_size": 2714,
+        "val_f1_macro": 0.6639,
+        "val_balanced_accuracy": 0.6653
+      },
+      {
+        "fold": 3,
+        "train_size": 8142,
+        "val_size": 2714,
+        "val_f1_macro": 0.5402,
+        "val_balanced_accuracy": 0.5938
+      }
+    ],
+    "cv_f1_macro_mean": 0.6111,
+    "cv_f1_macro_std": 0.0521,
+    "cv_bal_acc_mean": 0.6349
+  },
+  "calibration": {
+    "brier_disrupted": 0.163,
+    "log_loss": 0.4939,
+    "base_rate_disrupted": 0.2008,
+    "bins": [
+      {
+        "bin": 1,
+        "count": 543,
+        "mean_predicted": 0.0714,
+        "observed_rate": 0.0424
+      },
+      {
+        "bin": 2,
+        "count": 543,
+        "mean_predicted": 0.1785,
+        "observed_rate": 0.1455
+      },
+      {
+        "bin": 3,
+        "count": 542,
+        "mean_predicted": 0.2816,
+        "observed_rate": 0.1808
+      },
+      {
+        "bin": 4,
+        "count": 543,
+        "mean_predicted": 0.4106,
+        "observed_rate": 0.2339
+      },
+      {
+        "bin": 5,
+        "count": 543,
+        "mean_predicted": 0.611,
+        "observed_rate": 0.4015
+      }
+    ]
+  },
+  "confusion_analysis": {
+    "top_confusions": [
+      {
+        "actual": "disrupted",
+        "predicted": "on_time",
+        "count": 333,
+        "pct_of_actual_class": 61.1,
+        "pct_of_total": 12.27
+      },
+      {
+        "actual": "on_time",
+        "predicted": "disrupted",
+        "count": 317,
+        "pct_of_actual_class": 14.62,
+        "pct_of_total": 11.68
+      }
+    ]
+  },
+  "statistical_comparisons": {
+    "best_vs_heuristic": {
+      "bootstrap_f1_macro": {
+        "metric": "f1_macro",
+        "n_bootstrap": 400,
+        "mean_diff_b_minus_a": 0.0638,
+        "ci_95": [
+          0.0419,
+          0.0869
+        ],
+        "significant_005": true
+      },
+      "mcnemar": {
+        "n01_b_better": 282,
+        "n10_a_better": 218,
+        "statistic": 7.938,
+        "p_value": 0.004841,
+        "significant_005": true
+      }
+    },
+    "best_vs_HistGradientBoosting": {
+      "bootstrap_f1_macro": {
+        "metric": "f1_macro",
+        "n_bootstrap": 400,
+        "mean_diff_b_minus_a": 0.001,
+        "ci_95": [
+          -0.0161,
+          0.0163
+        ],
+        "significant_005": false
+      },
+      "mcnemar": {
+        "n01_b_better": 92,
+        "n10_a_better": 121,
+        "statistic": 3.6808,
+        "p_value": 0.055044,
+        "significant_005": false
+      }
+    }
+  },
+  "permutation_test": {
+    "n_permutations": 200,
+    "metric": "balanced_accuracy",
+    "model_score": 62.14,
+    "chance_level_mean": 50.04,
+    "chance_level_std": 0.93,
+    "p_value": 0.0,
+    "statistically_significant": true
+  },
+  "feature_importance": {
+    "raw_top": [
+      {
+        "feature": "hour_sin",
+        "importance_pct": 16.32
+      },
+      {
+        "feature": "historical_airline_delay_rate",
+        "importance_pct": 13.73
+      },
+      {
+        "feature": "historical_airport_delay_rate",
+        "importance_pct": 7.79
+      },
+      {
+        "feature": "hour_cos",
+        "importance_pct": 6.59
+      },
+      {
+        "feature": "airport_congestion",
+        "importance_pct": 5.84
+      },
+      {
+        "feature": "dow_sin",
+        "importance_pct": 5.01
+      },
+      {
+        "feature": "wind_gusts_10m",
+        "importance_pct": 4.4
+      },
+      {
+        "feature": "dow_cos",
+        "importance_pct": 4.23
+      },
+      {
+        "feature": "visibility",
+        "importance_pct": 3.9
+      },
+      {
+        "feature": "weather_hazard_score",
+        "importance_pct": 3.03
+      },
+      {
+        "feature": "airport_load",
+        "importance_pct": 2.8
+      },
+      {
+        "feature": "load_x_weather",
+        "importance_pct": 2.65
+      },
+      {
+        "feature": "airport_SGN",
+        "importance_pct": 1.93
+      },
+      {
+        "feature": "is_golden_triangle",
+        "importance_pct": 1.88
+      },
+      {
+        "feature": "airline_code_VJ",
+        "importance_pct": 1.72
+      }
+    ],
+    "grouped_top": [
+      {
+        "feature": "hour_sin",
+        "importance_pct": 16.32
+      },
+      {
+        "feature": "historical_airline_delay_rate",
+        "importance_pct": 13.73
+      },
+      {
+        "feature": "airport",
+        "importance_pct": 12.36
+      },
+      {
+        "feature": "historical_airport_delay_rate",
+        "importance_pct": 7.79
+      },
+      {
+        "feature": "hour_cos",
+        "importance_pct": 6.59
+      },
+      {
+        "feature": "dow_sin",
+        "importance_pct": 5.01
+      },
+      {
+        "feature": "wind_gusts_10m",
+        "importance_pct": 4.4
+      },
+      {
+        "feature": "dow_cos",
+        "importance_pct": 4.23
+      },
+      {
+        "feature": "airline_code",
+        "importance_pct": 4.2
+      },
+      {
+        "feature": "visibility",
+        "importance_pct": 3.9
+      },
+      {
+        "feature": "carrier_category",
+        "importance_pct": 3.65
+      },
+      {
+        "feature": "weather_hazard_score",
+        "importance_pct": 3.03
+      },
+      {
+        "feature": "load_x_weather",
+        "importance_pct": 2.65
+      },
+      {
+        "feature": "route_type",
+        "importance_pct": 2.18
+      },
+      {
+        "feature": "is_golden_triangle",
+        "importance_pct": 1.88
+      }
+    ]
+  },
+  "permutation_importance": [
+    {
+      "feature": "hour_sin",
+      "mean_drop_bal_acc": 0.05169,
+      "std_drop_bal_acc": 0.00579
+    },
+    {
+      "feature": "historical_airline_delay_rate",
+      "mean_drop_bal_acc": 0.05063,
+      "std_drop_bal_acc": 0.01212
+    },
+    {
+      "feature": "airline_code_VJ",
+      "mean_drop_bal_acc": 0.0224,
+      "std_drop_bal_acc": 0.00474
+    },
+    {
+      "feature": "hour_cos",
+      "mean_drop_bal_acc": 0.01105,
+      "std_drop_bal_acc": 0.00325
+    },
+    {
+      "feature": "airport_SGN",
+      "mean_drop_bal_acc": 0.00642,
+      "std_drop_bal_acc": 0.0039
+    },
+    {
+      "feature": "dow_cos",
+      "mean_drop_bal_acc": 0.00538,
+      "std_drop_bal_acc": 0.00115
+    },
+    {
+      "feature": "visibility",
+      "mean_drop_bal_acc": 0.00426,
+      "std_drop_bal_acc": 0.00487
+    },
+    {
+      "feature": "carrier_category_SEAPLANE",
+      "mean_drop_bal_acc": 0.00293,
+      "std_drop_bal_acc": 0.00184
+    },
+    {
+      "feature": "is_golden_triangle",
+      "mean_drop_bal_acc": 0.00257,
+      "std_drop_bal_acc": 0.00126
+    },
+    {
+      "feature": "carrier_category_REGIONAL",
+      "mean_drop_bal_acc": 0.00238,
+      "std_drop_bal_acc": 0.00177
+    },
+    {
+      "feature": "airport_CXR",
+      "mean_drop_bal_acc": 0.00169,
+      "std_drop_bal_acc": 0.00109
+    },
+    {
+      "feature": "is_high_wind",
+      "mean_drop_bal_acc": 0.00151,
+      "std_drop_bal_acc": 0.00099
+    },
+    {
+      "feature": "airline_code_BL",
+      "mean_drop_bal_acc": 0.00147,
+      "std_drop_bal_acc": 0.00143
+    },
+    {
+      "feature": "is_weekend_flag",
+      "mean_drop_bal_acc": 0.00105,
+      "std_drop_bal_acc": 0.00079
+    },
+    {
+      "feature": "wind_gusts_10m",
+      "mean_drop_bal_acc": 0.00104,
+      "std_drop_bal_acc": 0.00232
+    }
+  ],
+  "shap_summary": {
+    "available": true,
+    "sample_size": 400,
+    "global_top_features": [
+      {
+        "feature": "hour_sin",
+        "mean_abs_shap": 0.53012,
+        "mean_abs_shap_on_time": 0.53012
+      },
+      {
+        "feature": "historical_airline_delay_rate",
+        "mean_abs_shap": 0.42074,
+        "mean_abs_shap_on_time": 0.42074
+      },
+      {
+        "feature": "historical_airport_delay_rate",
+        "mean_abs_shap": 0.17571,
+        "mean_abs_shap_on_time": 0.17571
+      },
+      {
+        "feature": "airline_code_VJ",
+        "mean_abs_shap": 0.13323,
+        "mean_abs_shap_on_time": 0.13323
+      },
+      {
+        "feature": "dow_cos",
+        "mean_abs_shap": 0.10976,
+        "mean_abs_shap_on_time": 0.10976
+      },
+      {
+        "feature": "wind_gusts_10m",
+        "mean_abs_shap": 0.07689,
+        "mean_abs_shap_on_time": 0.07689
+      },
+      {
+        "feature": "hour_cos",
+        "mean_abs_shap": 0.07597,
+        "mean_abs_shap_on_time": 0.07597
+      },
+      {
+        "feature": "is_golden_triangle",
+        "mean_abs_shap": 0.07513,
+        "mean_abs_shap_on_time": 0.07513
+      },
+      {
+        "feature": "airport_congestion",
+        "mean_abs_shap": 0.07409,
+        "mean_abs_shap_on_time": 0.07409
+      },
+      {
+        "feature": "airport_SGN",
+        "mean_abs_shap": 0.07259,
+        "mean_abs_shap_on_time": 0.07259
+      },
+      {
+        "feature": "dow_sin",
+        "mean_abs_shap": 0.06264,
+        "mean_abs_shap_on_time": 0.06264
+      },
+      {
+        "feature": "visibility",
+        "mean_abs_shap": 0.04746,
+        "mean_abs_shap_on_time": 0.04746
+      },
+      {
+        "feature": "weather_hazard_score",
+        "mean_abs_shap": 0.04461,
+        "mean_abs_shap_on_time": 0.04461
+      },
+      {
+        "feature": "load_x_weather",
+        "mean_abs_shap": 0.0421,
+        "mean_abs_shap_on_time": 0.0421
+      },
+      {
+        "feature": "airport_load",
+        "mean_abs_shap": 0.04178,
+        "mean_abs_shap_on_time": 0.04178
+      }
+    ]
+  },
+  "subgroups": {
+    "by_airport": {
+      "SGN": {
+        "count": 1206,
+        "accuracy": 74.71,
+        "accuracy_ci_95": [
+          72.18,
+          77.08
+        ],
+        "balanced_accuracy": 63.89,
+        "macro_f1": 63.94,
+        "mae_model": 16.48,
+        "small_sample_warning": false
+      },
+      "HAN": {
+        "count": 933,
+        "accuracy": 77.6,
+        "accuracy_ci_95": [
+          74.81,
+          80.16
+        ],
+        "balanced_accuracy": 63.02,
+        "macro_f1": 61.8,
+        "mae_model": 13.25,
+        "small_sample_warning": false
+      },
+      "DAD": {
+        "count": 267,
+        "accuracy": 72.28,
+        "accuracy_ci_95": [
+          66.63,
+          77.31
+        ],
+        "balanced_accuracy": 57.38,
+        "macro_f1": 57.64,
+        "mae_model": 12.48,
+        "small_sample_warning": false
+      },
+      "CXR": {
+        "count": 108,
+        "accuracy": 82.41,
+        "accuracy_ci_95": [
+          74.15,
+          88.44
+        ],
+        "balanced_accuracy": 52.07,
+        "macro_f1": 49.89,
+        "mae_model": 10.16,
+        "small_sample_warning": false
+      },
+      "PQC": {
+        "count": 200,
+        "accuracy": 78.5,
+        "accuracy_ci_95": [
+          72.3,
+          83.63
+        ],
+        "balanced_accuracy": 58.48,
+        "macro_f1": 59.49,
+        "mae_model": 15.94,
+        "small_sample_warning": false
+      }
+    },
+    "by_airline": {
+      "0V": {
+        "count": 92,
+        "accuracy": 95.65,
+        "accuracy_ci_95": [
+          89.35,
+          98.3
+        ],
+        "balanced_accuracy": 50.0,
+        "macro_f1": 48.89,
+        "mae_model": 7.32,
+        "small_sample_warning": false
+      },
+      "9G": {
+        "count": 362,
+        "accuracy": 95.03,
+        "accuracy_ci_95": [
+          92.28,
+          96.83
+        ],
+        "balanced_accuracy": 52.65,
+        "macro_f1": 53.72,
+        "mae_model": 5.95,
+        "small_sample_warning": false
+      },
+      "BL": {
+        "count": 55,
+        "accuracy": 100.0,
+        "accuracy_ci_95": [
+          93.47,
+          100.0
+        ],
+        "balanced_accuracy": 100.0,
+        "macro_f1": 100.0,
+        "mae_model": 4.31,
+        "small_sample_warning": false
+      },
+      "QH": {
+        "count": 5,
+        "accuracy": 100.0,
+        "accuracy_ci_95": [
+          56.55,
+          100.0
+        ],
+        "balanced_accuracy": 100.0,
+        "macro_f1": 100.0,
+        "mae_model": 3.76,
+        "small_sample_warning": true
+      },
+      "VJ": {
+        "count": 978,
+        "accuracy": 59.92,
+        "accuracy_ci_95": [
+          56.81,
+          62.95
+        ],
+        "balanced_accuracy": 60.69,
+        "macro_f1": 58.28,
+        "mae_model": 22.31,
+        "small_sample_warning": false
+      },
+      "VN": {
+        "count": 1114,
+        "accuracy": 80.25,
+        "accuracy_ci_95": [
+          77.81,
+          82.48
+        ],
+        "balanced_accuracy": 51.56,
+        "macro_f1": 49.73,
+        "mae_model": 12.76,
+        "small_sample_warning": false
+      },
+      "VU": {
+        "count": 108,
+        "accuracy": 85.19,
+        "accuracy_ci_95": [
+          77.28,
+          90.67
+        ],
+        "balanced_accuracy": 56.57,
+        "macro_f1": 55.92,
+        "mae_model": 6.9,
+        "small_sample_warning": false
+      }
+    },
+    "by_peak_hour": {
+      "off_peak": {
+        "count": 1669,
+        "accuracy": 75.85,
+        "accuracy_ci_95": [
+          73.74,
+          77.85
+        ],
+        "balanced_accuracy": 63.18,
+        "macro_f1": 62.83,
+        "mae_model": 14.64,
+        "small_sample_warning": false
+      },
+      "peak_hour": {
+        "count": 1045,
+        "accuracy": 76.36,
+        "accuracy_ci_95": [
+          73.69,
+          78.84
+        ],
+        "balanced_accuracy": 60.63,
+        "macro_f1": 61.3,
+        "mae_model": 14.75,
+        "small_sample_warning": false
+      }
+    },
+    "by_day_type": {
+      "weekday": {
+        "count": 840,
+        "accuracy": 79.88,
+        "accuracy_ci_95": [
+          77.04,
+          82.45
+        ],
+        "balanced_accuracy": 68.21,
+        "macro_f1": 66.15,
+        "mae_model": 12.96,
+        "small_sample_warning": false
+      },
+      "weekend": {
+        "count": 1873,
+        "accuracy": 74.32,
+        "accuracy_ci_95": [
+          72.29,
+          76.25
+        ],
+        "balanced_accuracy": 60.19,
+        "macro_f1": 60.65,
+        "mae_model": 15.46,
+        "small_sample_warning": false
+      }
+    },
+    "by_weather_group": {
+      "clear": {
+        "count": 1851,
+        "accuracy": 76.55,
+        "accuracy_ci_95": [
+          74.57,
+          78.43
+        ],
+        "balanced_accuracy": 63.28,
+        "macro_f1": 63.72,
+        "mae_model": 15.32,
+        "small_sample_warning": false
+      },
+      "heavy_rain_or_storm": {
+        "count": 46,
+        "accuracy": 67.39,
+        "accuracy_ci_95": [
+          52.97,
+          79.13
+        ],
+        "balanced_accuracy": 63.76,
+        "macro_f1": 63.51,
+        "mae_model": 14.4,
+        "small_sample_warning": false
+      },
+      "rain_or_windy": {
+        "count": 817,
+        "accuracy": 75.4,
+        "accuracy_ci_95": [
+          72.33,
+          78.23
+        ],
+        "balanced_accuracy": 58.7,
+        "macro_f1": 58.21,
+        "mae_model": 13.25,
+        "small_sample_warning": false
+      }
+    },
+    "by_route_type": {
+      "domestic": {
+        "count": 1799,
+        "accuracy": 77.43,
+        "accuracy_ci_95": [
+          75.44,
+          79.3
+        ],
+        "balanced_accuracy": 64.99,
+        "macro_f1": 64.38,
+        "mae_model": 13.94,
+        "small_sample_warning": false
+      },
+      "international": {
+        "count": 915,
+        "accuracy": 73.33,
+        "accuracy_ci_95": [
+          70.37,
+          76.1
+        ],
+        "balanced_accuracy": 57.63,
+        "macro_f1": 58.16,
+        "mae_model": 16.15,
+        "small_sample_warning": false
+      }
+    }
+  },
+  "error_analysis": {
+    "total_test_samples": 2714,
+    "total_errors": 650,
+    "high_confidence_false_positives": [
+      {
+        "leg_key": "VJ623|2026-11-02|DAD>SGN",
+        "airline_code": "VJ",
+        "airport": "DAD",
+        "scheduled_time": "20:55",
+        "weather_hazard_score": 0.2437,
+        "airport_load": 15.0,
+        "_yt": "on_time",
+        "_yp": "disrupted",
+        "_p_disr": 0.8374,
+        "delay_min": -8.0
+      },
+      {
+        "leg_key": "VJ223|2026-11-01|VII>SGN",
+        "airline_code": "VJ",
+        "airport": "SGN",
+        "scheduled_time": "20:05",
+        "weather_hazard_score": 0.0444,
+        "airport_load": 31.0,
+        "_yt": "on_time",
+        "_yp": "disrupted",
+        "_p_disr": 0.7868,
+        "delay_min": 3.0
+      },
+      {
+        "leg_key": "VJ147|2026-11-02|HAN>SGN",
+        "airline_code": "VJ",
+        "airport": "SGN",
+        "scheduled_time": "19:40",
+        "weather_hazard_score": 0.0,
+        "airport_load": 22.0,
+        "_yt": "on_time",
+        "_yp": "disrupted",
+        "_p_disr": 0.782,
+        "delay_min": 7.0
+      },
+      {
+        "leg_key": "VJ1635|2026-11-02|DAD>SGN",
+        "airline_code": "VJ",
+        "airport": "DAD",
+        "scheduled_time": "22:30",
+        "weather_hazard_score": 0.2087,
+        "airport_load": 16.0,
+        "_yt": "on_time",
+        "_yp": "disrupted",
+        "_p_disr": 0.7575,
+        "delay_min": -2.0
+      },
+      {
+        "leg_key": "VJ129|2026-11-02|HAN>SGN",
+        "airline_code": "VJ",
+        "airport": "HAN",
+        "scheduled_time": "14:40",
+        "weather_hazard_score": 0.5247,
+        "airport_load": 32.0,
+        "_yt": "on_time",
+        "_yp": "disrupted",
+        "_p_disr": 0.7532,
+        "delay_min": 0.0
+      },
+      {
+        "leg_key": "VJ632|2026-10-31|SGN>DAD",
+        "airline_code": "VJ",
+        "airport": "SGN",
+        "scheduled_time": "20:25",
+        "weather_hazard_score": 0.0167,
+        "airport_load": 35.0,
+        "_yt": "on_time",
+        "_yp": "disrupted",
+        "_p_disr": 0.753,
+        "delay_min": 3.0
+      },
+      {
+        "leg_key": "VJ1832|2026-11-01|VTE>SGN",
+        "airline_code": "VJ",
+        "airport": "SGN",
+        "scheduled_time": "20:45",
+        "weather_hazard_score": 0.0444,
+        "airport_load": 31.0,
+        "_yt": "on_time",
+        "_yp": "disrupted",
+        "_p_disr": 0.7479,
+        "delay_min": 0.0
+      },
+      {
+        "leg_key": "VJ156|2026-10-31|SGN>HAN",
+        "airline_code": "VJ",
+        "airport": "SGN",
+        "scheduled_time": "20:05",
+        "weather_hazard_score": 0.0167,
+        "airport_load": 35.0,
+        "_yt": "on_time",
+        "_yp": "disrupted",
+        "_p_disr": 0.7467,
+        "delay_min": 3.0
+      },
+      {
+        "leg_key": "VJ812|2026-11-01|SIN>SGN",
+        "airline_code": "VJ",
+        "airport": "SGN",
+        "scheduled_time": "20:35",
+        "weather_hazard_score": 0.0444,
+        "airport_load": 31.0,
+        "_yt": "on_time",
+        "_yp": "disrupted",
+        "_p_disr": 0.7424,
+        "delay_min": -9.0
+      },
+      {
+        "leg_key": "VJ223|2026-10-31|VII>SGN",
+        "airline_code": "VJ",
+        "airport": "SGN",
+        "scheduled_time": "20:05",
+        "weather_hazard_score": 0.0167,
+        "airport_load": 35.0,
+        "_yt": "on_time",
+        "_yp": "disrupted",
+        "_p_disr": 0.7292,
+        "delay_min": 0.0
+      }
+    ],
+    "missed_disruptions_false_negatives": [
+      {
+        "leg_key": "0V8072|2026-11-01|VCS>SGN",
+        "airline_code": "0V",
+        "airport": "SGN",
+        "scheduled_time": "07:55",
+        "weather_hazard_score": 0.0,
+        "airport_load": 35.0,
+        "_yt": "disrupted",
+        "_yp": "on_time",
+        "_p_disr": 0.0105,
+        "delay_min": 30.0
+      },
+      {
+        "leg_key": "0V8073|2026-11-01|SGN>VCS",
+        "airline_code": "0V",
+        "airport": "SGN",
+        "scheduled_time": "05:30",
+        "weather_hazard_score": 0.0068,
+        "airport_load": 23.0,
+        "_yt": "disrupted",
+        "_yp": "on_time",
+        "_p_disr": 0.011,
+        "delay_min": 35.0
+      },
+      {
+        "leg_key": "VN1392|2026-11-02|SGN>UIH",
+        "airline_code": "VN",
+        "airport": "SGN",
+        "scheduled_time": "06:05",
+        "weather_hazard_score": 0.0,
+        "airport_load": 27.0,
+        "_yt": "disrupted",
+        "_yp": "on_time",
+        "_p_disr": 0.0263,
+        "delay_min": 120.0
+      },
+      {
+        "leg_key": "VN1272|2026-11-01|SGN>THD",
+        "airline_code": "VN",
+        "airport": "SGN",
+        "scheduled_time": "06:30",
+        "weather_hazard_score": 0.0,
+        "airport_load": 35.0,
+        "_yt": "disrupted",
+        "_yp": "on_time",
+        "_p_disr": 0.038,
+        "delay_min": 25.0
+      },
+      {
+        "leg_key": "VN240|2026-11-01|SGN>HAN",
+        "airline_code": "VN",
+        "airport": "SGN",
+        "scheduled_time": "07:00",
+        "weather_hazard_score": 0.0,
+        "airport_load": 35.0,
+        "_yt": "disrupted",
+        "_yp": "on_time",
+        "_p_disr": 0.0469,
+        "delay_min": 45.0
+      },
+      {
+        "leg_key": "VN18|2026-11-01|CDG>HAN",
+        "airline_code": "VN",
+        "airport": "HAN",
+        "scheduled_time": "06:15",
+        "weather_hazard_score": 0.0367,
+        "airport_load": 22.0,
+        "_yt": "disrupted",
+        "_yp": "on_time",
+        "_p_disr": 0.0512,
+        "delay_min": 20.0
+      },
+      {
+        "leg_key": "VN36|2026-11-01|FRA>HAN",
+        "airline_code": "VN",
+        "airport": "HAN",
+        "scheduled_time": "06:30",
+        "weather_hazard_score": 0.0367,
+        "airport_load": 22.0,
+        "_yt": "disrupted",
+        "_yp": "on_time",
+        "_p_disr": 0.0608,
+        "delay_min": 19.0
+      },
+      {
+        "leg_key": "VJ122|2026-11-01|SGN>HAN",
+        "airline_code": "VJ",
+        "airport": "SGN",
+        "scheduled_time": "06:00",
+        "weather_hazard_score": 0.0,
+        "airport_load": 35.0,
+        "_yt": "disrupted",
+        "_yp": "on_time",
+        "_p_disr": 0.0655,
+        "delay_min": 82.0
+      },
+      {
+        "leg_key": "VN82|2026-11-01|AMS>HAN",
+        "airline_code": "VN",
+        "airport": "HAN",
+        "scheduled_time": "09:10",
+        "weather_hazard_score": 0.1067,
+        "airport_load": 37.0,
+        "_yt": "disrupted",
+        "_yp": "on_time",
+        "_p_disr": 0.0683,
+        "delay_min": 19.0
+      },
+      {
+        "leg_key": "VN244|2026-10-31|SGN>HAN",
+        "airline_code": "VN",
+        "airport": "SGN",
+        "scheduled_time": "09:00",
+        "weather_hazard_score": 0.0044,
+        "airport_load": 45.0,
+        "_yt": "disrupted",
+        "_yp": "on_time",
+        "_p_disr": 0.0772,
+        "delay_min": 54.0
+      }
+    ]
+  }
+}

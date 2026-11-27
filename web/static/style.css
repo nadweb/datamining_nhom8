@@ -758,6 +758,10 @@ body {
   background: #d97706;
 }
 
+.bar-fill.disrupted {
+  background: linear-gradient(90deg, #d97706, #e11d48);
+}
+
 .bar-fill.cancelled {
   background: #e11d48;
 }
@@ -1136,3 +1140,181 @@ body {
     padding: 2.25rem;
   }
 }
+
+/* ==========================================================================
+   7-Step Analytics Panels: EDA Matrix, Correlation Heatmap, Backtest & PSI Drift
+   ========================================================================== */
+.analytics-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.kpi-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem;
+}
+
+.kpi-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--teal-primary);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.kpi-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.kpi-value {
+  font-family: var(--font-mono);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin: 0.25rem 0;
+}
+
+.kpi-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.analytics-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 1.25rem;
+}
+
+.heatmap-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: #fff;
+}
+
+.heatmap-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.76rem;
+  font-family: var(--font-mono);
+}
+
+.heatmap-table th,
+.heatmap-table td {
+  padding: 0.42rem 0.5rem;
+  text-align: center;
+  border: 1px solid #f1f5f9;
+  min-width: 58px;
+}
+
+.heatmap-table th.row-hdr {
+  text-align: left;
+  background: #f8fafc;
+  font-weight: 600;
+  color: var(--secondary);
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+
+.heatmap-table th.col-hdr {
+  background: #f8fafc;
+  font-weight: 600;
+  color: var(--secondary);
+  writing-mode: horizontal-tb;
+}
+
+.bar-track {
+  width: 100%;
+  height: 10px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--teal-primary), var(--teal-light));
+  border-radius: 999px;
+}
+
+.bar-fill-warn {
+  background: linear-gradient(90deg, #d97706, #f59e0b);
+}
+
+.bar-fill-danger {
+  background: linear-gradient(90deg, #be123c, #f43f5e);
+}
+
+.tag-badge {
+  display: inline-block;
+  padding: 0.16rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.tag-stable { background: var(--success-bg); color: var(--success-text); border: 1px solid var(--success-border); }
+.tag-warn { background: var(--warning-bg); color: var(--warning-text); border: 1px solid var(--warning-border); }
+.tag-danger { background: var(--danger-bg); color: var(--danger-text); border: 1px solid var(--danger-border); }
+.tag-selected { background: var(--bg-teal-light); color: var(--teal-dark); border: 1px solid #99f6e4; }
+
+.applicability-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.app-box {
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+.app-box.ready {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.app-box.limit {
+  background: #fff7ed;
+  border-color: #fed7aa;
+}
+
+.app-box ul {
+  margin: 0.6rem 0 0 1.2rem;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.toggle-pills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.toggle-pill {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.toggle-pill.active {
+  background: var(--teal-primary);
+  color: #fff;
+  border-color: var(--teal-primary);
+}
+

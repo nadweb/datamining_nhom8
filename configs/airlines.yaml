@@ -1,0 +1,24 @@
+vn_airlines: ["VN", "VJ", "QH", "BL", "VU", "9G", "0V"]
+
+airline_name_to_code:
+  vietjet: "VJ"
+  "vietnam airlines": "VN"
+  "pacific airlines": "BL"
+  "sun phuquoc": "9G"
+  vietravel: "VU"
+  vasco: "0V"
+  bamboo: "QH"
+
+carrier_categories:
+  VN: "FSC"
+  VJ: "LCC"
+  QH: "HYBRID"
+  BL: "LCC"
+  VU: "TOURIST"
+  0V: "REGIONAL"
+  9G: "SEAPLANE"
+
+caav_official_benchmark:
+  ALL: {delay_pct: 22.3, cancel_pct: 0.6}
+  VN: {otp_pct: 78.0}
+  VJ: {otp_pct: 75.2}

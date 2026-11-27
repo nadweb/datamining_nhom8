@@ -1,0 +1,19 @@
+services:
+  flightrisk-api:
+    build: .
+    container_name: flightrisk-vn-api
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/app/data
+      - ./artifacts:/app/artifacts
+      - ./reports:/app/reports
+      - ./experiments:/app/experiments
+      - ./models:/app/models
+    environment:
+      - PYTHONPATH=/app/src
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:5000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

@@ -1,0 +1,18 @@
+{
+  "run_id": "20261127_140801_4c067a",
+  "category": "classification",
+  "run_name": "binary_disrupted_HeuristicBaseline",
+  "logged_at": "2026-11-27 14:08:01",
+  "params": {
+    "task": "binary_disrupted",
+    "algorithm": "HeuristicBaseline",
+    "horizon_hours": 3
+  },
+  "metrics": {
+    "val_f1_macro": 0.5479,
+    "val_balanced_accuracy": 0.5459,
+    "test_f1_macro": 0.5596,
+    "test_balanced_accuracy": 0.5565
+  },
+  "artifacts": {}
+}

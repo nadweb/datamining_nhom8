@@ -1,0 +1,26 @@
+user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36 DataMiningCourse/2.0"
+
+fids_sites:
+  - {name: "guide_sgn", airport: "SGN", direction: "arrivals", url: "https://www.hochiminhcityairport.com/flight-status-arrivals-departures/"}
+  - {name: "guide_sgn", airport: "SGN", direction: "departures", url: "https://www.hochiminhcityairport.com/flight-status-departures/"}
+  - {name: "guide_han", airport: "HAN", direction: "arrivals", url: "https://www.hanoiairportonline.com/flight-status/"}
+  - {name: "guide_han", airport: "HAN", direction: "departures", url: "https://www.hanoiairportonline.com/flight-status-departures/"}
+  - {name: "guide_dad", airport: "DAD", direction: "arrivals", url: "https://www.danangairportonline.com/flight-status-arrivals-departures/"}
+  - {name: "guide_dad", airport: "DAD", direction: "departures", url: "https://www.danangairportonline.com/flight-status-departures/"}
+  - {name: "guide_cxr", airport: "CXR", direction: "arrivals", url: "https://www.nhatrangairport.com/flight-status-arrivals-departures/"}
+  - {name: "guide_cxr", airport: "CXR", direction: "departures", url: "https://www.nhatrangairport.com/flight-status-departures/"}
+  - {name: "guide_pqc", airport: "PQC", direction: "arrivals", url: "https://www.phuquocairport.com/flight-status-arrivals-departures/"}
+  - {name: "guide_pqc", airport: "PQC", direction: "departures", url: "https://www.phuquocairport.com/flight-status-departures/"}
+
+aviationstack:
+  endpoint: "http://api.aviationstack.com/v1/flights"
+  default_limit: 100
+  default_statuses: ["cancelled", "landed"]
+  usage_file: "data/api_usage.json"
+
+open_meteo:
+  archive_url: "https://archive-api.open-meteo.com/v1/archive"
+  forecast_url: "https://api.open-meteo.com/v1/forecast"
+  hourly_fields: ["precipitation", "wind_gusts_10m", "weather_code"]
+  forecast_past_days: 90
+  archive_lag_days: 6

@@ -1,0 +1,50 @@
+monitored_airports:
+  SGN: {name: "Tan Son Nhat", lat: 10.8188, lon: 106.6520}
+  HAN: {name: "Noi Bai", lat: 21.2212, lon: 105.8072}
+  DAD: {name: "Da Nang", lat: 16.0439, lon: 108.1994}
+  CXR: {name: "Cam Ranh", lat: 12.2275, lon: 109.1920}
+  PQC: {name: "Phu Quoc", lat: 10.1698, lon: 103.9931}
+
+city_to_iata:
+  hochiminh: "SGN"
+  saigon: "SGN"
+  tansonnhat: "SGN"
+  hanoi: "HAN"
+  noibai: "HAN"
+  danang: "DAD"
+  nhatrang: "CXR"
+  camranh: "CXR"
+  phuquoc: "PQC"
+  haiphong: "HPH"
+  catbi: "HPH"
+  vinh: "VII"
+  hue: "HUI"
+  phubai: "HUI"
+  quynhon: "UIH"
+  phucat: "UIH"
+  cantho: "VCA"
+  dalat: "DLI"
+  lienkhuong: "DLI"
+  buonmathuot: "BMV"
+  banmethuot: "BMV"
+  vandon: "VDO"
+  quangninh: "VDO"
+  thanhhoa: "THD"
+  thoxuan: "THD"
+  chulai: "VCL"
+  tamky: "VCL"
+  tuyhoa: "TBB"
+  pleiku: "PXU"
+  rachgia: "VKG"
+  camau: "CAH"
+  condao: "VCS"
+  dienbien: "DIN"
+  donghoi: "VDH"
+
+golden_triangle_routes:
+  - ["SGN", "HAN"]
+  - ["HAN", "SGN"]
+  - ["SGN", "DAD"]
+  - ["DAD", "SGN"]
+  - ["HAN", "DAD"]
+  - ["DAD", "HAN"]

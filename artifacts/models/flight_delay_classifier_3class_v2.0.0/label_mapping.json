@@ -1,0 +1,12 @@
+{
+  "class_to_id": {
+    "on_time": 0,
+    "delayed": 1,
+    "cancelled": 2
+  },
+  "class_names": [
+    "on_time",
+    "delayed",
+    "cancelled"
+  ]
+}

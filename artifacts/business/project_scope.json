@@ -1,0 +1,40 @@
+{
+  "project_name": "ScrapeData — Vietnamese Airline Flight Data Mining & Predictive Analytics Platform",
+  "version": "2.0.0",
+  "prediction_horizon_hours": 3,
+  "ablation_horizons": [
+    1,
+    6
+  ],
+  "airlines": [
+    "VN",
+    "VJ",
+    "QH",
+    "BL",
+    "VU",
+    "9G",
+    "0V"
+  ],
+  "major_airports": [
+    "SGN",
+    "HAN",
+    "DAD",
+    "CXR",
+    "PQC"
+  ],
+  "sources": [
+    "FIDS Airport Portals",
+    "Aviationstack REST API",
+    "Open-Meteo Hourly Weather"
+  ],
+  "primary_classification_labels": {
+    "on_time": 0,
+    "delayed": 1,
+    "cancelled": 2
+  },
+  "binary_ablation_labels": {
+    "on_time": 0,
+    "disrupted": 1
+  },
+  "delay_threshold_minutes": 15
+}

@@ -1,16 +1,45 @@
-# Python environment & cache
+# Python virtual environments & interpreter artifacts
 venv/
 .venv/
+env/
 __pycache__/
 *.py[cod]
 *$py.class
-.ipynb_checkpoints/
-.pytest_cache/
+*.egg-info/
+build/
+dist/
 
-# Environment secrets & logs
+# Test, lint, type-check & notebook runtime caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+
+# Environment variables, credentials & sensitive operational state
 .env
+.env.*
+!.env.example
+*.pem
+*.key
+*.secret
+*credentials*
+data/api_usage.json
 logs/
 *.log
 
-# Data folder kept 100% off Git
-data/
+# Data Lake layers & heavy binary model/training caches
+data/raw/
+data/bronze/
+data/silver/
+data/gold/
+data/debug_data/
+data/manifests/
+data/*.csv
+catboost_info/
+tmp/
+models/*.joblib
+artifacts/models/**/*.joblib
+artifacts/encoders/*.joblib
+artifacts/scalers/*.joblib

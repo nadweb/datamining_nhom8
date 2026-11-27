@@ -1,0 +1,40 @@
+project:
+  name: "ScrapeData — Vietnamese Airline Flight Data Mining & Predictive Analytics Platform"
+  short_name: "FlightRisk VN"
+  version: "2.0.0"
+  random_seed: 42
+  timezone: "Asia/Bangkok"
+  crisp_dm_steps:
+    - "01_data_ingestion"
+    - "02_data_engineering"
+    - "03_data_mining"
+    - "04_experimentation_modeling"
+    - "05_evaluation_validation"
+    - "06_model_governance"
+    - "07_deployment_monitoring"
+
+paths:
+  raw_dir: "data/raw"
+  raw_fids_dir: "data/raw/fids"
+  raw_aviationstack_dir: "data/raw/aviationstack"
+  raw_weather_dir: "data/raw/weather"
+  debug_dir: "data/debug_data"
+  bronze_dir: "data/bronze"
+  silver_dir: "data/silver"
+  gold_dir: "data/gold"
+  data_manifests_dir: "data/manifests"
+  experiments_dir: "experiments"
+  artifacts_dir: "artifacts"
+  models_dir: "artifacts/models"
+  encoders_dir: "artifacts/encoders"
+  scalers_dir: "artifacts/scalers"
+  figures_dir: "artifacts/figures"
+  artifact_manifests_dir: "artifacts/manifests"
+  reports_dir: "reports"
+  logs_dir: "logs"
+  web_dir: "web"
+
+prediction_horizon:
+  primary_hours: 3
+  ablation_hours: [1, 6]
+  description: "Pre-flight forecasting horizon H hours prior to scheduled departure."

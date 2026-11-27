@@ -1,79 +1,66 @@
 {
-  "manifest_version": "1.0.0",
-  "lock_date": "2026-11-18 09:01:12",
-  "project_title": "Vietnam Aviation Flight Delay & Risk Intelligence",
-  "pipeline_lifecycle": {
-    "phase_1_collection": {
-      "status": "LOCKED",
-      "scope": "5 major VN airports (HAN, SGN, DAD, CXR, PQC) + Aviationstack API + Open-Meteo",
-      "raw_snapshot_count": 93074,
-      "canonical_records": 13965,
-      "immutability": "Raw snapshots stored with timestamp, deduplicated using SHA-256"
+  "lock_date": "2026-11-27 14:11:09",
+  "dataset_version": "2026.11.02-h3-4716bcd4",
+  "production_registry": {
+    "flight_delay_regressor_mae": {
+      "version": "v2.0.0",
+      "algorithm": "HistGradientBoosting_MAE",
+      "bundle_dir": "artifacts/models/flight_delay_regressor_mae_v2.0.0",
+      "promoted_at": "2026-11-27 14:07:30"
     },
-    "phase_2_preprocess": {
-      "status": "LOCKED",
-      "data_contract_checks": "8/8 checks passed in pipeline/check_data.py",
-      "leakage_gates": "6/6 gates passed (Zero data leakage)",
-      "clean_records": 13965,
-      "train_records": 11172,
-      "test_records": 2793,
-      "split_cutoff_date": "2026-10-31"
+    "flight_delay_classifier_3class": {
+      "version": "v2.0.0",
+      "algorithm": "CatBoost",
+      "bundle_dir": "artifacts/models/flight_delay_classifier_3class_v2.0.0",
+      "promoted_at": "2026-11-27 14:08:01"
     },
-    "phase_3_processing": {
-      "status": "LOCKED",
-      "best_classifier": "RandomForestClassifier (Balanced Acc: 42.98%, +29.0% vs Dummy)",
-      "best_regressor": "HistGradientBoostingRegressor (MAE: 15.13 min)",
-      "unsupervised_clusters": 4,
-      "isolation_forest_anomalies": 392,
-      "permutation_test_p_value": 0.0,
-      "statistical_significance": "p < 0.001"
+    "flight_delay_classifier_binary": {
+      "version": "v2.0.0",
+      "algorithm": "CatBoost",
+      "bundle_dir": "artifacts/models/flight_delay_classifier_binary_v2.0.0",
+      "promoted_at": "2026-11-27 14:08:17"
     }
   },
   "artifact_checksums_sha256": {
-    "train_dataset": {
-      "path": "data/processed/train.csv",
-      "size_bytes": 4711563,
-      "sha256": "2326a9aa814dab76b9d73a4672d8ea116fc29f7d00469b9b1b34b2e5711fdb71"
-    },
-    "test_dataset": {
-      "path": "data/processed/test.csv",
-      "size_bytes": 1177315,
-      "sha256": "9eb3d04cf95fa5b4940ce0771110630e4d757e2e6962b78b6027f0784204f4a3"
-    },
     "encoder": {
-      "path": "data/processed/encoder.joblib",
-      "size_bytes": 2086,
-      "sha256": "935102c812a0f009be0db60fbf88938d13fd0144b6e1003348b7ced326798ad6"
+      "path": "data/gold/encoder.joblib",
+      "size_bytes": 2080,
+      "sha256": "84696fde20c8e4a8ce6e75575de780242b935b080e54aedb8bec1b5fb6a54681"
     },
     "scaler": {
-      "path": "data/processed/scaler.joblib",
-      "size_bytes": 1207,
-      "sha256": "76bd6f75807e97713f7ec5d071e081c15c7953da5b6ff3082c3f2918ddf18c04"
+      "path": "data/gold/scaler.joblib",
+      "size_bytes": 1359,
+      "sha256": "92835af11750363a8ea413a9bd1f1e6621a4ddf1753002558a5503913f031e69"
+    },
+    "preprocessing_metadata": {
+      "path": "data/gold/preprocessing_metadata.json",
+      "size_bytes": 7200,
+      "sha256": "18edf3d7bc6729ef1a61adb6f7e4f314329afa3f458ad4f254a1909675948dea"
+    },
+    "causal_history_store": {
+      "path": "data/gold/causal_history_store.json",
+      "size_bytes": 1185515,
+      "sha256": "073426d1db8961980e9e9ceebfc0fb0e8a52dfd16e3b3bb9c030742e778ad13e"
     },
     "classifier_model": {
       "path": "models/best_classifier.joblib",
-      "size_bytes": 21910865,
-      "sha256": "205bad668c995e4c74cf173306c650c75c19628474e8fefd0181524df05f49ae"
+      "size_bytes": 346135,
+      "sha256": "463f07a8ca7574eeb659c9e9c079053591223afcba8c7896eb17ce433b4cd53c"
     },
     "regressor_model": {
       "path": "models/best_regressor.joblib",
-      "size_bytes": 562718,
-      "sha256": "a45210481f189f6553515088f0d8af5a227bc74ab39d257e4e677f7ef75c1f77"
+      "size_bytes": 674422,
+      "sha256": "8c8e5174067b1e3a8d038fd2058606946562e35dd7e6b696ba867be1acdb384a"
     },
     "kmeans_model": {
       "path": "models/kmeans_model.joblib",
-      "size_bytes": 48775,
-      "sha256": "cfddc0659b43ff9af7543471378be7ed0584ba2a3f67fde7721434c3f3a503f8"
+      "size_bytes": 55327,
+      "sha256": "f45a3a34fba542c76d8ee31c346758f5d2d7275cd00d68d25e66c9d92ddec96c"
     },
-    "isolation_forest_model": {
+    "isolation_forest": {
       "path": "models/isolation_forest.joblib",
-      "size_bytes": 1581817,
-      "sha256": "f7a8680c3011576e289ceafcd29e68ed8f2a1782370b95c24c036e837e8bb90a"
-    },
-    "pca_model": {
-      "path": "models/pca_model.joblib",
-      "size_bytes": 4367,
-      "sha256": "6c3d510f4657838a214fcefcb53b7e698e34e9b5e354e2ab1ff6ec7cd210435e"
+      "size_bytes": 1840441,
+      "sha256": "50c029127d2d188ba1583cb9225d94569ef90a62ae6438bea6ad7ce5408f0172"
     }
   }
 }

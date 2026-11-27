@@ -1,0 +1,18 @@
+{
+  "run_id": "20261127_140745_9c471d",
+  "category": "classification",
+  "run_name": "multiclass_3_XGBoost",
+  "logged_at": "2026-11-27 14:07:45",
+  "params": {
+    "task": "multiclass_3",
+    "algorithm": "XGBoost",
+    "horizon_hours": 3
+  },
+  "metrics": {
+    "val_f1_macro": 0.3953,
+    "val_balanced_accuracy": 0.3972,
+    "test_f1_macro": 0.4174,
+    "test_balanced_accuracy": 0.4187
+  },
+  "artifacts": {}
+}

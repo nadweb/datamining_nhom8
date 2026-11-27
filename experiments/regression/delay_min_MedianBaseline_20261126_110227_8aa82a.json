@@ -1,0 +1,16 @@
+{
+  "run_id": "20261126_110227_8aa82a",
+  "category": "regression",
+  "run_name": "delay_min_MedianBaseline",
+  "logged_at": "2026-11-26 11:02:27",
+  "params": {
+    "algorithm": "MedianBaseline",
+    "loss": "MAE"
+  },
+  "metrics": {
+    "val_mae": 13.76,
+    "test_mae": 15.15,
+    "test_medae": 5.0
+  },
+  "artifacts": {}
+}
