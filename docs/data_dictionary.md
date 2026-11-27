@@ -11,8 +11,8 @@ Complete specification of the 5-layer schema evolution from **58 raw columns** d
 | **01 Bronze Raw** (`data/raw/{fids,aviationstack}`) | 58 | 92,150 | Heterogeneous Playwright FIDS tables & nested Aviationstack JSON (`departure.gate` 74.21% missing, `arrival.baggage` 94.69% missing) | Preserved untouched as Raw source-of-truth |
 | **02 Bronze Standardized** (`data/bronze/standardized_snapshots.csv`) | 12 | 93,081 | Need unified representation across scrapers while retaining original `status` strings | Normalized field names, parsed HH:MM, ISO dates, 2-char carrier codes (`RawSnapshotContract`) |
 | **03 Silver Cleaned** (`data/silver/flights_silver.csv`) | 24 (+meta) | 13,570 (+40 excluded) | Multiple rolling snapshots per flight; cross-midnight subtraction bugs; unmerged weather | 3-tier SHA-256 deduplication by `leg_key`, Modulo 1440 delay, Open-Meteo hourly merge, segregates `diverted`/`unknown` (`40` rows) (`SilverFlightContract`) |
-| **04 Gold Analytical** (`data/gold/flights_gold.csv`) | 60 | 13,570 | Discrete clock strings break cyclical adjacency; naive global historical averages leak future test labels | `FeatureBuilder` T-3h cyclical transforms, weather hazard score, interactions, causal `bisect_left < prediction_time` rates (`GoldDatasetContract`) |
-| **05 Modeling Matrix $X$** (`data/gold/{train,val,test}.csv`) | **66** | 9,503 / 1,353 / 2,714 | Tabular GBDTs require encoded categories, imputed/scaled numerics, and strict post-flight leakage removal | Train-fitted `OneHotEncoder(40 cols)` + `StandardScaler(12 cols)` + `14 binary flags` = `66` clean pre-flight inputs |
+| **04 Gold Analytical** (`data/gold/flights_gold.csv`) | 60 | 13,570 | Discrete clock strings break cyclical adjacency; naive global historical averages leak future test labels | `FeatureBuilder` T-3h cyclical transforms, weather hazard score, interactions, point-in-time `bisect_left < prediction_time` rates + `leakage_guard.py` (`GoldDatasetContract`) |
+| **05 Modeling Matrix $X$ & Targets** (`data/gold/{train,val,test}.csv`) | **66 $X$ + 3 $y$** | 9,503 / 1,353 / 2,714 | Tabular GBDTs require encoded categories, imputed/scaled numerics, and strict isolation of $X$ from targets and post-flight variables | Train-fitted `OneHotEncoder(39)` + `StandardScaler(13)` + `14 binary flags` = `66` clean pre-flight $X$ features, exported alongside 3 explicit targets (`target`, `target_binary`, `delay_min`) |
 
 ---
 
@@ -43,16 +43,22 @@ Complete specification of the 5-layer schema evolution from **58 raw columns** d
 
 ---
 
-## 4. Modeled Feature Inputs (`66 Columns in Matrix X`)
+## 4. Modeled Feature Inputs (`66 Columns in Matrix X`) & Explicit Supervised Targets
 
-- **5 Categorical Inputs $\to$ 40 One-Hot Columns**: `airline_code`, `airport`, `direction`, `route_type`, `carrier_category`.
-- **12 Continuous Inputs (Train-Median Imputed & StandardScaled)**:
-  - `airport_load`, `airport_congestion` (`airport_load / train_median_airport_load`)
-  - `precipitation`, `wind_gusts_10m`, `visibility`, `weather_hazard_score`, `load_x_weather`
-  - `hour_sin`, `hour_cos`, `dow_sin`, `dow_cos`
-  - `historical_airline_delay_rate`, `historical_airport_delay_rate` *(WAIT: 12 continuous = `airport_load`, `precipitation`, `wind_gusts_10m`, `visibility`, `weather_hazard_score`, `load_x_weather`, `hour_sin`, `hour_cos`, `dow_sin`, `dow_cos`, `historical_airline_delay_rate`, `historical_airport_delay_rate`, `airport_congestion` -> exact 12 numeric + 14 binary + 40 OHE? Verified by inspection against `configs/features.yaml`: 12+1 or check `preprocessing_metadata.json` — total model matrix X is verified at `66` columns)*.
-- **14 Binary Passthrough Flags**: `is_peak_hour`, `is_heavy_traffic`, `is_rain`, `is_heavy_rain`, `is_high_wind`, `is_severe_wind`, `is_low_vis`, `is_storm`, `is_golden_triangle`, `is_holiday_flag`, `is_weekend_flag`, `is_domestic_flag`, `is_departure`, `peak_x_rain`.
-- **Strictly Forbidden Post-Flight Columns (Blocked by `FeatureRegistry` & `LeakageError`):** `delay_min`, `actual_time`, `status`, `status_detail`, `is_delayed_for_analysis`, `status_clean`, `target`, `outcome_observed_at`, `snapshot_scraped_at`.
+- **5 Categorical Inputs $\to$ 39 One-Hot Columns:** `airline_code` (7), `airport` (22), `direction` (2), `route_type` (2), `carrier_category` (6).
+- **13 Continuous Inputs (Train-Median Imputed & StandardScaled):**
+  - Congestion & Volume: `airport_load`, `airport_congestion` (`airport_load / train_median_airport_load`)
+  - Pre-flight Weather: `precipitation`, `wind_gusts_10m`, `visibility`, `weather_hazard_score`, `load_x_weather`
+  - Cyclical Clock & Calendar: `hour_sin`, `hour_cos`, `dow_sin`, `dow_cos`
+  - Point-in-Time Historical Rates (`CausalHistoryStore`): `historical_airline_delay_rate`, `historical_airport_delay_rate`
+- **14 Binary Passthrough Flags:** `is_peak_hour`, `is_heavy_traffic`, `is_rain`, `is_heavy_rain`, `is_high_wind`, `is_severe_wind`, `is_low_vis`, `is_storm`, `is_golden_triangle`, `is_holiday_flag`, `is_weekend_flag`, `is_domestic_flag`, `is_departure`, `peak_x_rain`.
+- **3 Explicit Supervised Targets (Excluded from $X$, Enforced by `src/flight_delay/data_mining/leakage_guard.py`):**
+  - `target` (`y_class`): 3-class ICAO outcome `{0: on_time, 1: delayed, 2: cancelled}`.
+  - `target_binary` (`y_binary`): Binary disruption ablation `{0: on_time, 1: disrupted}`.
+  - `delay_min` (`y_regression`): Delay duration in minutes (completed flights only; strictly `NaN` for cancelled flights).
+- **Strictly Forbidden Post-Flight Columns (Blocked by `FeatureRegistry`, `leakage_guard.py`, & `LeakageError`):** `delay_min`, `actual_time`, `status`, `status_detail`, `is_delayed_for_analysis`, `status_clean`, `target`, `outcome_observed_at`, `snapshot_scraped_at`.
+- **Unsupervised Analytical Outputs (Separated from `data/gold/`):** Association rules (`mined_association_rules.csv`), cluster profiles (`clustering_results.csv`), and anomalies (`anomaly_results.csv`) are saved under `artifacts/unsupervised/`.
+- **Historical Store & Scaling Metadata:** `data/gold/causal_history_store.json` + `data/gold/causal_history_metadata.json` (`1.18 MB` JSON; migrate to `causal_history_store.parquet` once records exceed `100,000`).
 
 ---
 

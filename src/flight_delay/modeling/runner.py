@@ -2,7 +2,7 @@
 """[STEP 4 & 5] Unified Training, Evaluation, Governance Registration & Unsupervised Runner."""
 import pandas as pd
 
-from flight_delay.common.constants import FILE_GOLD, REPORTS_DIR
+from flight_delay.common.constants import FILE_GOLD, REPORTS_DIR, UNSUPERVISED_ARTIFACTS_DIR
 from flight_delay.common.utils import write_json
 from flight_delay.evaluation.evaluation_report import save_evaluation_report
 from flight_delay.governance.approval import refresh_lock_manifest
@@ -23,6 +23,18 @@ def run_unsupervised_suite() -> dict:
     pca_res = run_pca_analysis(X_scaled, km_raw["features_used"], labels, gold_df)
     iso_res = run_anomaly_detection(gold_df)
     rules_res = mine_association_rules(gold_df)
+
+    UNSUPERVISED_ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
+    pd.DataFrame(km_raw.get("cluster_profiles", [])).to_csv(
+        UNSUPERVISED_ARTIFACTS_DIR / "clustering_results.csv",
+        index=False,
+        encoding="utf-8-sig",
+    )
+    pd.DataFrame(iso_res.get("top_anomalies", [])).to_csv(
+        UNSUPERVISED_ARTIFACTS_DIR / "anomaly_results.csv",
+        index=False,
+        encoding="utf-8-sig",
+    )
 
     payload = {
         "kmeans": km_raw,

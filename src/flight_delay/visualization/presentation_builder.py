@@ -423,7 +423,7 @@ def build_presentation_html() -> Path:
             <strong>Giá trị vận hành:</strong> <strong>96.7% (29/30)</strong> tập luật <code>Status=delayed</code> tái lập ổn định trên tương lai Holdout Test, chứng tỏ sự kết hợp của hãng bay, khung giờ chiều tối và mưa/tải cao là mẫu hình lặp lại thực thụ.
           </div>
         </div>""",
-        "Bước 4/7 · data/gold/mined_association_rules.csv",
+        "Bước 4/7 · artifacts/unsupervised/mined_association_rules.csv",
     )
 
     # Slide 13: Governance & 4-Tier Monitoring + FastAPI

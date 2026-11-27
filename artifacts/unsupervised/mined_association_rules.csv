@@ -1,0 +1,35 @@
+﻿antecedents,consequent,support_pct,confidence_pct,lift,train_count,test_support_pct,test_confidence_pct,test_lift,test_count,holdout_validated,ante_len
+Airline=VN + Domestic=Yes + Rain=Yes,Status=cancelled,0.21,3.78,4.42,23,0.0,0.0,0.0,0,False,3
+Airline=VN + Airport=SGN + Domestic=Yes,Status=cancelled,0.32,3.35,3.91,35,0.0,0.0,0.0,0,False,3
+Airline=VN + Domestic=Yes + Peak=Yes,Status=cancelled,0.31,3.09,3.61,34,0.0,0.0,0.0,0,False,3
+Airline=VN + Domestic=Yes + Slot=06h-12h,Status=cancelled,0.27,3.05,3.56,29,0.0,0.0,0.0,0,False,3
+Airline=VJ + Airport=SGN + Rain=Yes,Status=delayed,2.34,55.1,1.98,254,1.07,31.52,1.58,29,True,3
+Airline=VJ + Peak=Yes + Slot=12h-18h,Status=delayed,1.23,54.29,1.95,133,0.55,31.25,1.56,15,True,3
+Airline=VJ + Airport=SGN + Slot=12h-18h,Status=delayed,3.42,53.61,1.92,371,1.88,35.92,1.8,51,True,3
+Airline=VJ + Airport=SGN + Slot=18h-24h,Status=delayed,1.95,51.83,1.86,212,2.54,52.27,2.61,69,True,3
+Airline=VJ + Slot=18h-24h + Weekend=Yes,Status=delayed,1.57,51.36,1.84,170,3.02,38.68,1.93,82,True,3
+Airline=VJ + HeavyTraffic=Yes + Rain=Yes,Status=delayed,2.01,51.17,1.83,218,1.77,30.57,1.53,48,True,3
+Airline=VJ + Peak=Yes + Rain=Yes,Status=delayed,1.39,50.5,1.81,151,0.63,26.98,1.35,17,True,3
+Airline=VJ + Airport=SGN + Weekend=Yes,Status=delayed,2.24,50.21,1.8,243,4.31,37.26,1.86,117,True,3
+Airline=VJ + Rain=Yes + Slot=12h-18h,Status=delayed,2.22,49.79,1.79,241,1.4,27.54,1.38,38,True,3
+Airline=VJ + Domestic=Yes + Slot=18h-24h,Status=delayed,3.17,49.78,1.78,344,3.76,48.34,2.42,102,True,3
+Airline=VJ + HeavyTraffic=Yes + Slot=12h-18h,Status=delayed,4.46,49.49,1.77,484,2.47,32.06,1.6,67,True,3
+Airline=VJ + Domestic=Yes + Slot=12h-18h,Status=delayed,5.05,49.37,1.77,548,2.39,33.85,1.69,65,True,3
+Airline=VJ + Peak=Yes + Slot=18h-24h,Status=delayed,2.79,49.27,1.77,303,2.65,46.15,2.31,72,True,3
+Airline=VJ + Slot=12h-18h + Weekend=Yes,Status=delayed,1.93,48.95,1.75,210,3.35,39.74,1.99,91,True,3
+Airline=VJ + HeavyTraffic=Yes + Weekend=Yes,Status=delayed,2.57,48.1,1.72,279,6.3,36.54,1.83,171,True,3
+Airline=VJ + Slot=12h-18h,Status=delayed,7.22,47.69,1.71,784,3.54,30.48,1.52,96,True,2
+Airline=VJ + Airport=DAD + Domestic=Yes,Status=delayed,1.57,47.62,1.71,170,0.77,30.43,1.52,21,True,3
+Airline=VJ + Domestic=Yes + Rain=Yes,Status=delayed,2.68,47.09,1.69,291,1.62,30.56,1.53,44,True,3
+Airline=VJ + Slot=18h-24h,Status=delayed,4.31,46.47,1.67,468,5.05,45.07,2.25,137,True,2
+Airline=VJ + Airport=SGN,Status=delayed,7.21,45.66,1.64,783,5.86,35.41,1.77,159,True,2
+Airline=VJ + Rain=Yes,Status=delayed,3.89,45.52,1.63,422,2.47,28.88,1.44,67,True,2
+Airport=SGN + Peak=Yes + Slot=12h-18h,Status=delayed,1.42,45.43,1.63,154,0.63,30.91,1.54,17,True,3
+Airline=VJ + Peak=Yes + Weekend=Yes,Status=delayed,1.74,45.22,1.62,189,3.1,31.23,1.56,84,True,3
+Airline=VJ + Domestic=Yes + Weekend=Yes,Status=delayed,2.96,44.58,1.6,321,5.53,35.13,1.76,150,True,3
+Airport=SGN + Peak=Yes + Rain=Yes,Status=delayed,1.63,43.49,1.56,177,0.37,12.66,0.63,10,False,3
+Airline=VJ + HeavyTraffic=Yes,Status=delayed,8.58,42.82,1.54,931,7.59,34.11,1.7,206,True,2
+Rain=Yes + Slot=12h-18h + Weekend=Yes,Status=delayed,1.0,42.41,1.52,109,2.21,24.59,1.23,60,True,3
+Airport=SGN + Slot=18h-24h + Weekend=Yes,Status=delayed,1.31,42.39,1.52,142,2.76,31.51,1.58,75,True,3
+Peak=Yes + Rain=Yes + Slot=18h-24h,Status=delayed,1.26,42.28,1.52,137,0.77,35.59,1.78,21,True,3
+Airline=VJ + Weekend=Yes,Status=delayed,4.38,41.68,1.49,476,8.55,33.97,1.7,232,True,2

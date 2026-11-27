@@ -1,5 +1,5 @@
 {
-  "lock_date": "2026-11-27 14:11:09",
+  "lock_date": "2026-11-27 14:31:42",
   "dataset_version": "2026.11.02-h3-4716bcd4",
   "production_registry": {
     "flight_delay_regressor_mae": {
@@ -34,8 +34,8 @@
     },
     "preprocessing_metadata": {
       "path": "data/gold/preprocessing_metadata.json",
-      "size_bytes": 7200,
-      "sha256": "18edf3d7bc6729ef1a61adb6f7e4f314329afa3f458ad4f254a1909675948dea"
+      "size_bytes": 7428,
+      "sha256": "e26af55084fb21b1ec10b8e7de8851d54e98f7a3550067a3a8dd7d6f0a205aff"
     },
     "causal_history_store": {
       "path": "data/gold/causal_history_store.json",
@@ -55,7 +55,7 @@
     "kmeans_model": {
       "path": "models/kmeans_model.joblib",
       "size_bytes": 55327,
-      "sha256": "f45a3a34fba542c76d8ee31c346758f5d2d7275cd00d68d25e66c9d92ddec96c"
+      "sha256": "ffb88e572ca8de01f97f02c2b4144eae042402979f55e1737c8d3b40634f46c6"
     },
     "isolation_forest": {
       "path": "models/isolation_forest.joblib",

@@ -29,6 +29,7 @@ paths:
   encoders_dir: "artifacts/encoders"
   scalers_dir: "artifacts/scalers"
   figures_dir: "artifacts/figures"
+  unsupervised_dir: "artifacts/unsupervised"
   artifact_manifests_dir: "artifacts/manifests"
   reports_dir: "reports"
   logs_dir: "logs"

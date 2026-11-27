@@ -52,6 +52,7 @@ MODELS_DIR = ROOT_DIR / PATHS["models_dir"]
 ENCODERS_DIR = ROOT_DIR / PATHS["encoders_dir"]
 SCALERS_DIR = ROOT_DIR / PATHS["scalers_dir"]
 FIGURES_DIR = ROOT_DIR / PATHS["figures_dir"]
+UNSUPERVISED_ARTIFACTS_DIR = ROOT_DIR / PATHS.get("unsupervised_dir", "artifacts/unsupervised")
 ARTIFACT_MANIFESTS_DIR = ROOT_DIR / PATHS["artifact_manifests_dir"]
 REPORTS_DIR = ROOT_DIR / PATHS["reports_dir"]
 LOG_DIR = ROOT_DIR / PATHS["logs_dir"]
@@ -68,7 +69,8 @@ FILE_EXCLUDED = SILVER_DIR / "excluded_outcomes.csv"
 FILE_CLEANED = FILE_SILVER
 FILE_GOLD = GOLD_DIR / "flights_gold.csv"
 FILE_FEATURES = GOLD_DIR / "flights_features.csv"
-FILE_RULES = GOLD_DIR / "mined_association_rules.csv"
+FILE_RULES = UNSUPERVISED_ARTIFACTS_DIR / "mined_association_rules.csv"
+FILE_CAUSAL_HISTORY_META = GOLD_DIR / "causal_history_metadata.json"
 
 # Airport & airline domain constants
 UA = SOURCES_CFG["user_agent"]

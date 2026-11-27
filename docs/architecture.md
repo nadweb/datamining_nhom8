@@ -1,6 +1,6 @@
 # FlightRisk VN — System Architecture (`src/flight_delay/`)
 
-**FlightRisk VN** is a modular, leakage-guarded, production-oriented **7-Step CRISP-DM** machine learning & data mining platform built using a clean `src/` Python package layout and served via **FastAPI + Uvicorn**.
+**FlightRisk VN** is a modular, leakage-guarded, production-oriented **CRISP-DM-inspired** machine learning & data mining platform (7 modular pipeline stages across 8 self-contained notebooks) built using a `src/` Python package layout and served via **FastAPI + Uvicorn**.
 
 ---
 
@@ -18,12 +18,12 @@
     --> Segregated Ambiguous: data/silver/excluded_outcomes.csv (40 rows: diverted/unknown)
     --> Quality Audit: reports/data_quality/silver_quality_report.json
 
-03. DATA MINING & CAUSAL FEATURE STORE (src/flight_delay/data_mining/)
+03. DATA MINING & TEMPORAL HISTORY STORE (src/flight_delay/data_mining/)
     Profiling · EDA · Statistical Tests (Mann-Whitney/Kruskal/Cramér's V)
-    Causal T-3h History Store (bisect_left < prediction_time) · FeatureBuilder (training-serving parity)
+    Point-in-time T-3h History Store (bisect_left < prediction_time) · FeatureBuilder · leakage_guard.py
     Chronological Split (70% Train / 10% Val / 20% Holdout Test)
-    --> Gold: data/gold/flights_gold.csv + train/val/test.csv (66 encoded model features)
-    --> Lineages: data/manifests/dataset_manifest.json & data/gold/causal_history_store.json
+    --> Gold: data/gold/flights_gold.csv + train/val/test.csv (66 encoded X + 3 isolated targets)
+    --> Lineages: data/manifests/dataset_manifest.json & data/gold/causal_history_{store,metadata}.json
 
 04. EXPERIMENTATION & MODELING (src/flight_delay/modeling/)
     Baselines: MajorityClassifier, HeuristicBaseline, MedianBaseline
@@ -57,27 +57,28 @@
 ScrapeData/
 ├── configs/                  # YAML configurations (project, sources, airports, airlines, schema, features, experiments, monitoring)
 ├── data/
-│   ├── raw/{fids,aviationstack,weather}/   # Immutable Raw sources
-│   ├── debug_data/                         # 2,923 archived HTML/JSON captures (untouched)
+│   ├── raw/{fids,aviationstack,weather}/   # Official immutable Raw data sources (re-processable)
+│   ├── debug_data/{playwright,open_meteo,aviationstack}/  # Scraper debugging captures (never ingested unvalidated)
 │   ├── bronze/                             # Canonical 12-field standardized snapshots
 │   ├── silver/                             # Valid 24-field Silver legs + excluded_outcomes.csv
-│   ├── gold/                               # Gold matrices, splits, causal store, rules & audit sample
+│   ├── gold/                               # Analytical Gold matrices (66 X + targets), causal_history_{store,metadata}.json
 │   └── manifests/                          # bronze_manifest.json, dataset_manifest.json
 ├── src/flight_delay/
 │   ├── common/               # Config loader, domain exceptions, hashing, structured logging
 │   ├── ingestion/            # Step 1 Collectors & Source Registry
 │   ├── data_engineering/     # Step 2 Cleaning, Contracts, Integration & Quality
-│   ├── data_mining/          # Step 3 Profiling, EDA, Causal Features, Encoding, Datasets
+│   ├── data_mining/          # Step 3 Profiling, EDA, FeatureBuilder, CausalHistoryStore, leakage_guard, Datasets
 │   ├── modeling/             # Step 4 Baselines, Classification, Regression, Unsupervised, SHAP, Calibration
 │   ├── evaluation/           # Step 5 Metrics, Statistical Tests, Subgroups, Temporal CV, Error Analysis
 │   ├── governance/           # Step 6 Experiment Tracker, Registry, Checksums, Model Cards, Lineage
 │   ├── inference/            # Step 7 Fail-closed Predict API, Model Loader, Audit Sample Builder
-│   ├── monitoring/           # Step 7 Data Quality, PSI + KS Drift, Concept Drift, Alerts
+│   ├── monitoring/           # Step 7 Data Quality, Distribution Drift (PSI+KS), Concept Drift (ground-truth label shift)
 │   ├── visualization/        # Matplotlib/Seaborn figure generation -> artifacts/figures/
 │   └── api/                  # FastAPI + Pydantic schemas + REST & UI routes
 ├── scripts/                  # Standalone stage runners (collect, prepare, build_features, train, evaluate, register_model, run_web)
-├── notebooks/                # 00_business_understanding.ipynb .. 07_deployment_monitoring.ipynb
-├── artifacts/                # Approved model bundles, checksums, encoders, scalers, manifests, figures
+├── notebooks/                # Self-contained CRISP-DM-inspired workflow (00..07)
+├── artifacts/                # Model development & governance: models/, encoders/, scalers/, manifests/, figures/, business/, unsupervised/
+├── models/                   # Approved production serving runtime (.joblib + LOCK_pipeline_manifest.json)
 ├── reports/                  # Data quality, EDA, experiment benchmarks, monitoring drift reports
 ├── experiments/              # Structured per-run JSON experiment logs
 ├── tests/                    # Unit, Data Quality, Leakage Guard, Temporal Integrity, Parity, Evaluation & API/E2E suites

@@ -140,6 +140,7 @@ def mine_association_rules(gold_df: pd.DataFrame) -> dict:
     rules_df = pd.DataFrame(all_kept)
     if not rules_df.empty:
         rules_df = rules_df.sort_values(["consequent", "lift", "confidence_pct"], ascending=[True, False, False])
+        FILE_RULES.parent.mkdir(parents=True, exist_ok=True)
         rules_df.to_csv(FILE_RULES, index=False, encoding="utf-8-sig")
 
     return {

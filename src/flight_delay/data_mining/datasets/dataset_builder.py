@@ -25,6 +25,7 @@ from flight_delay.data_mining.encoding.preprocessing import FlightPreprocessor
 from flight_delay.data_mining.feature_engineering.builder import FeatureBuilder
 from flight_delay.data_mining.feature_engineering.historical import CausalHistoryStore
 from flight_delay.data_mining.feature_engineering.registry import FEATURE_REGISTRY
+from flight_delay.data_mining.leakage_guard import assert_no_future_leakage
 
 log = logging.getLogger(__name__)
 
@@ -75,8 +76,24 @@ def build_analytical_and_modeling_datasets(
         gold_all.to_csv(FILE_GOLD, index=False, encoding="utf-8-sig")
         gold_all.to_csv(FILE_FEATURES, index=False, encoding="utf-8-sig")
 
-    # Save frozen causal history store for inference parity
+    # Save frozen causal history store & metadata for inference parity
     write_json(proc_dir / "causal_history_store.json", train_history_store.to_dict())
+    write_json(
+        proc_dir / "causal_history_metadata.json",
+        {
+            "dataset_version": ds_version,
+            "horizon_hours": int(horizon_hours),
+            "store_purpose": "Point-in-time historical delay feature store (anti-leakage rolling baseline, not econometric causal inference).",
+            "storage_format": "json",
+            "recommended_large_scale_format": "causal_history_store.parquet + causal_history_metadata.json when records >= 100,000",
+            "total_observations": int(len(train_history_store.global_ts)),
+            "airlines_indexed": int(len(train_history_store.airline_index)),
+            "airports_indexed": int(len(train_history_store.airport_index)),
+            "max_observed_ts": train_history_store.max_observed_ts,
+            "prior_smooth": float(train_history_store.prior_smooth),
+            "fallback_prior": float(train_history_store.fallback_prior),
+        },
+    )
 
     # Fit FlightPreprocessor STRICTLY on Train
     preprocessor = FlightPreprocessor().fit(tr_gold)
@@ -95,6 +112,16 @@ def build_analytical_and_modeling_datasets(
     tr_exp = _export(X_tr, tr_gold, "train.csv")
     va_exp = _export(X_va, va_gold, "val.csv")
     te_exp = _export(X_te, te_gold, "test.csv")
+
+    leakage_audit = assert_no_future_leakage(
+        gold_df=gold_all,
+        feature_names=preprocessor.feature_names,
+        train_df=tr_gold,
+        val_df=va_gold,
+        test_df=te_gold,
+        exported_splits={"train.csv": tr_exp, "val.csv": va_exp, "test.csv": te_exp},
+        min_horizon_hours=horizon_hours,
+    )
 
     split_summary = {
         "train_rows": int(len(tr_exp)),
@@ -120,6 +147,7 @@ def build_analytical_and_modeling_datasets(
             "total_features": len(preprocessor.feature_names),
             "one_hot_columns": preprocessor.encoded_cat_names,
             "label_map": LABEL_MAP_3CLASS,
+            "leakage_audit": leakage_audit,
         },
     )
 

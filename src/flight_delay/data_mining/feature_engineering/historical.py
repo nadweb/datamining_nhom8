@@ -23,7 +23,7 @@ def compute_outcome_known_at(df: pd.DataFrame) -> pd.Series:
 
 @dataclass
 class CausalHistoryStore:
-    """Point-in-time smoothed delay rate store guaranteeing zero future leakage."""
+    """Point-in-time historical delay rate store (prevents future leakage; not econometric causal inference)."""
 
     prior_smooth: float
     fallback_prior: float
